@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import * as cheerio from 'cheerio';
 import { applyApprovedRemovals, hasApprovedRemoval } from './lib/approved-removals.mjs';
 import { readCsv } from './lib/csv.mjs';
-import { APPROVED_OLD_LINES } from './lib/faq-approved.mjs';
+import { isApprovedOldLine } from './lib/faq-approved.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
 const keywordMap = new Map(readCsv('reports/phase-3-keyword-map.csv').map((r) => [r.path, r]));
@@ -162,7 +162,7 @@ for (const row of map) {
       const newText = squeeze(wordsOf(html).text);
       $old('iframe').remove();
       const oldLines = $old('body').text().split(/\s*\n\s*/).map((l) => l.trim()).filter((l) => squeeze(l).length >= 3);
-      const missingLines = oldLines.filter((l) => !newText.includes(squeeze(l)) && !APPROVED_OLD_LINES.test(l));
+      const missingLines = oldLines.filter((l) => !newText.includes(squeeze(l)) && !isApprovedOldLine(l));
       out.oldLines = oldLines.length;
       out.missingLines = missingLines.length;
       totalLines.old += oldLines.length;

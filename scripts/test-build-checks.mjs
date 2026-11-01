@@ -26,6 +26,8 @@ const cases = [
   ['Link to ?plan=', () => replaceIn(PAGE, /<main[^>]*>/, '<main><a href="/get-a-free-quote/?plan=growth">x</a>'), /query URL/],
   ['Broken internal link', () => replaceIn(PAGE, /<main[^>]*>/, '<main><a href="/no-such-page/">x</a>'), /Broken link/],
   ['Noindex on a sitemap URL', () => replaceIn(HOME, /<meta name="?robots"?[^>]*>/, '<meta name="robots" content="noindex">'), /is in the sitemap but has noindex/],
+  ['Annual price without the note', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Essential is $790 per year.</p>'), /annual price without/],
+  ['FAQ schema not on the page', () => replaceIn(PAGE, '</head>', '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"name":"Not on page?","acceptedAnswer":{"text":"Nope"}}]}</script></head>'), /schema question not on the page/],
   ['robots.txt blocks a search bot', () => append('dist/robots.txt', '\nUser-agent: Googlebot\nDisallow: /\n'), /blocks a search bot/],
 ];
 

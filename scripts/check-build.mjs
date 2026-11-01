@@ -128,6 +128,31 @@ for (const file of htmlFiles) {
   if (isLive && noindex && sitemapUrls.has(`${O}${path}`)) fail('noindex', `${path} is in the sitemap but has noindex.`);
   if (!isLive && !/noindex/.test(robots)) fail('noindex', `${path}: preview build must be noindex.`);
 
+  // Owner rule: annual prices always say "2 months free" (Spanish: "2 meses gratis").
+  $('main p, main li, main td, main div, main h2, main h3, main details').each((_, e) => {
+    if ($(e).children('p, div, li, table, details').length) return;
+    const text = $(e).text();
+    if (/\$790\b|\$1,490\b|\$2,990\b|\b790, 1\.490\b/.test(text) && !/2 months free|2 meses gratis/i.test(text)) fail('annual-note', `${path}: annual price without "2 months free": ${text.trim().slice(0, 90)}`);
+  });
+  // FAQ schema must match the visible page.
+  const squeezeText = (s) => String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+  const mainText = squeezeText($('main').text());
+  const faqEntries = (n, out = []) => {
+    if (Array.isArray(n)) n.forEach((x) => faqEntries(x, out));
+    else if (n && typeof n === 'object') {
+      if ([].concat(n['@type'] ?? []).includes('FAQPage')) out.push(...[].concat(n.mainEntity ?? []));
+      Object.values(n).forEach((v) => faqEntries(v, out));
+    }
+    return out;
+  };
+  $('script[type="application/ld+json"]').each((_, e) => {
+    for (const q of faqEntries(JSON.parse($(e).html()))) {
+      stats.faqs = (stats.faqs ?? 0) + 1;
+      if (!mainText.includes(squeezeText(q.name))) fail('faq-schema', `${path}: schema question not on the page: ${q.name}`);
+      if (!mainText.includes(squeezeText(q.acceptedAnswer?.text))) fail('faq-schema', `${path}: schema answer differs from the page: ${q.name}`);
+    }
+  });
+
   $('main img, header img, footer img').each((_, e) => {
     stats.images++;
     const src = $(e).attr('src') ?? '';

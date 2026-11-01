@@ -37,6 +37,12 @@
 - Brazil title is now in Portuguese, same as the H1.
 - Claims are unchanged until the owner sends answers.
 
+## FAQ schema, language and annual note (2026-11-01)
+- All 498 FAQ schema entries use the exact visible question and answer; the build fails if they differ.
+- Our own old prices and plan names in FAQ answers follow the master list (24 replacements). Other price sets, market ranges and mismatched features are listed in `reports/faq-schema-sync.md`.
+- Brazil: `lang="pt-BR"`, Portuguese meta description and social tags. Spain stays `en-US` because its body is not mostly Spanish.
+- Annual prices must say "2 months free" or "2 meses gratis"; the build enforces it. Master list saved in `src/data/prices.json`.
+
 ## Owner decisions (2026-11-01)
 - Added `CMS-REQUIREMENTS.md`. CMS plan approved: Sveltia CMS, fine-grained GitHub token with 1-year expiry, no 410, Editorial Workflow included in the small test. Nothing is installed yet.
 - Separate service packages stay on the design, migration, SEO, speed and white-label pages; the master price list covers maintenance plans and one-time fixes only. Each price is listed for the owner to confirm or correct before launch. Their buttons use the hash method, for example `/get-a-free-quote/#growth-design` and `#starter-seo`. `?industry=` and `?package=` URLs follow the `?plan=` rule: no redirect, no internal links. White-label agency prices must be clearly labelled as wholesale for agencies so they do not contradict the main plan prices.

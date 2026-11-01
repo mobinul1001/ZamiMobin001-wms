@@ -4,6 +4,8 @@ import { glob } from 'astro/loaders';
 const fields = {
   // Final URL path with trailing slash, for example /about-us/.
   path: z.string(),
+  // Page language when it is not the site default, for example pt-BR.
+  lang: z.string().optional(),
   title: z.string(),
   description: z.string().optional(),
   robots: z.string().optional(),

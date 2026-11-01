@@ -1,0 +1,10 @@
+{
+  "annualNote": { "en": "2 months free", "es": "2 meses gratis" },
+  "plans": [
+    { "name": "Essential", "monthly": 79, "annual": 790, "includes": ["Weekly updates", "Weekly backups", "Security scan", "Uptime monitoring", "1 hour edits/month"] },
+    { "name": "Growth", "popular": true, "monthly": 149, "annual": 1490, "includes": ["Everything in Essential", "Daily backups", "3 hours edits/month", "Malware removal", "Speed optimization", "Monthly report", "WooCommerce support"] },
+    { "name": "Business", "monthly": 299, "annual": 2990, "includes": ["Everything in Growth", "6 hours edits/month", "Staging-tested updates", "24/7 emergency fixes", "Priority support"] }
+  ],
+  "oneTimeFixFrom": 49,
+  "hackedSiteCleanup": 149
+}

@@ -1,10 +1,11 @@
 {
-  "checkedAt": "2026-11-01T08:57:40.638Z",
+  "checkedAt": "2026-11-01T09:10:42.379Z",
   "context": "production",
   "isLive": true,
   "pages": 92,
   "links": 4099,
   "images": 130,
+  "faqs": 498,
   "sitemapUrls": 90,
   "redirects": 246,
   "queryRedirects": 97,

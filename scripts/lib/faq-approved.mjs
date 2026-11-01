@@ -12,6 +12,7 @@ export const ALIGN = {
   '/website-maintenance-services-for-spain/': { 'Ofrecen servicios de mantenimiento web en Espana?': '¿Ofrecen servicios de mantenimiento web en España?', 'Cuanto cuesta el mantenimiento web en Espana?': '¿Cuánto cuesta el mantenimiento web en España?' },
   '/website-redesign-services/': { "What's the difference between a website redesign and a website refresh?": "What's the difference between a redesign and a refresh?", 'What ongoing support is available after the redesign launches?': 'What ongoing support is available after launch?' },
   '/website-repair-services/': {
+    'What is website repair?': 'What Is Website Repair, Exactly?',
     'What is the difference between website repair and website maintenance?': "What's the difference between repair and maintenance?",
     'What is the difference between website repair and website redesign?': "What's the difference between repair and redesign?",
     'Why is my website showing a White Screen of Death (WSOD)?': 'What causes a white screen of death?',
@@ -53,24 +54,53 @@ const BODY_LINKS = {
   '/white-label-website-maintenance-services-for-agencies/': [['### Do you offer white label WordPress maintenance specifically?', `### Do you offer [white label WordPress maintenance](${WL_POST}) specifically?`]],
 };
 
-// Master price list replaces old prices in these answers.
+// Master price list replaces our own old prices and plan names in FAQ answers. Annual prices always
+// carry "2 months free" (Spanish: "2 meses gratis"). Market ranges and other price sets are not here;
+// they are listed in reports/faq-schema-sync.md for the owner.
+const PLANS_EN = 'Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free).';
+const PLANS_OLD = 'Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.';
 const PRICE_CHANGES = {
-  '/best-website-maintenance-for-small-business/': [[/from \$95\/month/g, 'from $79/month']],
-  '/website-maintenance-services-for-spain/': [[/95(?:&nbsp;|\s)USD\/mes \(Essential\), 195(?:&nbsp;|\s)USD\/mes \(Advanced\) y 395(?:&nbsp;|\s)USD\/mes \(Elevate\), con un 20% de descuento en el pago anual/g, '79 USD/mes (Essential), 149 USD/mes (Growth) y 299 USD/mes (Business), o 790, 1.490 y 2.990 USD al año']],
+  '/best-website-maintenance-companies/': [['from $95/month. WP Buffs', 'from $79/month. WP Buffs']],
+  '/best-website-maintenance-for-small-business/': [
+    ['from $95/month, no lock-in', 'from $79/month, no lock-in'],
+    ['the best value plan is Advanced at $195/month', 'the best value plan is Growth at $149/month'],
+    ['do well on Essential at $95/month, while WooCommerce stores need Elevate at $395/month', 'do well on Essential at $79/month, while WooCommerce stores need Business at $299/month'],
+    ['at $95/month (or $76/month billed annually)', 'at $79/month (or $790/year, 2 months free)'],
+  ],
+  '/how-much-does-website-maintenance-cost/': [['A typical plan costs $1,140–$4,740 per year. Paying annually usually saves around 20% compared to monthly billing, so a $195/month plan can drop to roughly $156/month when paid yearly.', 'A typical plan costs $948–$3,588 per year. Paying annually gives you 2 months free, so a $149/month plan costs $1,490 when paid yearly.']],
+  '/how-much-does-wordpress-website-maintenance-cost/': [
+    ['costs around $95/month for basic managed coverage, ~$195/month for standard business sites, and $395+/month for premium plans', 'costs around $79/month for basic managed coverage, ~$149/month for standard business sites, and $299+/month for premium plans'],
+    ['Billing annually typically saves 20%.', 'Billing annually gives you 2 months free.'],
+    ['An Essential-tier plan around $95/month', 'An Essential-tier plan around $79/month'],
+    ['Pay annually (20% off)', 'Pay annually (2 months free)'],
+    ['annual billing saves 20%: $228/year on Essential, $468/year on Advanced, and $948/year on Elevate, effectively giving you about two-and-a-half months free.', 'annual billing gives you 2 months free: $790/year on Essential, $1,490/year on Growth, and $2,990/year on Business.'],
+    ['upgrade from Essential to Advanced or Elevate', 'upgrade from Essential to Growth or Business'],
+    ['a $195/month plan costs less', 'a $149/month plan costs less'],
+  ],
+  '/shopify-website-maintenance-packages/': [['and save 20% if you choose annual billing', 'and get 2 months free if you choose annual billing']],
+  '/sitecare-alternative/': [['starts at $95/month with a year', 'starts at $79/month with a year']],
+  '/website-maintenance-services-for-netherlands/': [[PLANS_OLD, PLANS_EN]],
+  '/website-maintenance-services-for-switzerland/': [[PLANS_OLD, PLANS_EN]],
+  '/website-maintenance-services-for-spain/': [[/95(?:&nbsp;|\s)USD\/mes \(Essential\), 195(?:&nbsp;|\s)USD\/mes \(Advanced\) y 395(?:&nbsp;|\s)USD\/mes \(Elevate\), con un 20% de descuento en el pago anual/g, '79 USD/mes (Essential), 149 USD/mes (Growth) y 299 USD/mes (Business), o 790, 1.490 y 2.990 USD al año (2 meses gratis)']],
+  '/wordpress-malware-removal/': [['starting around $95/month', 'starting around $79/month']],
+  '/wordpress-site-hacked-what-to-do/': [['costs from $95/month', 'costs from $79/month']],
+  '/wordpress-website-maintenance-packages/': [
+    ['is $95/month for WP Starter, $195/month for the most popular WP Growth plan, and $395/month for WP Premium. Pay annually to save 20% ($76, $156, and $316/month respectively).', 'is $79/month for Essential, $149/month for the most popular Growth plan, and $299/month for Business. Pay annually for $790, $1,490, and $2,990 per year (2 months free).'],
+    ["Annual billing saves 20% — that's $228/year on WP Starter, $468/year on WP Growth, and $948/year on WP Premium.", 'Annual billing gives you 2 months free: $790/year on Essential, $1,490/year on Growth, and $2,990/year on Business.'],
+    ['Choose WP Starter for blogs and small sites, WP Growth for lead-generating business websites (our most popular package), and WP Premium for', 'Choose Essential for blogs and small sites, Growth for lead-generating business websites (our most popular package), and Business for'],
+    ['The WP Premium plan includes full WooCommerce', 'The Business plan includes full WooCommerce'],
+  ],
 };
-export const APPROVED_OLD_LINES = /from \$95\/month|95[\s\u00a0]USD\/mes \(Essential\)/;
+// Old text the owner approved replacing, so the parity test does not report it as lost.
+const allFrom = Object.values(PRICE_CHANGES).flat().map(([from]) => from).filter((f) => typeof f === 'string');
+export const isApprovedOldLine = (line) => /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
-const plain = (s) => s.replace(/<[^>]+>/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/[*_`\\]/g, '').replace(/\s+/g, ' ').trim();
+// Schema question whose visible text is a section rather than an FAQ entry.
+const SECTION_ANSWERS = {
+  'What Is Website Repair, Exactly?': /^\*\*Website repair\*\* is .*$/m,
+};
 
-function visibleAnswer(body, question) {
-  const lines = body.split('\n');
-  const i = lines.findIndex((l) => l.includes(question) && !l.startsWith('[') );
-  if (i < 0) return null;
-  const inline = new RegExp(`${question.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?:<i></i>)*</summary><(p|div)>(.*?)</\\1>`).exec(lines[i]);
-  if (inline) return plain(inline[2]);
-  for (let j = i + 1; j < lines.length; j++) if (lines[j].trim()) return plain(lines[j]);
-  return null;
-}
+const plain = (s) => s.replace(/<[^>]+>/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/&nbsp;/g, ' ').replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/[*_`\\]/g, '').replace(/\s+/g, ' ').trim();
 
 function faqNodes(node, found = []) {
   if (Array.isArray(node)) node.forEach((n) => faqNodes(n, found));
@@ -81,12 +111,41 @@ function faqNodes(node, found = []) {
   return found;
 }
 
+const squeeze = (s) => plain(String(s)).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+
+// Every question and answer the page shows, whatever format that page uses for its FAQ.
+export function visibleFaqs(body, schemaQuestions) {
+  const found = new Map();
+  for (const m of body.matchAll(/<details[^>]*><summary[^>]*>(.*?)<\/summary>(.*?)<\/details>/gs)) found.set(squeeze(m[1]), { q: plain(m[1]), a: plain(m[2]) });
+  const wanted = new Set(schemaQuestions.map(squeeze));
+  const stripPrefix = (l) => l.replace(/^#{1,6}\s+/, '').replace(/^\d+\\?\.\s+/, '').replace(/^FAQ\s*/, '').trim();
+  const lines = body.replace(/<details[^>]*>.*?<\/details>/gs, '').split('\n');
+  const isStop = (l) => /^#{1,3} /.test(l) || wanted.has(squeeze(stripPrefix(l))) || /^\*\*.+\?\*\*/.test(l);
+  lines.forEach((line, i) => {
+    const bold = /^\*\*(.+?\?)\*\*\s*(.*)$/.exec(line);
+    if (bold && wanted.has(squeeze(bold[1]))) {
+      found.set(squeeze(bold[1]), { q: plain(bold[1]), a: plain(bold[2]) });
+      return;
+    }
+    const key = squeeze(stripPrefix(line));
+    if (!key || !wanted.has(key) || found.get(key)?.a) return;
+    const paragraphs = [];
+    let j = i + 1;
+    for (; j < lines.length && !isStop(lines[j]); j++) if (lines[j].trim()) paragraphs.push(lines[j]);
+    // Only the last question in a section can run into unrelated text, so it keeps one paragraph.
+    const nextIsQuestion = j < lines.length && wanted.has(squeeze(stripPrefix(lines[j])));
+    found.set(key, { q: plain(stripPrefix(line)), a: plain((nextIsQuestion ? paragraphs : paragraphs.slice(0, 1)).join(' ')) });
+  });
+  return found;
+}
+
 export function applyFaqChanges(path, body, schema, log) {
   let out = body;
   for (const [from, to] of PRICE_CHANGES[path] ?? []) {
     const before = out;
-    out = out.replace(from, to);
-    log.push({ path, change: 'price', applied: before !== out });
+    out = typeof from === 'string' ? out.replaceAll(from, () => to) : out.replace(from, () => to);
+    if (before === out) throw new Error(`${path}: price text not found: ${from}`);
+    log.push({ path, change: 'price', from: String(from), to });
   }
   const nodes = faqNodes(schema);
   const add = ADD[path];
@@ -123,12 +182,20 @@ export function applyFaqChanges(path, body, schema, log) {
   for (const [schemaQ, visibleQ] of Object.entries(ALIGN[path] ?? {})) {
     const node = nodes.find((x) => x.name === schemaQ);
     if (!node) throw new Error(`${path}: schema question not found: ${schemaQ}`);
-    const searchQ = visibleQ;
-    const answer = visibleAnswer(out, searchQ) ?? visibleAnswer(out, `[white label WordPress maintenance](${WL_POST}) specifically?`);
-    if (!answer) throw new Error(`${path}: visible answer not found: ${visibleQ}`);
     node.name = visibleQ;
-    node.acceptedAnswer.text = answer;
     log.push({ path, change: 'schema aligned', question: visibleQ });
+  }
+  // Every FAQ schema entry on the site uses the exact visible question and answer.
+  const visible = visibleFaqs(out, nodes.map((n) => n.name));
+  for (const node of nodes) {
+    const v = visible.get(squeeze(node.name));
+    const section = SECTION_ANSWERS[node.name]?.exec(out);
+    const answer = section ? plain(section[0]) : v?.a;
+    if (!v || !answer) throw new Error(`${path}: no visible answer for schema question: ${node.name}`);
+    const before = squeeze(node.acceptedAnswer?.text ?? '');
+    node.name = v.q;
+    node.acceptedAnswer = { ...node.acceptedAnswer, text: answer };
+    log.push({ path, change: before === squeeze(answer) ? 'schema same' : 'schema synced', question: v.q });
   }
   return out;
 }

@@ -166,14 +166,6 @@
   "missingImages": [],
   "faqQuestionsNotFoundInBody": [
     {
-      "path": "/website-maintenance-services-for-switzerland/",
-      "q": "Proposez-vous la maintenance de sites web en Suisse?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "What is website repair?"
-    },
-    {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "q": "Do you offer white label WordPress maintenance specifically?"
     }
@@ -213,14 +205,199 @@
   ],
   "faqChanges": [
     {
+      "path": "/",
+      "change": "schema same",
+      "question": "What is website maintenance?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Why is website maintenance important?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "How often should a website be maintained?"
+    },
+    {
+      "path": "/",
+      "change": "schema synced",
+      "question": "What’s included in your website maintenance service?"
+    },
+    {
+      "path": "/",
+      "change": "schema synced",
+      "question": "Will my website go offline during maintenance?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "How much do website maintenance services cost?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Can you maintain a website you didn’t build?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Do you offer emergency support if my site goes down?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Do you provide website maintenance services in the USA, UK, and Europe?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Do you offer website maintenance for small businesses?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "How do I know what work you’ve done each month?"
+    },
+    {
+      "path": "/",
+      "change": "schema same",
+      "question": "Can I request additional updates or changes?"
+    },
+    {
       "path": "/agreement/",
       "change": "schema aligned",
       "question": "What's the difference between a maintenance agreement and a support contract?"
     },
     {
+      "path": "/agreement/",
+      "change": "schema synced",
+      "question": "What is a website maintenance agreement?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "schema synced",
+      "question": "What should a website maintenance contract include?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "schema same",
+      "question": "Do you have a website maintenance agreement template?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "schema same",
+      "question": "What's the difference between a maintenance agreement and a support contract?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "schema same",
+      "question": "Do website maintenance agreements lock you into a long contract?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "schema same",
+      "question": "How does billing and invoicing work?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "Is FixRunner a good WordPress maintenance service?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "Why would I choose a FixRunner alternative?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "What is the best-value FixRunner alternative?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "How much does FixRunner cost in 2026?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "Does FixRunner include hosting?"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "schema synced",
+      "question": "Can I switch maintenance providers without losing my site?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "from $95/month. WP Buffs",
+      "to": "from $79/month. WP Buffs"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "What is the best website maintenance company?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "How much do website maintenance companies charge?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "What does a website maintenance company do?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "Are website maintenance companies worth it?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "How do I choose a WordPress maintenance company?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "Is there a website maintenance company near me?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema same",
+      "question": "Do website maintenance companies work with small businesses?"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "schema synced",
+      "question": "What's the difference between a maintenance company and a hosting provider?"
+    },
+    {
       "path": "/best-website-maintenance-for-small-business/",
       "change": "price",
-      "applied": true
+      "from": "from $95/month, no lock-in",
+      "to": "from $79/month, no lock-in"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "the best value plan is Advanced at $195/month",
+      "to": "the best value plan is Growth at $149/month"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "do well on Essential at $95/month, while WooCommerce stores need Elevate at $395/month",
+      "to": "do well on Essential at $79/month, while WooCommerce stores need Business at $299/month"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "at $95/month (or $76/month billed annually)",
+      "to": "at $79/month (or $790/year, 2 months free)"
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
@@ -228,14 +405,1081 @@
       "question": "Can you recommend a reliable WordPress website maintenance company?"
     },
     {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema same",
+      "question": "How much does website maintenance cost for a small business in 2026?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema synced",
+      "question": "What is the best website maintenance plan for a small business?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema synced",
+      "question": "Can you recommend a reliable WordPress website maintenance company?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema synced",
+      "question": "Are there affordable website support plans for startups?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema same",
+      "question": "What is included in small business website maintenance?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema same",
+      "question": "How much does monthly website maintenance cost for a small business?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema synced",
+      "question": "Is website maintenance worth it for a small business?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema same",
+      "question": "Should I do my own website maintenance or hire a company?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema same",
+      "question": "Do you offer a refund or money-back guarantee?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema same",
+      "question": "Is WP Buffs a good WordPress maintenance service?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema synced",
+      "question": "Why would I choose a WP Buffs alternative?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema same",
+      "question": "What is the best-value WP Buffs alternative?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema synced",
+      "question": "How much does WordPress maintenance cost in 2026?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema same",
+      "question": "What's the most important feature in a maintenance plan?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema synced",
+      "question": "Does WP Buffs include hosting?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "schema synced",
+      "question": "Can I switch maintenance providers without losing my site?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "What should a taxi or transport website include?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "How do I take bookings online for my transport business?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "Do I really need SEO if I already have a website?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "Why do I need ongoing website maintenance?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "How do web agencies lock businesses in, and how do I avoid it?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "Should I build a new site or improve my existing one?"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "change": "schema synced",
+      "question": "What's included when you build my transport website?"
+    },
+    {
+      "path": "/contact/",
+      "change": "schema same",
+      "question": "What is your typical response time?"
+    },
+    {
+      "path": "/contact/",
+      "change": "schema same",
+      "question": "Do you offer white-label services for agencies?"
+    },
+    {
+      "path": "/contact/",
+      "change": "schema synced",
+      "question": "How do I join your Affiliate Program?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "How much does it cost to redesign a website in 2026?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "Why do website redesign quotes vary so much?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "How long does a website redesign take?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "What's the difference between a website redesign and a refresh?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "Is a website redesign tax-deductible?"
+    },
+    {
+      "path": "/cost-to-redesign-website/",
+      "change": "schema same",
+      "question": "What ongoing costs come after a redesign?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "How much does it cost to maintain an ecommerce website?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "What is included in ecommerce website maintenance?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Are there services that offer ongoing maintenance for ecommerce sites?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Do you offer ecommerce maintenance retainers?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Which ecommerce platforms do you support?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Why do online stores need maintenance more than regular websites?"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Do you offer affordable, low monthly ecommerce maintenance?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "How much does an ecommerce website redesign cost?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "What are the signs my ecommerce website needs a redesign?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "How do I redesign my ecommerce site without losing sales or rankings?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "Will an ecommerce redesign hurt my SEO?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "How long does an ecommerce website redesign take?"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
+      "change": "schema same",
+      "question": "Is it better to redesign or rebuild my ecommerce store?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "How long does it take to redesign a website?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "How long does a small business website redesign take?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "Why do website redesigns take so long?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "Can a website redesign be done faster?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "Is a redesign faster than building a new website?"
+    },
+    {
+      "path": "/how-long-does-it-take-to-redesign-a-website/",
+      "change": "schema same",
+      "question": "What's the best time of year to launch a website redesign?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema same",
+      "question": "How long does website maintenance take?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema synced",
+      "question": "How much time does it take to maintain a website?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema synced",
+      "question": "How long does scheduled maintenance take on a website?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema same",
+      "question": "What does site maintenance mean?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema synced",
+      "question": "How often should website maintenance be done?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema synced",
+      "question": "Does website maintenance cause downtime?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema same",
+      "question": "How often should you update your website?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema same",
+      "question": "How long does a website update take to go live?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "schema synced",
+      "question": "How long does WordPress maintenance take?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "A typical plan costs $1,140–$4,740 per year. Paying annually usually saves around 20% compared to monthly billing, so a $195/month plan can drop to roughly $156/month when paid yearly.",
+      "to": "A typical plan costs $948–$3,588 per year. Paying annually gives you 2 months free, so a $149/month plan costs $1,490 when paid yearly."
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema same",
+      "question": "How much does website maintenance cost?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema same",
+      "question": "How much does website maintenance cost per month?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How much does website maintenance cost per year?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "What is the average website maintenance cost in 2026?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema same",
+      "question": "What factors affect website maintenance costs?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How much should a small business pay for website maintenance?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How much should I charge for website maintenance?"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How can I reduce website maintenance costs?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "costs around $95/month for basic managed coverage, ~$195/month for standard business sites, and $395+/month for premium plans",
+      "to": "costs around $79/month for basic managed coverage, ~$149/month for standard business sites, and $299+/month for premium plans"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Billing annually typically saves 20%.",
+      "to": "Billing annually gives you 2 months free."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "An Essential-tier plan around $95/month",
+      "to": "An Essential-tier plan around $79/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Pay annually (20% off)",
+      "to": "Pay annually (2 months free)"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "annual billing saves 20%: $228/year on Essential, $468/year on Advanced, and $948/year on Elevate, effectively giving you about two-and-a-half months free.",
+      "to": "annual billing gives you 2 months free: $790/year on Essential, $1,490/year on Growth, and $2,990/year on Business."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "upgrade from Essential to Advanced or Elevate",
+      "to": "upgrade from Essential to Growth or Business"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "a $195/month plan costs less",
+      "to": "a $149/month plan costs less"
+    },
+    {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "schema aligned",
       "question": "What's the difference between a maintenance plan and managed hosting?"
     },
     {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How much does it cost to maintain a WordPress website?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "What does a WordPress care plan cost?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "What does a WordPress maintenance service include?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "Do small websites need WordPress maintenance?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema same",
+      "question": "How much does WooCommerce maintenance cost?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "Can I reduce my WordPress maintenance costs?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "Is annual billing cheaper than monthly?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "How often should a WordPress site be updated?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "Can I switch or upgrade plans later?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "What's the difference between a maintenance plan and managed hosting?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "Is WordPress maintenance worth the cost?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema synced",
+      "question": "What is a WordPress maintenance retainer?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "How often should you redesign your website?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "What is the average lifespan of a website?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "What's the difference between a website redesign and a refresh?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "What are the signs my website needs a redesign?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "Can maintenance help me avoid a redesign?"
+    },
+    {
+      "path": "/how-often-should-you-redesign-your-website/",
+      "change": "schema same",
+      "question": "Will I lose my SEO when I redesign my website?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "Will a website redesign hurt my SEO?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "What is the most important step to protect SEO during a redesign?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "How long does it take to recover rankings after a redesign?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "Should I keep my old URLs when redesigning?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "How long should I keep 301 redirects after a redesign?"
+    },
+    {
+      "path": "/how-to-redesign-a-website-without-losing-seo/",
+      "change": "schema same",
+      "question": "When should SEO be involved in a website redesign?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "Why is website maintenance important?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema same",
+      "question": "What is website maintenance and why is it so important?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "What are the types of website maintenance?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "What happens if you don't maintain your website?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "How does website maintenance help SEO?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "How often should a website be maintained?"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "change": "schema synced",
+      "question": "Is website maintenance worth the cost?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "What does nonprofit website maintenance include?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "How much does website maintenance cost for a nonprofit?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "Why is website maintenance important for nonprofits?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "How often should a nonprofit update its website?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "Can a nonprofit maintain its website itself?"
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "schema same",
+      "question": "What's the most important nonprofit website maintenance task?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "How long does salon SEO take?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "What is the best primary keyword for this article?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Does every salon service need a separate page?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Should every stylist have a profile page?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "How many reviews does a salon need?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Can salons offer discounts for reviews?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Does social media improve salon rankings?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Can one salon rank across an entire city?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Is salon SEO useful for independent hairdressers?"
+    },
+    {
+      "path": "/salon-seo/",
+      "change": "schema same",
+      "question": "Can an SEO company guarantee Google Maps rankings?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "How long does SEO for a barbershop take?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Can a barbershop rank without a website?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "How many Google Business Profile photos should a barbershop upload?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Should every barber have an individual page?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Is Booksy required for barbershop SEO?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Do social media signals directly improve barbershop rankings?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Should a barbershop publish blog content?"
+    },
+    {
+      "path": "/seo-for-barbershops/",
+      "change": "schema same",
+      "question": "Can an SEO company guarantee Map 3-pack placement?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "and save 20% if you choose annual billing",
+      "to": "and get 2 months free if you choose annual billing"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema same",
+      "question": "How much does Shopify website maintenance cost?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema same",
+      "question": "What is included in a Shopify maintenance package?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "How do I maintain a Shopify website?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema same",
+      "question": "Does Shopify have a maintenance mode?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema same",
+      "question": "Do you offer Shopify Plus maintenance and support?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Do you provide ongoing Shopify maintenance, not just one-time builds?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema same",
+      "question": "Do you offer Shopify maintenance services in the USA?"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Can I cancel or change my Shopify maintenance plan?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "starts at $95/month with a year",
+      "to": "starts at $79/month with a year"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema synced",
+      "question": "Is SiteCare a good WordPress maintenance service?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema same",
+      "question": "What's the best SiteCare alternative?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema synced",
+      "question": "Is Website Maintenance Services cheaper than SiteCare?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema same",
+      "question": "Do both include hosting?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema same",
+      "question": "Does SiteCare require a long-term contract?"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "schema same",
+      "question": "Which is better for a small business?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "How much does professional website design cost?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "What's included in a website design package?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "How long does it take to design a website?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do you offer website design for small businesses?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "What's the difference between website design and website development?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do you build custom websites or use templates?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Will my new website be mobile-friendly and responsive?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Is SEO included in your website design services?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Which platforms do you design on — WordPress, Shopify, Squarespace?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do I own my website after it's built?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema same",
+      "question": "What happens after my website launches — is maintenance included?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Can you redesign my existing website instead of building a new one?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do you design websites for specific industries like law firms or healthcare?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema same",
+      "question": "How many revisions are included in the design process?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Will my website be secure and protected from hackers?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do you offer website design packages for agencies (white-label)?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "What information do you need from me to start my website design?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Can you migrate my content from my old website to the new one?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "Do you offer payment plans for website design projects?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "schema synced",
+      "question": "What if I need urgent changes or support after launch?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "How fast can you fix a hacked website?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "How much does it cost to fix a hacked website?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Can you remove a Google blacklist warning?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Will my site get hacked again after cleanup?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Do you fix hacked WordPress sites?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Should I take my website offline while it's hacked?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "How do I know if my website has been hacked?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "What's the difference between a security plugin and professional recovery?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Can a hacked website be fully recovered, or is data always lost?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Do you work with Shopify and Magento stores, or only WordPress?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "What happens if my hosting provider suspended my account?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Will you tell me how the hack happened?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Do I need to change all my passwords after a hack?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Can you recover a hacked site if I don't have a recent backup?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Is my customer data at risk if my website was hacked?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "How do you prevent reinfection after cleanup?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Do you offer emergency support outside business hours?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "What information do you need from me to start the recovery?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Can hacked websites affect my Google rankings permanently?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "schema same",
+      "question": "Do you offer ongoing monitoring after the initial recovery?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "What is website hosting and maintenance?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "What's the difference between website hosting and website maintenance?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "How much does website hosting and maintenance cost?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "Should I bundle hosting and maintenance together?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "What's included in a hosting and maintenance package?"
+    },
+    {
+      "path": "/website-hosting-and-maintenance/",
+      "change": "schema same",
+      "question": "Do I need a website hosting and maintenance contract?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema same",
+      "question": "What should a website maintenance checklist include?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema same",
+      "question": "What is on a monthly website maintenance checklist?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema same",
+      "question": "Is there a free website maintenance checklist template or PDF?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema same",
+      "question": "How often should website maintenance be done?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema synced",
+      "question": "What maintenance services should I consider to keep my site secure and up to date?"
+    },
+    {
+      "path": "/website-maintenance-checklist/",
+      "change": "schema same",
+      "question": "Do different platforms need different checklists?"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "change": "schema same",
+      "question": "What is the website maintenance process?"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "change": "schema synced",
+      "question": "What are the steps in the website maintenance process?"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "change": "schema same",
+      "question": "How often does the maintenance process run?"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "change": "schema synced",
+      "question": "What is the difference between website and web server maintenance?"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "change": "schema same",
+      "question": "Do updates cause downtime during the process?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.",
+      "to": "Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free)."
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "Do you offer website maintenance services in the Netherlands?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "Kan ik mijn website onderhoud en beveiliging uitbesteden?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "Hoe onderhoud je een corporate website na lancering?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "Hoe verloopt de nazorg en ondersteuning bij maatwerk websites?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "Do you maintain webshops and ecommerce sites?"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "schema synced",
+      "question": "What does website maintenance cost in the Netherlands?"
+    },
+    {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
-      "applied": true
+      "from": "/95(?:&nbsp;|\\s)USD\\/mes \\(Essential\\), 195(?:&nbsp;|\\s)USD\\/mes \\(Advanced\\) y 395(?:&nbsp;|\\s)USD\\/mes \\(Elevate\\), con un 20% de descuento en el pago anual/g",
+      "to": "79 USD/mes (Essential), 149 USD/mes (Growth) y 299 USD/mes (Business), o 790, 1.490 y 2.990 USD al año (2 meses gratis)"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -248,6 +1492,212 @@
       "question": "¿Cuánto cuesta el mantenimiento web en España?"
     },
     {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema synced",
+      "question": "Do you offer website maintenance services in Spain?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema synced",
+      "question": "¿Ofrecen servicios de mantenimiento web en España?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema synced",
+      "question": "¿Pueden mantener mi tienda online?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema synced",
+      "question": "¿Cuánto cuesta el mantenimiento web en España?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema same",
+      "question": "Which platforms do you maintain?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.",
+      "to": "Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free)."
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "Do you offer website maintenance services in Switzerland?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "Kann ich die Wartung und Sicherheit meiner Website auslagern?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "Proposez-vous la maintenance de sites web en Suisse ?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "Do you maintain online shops and ecommerce sites?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "What does website maintenance cost in Switzerland?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "schema synced",
+      "question": "Which platforms do you maintain?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "How long does website migration take?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "Will my SEO rankings be affected by migration?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "How much downtime will my site experience?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "How much does website migration cost?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "What platforms and CMS do you support?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "Is my website data and credentials safe?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "Do you offer a guarantee if something breaks?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "Can you migrate a large eCommerce store?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "Do I need to be available during the migration?"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "schema synced",
+      "question": "What happens to my business email during migration?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema synced",
+      "question": "How much does it cost to rebuild a website?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema same",
+      "question": "How long does it take to rebuild a website?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema same",
+      "question": "What's the difference between a website rebuild and a redesign?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema same",
+      "question": "Will I lose my SEO when I rebuild my website?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema same",
+      "question": "How often should you rebuild your website?"
+    },
+    {
+      "path": "/website-rebuild-guide/",
+      "change": "schema same",
+      "question": "Do I need to rebuild my WordPress website?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "What should a website redesign checklist include?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "What is the most important step in a website redesign?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "How do I prepare for a website redesign?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "What is a website redesign SEO checklist?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "What should I check after launching a redesigned website?"
+    },
+    {
+      "path": "/website-redesign-checklist/",
+      "change": "schema same",
+      "question": "How long does a website redesign take using this checklist?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "Does a website redesign affect SEO?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "Why did my rankings drop after a website redesign?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "What is the most important part of website redesign SEO?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "When should SEO be involved in a redesign?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "How do I recover SEO rankings after a redesign?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "Can a website redesign improve SEO?"
+    },
+    {
+      "path": "/website-redesign-seo/",
+      "change": "schema same",
+      "question": "How long does it take for SEO to recover after a redesign?"
+    },
+    {
       "path": "/website-redesign-services/",
       "change": "schema aligned",
       "question": "What's the difference between a redesign and a refresh?"
@@ -255,6 +1705,106 @@
     {
       "path": "/website-redesign-services/",
       "change": "schema aligned",
+      "question": "What ongoing support is available after launch?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Will redesigning my website hurt my SEO rankings?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "How do you redesign a website without losing SEO?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "How long does a website redesign take?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "How much does a website redesign cost?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "What's included in a website redesign SEO checklist?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Do you handle 301 redirects during a redesign?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "How often should a business redesign its website?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Can you redesign my site without changing my CMS?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Do you offer website redesign services for ecommerce sites?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Will my content be preserved during the redesign?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "What happens to my backlinks after a redesign?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Do you provide post-launch SEO monitoring?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Can you redesign a WordPress site without breaking plugins?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "What's the difference between a redesign and a refresh?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Do you work with businesses outside the US?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "What if something breaks after launch?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Do I need a full redesign or just a partial update?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "How do you handle mobile responsiveness in a redesign?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
+      "question": "Will I be involved in the design process?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema synced",
       "question": "What ongoing support is available after launch?"
     },
     {
@@ -300,6 +1850,11 @@
     {
       "path": "/website-repair-services/",
       "change": "schema aligned",
+      "question": "What Is Website Repair, Exactly?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema aligned",
       "question": "What's the difference between repair and maintenance?"
     },
     {
@@ -311,6 +1866,276 @@
       "path": "/website-repair-services/",
       "change": "schema aligned",
       "question": "What causes a white screen of death?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema synced",
+      "question": "What Is Website Repair, Exactly?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How to fix a broken website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema synced",
+      "question": "What causes a white screen of death?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How to fix a 500 Internal Server Error on WordPress?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How do I fix broken 404 links on my website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How to resolve WordPress plugin conflicts?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Why is my website contact form not sending emails?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Why is my WooCommerce checkout not working?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How to repair a hacked website or malware infection?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema synced",
+      "question": "What's the difference between repair and maintenance?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema synced",
+      "question": "What's the difference between repair and redesign?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How fast is emergency website repair vs scheduled repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How much does website repair cost?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How fast can you fix my website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Do I need someone local to fix my website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Will you lose my data during the repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you fix a hacked website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Do you work with WordPress specifically?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you fix Shopify, Wix, or Webflow sites too?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "What's the difference between repair and maintenance?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "What's the difference between repair and redesign?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Will fixing my website affect my SEO rankings?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "What if the problem comes back after you fix it?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Do you offer emergency website repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you fix a broken contact form?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "My checkout isn't processing payments — can you help?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "What causes a white screen of death?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you fix a 500 internal server error?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Do you provide a written report after the repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you repair a website without redesigning it?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "How do I know if I need a repair or a full rebuild?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Do you offer ongoing support after the repair is complete?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema same",
+      "question": "Can you fix issues caused by a bad plugin update?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema synced",
+      "question": "Is my industry supported (healthcare, legal, nonprofit, etc.)?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "What does a website SEO service include?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "How much do SEO services cost?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "How long does SEO take to show results?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you offer local SEO services near me?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "What's the difference between on-page and off-page SEO?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you provide monthly SEO plans or one-time audits?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Will redesigning my website hurt my SEO rankings?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Can you fix technical SEO issues like Core Web Vitals?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you offer SEO services for WordPress websites?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you provide SEO for Shopify or ecommerce stores?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema same",
+      "question": "Do you offer SEO for law firms and healthcare providers?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "What is included in a website SEO audit?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "How do you optimize a Google Business Profile?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you use white-hat, Google-approved SEO practices?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Will I get detailed SEO reporting each month?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Can SEO help my site recover from a Google penalty or hack?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Is SEO better than paid ads for small businesses?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do you offer affordable SEO packages for small businesses?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "How is AI search (AI Overviews, ChatGPT) changing SEO?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "schema synced",
+      "question": "Do I need a contract, or can I cancel my SEO plan anytime?"
     },
     {
       "path": "/website-speed-optimization-services/",
@@ -333,9 +2158,274 @@
       "question": "How does speed optimization work with your maintenance & security plans?"
     },
     {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Does website speed affect SEO rankings?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Does page speed impact conversion rates?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema same",
+      "question": "Why is my WordPress website slow on mobile?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What is website speed optimization?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "How much does website speed optimization cost?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What is a good page speed score?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What are Google Core Web Vitals?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Why is my WordPress website slow?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "How long does website speed optimization take?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Does website speed affect SEO rankings?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Does page speed impact conversion rates?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What is the best way to speed up a WordPress site?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Can you speed up a WooCommerce store without breaking functionality?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Is Elementor slow, and can it be optimized?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What causes render-blocking resources?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What is lazy loading and how does it help speed?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Do you use LiteSpeed or Cloudflare for optimization?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Will optimization affect my website's design or content?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Do I need a CDN for my website?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "How do you optimize mobile page speed?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "Is website speed optimization a one-time service or ongoing?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "How does speed optimization work with your maintenance & security plans?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema synced",
+      "question": "What tools do you use to test and verify speed improvements?"
+    },
+    {
       "path": "/website-update-services/",
       "change": "shown",
       "question": "What happens when a WordPress update breaks your site?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema synced",
+      "question": "What Is a Website Update Service?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What happens when a WordPress update breaks your site?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema synced",
+      "question": "What Is a Website Update Service?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "How often should a website be updated?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "How much do website updates cost?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Can a website update break my site?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Do you work with all types of websites or just WordPress?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "How long does a website update take?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What happens if an update breaks something?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Do I need to be available when updates are happening?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What is included in the monthly maintenance report?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Do you update websites outside of WordPress?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Is there a contract or can I cancel anytime?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What is the difference between website maintenance and website hosting?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Should I hire a freelancer or a maintenance agency for website updates?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "How do you handle security if my site gets hacked?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Do you work with WooCommerce websites?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What is a staging environment and do I need one?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "How do website updates affect my SEO?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What if I use a page builder like Elementor or Divi?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Can you update my website if I do not know my login credentials?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "Do you offer white-label maintenance for web agencies?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema same",
+      "question": "What makes your service different from a cheap $19/month maintenance plugin?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "schema synced",
+      "question": "Do you offer one-time website updates instead of monthly plans?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "What does website maintenance include?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "How often should website maintenance be done?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "What's the difference between website maintenance and website management?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "Do I really need website maintenance?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "Can I do website maintenance myself?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "schema same",
+      "question": "What does a WordPress maintenance plan include?"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -346,6 +2436,537 @@
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "schema aligned",
       "question": "Do you offer white label WordPress maintenance specifically?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "What is white label website maintenance?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "How does white label WordPress maintenance work for agencies?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Will my clients know you're maintaining their site?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "What's included in a white label website maintenance plan?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "Do you offer white label WordPress maintenance specifically?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "How much does a white label website maintenance retainer cost?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Is there a minimum number of sites required to become a partner?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Can I get monthly white label services without a long-term contract?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "How fast do you respond to emergency support requests?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Do you provide white label client reporting under our branding?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "What platforms do you support besides WordPress?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "Do you offer white label WordPress care plans?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "How do backups and security work under your plans?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "What happens if a client's site gets hacked?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Will we have a dedicated account manager?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "How does your agency dashboard work?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Can you handle unlimited small fixes and edits?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "How do you onboard a new agency partner?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema synced",
+      "question": "Do you sign an NDA to protect our client relationships?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema same",
+      "question": "Can we white label your website migration and redesign services too?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "What is white label WordPress maintenance?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema synced",
+      "question": "How much does white label WordPress maintenance cost?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "How is your pricing different for more client sites?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "How does white label WordPress support work?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema synced",
+      "question": "How much can I earn reselling white label WordPress care?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema synced",
+      "question": "How does it compare to GoWP and WP Buffs?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "Is the service really 100% white label?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "Do you offer white label WordPress security services for client websites?"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "schema same",
+      "question": "How do I become a white label WordPress maintenance partner?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What is a WordPress backup service?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "How often should a WordPress site be backed up?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Where are backups stored?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "How long does a restore take?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What's the difference between a backup plugin and a backup service?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Will backups slow down my website?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What's included in a full WordPress backup?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Can I restore just one page instead of the whole site?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What happens if my site gets hacked — can a backup fix that?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "How much does a WordPress backup service cost?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Do I need a backup service if my host already backs up my site?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What is off-site backup?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Can backups protect against ransomware?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "How long are backups kept (retention)?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Is WordPress backup necessary for a small business site?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What's the difference between incremental and full backups?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Do you test that backups actually work?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Can agencies white-label this service for their clients?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What if I'm on shared hosting — does that change anything?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "Do you support WooCommerce and e-commerce backups?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "What happens during the free backup audit?"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "schema same",
+      "question": "How do I get started?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "How long does WordPress malware removal take?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Will my website go offline during the malware removal process?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "How do I know if my WordPress site has malware?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "What does WordPress malware removal include?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "What if the malware comes back after cleanup?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Do I need to share my WordPress password? Is that safe?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Can you remove malware from a WooCommerce site?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Why couldn't my security plugin (Wordfence / MalCare) fix it?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "How did my WordPress site get infected in the first place?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Do you fix the vulnerability that caused the infection?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Can you remove my site from Google's blacklist?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "schema synced",
+      "question": "Do you offer ongoing security monitoring after cleanup?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "price",
+      "from": "starting around $95/month",
+      "to": "starting around $79/month"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "Can I scan my WordPress site for malware for free?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "What is the best free WordPress malware scanner?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "Can malware be in my WordPress database?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema synced",
+      "question": "How do I know if my WordPress site has been blacklisted by Google?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "Will removing malware remove my content?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "How do I prevent WordPress malware from coming back?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema same",
+      "question": "Is WordPress malware removal covered by my hosting plan?"
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "change": "schema synced",
+      "question": "How much does professional WordPress malware removal cost?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "What is the most important WordPress security step?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "Can a security plugin make my WordPress site completely secure?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "Why do WordPress sites get hacked so often?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "How often should I check my WordPress security?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "Do I need to disable XML-RPC on WordPress?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "schema same",
+      "question": "What should I do first if my WordPress site is hacked?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "price",
+      "from": "costs from $95/month",
+      "to": "costs from $79/month"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema same",
+      "question": "Can a hacked WordPress site be fully recovered?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema same",
+      "question": "Will Google remove my site from search results if it's hacked?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema same",
+      "question": "How do hackers get into WordPress sites?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema same",
+      "question": "How long does it take for Google to remove the hacked site warning?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema same",
+      "question": "Should I rebuild my WordPress site after a hack?"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "schema synced",
+      "question": "How much does it cost to fix a hacked WordPress site?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "Why is my WordPress site so slow even with caching?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "Why is my WordPress dashboard slow?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "How do I check my WordPress site speed?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "What is a good WordPress page speed score?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "Does the number of WordPress plugins affect speed?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "Does WordPress hosting affect site speed?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "What is the fastest WordPress caching plugin?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "How do I speed up WordPress without plugins?"
+    },
+    {
+      "path": "/wordpress-speed-optimization/",
+      "change": "schema same",
+      "question": "Can a slow WordPress site hurt my SEO?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "is $95/month for WP Starter, $195/month for the most popular WP Growth plan, and $395/month for WP Premium. Pay annually to save 20% ($76, $156, and $316/month respectively).",
+      "to": "is $79/month for Essential, $149/month for the most popular Growth plan, and $299/month for Business. Pay annually for $790, $1,490, and $2,990 per year (2 months free)."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Annual billing saves 20% — that's $228/year on WP Starter, $468/year on WP Growth, and $948/year on WP Premium.",
+      "to": "Annual billing gives you 2 months free: $790/year on Essential, $1,490/year on Growth, and $2,990/year on Business."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Choose WP Starter for blogs and small sites, WP Growth for lead-generating business websites (our most popular package), and WP Premium for",
+      "to": "Choose Essential for blogs and small sites, Growth for lead-generating business websites (our most popular package), and Business for"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "The WP Premium plan includes full WooCommerce",
+      "to": "The Business plan includes full WooCommerce"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "What are WordPress website maintenance packages?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "How much do WordPress maintenance packages cost?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "What is included in a WordPress monthly maintenance package?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Do you offer monthly and annual WordPress maintenance plans?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Which WordPress maintenance plan is right for me?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Do your packages cover WooCommerce stores?"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "schema synced",
+      "question": "Can I cancel or change my WordPress maintenance plan?"
     }
   ]
 }

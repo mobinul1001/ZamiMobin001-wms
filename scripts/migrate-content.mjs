@@ -24,6 +24,15 @@ const SERVICE_LINKS = [
   { path: '/monthly-website-maintenance-packages/', phrase: /malware removal/i },
 ];
 const SERVICE_URL = '/wordpress-malware-removal-service/';
+// Owner: a page whose body is mostly another language uses it for lang and the meta description.
+// Spain was checked too: its body is about half English and half Spanish, so it stays en-US.
+const PAGE_LANGUAGE = {
+  '/website-maintenance-services-for-brazil/': {
+    lang: 'pt-BR',
+    ogLocale: 'pt_BR',
+    description: 'Manutenção de sites confiável para empresas no Brasil. Mantemos seu site rápido, seguro e atualizado, com cuidado e monitoramento especializado.',
+  },
+};
 const cells = (line) => {
   const o = [];
   let c = '';
@@ -331,10 +340,18 @@ for (const [u, m] of pages) {
     if (q && !plainBody.includes(q)) log.faqMissing.push({ path, q: f.q });
   }
   const r = restByLink.get(u);
+  const language = PAGE_LANGUAGE[path];
+  if (language) {
+    Object.assign(record.socialTags, { 'og:locale': language.ogLocale, 'og:title': keywordMap.get(path).newTitle, 'og:description': language.description });
+    for (const node of schema.flatMap((d) => d['@graph'] ?? [d])) {
+      if ([].concat(node['@type'] ?? []).includes('WebPage')) Object.assign(node, { name: keywordMap.get(path).newTitle, description: language.description, inLanguage: language.lang });
+    }
+  }
   const front = {
     path,
+    ...(language ? { lang: language.lang } : {}),
     title: keywordMap.get(path).newTitle,
-    description: record.metaDescription ?? '',
+    description: language?.description ?? record.metaDescription ?? '',
     robots: ['/get-a-free-quote/', '/free-website-maintenance-audit/'].includes(path) ? 'noindex, follow' : record.robots ?? '',
     h1,
     social: record.socialTags ?? {},
