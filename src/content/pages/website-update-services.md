@@ -23,21 +23,7 @@ Your website works hardest when no one is watching — processing updates, servi
 
 <div class="card">
 
-managed-update-engine.v4
-
-● Active Auto-Protection
-
-<p class="pair"><strong>WordPress Core &amp; Plugin Updates</strong> <span>Tested &amp; Applied Monthly</span></p>
-
-Fully Updated
-
-<p class="pair"><strong>Pre-Update Cloud Backup</strong> <span>Off-Site Encrypted Storage</span></p>
-
-Verified Safe
-
-<p class="pair"><strong>Staging Environment Testing</strong> <span>Functionality &amp; QA Checked</span></p>
-
-Passed QA
+<div class="status-panel"><p class="status-head"><span>● Active Auto-Protection</span><span class="tag">Example</span></p><p class="status-row"><strong>WordPress Core &amp; Plugin Updates</strong> <span>Tested &amp; Applied Monthly</span> <em>Fully Updated</em></p><p class="status-row"><strong>Pre-Update Cloud Backup</strong> <span>Off-Site Encrypted Storage</span> <em>Verified Safe</em></p><p class="status-row"><strong>Staging Environment Testing</strong> <span>Functionality &amp; QA Checked</span> <em>Passed QA</em></p></div>
 
 </div>
 

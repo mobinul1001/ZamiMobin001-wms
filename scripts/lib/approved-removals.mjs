@@ -221,6 +221,12 @@ const DUPLICATE_LINES = {
   '/website-maintenance-services-for-france/': 'Website Maintenance Services for France',
   '/website-maintenance-services-for-ireland/': 'Website Maintenance Services for Ireland',
   '/website-repair-services/': 'emergency-repair-engine.v2',
+  '/website-design-services/': 'responsive-ui-frame.v2',
+  '/website-migration-services/': 'migration-pipeline.v2',
+  '/website-seo-services/': 'seo-performance-tracker.v2',
+  '/website-update-services/': 'managed-update-engine.v4',
+  '/wordpress-backup-services/': 'offsite-backup-engine.v2',
+  '/wordpress-malware-removal-service/': 'security-scanner.v4',
 };
 
 export function applyApprovedRemovals($, path) {

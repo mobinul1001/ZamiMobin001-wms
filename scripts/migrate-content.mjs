@@ -131,6 +131,7 @@ service.addRule('eyebrow', {
   filter: (n) => n.getAttribute('data-eyebrow') !== null,
   replacement: (content) => `\n\n<p class="eyebrow">${content.trim()}</p>\n\n`,
 });
+const PANEL_PAGES = ['/website-repair-services/', '/website-design-services/', '/website-migration-services/', '/website-seo-services/', '/website-update-services/', '/wordpress-backup-services/', '/wordpress-malware-removal-service/'];
 const safe = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const pairHtml = (n) => {
   const [a, b] = JSON.parse(n.getAttribute('data-pair'));
@@ -143,8 +144,8 @@ service.addRule('pair', {
 service.addRule('statusPanel', {
   filter: (n) => n.getAttribute('data-status-panel') !== null,
   replacement: (_, n) => {
-    const { head, rows } = JSON.parse(n.getAttribute('data-status-panel'));
-    return `\n\n<div class="status-panel"><p class="status-head"><span>${safe(head)}</span><span class="tag">Example</span></p>${rows.map(([t, d, s]) => `<p class="status-row"><strong>${safe(t)}</strong> <span>${safe(d)}</span> <em>${safe(s)}</em></p>`).join('')}</div>\n\n`;
+    const { head, rows, notes } = JSON.parse(n.getAttribute('data-status-panel'));
+    return `\n\n<div class="status-panel"><p class="status-head"><span>${safe(head)}</span><span class="tag">Example</span></p>${rows.map(([t, d, s]) => `<p class="status-row"><strong>${safe(t)}</strong> ${d ? `<span>${safe(d)}</span> ` : ''}<em>${safe(s)}</em></p>`).join('')}${notes.map((x) => `<p class="status-note">${safe(x)}</p>`).join('')}</div>\n\n`;
   },
 });
 service.addRule('cardGrid', {
@@ -330,14 +331,31 @@ async function convert(path, record) {
     const kids = $(a).children('span, b, strong, small, em, div, p');
     if (kids.length > 1) kids.each((_, k) => { $(k).after(' '); });
   });
-  // The old repair panel: rows of title, detail and status, shown as an example.
-  const panelHead = $('span').filter((_, s) => $(s).children().length === 0 && $(s).text().trim() === 'Issue Fixed ✔').first();
-  if (panelHead.length) {
+  // The old fake panels on service pages: rows of title, detail and status, now shown as an example.
+  if (PANEL_PAGES.includes(path)) {
+    const panelHead = $('span').filter((_, s) => /^(●|Issue Fixed ✔)/.test($(s).text().trim()) && !$(s).find('span').toArray().some((k) => $(k).text().trim())).first();
+    if (!panelHead.length) throw new Error(`${path}: panel head not found`);
+    const head = panelHead.text().replace(/\s+/g, ' ').trim();
     let panel = panelHead.parent();
-    while (panel.length && !panel.find('.space-y-3').length) panel = panel.parent();
-    const rows = panel.find('.space-y-3').first().children('div').toArray().map((r) => $(r).find('span').toArray().map((s) => $(s).text().trim()).filter(Boolean));
-    if (rows.length < 2 || rows.some((r) => r.length !== 3)) throw new Error(`${path}: repair panel rows changed`);
-    panel.replaceWith($('<div data-status-panel="">x</div>').attr('data-status-panel', JSON.stringify({ head: panelHead.text().trim(), rows })));
+    while (panel.text().trim().length < head.length + 40) panel = panel.parent();
+    panelHead.remove();
+    const clean = (n) => $(n).text().replace(/\s+/g, ' ').trim();
+    const filled = (n) => $(n).children().toArray().filter((k) => clean(k));
+    const leaves = (n) => (filled(n).length ? filled(n).flatMap(leaves) : [clean(n)]);
+    const rows = [];
+    const notes = [];
+    const walk = (n) => {
+      const kids = filled(n);
+      if (!kids.length) { if (clean(n)) notes.push(clean(n)); return; }
+      if (kids.length === 2) {
+        const [a, b] = [leaves(kids[0]), leaves(kids[1])];
+        if (a.length <= 2 && b.length === 1 && b[0].split(' ').length <= 4) { rows.push([a[0], a[1] ?? '', b[0]]); return; }
+      }
+      kids.forEach(walk);
+    };
+    walk(panel[0]);
+    if (rows.length < 2 || notes.join(' ').split(' ').length > 40) throw new Error(`${path}: panel rows changed`);
+    panel.replaceWith($('<div>x</div>').attr('data-status-panel', JSON.stringify({ head, rows, notes })));
   }
   // Two short text pieces with no space between them ran together ("10Countries served"): number or title, then its label.
   $('div, span').each((_, e) => {

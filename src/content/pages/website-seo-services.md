@@ -25,21 +25,7 @@ Looking for complete site care? Pair your organic growth with our [ongoing websi
 
 <div class="card">
 
-seo-performance-tracker.v2
-
-● Real-time SEO Growth
-
-<p class="pair"><strong>Organic Search Traffic</strong> <span>+142% Growth</span></p>
-
-Target Keywords
-
-Page 1 Top 3
-
-Technical SEO Audit
-
-98/100 Passed
-
-Trusted SEO Agency • US, UK, CA & AU
+<div class="status-panel"><p class="status-head"><span>● Real-time SEO Growth</span><span class="tag">Example</span></p><p class="status-row"><strong>Organic Search Traffic</strong> <em>+142% Growth</em></p><p class="status-row"><strong>Target Keywords</strong> <em>Page 1 Top 3</em></p><p class="status-row"><strong>Technical SEO Audit</strong> <em>98/100 Passed</em></p><p class="status-note">Trusted SEO Agency • US, UK, CA &amp; AU</p></div>
 
 </div>
 

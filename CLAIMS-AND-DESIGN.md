@@ -87,29 +87,30 @@ Replaces "Calm engineering" (owner, 2026-11-01), which looked too plain: mostly 
 **Goal:** the site should look like a premium software product, and the visitor should still see exactly what they get and what it costs. Honest claims and visible prices remain the advantage.
 
 ### B1. Look
-Two directions go to the owner as homepage mockups. The owner chooses one, and it then applies to every template.
-- **A, Dark premium:** dark navy background sections with brand purple glow and gradients in CSS only, in the spirit of linear.app and vercel.com.
-- **B, Light vibrant:** white base with bold purple gradients, colourful cards and large visuals, in the spirit of stripe.com and framer.com.
+One design with two themes (owner, 2026-11-01), switched by a sun/moon button in the header. The default follows the visitor's system setting, the choice is remembered, and an inline script in `<head>` sets the theme so there is no flash on load.
+- **Dark:** dark navy with brand purple glow and gradients in CSS only, in the spirit of linear.app and vercel.com.
+- **Light:** white base with bold purple gradients and colourful cards, in the spirit of stripe.com and framer.com.
 
-Both directions:
+Both themes pass contrast checks and keep CLS 0. Also in both:
 - **Colour:** the brand purple and the purple/neon style of the blog images. Text keeps readable contrast.
 - **Type:** one self-hosted sans-serif (Inter). Big bold headings, 56–72px on desktop, clear hierarchy and generous spacing. Body at least 16px. Tabular figures for prices.
 - **Visual motif:** a large "live maintenance dashboard" built in HTML, CSS and SVG, clearly labelled "Example". Nothing in it is presented as a real client result.
 - **Icons:** inline SVG line icons (Lucide). No icon library download.
 - **Buttons:** real buttons for every call to action, not plain text links.
 - **Motion:** hover lift and scroll fade-in only, and none under prefers-reduced-motion. No carousels, popups or countdowns.
+- **Spacing:** one container (1200px), section padding 112px on desktop and 64px on mobile, an 8px spacing scale, one type scale, text at most 65ch, everything on the same grid.
 - **Imagery:** real team photos when the owner supplies them; no stock people.
 
 ### B2. Homepage structure
 1. **First screen:** H1 "Website Maintenance Services & Support", subline, offer line "Plans from $79/mo · First month free · Free hosting for 1 year · No contract", real buttons on the left; large dashboard visual, labelled "Example", on the right. Then the row "Dhaka-based team · US & UK hours · 30+ websites maintained".
-2. **Platforms we support:** WordPress, WooCommerce, Shopify.
+2. **Platforms we support:** WordPress, WooCommerce, Shopify, all logos the same height.
 3. **What's included:** bento grid with icons and mini visuals.
 4. **Pricing:** master plan cards with a monthly/annual toggle ("2 months free"). Growth highlighted by a gradient border and glow.
 5. **How it works:** 4-step timeline with a connecting line.
 6. **Example monthly report**, labelled "Example".
 7. **Websites we look after:** portfolio block (A4), when the owner confirms the table.
 8. **Comparison:** WMS, freelancer and typical agency, shown as cards. No competitor brand names on the homepage.
-9. **Existing homepage content:** all kept and regrouped (text stays in the HTML). FAQ as an accordion.
+9. **Existing homepage content:** all kept, each part in the new design as a proper section, not accordions under the bento. "Find us on": one row of profile names, no badges, ratings or stars. FAQ as an accordion.
 10. **Final CTA:** dark gradient band with buttons.
 
 ### B3. Pricing page (most important commercial page)
@@ -131,4 +132,4 @@ Both directions:
 - No heavy libraries. Glow, gradients and charts in CSS and inline SVG. The cookie bar must not cover the first-screen button on phones. Third-party scripts load only after consent.
 
 ### B6. What to deliver for approval
-Two static homepage mockups, A and B, desktop and mobile, full page. Wait for the owner's choice before changing the other templates or writing new text into pages.
+One static homepage mockup, both themes, desktop and mobile, full page. Wait for the owner's approval before changing the templates or writing new text into pages.

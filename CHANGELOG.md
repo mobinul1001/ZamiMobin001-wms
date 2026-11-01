@@ -187,3 +187,10 @@
 - Approved removals: repeated line under the H1 on about, UK, Canada, France, Ireland; fake label on repair; 99.99% Uptime SLA on white-label agencies.
 - Service and country body now lines up with the page heading.
 - Research and outlines: reports/content-outlines/. No new text in pages.
+
+## One design, two themes (2026-11-01)
+- Mockups A and B merged into mockups/v2/home.html: light and dark themes, sun/moon switch, default from the system setting, choice remembered, no flash.
+- Every homepage section is in the new design; the 3 accordions became sections; one container, 8px spacing and one type scale; wider headline and larger dashboard; platform logos one height.
+- "Find us on" row replaces the badges in the mockup only. The live page keeps them until the design is approved.
+- Fake panels removed on design, migration, SEO, updates, backup and malware, the same way as repair: label gone, rows kept, labelled "Example".
+- Outlines updated with the owner's answers. Cancel, edit hours and response times are still open.

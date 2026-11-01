@@ -21,37 +21,7 @@ Move your website to any host or platform without losing traffic, data, or SEO r
 
 <div class="card">
 
-migration-pipeline.v2
-
-● Live Transfer
-
-<div class="cards">
-
-<div class="card">
-
-<p class="pair"><strong>Old Hosting</strong> <span>Source Server</span></p>
-
-</div>
-
-<div class="card">
-
-<p class="pair"><strong>New Hosting</strong> <span>Optimized Server</span></p>
-
-</div>
-
-</div>
-
-Database & Files Transferred
-
-Verified
-
-SEO & 301 Redirect Mapping
-
-Preserved
-
-DNS Cutover & SSL Check
-
-In Progress
+<div class="status-panel"><p class="status-head"><span>● Live Transfer</span><span class="tag">Example</span></p><p class="status-row"><strong>Old Hosting</strong> <em>Source Server</em></p><p class="status-row"><strong>New Hosting</strong> <em>Optimized Server</em></p><p class="status-row"><strong>Database &amp; Files Transferred</strong> <em>Verified</em></p><p class="status-row"><strong>SEO &amp; 301 Redirect Mapping</strong> <em>Preserved</em></p><p class="status-row"><strong>DNS Cutover &amp; SSL Check</strong> <em>In Progress</em></p></div>
 
 </div>
 

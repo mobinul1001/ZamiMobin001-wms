@@ -23,23 +23,7 @@ We don't just install a plugin and walk away. **A real person checks your backup
 
 <div class="card">
 
-offsite-backup-engine.v2
-
-● Off-Site Backup Active
-
-<p class="pair"><strong>Daily Database &amp; Files Snapshot</strong> <span>Off-Site Encrypted Storage</span></p>
-
-Verifed
-
-<p class="pair"><strong>Human-Verified Restore Test</strong> <span>Tested in Staging Environment</span></p>
-
-Passed Today
-
-<p class="pair"><strong>Rolling Backup History</strong> <span>Restore to Any Date In History</span></p>
-
-90-Day Archive
-
-Off-Site Storage • 1-Click Restores
+<div class="status-panel"><p class="status-head"><span>● Off-Site Backup Active</span><span class="tag">Example</span></p><p class="status-row"><strong>Daily Database &amp; Files Snapshot</strong> <span>Off-Site Encrypted Storage</span> <em>Verifed</em></p><p class="status-row"><strong>Human-Verified Restore Test</strong> <span>Tested in Staging Environment</span> <em>Passed Today</em></p><p class="status-row"><strong>Rolling Backup History</strong> <span>Restore to Any Date In History</span> <em>90-Day Archive</em></p><p class="status-note">Off-Site Storage • 1-Click Restores</p></div>
 
 </div>
 

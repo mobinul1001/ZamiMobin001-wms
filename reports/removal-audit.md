@@ -342,6 +342,7 @@
 
 ## /website-design-services/
 
+- responsive-ui-frame.v2
 - Unlimited Pages & Custom Animations
 - Advanced CRM / API & Payment Gateway Setup
 - Dedicated Senior Project Manager
@@ -569,6 +570,7 @@
 
 ## /website-migration-services/
 
+- migration-pipeline.v2
 - Single Website Transfer (up to 1GB)
 - Shared Host to Shared Host
 - Database & Core Files Transfer
@@ -602,6 +604,7 @@
 
 ## /website-seo-services/
 
+- seo-performance-tracker.v2
 - Dedicated Strategist
 - Direct access to an experienced lead SEO engineer with 12+ years of hands-on experience, not a junior account manager.
 - Local SEO & Google Business Profile
@@ -634,6 +637,7 @@
 
 ## /website-update-services/
 
+- managed-update-engine.v4
 - Starter Plan
 - Brochure Sites
 - For simple brochure websites and personal sites
@@ -807,6 +811,7 @@
 
 ## /wordpress-backup-services/
 
+- offsite-backup-engine.v2
 - Starter Tier
 - Brochure Sites
 - Best for small brochure sites & blogs
@@ -859,6 +864,7 @@
 
 ## /wordpress-malware-removal-service/
 
+- security-scanner.v4
 - Full File & Database Malware Scan
 - Infected Code & Shell Removal
 - Backdoor Access Elimination

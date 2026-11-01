@@ -23,7 +23,7 @@ Why you need it, what is in every plan, plan cards, monthly vs annual, add-ons, 
 |---|---|---|---:|---|
 | 1 | What Do WordPress Website Maintenance Services Include? | First screen | 300 | Core, plugin and theme updates, backups, scans, uptime, edits. Plain definitions. |
 | 2 | A WordPress Monthly Maintenance Routine, Week by Week | "What's Included in Every Plan?" | 350 | What happens each week and month on each plan, from the plan features only. Links to the checklist. |
-| 3 | How We Update WordPress Without Breaking Your Site | "How Our WordPress Maintenance Works" | 300 | Backup first, plugin conflicts, rolling back. Staging-tested updates are on Business only. **Owner input 5** for builders and PHP. |
+| 3 | How We Update WordPress Without Breaking Your Site | "How Our WordPress Maintenance Works" | 300 | Backup first, plugin conflicts, rolling back. Staging-tested updates are on Business only. Builders: Elementor, Divi, Beaver Builder, WPBakery and Gutenberg. PHP: we upgrade sites from 7.4 to 8.x. |
 | 4 | When a WordPress Site Is Hacked or Goes Down | After section 3 | 300 | What each plan covers: malware removal from Growth, 24/7 emergency fixes on Business. Links to malware and repair pages. Only the approved promises. |
 | 5 | WordPress Security and Backups on Every Plan | After section 4 | 250 | Security scan, backup retention 30, 60, 90 days by plan. Links to backup and security guides. |
 | 6 | Do It Yourself or Hire a WordPress Maintenance Company? | "How to Choose" | 300 | Honest trade-offs, tasks and time. Links to the cost post rather than covering cost here. |
@@ -33,8 +33,8 @@ Why you need it, what is in every plan, plan cards, monthly vs annual, add-ons, 
 1. How often should WordPress be updated?
 2. Will updates break my WordPress site?
 3. Can you maintain a WordPress site someone else built?
-4. Do you work with page builders like Elementor? **Owner input 5**
-5. What happens to my WordPress site if I cancel? **Owner input 1**
+4. Do you work with page builders like Elementor? Yes: Elementor, Divi, Beaver Builder, WPBakery and Gutenberg.
+5. What happens to my WordPress site if I cancel? **Open, see README**
 
 ## Internal links to add
 `/how-much-does-wordpress-website-maintenance-cost/`, `/wordpress-security-checklist/`, `/wordpress-backup-services/`, `/wordpress-malware-removal-service/`, `/website-update-services/`, `/website-repair-services/`, `/website-speed-optimization-services/`, `/ecommerce-website-maintenance-packages/`, `/website-maintenance-checklist/`.

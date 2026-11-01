@@ -1,6 +1,6 @@
 # Content outlines: homepage, pricing, WordPress
 
-Status: **outlines for owner review. Nothing here has been written into any page.** New text waits until the owner chooses design A or B and approves the outline.
+Status: **outlines for owner review. Nothing here has been written into any page.** New text waits until the owner approves the design screenshots.
 
 ## How this was measured (2026-11-01)
 - Results come from the search tool, US. **Its order can differ from Google's.** Directories and forum or notion-style posts were skipped.
@@ -22,13 +22,28 @@ The WordPress page has the largest gap, about 2,000 words. The pricing page is a
 - No invented facts: no new statistics, clients, reviews, results or promises. Items marked **Owner input** cannot be written until the owner answers.
 - Every link target below was checked against the current build.
 
-## Decisions needed from the owner
-These block only the sections that are marked with them:
-1. What happens on cancel: who keeps the site files, hosting and email?
-2. Do unused edit hours roll over, and what counts as an edit?
-3. A response time per plan, if the owner wants one stated.
-4. Add-on prices, if they should be shown.
-5. Which page builders and PHP setups we support on WordPress.
+## Owner answers (2026-11-01)
+- **Plan changes:** upgrade or downgrade anytime; takes effect from the next billing month.
+- **Page builders and PHP:** Elementor, Divi, Beaver Builder, WPBakery and Gutenberg; we upgrade sites from PHP 7.4 to 8.x.
+- **Add-on prices:** "Ask for a price".
+
+## Still open
+The owner said to use the answers in `STATUS.md`, but it lists these only as open questions. These sections stay unwritten until answered:
+1. **Cancel:** recorded so far: "No contract. Cancel anytime." and hosting after the first year at $19/month or $190/year. Not recorded: who keeps the files, hosting and email after cancelling.
+2. **Edit hours:** recorded so far: "small text, image or layout changes". Not recorded: whether unused hours roll over.
+3. **Response time per plan:** recorded so far: "Repair work usually starts the same business day." and 24/7 emergency fixes on Business. Not recorded: a response time for each plan.
+
+## "Find us on" profiles, for the owner to confirm
+| Profile | Link | Checked |
+|---|---|---|
+| Clutch | clutch.co/profile/website-maintenance-services | Page opens, our profile |
+| GoodFirms | goodfirms.co/company/website-maintenance-services | Page opens, our profile |
+| Sortlist | sortlist.com/agency/website-maintenance-services-usa | Page opens, our profile |
+| Techreviewer | techreviewer.co/companies/website-maintenance-services | Page opens, our name and domain |
+| C2C Review | c2creview.co/company/website-maintenance-services | Page opens, our name and domain |
+| Trustpilot | trustpilot.com/review/websitemaintenanceservices.org | Page opens, claimed profile, no reviews yet |
+| Agency Spotter | agencyspotter.com/website-maintenance-services | Could not check: the site blocked the request |
+| ITFirms | itfirms.co | Left out: the old link goes to their homepage, not a profile |
 
 ## One existing heading to check
 The homepage has the H2 "Plans and pricing". "Plans" and "pricing" belong to the packages page. The heading is short and has no "website maintenance" in it, so it is left as it is. The owner can ask for it to change.

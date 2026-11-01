@@ -9,8 +9,8 @@ Not pushing yet. A plan and the owner's approval before each step. Commit locall
 
 | Step | Status |
 |---|---|
-| 1. Design review screenshots | Done. Mockups A and B built: `mockups/v2/`, screenshots in `reports/mockups-v2/`. **Waiting for the owner to choose A or B.** |
-| 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Research and outlines done for homepage, pricing and WordPress: `reports/content-outlines/`. No new text goes into pages until the owner chooses A or B and approves the outlines. |
+| 1. Design review screenshots | Done. Owner chose both, as two themes of one design. Mockup: `mockups/v2/home.html`, screenshots in `reports/mockups-v2/`. **Waiting for the owner to approve the screenshots before any template changes.** |
+| 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Research and outlines done for homepage, pricing and WordPress: `reports/content-outlines/`. No new text goes into pages until the owner approves the design screenshots. |
 | 3. Service pages: problem, included, price, FAQ | Not started. |
 | 4. H2/H3 keyword edits and internal-link hub | Not started. |
 | 5. Sveltia CMS in local mode | Not started. |
@@ -35,10 +35,19 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Duplicate line under the H1 removed on about, UK, Canada, France and Ireland.
 - A "99.99% Uptime SLA" stat on the white-label agencies page had escaped the check because its text was joined to the next word. The owner had already removed this claim, so it is now removed.
 
+- The same fake panels are fixed on design, migration, SEO, updates, backup and malware: label gone, rows kept, labelled "Example".
+
+**Owner decisions (2026-11-01):**
+- Both designs, as light and dark themes with a switcher. Default follows the system, choice remembered, no flash.
+- Replace the "Trusted & Rated" badges with one row, "Find us on": small same-height names, no ratings or stars. Only real profiles.
+- Plan changes: upgrade or downgrade anytime; takes effect from the next billing month.
+- Page builders: Elementor, Divi, Beaver Builder, WPBakery and Gutenberg. We upgrade sites from PHP 7.4 to 8.x.
+- Add-on prices: "Ask for a price".
+
 **Waiting on the owner:**
-- Choose design A or B.
-- The same fake labels as the repair page remain on 6 other pages: design (responsive-ui-frame.v2), migration (migration-pipeline.v2), SEO (seo-performance-tracker.v2), updates (managed-update-engine.v4), backup (offsite-backup-engine.v2), malware (security-scanner.v4). Not removed, since the owner named only the repair page.
-- Outline questions in `reports/content-outlines/README.md`.
+- Approve the design screenshots.
+- Confirm the "Find us on" list (`reports/content-outlines/README.md`).
+- Cancel, edit hours and response times: the owner said to use the answers in this file, but this file only lists them as open (question 4 below). See the same README.
 
 ## 1. What is done, per phase
 
@@ -144,7 +153,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
-4. **Plan gaps:** response time, add-on prices, what counts as an edit hour, what happens on cancel.
+4. **Plan gaps:** response time, what counts as an edit hour and whether unused hours roll over, what happens on cancel. Add-on prices are answered: "Ask for a price".
 5. **Real author:** name, role, photo and bio; also team photos and the founding year.
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
@@ -169,8 +178,8 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 
 ## 4. Next steps
 
-1. Owner chooses A or B. Then apply it to all templates (homepage first).
-2. Write new text after the outlines are approved.
+1. Owner approves the screenshots. Then apply the design to all templates (homepage first), including the badge block removal.
+2. Write new text after that.
 3. Steps 3 to 6 of the work order, each with a plan and approval.
 4. Keep every template change passing: `npm run build`, `npm run parity`, `node scripts/test-build-checks.mjs`, `node scripts/test-browser-features.mjs`, `node scripts/link-report.mjs`.
 5. Owner creates the private GitHub repo, pushes, and connects Netlify. Steps were given earlier in this project; no custom domain and no DNS change.

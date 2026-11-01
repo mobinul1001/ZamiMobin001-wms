@@ -21,7 +21,7 @@ Plan cards, full feature comparison, billing and contract questions, FAQ. We sho
 |---|---|---|---:|---|
 | 1 | Which Website Maintenance Plan Fits Your Site? | Plan cards | 200 | Essential, Growth and Business, each matched to a type of site, using plan features only. Online stores go to the Store plans. |
 | 2 | Monthly vs Annual Website Maintenance Plans | "Compare every feature" | 150 | The math from the master prices below. First month free on monthly, 2 months free on annual. |
-| 3 | What Our Website Maintenance Packages Don't Include | After section 2 | 150 | Redesigns, custom development and similar work, with links to those services and the add-on list. **Owner input 4** for add-on prices. |
+| 3 | What Our Website Maintenance Packages Don't Include | After section 2 | 150 | Redesigns, custom development and similar work, with links to those services and the add-on list. Add-ons say "Ask for a price". |
 | 4 | Questions to Ask Before You Buy a Website Maintenance Plan | Before the FAQ | 200 | Are prices public, is there a contract, who keeps the backups, what is in the report, how edit time is counted. |
 
 Annual math, from `prices.json`:
@@ -33,9 +33,9 @@ Annual math, from `prices.json`:
 | Business | $3,588 | $2,990 | $598 |
 
 ## New FAQs (answers 40 to 60 words)
-1. Do unused edit hours roll over? **Owner input 2**
-2. What counts as an edit? **Owner input 2**
-3. Can I change plans later?  **Owner to confirm**
+1. Do unused edit hours roll over? **Open, see README**
+2. What counts as an edit? Small text, image or layout changes. **Limits open, see README**
+3. Can I change plans later? Yes: upgrade or downgrade anytime; it takes effect from the next billing month.
 4. Do your website management services include content updates?
 5. What is the difference between a plan and a one-time fix?
 
