@@ -15,11 +15,22 @@ const removeCardList = ($, path) => {
 };
 // Owner, 2026-11-01: WordPress, article and store cards also get new lists. Everything after the button goes, and any list.
 const removeCardFeatures = ($, path, heads) => {
+  const isBuy = (_i, l) => /quote|contact/.test($(l).attr('href') ?? '');
   for (const head of heads) {
-    const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === head && $(x).parent().find('a').filter((_i, l) => /quote/.test($(l).attr('href') ?? '')).length > 0).first();
-    if (!leaf.length) throw new Error(`${path}: plan card "${head}" not found`);
-    const card = leaf.parent();
-    let link = card.find('a').filter((_i, l) => /quote/.test($(l).attr('href') ?? '')).last();
+    // The card: the smallest box around the name that also holds a button, and no other plan.
+    let card = null;
+    $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === head).each((_, x) => {
+      if (card) return;
+      let box = $(x).parent();
+      for (let i = 0; i < 4 && box.length && !box.is('body'); i++, box = box.parent()) {
+        if (box.find('a').filter(isBuy).length) {
+          if (box.text().trim().split(/\s+/).length < 130) card = box;
+          return;
+        }
+      }
+    });
+    if (!card) throw new Error(`${path}: plan card "${head}" not found`);
+    let link = card.find('a').filter(isBuy).last();
     while (!link.parent().is(card)) link = link.parent();
     card.find('ul').remove();
     link.nextAll().remove();
@@ -56,6 +67,24 @@ const removeTierCards = ($, firstLabel, lastLabel) => {
   if (box.is('body')) throw new Error(`"${lastLabel}" not found`);
   box.remove();
 };
+// A heading with its text: the card when it holds only this heading, otherwise the text up to the next heading.
+const removeBlock = ($, text) => {
+  const heads = $('h2, h3, h4, h5').filter((_, e) => $(e).text().trim() === text);
+  if (!heads.length) throw new Error(`block "${text}" not found`);
+  heads.each((_, e) => {
+    const h = $(e);
+    const box = h.parent();
+    if (box.find('h1, h2, h3, h4, h5').length === 1 && box.text().trim().split(/\s+/).length < 80) box.remove();
+    else { h.nextUntil('h1, h2, h3, h4, h5').remove(); h.remove(); }
+  });
+};
+const removeLeaves = ($, texts) => {
+  for (const text of texts) {
+    const found = $('body *').filter((_, x) => $(x).text().trim() === text && !$(x).children().toArray().some((c) => $(c).text().trim() === text));
+    if (!found.length) throw new Error(`"${text}" not found`);
+    found.remove();
+  }
+};
 const ARTICLE_HEADS = ['Essential', 'Advanced', 'Elevate'];
 const STORE_REMOVALS = {
   '/wordpress-website-maintenance-packages/': ($) => {
@@ -66,7 +95,21 @@ const STORE_REMOVALS = {
   },
   '/wordpress-backup-services/': ($) => removeTierCards($, 'Starter Tier', 'Agency Tier'),
   '/website-update-services/': ($) => removeTierCards($, 'Starter Plan', 'Agency / eCommerce'),
-  '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Advanced', 'Elevate']),
+  '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Essential', 'Advanced', 'Elevate']),
+  '/white-label-website-maintenance-services-for-agencies/': ($) => {
+    removeCardFeatures($, 'white-label', ['Starter Plan', 'Growth Plan', 'Agency+ Custom']);
+    for (const block of ['Unlimited Small Edits', 'Dedicated Account Manager', 'Performance Optimization', 'Emergency Support', 'Will we have a dedicated account manager?', 'Can you handle unlimited small fixes and edits?']) removeBlock($, block);
+    $('p, div').filter((_, x) => /^(Yes! Agencies on our Growth and Agency\+|Yes\. We execute unlimited content edits)/.test($(x).text().trim()) && $(x).children('p, div').length === 0).remove();
+    removeLeaves($, ['• Unlimited Small Edits & Fixes', 'Dedicated Account Manager', 'Staging Environment Tested', 'Visual Regression Tested']);
+    $('tr').filter((_, r) => /^(Dedicated Senior Account Manager|Unlimited Small Edits & Fixes)/.test($(r).text().trim())).remove();
+  },
+  '/wordpress-malware-removal-service/': ($) => removeCardFeatures($, 'malware', ['Standard Cleanup', 'Complete Recovery', 'Priority Emergency']),
+  '/website-speed-optimization-services/': ($) => {
+    removeCardFeatures($, 'speed', ['Starter Audit']);
+    removeBlock($, 'Enterprise Ongoing');
+  },
+  '/website-migration-services/': ($) => removeCardFeatures($, 'migration', ['Basic Migration', 'Standard Migration', 'Enterprise / Custom']),
+  '/website-design-services/': ($) => removeCardFeatures($, 'design', ['Premium / Enterprise']),
   '/best-website-maintenance-for-small-business/': ($) => { removeCardFeatures($, 'small business', ARTICLE_HEADS); removeCompareRows($); },
   '/how-much-does-website-maintenance-cost/': ($) => removeCardFeatures($, 'cost', ARTICLE_HEADS),
   '/how-much-does-wordpress-website-maintenance-cost/': ($) => { removeCardFeatures($, 'WordPress cost', ARTICLE_HEADS); removeCompareRows($); },
@@ -131,7 +174,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 560])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
+const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 620])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

@@ -132,3 +132,9 @@
 - WooCommerce support removed from Growth and from Australia's FAQ. Store plans line added under the plans.
 - FixRunner, WP Buffs and SiteCare: 24/7 emergency fixes and staging on Business.
 - Repair, backup, update and white-label prices set. Hosting after year one in the pricing FAQ.
+
+## Service prices, white-label features, merged pages (2026-11-01)
+- Malware, speed, migration, design and SEO prices, names, cards, FAQs, schema and first-screen price lines. Malware tiers list only the owner's features. Speed's Enterprise tier removed.
+- White-label: same Essential-level features on all 3 tiers. Removed unlimited edits, dedicated manager, speed, emergency and staging claims. "50%+" replaced; build fails if it returns.
+- Backup retention 30, 60, 90 days; "9 deliverables" removed. Free migration line on pricing and migration pages.
+- Unique content moved from the 3 remaining merged pages. Add-ons from website-management-packages added to pricing.

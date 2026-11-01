@@ -1,3 +1,4 @@
+import { SERVICE_CHANGES } from './service-prices.mjs';
 import { compareTable } from './compare-table.mjs';
 import { SUPPORT_SECTIONS, SUPPORT_FAQS } from './merged-support.mjs';
 import { readFileSync } from 'node:fs';
@@ -56,7 +57,7 @@ export const ARTICLE_CHANGES = {
     ['Transparent website repair pricing ranges for small sites ($99-$249), WordPress sites ($149-$499), business sites ($250-$699), and emergency site-down repairs ($299-$899).', REPAIR_PRICES],
   ],
   '/wordpress-backup-services/': [
-    [/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \*\*wordpress backup service cost\*\* plan that fits your budget\.?[^\n]*/, 'Backups are included in every plan: weekly on Essential, daily on Growth and Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)'],
+    [/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \*\*wordpress backup service cost\*\* plan that fits your budget\.?[^\n]*/, 'Backups are included in every plan: weekly on Essential, daily on Growth and Business. Backups are kept 30 days on Essential, 60 on Growth and 90 on Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)'],
     ['### White-Label Client Reporting (Agency Plans)', '### White-Label Client Reporting'],
     ['Plans typically range from $29–$199+/month depending on site count, retention length, and support level — see pricing above.', 'Backups are included in every plan, from $79/month. Emergency restore without a plan starts at $99.'],
     ['Yes — agency plans include white-label reporting', 'Yes — our white-label program includes white-label reporting'],
@@ -84,13 +85,7 @@ export const ARTICLE_CHANGES = {
   '/white-label-website-maintenance-services-for-agencies/': [
     ['## White Label Website Maintenance Pricing', '## White Label Website Maintenance Pricing\n\n**Wholesale for agencies.** These per-site rates are for agencies and studios managing client websites under their own brand. Running your own site? See our [Essential, Growth and Business plans](/monthly-website-maintenance-packages/).'],
     ['### Starter Plan', '### Agency Starter'], ['### Growth Plan', '### Agency Growth'], ['### Agency+ Custom', '### Agency Scale'],
-    ['[Start Starter Plan]', '[Start Agency Starter]'], ['[Start Growth Plan]', '[Start Agency Growth]'],
-    ['$39 / site / month', '$49 / site / month'],
-    ['Custom Quote Volume Discounts Available', '$39 / site / month'],
-    ['managing 20+ client websites or custom stacks.', 'managing 21+ client websites or custom stacks.'],
-    ['-   20+ Client Sites / Custom Fleet Size', '-   21+ Client Sites'],
     ['Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites.', 'Wholesale for agencies, per site per month: $59 for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites.'],
-    ['Agencies on our Growth and Agency+ plans', 'Agencies on our Agency Growth and Agency Scale plans'],
     ['1 – 5 Client Sites (Starter Tier)', '1 – 5 Client Sites (Agency Starter)'],
     ['6 – 20 Client Sites (Growth Tier)', '6 – 20 Client Sites (Agency Growth)'],
     ['20 – 50 Client Sites (Agency+ Tier)', '21 – 50 Client Sites (Agency Scale)'],
@@ -277,9 +272,9 @@ export const ARTICLE_CHANGES = {
     ['Essential\n\n$49/site/mo\n\nor $39/site/mo billed annually', '1–5 sites\n\n$59/site/mo'],
     ['Most Popular\n\nAdvanced\n\n$99/site/mo\n\nor $79/site/mo billed annually', '6–20 sites\n\n$49/site/mo'],
     ['Elevate\n\n$179/site/mo\n\nor $143/site/mo billed annually', '21+ sites\n\n$39/site/mo'],
-    ['Starter care for client blogs, brochure & small sites.', 'Wholesale for agencies managing client sites.'],
-    ['Active care for client business & lead-gen sites.', 'The same wholesale care at a lower per-site rate.'],
-    ['Premium care for client stores & high-traffic sites.', 'The same wholesale care at our lowest per-site rate.'],
+    ['Starter care for client blogs, brochure & small sites.', 'Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
+    ['Active care for client business & lead-gen sites.', 'The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
+    ['Premium care for client stores & high-traffic sites.', 'The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
     ['Annual billing saves roughly 20% (about 2.4 months free) on every tier.', 'Annual billing gives 2 months free.'],
     ["| Client Sites | Your Discount | Essential | Advanced | Elevate |\n| --- | --- | --- | --- | --- |\n| 1 – 4 sites | Standard rate | $49 | $99 | $179 |\n| 5 – 9 sites | 10% off | $44 | $89 | $161 |\n| 10 – 24 sites | 20% off | $39 | $79 | $143 |\n| 25+ sites | Custom volume | Let's talk | Let's talk | Let's talk |", '| Client Sites | Wholesale price per site/month |\n| --- | --- |\n| 1 – 5 sites | $59 |\n| 6 – 20 sites | $49 |\n| 21+ sites | $39 |'],
     ['Prices are per site per month. Annual billing applies an additional discount on top.', 'Wholesale for agencies. Prices are per site per month. Annual billing gives 2 months free.'],
@@ -288,33 +283,55 @@ export const ARTICLE_CHANGES = {
     ["You pay us **$79/site/mo** (10+ sites rate) and resell to your clients at a typical **$195/site/mo**. That's a margin of **$116/site/mo**.", "You pay us **$59/site/mo** (1–5 sites rate) and resell to your clients at **$149/site/mo**. That's a margin of **$90/site/mo**."],
     ['$1,740 / month profit', '$450 / month profit'],
     ["Across 15 sites that's **$20,880/year**", "Across 5 sites that's **$5,400/year**"],
-    ['| Speed optimization | Advanced+ |', '| Speed optimization | Ask us |'],
-    ['| WooCommerce care | Elevate |', '| WooCommerce care | Ask us |'],
-    ['| Content edits included | Advanced+ |', '| Content edits included | Ask us |'],
+    ['| Speed optimization | Advanced+ |', '| Speed optimization | Not included |'],
+    ['| WooCommerce care | Elevate |', '| WooCommerce care | Not included |'],
+    ['| Content edits included | Advanced+ |', '| Content edits included | 1 hour/month per site |'],
     ['| Annual discount | ~20% |', '| Annual discount | 2 months free |'],
     ['| Volume discounts | 5 / 10 / 25+ sites |', '| Volume discounts | 6+ and 21+ sites |'],
-    ['| Dedicated account manager | Elevate |', '| Dedicated account manager | Ask us |'],
+    ['| Dedicated account manager | Elevate |', '| Dedicated account manager | No |'],
     ['Wholesale per-site pricing starts at $49/month for Essential, $99/month for Advanced, and $179/month for Elevate. Volume discounts bring this down to $39, $79, and $143 per site at 10+ sites, with extra savings on annual billing. You set', 'Wholesale for agencies: $59 per site per month for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites. You set'],
     ['Pricing drops as you add sites: standard rate for 1-4 sites, 10% off for 5-9 sites, 20% off for 10-24 sites, and custom volume pricing for 25+ sites. Annual billing applies a further discount on top.', 'Pricing drops as you add sites: $59 per site for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites. Annual billing gives 2 months free.'],
     ["For example, buying Advanced at $79/site and reselling at $195/site earns $116/site/month. Across 15 client sites that's $1,740/month, or about $20,880/year", "For example, buying at $59/site and reselling at $149/site earns $90/site/month. Across 5 client sites that's $450/month, or about $5,400/year"],
     ['annual and volume discounts, and a dedicated account manager on Elevate', 'annual billing with 2 months free, and lower rates at 6+ and 21+ sites'],
     ['Volume discounts: 10% off at 5+ sites, 20% off at 10+ sites, custom at 25+', 'Wholesale for agencies: $59/site at 1–5 sites, $49 at 6–20, $39 at 21+'],
     ['Annual billing saves a further ~20% on every tier', 'Annual billing gives 2 months free'],
+    ['more included at each tier than bare-bones plans, with healthy margins and volume discounts', 'the same features at every volume, with healthy margins and volume discounts'],
+    ['Resell at 2-3x: 15 sites on Advanced can mean $20,880/year recurring profit', 'Resell at $149 and keep up to $110 per site'],
+    ['with malware removal and emergency recovery on higher tiers — all delivered under your brand', 'all delivered under your brand'],
   ],
 };
+
+for (const [path, pairs] of Object.entries(SERVICE_CHANGES)) ARTICLE_CHANGES[path] = [...pairs, ...(ARTICLE_CHANGES[path] ?? [])];
 
 export const articlePairs = (path) => ARTICLE_CHANGES[path] ?? [];
 
 // These pages' lines with a price, percentage or old plan name may change; other old lines must still be on the page.
-export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add/.test(line);
+const squeeze = (s) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
+// An old line is expected to change when one of the page's text pairs covers it, in either direction.
+const coveredByPair = (line, path) => {
+  const s = squeeze(line);
+  return s.length >= 3 && ARTICLE_CHANGES[path].some(([from]) => {
+    const f = squeeze(typeof from === 'string' ? from : from.source);
+    return f.includes(s) || (f.length >= 20 && s.includes(f));
+  });
+};
+export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full/.test(line));
 
 // Schema offers on these pages follow the same prices. White-label tiers without a confirmed price lose their offer.
-const OFFER_PATHS = new Set(['/website-repair-services/', '/wordpress-backup-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/ecommerce-website-maintenance-packages/', '/', '/agreement/', '/how-much-does-website-maintenance-cost/', '/how-much-does-wordpress-website-maintenance-cost/', '/white-label-wordpress-maintenance-support/']);
+const OFFER_NAMES = {
+  '/website-speed-optimization-services/': { 'Starter Speed Audit': ['Speed Boost', '149.00'], 'Standard Speed Optimization': ['Core Web Vitals', '299.00'], 'Advanced WooCommerce Speed': ['WooCommerce / Large Site', '499.00'], 'Enterprise Ongoing Speed Retainer': null },
+  '/website-design-services/': { 'Starter Website Design Package': ['Starter Website Design', '799.00'], 'Growth Website Design Package': ['Business Website Design', '1499.00'], 'Premium / Enterprise Website Design Package': ['Store Website Design', '2499.00'] },
+  '/website-seo-services/': { 'Starter SEO Plan': ['Local SEO Starter', '299.00'], 'Growth SEO Plan': ['SEO Growth', '599.00'], 'Enterprise SEO Plan': ['SEO Pro', '999.00'] },
+};
+const OFFER_PATHS = new Set([...Object.keys(OFFER_NAMES), '/website-repair-services/', '/wordpress-backup-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/ecommerce-website-maintenance-packages/', '/', '/agreement/', '/how-much-does-website-maintenance-cost/', '/how-much-does-wordpress-website-maintenance-cost/', '/white-label-wordpress-maintenance-support/']);
 const PRICE_MAP = { 95: 79, 195: 149, 395: 299, 145: 199, 295: 349, 595: 599 };
 const planName = (s) => s.replace(/^Advanced\b/, 'Growth').replace(/^Elevate\b/, 'Business').replace(/^Ecommerce Starter\b/, 'Store Starter').replace(/^Ecommerce Growth\b/, 'Store Growth').replace(/^Ecommerce Premium\b/, 'Store Pro');
 function fixOfferNode(node, path) {
   if (Array.isArray(node)) return node.map((n) => fixOfferNode(n, path)).filter((n) => n !== null);
   if (!node || typeof node !== 'object') return node;
+  const named = OFFER_NAMES[path]?.[node.name];
+  if (named === null) return null;
+  if (named) return { ...node, name: named[0], price: named[1] };
   const out = {};
   for (const [k, v] of Object.entries(node)) out[k] = k === 'name' && typeof v === 'string' ? planName(v) : fixOfferNode(v, path);
   if (path === '/website-repair-services/' && out.priceSpecification) {

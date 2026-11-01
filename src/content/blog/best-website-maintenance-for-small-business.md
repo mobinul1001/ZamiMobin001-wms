@@ -355,6 +355,41 @@ Outdated plugins, slow pages, and missing backups directly cost small businesses
 
 <a id="faq"></a>
 
+## Why Small Businesses Need Website Maintenance
+
+Small business owners often don't have full-time developers or technical staff. A single issue — like a broken form, slow page load, or malware — can cost real money and potential customers. If your website helps drive customers, then maintaining it is a business investment, not an expense.
+
+Website maintenance helps you:
+
+-   Avoid downtime & lost sales
+-   Improve Google rankings
+-   Prevent hacking & leaks
+-   Keep pages fast & mobile-friendly
+-   Maintain professionalism
+-   Save time & reduce stress
+
+## How We Start With a Small Business Site
+
+**Step 1 — Website audit.** We review security risks, plugin health, hosting performance, and SEO issues to create a priority report.
+
+**Step 2 — Fix critical issues.** We handle vulnerabilities, broken pages, site errors, and plugin conflicts to stabilize your site.
+
+**Step 3 — Optimize and improve.** We enhance speed, mobile responsiveness, load times, and navigation for a smoother customer experience.
+
+**Step 4 — Ongoing maintenance.** We keep your site updated and monitored. You focus on business — we handle the technical work.
+
+## Who We Support
+
+We maintain websites for a wide range of small businesses: service businesses such as plumbers and electricians, local businesses and stores, online stores, real estate agents, law firms and medical practices, startups and coaches.
+
+## Benefits for Small Business Owners
+
+-   No more DIY technical headaches
+-   Better credibility & customer trust
+-   Reduced risk of malware or hacking
+-   Professionally handled edits & updates
+-   Long-term website stability
+
 <p class="eyebrow">FAQ</p>
 
 ## Frequently Asked Questions

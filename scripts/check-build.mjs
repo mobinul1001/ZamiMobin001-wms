@@ -157,6 +157,9 @@ for (const file of htmlFiles) {
   }
   // Owner rule: backup and update services are in every plan, so their old monthly tiers must not return.
   if (['/wordpress-backup-services/', '/website-update-services/'].includes(path) && /\$\d+ \/ month/.test($('main').text())) fail('service-price', `${path}: old monthly tier price on the page.`);
+  // Owner rules for white-label: no margin percentage, no unlimited edits, no dedicated manager.
+  if (/50%\+/.test($('main').text())) fail('white-label', `${path}: "50%+" margin claim.`);
+  if (path === '/white-label-website-maintenance-services-for-agencies/' && /unlimited (small )?(edits|fixes|content)|dedicated (senior )?account/i.test($('main').text())) fail('white-label', `${path}: unlimited edits or dedicated manager.`);
   // Owner rule: the annual offer is "2 months free", and store pages carry their own plans.
   if (/\bsave[sd]? (?:around |roughly )?~?20%|\b20% off\b|two-and-a-half months/i.test($('main').text())) fail('annual-note', `${path}: says 20% instead of 2 months free.`);
   const storeSet = Object.values(masterPrices.storePlans).find((s) => s.path === path);

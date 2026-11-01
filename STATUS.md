@@ -22,7 +22,6 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 **Not done in Phase 4 yet:**
 - Master prices are on the homepage, pricing, WordPress packages and the articles. All 10 country pages use the owner's rounded local prices (`reports/country-prices.md`). 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
-- Moving unique content from the 4 merged pages to their targets.
 - Keyword edits inside page bodies, and expanding the homepage and packages page.
 - Rearranging service pages (problem, included, price, FAQ): first screen is new, the rest keeps its old order.
 - Section-based page fields, CMS, build-time image conversion, schema validation. Forms and 404 tracking are built but can only be proven on Netlify.
@@ -56,6 +55,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Removal of the /blogs/ hidden list and the quote-form coupon box: confirmed by the owner.
 - Repair: small fix $49, most repairs $99–$299, complex work quoted, hacked cleanup $149. Backup and updates are in every plan; emergency restore and catch-up update from $99 without a plan.
 - White-label wholesale per site/month: 1–5 sites $59, 6–20 $49, 21+ $39. Hosting after year one: $19/month or $190/year. Guarantee wording approved: "If we can't clean your hacked site, you don't pay."
+- Service prices set: see `reports/service-package-prices.md`. Free migration (host-to-host) with any annual plan. White-label tiers have the same Essential-level features; only the rate changes. Backup retention 30/60/90 days.
+- /plan-packages-and-costs/, /website-management-packages/ and /website-maintenance-services-for-small-business/: unique content moved, 301s kept.
 - 48 blog posts confirmed against the owner's list. /website-support/ is a 301 to /website-support-services/, its unique content moved there.
 - Market ranges in articles: $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
 - Annual prices always say "2 months free" (Spanish "2 meses gratis"); the build enforces it.
@@ -89,7 +90,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 7. **Removed guarantees:** say if any were real terms (30-day warranties, 14-day satisfaction, money-back, 4-hour SLA).
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
-11. **Service package prices:** design, migration, SEO and speed. The owner is researching them (`reports/service-package-prices.md`).
+11. **Other promises on service pages:** see the TODO list.
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.
 15. **Bing and Organization schema:** Bing Webmaster Tools verification, the IndexNow key in Netlify, and real profile URLs for `sameAs`.
@@ -98,7 +99,10 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- Backup page: "9 deliverables" in every plan and "30, 60, or 90 days" retention came from the old tiers. Confirm them.
+- Guarantee-style promises beyond the approved line: backup page ("Free month if we fail to recover", "30-Day Satisfaction... full refund"), malware page (re-clean within 30 days free), migration page (fix or full redo free within 30 days).
+- White-label service page still claims a 24/7 SLA, 99.99% SLA, 3.8-hour response, Slack channel, agency dashboard and WAF. These are above Essential level. Hosting and webmail are not listed on agency tiers.
+- Malware page: the process section still lists vulnerability patching and a written post-cleanup report, which the tier lists no longer have.
+- SEO tiers kept their old feature lists at lower prices, including a dedicated strategist, link building, weekly calls and an SLA.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps

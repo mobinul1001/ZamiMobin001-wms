@@ -1,0 +1,121 @@
+// Owner's service prices and white-label rules, 2026-11-01, plus unique content from merged pages.
+import { MANAGEMENT_SECTIONS, PLAN_FAQS, SMALL_BUSINESS_SECTIONS } from './merged-pages.mjs';
+
+const list = (items) => items.map((i) => `-   ${i}`).join('\n');
+const FREE = 'Free migration with any annual plan';
+
+const AGENCY_FEATURES = list(['Weekly updates', 'Weekly backups', 'Security scan', 'Uptime monitoring', '1 hour edits/month per site', 'Unbranded client reports']);
+const agencyCard = (oldPrice, oldButton, price, label, hash) => [`${oldPrice}\n\n${oldButton}`, `${price} / site / month\n\n${AGENCY_FEATURES}\n\n[${label}](/get-a-free-quote/#${hash})`];
+
+const MALWARE = {
+  cleanup: ['Full file and database malware scan', 'Infected code and shell removal', 'Backdoor removal'],
+  protect: ['Everything in Cleanup', 'Blacklist removal', 'Security hardening'],
+  priority: ['Everything in Cleanup + Protect', 'Work starts within 4 hours', '3 months of monitoring'],
+};
+
+export const SERVICE_CHANGES = {
+  '/wordpress-malware-removal-service/': [
+    ['## WordPress Malware Removal Pricing', '<a id="pricing"></a>\n\n## WordPress Malware Removal Pricing'],
+    ['### Standard Cleanup', '### Cleanup'], ['### Complete Recovery', '### Cleanup + Protect'], ['### Priority Emergency', '### Priority'],
+    [/^Standard Tier$/m, 'Cleanup'],
+    ['$149 / single site\n\n[Choose Standard Plan](/contact/#standard-cleanup)', `$149 / single site\n\n${list(MALWARE.cleanup)}\n\n[Choose Cleanup](/get-a-free-quote/#malware-cleanup)`],
+    ['$249 / single site\n\n[Get Complete Recovery](/contact/#complete-recovery)', `$249 / single site\n\n${list(MALWARE.protect)}\n\n[Choose Cleanup + Protect](/get-a-free-quote/#malware-protect)`],
+    ['$349 / single site\n\n[Get Priority Emergency](/contact/#priority-emergency)', `$349 / single site\n\n${list(MALWARE.priority)}\n\n[Choose Priority](/get-a-free-quote/#malware-priority)`],
+    ['or hosting-suspended accounts needing same-day service.', 'or hosting-suspended accounts needing a fast start.'],
+    [/Emergency same-day express service is available[^.\n]*\./, 'Our Priority tier starts within 4 hours.'],
+    [/Our service includes a full file and database scan[^\n]*/, 'Every tier includes a full file and database scan, malware removal and backdoor removal. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring.'],
+  ],
+  '/website-speed-optimization-services/': [
+    ['### Starter Audit', '### Speed Boost'], ['### Standard Speed', '### Core Web Vitals'], ['### WooCommerce Speed', '### WooCommerce / Large Site'],
+    [/^Diagnostic Audit$/m, 'Smaller Sites'], [/^WordPress Sites$/m, 'Business Sites'], [/^eCommerce Stores$/m, 'Stores & Large Sites'],
+    ['Full PageSpeed & Core Web Vitals diagnostic scorecard with actionable fixes.', 'Caching and image work for smaller sites.'],
+    ['Advanced database and checkout performance tuning for WooCommerce stores.', 'Database and checkout performance tuning for WooCommerce stores and large sites.'],
+    ['$99 / one-time fee\n\n[Choose Starter Audit](/get-a-free-quote/#speed-audit)', `$149 / one-time fee\n\n${list(['Caching', 'Image optimization', 'Up to 10 pages'])}\n\n[Choose Speed Boost](/get-a-free-quote/#speed-boost)`],
+    ['$199 / one-time fee', '$299 / one-time fee'], ['$349 / one-time fee', '$499 / one-time fee'],
+    ['[Get Standard Optimization](/get-a-free-quote/#standard-speed)', '[Choose Core Web Vitals](/get-a-free-quote/#core-web-vitals)'],
+    ['[Choose WooCommerce Plan]', '[Choose WooCommerce / Large Site]'],
+    ['-   Everything in Standard Speed', '-   Everything in Core Web Vitals'],
+    ['### How much does website speed optimization cost?\n\n', '### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n'],
+  ],
+  '/website-migration-services/': [
+    ['### Basic Migration', '### Host-to-Host Move'], ['### Standard Migration', '### Full Migration'], ['### Enterprise / Custom', '### Platform Change'],
+    [/^Basic Site$/m, 'Same Platform'], [/^Business & WP$/m, 'Domain & SEO'], [/^eCommerce & Large$/m, 'New Platform'],
+    ['Ideal for small blogs, personal sites, or simple brochure websites under 1GB.', `Move to a new host, up to 20 pages, with no downtime. **Free with any annual plan.**`],
+    ['Perfect for active WordPress websites, business portals, and database sites up to 5GB.', 'For a domain change, up to 100 pages.'],
+    ['Tailored for large stores, WooCommerce, Shopify, multisite networks, or cross-platform moves.', 'Move your site to a different platform.'],
+    ['$499 / one-time fee\n\n[Choose Basic Plan](/get-a-free-quote/#basic-migration)', `$149 / one-time fee\n\n${list(['Host-to-host move', 'Up to 20 pages', 'No downtime', 'Free with any annual plan'])}\n\n[Choose Host-to-Host Move](/get-a-free-quote/#host-migration)`],
+    ['$1199 / one-time fee\n\n[Get Started Now](/get-a-free-quote/#standard-migration)', `$399 / one-time fee\n\n${list(['Domain change', '301 redirects', 'SEO check', 'Up to 100 pages'])}\n\n[Choose Full Migration](/get-a-free-quote/#full-migration)`],
+    ['Custom Quote Starting from $1499\n\n[Get a Custom Quote](/get-a-free-quote/#enterprise-migration)', `From $999 / one-time fee\n\n${list(['Move between platforms, such as Wix, Joomla or Drupal to WordPress', 'Quoted after we review your site'])}\n\n[Ask About a Platform Change](/get-a-free-quote/#platform-migration)`],
+    ['Our website migration service pricing starts at a flat $99 for basic sites and $199 for standard WordPress websites up to 5GB. Enterprise, multisite, or large eCommerce stores receive custom fixed-rate quotes with zero hidden fees', `A host-to-host move is $149 (${FREE.toLowerCase()}), a full migration is $399, and a platform change starts at $999, with zero hidden fees`],
+    ['## Website Migration Service Pricing & Packages', `## Website Migration Service Pricing & Packages\n\n**${FREE}.**`],
+  ],
+  '/website-design-services/': [
+    ['## Custom Website Design Packages & Pricing', '<a id="pricing"></a>\n\n## Custom Website Design Packages & Pricing'],
+    ['### Starter Package', '### Starter'], ['### Growth Package', '### Business'], ['### Premium / Enterprise', '### Store'],
+    [/^Corporate & Agency$/m, 'Online Stores'],
+    ['Perfect for scaling brands, professional services, and mid-size companies up to 10 pages.', 'For businesses that need up to 10 pages, a blog, and speed and SEO setup.'],
+    ['Tailored for corporate portals, SaaS brands, eCommerce stores, and white-label agency clients.', 'A WooCommerce store with up to 50 products.'],
+    ['$1,499 Starting project estimate', '$799 one-time'],
+    ['$2,999 Starting project estimate', '$1,499 one-time'],
+    ['Custom Quote Starting from $5,499+\n\n[Request Custom Quote](/get-a-free-quote/#enterprise-design)', `$2,499 one-time\n\n${list(['WooCommerce store design', 'Up to 50 products'])}\n\n[Choose Store](/get-a-free-quote/#store-design)`],
+    ['[Choose Starter Package]', '[Choose Starter]'],
+    ['[Choose Growth Package](/get-a-free-quote/#growth-design)', '[Choose Business](/get-a-free-quote/#business-design)'],
+    ['| Design Feature | Starter | Growth (Popular) | Premium | Typical Competitor |', '| Design Feature | Starter | Business (Popular) | Store | Typical Competitor |'],
+    ['| Custom UI/UX Design |  |  |  | Often template-based |', '| Custom UI/UX Design | Included | Included | Included | Often template-based |'],
+    ['| Mobile-Responsive Build |  |  |  |  |', '| Mobile-Responsive Build | Included | Included | Included | Usually included |'],
+    ['| SEO-Friendly Architecture | Basic | Full | Advanced | Rarely included |', '| SEO-Friendly Architecture | Basic | Full | Full | Rarely included |'],
+    ['| CMS & Blog Setup | — |  |  | Sometimes extra cost |', '| CMS & Blog Setup | — | Included | Included | Sometimes extra cost |'],
+    ['| Post-Launch Support Included | 30 Days | 90 Days | 12 Months | Rarely included |', '| Post-Launch Support Included | 30 Days | 90 Days | Ask us | Rarely included |'],
+    ['| Security & SSL Hardening | Basic |  | Advanced | Rarely included |', '| Security & SSL Hardening | Basic | Included | Included | Rarely included |'],
+    ['Professional website design packages start at $1,499 for small business 5-page sites, $2,999 for growth businesses up to 10 pages, and custom quotes for enterprise portals.', 'Website design costs $799 for a Starter site (up to 5 pages), $1,499 for a Business site (up to 10 pages, blog, speed and SEO setup), and $2,499 for a WooCommerce store (up to 50 products).'],
+    ['<option value="$1,200 - $2,500">$1,200 – $2,500 (Starter Package)</option>', '<option value="Starter $799">$799 (Starter)</option>'],
+    ['<option value="$2,500 - $5,500">$2,500 – $5,500 (Growth Package - Most Popular)</option>', '<option value="Business $1,499">$1,499 (Business, most popular)</option>'],
+    ['<option value="$5,500+">$5,500+ (Corporate / Custom Enterprise)</option>', '<option value="Store $2,499">$2,499 (Store)</option>'],
+  ],
+  '/website-seo-services/': [
+    ['### Starter SEO', '### Local SEO Starter'], ['### Growth SEO', '### SEO Growth'], ['### Enterprise SEO', '### SEO Pro'],
+    ['$499 / month (Starting at)', '$299 / month'], ['$999 / month (Starting at)', '$599 / month'],
+    ['Custom Quote Starting from $1,999/month', '$999 / month'],
+    ['-   Everything in Starter SEO', '-   Everything in Local SEO Starter'], ['-   Everything in Growth SEO', '-   Everything in SEO Growth'],
+    ['[Choose Starter Plan](/get-a-free-quote/#starter-seo)', '[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)'],
+    ['[Get Growth SEO Plan]', '[Choose SEO Growth]'], ['[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)', '[Choose SEO Pro](/get-a-free-quote/#pro-seo)'],
+    ['#### Not sure which monthly SEO plan fits your business?', 'One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?'],
+    [/Our monthly SEO pricing starts at \$499\/month for local small businesses, \$999\/month for scaling eCommerce brands, and custom estimates for enterprise portals\./, 'Our monthly SEO plans are $299 (Local SEO Starter), $599 (SEO Growth) and $999 (SEO Pro). A one-time SEO audit is $199.'],
+    ['Our Starter SEO package ($499/mo)', 'Our Local SEO Starter plan ($299/mo)'],
+  ],
+  '/white-label-website-maintenance-services-for-agencies/': [
+    agencyCard('$59 / site / month', '[Start Starter Plan](/get-a-free-quote/#whitelabel-starter)', '$59', 'Start Agency Starter', 'whitelabel-starter'),
+    agencyCard('$39 / site / month', '[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)', '$49', 'Start Agency Growth', 'whitelabel-growth'),
+    agencyCard('Custom Quote Volume Discounts Available', '[Talk to Sales](/contact/)', '$39', 'Start Agency Scale', 'whitelabel-scale'),
+    ['Perfect for scaling agencies managing 6 to 20 client sites seeking dedicated support.', 'For agencies managing 6 to 20 client sites.'],
+    ['Tailored for large agencies or SaaS partners managing 20+ client websites or custom stacks.', 'For large agencies managing 21+ client websites.'],
+    ['Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Scale your client portfolio with predictable 50%+ profit margins and zero long-term contracts.', 'Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Every tier gets the same Essential-level features per site; only the per-site price changes with volume. Resell at $149 and keep up to $110 per site, with zero long-term contracts.'],
+    ['allowing your agency to mark up retainer plans for 50%+ profit.', 'so your agency can resell at $149 and keep up to $110 per site.'],
+    ['### 50%+ Profit Margins', '### Resell at $149 and Keep Up to $110 per Site'],
+    ['set your own retail pricing, and lock in predictable 50%+ profit margins on monthly retainers.', 'and set your own retail pricing. Resell at $149 and keep up to $110 per site.'],
+    ['agencies can mark up and resell to their clients at 50%+ profit margins.', 'agencies can resell at $149, keeping up to $110 per site.'],
+    ['Unlimited edits, 24/7 monitoring, security, backups & white label reports', 'Security, backups, monitoring & white label reports'],
+    ['From 24/7 security and automated backups to unlimited small edits and white-label client reports', 'From security scans and automated backups to edits and white-label client reports'],
+    ['covering core, theme, and plugin updates safely tested on staging first.', 'covering core, theme, and plugin updates.'],
+    ['and theme patches after visual regression testing on staging.', 'and theme patches.'],
+    ['Daily/weekly automated cloud snapshots', 'Weekly automated cloud snapshots'],
+    ['Maintenance officially begins, account managers assign, and unbranded reports activate.', 'Maintenance officially begins and unbranded reports activate.'],
+    ['We offer custom SLAs and dedicated account management.', 'We offer custom SLAs.'],
+    ['your dedicated backend engineer', 'your backend engineer'],
+    ['Core, theme, and plugin updates tested on staging, security hardening, database purging, and speed tuning.', 'Core, theme, and plugin updates, security scans, and backups.'],
+    ['our unbranded backend, dedicated account managers, and multi-platform support', 'our unbranded backend and multi-platform support'],
+    ['Plans include core, theme, and plugin updates, 24/7 security WAF firewalls, daily offsite backups, PageSpeed tuning, unlimited small edits, and unbranded monthly client reports.', 'Every tier includes core, theme, and plugin updates, security scans, weekly backups, uptime monitoring, 1 hour of edits a month per site, and unbranded client reports.'],
+  ],
+  '/wordpress-backup-services/': [
+    ['We leave nothing to chance. Every managed plan includes 9 granular technical deliverables to keep', 'We leave nothing to chance. Every managed plan includes these technical deliverables to keep'],
+    ['Retention that matches how businesses actually work.', 'Backups are kept 30 days on Essential, 60 days on Growth and 90 days on Business. Retention that matches how businesses actually work.'],
+    ['Typically 30, 60, or 90 days depending on plan, giving you options', '30 days on Essential, 60 days on Growth, and 90 days on Business, giving you options'],
+  ],
+  '/monthly-website-maintenance-packages/': [
+    ['## Ready to Protect & Improve Your Website?', `${MANAGEMENT_SECTIONS}## Ready to Protect & Improve Your Website?`],
+    [/### 10\\\. How do I choose[^\n]*\n\n[^\n]*\n?/, (m) => `${m.trimEnd()}\n\n${PLAN_FAQS}`],
+  ],
+  '/best-website-maintenance-for-small-business/': [
+    [/(?:<p class="eyebrow">[^\n]*<\/p>\n\n)?^## [^\n]*(?:FAQ|Frequently Asked)[^\n]*$/m, (m) => `${SMALL_BUSINESS_SECTIONS}${m}`],
+  ],
+};

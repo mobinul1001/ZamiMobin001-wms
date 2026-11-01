@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-11-01T12:23:45.892Z",
+  "checkedAt": "2026-11-01T12:41:15.637Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6281,
+  "links": 6287,
   "images": 305,
-  "faqs": 492,
+  "faqs": 491,
   "sitemapUrls": 90,
   "redirects": 246,
   "queryRedirects": 97,
@@ -18,7 +18,7 @@
     "missing-urls": 1,
     "seo-length": 54,
     "image-size": 1,
-    "anchors": 9
+    "anchors": 8
   },
   "warnings": [
     "[missing-urls] Could not read the live URL list; checked against url-map.csv only.",
@@ -84,7 +84,6 @@
     "[anchors] /website-speed-optimization-services/: anchor #testimonials has no target.",
     "[anchors] /website-speed-optimization-services/: anchor #case-studies has no target.",
     "[anchors] /website-speed-optimization-services/: anchor #case-studies has no target.",
-    "[anchors] /white-label-website-maintenance-services-for-agencies/: anchor #why-agencies-choose has no target.",
     "[anchors] /white-label-website-maintenance-services-for-agencies/: anchor #testimonials has no target."
   ]
 }

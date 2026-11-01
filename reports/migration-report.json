@@ -2,7 +2,7 @@
   "migrated": 92,
   "posts": 48,
   "pages": 44,
-  "linksRewritten": 374,
+  "linksRewritten": 373,
   "planLinksToHash": 28,
   "unknownLinks": [],
   "unlinked404Targets": {
@@ -521,6 +521,11 @@
       "change": "price",
       "from": "at $95/month (or $76/month billed annually)",
       "to": "at $79/month (or $790/year, 2 months free)"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "/(?:<p class=\"eyebrow\">[^\\n]*<\\/p>\\n\\n)?^## [^\\n]*(?:FAQ|Frequently Asked)[^\\n]*$/m"
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
@@ -2096,6 +2101,17 @@
       "to": "benefit from Growth or Business plans"
     },
     {
+      "path": "/monthly-website-maintenance-packages/",
+      "change": "price",
+      "from": "## Ready to Protect & Improve Your Website?",
+      "to": "### Website Management vs Website Maintenance\n\nPeople often use these terms interchangeably, but there is a difference. Website maintenance is the technical upkeep — updates, security, backups, and fixes that keep your site online and safe. Website management is broader: it adds ongoing content edits, design tweaks, performance optimization, and SEO health.\n\nIn short, maintenance keeps your site working; management keeps it working and growing.\n\n### What Ongoing Website Management Covers\n\nDepending on your plan, this is the work we do to keep your website secure, fast, and growing:\n\n-   Core, plugin & theme updates\n-   Security scans\n-   Backup verification\n-   Uptime & SSL checks\n-   Broken link & 404 monitoring\n-   Speed & Core Web Vitals audit\n-   SEO health check\n-   Database optimization\n-   Content & design updates\n-   Performance & health report\n-   Emergency downtime recovery\n-   Malware cleanup & hack repair\n-   New pages & feature requests\n-   Plugin conflict resolution\n\n### Platforms We Manage\n\nWhatever your site is built on, we keep it running. We manage all major platforms and custom-built sites: WordPress, WooCommerce, Shopify, Webflow, Wix, Squarespace, custom PHP and HTML/static sites. See our [WordPress plans](/wordpress-website-maintenance-packages/), [WooCommerce store plans](/ecommerce-website-maintenance-packages/) and [Shopify plans](/shopify-website-maintenance-packages/).\n\n### Neglecting Your Website Can Lead To\n\n-   **Slow load times:** visitors bounce instantly if pages take too long to load.\n-   **Broken pages and errors:** 404 errors and broken forms cost you leads and sales.\n-   **Security vulnerabilities:** outdated plugins open doors to malware and hackers.\n-   **SEO ranking drops:** search engines penalize neglected, slow, or insecure sites.\n\n### How to Choose a Plan\n\n**Choose Essential if…** you run a blog, portfolio, or small brochure site and want affordable, reliable core care at $79/mo.\n\n**Choose Growth if…** your website drives leads or sales and you want speed optimization, malware removal, monthly reports, and more edit time.\n\n**Choose Business if…** you run a high-traffic site needing 24/7 emergency fixes, staging-tested updates, and priority support.\n\nRunning an online store? See [Store plans from $199](/ecommerce-website-maintenance-packages/).\n\n## Ready to Protect & Improve Your Website?"
+    },
+    {
+      "path": "/monthly-website-maintenance-packages/",
+      "change": "price",
+      "from": "/### 10\\\\\\. How do I choose[^\\n]*\\n\\n[^\\n]*\\n?/"
+    },
+    {
       "path": "/nonprofit-website-maintenance/",
       "change": "schema same",
       "question": "What does nonprofit website maintenance include?"
@@ -2481,6 +2497,144 @@
       "path": "/sitecare-alternative/",
       "change": "schema same",
       "question": "Which is better for a small business?"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "## Custom Website Design Packages & Pricing",
+      "to": "<a id=\"pricing\"></a>\n\n## Custom Website Design Packages & Pricing"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "### Starter Package",
+      "to": "### Starter"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "### Growth Package",
+      "to": "### Business"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "### Premium / Enterprise",
+      "to": "### Store"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "/^Corporate & Agency$/m",
+      "to": "Online Stores"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "Perfect for scaling brands, professional services, and mid-size companies up to 10 pages.",
+      "to": "For businesses that need up to 10 pages, a blog, and speed and SEO setup."
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "Tailored for corporate portals, SaaS brands, eCommerce stores, and white-label agency clients.",
+      "to": "A WooCommerce store with up to 50 products."
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "$1,499 Starting project estimate",
+      "to": "$799 one-time"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "$2,999 Starting project estimate",
+      "to": "$1,499 one-time"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "Custom Quote Starting from $5,499+\n\n[Request Custom Quote](/get-a-free-quote/#enterprise-design)",
+      "to": "$2,499 one-time\n\n-   WooCommerce store design\n-   Up to 50 products\n\n[Choose Store](/get-a-free-quote/#store-design)"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "[Choose Starter Package]",
+      "to": "[Choose Starter]"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "[Choose Growth Package](/get-a-free-quote/#growth-design)",
+      "to": "[Choose Business](/get-a-free-quote/#business-design)"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| Design Feature | Starter | Growth (Popular) | Premium | Typical Competitor |",
+      "to": "| Design Feature | Starter | Business (Popular) | Store | Typical Competitor |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| Custom UI/UX Design |  |  |  | Often template-based |",
+      "to": "| Custom UI/UX Design | Included | Included | Included | Often template-based |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| Mobile-Responsive Build |  |  |  |  |",
+      "to": "| Mobile-Responsive Build | Included | Included | Included | Usually included |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| SEO-Friendly Architecture | Basic | Full | Advanced | Rarely included |",
+      "to": "| SEO-Friendly Architecture | Basic | Full | Full | Rarely included |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| CMS & Blog Setup | — |  |  | Sometimes extra cost |",
+      "to": "| CMS & Blog Setup | — | Included | Included | Sometimes extra cost |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| Post-Launch Support Included | 30 Days | 90 Days | 12 Months | Rarely included |",
+      "to": "| Post-Launch Support Included | 30 Days | 90 Days | Ask us | Rarely included |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "| Security & SSL Hardening | Basic |  | Advanced | Rarely included |",
+      "to": "| Security & SSL Hardening | Basic | Included | Included | Rarely included |"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "Professional website design packages start at $1,499 for small business 5-page sites, $2,999 for growth businesses up to 10 pages, and custom quotes for enterprise portals.",
+      "to": "Website design costs $799 for a Starter site (up to 5 pages), $1,499 for a Business site (up to 10 pages, blog, speed and SEO setup), and $2,499 for a WooCommerce store (up to 50 products)."
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "<option value=\"$1,200 - $2,500\">$1,200 – $2,500 (Starter Package)</option>",
+      "to": "<option value=\"Starter $799\">$799 (Starter)</option>"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "<option value=\"$2,500 - $5,500\">$2,500 – $5,500 (Growth Package - Most Popular)</option>",
+      "to": "<option value=\"Business $1,499\">$1,499 (Business, most popular)</option>"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "<option value=\"$5,500+\">$5,500+ (Corporate / Custom Enterprise)</option>",
+      "to": "<option value=\"Store $2,499\">$2,499 (Store)</option>"
     },
     {
       "path": "/website-design-services/",
@@ -3350,6 +3504,90 @@
     },
     {
       "path": "/website-migration-services/",
+      "change": "price",
+      "from": "### Basic Migration",
+      "to": "### Host-to-Host Move"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "### Standard Migration",
+      "to": "### Full Migration"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "### Enterprise / Custom",
+      "to": "### Platform Change"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "/^Basic Site$/m",
+      "to": "Same Platform"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "/^Business & WP$/m",
+      "to": "Domain & SEO"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "/^eCommerce & Large$/m",
+      "to": "New Platform"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Ideal for small blogs, personal sites, or simple brochure websites under 1GB.",
+      "to": "Move to a new host, up to 20 pages, with no downtime. **Free with any annual plan.**"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Perfect for active WordPress websites, business portals, and database sites up to 5GB.",
+      "to": "For a domain change, up to 100 pages."
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Tailored for large stores, WooCommerce, Shopify, multisite networks, or cross-platform moves.",
+      "to": "Move your site to a different platform."
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "$499 / one-time fee\n\n[Choose Basic Plan](/get-a-free-quote/#basic-migration)",
+      "to": "$149 / one-time fee\n\n-   Host-to-host move\n-   Up to 20 pages\n-   No downtime\n-   Free with any annual plan\n\n[Choose Host-to-Host Move](/get-a-free-quote/#host-migration)"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "$1199 / one-time fee\n\n[Get Started Now](/get-a-free-quote/#standard-migration)",
+      "to": "$399 / one-time fee\n\n-   Domain change\n-   301 redirects\n-   SEO check\n-   Up to 100 pages\n\n[Choose Full Migration](/get-a-free-quote/#full-migration)"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Custom Quote Starting from $1499\n\n[Get a Custom Quote](/get-a-free-quote/#enterprise-migration)",
+      "to": "From $999 / one-time fee\n\n-   Move between platforms, such as Wix, Joomla or Drupal to WordPress\n-   Quoted after we review your site\n\n[Ask About a Platform Change](/get-a-free-quote/#platform-migration)"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Our website migration service pricing starts at a flat $99 for basic sites and $199 for standard WordPress websites up to 5GB. Enterprise, multisite, or large eCommerce stores receive custom fixed-rate quotes with zero hidden fees",
+      "to": "A host-to-host move is $149 (free migration with any annual plan), a full migration is $399, and a platform change starts at $999, with zero hidden fees"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "## Website Migration Service Pricing & Packages",
+      "to": "## Website Migration Service Pricing & Packages\n\n**Free migration with any annual plan.**"
+    },
+    {
+      "path": "/website-migration-services/",
       "change": "schema synced",
       "question": "How long does website migration take?"
     },
@@ -3871,6 +4109,90 @@
     },
     {
       "path": "/website-seo-services/",
+      "change": "price",
+      "from": "### Starter SEO",
+      "to": "### Local SEO Starter"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "### Growth SEO",
+      "to": "### SEO Growth"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "### Enterprise SEO",
+      "to": "### SEO Pro"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "$499 / month (Starting at)",
+      "to": "$299 / month"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "$999 / month (Starting at)",
+      "to": "$599 / month"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "Custom Quote Starting from $1,999/month",
+      "to": "$999 / month"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "-   Everything in Starter SEO",
+      "to": "-   Everything in Local SEO Starter"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "-   Everything in Growth SEO",
+      "to": "-   Everything in SEO Growth"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "[Choose Starter Plan](/get-a-free-quote/#starter-seo)",
+      "to": "[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "[Get Growth SEO Plan]",
+      "to": "[Choose SEO Growth]"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)",
+      "to": "[Choose SEO Pro](/get-a-free-quote/#pro-seo)"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "#### Not sure which monthly SEO plan fits your business?",
+      "to": "One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "/Our monthly SEO pricing starts at \\$499\\/month for local small businesses, \\$999\\/month for scaling eCommerce brands, and custom estimates for enterprise portals\\./",
+      "to": "Our monthly SEO plans are $299 (Local SEO Starter), $599 (SEO Growth) and $999 (SEO Pro). A one-time SEO audit is $199."
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "Our Starter SEO package ($499/mo)",
+      "to": "Our Local SEO Starter plan ($299/mo)"
+    },
+    {
+      "path": "/website-seo-services/",
       "change": "schema synced",
       "question": "What does a website SEO service include?"
     },
@@ -3971,6 +4293,96 @@
     },
     {
       "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "### Starter Audit",
+      "to": "### Speed Boost"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "### Standard Speed",
+      "to": "### Core Web Vitals"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "### WooCommerce Speed",
+      "to": "### WooCommerce / Large Site"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "/^Diagnostic Audit$/m",
+      "to": "Smaller Sites"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "/^WordPress Sites$/m",
+      "to": "Business Sites"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "/^eCommerce Stores$/m",
+      "to": "Stores & Large Sites"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "Full PageSpeed & Core Web Vitals diagnostic scorecard with actionable fixes.",
+      "to": "Caching and image work for smaller sites."
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "Advanced database and checkout performance tuning for WooCommerce stores.",
+      "to": "Database and checkout performance tuning for WooCommerce stores and large sites."
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "$99 / one-time fee\n\n[Choose Starter Audit](/get-a-free-quote/#speed-audit)",
+      "to": "$149 / one-time fee\n\n-   Caching\n-   Image optimization\n-   Up to 10 pages\n\n[Choose Speed Boost](/get-a-free-quote/#speed-boost)"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "$199 / one-time fee",
+      "to": "$299 / one-time fee"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "$349 / one-time fee",
+      "to": "$499 / one-time fee"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "[Get Standard Optimization](/get-a-free-quote/#standard-speed)",
+      "to": "[Choose Core Web Vitals](/get-a-free-quote/#core-web-vitals)"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "[Choose WooCommerce Plan]",
+      "to": "[Choose WooCommerce / Large Site]"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "-   Everything in Standard Speed",
+      "to": "-   Everything in Core Web Vitals"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "### How much does website speed optimization cost?\n\n",
+      "to": "### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
       "change": "shown",
       "question": "Why is my WordPress website slow on mobile?"
     },
@@ -4011,7 +4423,7 @@
     },
     {
       "path": "/website-speed-optimization-services/",
-      "change": "schema removed",
+      "change": "schema synced",
       "question": "How much does website speed optimization cost?"
     },
     {
@@ -4394,6 +4806,132 @@
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
+      "from": "$59 / site / month\n\n[Start Starter Plan](/get-a-free-quote/#whitelabel-starter)",
+      "to": "$59 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Starter](/get-a-free-quote/#whitelabel-starter)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "$39 / site / month\n\n[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)",
+      "to": "$49 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Growth](/get-a-free-quote/#whitelabel-growth)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Custom Quote Volume Discounts Available\n\n[Talk to Sales](/contact/)",
+      "to": "$39 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Scale](/get-a-free-quote/#whitelabel-scale)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Perfect for scaling agencies managing 6 to 20 client sites seeking dedicated support.",
+      "to": "For agencies managing 6 to 20 client sites."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Tailored for large agencies or SaaS partners managing 20+ client websites or custom stacks.",
+      "to": "For large agencies managing 21+ client websites."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Scale your client portfolio with predictable 50%+ profit margins and zero long-term contracts.",
+      "to": "Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Every tier gets the same Essential-level features per site; only the per-site price changes with volume. Resell at $149 and keep up to $110 per site, with zero long-term contracts."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "allowing your agency to mark up retainer plans for 50%+ profit.",
+      "to": "so your agency can resell at $149 and keep up to $110 per site."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### 50%+ Profit Margins",
+      "to": "### Resell at $149 and Keep Up to $110 per Site"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "set your own retail pricing, and lock in predictable 50%+ profit margins on monthly retainers.",
+      "to": "and set your own retail pricing. Resell at $149 and keep up to $110 per site."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "agencies can mark up and resell to their clients at 50%+ profit margins.",
+      "to": "agencies can resell at $149, keeping up to $110 per site."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "Unlimited edits, 24/7 monitoring, security, backups & white label reports",
+      "to": "Security, backups, monitoring & white label reports"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "From 24/7 security and automated backups to unlimited small edits and white-label client reports",
+      "to": "From security scans and automated backups to edits and white-label client reports"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "covering core, theme, and plugin updates safely tested on staging first.",
+      "to": "covering core, theme, and plugin updates."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "and theme patches after visual regression testing on staging.",
+      "to": "and theme patches."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Daily/weekly automated cloud snapshots",
+      "to": "Weekly automated cloud snapshots"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Maintenance officially begins, account managers assign, and unbranded reports activate.",
+      "to": "Maintenance officially begins and unbranded reports activate."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "We offer custom SLAs and dedicated account management.",
+      "to": "We offer custom SLAs."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "your dedicated backend engineer",
+      "to": "your backend engineer"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Core, theme, and plugin updates tested on staging, security hardening, database purging, and speed tuning.",
+      "to": "Core, theme, and plugin updates, security scans, and backups."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "our unbranded backend, dedicated account managers, and multi-platform support",
+      "to": "our unbranded backend and multi-platform support"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Plans include core, theme, and plugin updates, 24/7 security WAF firewalls, daily offsite backups, PageSpeed tuning, unlimited small edits, and unbranded monthly client reports.",
+      "to": "Every tier includes core, theme, and plugin updates, security scans, weekly backups, uptime monitoring, 1 hour of edits a month per site, and unbranded client reports."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
       "from": "## White Label Website Maintenance Pricing",
       "to": "## White Label Website Maintenance Pricing\n\n**Wholesale for agencies.** These per-site rates are for agencies and studios managing client websites under their own brand. Running your own site? See our [Essential, Growth and Business plans](/monthly-website-maintenance-packages/)."
     },
@@ -4418,50 +4956,8 @@
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
-      "from": "[Start Starter Plan]",
-      "to": "[Start Agency Starter]"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "[Start Growth Plan]",
-      "to": "[Start Agency Growth]"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "$39 / site / month",
-      "to": "$49 / site / month"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "Custom Quote Volume Discounts Available",
-      "to": "$39 / site / month"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "managing 20+ client websites or custom stacks.",
-      "to": "managing 21+ client websites or custom stacks."
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "-   20+ Client Sites / Custom Fleet Size",
-      "to": "-   21+ Client Sites"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
       "from": "Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites.",
       "to": "Wholesale for agencies, per site per month: $59 for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites."
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "Agencies on our Growth and Agency+ plans",
-      "to": "Agencies on our Agency Growth and Agency Scale plans"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -4554,7 +5050,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer white label WordPress care plans?"
     },
     {
@@ -4569,7 +5065,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "Will we have a dedicated account manager?"
     },
     {
@@ -4579,7 +5075,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "Can you handle unlimited small fixes and edits?"
     },
     {
@@ -4619,19 +5115,19 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Starter care for client blogs, brochure & small sites.",
-      "to": "Wholesale for agencies managing client sites."
+      "to": "Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Active care for client business & lead-gen sites.",
-      "to": "The same wholesale care at a lower per-site rate."
+      "to": "The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Premium care for client stores & high-traffic sites.",
-      "to": "The same wholesale care at our lowest per-site rate."
+      "to": "The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4685,19 +5181,19 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Speed optimization | Advanced+ |",
-      "to": "| Speed optimization | Ask us |"
+      "to": "| Speed optimization | Not included |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| WooCommerce care | Elevate |",
-      "to": "| WooCommerce care | Ask us |"
+      "to": "| WooCommerce care | Not included |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Content edits included | Advanced+ |",
-      "to": "| Content edits included | Ask us |"
+      "to": "| Content edits included | 1 hour/month per site |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4715,7 +5211,7 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Dedicated account manager | Elevate |",
-      "to": "| Dedicated account manager | Ask us |"
+      "to": "| Dedicated account manager | No |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4755,6 +5251,24 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "more included at each tier than bare-bones plans, with healthy margins and volume discounts",
+      "to": "the same features at every volume, with healthy margins and volume discounts"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Resell at 2-3x: 15 sites on Advanced can mean $20,880/year recurring profit",
+      "to": "Resell at $149 and keep up to $110 per site"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "with malware removal and emergency recovery on higher tiers — all delivered under your brand",
+      "to": "all delivered under your brand"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
       "change": "schema same",
       "question": "What is white label WordPress maintenance?"
     },
@@ -4790,7 +5304,7 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer white label WordPress security services for client websites?"
     },
     {
@@ -4801,8 +5315,26 @@
     {
       "path": "/wordpress-backup-services/",
       "change": "price",
+      "from": "We leave nothing to chance. Every managed plan includes 9 granular technical deliverables to keep",
+      "to": "We leave nothing to chance. Every managed plan includes these technical deliverables to keep"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "Retention that matches how businesses actually work.",
+      "to": "Backups are kept 30 days on Essential, 60 days on Growth and 90 days on Business. Retention that matches how businesses actually work."
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "Typically 30, 60, or 90 days depending on plan, giving you options",
+      "to": "30 days on Essential, 60 days on Growth, and 90 days on Business, giving you options"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
       "from": "/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \\*\\*wordpress backup service cost\\*\\* plan that fits your budget\\.?[^\\n]*/",
-      "to": "Backups are included in every plan: weekly on Essential, daily on Growth and Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)"
+      "to": "Backups are included in every plan: weekly on Essential, daily on Growth and Business. Backups are kept 30 days on Essential, 60 on Growth and 90 on Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)"
     },
     {
       "path": "/wordpress-backup-services/",
@@ -4889,7 +5421,7 @@
     },
     {
       "path": "/wordpress-backup-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How long are backups kept (retention)?"
     },
     {
@@ -4931,6 +5463,72 @@
       "path": "/wordpress-backup-services/",
       "change": "schema same",
       "question": "How do I get started?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "## WordPress Malware Removal Pricing",
+      "to": "<a id=\"pricing\"></a>\n\n## WordPress Malware Removal Pricing"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "### Standard Cleanup",
+      "to": "### Cleanup"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "### Complete Recovery",
+      "to": "### Cleanup + Protect"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "### Priority Emergency",
+      "to": "### Priority"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "/^Standard Tier$/m",
+      "to": "Cleanup"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "$149 / single site\n\n[Choose Standard Plan](/contact/#standard-cleanup)",
+      "to": "$149 / single site\n\n-   Full file and database malware scan\n-   Infected code and shell removal\n-   Backdoor removal\n\n[Choose Cleanup](/get-a-free-quote/#malware-cleanup)"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "$249 / single site\n\n[Get Complete Recovery](/contact/#complete-recovery)",
+      "to": "$249 / single site\n\n-   Everything in Cleanup\n-   Blacklist removal\n-   Security hardening\n\n[Choose Cleanup + Protect](/get-a-free-quote/#malware-protect)"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "$349 / single site\n\n[Get Priority Emergency](/contact/#priority-emergency)",
+      "to": "$349 / single site\n\n-   Everything in Cleanup + Protect\n-   Work starts within 4 hours\n-   3 months of monitoring\n\n[Choose Priority](/get-a-free-quote/#malware-priority)"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "or hosting-suspended accounts needing same-day service.",
+      "to": "or hosting-suspended accounts needing a fast start."
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "/Emergency same-day express service is available[^.\\n]*\\./",
+      "to": "Our Priority tier starts within 4 hours."
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "/Our service includes a full file and database scan[^\\n]*/",
+      "to": "Every tier includes a full file and database scan, malware removal and backdoor removal. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring."
     },
     {
       "path": "/wordpress-malware-removal-service/",
