@@ -1,9 +1,9 @@
 # FAQ schema sync and old prices (2026-11-01)
 
-All 498 FAQ schema entries on 50 pages now use the exact visible question and answer. The difference was bigger than the 51 reported earlier, because that figure covered only 10 pages: 229 entries changed and 269 already matched. `npm run build` now fails if a schema question or answer is not on the page.
+All 498 FAQ schema entries on 50 pages now use the exact visible question and answer. The difference was bigger than the 51 reported earlier, because that figure covered only 10 pages: 228 entries changed and 270 already matched. `npm run build` now fails if a schema question or answer is not on the page.
 
 ## Our own prices replaced in FAQ answers
-24 replacements on 13 pages, using Essential $79/$790, Growth $149/$1,490, Business $299/$2,990. Annual prices say "2 months free" or "2 meses gratis". Full list: `scripts/lib/faq-approved.mjs`.
+24 replacements on 12 pages, using Essential $79/$790, Growth $149/$1,490, Business $299/$2,990. Annual prices say "2 months free" or "2 meses gratis". Full list: `scripts/lib/faq-approved.mjs`.
 
 ## Left unchanged: needs an owner decision
 
