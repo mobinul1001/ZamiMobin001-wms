@@ -53,7 +53,7 @@ The best providers combine support and maintenance into one service, so your sit
 
 You can maintain a website yourself — but most business owners shouldn't, for the same reason they don't service their own car. Here's an honest comparison:
 
-| | Doing It Yourself | Hiring a Support Service |
+| Factor | Doing It Yourself | Hiring a Support Service |
 | --- | --- | --- |
 | Time | Hours every month | Almost none — handled |
 | Security | Easy to miss a critical patch | Monitored by specialists |

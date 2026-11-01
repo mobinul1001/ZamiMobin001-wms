@@ -346,6 +346,7 @@ function fixOfferNode(node, path) {
       if (mapped) out.price = decimals ? `${mapped}.00` : String(mapped);
     }
   }
+  if (path === '/white-label-website-maintenance-services-for-agencies/' && out.name === 'Agency+ Custom Plan') Object.assign(out, { name: 'Agency Scale', price: '39.00', priceCurrency: 'USD' });
   if (out.lowPrice !== undefined && parseFloat(out.lowPrice) === 95) Object.assign(out, { lowPrice: '79', highPrice: '299' });
   return out;
 }
