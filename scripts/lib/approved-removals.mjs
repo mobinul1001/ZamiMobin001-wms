@@ -13,10 +13,40 @@ const removeCardList = ($, path) => {
     card.find('ul').remove();
   }
 };
+// Owner, 2026-11-01: WordPress, article and store cards also get new lists. Everything after the button goes, and any list.
+const removeCardFeatures = ($, path, heads) => {
+  for (const head of heads) {
+    const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === head && $(x).parent().find('a').filter((_i, l) => /quote/.test($(l).attr('href') ?? '')).length > 0).first();
+    if (!leaf.length) throw new Error(`${path}: plan card "${head}" not found`);
+    const card = leaf.parent();
+    let link = card.find('a').filter((_i, l) => /quote/.test($(l).attr('href') ?? '')).last();
+    while (!link.parent().is(card)) link = link.parent();
+    card.find('ul').remove();
+    link.nextAll().remove();
+  }
+};
+const removeLeaf = ($, text) => {
+  const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === text);
+  if (!leaf.length) throw new Error(`"${text}" not found`);
+  leaf.parent().remove();
+};
+const ARTICLE_HEADS = ['Essential', 'Advanced', 'Elevate'];
+const STORE_REMOVALS = {
+  '/wordpress-website-maintenance-packages/': ($) => {
+    removeCardFeatures($, '/wordpress-website-maintenance-packages/', ['WP Starter', 'WP Growth', 'WP Premium']);
+    removeLeaf($, 'Hosting Management ($20/mo)');
+  },
+  '/best-website-maintenance-for-small-business/': ($) => removeCardFeatures($, 'small business', ARTICLE_HEADS),
+  '/how-much-does-website-maintenance-cost/': ($) => removeCardFeatures($, 'cost', ARTICLE_HEADS),
+  '/how-much-does-wordpress-website-maintenance-cost/': ($) => removeCardFeatures($, 'WordPress cost', ARTICLE_HEADS),
+  '/ecommerce-website-maintenance-packages/': ($) => removeCardFeatures($, 'ecommerce', ['Ecommerce Starter', 'Ecommerce Growth', 'Ecommerce Premium']),
+  '/shopify-website-maintenance-packages/': ($) => removeCardFeatures($, 'Shopify', ['Shopify Starter', 'Shopify Growth', 'Shopify Premium']),
+};
 const countryRemovals = Object.fromEntries(localPaths().map((path) => [path, ($) => removeCardList($, path)]));
 
 const REMOVALS = {
   ...countryRemovals,
+  ...STORE_REMOVALS,
   // Owner, 2026-11-01: the master price list replaces the old plan cards.
   '/': ($) => {
     const section = $('a').filter((_, e) => /Choose Essential/.test($(e).text())).first().closest('section.pricing-container');
@@ -52,7 +82,7 @@ const REMOVALS = {
     wrapper(coupon).remove();
     $('form button[type="button"]').filter((_, b) => /^Apply$/.test($(b).text().trim())).remove();
     wrapper(site).after('<div><label for="platform">Platform</label> <select name="platform" required><option value="">(Select one)</option><option>WordPress</option><option>WooCommerce</option><option>Shopify</option><option>Other or not sure</option></select></div>');
-    const plans = [['essential', 'Essential'], ['growth', 'Growth'], ['business', 'Business'], ['one-time-fix', 'One-time fix'], ['hacked-cleanup', 'Hacked site cleanup'], ['other', 'Other or not sure']];
+    const plans = [['essential', 'Essential'], ['growth', 'Growth'], ['business', 'Business'], ['one-time-fix', 'One-time fix'], ['hacked-cleanup', 'Hacked site cleanup'], ['store-starter', 'Store Starter (WooCommerce)'], ['store-growth', 'Store Growth (WooCommerce)'], ['store-pro', 'Store Pro (WooCommerce)'], ['shopify-starter', 'Shopify Starter'], ['shopify-growth', 'Shopify Growth'], ['shopify-pro', 'Shopify Pro'], ['other', 'Other or not sure']];
     $('select[name="plan"]').html(`<option value="">(Select one)</option>${plans.map(([v, n]) => `<option value="${v}">${n}</option>`).join('')}`);
     $('form button[type="submit"]').filter((_, b) => /Discounted Quote/.test($(b).text())).text('Get My Quote');
   },
@@ -68,7 +98,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
+const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 220])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

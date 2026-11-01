@@ -18,6 +18,8 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   out.starterDesign = await plan('#starter-design');
   out.growthGbp = await plan('#growth-gbp');
   out.businessBrl = await plan('#business-brl');
+  out.storeGrowth = await plan('#store-growth');
+  out.shopifyPro = await plan('#shopify-pro');
   const d = (await load('/website-malware-scanner/')).contentDocument;
   const run = (v) => { d.getElementById('scan-url').value = v; d.getElementById('scan-form').requestSubmit(); return { quick: [...d.querySelectorAll('#scan-quick li')].map((l) => l.textContent), deep: [...d.querySelectorAll('#scan-deep a')].map((a) => a.href) }; };
   out.scanGood = run('https://example.com/page');
@@ -59,6 +61,8 @@ const checks = {
   'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
   'growth-gbp picks plan and currency': eq(r.growthGbp, ['growth', 'growth-gbp', 'GBP']),
   'business-brl picks plan and currency': eq(r.businessBrl, ['business', 'business-brl', 'BRL']),
+  'store-growth selects the store plan': eq(r.storeGrowth, ['store-growth', 'store-growth', 'USD']),
+  'shopify-pro selects the Shopify plan': eq(r.shopifyPro, ['shopify-pro', 'shopify-pro', 'USD']),
   'scanner gives 3 links': r.scanGood.deep.length === 3 && r.scanGood.deep.every((u) => u.includes('example.com')),
   'scanner reads HTTPS': r.scanGood.quick[1] === 'Address uses HTTPS.',
   'scanner reads HTTP': r.scanHttp[1] === 'Address uses HTTP, not HTTPS.',

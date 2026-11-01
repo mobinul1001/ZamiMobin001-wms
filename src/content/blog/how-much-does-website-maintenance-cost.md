@@ -173,8 +173,8 @@ Maintenance pricing varies by the platform your site is built on.
 | Platform | Monthly Cost | Notes |
 | --- | --- | --- |
 | WordPress | $149 – $299 | Core, plugin & theme updates |
-| Shopify | $125 – $495 | Theme & app upkeep (hosting included) |
-| WooCommerce / ecommerce | $145 – $595 | Checkout & payment testing |
+| Shopify | $149 – $499 | Theme & app upkeep (hosting included) |
+| WooCommerce / ecommerce | $199 – $599 | Checkout & payment testing |
 | Magento | $300 – $600+ | Complex, resource-heavy stores |
 
 For platform-specific detail, see our [WordPress maintenance cost](/how-much-does-wordpress-website-maintenance-cost/) guide, [Shopify packages](/shopify-website-maintenance-packages/), and [ecommerce packages](/ecommerce-website-maintenance-packages/).
@@ -361,6 +361,14 @@ or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
 
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
+
 </div>
 
 <div class="card">
@@ -379,6 +387,16 @@ or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
 
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
+
 </div>
 
 <div class="card">
@@ -394,6 +412,14 @@ First month free
 or $2,990/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#business)
+
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 

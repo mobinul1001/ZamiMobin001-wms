@@ -117,3 +117,10 @@
 - Articles and WordPress page: master names and prices, 2 months free, market ranges from the owner. Hosting claims on the FixRunner, WP Buffs and SiteCare pages kept.
 - White-label post: wholesale $59/site/month, example resell at $149 for a $90 margin. Tiers and volume rows without a confirmed price now say "Ask for your rate" or "Let's talk".
 - Best companies listicle: disclosure added near the top.
+
+## Store plans and owner's answers (2026-11-01)
+- WooCommerce (ecommerce page): Store Starter $199, Store Growth $349, Store Pro $599. Shopify: Starter $149, Growth $299, Pro $499, no hosting offer. Cards, tables, FAQs, meta, schema, hero, #plans, quote hashes, form options.
+- Pricing page line pointing to both store plan pages. "Save 20%" gone from both store pages; the build now fails on any "save 20%" or "20% off" in a page body.
+- WordPress page and article plan cards list the master features exactly. Plan names Essential, Growth, Business.
+- Removed the "Hosting Management" add-on from the WordPress page and the pricing page.
+- WordPress cost post: 24/7 emergency fixes on Business only. WooCommerce recommendations in articles now point to the Store plans.

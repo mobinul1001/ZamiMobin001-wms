@@ -52,6 +52,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Essential $79/mo or $790/yr, Growth $149/mo or $1,490/yr (most popular), Business $299/mo or $2,990/yr. One-time fix from $49. Hacked site cleanup $149. `src/data/prices.json`.
 - Country pages use the owner's rounded table (`scripts/build-country-prices.mjs`); annual is 10 times the local monthly. Quote links carry the currency (`#growth-gbp`) and the form pre-fills Currency.
 - Every plan includes free hosting for the first year and 2 free webmail accounts. First month free applies to monthly billing only.
+- Store plans in `prices.json`: WooCommerce Store Starter $199, Store Growth $349, Store Pro $599 (free hosting and 2 webmail); Shopify Starter $149, Growth $299, Pro $499 (no hosting offer). Annual is 10 times monthly; first month free on monthly.
+- Removal of the /blogs/ hidden list and the quote-form coupon box: confirmed by the owner.
 - Market ranges in articles: $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
 - Annual prices always say "2 months free" (Spanish "2 meses gratis"); the build enforces it.
 - Write "Included", not tick icons. "No contract. Cancel anytime."
@@ -77,7 +79,6 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 ## 3. Open questions waiting for the owner
 
-1. **Removed in the template work, please confirm:** the hidden JavaScript post list on /blogs/ ("Loading Title...", "Kono result paowa jayni!") and the coupon box on the quote form, whose button now says "Get My Quote".
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
 4. **Mockup gaps:** response time, add-on prices (6), what counts as an edit hour, what happens on cancel.
@@ -86,7 +87,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 7. **Removed guarantees:** say if any were real terms (30-day warranties, 14-day satisfaction, money-back, 4-hour SLA).
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
-11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup, and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
+11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): update services, white-label post, repair $99–$899, backup, and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
 12. **Service package prices:** confirm each in `reports/service-package-prices.md`, including the migration and design conflicts and the four white-label points.
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.
@@ -95,11 +96,9 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 **TODO for the owner (added 2026-11-01):**
 - Hosting price after the first year: no number is shown anywhere. Decide it, then update the pricing FAQ.
 - Pricing FAQ drafts to confirm: "before that year ends, we tell you the hosting price" and "we go through the setup with you on your call". Mailbox size and limits are not stated.
-- /wordpress-website-maintenance-packages/ lists an add-on "Hosting Management ($20/mo)". Check it against the free first year.
 - White-label: the post now shows a flat $59/site. /white-label-website-maintenance-services-for-agencies/ still says $39/site for 6-20 sites. Confirm whether the volume rate is real.
-- Plan cards in articles and the WordPress page keep their old feature text, with the two offers added. Only country pages, homepage and pricing list the master features exactly.
-- /ecommerce-website-maintenance-packages/ still says "Save 20% with annual billing". Its prices wait for question 11, so it is unchanged.
-- /how-much-does-wordpress-website-maintenance-cost/ says emergency response is built into Growth and Business; the master list has 24/7 emergency fixes on Business only.
+- Comparison tables on the WordPress, ecommerce, Shopify and article pages still carry old feature rows, and their tick icons were lost in the migration, so many cells are blank.
+- Master Growth lists "WooCommerce support" while stores now have their own plans. Confirm whether it stays on Growth.
 
 ## 4. Next steps
 

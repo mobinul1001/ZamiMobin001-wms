@@ -113,7 +113,7 @@ Get expert help anytime something breaks or you need updates. We are your dedica
 
 A WordPress website maintenance package is a monthly subscription that bundles every essential upkeep task — updates, security, backups, speed optimization, and support — into one predictable fee. Instead of paying for each fix separately, you get continuous, proactive care for your site.
 
-Our WordPress maintenance plans scale with your business. The **Essential** plan ($79/mo) suits blogs and small sites, the **Growth** plan ($149/mo) is our most popular WordPress monthly maintenance package for growing businesses, and the **Business** plan ($299/mo) delivers daily, mission-critical care for ecommerce and high-traffic websites. Pay annually and get 2 months free on every plan.
+Our WordPress maintenance plans scale with your business. The **Essential** plan ($79/mo) suits blogs and small sites, the **Growth** plan ($149/mo) is our most popular WordPress monthly maintenance package for growing businesses, and the **Business** plan ($299/mo) delivers mission-critical care for high-traffic websites. Pay annually and get 2 months free on every plan.
 
 Not sure how much to budget? Read our guide on [how much WordPress website maintenance costs](/how-much-does-wordpress-website-maintenance-cost/), compare flexible [monthly maintenance packages](/monthly-website-maintenance-packages/), or view the full [plan, packages and costs](/monthly-website-maintenance-packages/) breakdown.
 
@@ -193,24 +193,13 @@ or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
 
-What's Included:
-
-Free hosting for the first year
-
-2 free webmail accounts
-
-
-Monthly Core, Plugin & Theme Updates
-
-Weekly Secure Backups
-
-24/7 Security Scanning
-
-Uptime & SSL Monitoring
-
-Broken Link Monitoring
-
-Monthly Website Health Report
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -230,25 +219,15 @@ or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
 
-Everything in Starter, Plus:
-
-**Weekly** Updates & **Daily** Backups
-
-Database Optimization
-
-Staging Update Testing
-
-Form, Spam & Bot Protection
-
-Basic Speed Optimization
-
-Monthly SEO Health Check
-
-Search Console & Analytics Monitoring
-
-**2 Hours** Content Edits/mo
-
-Priority Support
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -266,25 +245,13 @@ or $2,990/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#business)
 
-Everything in Growth, Plus:
-
-**Daily** Monitoring & Verified Backups
-
-Advanced Performance & Core Web Vitals
-
-WooCommerce & Vulnerability Monitoring
-
-**Unlimited** Small Content Updates
-
-Malware Removal & Emergency Recovery
-
-Monthly Video Report & Conversion Tracking
-
-Quarterly Strategy Call
-
-Dedicated Account Manager
-
-Same-Day Emergency Response
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 
@@ -292,7 +259,7 @@ Same-Day Emergency Response
 
 ## Monthly vs Annual Pricing: How Much You Save
 
-Pay annually and get roughly two-and-a-half months free on every WordPress maintenance plan.
+Pay annually and get 2 months free on every WordPress maintenance plan.
 
 | Plan | Monthly (per year) | Annual (per year) | You Save |
 | --- | --- | --- | --- |
@@ -301,46 +268,6 @@ Pay annually and get roughly two-and-a-half months free on every WordPress maint
 | Business | $3,588 | $2,990, 2 months free | $598 |
 
 ## Optional Add-On Services
-
-<div class="cards">
-
-<div class="card">
-
-Hosting Management ($20/mo)
-
-</div>
-
-<div class="card">
-
-Custom Development Hours
-
-</div>
-
-<div class="card">
-
-Monthly SEO Optimization
-
-</div>
-
-<div class="card">
-
-Speed Boost Package
-
-</div>
-
-<div class="card">
-
-Website Redesign
-
-</div>
-
-<div class="card">
-
-Cloudflare Enterprise Setup
-
-</div>
-
-</div>
 
 ## Full WordPress Maintenance Packages Comparison
 
@@ -407,7 +334,7 @@ You run a blog, portfolio, or small brochure site and need core updates, backups
 
 ### Pick Growth if…
 
-Your website generates leads or revenue and you want weekly updates, daily backups, SEO checks, and content edits. Our most popular plan.
+Your website generates leads or revenue and you want weekly updates, daily backups, malware removal, and 3 hours of edits a month. Our most popular plan.
 
 </div>
 
@@ -415,7 +342,7 @@ Your website generates leads or revenue and you want weekly updates, daily backu
 
 ### Pick Business if…
 
-You run a WooCommerce store or high-traffic site needing daily care, malware removal, emergency response, and a dedicated manager.
+You run a high-traffic site needing 24/7 emergency fixes, staging-tested updates, and priority support. For online stores, see our [WooCommerce store plans](/ecommerce-website-maintenance-packages/).
 
 </div>
 
@@ -477,8 +404,6 @@ WordPress Needs Consistent Care
 
 WordPress is powerful but requires care. Plugins, themes, and the core software itself are updated frequently. Without a proper maintenance plan, your site can become vulnerable or break.
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   ### Plugins Frequently Update
     
     New features and security patches are released constantly.

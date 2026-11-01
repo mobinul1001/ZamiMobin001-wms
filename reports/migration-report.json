@@ -544,7 +544,13 @@
       "path": "/best-website-maintenance-for-small-business/",
       "change": "price",
       "from": "| Small WooCommerce store | $395+ | Premium | Elevate |",
-      "to": "| Small WooCommerce store | $300 – $600+ | Premium | Business |"
+      "to": "| Small WooCommerce store | $199 – $349 | Store | Store Starter or Store Growth |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "while WooCommerce stores need Business at $299/month",
+      "to": "while WooCommerce stores need a Store plan from $199/month"
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
@@ -890,6 +896,150 @@
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$145/mo\n\nor $116/mo billed annually\n\n[Choose Starter](/get-a-free-quote/)",
+      "to": "$199/mo\n\nFirst month free\n\nor $1,990/yr, 2 months free\n\n[Choose Starter](/get-a-free-quote/#store-starter)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Staging-tested WooCommerce and payment plugin updates\n-   Daily backups including orders\n-   Weekly checkout test\n-   3 hours edits/month"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$295/mo\n\nor $236/mo billed annually\n\n[Choose Growth](/get-a-free-quote/)",
+      "to": "$349/mo\n\nFirst month free\n\nor $3,490/yr, 2 months free\n\n[Choose Growth](/get-a-free-quote/#store-growth)\n\n-   Everything in Store Starter\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Backups twice daily\n-   Speed and Core Web Vitals work\n-   Checkout and conversion fixes\n-   8-hour response"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$595/mo\n\nor $476/mo billed annually\n\n[Choose Premium](/get-a-free-quote/)",
+      "to": "$599/mo\n\nFirst month free\n\nor $5,990/yr, 2 months free\n\n[Choose Pro](/get-a-free-quote/#store-pro)\n\n-   Everything in Store Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   12 hours edits/month\n-   24/7 emergency fixes\n-   4-hour response\n-   Monthly strategy call"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "### Ecommerce Starter",
+      "to": "### Store Starter"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "### Ecommerce Growth",
+      "to": "### Store Growth"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "### Ecommerce Premium",
+      "to": "### Store Pro"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "2 months free with annual billing."
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Small / new store | WooCommerce, Shopify | $145 | Ecommerce Starter |",
+      "to": "| Small / new store | WooCommerce, Shopify | $199 | Store Starter |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Growing store | WooCommerce, BigCommerce | $295 | Ecommerce Growth |",
+      "to": "| Growing store | WooCommerce, BigCommerce | $349 | Store Growth |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| High-traffic store | WooCommerce, Magento | $595 | Ecommerce Premium |",
+      "to": "| High-traffic store | WooCommerce, Magento | $599 | Store Pro |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Enterprise / marketplace | Magento, custom | $595+ | Premium + custom |",
+      "to": "| Enterprise / marketplace | Magento, custom | $599+ | Store Pro + custom |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Feature | Ecommerce Starter $145 | Ecommerce Growth $295 | Ecommerce Premium $595 |",
+      "to": "| Feature | Store Starter $199 | Store Growth $349 | Store Pro $599 |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Annual billing (per month) | $116 | $236 | $476 |",
+      "to": "| Annual billing (per year) | $1,990, 2 months free | $3,490, 2 months free | $5,990, 2 months free |"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "Our Ecommerce Starter package starts at $145/month (or $116/month billed annually)",
+      "to": "Our Store Starter plan starts at $199/month (or $1,990/year, 2 months free)"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "Higher tiers add malware removal and emergency recovery.",
+      "to": "Higher tiers add more edit hours, faster response and 24/7 emergency fixes."
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^\\$145\\+$/m",
+      "to": "$199+"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price text gone",
+      "from": "From $59/mo",
+      "to": "From $199/mo"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price text gone",
+      "from": "from $59/mo",
+      "to": "from $199/mo"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$145 to $600+",
+      "to": "$199 to $600+"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$145–$295/month",
+      "to": "$199–$349/month"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$145/month",
+      "to": "$199/month"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$145/mo",
+      "to": "$199/mo"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "from $145,",
+      "to": "from $199,"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "$595+",
+      "to": "$599+"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
       "change": "schema synced",
       "question": "How much does it cost to maintain an ecommerce website?"
     },
@@ -1117,6 +1267,18 @@
       "change": "price",
       "from": "| WordPress | $95 – $395 |",
       "to": "| WordPress | $149 – $299 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Shopify | $125 – $495 |",
+      "to": "| Shopify | $149 – $499 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| WooCommerce / ecommerce | $145 – $595 |",
+      "to": "| WooCommerce / ecommerce | $199 – $599 |"
     },
     {
       "path": "/how-much-does-website-maintenance-cost/",
@@ -1519,7 +1681,7 @@
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "price",
       "from": "| WooCommerce store | $395+ | Elevate |",
-      "to": "| WooCommerce store | $300–$600+ | Business |"
+      "to": "| WooCommerce store | $199–$599 | Store plans |"
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
@@ -1531,7 +1693,7 @@
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "price",
       "from": "$195–$600+/month",
-      "to": "$149–$600+/month"
+      "to": "$199–$600+/month"
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
@@ -1548,8 +1710,8 @@
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "price",
-      "from": "built into our Advanced and Elevate plans",
-      "to": "built into our Growth and Business plans"
+      "from": "A solid maintenance package should cover at least emergency response and malware cleanup — both are built into our Advanced and Elevate plans, so you're never hit with surprise per-incident invoices.",
+      "to": "A solid maintenance package should cover at least malware cleanup and emergency response. Malware removal is built into our Growth and Business plans, and 24/7 emergency fixes are on Business only."
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
@@ -1591,7 +1753,7 @@
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "price",
       "from": "need Elevate-tier care ($395+/month)",
-      "to": "need Business-tier care ($299+/month)"
+      "to": "need a Store plan (from $199/month)"
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
@@ -1962,12 +2124,132 @@
     },
     {
       "path": "/shopify-website-maintenance-packages/",
-      "change": "schema same",
+      "change": "price",
+      "from": "$125/mo\n\nor $100/mo billed annually\n\n[Choose Starter](/get-a-free-quote/)",
+      "to": "$149/mo\n\nFirst month free\n\nor $1,490/yr, 2 months free\n\n[Choose Starter](/get-a-free-quote/#shopify-starter)\n\n-   Theme and app checks\n-   Monthly store health check (speed, broken links, app conflicts)\n-   Backup app setup\n-   3 hours edits/month"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$245/mo\n\nor $196/mo billed annually\n\n[Choose Growth](/get-a-free-quote/)",
+      "to": "$299/mo\n\nFirst month free\n\nor $2,990/yr, 2 months free\n\n[Choose Growth](/get-a-free-quote/#shopify-growth)\n\n-   Everything in Shopify Starter\n-   6 hours edits/month\n-   Speed and SEO maintenance\n-   Priority support"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$495/mo\n\nor $396/mo billed annually\n\n[Choose Premium](/get-a-free-quote/)",
+      "to": "$499/mo\n\nFirst month free\n\nor $4,990/yr, 2 months free\n\n[Choose Pro](/get-a-free-quote/#shopify-pro)\n\n-   Everything in Shopify Growth\n-   12 hours edits/month\n-   24/7 emergency fixes\n-   4-hour response"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "### Shopify Premium",
+      "to": "### Shopify Pro"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "Save 20% annually",
+      "to": "2 months free annually"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "save 20% with annual billing",
+      "to": "get 2 months free with annual billing"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "2 months free with annual billing."
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Small / new Shopify store | $125 | Shopify Starter |",
+      "to": "| Small / new Shopify store | $149 | Shopify Starter |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Growing Shopify brand | $245 | Shopify Growth |",
+      "to": "| Growing Shopify brand | $299 | Shopify Growth |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| High-volume store / Shopify Plus | $495 | Shopify Premium |",
+      "to": "| High-volume store / Shopify Plus | $499 | Shopify Pro |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Custom / agency retainer | $495+ | Premium + add-ons |",
+      "to": "| Custom / agency retainer | $499+ | Shopify Pro + add-ons |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Feature | Shopify Starter $125 | Shopify Growth $245 | Shopify Premium $495 |",
+      "to": "| Feature | Shopify Starter $149 | Shopify Growth $299 | Shopify Pro $499 |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Annual billing (per month) | $100 | $196 | $396 |",
+      "to": "| Annual billing (per year) | $1,490, 2 months free | $2,990, 2 months free | $4,990, 2 months free |"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "Higher plans add checkout testing, speed optimization, SEO and analytics review, content edits, and a dedicated account manager.",
+      "to": "Higher plans add speed and SEO maintenance, priority support, more edit hours, and 24/7 emergency fixes."
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "Our Shopify Premium plan is built for high-volume stores and Shopify Plus, with daily monitoring, advanced security and speed, app conflict resolution, a dedicated account manager, and same-day emergency response.",
+      "to": "Our Shopify Pro plan is built for high-volume stores and Shopify Plus, with 12 hours of edits a month, 24/7 emergency fixes, and a 4-hour response."
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^\\$125\\+$/m",
+      "to": "$149+"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$125 to $500+",
+      "to": "$149 to $500+"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$125–$245/month",
+      "to": "$149–$299/month"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$125/month",
+      "to": "$149/month"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "$495+",
+      "to": "$499+"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "change": "schema synced",
       "question": "How much does Shopify website maintenance cost?"
     },
     {
       "path": "/shopify-website-maintenance-packages/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What is included in a Shopify maintenance package?"
     },
     {
@@ -1982,7 +2264,7 @@
     },
     {
       "path": "/shopify-website-maintenance-packages/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer Shopify Plus maintenance and support?"
     },
     {
@@ -4612,6 +4894,30 @@
       "change": "price",
       "from": "WP Premium",
       "to": "Business"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Pay annually and get roughly two-and-a-half months free on every WordPress maintenance plan.",
+      "to": "Pay annually and get 2 months free on every WordPress maintenance plan."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "delivers daily, mission-critical care for ecommerce and high-traffic websites",
+      "to": "delivers mission-critical care for high-traffic websites"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "you want weekly updates, daily backups, SEO checks, and content edits.",
+      "to": "you want weekly updates, daily backups, malware removal, and 3 hours of edits a month."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "You run a WooCommerce store or high-traffic site needing daily care, malware removal, emergency response, and a dedicated manager.",
+      "to": "You run a high-traffic site needing 24/7 emergency fixes, staging-tested updates, and priority support. For online stores, see our [WooCommerce store plans](/ecommerce-website-maintenance-packages/)."
     },
     {
       "path": "/wordpress-website-maintenance-packages/",

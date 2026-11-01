@@ -208,5 +208,101 @@
   "firstMonthNote": {
     "en": "First month free",
     "pt": "Primeiro mês grátis"
+  },
+  "storePlans": {
+    "woocommerce": {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "plans": [
+        {
+          "name": "Store Starter",
+          "hash": "store-starter",
+          "monthly": 199,
+          "annual": 1990,
+          "includes": [
+            "Everything in Growth",
+            "Free hosting for the first year",
+            "2 free webmail accounts",
+            "Staging-tested WooCommerce and payment plugin updates",
+            "Daily backups including orders",
+            "Weekly checkout test",
+            "3 hours edits/month"
+          ]
+        },
+        {
+          "name": "Store Growth",
+          "hash": "store-growth",
+          "monthly": 349,
+          "annual": 3490,
+          "popular": true,
+          "includes": [
+            "Everything in Store Starter",
+            "Free hosting for the first year",
+            "2 free webmail accounts",
+            "6 hours edits/month",
+            "Backups twice daily",
+            "Speed and Core Web Vitals work",
+            "Checkout and conversion fixes",
+            "8-hour response"
+          ]
+        },
+        {
+          "name": "Store Pro",
+          "hash": "store-pro",
+          "monthly": 599,
+          "annual": 5990,
+          "includes": [
+            "Everything in Store Growth",
+            "Free hosting for the first year",
+            "2 free webmail accounts",
+            "12 hours edits/month",
+            "24/7 emergency fixes",
+            "4-hour response",
+            "Monthly strategy call"
+          ]
+        }
+      ]
+    },
+    "shopify": {
+      "path": "/shopify-website-maintenance-packages/",
+      "plans": [
+        {
+          "name": "Shopify Starter",
+          "hash": "shopify-starter",
+          "monthly": 149,
+          "annual": 1490,
+          "includes": [
+            "Theme and app checks",
+            "Monthly store health check (speed, broken links, app conflicts)",
+            "Backup app setup",
+            "3 hours edits/month"
+          ]
+        },
+        {
+          "name": "Shopify Growth",
+          "hash": "shopify-growth",
+          "monthly": 299,
+          "annual": 2990,
+          "popular": true,
+          "includes": [
+            "Everything in Shopify Starter",
+            "6 hours edits/month",
+            "Speed and SEO maintenance",
+            "Priority support"
+          ]
+        },
+        {
+          "name": "Shopify Pro",
+          "hash": "shopify-pro",
+          "monthly": 499,
+          "annual": 4990,
+          "includes": [
+            "Everything in Shopify Growth",
+            "12 hours edits/month",
+            "24/7 emergency fixes",
+            "4-hour response"
+          ]
+        }
+      ]
+    }
   }
 }

@@ -20,8 +20,10 @@ const text = {
   pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Primeiro mês grátis · Hospedagem grátis por 1 ano · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
 }[(lang ?? 'en').slice(0, 2)] ?? { home: 'Home', from: '', plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' };
 
+const storeSet = Object.values(prices.storePlans).find((s) => s.path === path);
 let priceLine = FROM_LOW.includes(path) ? text.from : '';
-let primary = { label: text.plans, href: local ? '#plans' : plans };
+if (storeSet) priceLine = storeSet === prices.storePlans.shopify ? `Shopify plans from $${storeSet.plans[0].monthly}/mo · First month free · No contract` : `Store plans from $${storeSet.plans[0].monthly}/mo · First month free · Free hosting for 1 year · No contract`;
+let primary = { label: text.plans, href: local || storeSet ? '#plans' : plans };
 if (path === '/website-repair-services/') {
   priceLine = `One-time fix from $${prices.oneTimeFixFrom} · No contract`;
   primary = { label: 'Get my website fixed', href: quote };
@@ -38,6 +40,12 @@ const html = entry.rendered?.html ?? '';
 const sub = paragraph.exec(html)?.[1];
 let body = sub ? html.replace(paragraph, '') : html;
 
+if (storeSet) {
+  const first = body.search(new RegExp(`<h[34][^>]*>${storeSet.plans[0].name}</h[34]>`));
+  const section = body.slice(0, first).search(/<h[1-4][^>]*>(?![\s\S]*<h[1-4])/);
+  if (first < 0 || section < 0) throw new Error(`${path}: store plan cards not found`);
+  body = `${body.slice(0, section)}<div id="plans"></div>${body.slice(section)}`;
+}
 // Country pages: "#plans" marks the local plan cards, buy-now links go there, and the local one-off prices sit under the cards.
 if (local) {
   const essential = body.search(/<h[34][^>]*>(?:Plano )?Essential<\/h[34]>/);

@@ -1,32 +1,26 @@
+import { readFileSync } from 'node:fs';
+import { STORE_CHANGES } from './store-prices.mjs';
+
 // Owner's instructions, 2026-11-01. Lines about our plans use the master names and prices. Market ranges in articles:
 // $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
-const OFFERS = ['Free hosting for the first year', '2 free webmail accounts'];
-const HASH = { $79: 'essential', $149: 'growth', $299: 'business' };
+const prices = JSON.parse(readFileSync('src/data/prices.json', 'utf8'));
+const PLAN_OF = { $79: 0, $149: 1, $299: 2 };
+const HASH = ['essential', 'growth', 'business'];
 
-// Plan cards in articles and on the WordPress page: first-month note, the two offers, and the plan hash on the button.
-function addOffersToCards(md) {
+// Plan cards in articles and on the WordPress page: first-month note, plan hash on the button, master features under it.
+function addFeaturesToCards(md) {
   const out = [];
-  let plan = '';
-  let offersDue = false;
+  let plan = -1;
   for (const line of md.split('\n')) {
     const price = /^(\$(?:79|149|299))\/mo$/.exec(line);
     if (price) {
-      plan = price[1];
-      offersDue = true;
-      out.push(line, '', 'First month free');
+      plan = PLAN_OF[price[1]];
+      out.push(line, '', prices.firstMonthNote.en);
       continue;
     }
-    if (plan && /^\[[^\]]+\]\(\/get-a-free-quote\/\)$/.test(line)) {
-      out.push(line.replace('/get-a-free-quote/)', `/get-a-free-quote/#${HASH[plan]})`));
-      plan = '';
-      continue;
-    }
-    if (offersDue && /^-   /.test(line)) {
-      out.push(...OFFERS.map((o) => `-   ${o}`));
-      offersDue = false;
-    } else if (offersDue && line === "What's Included:") {
-      out.push(line, '', ...OFFERS.flatMap((o) => [o, '']));
-      offersDue = false;
+    if (plan >= 0 && /^\[[^\]]+\]\(\/get-a-free-quote\/(?:#[\w-]+)?\)$/.test(line)) {
+      out.push(line.replace(/\/get-a-free-quote\/(?:#[\w-]+)?\)/, `/get-a-free-quote/#${HASH[plan]})`), '', ...prices.plans[plan].includes.map((f) => `-   ${f}`));
+      plan = -1;
       continue;
     }
     out.push(line);
@@ -43,13 +37,18 @@ const CARD_LINES = [
   [/^(### )?Advanced$/m, (m) => m.replace('Advanced', 'Growth')],
   [/^(### )?Elevate$/m, (m) => m.replace('Elevate', 'Business')],
 ];
-const ADD_OFFERS = [/[\s\S]+/, (md) => addOffersToCards(md)];
+const ADD_FEATURES = [/[\s\S]+/, (md) => addFeaturesToCards(md)];
 const OVERALL = [['$20 to $500+', '$20 to $600+'], ['$20–$500+', '$20–$600+']];
 
 export const ARTICLE_CHANGES = {
+  ...STORE_CHANGES,
   '/wordpress-website-maintenance-packages/': [
     ...[['WP Starter', 'Essential'], ['WP Growth', 'Growth'], ['WP Premium', 'Business']],
-    ADD_OFFERS,
+    ['Pay annually and get roughly two-and-a-half months free on every WordPress maintenance plan.', 'Pay annually and get 2 months free on every WordPress maintenance plan.'],
+    ['delivers daily, mission-critical care for ecommerce and high-traffic websites', 'delivers mission-critical care for high-traffic websites'],
+    ['you want weekly updates, daily backups, SEO checks, and content edits.', 'you want weekly updates, daily backups, malware removal, and 3 hours of edits a month.'],
+    ['You run a WooCommerce store or high-traffic site needing daily care, malware removal, emergency response, and a dedicated manager.', 'You run a high-traffic site needing 24/7 emergency fixes, staging-tested updates, and priority support. For online stores, see our [WooCommerce store plans](/ecommerce-website-maintenance-packages/).'],
+    ADD_FEATURES,
   ],
   '/best-fixrunner-alternatives/': [
     ['$95/mo, hosting included (1yr free)', '$79/mo, hosting included (1yr free)'],
@@ -96,7 +95,8 @@ export const ARTICLE_CHANGES = {
     ['| Basic / brochure site | $20 – $95 | Essential | DIY or Essential |', '| Basic / brochure site | $49 – $99 | Essential | DIY or Essential |'],
     ['| Small business WordPress site | $95 – $195 | Full-service | Essential / Advanced |', '| Small business WordPress site | $75 – $200 | Full-service | Essential / Growth |'],
     ['| Lead-gen / service business | $195 | Growth | Advanced |', '| Lead-gen / service business | $149 – $299 | Growth | Growth |'],
-    ['| Small WooCommerce store | $395+ | Premium | Elevate |', '| Small WooCommerce store | $300 – $600+ | Premium | Business |'],
+    ['| Small WooCommerce store | $395+ | Premium | Elevate |', '| Small WooCommerce store | $199 – $349 | Store | Store Starter or Store Growth |'],
+    ['while WooCommerce stores need Business at $299/month', 'while WooCommerce stores need a Store plan from $199/month'],
     ['$95–$195', '$75–$200'],
     ['Save 20% when you pay annually.', 'Get 2 months free when you pay annually.'],
     ['**Advanced ($195/mo)**', '**Growth ($149/mo)**'],
@@ -114,7 +114,7 @@ export const ARTICLE_CHANGES = {
     ['Plans from $95/month', 'Plans from $79/month'],
     ...CARD_LINES,
     [/^Advanced$/m, 'Growth'],
-    ADD_OFFERS,
+    ADD_FEATURES,
   ],
   '/how-much-does-website-maintenance-cost/': [
     ...OVERALL,
@@ -130,6 +130,8 @@ export const ARTICLE_CHANGES = {
     ['| Custom / enterprise | $395 – $1,000+ | $4,740 – $12,000+ |', '| Custom / enterprise | $600 – $1,000+ | $7,200 – $12,000+ |'],
     ['| Agency / managed plan | $95 – $500+/mo |', '| Agency / managed plan | $149 – $600+/mo |'],
     ['| WordPress | $95 – $395 |', '| WordPress | $149 – $299 |'],
+    ['| Shopify | $125 – $495 |', '| Shopify | $149 – $499 |'],
+    ['| WooCommerce / ecommerce | $145 – $595 |', '| WooCommerce / ecommerce | $199 – $599 |'],
     ['| Magento | $395+ |', '| Magento | $300 – $600+ |'],
     ['with most businesses paying $95–$195/month', 'with most small businesses paying $75–$200/month'],
     ['$1,140–$4,740 for a typical plan. Annual billing usually saves ~20% vs monthly.', '$948–$3,588 for a typical plan. Annual billing usually gives 2 months free.'],
@@ -144,7 +146,7 @@ export const ARTICLE_CHANGES = {
     ['$95–$195', '$75–$200'],
     ['reliable website care from $95/month', 'reliable website care from $79/month'],
     ...CARD_LINES,
-    ADD_OFFERS,
+    ADD_FEATURES,
   ],
   '/how-much-does-wordpress-website-maintenance-cost/': [
     ['($95–$395/mo)', '($79–$299/mo)'],
@@ -175,22 +177,22 @@ export const ARTICLE_CHANGES = {
     ['| Small business / brochure | $95–$195 | Essential → Advanced |', '| Small business / brochure | $75–$200 | Essential → Growth |'],
     ['| Lead-gen / service business | $195 | Advanced |', '| Lead-gen / service business | $149–$299 | Growth |'],
     ['| Content / news (high traffic) | $195–$395 | Advanced → Elevate |', '| Content / news (high traffic) | $149–$299 | Growth → Business |'],
-    ['| WooCommerce store | $395+ | Elevate |', '| WooCommerce store | $300–$600+ | Business |'],
+    ['| WooCommerce store | $395+ | Elevate |', '| WooCommerce store | $199–$599 | Store plans |'],
     ['| Membership / booking | $395+ | Elevate + custom |', '| Membership / booking | $300–$600+ | Business + custom |'],
-    ['$195–$600+/month', '$149–$600+/month'],
+    ['$195–$600+/month', '$199–$600+/month'],
     ['**past $195/month** for piecemeal services — which is exactly why a bundled plan like Advanced', '**past $149/month** for piecemeal services — which is exactly why a bundled plan like Growth'],
     ['| Agency plan | $95–$500+ |', '| Agency plan | $149–$600+ |'],
-    ['built into our Advanced and Elevate plans', 'built into our Growth and Business plans'],
+    ["A solid maintenance package should cover at least emergency response and malware cleanup — both are built into our Advanced and Elevate plans, so you're never hit with surprise per-incident invoices.", 'A solid maintenance package should cover at least malware cleanup and emergency response. Malware removal is built into our Growth and Business plans, and 24/7 emergency fixes are on Business only.'],
     ['an instant 20% off, the single easiest saving', '2 months free, the single easiest saving'],
     ['At $195/month, the Advanced plan', 'At $149/month, the Growth plan'],
     ['professional managed care plans run $95–$395/month', 'professional managed care plans run $149–$299/month'],
     ['managed plans run $95–$395/month', 'managed plans run $149–$299/month'],
     ['Our transparent plans: Essential $95, Advanced $195 (most popular), Elevate $395 — 20% off annually', 'Our transparent plans: Essential $79, Growth $149 (most popular), Business $299 — 2 months free annually'],
     ['best served by the Advanced plan', 'best served by the Growth plan'],
-    ['need Elevate-tier care ($395+/month)', 'need Business-tier care ($299+/month)'],
+    ['need Elevate-tier care ($395+/month)', 'need a Store plan (from $199/month)'],
     ['once you pass ~$195/month', 'once you pass ~$149/month'],
     ...CARD_LINES,
-    ADD_OFFERS,
+    ADD_FEATURES,
   ],
   '/white-label-wordpress-maintenance-support/': [
     ['$49/site/mo\n\nor $39/site/mo billed annually', '$59/site/mo'],
@@ -227,12 +229,12 @@ export const ARTICLE_CHANGES = {
 export const articlePairs = (path) => ARTICLE_CHANGES[path] ?? [];
 
 // These pages' lines with a price, percentage or old plan name may change; other old lines must still be on the page.
-export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount/.test(line);
+export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add/.test(line);
 
 // Schema offers on these pages follow the same prices. White-label tiers without a confirmed price lose their offer.
-const OFFER_PATHS = new Set(['/', '/agreement/', '/how-much-does-website-maintenance-cost/', '/how-much-does-wordpress-website-maintenance-cost/', '/white-label-wordpress-maintenance-support/']);
-const PRICE_MAP = { 95: 79, 195: 149, 395: 299 };
-const planName = (s) => s.replace(/^Advanced\b/, 'Growth').replace(/^Elevate\b/, 'Business');
+const OFFER_PATHS = new Set(['/ecommerce-website-maintenance-packages/', '/', '/agreement/', '/how-much-does-website-maintenance-cost/', '/how-much-does-wordpress-website-maintenance-cost/', '/white-label-wordpress-maintenance-support/']);
+const PRICE_MAP = { 95: 79, 195: 149, 395: 299, 145: 199, 295: 349, 595: 599 };
+const planName = (s) => s.replace(/^Advanced\b/, 'Growth').replace(/^Elevate\b/, 'Business').replace(/^Ecommerce Starter\b/, 'Store Starter').replace(/^Ecommerce Growth\b/, 'Store Growth').replace(/^Ecommerce Premium\b/, 'Store Pro');
 function fixOfferNode(node, path) {
   if (Array.isArray(node)) return node.map((n) => fixOfferNode(n, path)).filter((n) => n !== null);
   if (!node || typeof node !== 'object') return node;

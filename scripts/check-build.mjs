@@ -155,12 +155,21 @@ for (const file of htmlFiles) {
       if (localPrice.annual.some((p) => line.includes(p)) && /\/(?:yr|ano)\b/.test(line) && !/2 months free|2 meses gr[aá]tis/i.test(line)) fail('annual-note', `${path}: annual price without the note: ${line.trim().slice(0, 80)}`);
     });
   }
+  // Owner rule: the annual offer is "2 months free", and store pages carry their own plans.
+  if (/\bsave[sd]? (?:around |roughly )?~?20%|\b20% off\b/i.test($('main').text())) fail('annual-note', `${path}: says 20% instead of 2 months free.`);
+  const storeSet = Object.values(masterPrices.storePlans).find((s) => s.path === path);
+  if (storeSet) {
+    const mainText = $('main').text();
+    if (!$('#plans').length) fail('store-price', `${path}: #plans anchor is missing.`);
+    for (const plan of storeSet.plans) for (const item of [plan.name, `$${plan.monthly.toLocaleString('en-US')}/mo`, `$${plan.annual.toLocaleString('en-US')}/yr`, ...plan.includes]) if (!mainText.includes(item)) fail('store-price', `${path}: "${item}" is missing.`);
+    if (storeSet === masterPrices.storePlans.shopify && /free hosting/i.test($('.card').text())) fail('store-price', `${path}: Shopify plans must not offer hosting.`);
+  }
   // Owner rule: annual prices always say "2 months free" (Spanish: "2 meses gratis").
   $('main p, main li, main td, main div, main h2, main h3, main details').each((_, e) => {
     if ($(e).children('p, div, li, table, details').length) return;
     // On a plan card the note sits beside the price.
     const text = $(e).closest('.plan').length ? $(e).closest('.plan').text() : $(e).text();
-    if (/\$790\b|\$1,490\b|\$2,990\b|\b790, 1\.490\b/.test(text) && !/2 months free|2 meses gratis/i.test(text)) fail('annual-note', `${path}: annual price without "2 months free": ${text.trim().slice(0, 90)}`);
+    if (/\$790\b|\$1,490\b|\$2,990\b|\$1,990\b|\$3,490\b|\$5,990\b|\$4,990\b|\b790, 1\.490\b/.test(text) && !/2 months free|2 meses gratis/i.test(text)) fail('annual-note', `${path}: annual price without "2 months free": ${text.trim().slice(0, 90)}`);
   });
   // FAQ schema must match the visible page.
   const squeezeText = (s) => String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');

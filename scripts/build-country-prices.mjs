@@ -29,6 +29,26 @@ for (const [country, t] of Object.entries(TABLE)) {
   const show = (n) => `${t.sign}${n.toLocaleString(t.currency === 'BRL' ? 'pt-BR' : 'en-US')}`;
   local[`/website-maintenance-services-for-${country}/`] = { currency: t.currency, monthly: t.monthly.map(show), annual: t.monthly.map((n) => show(n * 10)), fix: show(t.fix), cleanup: show(t.cleanup) };
 }
+const OFFER_ROWS = OFFERS;
+const store = (name, hash, monthly, popular, includes) => ({ name, hash, monthly, annual: monthly * 10, ...(popular ? { popular: true } : {}), includes });
+prices.storePlans = {
+  woocommerce: {
+    path: '/ecommerce-website-maintenance-packages/',
+    plans: [
+      store('Store Starter', 'store-starter', 199, false, ['Everything in Growth', ...OFFER_ROWS, 'Staging-tested WooCommerce and payment plugin updates', 'Daily backups including orders', 'Weekly checkout test', '3 hours edits/month']),
+      store('Store Growth', 'store-growth', 349, true, ['Everything in Store Starter', ...OFFER_ROWS, '6 hours edits/month', 'Backups twice daily', 'Speed and Core Web Vitals work', 'Checkout and conversion fixes', '8-hour response']),
+      store('Store Pro', 'store-pro', 599, false, ['Everything in Store Growth', ...OFFER_ROWS, '12 hours edits/month', '24/7 emergency fixes', '4-hour response', 'Monthly strategy call']),
+    ],
+  },
+  shopify: {
+    path: '/shopify-website-maintenance-packages/',
+    plans: [
+      store('Shopify Starter', 'shopify-starter', 149, false, ['Theme and app checks', 'Monthly store health check (speed, broken links, app conflicts)', 'Backup app setup', '3 hours edits/month']),
+      store('Shopify Growth', 'shopify-growth', 299, true, ['Everything in Shopify Starter', '6 hours edits/month', 'Speed and SEO maintenance', 'Priority support']),
+      store('Shopify Pro', 'shopify-pro', 499, false, ['Everything in Shopify Growth', '12 hours edits/month', '24/7 emergency fixes', '4-hour response']),
+    ],
+  },
+};
 prices.annualNote.pt = '2 meses grátis';
 prices.firstMonthNote = { en: 'First month free', pt: 'Primeiro mês grátis' };
 delete prices.localRatesDate;
