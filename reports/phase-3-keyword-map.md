@@ -6,7 +6,7 @@
 
 | Page | New title | New H1 | Primary | Secondary | Why |
 |---|---|---|---|---|---|
-| `/` | Website Maintenance Services & Support \| WMS | Website Maintenance Services | website maintenance services | website maintenance; website maintenance service; web maintenance services; web maintenance service; website maintenance company; website maintenance support | Owner-approved title. "Plans" belongs to the packages page. Semrush: 4,400/mo, KD 23. |
+| `/` | Website Maintenance Services & Support \| WMS | Website Maintenance Services & Support | website maintenance services | website maintenance; website maintenance service; web maintenance services; web maintenance service; website maintenance company; website maintenance support | Owner-approved title. "Plans" belongs to the packages page. Semrush: 4,400/mo, KD 23. |
 | `/about-us/` | About Us \| WMS | About Us | about wms | — | No service keywords. |
 | `/agreement/` | Website Maintenance Agreement & Contract Template \| WMS | Website Maintenance Agreement & Contract Guide | website maintenance agreement | website maintenance contract; wordpress maintenance contract; website maintenance proposal; website maintenance contract template; website maintenance agreement template | Live page has no H1. Article, not a plan-button target. |
 | `/best-fixrunner-alternatives/` | Best FixRunner Alternatives (Compared & Reviewed) \| WMS | Best FixRunner Alternatives in 2026 (Compared & Reviewed) | fixrunner alternatives | fixrunner reviews; fixrunner |  |

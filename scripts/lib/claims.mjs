@@ -12,7 +12,7 @@ export const GUARANTEES = /\bguarantee[sd]?\b|\bwarrant(?:y|ies)\b|\bmoney[- ]ba
 const LOCATION = /\b(?:USA|US)[- ]Based\b/i;
 
 // Pages where "guarantee" is about us. Elsewhere the word is general advice or about other companies.
-export const OWN_CLAIM_PAGES = new Set(['/', '/best-fixrunner-alternatives/', '/best-wp-buffs-alternatives/', '/sitecare-alternative/', '/best-website-maintenance-for-small-business/', '/how-much-does-wordpress-website-maintenance-cost/', '/how-much-does-website-maintenance-cost/', '/monthly-website-maintenance-packages/', '/wordpress-website-maintenance-packages/', '/shopify-website-maintenance-packages/', '/ecommerce-website-maintenance-packages/', '/website-design-services/', '/website-hacked-recovery-services/', '/website-migration-services/', '/website-redesign-services/', '/website-repair-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/white-label-wordpress-maintenance-support/', '/wordpress-backup-services/', '/wordpress-malware-removal-service/', '/website-maintenance-services-for-canada/', '/website-maintenance-services-for-usa/', '/website-maintenance-services-for-uk/', '/website-maintenance-services-for-australia/', '/website-maintenance-services-for-france/', '/website-maintenance-services-for-spain/', '/website-maintenance-services-for-netherlands/', '/website-maintenance-services-for-switzerland/', '/website-maintenance-services-for-ireland/', '/website-maintenance-services-for-brazil/', '/how-long-does-website-maintenance-take/', '/website-maintenance-case-study/']);
+export const OWN_CLAIM_PAGES = new Set(['/', '/best-fixrunner-alternatives/', '/best-wp-buffs-alternatives/', '/sitecare-alternative/', '/best-website-maintenance-for-small-business/', '/how-much-does-wordpress-website-maintenance-cost/', '/how-much-does-website-maintenance-cost/', '/monthly-website-maintenance-packages/', '/wordpress-website-maintenance-packages/', '/shopify-website-maintenance-packages/', '/ecommerce-website-maintenance-packages/', '/website-design-services/', '/website-hacked-recovery-services/', '/website-migration-services/', '/website-redesign-services/', '/website-repair-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/white-label-wordpress-maintenance-support/', '/wordpress-backup-services/', '/wordpress-malware-removal-service/', '/website-maintenance-services-for-canada/', '/website-maintenance-services-for-usa/', '/website-maintenance-services-for-uk/', '/website-maintenance-services-for-australia/', '/website-maintenance-services-for-france/', '/website-maintenance-services-for-spain/', '/website-maintenance-services-for-netherlands/', '/website-maintenance-services-for-switzerland/', '/website-maintenance-services-for-ireland/', '/website-maintenance-services-for-brazil/', '/website-maintenance-case-study/']);
 
 // Statements about other companies or general facts, which stay.
 const KEEP = /Sucuri|WP Buffs holds|Fewer verified|fake 100%/i;
@@ -172,6 +172,18 @@ export function applyClaims($, path, log = []) {
     const rule = bannedIn(t, own);
     if (!rule) continue;
     if ($(e).children().toArray().some((c) => bannedIn(norm($(c).text()), own))) continue;
+    // Words inside a sentence: drop the whole sentence, so nothing is left half finished.
+    if (['strong', 'b', 'em', 'i', 'span', 'a', 'u', 'mark', 'small'].includes(e.name)) {
+      const block = $(e).closest('p, li, td, th, dd, blockquote');
+      const blockText = norm(block.text());
+      if (block.length && words(blockText) > words(t) + 2) {
+        const kept = cleanString(blockText, own);
+        record(rule, blockText, kept);
+        if (kept) block.text(kept);
+        else block.remove();
+        continue;
+      }
+    }
     let target = $(e);
     while (target.parent().length && !target.parent().is('body, section, main, ul, ol, table, tbody, tr') && words(norm(target.parent().text())) <= 10) target = target.parent();
     swapOrRemove(target, rule, target.text());

@@ -428,8 +428,6 @@ Proven Social Proof
 
 ## Real Migration Results & Case Studies
 
-Explore how we’ve helped businesses across healthcare, real estate, and tourism achieve , preserved SEO rankings, and faster loading speeds through our expert migration team.
-
 Healthcare Portal Case #01
 
 ### AMZ Hospital BD

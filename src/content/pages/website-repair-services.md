@@ -63,8 +63,6 @@ Average emergency response time
 
 Sites where we caused data loss
 
-Every number above is tracked internally and reviewed quarterly — because a repair company that won't measure its own reliability shouldn't be trusted with yours.
-
 Root-Cause Diagnosis & Repair
 
 ## One Team. Every Kind of Website Repair.
@@ -668,7 +666,7 @@ Custom Quote
 
 [Contact Engineering](/get-a-free-quote/)
 
-💡 Final pricing is confirmed after a free diagnostic — you'll always know the exact cost before any work begins. No hidden fees, no charge for the initial diagnosis.
+No hidden fees, no charge for the initial diagnosis.
 
 <a id="case-studies"></a>
 

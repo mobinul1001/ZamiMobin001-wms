@@ -27,7 +27,7 @@ Whether you do it yourself or hire a team, here is exactly how long website main
 
 [Let Us Handle It (Free Quote)](/get-a-free-quote/) [Get a Free Website Audit](/free-website-maintenance-audit/)
 
-**Quick answer:** Routine website maintenance takes about **1 to 3 hours per month** for a typical small business website. Individual tasks like plugin updates take 15–30 minutes, while a full monthly health check takes 1–2 hours. Scheduled maintenance that needs downtime is usually **under an hour** — and with a staging site, visitors often see . With a managed plan, the time cost to you is essentially nothing.
+**Quick answer:** Routine website maintenance takes about **1 to 3 hours per month** for a typical small business website. Individual tasks like plugin updates take 15–30 minutes, while a full monthly health check takes 1–2 hours. Scheduled maintenance that needs downtime is usually **under an hour** — and with a staging site, visitors often see **zero downtime**. With a managed plan, the time cost to you is essentially nothing.
 
 <img src="https://img.youtube.com/vi/DgVL6XdfPmI/maxresdefault.jpg" alt="How long does website maintenance take - video" loading="lazy">
 
