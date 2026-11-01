@@ -15,7 +15,7 @@ Effective Date: November 25, 2025
 
 At Website Maintenance Services ([https://websitemaintenanceservices.org/](/)), we use cookies and similar technologies to improve your experience on our website, analyze website traffic, and provide personalized services. This Cookie Policy explains what cookies are, how we use them, and your choices regarding cookies.
 
-By using our website, you consent to the use of cookies in accordance with this policy.
+Analytics cookies are used only if you choose Accept in our cookie bar. You can change your choice at any time with the Cookie settings link in the footer.
 
 ## 1 What Are Cookies?
 
@@ -77,14 +77,14 @@ Used by trusted third-party services for marketing.
 
 ## 3 Third-Party Cookies
 
-We may use third-party services, such as analytics or advertising providers, that set cookies on your device.
+If you accept analytics cookies, Google Analytics and Microsoft Clarity set cookies on your device. Clarity also shows us clicks, scrolling and recordings of how pages are used.
 
 -   We do not control these cookies.
 -   Their use is subject to the third-party provider’s privacy policy.
 
 ## 4 Your Cookie Choices
 
-You can manage your cookie preferences through your browser settings:
+Use the Cookie settings link in the footer to accept or reject analytics cookies. You can also manage cookies through your browser settings:
 
 -   Accept all cookies
 -   Block or delete certain cookies

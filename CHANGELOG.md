@@ -166,3 +166,8 @@
 - One healthcare note on every page and country (Portuguese on Brazil). No law or provider named in it. Portal line unchanged.
 - Formspree Free with one shared ID. public/forms.js submits with fetch and opens /thank-you/; validation and rate-limit messages show on the form; other failures fall back to a normal post; no JavaScript still works.
 - Privacy policy addition drafted, not applied.
+
+## Consent bar, privacy and cookie policy (2026-11-01)
+- Bottom bar with Accept and Reject of equal weight, privacy link, and a Cookie settings link in the footer. The choice is remembered. Google Analytics and Clarity load only after Accept, with Consent Mode v2 default denied and Clarity consentv2.
+- Privacy policy names Formspree, Hostinger, Google Analytics, Microsoft Clarity, Netlify and WhatsApp. Cookie policy names Google Analytics and Clarity and describes the choice.
+- Launch checklist: set the Effective Date on launch day. Later items recorded in STATUS.md.

@@ -55,6 +55,30 @@ We respect your privacy and do not sell or rent your personal information. Howev
 -   **Legal Compliance:** When required by law, legal process, or governmental authority.
 -   **Business Transactions:** In the event of a merger, acquisition, or sale of assets.
 
+### Service providers we use
+
+These companies process information for us when you use this website:
+
+| Provider | What it does for us | Information it handles |
+| --- | --- | --- |
+| Formspree, Inc. | Receives the forms on this website and sends them to us by email | What you enter in a form, such as your name, email address, phone number, website address and message, and technical details of the submission such as your IP address |
+| Hostinger | Provides our business email, which receives form notifications | The contents of form notifications and emails you send us |
+| Google Analytics (Google) | Shows us how visitors use this website, only if you accept analytics cookies | Pages visited, time on site, device and browser details, approximate location, and cookie identifiers |
+| Microsoft Clarity (Microsoft) | Shows us how visitors move through pages, including clicks, scrolling and recordings of how pages are used, only if you accept analytics cookies | Clicks, scrolling and mouse movement, device and browser details, and cookie identifiers |
+| Netlify, Inc. | Hosts this website | Technical request details such as your IP address and the pages requested |
+| WhatsApp (Meta) | Handles the conversation, only if you click a WhatsApp link | Your phone number and the messages you send |
+
+These providers may process information outside your country. Their own privacy policies explain how they handle it:
+
+-   [Formspree privacy policy](https://formspree.io/legal/privacy-policy/)
+-   [Hostinger privacy policy](https://www.hostinger.com/legal/privacy-policy)
+-   [Google privacy policy](https://policies.google.com/privacy)
+-   [Microsoft privacy statement](https://privacy.microsoft.com/privacystatement)
+-   [Netlify privacy policy](https://www.netlify.com/privacy/)
+-   [WhatsApp privacy policy](https://www.whatsapp.com/legal/privacy-policy)
+
+Please don't send patient or health information through the forms on this website.
+
 ## 4 Cookies and Tracking Technologies
 
 Our website uses cookies and similar technologies to enhance user experience, analyze website traffic, and improve performance.

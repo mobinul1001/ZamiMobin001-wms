@@ -31,6 +31,8 @@ const cases = [
   ['Local price missing on a country page', () => replaceIn(COUNTRY, /£590/g, '£599'), /£590 is missing/],
   ['Form not posting to Formspree', () => replaceIn('dist/contact/index.html', /action="https:\/\/formspree\.io[^"]*"/, 'action="/somewhere/"'), /does not post to Formspree/],
   ['Disabled submit button', () => replaceIn('dist/contact/index.html', /<button type="submit"/, '<button disabled type="submit"'), /submit button is disabled/],
+  ['Analytics before consent', () => replaceIn(PAGE, '</head>', '<script src="https://www.clarity.ms/tag/x"></script></head>'), /loads before consent/],
+  ['Cookie bar missing', () => replaceIn(PAGE, 'id="cookie-bar"', 'id="other"'), /cookie bar is missing/],
   ['Annual price without the note', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Essential is $790 per year.</p>'), /annual price without/],
   ['FAQ schema not on the page', () => replaceIn(PAGE, '</head>', '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"name":"Not on page?","acceptedAnswer":{"text":"Nope"}}]}</script></head>'), /schema question not on the page/],
   ['Banned claim on a page', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Trusted by 500+ businesses.</p>'), /banned claim/],

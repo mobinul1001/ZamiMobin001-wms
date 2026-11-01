@@ -988,6 +988,24 @@
       "question": "How do I join your Affiliate Program?"
     },
     {
+      "path": "/cookie-policy/",
+      "change": "price",
+      "from": "By using our website, you consent to the use of cookies in accordance with this policy.",
+      "to": "Analytics cookies are used only if you choose Accept in our cookie bar. You can change your choice at any time with the Cookie settings link in the footer."
+    },
+    {
+      "path": "/cookie-policy/",
+      "change": "price",
+      "from": "We may use third-party services, such as analytics or advertising providers, that set cookies on your device.",
+      "to": "If you accept analytics cookies, Google Analytics and Microsoft Clarity set cookies on your device. Clarity also shows us clicks, scrolling and recordings of how pages are used."
+    },
+    {
+      "path": "/cookie-policy/",
+      "change": "price",
+      "from": "You can manage your cookie preferences through your browser settings:",
+      "to": "Use the Cookie settings link in the footer to accept or reject analytics cookies. You can also manage cookies through your browser settings:"
+    },
+    {
       "path": "/cost-to-redesign-website/",
       "change": "schema same",
       "question": "How much does it cost to redesign a website in 2026?"
@@ -2217,6 +2235,11 @@
       "path": "/nonprofit-website-maintenance/",
       "change": "schema same",
       "question": "What's the most important nonprofit website maintenance task?"
+    },
+    {
+      "path": "/privacy-policy/",
+      "change": "price",
+      "from": "/^-   \\*\\*Business Transactions:\\*\\*[^\\n]*$/m"
     },
     {
       "path": "/salon-seo/",

@@ -73,7 +73,7 @@ if (local) {
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
 ---
-<section class="hero" style="padding-bottom:36px"><div class="wrap" style="display:block">
+<section class="hero" style="padding-bottom:36px"><div class="wrap service-hero" style="display:block">
   <nav class="crumbs" style="padding-top:0;margin-bottom:14px" aria-label="Breadcrumb"><a href="/">{text.home}</a> / {h1}</nav>
   <h1 style="max-width:20em">{h1}</h1>
   {sub && <p class="sub" set:html={sub} />}

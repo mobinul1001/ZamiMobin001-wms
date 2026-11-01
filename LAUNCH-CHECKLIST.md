@@ -10,6 +10,7 @@
 - [ ] Analytics / tag IDs added to the new site.
 - [ ] Contact form sends to the right inbox (tested on preview).
 - [ ] Pick a low-traffic time (US night).
+- [ ] Set the Effective Date on /privacy-policy/ and /cookie-policy/ to launch day.
 
 ## Launch day
 1. [ ] Set the custom domain as primary in Netlify, then run a new production build. Noindex lifts only on that build (it needs CONTEXT=production and URL=the real domain). Confirm production pages output index robots tags.

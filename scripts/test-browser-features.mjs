@@ -18,6 +18,48 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   out.starterDesign = await plan('#starter-design');
   const quote = (await load('/get-a-free-quote/')).contentDocument.querySelector('main form');
   out.quoteForm = { action: quote.getAttribute('action'), disabled: quote.querySelectorAll('button[disabled]').length, honeypotHidden: quote.querySelector('input[name="_gotcha"]').style.display };
+  // Consent: stub the tag loader so a test never contacts Google or Microsoft.
+  const consentPage = async () => {
+    const f = await load('/about-us/');
+    await new Promise((r) => setTimeout(r, 150));
+    return f;
+  };
+  const stub = (f) => {
+    const list = [];
+    const head = f.contentDocument.head;
+    const real = head.appendChild.bind(head);
+    head.appendChild = (el) => { if (el.src && /googletag|clarity/.test(el.src)) { list.push(el.src); return el; } return real(el); };
+    return list;
+  };
+  localStorage.clear();
+  const c1 = await consentPage();
+  const c1list = stub(c1);
+  out.consentFirst = { visible: !c1.contentDocument.getElementById('cookie-bar').hidden, tags: c1.contentDocument.querySelectorAll('script[src*="googletag"], script[src*="clarity.ms"]').length, defaultDenied: Array.from(c1.contentWindow.dataLayer || []).some((a) => a[0] === 'consent' && a[1] === 'default' && a[2].analytics_storage === 'denied') };
+  c1.contentDocument.getElementById('cookie-accept').click();
+  out.consentAccept = { hidden: c1.contentDocument.getElementById('cookie-bar').hidden, tags: c1list.slice(), stored: localStorage.getItem('wms-analytics-consent'), granted: Array.from(c1.contentWindow.dataLayer).some((a) => a[0] === 'consent' && a[1] === 'update' && a[2].analytics_storage === 'granted'), clarity: JSON.stringify((c1.contentWindow.clarity.q || []).map((a) => Array.from(a))) };
+  localStorage.clear();
+  const c2 = await consentPage();
+  const c2list = stub(c2);
+  c2.contentDocument.getElementById('cookie-reject').click();
+  out.consentReject = { hidden: c2.contentDocument.getElementById('cookie-bar').hidden, tags: c2list.length, stored: localStorage.getItem('wms-analytics-consent') };
+  const c3 = await consentPage();
+  out.consentRemember = { hidden: c3.contentDocument.getElementById('cookie-bar').hidden };
+  c3.contentDocument.getElementById('cookie-settings').click();
+  out.consentSettings = { visible: !c3.contentDocument.getElementById('cookie-bar').hidden };
+  localStorage.clear();
+  // The bar must not cover the first-screen button on a phone.
+  const sized = (src, w, h) => new Promise((done) => { const f = document.createElement('iframe'); f.style.cssText = 'width:' + w + 'px;height:' + h + 'px;border:0;position:fixed;left:0;top:0'; f.onload = () => done(f); f.src = src; document.body.appendChild(f); });
+  out.mobile = [];
+  for (const [w, h] of [[390, 844], [360, 640]]) for (const p of ["/","/wordpress-website-maintenance-packages/","/ecommerce-website-maintenance-packages/","/shopify-website-maintenance-packages/","/website-repair-services/","/website-hacked-recovery-services/","/wordpress-malware-removal-service/","/website-migration-services/","/website-redesign-services/","/website-design-services/","/website-seo-services/","/website-speed-optimization-services/","/website-support-services/","/website-update-services/","/wordpress-backup-services/","/white-label-website-maintenance-services-for-agencies/","/wms-partner-program/","/website-maintenance-services-for-usa/","/website-maintenance-services-for-uk/","/website-maintenance-services-for-canada/","/website-maintenance-services-for-australia/","/website-maintenance-services-for-france/","/website-maintenance-services-for-spain/","/website-maintenance-services-for-netherlands/","/website-maintenance-services-for-switzerland/","/website-maintenance-services-for-ireland/","/website-maintenance-services-for-brazil/"]) {
+    const f = await sized(p, w, h);
+    await new Promise((r) => setTimeout(r, 120));
+    const d = f.contentDocument;
+    const bar = d.getElementById('cookie-bar').getBoundingClientRect();
+    const cta = d.querySelector('.cta-row .btn').getBoundingClientRect();
+    out.mobile.push({ w, h, p, barTop: Math.round(bar.top), barH: Math.round(bar.height), ctaTop: Math.round(cta.top), ctaBottom: Math.round(cta.bottom), covered: cta.top < h && cta.bottom > bar.top });
+    f.remove();
+  }
+  localStorage.setItem('wms-analytics-consent', 'denied');
   const sendTest = async (status, body) => {
     const f = await load('/contact/');
     const win = f.contentWindow;
@@ -61,7 +103,7 @@ const server = createServer((req, res) => {
 await new Promise((r) => server.listen(4398, r));
 const profile = mkdtempSync(join(tmpdir(), 'wms-test-'));
 const dom = await new Promise((done) => {
-  const c = spawn(CHROME, ['--headless=new', '--disable-gpu', `--user-data-dir=${profile}`, '--virtual-time-budget=15000', '--dump-dom', 'http://localhost:4398/_test']);
+  const c = spawn(CHROME, ['--headless=new', '--disable-gpu', `--user-data-dir=${profile}`, '--virtual-time-budget=90000', '--dump-dom', 'http://localhost:4398/_test']);
   let s = '';
   c.stdout.on('data', (d) => (s += d));
   c.on('exit', () => done(s));
@@ -79,6 +121,13 @@ const checks = {
   'essential hash selects Essential': eq(r.essential, ['essential', 'essential', 'USD']),
   'business hash selects Business': eq(r.business, ['business', 'business', 'USD']),
   'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
+  'bar shows on first visit with no tags': r.consentFirst.visible && r.consentFirst.tags === 0,
+  'consent default is denied': r.consentFirst.defaultDenied,
+  'accept loads both tags once': r.consentAccept.hidden && r.consentAccept.tags.length === 2 && r.consentAccept.stored === 'granted',
+  'accept updates GA and Clarity consent': r.consentAccept.granted && r.consentAccept.clarity.includes('consentv2') && r.consentAccept.clarity.includes('"analytics_Storage":"granted"'),
+  'reject loads nothing and is remembered': r.consentReject.hidden && r.consentReject.tags === 0 && r.consentReject.stored === 'denied' && r.consentRemember.hidden,
+  'cookie settings reopens the bar': r.consentSettings.visible,
+  'bar does not cover the mobile button': r.mobile.every((m) => !m.covered),
   'success opens /thank-you/': r.sendOk.path === '/thank-you/',
   'fetch asks for JSON and sends form_name': r.sendOk.sent.accept === 'application/json' && r.sendOk.sent.formName === 'contact',
   'validation error shows on the form': r.sendInvalid.message === 'email is invalid' && !r.sendInvalid.nativePost,

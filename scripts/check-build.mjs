@@ -168,6 +168,10 @@ for (const file of htmlFiles) {
   if (/form provider|meets (?:UK )?GDPR|meets PIPEDA/i.test($('main').text())) fail('healthcare', `${path}: old healthcare note.`);
   if (/HIPAA[- ](?:compl|certif)|secure online appointment booking|patient online appointment booking|Large patient booking database/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
   if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
+  // Owner rule: analytics load only after Accept, and every page offers the choice.
+  if ($('script[src*="googletagmanager"], script[src*="clarity.ms"]').length) fail('consent', `${path}: analytics tag loads before consent.`);
+  if (!$('#cookie-bar').length || !$('#cookie-accept').length || !$('#cookie-reject').length || !$('#cookie-settings').length || !$('script[src="/consent.js"]').length) fail('consent', `${path}: cookie bar is missing.`);
+  if (isLive && !$('head script').toArray().some((x) => /'consent',\s*'default'/.test($(x).html() ?? ''))) fail('consent', `${path}: Consent Mode default is missing.`);
   // Owner rule: no guarantees beyond the hacked-site line, the malware re-clean and the migration fix.
   const promise = (path === '/website-repair-services/' ? /full refund/i : /no fix,? no fee|full refund/i).exec($('main').text()) ?? /full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());
   if (healthPages.includes(path) && (!$('main').text().replace(/\u2019/g, "'").includes(healthNote) || !$('main').text().replace(/\u2019/g, "'").includes(portalNote))) fail('healthcare', `${path}: healthcare note is missing.`);

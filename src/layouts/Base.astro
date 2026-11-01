@@ -34,6 +34,10 @@ const main = [
   ['Contact', '/contact/'],
 ];
 const current = Astro.url.pathname;
+const isPt = lang.startsWith('pt');
+const cookieText = isPt
+  ? { message: 'Usamos cookies de análise para melhorar este site.', accept: 'Aceitar', reject: 'Recusar', policy: 'Política de privacidade', settings: 'Configurações de cookies' }
+  : { message: 'We use analytics cookies to improve this site.', accept: 'Accept', reject: 'Reject', policy: 'Privacy policy', settings: 'Cookie settings' };
 const footerCols = [
   ['Services', [...services, ['White label for agencies', '/white-label-website-maintenance-services-for-agencies/'], ['Website migration', '/website-migration-services/'], ['Speed optimization', '/website-speed-optimization-services/']]],
   ['Company', [['About us', '/about-us/'], ['Our work', '/works/'], ['Pricing', '/monthly-website-maintenance-packages/'], ['Process', '/website-maintenance-process/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Blog', '/blogs/'], ['Partner program', '/wms-partner-program/'], ['Write for us', '/write-for-us/']]],
@@ -56,26 +60,14 @@ const footerCols = [
     <slot name="head" />
     {isProduction && (
       <script is:inline>
-        // Analytics load after the page is interactive (SEO-GUARDRAILS section 3).
-        window.addEventListener('load', function () {
-          (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(function () {
-            window.dataLayer = window.dataLayer || [];
-            window.gtag = function () { dataLayer.push(arguments); };
-            gtag('js', new Date());
-            gtag('config', 'GT-K522B6T8');
-            var g = document.createElement('script');
-            g.async = true;
-            g.src = 'https://www.googletagmanager.com/gtag/js?id=GT-K522B6T8';
-            document.head.appendChild(g);
-            window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
-            var c = document.createElement('script');
-            c.async = true;
-            c.src = 'https://www.clarity.ms/tag/wqnjbhbxww';
-            document.head.appendChild(c);
-          });
-        });
+        // Consent Mode v2: everything stays denied, and no tag loads until the visitor accepts (public/consent.js).
+        window.wmsAnalytics = true;
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
       </script>
     )}
+    <script is:inline defer src="/consent.js"></script>
   </head>
   <body>
     <header class="site-head"><div class="wrap">
@@ -105,7 +97,11 @@ const footerCols = [
           <div><h3>{heading}</h3><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></div>
         ))}
       </div>
-      <p class="legal">© 2026 WMS. websitemaintenanceservices.org</p>
+      <p class="legal">© 2026 WMS. websitemaintenanceservices.org · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></p>
     </div></footer>
+    <div id="cookie-bar" class="cookie-bar" role="region" aria-label={cookieText.settings} hidden>
+      <p>{cookieText.message} <a href="/privacy-policy/">{cookieText.policy}</a></p>
+      <div class="cookie-actions"><button type="button" id="cookie-accept" class="btn ghost">{cookieText.accept}</button><button type="button" id="cookie-reject" class="btn ghost">{cookieText.reject}</button></div>
+    </div>
   </body>
 </html>
