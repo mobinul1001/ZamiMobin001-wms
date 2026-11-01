@@ -17,6 +17,13 @@
 - Added `scripts/download-media.mjs` and saved the 580 media files the page crawl had not reached (919 in total).
 - Reports: `reports/phase-2-url-map-summary.md`, `reports/phase-2-url-map-summary.json`.
 
+## Local migration and checks (2026-11-01)
+- All 92 pages and posts migrated to `src/content/` by `scripts/migrate-content.mjs`, with old titles, H1s, schema and text. 919 upload files are in `public/wp-content/`.
+- Added a plain placeholder layout, a real 404 page and an RSS feed. No visual design.
+- Added `scripts/generate-redirects.mjs`, `scripts/check-build.mjs`, `scripts/test-build-checks.mjs` and `scripts/parity-local.mjs`.
+- Proposed the keyword map in `reports/phase-3-keyword-plan.md`; not applied.
+- Commits stay local. The owner pushes later.
+
 ## Owner decisions (2026-11-01)
 - Added `CMS-REQUIREMENTS.md`. CMS plan approved: Sveltia CMS, fine-grained GitHub token with 1-year expiry, no 410, Editorial Workflow included in the small test. Nothing is installed yet.
 - Separate service packages stay on the design, migration, SEO, speed and white-label pages; the master price list covers maintenance plans and one-time fixes only. Each price is listed for the owner to confirm or correct before launch. Their buttons use the hash method, for example `/get-a-free-quote/#growth-design` and `#starter-seo`. `?industry=` and `?package=` URLs follow the `?plan=` rule: no redirect, no internal links. White-label agency prices must be clearly labelled as wholesale for agencies so they do not contradict the main plan prices.
