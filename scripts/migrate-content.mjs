@@ -308,6 +308,11 @@ async function convert(path, record) {
     label.parent().before(`<p data-eyebrow="">${label.html()}</p>`);
     label.remove();
   });
+  // Text pieces inside a link ran together ("PackagesPlans & pricing").
+  $('a').each((_, a) => {
+    const kids = $(a).children('span, b, strong, small, em, div, p');
+    if (kids.length > 1) kids.each((_, k) => { $(k).after(' '); });
+  });
   // Mobile-only copies of table labels would print twice.
   $('td [class*="md:hidden"], td [class*="sm:hidden"], td [class*="lg:hidden"]').remove();
   // Card grids stay as cards.

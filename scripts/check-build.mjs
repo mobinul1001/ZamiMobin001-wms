@@ -133,6 +133,13 @@ for (const file of htmlFiles) {
   const claimTexts = [$('main').text().replace(/[ \t]+/g, ' '), title, desc, ...$('meta[property^="og:"], meta[name^="twitter:"]').toArray().map((m) => $(m).attr('content') ?? '').filter((v) => !/^https?:/.test(v))];
   for (const text of claimTexts) for (const line of findBanned(text, path).slice(0, 3)) fail('claims', `${path}: banned claim: ${line.slice(0, 110)}`);
   if (/\bJohn Doe\b|\bParaphrased\b/.test($('main').text())) fail('claims', `${path}: placeholder testimonial text.`);
+  // A placeholder must never go live, and every form must reach Netlify Forms.
+  if (/\[Owner\b/i.test($('body').text())) fail('placeholder', `${path}: "[Owner..." placeholder text on the page.`);
+  $('main form:not(#scan-form)').each((_, form) => {
+    if ($(form).attr('data-netlify') !== 'true' || $(form).attr('action') !== '/thank-you/') fail('forms', `${path}: form does not post to Netlify Forms and /thank-you/.`);
+    if (!$(form).find('input[name="form-name"]').length) fail('forms', `${path}: form has no form-name field.`);
+    if ($(form).find('input:not([type="button"]), select, textarea').toArray().some((c) => !$(c).attr('name'))) fail('forms', `${path}: a form field has no name, so its value would not be sent.`);
+  });
   // Owner rule: annual prices always say "2 months free" (Spanish: "2 meses gratis").
   $('main p, main li, main td, main div, main h2, main h3, main details').each((_, e) => {
     if ($(e).children('p, div, li, table, details').length) return;

@@ -157,7 +157,7 @@ or $790/yr, 2 meses gratis
 
 Most Popular
 
-### Advanced
+### Growth
 
 For growing businesses & online stores.
 
@@ -171,7 +171,7 @@ or $1,490/yr, 2 meses gratis
 
 <div class="card">
 
-### Elevate
+### Business
 
 For high-traffic sites & large online stores.
 
@@ -219,37 +219,37 @@ About website maintenance services in Spain.
 
 <div class="card">
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+[WordPress Maintenance Packages Plans & pricing](/wordpress-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Ecommerce MaintenanceWooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/)
+[Ecommerce Maintenance WooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+[Website Maintenance Cost 2026 pricing guide](/how-much-does-website-maintenance-cost/)
 
 </div>
 
 <div class="card">
 
-[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+[Maintenance Checklist Every task, step by step](/website-maintenance-checklist/)
 
 </div>
 
 <div class="card">
 
-[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+[Best Maintenance Companies Compare top providers](/best-website-maintenance-companies/)
 
 </div>
 
 <div class="card">
 
-[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+[Website Management Packages Fully managed plans](/monthly-website-maintenance-packages/)
 
 </div>
 

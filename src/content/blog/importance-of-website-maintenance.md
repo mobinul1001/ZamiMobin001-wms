@@ -626,37 +626,37 @@ Common questions about the importance of website maintenance.
 
 <div class="card">
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+[Website Maintenance Cost 2026 pricing guide](/how-much-does-website-maintenance-cost/)
 
 </div>
 
 <div class="card">
 
-[How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/)
+[How Long It Takes Time per task & site type](/how-long-does-website-maintenance-take/)
 
 </div>
 
 <div class="card">
 
-[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+[Maintenance Checklist Every task, step by step](/website-maintenance-checklist/)
 
 </div>
 
 <div class="card">
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+[WordPress Maintenance Packages Plans & pricing](/wordpress-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+[Website Management Packages Fully managed plans](/monthly-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+[Best Maintenance Companies Compare top providers](/best-website-maintenance-companies/)
 
 </div>
 

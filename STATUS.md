@@ -12,8 +12,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 | 1 Read-only crawl | Done | 817 URLs, 96 real pages, 919 upload files (53.6 MB), 0 failed. Output in `export/` (not in git). |
 | 2 URL map | Done, final | `url-map.csv`: 815 rows (121 at 200, 680 at 301, 14 at 404). 0 chains, 0 missing targets. |
 | Keyword map | Approved and applied to titles and H1s | `reports/phase-3-keyword-map.csv`, 92 pages. Heading and secondary-keyword edits inside page bodies are not done. |
-| 3 Design | Mockups approved 2026-11-01; template plan waiting for approval | "Calm engineering": `mockups/` and `reports/mockups/`. No other templates built. |
-| 4 Build pages | Partly done | 92 pages migrated into `src/content/` on a plain placeholder layout. Claims and FAQs applied. See "not done" below. |
+| 3 Design | Done locally | "Calm engineering" mockups and template plan approved 2026-11-01. All 4 template batches built and committed. Screenshots in `reports/batch-1` to `batch-4`. |
+| 4 Build pages | Partly done | 92 pages plus /thank-you/ on the new templates. Claims and FAQs applied. See "not done" below. |
 | 5 Parity | Local version passes | 815/815 rows, 92/92 pages; no old text lost apart from approved changes. `reports/parity-local.csv`. The live-versus-preview run waits for a deploy. |
 | Redirects and build checks | Done | 246 path rules, 97 query rules, 1 feed rewrite. 18 failure tests pass. |
 | 6 Preview QA | Not started | Needs the owner's push. 13 tests are listed in `reports/netlify-only-tests.md`. |
@@ -21,10 +21,11 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 | 7 Launch, 8 Monitoring | Not started | |
 
 **Not done in Phase 4 yet:**
-- Master prices in page bodies, tables and non-FAQ schema. Pages still show old prices outside the FAQ answers already changed.
+- Master prices are on the homepage, pricing, WordPress packages, Netherlands, Spain and Switzerland. 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
 - Moving unique content from the 4 merged pages to their targets.
 - Keyword edits inside page bodies, and expanding the homepage and packages page.
-- Section-based page fields, real Netlify forms (12 forms are disabled), CMS, build-time image conversion, 404 tracking, Lighthouse, schema validation.
+- Rearranging service pages (problem, included, price, FAQ): first screen is new, the rest keeps its old order.
+- Section-based page fields, CMS, build-time image conversion, schema validation. Forms and 404 tracking are built but can only be proven on Netlify.
 
 ## 2. Decisions the owner approved on 2026-11-01
 
@@ -73,7 +74,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 ## 3. Open questions waiting for the owner
 
-1. **Template plan:** approve the plan for building the templates. (Mockups were approved on 2026-11-01.)
+1. **Removed in the template work, please confirm:** the hidden JavaScript post list on /blogs/ ("Loading Title...", "Kono result paowa jayni!") and the coupon box on the quote form, whose button now says "Get My Quote".
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
 4. **Mockup gaps:** response time, add-on prices (6), what counts as an edit hour, what happens on cancel.
@@ -83,7 +84,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
 10. **FAQ market ranges:** change to $79–$149 and $79–$299, or keep as they are?
-11. **Other price sets in FAQs** (`reports/faq-schema-sync.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup. Also plan features that no longer match Growth and Business.
+11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup, the USA page (Basic $49, Standard $99, Premium $199), and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
 12. **Service package prices:** confirm each in `reports/service-package-prices.md`, including the migration and design conflicts and the four white-label points.
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.
@@ -91,10 +92,10 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 ## 4. Next steps
 
-1. Owner approves the template plan and answers the portfolio table.
-2. Build the approved templates: homepage, pricing, service, blog, country, contact, 404, thank-you. Then Lighthouse.
-3. Apply master prices across bodies, tables and schema; move the merged pages' content; make keyword edits inside bodies, homepage and packages page first; fix internal links and hubs.
-4. Build real Netlify forms with hash pre-selection, image conversion and 404 tracking.
+1. Owner answers question 11 and the portfolio table.
+2. Apply the remaining prices. Move the merged pages' content. Make keyword edits inside bodies, homepage and packages page first.
+3. Plan image conversion and section fields.
+4. Keep every template change passing: `npm run build`, `npm run parity`, `node scripts/test-build-checks.mjs`, `node scripts/test-browser-features.mjs`, `node scripts/link-report.mjs`.
 5. Owner creates the private GitHub repo, pushes, and connects Netlify. Steps were given earlier in this project; no custom domain and no DNS change.
 6. Run the Netlify-only tests in `reports/netlify-only-tests.md`, then install the CMS and write `CMS-GUIDE.md`.
 7. Run parity against the preview, then preview QA and owner approval.

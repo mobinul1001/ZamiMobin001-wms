@@ -1464,6 +1464,18 @@
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
+      "from": "### Advanced",
+      "to": "### Growth"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "### Elevate",
+      "to": "### Business"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
       "from": "Save 20% with annual billing.",
       "to": "Get 2 months free with annual billing."
     },
@@ -1538,6 +1550,18 @@
       "change": "price",
       "from": "/95(?:&nbsp;|\\s)USD\\/mes \\(Essential\\), 195(?:&nbsp;|\\s)USD\\/mes \\(Advanced\\) y 395(?:&nbsp;|\\s)USD\\/mes \\(Elevate\\), con un 20% de descuento en el pago anual/g",
       "to": "79 USD/mes (Essential), 149 USD/mes (Growth) y 299 USD/mes (Business), o 790, 1.490 y 2.990 USD al año (2 meses gratis)"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "### Advanced",
+      "to": "### Growth"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "### Elevate",
+      "to": "### Business"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1621,6 +1645,18 @@
       "change": "price",
       "from": "Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.",
       "to": "Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free)."
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "### Advanced",
+      "to": "### Growth"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "### Elevate",
+      "to": "### Business"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",

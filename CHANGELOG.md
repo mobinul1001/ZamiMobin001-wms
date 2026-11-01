@@ -82,3 +82,20 @@
 - Removed the old JavaScript post list from /blogs/: filter row and hidden placeholders ("Loading Title...", "Kono result paowa jayni!"). Flagged to the owner.
 - Article heading labels (class "eb") moved out of the heading tag, so "DecideHow to Choose" reads properly.
 - Footer links added: partner program, write for us, malware scanner.
+
+## Templates, Batch 3 (2026-11-01)
+- Service template for 16 pages (3 package, 13 service) and 10 country pages: breadcrumb, H1, first sentence as sub-headline, starting price from the master list, calls to action. The rest of the body keeps its old order. Spanish and Portuguese labels on those two country pages.
+- Master prices on /wordpress-website-maintenance-packages/ and the Netherlands, Spain and Switzerland pages: cards, tables, text, meta, social tags and schema offers.
+- Service pages link back to their blog posts.
+- scripts/list-old-prices.mjs writes reports/old-price-lines.md: lines that still show an old plan price.
+
+## Templates, Batch 4 (2026-11-01)
+- Form template: contact, quote and audit forms post to Netlify Forms with a honeypot, then /thank-you/. Labels linked to their fields.
+- Quote form: platform field added, plan list follows the master list and is pre-selected from the URL hash. Coupon box removed (it needed the old JavaScript), button now "Get My Quote".
+- Malware scanner rebuilt as a small browser script: address format, HTTPS, links to Google Safe Browsing, Sucuri and VirusTotal.
+- New /thank-you/ (noindex, not in sitemap). 404 restyled, sends a page_not_found event to Google Analytics on production.
+- Plan names Growth and Business on the Netherlands, Spain and Switzerland cards.
+- Build check fails on "[Owner" text and on any form that does not post to Netlify Forms.
+- Text pieces inside links no longer run together.
+- Added scripts/test-browser-features.mjs: runs the quote hash and the scanner in headless Chrome. It caught the scanner crashing on a missing results list before commit.
+- The forms check found 9 service-page forms not connected. All 12 forms now post to Netlify Forms with unique names.

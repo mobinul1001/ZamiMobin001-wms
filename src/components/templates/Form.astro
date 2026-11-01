@@ -1,0 +1,64 @@
+---
+// Contact, quote, audit and scanner pages. wireForms() in [...slug].astro connects the forms.
+const { entry } = Astro.props;
+const { path, h1 } = entry.data;
+const formName = path === '/get-a-free-quote/' ? 'quote' : '';
+let html = entry.rendered?.html ?? '';
+const isScanner = path === '/website-malware-scanner/';
+if (isScanner) {
+  html = html.replace(
+    /<p>Scan Website<\/p>/,
+    `<form id="scan-form" class="scan-form"><label for="scan-url">Your website address</label><input id="scan-url" type="text" inputmode="url" autocomplete="url" placeholder="yourwebsite.com" required><button class="btn" type="submit">Scan Website</button></form>`,
+  ).replace(/(<h3[^>]*>Quick Check Results<\/h3>)/, '$1<ul id="scan-quick"></ul>').replace(/(<h3[^>]*>Deep Malware &(?:#x26|amp); Blacklist Scans<\/h3>)/, '$1<ul id="scan-deep"></ul>');
+}
+---
+<div class="prose-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
+  <div class="page-head" style="padding-top:14px"><h1>{h1}</h1></div>
+  <div class="prose" set:html={html} />
+</div>
+{formName === 'quote' && (
+  <script is:inline>
+    // Plan buttons link here as /get-a-free-quote/#essential. The hash picks the plan; service packages are kept in a hidden field.
+    (function () {
+      var hash = decodeURIComponent(location.hash.slice(1)).toLowerCase();
+      if (!hash) return;
+      var plan = document.querySelector('select[name="plan"]');
+      var known = plan && Array.prototype.find.call(plan.options, function (o) { return o.value === hash; });
+      if (plan) plan.value = known ? hash : 'other';
+      document.getElementById('requested-package').value = hash;
+    })();
+  </script>
+)}
+{isScanner && (
+  <script is:inline>
+    // Runs in the browser only. Checks the address format and builds links to outside scanners.
+    document.getElementById('scan-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var raw = document.getElementById('scan-url').value.trim();
+      var https = /^https:\/\//i.test(raw);
+      var given = /^http:\/\//i.test(raw);
+      var domain = raw.replace(/^https?:\/\//i, '').split(/[\/?#]/)[0].toLowerCase();
+      var valid = /^([a-z0-9-]+\.)+[a-z]{2,}$/.test(domain);
+      var quick = document.getElementById('scan-quick');
+      var deep = document.getElementById('scan-deep');
+      quick.textContent = '';
+      deep.textContent = '';
+      var add = function (list, text, href) {
+        var li = document.createElement('li');
+        if (href) {
+          var a = document.createElement('a');
+          a.href = href; a.textContent = text; a.target = '_blank'; a.rel = 'noopener nofollow';
+          li.appendChild(a);
+        } else li.textContent = text;
+        list.appendChild(li);
+      };
+      add(quick, valid ? 'Domain format looks valid: ' + domain : 'That does not look like a valid domain.');
+      if (!valid) return;
+      add(quick, https ? 'Address uses HTTPS.' : given ? 'Address uses HTTP, not HTTPS.' : 'No protocol entered, so HTTPS was not checked.');
+      add(deep, 'Google Safe Browsing', 'https://transparencyreport.google.com/safe-browsing/search?url=' + encodeURIComponent(domain));
+      add(deep, 'Sucuri SiteCheck', 'https://sitecheck.sucuri.net/results/' + encodeURIComponent(domain));
+      add(deep, 'VirusTotal', 'https://www.virustotal.com/gui/domain/' + encodeURIComponent(domain));
+    });
+  </script>
+)}

@@ -419,37 +419,37 @@ See the websites we maintain at clear, fair prices — secured, optimized, and o
 
 <div class="card">
 
-[WordPress Maintenance CostWordPress-specific pricing](/how-much-does-wordpress-website-maintenance-cost/)
+[WordPress Maintenance Cost WordPress-specific pricing](/how-much-does-wordpress-website-maintenance-cost/)
 
 </div>
 
 <div class="card">
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+[WordPress Maintenance Packages Plans & pricing](/wordpress-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Ecommerce MaintenanceStore pricing & plans](/ecommerce-website-maintenance-packages/)
+[Ecommerce Maintenance Store pricing & plans](/ecommerce-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Small Business MaintenanceAffordable plans](/best-website-maintenance-for-small-business/)
+[Small Business Maintenance Affordable plans](/best-website-maintenance-for-small-business/)
 
 </div>
 
 <div class="card">
 
-[Plans, Packages & CostsCompare every plan](/monthly-website-maintenance-packages/)
+[Plans, Packages & Costs Compare every plan](/monthly-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+[Best Maintenance Companies Compare top providers](/best-website-maintenance-companies/)
 
 </div>
 

@@ -275,37 +275,37 @@ Common questions about how long website maintenance takes.
 
 <div class="card">
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+[Website Maintenance Cost 2026 pricing guide](/how-much-does-website-maintenance-cost/)
 
 </div>
 
 <div class="card">
 
-[Website Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+[Website Maintenance Checklist Every task, step by step](/website-maintenance-checklist/)
 
 </div>
 
 <div class="card">
 
-[Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/)
+[Our Maintenance Process How we keep sites running](/website-maintenance-process/)
 
 </div>
 
 <div class="card">
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+[WordPress Maintenance Packages Plans & pricing](/wordpress-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+[Website Management Packages Fully managed plans](/monthly-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+[Best Maintenance Companies Compare top providers](/best-website-maintenance-companies/)
 
 </div>
 

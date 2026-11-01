@@ -21,6 +21,23 @@ const REMOVALS = {
     if (!list.find('#noPostsFoundBox').length) throw new Error('/blogs/: old post list not found');
     list.remove();
   },
+  // Owner's form spec: name, email, website URL, platform, message, plan pre-selected. The coupon box needed the old JavaScript.
+  '/get-a-free-quote/': ($) => {
+    const wrapper = (control) => {
+      let box = control;
+      while (!box.parent().find('label').length) box = box.parent();
+      return box.parent();
+    };
+    const coupon = $('input[name="coupon_code"]');
+    const site = $('input[name="website_url"]');
+    if (!coupon.length || !site.length) throw new Error('/get-a-free-quote/: form fields not found');
+    wrapper(coupon).remove();
+    $('form button[type="button"]').filter((_, b) => /^Apply$/.test($(b).text().trim())).remove();
+    wrapper(site).after('<div><label for="platform">Platform</label> <select name="platform" required><option value="">(Select one)</option><option>WordPress</option><option>WooCommerce</option><option>Shopify</option><option>Other or not sure</option></select></div>');
+    const plans = [['essential', 'Essential'], ['growth', 'Growth'], ['business', 'Business'], ['one-time-fix', 'One-time fix'], ['hacked-cleanup', 'Hacked site cleanup'], ['other', 'Other or not sure']];
+    $('select[name="plan"]').html(`<option value="">(Select one)</option>${plans.map(([v, n]) => `<option value="${v}">${n}</option>`).join('')}`);
+    $('form button[type="submit"]').filter((_, b) => /Discounted Quote/.test($(b).text())).text('Get My Quote');
+  },
   // Owner, 2026-11-01: placeholder "John Doe" testimonial and the unconfirmed "500+" claim.
   '/contact/': ($) => {
     const heading = $('h4').filter((_, e) => /Trusted by 500\+ Businesses/.test($(e).text())).first();
@@ -33,7 +50,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
+const MAX_WORDS = { '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

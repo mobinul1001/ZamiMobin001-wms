@@ -200,6 +200,11 @@ article { min-width: 0; }
 }
 
 /* Site additions */
+.scan-form { display: grid; gap: 8px; max-width: 520px; }
+.scan-form input { margin: 0 !important; }
+.scan-form .btn { justify-self: start; border: 0; cursor: pointer; }
+.prose form button[type="submit"] { display: inline-flex; align-items: center; min-height: 46px; padding: 10px 20px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+.prose form label { font-weight: 600; font-size: 0.95rem; }
 .service-body { max-width: 980px; padding-block: 28px 64px; }
 .service-body .prose { margin-top: 0; max-width: none; }
 .service-body .prose p, .service-body .prose li { max-width: 70ch; }

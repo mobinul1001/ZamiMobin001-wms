@@ -547,37 +547,37 @@ Common questions about website maintenance checklists.
 
 <div class="card">
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+[Website Maintenance Cost 2026 pricing guide](/how-much-does-website-maintenance-cost/)
 
 </div>
 
 <div class="card">
 
-[How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/)
+[How Long It Takes Time per task & site type](/how-long-does-website-maintenance-take/)
 
 </div>
 
 <div class="card">
 
-[Importance of MaintenanceWhy it matters](/importance-of-website-maintenance/)
+[Importance of Maintenance Why it matters](/importance-of-website-maintenance/)
 
 </div>
 
 <div class="card">
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+[WordPress Maintenance Packages Plans & pricing](/wordpress-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+[Website Management Packages Fully managed plans](/monthly-website-maintenance-packages/)
 
 </div>
 
 <div class="card">
 
-[Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/)
+[Our Maintenance Process How we keep sites running](/website-maintenance-process/)
 
 </div>
 
