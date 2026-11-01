@@ -166,108 +166,16 @@
   "missingImages": [],
   "faqQuestionsNotFoundInBody": [
     {
-      "path": "/agreement/",
-      "q": "What is the difference between a maintenance agreement and a support contract?"
-    },
-    {
-      "path": "/best-website-maintenance-for-small-business/",
-      "q": "Can you recommend a reliable WordPress website maintenance company for a small business?"
-    },
-    {
-      "path": "/how-much-does-wordpress-website-maintenance-cost/",
-      "q": "What is the difference between a maintenance plan and managed hosting?"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "q": "Ofrecen servicios de mantenimiento web en Espana?"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "q": "Cuanto cuesta el mantenimiento web en Espana?"
-    },
-    {
       "path": "/website-maintenance-services-for-switzerland/",
       "q": "Proposez-vous la maintenance de sites web en Suisse?"
-    },
-    {
-      "path": "/website-redesign-services/",
-      "q": "What's the difference between a website redesign and a website refresh?"
-    },
-    {
-      "path": "/website-redesign-services/",
-      "q": "What ongoing support is available after the redesign launches?"
     },
     {
       "path": "/website-repair-services/",
       "q": "What is website repair?"
     },
     {
-      "path": "/website-repair-services/",
-      "q": "How to fix a broken website?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "Why is my website showing a White Screen of Death (WSOD)?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "How to fix a 500 Internal Server Error on WordPress?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "How do I fix broken 404 links on my website?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "How to resolve WordPress plugin conflicts?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "Why is my website contact form not sending emails?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "Why is my WooCommerce checkout not working?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "How to repair a hacked website or malware infection?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "What is the difference between website repair and website maintenance?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "What is the difference between website repair and website redesign?"
-    },
-    {
-      "path": "/website-repair-services/",
-      "q": "How fast is emergency website repair vs scheduled repair?"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "q": "Does page speed affect Google SEO rankings?"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "q": "How does website speed affect conversion rates?"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "q": "Why is my WordPress website slow on mobile?"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "q": "How does speed optimization work with your maintenance and security plans?"
-    },
-    {
-      "path": "/website-update-services/",
-      "q": "What happens when a WordPress update breaks your site?"
-    },
-    {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "q": "Do you offer white label WordPress maintenance services specifically?"
+      "q": "Do you offer white label WordPress maintenance specifically?"
     }
   ],
   "formsKeptDisabled": 12,
@@ -301,6 +209,143 @@
       "phrase": "/malware removal/i",
       "added": true,
       "line": "If you're reading this because your site is already compromised, work through this in order: put the site into maintenance mode or take it offline to protect vi"
+    }
+  ],
+  "faqChanges": [
+    {
+      "path": "/agreement/",
+      "change": "schema aligned",
+      "question": "What's the difference between a maintenance agreement and a support contract?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "applied": true
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "schema aligned",
+      "question": "Can you recommend a reliable WordPress website maintenance company?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "schema aligned",
+      "question": "What's the difference between a maintenance plan and managed hosting?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "applied": true
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema aligned",
+      "question": "¿Ofrecen servicios de mantenimiento web en España?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "schema aligned",
+      "question": "¿Cuánto cuesta el mantenimiento web en España?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema aligned",
+      "question": "What's the difference between a redesign and a refresh?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "schema aligned",
+      "question": "What ongoing support is available after launch?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How to fix a broken website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How to fix a 500 Internal Server Error on WordPress?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How do I fix broken 404 links on my website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How to resolve WordPress plugin conflicts?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "Why is my website contact form not sending emails?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "Why is my WooCommerce checkout not working?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How to repair a hacked website or malware infection?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "shown",
+      "question": "How fast is emergency website repair vs scheduled repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema aligned",
+      "question": "What's the difference between repair and maintenance?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema aligned",
+      "question": "What's the difference between repair and redesign?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "schema aligned",
+      "question": "What causes a white screen of death?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "shown",
+      "question": "Why is my WordPress website slow on mobile?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema aligned",
+      "question": "Does website speed affect SEO rankings?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema aligned",
+      "question": "Does page speed impact conversion rates?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "schema aligned",
+      "question": "How does speed optimization work with your maintenance & security plans?"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "shown",
+      "question": "What happens when a WordPress update breaks your site?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "link",
+      "to": "### Do you offer [white label WordPress maintenance](/white-label-wordpress-maintenance-support/) specifically?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "schema aligned",
+      "question": "Do you offer white label WordPress maintenance specifically?"
     }
   ]
 }

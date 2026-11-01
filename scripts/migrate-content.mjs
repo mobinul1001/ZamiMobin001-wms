@@ -10,6 +10,7 @@ import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
 import { readCsv } from './lib/csv.mjs';
+import { applyFaqChanges } from './lib/faq-approved.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
 // Titles and H1s from the keyword map the owner approved on 2026-11-01.
@@ -49,7 +50,7 @@ const catName = new Map(rest.categories.map((c) => [c.id, c.name]));
 const userName = new Map(rest.users.map((u) => [u.id, u.name]));
 
 const PLAN_HASH = { basic: 'basic-migration', standard: 'standard-migration', enterprise: 'enterprise-migration' };
-const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0, serviceLinks: [] };
+const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0, serviceLinks: [], faqChanges: [] };
 
 function resolveLink(href, pagePath) {
   const raw = href.trim();
@@ -308,9 +309,11 @@ let done = 0;
 for (const [u, m] of pages) {
   const path = u.replace(O, '');
   const record = rec(u);
-  const { h1, body } = await convert(path, record);
+  const converted = await convert(path, record);
+  const { h1 } = converted;
   const removed = [];
   const schema = (record.jsonLd ?? []).map((d) => stripSchema(d, removed)).filter(Boolean);
+  const body = applyFaqChanges(path, converted.body, schema, log.faqChanges);
   if (removed.length) log.schemaRemoved.push({ path, removed: [...new Set(removed)] });
   const faqs = [];
   const walk = (n) => {
@@ -384,6 +387,7 @@ const report = {
   faqQuestionsNotFoundInBody: log.faqMissing,
   formsKeptDisabled: log.forms,
   serviceLinks: log.serviceLinks,
+  faqChanges: log.faqChanges,
 };
 writeFileSync('reports/migration-report.json', JSON.stringify(report, null, 2));
 console.log(JSON.stringify({ ...report, countdownBlocksRemoved: report.countdownBlocksRemoved.length, countdownSample: report.countdownBlocksRemoved[0], schemaRemoved: report.schemaRemoved.length, faqQuestionsNotFoundInBody: report.faqQuestionsNotFoundInBody.length, faqSample: report.faqQuestionsNotFoundInBody.slice(0, 6) }, null, 1));

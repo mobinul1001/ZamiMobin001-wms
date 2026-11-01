@@ -32,6 +32,11 @@
 - `/contact/`: "John Doe" testimonial and "Trusted by 500+ Businesses" removed.
 - Added `reports/claims-list.md`, `reports/claims-list.csv` and `reports/faq-not-visible.md` for owner review.
 
+## FAQs and Brazil title (2026-11-01)
+- 24 approved FAQs are visible: 10 added, 14 already on the page and not duplicated (`reports/faq-outcome.md`). Requested links added; master prices used in those answers.
+- Brazil title is now in Portuguese, same as the H1.
+- Claims are unchanged until the owner sends answers.
+
 ## Owner decisions (2026-11-01)
 - Added `CMS-REQUIREMENTS.md`. CMS plan approved: Sveltia CMS, fine-grained GitHub token with 1-year expiry, no 410, Editorial Workflow included in the small test. Nothing is installed yet.
 - Separate service packages stay on the design, migration, SEO, speed and white-label pages; the master price list covers maintenance plans and one-time fixes only. Each price is listed for the owner to confirm or correct before launch. Their buttons use the hash method, for example `/get-a-free-quote/#growth-design` and `#starter-seo`. `?industry=` and `?package=` URLs follow the `?plan=` rule: no redirect, no internal links. White-label agency prices must be clearly labelled as wholesale for agencies so they do not contradict the main plan prices.
