@@ -1,0 +1,34 @@
+{
+  "brand": "Website Maintenance Services",
+  "brandShort": "WMS",
+  "gbp": {
+    "eyebrow": "NEW YORK WEBSITE MAINTENANCE",
+    "name": "Chrein - Web Design, Development, Maintenance, Support",
+    "line": "Website maintenance, support and repair for businesses in the USA, Canada, the UK, Australia and Europe."
+  },
+  "address": "14 Wall St Ste 2036, New York, NY 10005, United States",
+  "phone": "+1 212-496-1637",
+  "phoneHref": "tel:+12124961637",
+  "email": "contact@websitemaintenanceservices.org",
+  "website": "websitemaintenanceservices.org",
+  "hours": "We work US & UK business hours",
+  "reachShort": "for businesses in the USA, Canada, the UK, Australia and Europe",
+  "reachFull": "the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Switzerland and the Caribbean",
+  "stats": [["650+", "websites maintained"], ["120+", "built"], ["190+", "redesigns"], ["70+", "migrations"], ["12+", "years"]],
+  "statsLine": "650+ websites maintained in 12+ years — most of them built by other agencies or freelancers, and 120+ built by us.",
+  "domainLine": "Our team has been building and maintaining websites for 12+ years. We launched websitemaintenanceservices.org to focus only on what we do best: website maintenance and support.",
+  "social": [
+    ["Facebook", "https://www.facebook.com/webmaintenanceservices"],
+    ["LinkedIn", "https://www.linkedin.com/company/web-maintenance-services"],
+    ["Instagram", "https://www.instagram.com/websitemaintenanceservices"]
+  ],
+  "badges": [
+    ["https://clutch.co/profile/website-maintenance-services", "/wp-content/uploads/2026/06/clutch-trusted-by-clients.webp", "Clutch Trusted Partner Badge", 1838, 856],
+    ["https://www.sortlist.com/agency/website-maintenance-services-usa", "/wp-content/uploads/2026/06/sortlist-verified-agency.webp", "Sortlist Verified Agency Badge", 664, 226],
+    ["https://www.goodfirms.co/company/website-maintenance-services", "/wp-content/uploads/2026/06/goodfirms-partner-badge.webp", "GoodFirms Partner Badge", 1930, 815],
+    ["https://techreviewer.co/companies/website-maintenance-services", "/wp-content/uploads/2026/06/techreviewer-featured-on-techreviewer.webp", "Featured on Techreviewer", 1774, 887],
+    ["https://c2creview.co/company/website-maintenance-services", "/wp-content/uploads/2026/06/c2c-review-top-rated-badge.webp", "C2C Review Top Rated Badge", 1774, 887],
+    ["https://www.trustpilot.com/review/websitemaintenanceservices.org", "/wp-content/uploads/2026/06/trustpilot-find-us-on-trustpilot.webp", "Find us on Trustpilot Badge", 1774, 887],
+    ["https://www.agencyspotter.com/website-maintenance-services", "/wp-content/uploads/2026/06/agency-spotter-recognized-by-agency-spotter.webp", "Recognized by Agency Spotter", 1774, 887]
+  ]
+}

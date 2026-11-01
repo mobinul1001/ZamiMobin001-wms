@@ -8,12 +8,14 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 
 ### A1. Client / website numbers
 - Remove every "100+ websites", "500+ businesses", "500+ websites", "500+ sites" and "4,800+ repaired".
-- Replace with ONE line used everywhere: **"30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh."**
-  (The basis is the owner's portfolio list of 35 sites in section A6. 30+ is the conservative figure.)
+- Owner, 2026-11-02, replaces all old versions. Stat block: **650+ websites maintained · 120+ built · 190+ redesigns · 70+ migrations · 12+ years.**
+- Short line: **"650+ websites maintained in 12+ years."**
+- Under the stat block and on About: **"650+ websites maintained in 12+ years — most of them built by other agencies or freelancers, and 120+ built by us."**
+- Reach, short spots: **"for businesses in the USA, Canada, the UK, Australia and Europe"**. Full list, only on About and "Countries we serve": the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Switzerland and the Caribbean.
 
 ### A2. Years of experience
-- Remove all "10+ / 11+ / 12+ years" and "since 2016" until the owner confirms the founding year.
-- Do not replace with another number. Leave a TODO in claims-list.csv: `founding year: owner to confirm`.
+- Owner, 2026-11-02: **12+ years**. No founding year and no "since" dates for this website.
+- About page and one short line on the homepage near the stats: **"Our team has been building and maintaining websites for 12+ years. We launched websitemaintenanceservices.org to focus only on what we do best: website maintenance and support."**
 
 ### A3. Ratings and review counts
 - Remove every star rating and review count (4.9, 213, 165, 120, 4,800, 150, 180) from visible text. Schema is already removed.
@@ -25,8 +27,10 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 - Keep an empty, reusable "Client words" component. Add a quote only when the owner sends one with the client's name, company and written OK.
 
 ### A5. Location
-- Replace "USA-Based" and any similar wording with: **"Dhaka-based team, working US & UK business hours."**
-- Keep the +880 phone number as it is. The rename of `/website-maintenance-services-for-usa/` content follows the same rule: it is a page for US customers, not a US office.
+- Owner, 2026-11-02: no mention of Dhaka, Bangladesh or the +880 number. Do not say which country the team is in. Use: **"We work US & UK business hours."**
+- Contact details match the Google Business Profile exactly: 14 Wall St Ste 2036, New York, NY 10005, United States · +1 212-496-1637 · contact@websitemaintenanceservices.org. Values live in `src/data/site.json`.
+- Google Business Profile name: "Chrein - Web Design, Development, Maintenance, Support". The site brand stays "Website Maintenance Services" / "WMS".
+- We are a Google Partner: "Google Partner" stays on the design and SEO pages.
 
 ### A6. Portfolio list (owner-supplied, 2026-11-01)
 Use only for the portfolio block, after the owner confirms which ones may be shown (send the owner this table to tick).
@@ -73,9 +77,11 @@ The industry is guessed from the site name, so check each site before publishing
 ### A7. Guarantee
 - Replace "100% Malware Removal & Blacklist Reversal Guarantee" with: **"If we can't clean your hacked site, you don't pay."** (Owner to confirm. This is a promise the business can always keep.)
 - Sitewide plan promise: **"No contract. Cancel anytime."**
-- No other guarantees (uptime %, ranking, "100%") anywhere.
+- **99.9% uptime guarantee** (owner confirmed 2026-11-02): back on the homepage and the 3 comparison posts. The white-label page keeps its old removal of SLA claims.
+- No other guarantees (ranking, "100%") anywhere.
 
 ### A8. Case study
+- Owner confirmed 2026-11-02: the Altitude Care numbers are true and shown prominently. H2 "Real Maintenance Results, Backed by Numbers". Also confirmed: "+142% Growth", "Page 1 Top 3", "98/100 Passed", "99/100 Passed", "Expert Developers: Certified, experienced team", "Certified, Experienced, Trusted."
 - `/website-maintenance-case-study/`: remove the "Paraphrased" quote. Keep the page only if the client is in the portfolio list and the owner confirms the facts. Otherwise list it for the owner as "rewrite or noindex". Do not delete it (the URL must keep working).
 
 ---

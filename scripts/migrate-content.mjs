@@ -9,6 +9,7 @@ import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
+import { fixContactText } from './lib/company-facts.mjs';
 import { readCsv } from './lib/csv.mjs';
 import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
 import { applyFaqChanges, masterPriceMeta } from './lib/faq-approved.mjs';
@@ -347,8 +348,7 @@ async function convert(path, record) {
     const walk = (n) => {
       const kids = filled(n);
       if (!kids.length) { if (clean(n)) notes.push(clean(n)); return; }
-      // The SEO panel lost its status column, so nothing there is a title and status pair.
-      if (kids.length === 2 && path !== '/website-seo-services/') {
+      if (kids.length === 2) {
         const [a, b] = [leaves(kids[0]), leaves(kids[1])];
         if (a.length <= 2 && b.length === 1 && b[0].split(' ').length <= 4) { rows.push([a[0], a[1] ?? '', b[0]]); return; }
       }
@@ -511,7 +511,7 @@ for (const [u, m] of pages) {
   };
   const fm = Object.entries(front).map(([k, v]) => `${k}: ${yaml(v)}`).join('\n');
   const name = path === '/' ? 'home' : path.replace(/^\/|\/$/g, '').replace(/\//g, '--');
-  writeFileSync(join(m.type === 'post' ? 'src/content/blog' : 'src/content/pages', `${name}.md`), `---\n${fm}\n---\n\n${body}\n`);
+  writeFileSync(join(m.type === 'post' ? 'src/content/blog' : 'src/content/pages', `${name}.md`), `---\n${fixContactText(fm)}\n---\n\n${body}\n`);
   done++;
 }
 

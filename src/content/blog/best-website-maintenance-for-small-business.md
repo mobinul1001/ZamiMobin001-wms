@@ -434,7 +434,7 @@ Patient & client portals: we build them as a separate, secured system — your m
 
 -   Small business website maintenance costs $20–$600+/month; most pay $75–$200
 -   Our plans: Essential $79, Growth $149 (most popular), Business $299
--   30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+-   650+ websites maintained in 12+ years.
 -   Get 2 months free with annual billing
 -   A full plan covers updates, security, backups, speed & support
 -   Professional care costs less than one emergency repair it prevents

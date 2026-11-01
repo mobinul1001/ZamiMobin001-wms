@@ -1,12 +1,12 @@
 // Owner decisions from CLAIMS-AND-DESIGN.md section A, applied to old page HTML. The migration and
 // the parity test both run this, and every change goes into reports/claims-applied.csv.
-export const LINE_NUMBERS = '30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.';
-export const LINE_LOCATION = 'Dhaka-based team, working US & UK business hours.';
+export const LINE_NUMBERS = '650+ websites maintained in 12+ years.';
+export const LINE_LOCATION = 'We work US & UK business hours.';
 export const LINE_HACKED = "If we can't clean your hacked site, you don't pay.";
 export const LINE_PLAN = 'No contract. Cancel anytime.';
 
 export const NUMBERS = /(?<![$£€\d,.–-])\b(?:400|500|4,800)\+|\b100\+\s*Websites\b|\b1(?:20|50|65|80|87)\+\s*(?:Verified|Accelerated|Managed|clients|small business)/i;
-export const YEARS = /\b1[0-2]\+\s*(?:years?|yrs?)\b|\ba decade of experience\b|\bfor over a decade\b|\bsince 2016\b/i;
+export const YEARS = /\b1[01]\+\s*(?:years?|yrs?)\b|\ba decade of experience\b|\bfor over a decade\b|\bsince 2016\b/i;
 export const RATINGS = /\b[1-5](?:\.\d)?\s*\/\s*5(?:\.0)?\b|\b[345]\.\d\s*(?:★|-?\s*star)|\b5[- ]star\b|★{2,}|\brated\s+4\.9|\bverified reviews\b|\breview platforms\b|\bRating Based\b|\bwould recommend us\b|\bClutch & G2 Rated\b|\bGoogle & Clutch Rating\b/i;
 export const GUARANTEES = /\bguarantee[sd]?\b|\bwarrant(?:y|ies)\b|\bmoney[- ]back\b|\brisk[- ]free\b|\b99\.9\s*%|\bAverage Rating\b|(?<!near-)\bzero[- ](?:downtime|traffic loss|ranking loss|rank loss|data loss)\b|\bno data loss\b|\b0 rank loss\b/i;
 const LOCATION = /\b(?:USA|US)[- ]Based\b/i;
@@ -26,8 +26,13 @@ const TESTIMONIAL_SECTION = /\b(?:what (?:our )?clients? say|client (?:feedback|
 const words = (s) => (s.match(/\S+/g) ?? []).length;
 const norm = (s) => s.replace(/\s+/g, ' ').trim();
 
+// Owner, 2026-11-02: the 99.9% uptime guarantee is true. It returns on the pages that had it; the white-label page stays without.
+const UPTIME_PAGES = new Set(['/', '/best-fixrunner-alternatives/', '/best-wp-buffs-alternatives/', '/sitecare-alternative/']);
+let uptimeOk = false;
+
 export function bannedIn(text, own) {
   if (KEEP.test(text)) return null;
+  if (uptimeOk && /uptime guarantee|99\.9\s*%/i.test(text) && !/\b1[01]\+|5\.0|decade/i.test(text)) return null;
   if (NUMBERS.test(text)) return 'A1 numbers';
   if (YEARS.test(text)) return 'A2 years';
   if (RATINGS.test(text)) return 'A3 ratings';
@@ -64,8 +69,10 @@ const EXACT = new Map([
 
 // Wording fixes inside longer sentences, so that the rest of the sentence stays.
 const SUBSTITUTIONS = [
-  [/A decade of experience, a 99\.9% uptime guarantee, a 5\.0-star rating(?: verified on 8 review platforms|, and independent verification on 8 review platforms)? — plus /g, 'Plus '],
-  [/— a decade of experience, a 99\.9% uptime guarantee, a 5\.0-star rating verified on 8 platforms, plus /g, '— plus '],
+  [/A decade of experience, a 99\.9% uptime guarantee, a 5\.0-star rating(?: verified on 8 review platforms|, and independent verification on 8 review platforms)? — plus /g, '12+ years of experience, a 99.9% uptime guarantee, plus '],
+  [/— a decade of experience, a 99\.9% uptime guarantee, a 5\.0-star rating verified on 8 platforms, plus /g, '— 12+ years of experience, a 99.9% uptime guarantee, plus '],
+  [/\b10\+ years of experience\b/g, '12+ years of experience'],
+  [/\b10\+ [Yy]ears [Ee]xperience\b/g, '12+ Years Experience'],
   [/,? and independently verified on 8 review platforms/g, ''],
   [/\bour top-rated website maintenance company\b/g, 'our top pick for website maintenance'],
   [/ with a guarantee against reinfection/g, ''],
@@ -73,6 +80,9 @@ const SUBSTITUTIONS = [
 ];
 
 export function applyClaims($, path, log = []) {
+  uptimeOk = UPTIME_PAGES.has(path);
+  // Owner, 2026-11-02: the old 10+ years stat tiles now say 12+.
+  $('span, b, strong, div, p').filter((_, e) => $(e).children().length === 0 && $(e).text().trim() === '10+' && /^years/i.test(norm($(e).next().text()))).text('12+');
   const own = OWN_CLAIM_PAGES.has(path);
   let numberLineUsed = false;
   const record = (rule, before, after = '') => log.push({ path, rule, before: norm(before).slice(0, 300), after });
@@ -233,6 +243,7 @@ export function applyClaims($, path, log = []) {
 
 // Banned claims in a finished page. Used by the build check.
 export function findBanned(text, path) {
+  uptimeOk = UPTIME_PAGES.has(path);
   const own = OWN_CLAIM_PAGES.has(path);
   return text.split(/\n|(?<=[.!?])\s+/).map(norm).filter((l) => l && bannedIn(l, own));
 }

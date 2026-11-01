@@ -43,7 +43,7 @@ Blacklist Risk: High
 
 </div>
 
-30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+650+ websites maintained in 12+ years.
 
 WordPress
 
@@ -752,4 +752,4 @@ Every hour a hack goes unresolved increases the risk of Google blacklisting, los
 
 Instant Diagnosis 30-Min SLA Response Confidential
 
-[Get Emergency Help Now](/contact/) [Chat on WhatsApp](https://wa.me/8801815840813)
+[Get Emergency Help Now](/contact/) [Call +1 212-496-1637](tel:+12124961637)

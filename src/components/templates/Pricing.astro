@@ -1,9 +1,11 @@
 ---
-// Pricing page, CLAIMS-AND-DESIGN.md B3. Old text stays in the HTML under expandable sections.
-import PlanCards from '../PlanCards.astro';
+// Pricing page, CLAIMS-AND-DESIGN.md B3. Old text stays in the HTML.
 import prices from '../../data/prices.json';
 import features from '../../data/features.json';
-import { splitBy, take, dropHeading } from '../../lib/html-sections';
+import { plansHtml } from '../../lib/plans';
+import { polish, hlLast } from '../../lib/polish';
+import { icon } from '../../lib/icons';
+import { splitBy, take } from '../../lib/html-sections';
 
 const { entry } = Astro.props;
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
@@ -13,67 +15,55 @@ const has = (from: string, plan: string, only?: string) => (only ? rank[plan] ==
 const allRows = features.groups.flatMap((g) => g.rows);
 const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
 const faq = take(sections, /^Frequently Asked Questions/);
-const lead = take(sections, /^Reliable Website Care/);
-const rest = sections;
-const leadParts = lead ? splitBy(dropHeading(lead.html), 3) : { intro: '', sections: [] };
+const rest = polish([intro, ...sections.map((s) => s.html)].join(''), { start: 1 });
 ---
-<section class="hero" style="padding-bottom:24px"><div class="wrap" style="display:block">
-  <h1 style="max-width:18em">{entry.data.h1}</h1>
+<section class="page-hero"><div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
+  <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
   <p class="sub">Three plans. Every price is here. No contract, and you can cancel anytime.</p>
 </div></section>
-<section style="padding-bottom:56px"><div class="wrap">
+<section class="sec"><div class="wrap">
   <h2 class="sr-only">Plans</h2>
-  <input class="bill" type="radio" name="bill" id="bm" checked aria-label="Monthly billing" /><input class="bill" type="radio" name="bill" id="by" aria-label="Annual billing" />
-  <div class="toggle" role="group" aria-label="Billing period"><label for="bm">Monthly</label><label for="by">Annual <span class="free-pill">{prices.annualNote.en}</span></label></div>
-  <PlanCards toggle />
-  <p class="promise">No contract. Cancel anytime. We take payment after a short call.</p>
-  <p class="promise" style="margin-top:6px"><a href="/website-migration-services/">Free migration with any annual plan</a></p>
-  <p class="promise" style="margin-top:6px">Running an online store? See <a href="/ecommerce-website-maintenance-packages/">WooCommerce</a> and <a href="/shopify-website-maintenance-packages/">Shopify</a> store plans</p>
+  <Fragment set:html={plansHtml()} />
+  <div class="callout"><div><p><strong>No contract. Cancel anytime. We take payment after a short call.</strong></p></div><div class="act"><a class="btn ghost" href="/website-migration-services/">Free migration with any annual plan</a></div></div>
+  <div class="callout"><div><p><strong>Running an online store?</strong></p></div><div class="act"><a class="btn ghost" href="/ecommerce-website-maintenance-packages/">WooCommerce store plans</a><a class="btn ghost" href="/shopify-website-maintenance-packages/">Shopify store plans</a></div></div>
 </div></section>
 
-<section class="band tint"><div class="wrap">
-  <div class="head"><h2>Compare every feature</h2><p>Select a feature to see what it means.</p></div>
-  <div class="compare desktop"><table>
-    <thead><tr><th>Feature</th>{prices.plans.map((p) => <th>{p.name}<br /><span class="small muted">{money(p.monthly)}/mo</span></th>)}</tr></thead>
+<section class="sec alt"><div class="wrap">
+  <div class="head"><p class="eyebrow">Compare</p><h2>Compare every feature</h2><p class="intro">Select a feature to see what it means.</p></div>
+  <table class="tbl compare-t">
+    <thead><tr><th scope="col">Feature</th>{prices.plans.map((p) => <th scope="col">{p.name}<small>{money(p.monthly)}/mo</small></th>)}</tr></thead>
     <tbody>
       {features.groups.map((g) => (
         <>
           <tr class="group"><td colspan="4">{g.name}</td></tr>
           {g.rows.map(([name, from, only]) => (
-            <tr><td><details><summary>{name}</summary><p>{explain[name]}</p></details></td>{prices.plans.map((p) => <td>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash">—</span>}</td>)}</tr>
+            <tr><td><details><summary>{name}</summary><p>{explain[name]}</p></details></td>{prices.plans.map((p) => <td>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash-none">—</span>}</td>)}</tr>
           ))}
         </>
       ))}
       <tr class="group"><td colspan="4">Add-ons, on any plan</td></tr>
       {features.addons.map((a) => <tr><td>{a}</td><td colspan="3"><a href="/get-a-free-quote/">Ask for a price</a></td></tr>)}
-      <tr><td></td>{prices.plans.map((p) => <td><a class:list={['btn', { ghost: !p.popular }]} href={`/get-a-free-quote/#${p.name.toLowerCase()}`} style="width:100%;padding-inline:8px">Start {p.name}</a></td>)}</tr>
     </tbody>
-  </table></div>
+  </table>
   <div class="compare-cards">
     {prices.plans.map((p) => (
-      <div class="tile"><h3>{p.name} · {money(p.monthly)}/mo</h3><ul>{allRows.map(([name, from, only]) => <li><span>{name}</span>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash">—</span>}</li>)}</ul><a class="btn" href={`/get-a-free-quote/#${p.name.toLowerCase()}`} style="margin-top:12px">Start {p.name}</a></div>
+      <div class="card"><h3>{p.name} · {money(p.monthly)}/mo</h3><ul>{allRows.map(([name, from, only]) => <li><span>{name}</span>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash-none">—</span>}</li>)}</ul><a class="btn primary" href={`/get-a-free-quote/#${p.name.toLowerCase()}`}>Start {p.name}</a></div>
     ))}
-    <div class="tile"><h3>Add-ons, on any plan</h3><ul>{features.addons.map((a) => <li><span>{a}</span><a href="/get-a-free-quote/">Ask for a price</a></li>)}</ul></div>
+    <div class="card"><h3>Add-ons, on any plan</h3><ul>{features.addons.map((a) => <li><span>{a}</span><a href="/get-a-free-quote/">Ask for a price</a></li>)}</ul></div>
   </div>
+  <div class="btn-row row-end">{prices.plans.map((p) => <a class:list={['btn', p.popular ? 'primary' : 'ghost']} href={`/get-a-free-quote/#${p.name.toLowerCase()}`}>Start {p.name}<Fragment set:html={icon('arrow')} /></a>)}</div>
 </div></section>
 
-<section class="band"><div class="wrap" style="max-width:820px">
-  <div class="head"><h2>Billing and contract questions</h2></div>
+<section class="sec"><div class="wrap">
+  <div class="head"><p class="eyebrow">Billing</p><h2>Billing and contract questions</h2><p class="intro">How payment, hosting and the free month work.</p></div>
   <div class="faq">
-    <details open><summary>How does billing work?</summary><p>Pay monthly, or pay yearly and get {prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.</p></details>
-    <details><summary>Is there a contract?</summary><p>No contract. Cancel anytime.</p></details>
-    <details><summary>What happens after the first year of free hosting?</summary><p>Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.</p></details>
-    <details><summary>How does the free month work?</summary><p>On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has {prices.annualNote.en}.</p></details>
-    <details><summary>What do the webmail accounts include?</summary><p>Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.</p></details>
+    <details open><summary><span>How does billing work?</span><Fragment set:html={icon('plus')} /></summary><p>Pay monthly, or pay yearly and get {prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.</p></details>
+    <details><summary><span>Is there a contract?</span><Fragment set:html={icon('plus')} /></summary><p>No contract. Cancel anytime.</p></details>
+    <details><summary><span>What happens after the first year of free hosting?</span><Fragment set:html={icon('plus')} /></summary><p>Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.</p></details>
+    <details><summary><span>How does the free month work?</span><Fragment set:html={icon('plus')} /></summary><p>On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has {prices.annualNote.en}.</p></details>
+    <details><summary><span>What do the webmail accounts include?</span><Fragment set:html={icon('plus')} /></summary><p>Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.</p></details>
   </div>
-  {faq && <div class="prose" style="margin-top:36px" set:html={faq.html} />}
+  {faq && <div class="prose gap-top" set:html={polish(faq.html, { sections: false })} />}
 </div></section>
-
-<section class="band tint"><div class="wrap" style="max-width:820px">
-  <div class="head"><h2>{lead?.title}</h2></div>
-  {leadParts.intro && <div class="prose" set:html={leadParts.intro} />}
-  {leadParts.sections.map((s) => <details class="more"><summary><h3 class="more-h">{s.title}</h3></summary><div class="prose" set:html={dropHeading(s.html)} /></details>)}
-  {intro && <div class="prose" set:html={intro} />}
-</div></section>
-
-{rest.length > 0 && <section class="band cta-final"><div class="wrap" style="max-width:720px">{rest.map((s) => <div class="prose" set:html={s.html} />)}</div></section>}
+<Fragment set:html={rest} />

@@ -2,15 +2,16 @@
 // Blog and article pages, CLAIMS-AND-DESIGN.md B4. The old body stays whole; only its first lines get new styling.
 import { getCollection } from 'astro:content';
 import hubs from '../../data/blog-hubs.json';
+import { polish } from '../../lib/polish';
 
 const { entry } = Astro.props;
 const isPost = entry.collection === 'blog';
 const slug = entry.data.path.replace(/^\/|\/$/g, '');
 const headings = entry.rendered?.metadata?.headings ?? [];
 const toc = headings.filter((h: { depth: number }) => h.depth === 2);
-const body = (entry.rendered?.html ?? '')
+const body = polish((entry.rendered?.html ?? '')
   .replace(/^\s*<ul>(?=\s*<li>Updated)/, '<ul class="post-meta-list">')
-  .replace(/<p><strong>Quick answer:<\/strong>\s*(.*?)<\/p>/s, '<div class="answer"><b>Quick answer</b><p>$1</p></div>');
+  .replace(/<p><strong>Quick answer:<\/strong>\s*(.*?)<\/p>/s, '<div class="answer"><b>Quick answer</b><p>$1</p></div>'), { sections: false });
 
 const topic = hubs.find((t) => t.posts.includes(slug));
 if (isPost && !topic) throw new Error(`${slug}: add this post to src/data/blog-hubs.json`);
@@ -18,23 +19,23 @@ const posts = await getCollection('blog');
 const titleOf = (s: string) => posts.find((p) => p.data.path === `/${s}/`)?.data.h1 ?? s;
 const related = topic ? [1, 2, 3, 4].map((n) => topic.posts[(topic.posts.indexOf(slug) + n) % topic.posts.length]).filter((s, i, a) => s !== slug && a.indexOf(s) === i) : [];
 ---
-<div class="wrap">
+<section class="page-hero"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {isPost && <><a href="/blogs/">Blog</a> / </>}{entry.data.h1}</nav>
+  <h1>{entry.data.h1}</h1>
+</div></section>
+<div class="wrap">
   <div class="post-grid">
     <article>
-      <h1 style="margin-top:14px">{entry.data.h1}</h1>
       {toc.length >= 3 && <details class="toc-m"><summary>On this page</summary>{toc.map((h: { slug: string; text: string }) => <a href={`#${h.slug}`}>{h.text}</a>)}</details>}
       <div class="prose" set:html={body} />
       {isPost && (
-        <div class="author-box" style="grid-template-columns:1fr">
-          <div><b>Written by the WMS team</b><p class="small muted"><a href="/about-us/">About us</a></p></div>
-        </div>
+        <div class="card author-box"><strong>Written by the WMS team</strong><div class="linkrow"><a class="btn ghost" href="/about-us/">About us</a></div></div>
       )}
       {topic && (
-        <section class="related">
+        <section class="related prose">
           <h2>Related articles</h2>
-          <ul>{related.map((s) => <li><a href={`/${s}/`}>{titleOf(s)}</a></li>)}</ul>
-          <p><a href={topic.hub}>{topic.hubLabel}</a> · <a href="/blogs/">All articles</a></p>
+          <div class="grid g3">{related.map((s) => <a class="card" href={`/${s}/`}>{titleOf(s)}</a>)}</div>
+          <div class="btn-row"><a class="btn ghost" href={topic.hub}>{topic.hubLabel}</a><a class="btn ghost" href="/blogs/">All articles</a></div>
         </section>
       )}
     </article>

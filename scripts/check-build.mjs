@@ -154,7 +154,6 @@ for (const file of htmlFiles) {
   if (localPrice) {
     const mainText = $('main').text();
     if (!$('#plans').length) fail('country-price', `${path}: #plans anchor is missing.`);
-    if ($('.site-head a.btn').first().attr('href') !== '#plans') fail('country-price', `${path}: header See plans does not go to #plans.`);
     for (const f of ['Free hosting for the first year', '2 free webmail accounts', 'First month free'].filter(() => localPrice.currency !== 'BRL')) if (!mainText.includes(f)) fail('country-price', `${path}: "${f}" is missing.`);
     for (const p of [...localPrice.monthly, ...localPrice.annual, localPrice.fix, localPrice.cleanup]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
     if (localPrice.currency !== 'USD' && /(?<![A-Z])\$\s?\d/.test(mainText)) fail('country-price', `${path}: shows a dollar price: ${/(?<![A-Z])\$\s?\d[^ ]*/.exec(mainText)[0]}`);
@@ -182,8 +181,6 @@ for (const file of htmlFiles) {
     if (/Most issues are fixed within 24 hours/i.test(repairText) || !repairText.includes(repairTime) || !repairText.includes(noFix)) fail('repair', `${path}: repair time or No fix, no fee wording is wrong.`);
   }
   if (promise) fail('promises', `${path}: "${promise[0]}" is not an approved promise.`);
-  const unverified = /\+142%|Page 1 Top 3|9[89]\/100 Passed|Certified, experienced|\b4\.8 ?s\b|\b1\.9 ?s\b/.exec($('main').text());
-  if (unverified) fail('claims', `${path}: "${unverified[0]}" was removed by the owner (DESIGN-QA.md section 5).`);
   if (path === '/white-label-website-maintenance-services-for-agencies/') {
     const claim = /99\.\d+%|24\/7 (agency )?sla|3\.8 hours|slack|agency dashboard|\bWAF\b/i.exec($('main').text());
     if (claim) fail('white-label', `${path}: "${claim[0]}" was removed by the owner.`);

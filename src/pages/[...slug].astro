@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { wireForms } from '../lib/html-sections';
+import { extractCta } from '../lib/polish';
 import Home from '../components/templates/Home.astro';
 import Pricing from '../components/templates/Pricing.astro';
 import Generic from '../components/templates/Generic.astro';
@@ -34,9 +35,12 @@ const pick = () => {
 };
 const Template = pick();
 if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, path);
+// A short call to action at the end of a page becomes its final CTA box.
+const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
+if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
 const hasForm = Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
-<Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} plansHref={path.startsWith('/website-maintenance-services-for-') || ['/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/'].includes(path) ? '#plans' : undefined}>
+<Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>
   {hasForm && <script is:inline defer src="/forms.js" slot="head"></script>}
   <Template entry={entry} />
 </Base>

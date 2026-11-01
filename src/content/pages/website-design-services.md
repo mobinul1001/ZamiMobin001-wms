@@ -27,7 +27,7 @@ Serving US, UK, CA, AU, Netherlands, France, Spain, Brazil, Ireland, & Switzerla
 
 <div class="card">
 
-<div class="status-panel"><p class="status-head"><span>● Responsive</span><span class="tag">Example</span></p><p class="status-row"><strong>SEO &amp; Accessibility (WCAG)</strong> <em>Compliant</em></p><p class="status-note">Desktop 4K</p><p class="status-note">Tablet Pro</p><p class="status-note">Mobile First</p><p class="status-note">PageSpeed &amp; Core Web Vitals</p><p class="status-note">Custom UI/UX Design + Built-In Security &amp; Support</p></div>
+<div class="status-panel"><p class="status-head"><span>● Responsive</span><span class="tag">Example</span></p><p class="status-row"><strong>PageSpeed &amp; Core Web Vitals</strong> <em>99/100 Passed</em></p><p class="status-row"><strong>SEO &amp; Accessibility (WCAG)</strong> <em>Compliant</em></p><p class="status-note">Desktop 4K</p><p class="status-note">Tablet Pro</p><p class="status-note">Mobile First</p><p class="status-note">Custom UI/UX Design + Built-In Security &amp; Support</p></div>
 
 </div>
 
@@ -35,7 +35,7 @@ Serving US, UK, CA, AU, Netherlands, France, Spain, Brazil, Ireland, & Switzerla
 
 ## Trusted by Businesses Across the US, UK, Canada & Australia
 
-30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+650+ websites maintained in 12+ years.
 
 Google Partner Certified
 

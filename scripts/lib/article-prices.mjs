@@ -1,6 +1,6 @@
 import { SERVICE_CHANGES } from './service-prices.mjs';
 import { EXTRA_CHANGES, REPAIR_TIME } from './health-staging.mjs';
-import { CLAIM_CHANGES } from './claims-removed.mjs';
+import { FACT_CHANGES } from './company-facts.mjs';
 import { compareTable } from './compare-table.mjs';
 import { SUPPORT_SECTIONS, SUPPORT_FAQS } from './merged-support.mjs';
 import { readFileSync } from 'node:fs';
@@ -307,7 +307,7 @@ for (const [path, pairs] of Object.entries(SERVICE_CHANGES)) ARTICLE_CHANGES[pat
 
 for (const [path, pairs] of Object.entries(EXTRA_CHANGES)) ARTICLE_CHANGES[path] = [...(ARTICLE_CHANGES[path] ?? []), ...pairs];
 
-for (const [path, pairs] of Object.entries(CLAIM_CHANGES)) ARTICLE_CHANGES[path] = [...(ARTICLE_CHANGES[path] ?? []), ...pairs];
+for (const [path, pairs] of Object.entries(FACT_CHANGES)) ARTICLE_CHANGES[path] = [...(ARTICLE_CHANGES[path] ?? []), ...pairs];
 
 export const articlePairs = (path) => ARTICLE_CHANGES[path] ?? [];
 

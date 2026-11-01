@@ -243,6 +243,34 @@ The picture is clear: for value, flexibility, extras, and support access, Websit
 
 🏆 Winner on Value & Trust — Website Maintenance Services
 
+<div class="cards">
+
+<div class="card">
+
+<p class="pair"><strong>12+</strong> <span>Years of maintenance experience</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>99.9%</strong> <span>Uptime guarantee</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>10</strong> <span>Countries served</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>24/7</strong> <span>Monitoring &amp; emergency support</span></p>
+
+</div>
+
+</div>
+
 Independently verified & rated on
 
 Clutch ★ Trustpilot GoodFirms Sortlist Techreviewer C2C Review Agency Spotter ITFirms
@@ -251,16 +279,16 @@ Credibility isn't just badges — it's outcomes. Here's a documented result from
 
 #### ⚠ Before
 
--   Page load speed Slow
+-   Page load speed 4.8s
 -   Security monitoring None
 -   Downtime Frequent
 -   Booking form Broken
 
 #### ✓ After
 
--   Page load speed Optimized
+-   Page load speed 1.9s
 -   Security monitoring 24/7
--   Downtime Reduced
+-   Downtime ~0%
 -   Booking form Fixed
 
 That's a **60% faster site** with near-zero downtime and a working booking form. Read the [full case study](/website-maintenance-case-study/) for the details.

@@ -19,7 +19,7 @@ categories: ["Industry"]
 
 <img src="/wp-content/uploads/2026/07/best-fixrunner-alternatives-comparison.webp" alt="Comparison of the best FixRunner alternatives highlighting Website Maintenance Services for WordPress maintenance, hosting, security, backups, and support." width="1988" height="791" loading="lazy">
 
-**The short answer:** FixRunner is a solid, fast-response WordPress support service — great if you mainly want cheap, on-demand emergency fixes. But many site owners look for an alternative because they want hosting included, no long-term minimum contract, transparent published pricing, and a full-service partner rather than a support-hours meter. On total value, our pick is [Website Maintenance Services](/) — plus 1 year free hosting, 2 free webmails, a free month of maintenance, WhatsApp emergency support, cancel-anytime terms, and no hidden charges.
+**The short answer:** FixRunner is a solid, fast-response WordPress support service — great if you mainly want cheap, on-demand emergency fixes. But many site owners look for an alternative because they want hosting included, no long-term minimum contract, transparent published pricing, and a full-service partner rather than a support-hours meter. On total value, our pick is [Website Maintenance Services](/) — 12+ years of experience, a 99.9% uptime guarantee, plus 1 year free hosting, 2 free webmails, a free month of maintenance, WhatsApp emergency support, cancel-anytime terms, and no hidden charges.
 
 <a id="what"></a>
 
@@ -170,6 +170,18 @@ Once hosting is in the equation, the "premium" $79 becomes the *lower* real cost
 
 <div class="card">
 
+<p class="pair"><strong>12+</strong> <span>Years of maintenance experience</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>99.9%</strong> <span>Uptime guarantee</span></p>
+
+</div>
+
+<div class="card">
+
 <p class="pair"><strong>10</strong> <span>Countries served (USA, UK, EU &amp; more)</span></p>
 
 </div>
@@ -188,22 +200,22 @@ Clutch ★ Trustpilot GoodFirms Sortlist Techreviewer C2C Review Agency Spotter 
 
 That's a level of independent, third-party validation many maintenance providers simply can't show — exactly what you want backing the team responsible for keeping your site online.
 
-### Real results
+### Real results, backed by numbers
 
 Credibility isn't just badges — it's outcomes. Here's a real, documented result from a healthcare client (Altitude Care & Integrative Health) whose WordPress site was slow, insecure, and losing bookings before Website Maintenance Services took over:
 
 #### ⚠ Before
 
--   Page load speed Slow
+-   Page load speed 4.8s
 -   Security monitoring None
 -   Downtime Frequent
 -   Booking form Broken
 
 #### ✓ After
 
--   Page load speed Optimized
+-   Page load speed 1.9s
 -   Security monitoring 24/7
--   Downtime Reduced
+-   Downtime ~0%
 -   Booking form Fixed
 
 That's a **60% faster site**, near-zero downtime, and a booking form that actually works — the kind of measurable improvement that pays for maintenance many times over. Read the [full case study](/website-maintenance-case-study/) for the details.

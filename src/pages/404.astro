@@ -4,18 +4,9 @@ import Base from '../layouts/Base.astro';
 const isProduction = process.env.CONTEXT === 'production' && process.env.URL === Astro.site?.origin;
 ---
 <Base title="Page Not Found | WMS" robots="noindex, follow">
-  <div class="prose-page" style="min-height:45vh">
-    <div class="page-head"><h1>Page not found</h1></div>
-    <div class="prose">
-      <p>This page does not exist. These may help:</p>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/monthly-website-maintenance-packages/">Pricing</a></li>
-        <li><a href="/blogs/">Blog</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </div>
-  </div>
+  <section class="page-hero"><div class="wrap"><h1>Page not <span class="hl">found</span></h1><p class="sub">This page does not exist. These may help:</p>
+    <div class="btn-row cta-row"><a class="btn primary" href="/">Home</a><a class="btn ghost" href="/monthly-website-maintenance-packages/">Pricing</a><a class="btn ghost" href="/blogs/">Blog</a><a class="btn ghost" href="/contact/">Contact</a></div>
+  </div></section>
   {isProduction && (
     <script is:inline>
       // Records each missing URL in Google Analytics, once the tag has loaded in Base.astro.

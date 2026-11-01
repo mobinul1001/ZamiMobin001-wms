@@ -11,13 +11,15 @@ faqs: [{"q":"What is website maintenance?","a":"Website maintenance is the ongoi
 
 <a id="content"></a>
 
-Trusted by businesses in the USA, UK, Canada, Australia & Europe
+Trusted by businesses in the USA, Canada, the UK, Australia and Europe
 
 Website maintenance services keep your site secure, updated, and running at full speed — every day. We handle WordPress & CMS updates, security monitoring, daily backups, speed optimization, and 24/7 support, so you never lose a customer to downtime.
 
 Security & Backups Updates & Fixes 24/7 Support
 
 [Get Your Free Website Review](/free-website-maintenance-audit/) [View Plans & Pricing](/monthly-website-maintenance-packages/)
+
+<p class="pair"><strong>Always-On Care</strong> <span>99.9% Uptime</span></p>
 
 ## Everything We Take Care Of
 
@@ -62,6 +64,22 @@ Security & Backups Updates & Fixes 24/7 Support
 </div>
 
 Monthly performance reports [See full checklist →](/website-maintenance-checklist/)
+
+12+
+
+Years Experience
+
+99.9%
+
+Uptime Guarantee
+
+24/7
+
+Monitoring & Support
+
+100%
+
+Transparent Reporting
 
 Complete Website Support
 
@@ -241,6 +259,18 @@ A website is never “set and forget.” Without ongoing website maintenance, it
 
 See exactly what needs to be done to keep your site healthy.
 
+12+
+
+Years Experience
+
+99.9%
+
+Uptime Guarantee
+
+24/7 Support
+
+Always Available
+
 Who We Are
 
 ## Your Dedicated Website Maintenance Partner
@@ -370,12 +400,6 @@ We run a full website audit, fix urgent issues, and set up security, backups, an
 
 [Choose a Plan](/monthly-website-maintenance-packages/) [Get a Quote](/get-a-free-quote/)
 
-## Trusted & Rated by Clients Worldwide
-
- [<img src="/wp-content/uploads/2026/06/clutch-trusted-by-clients.webp" alt="Clutch Trusted Partner Badge" width="1838" height="856" loading="lazy">](https://clutch.co/profile/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/sortlist-verified-agency.webp" alt="Sortlist Verified Agency Badge" width="664" height="226" loading="lazy">](https://www.sortlist.com/agency/website-maintenance-services-usa)[<img src="/wp-content/uploads/2026/06/goodfirms-partner-badge.webp" alt="GoodFirms Partner Badge" width="1930" height="815" loading="lazy">](https://www.goodfirms.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/techreviewer-featured-on-techreviewer.webp" alt="Featured on Techreviewer" width="1774" height="887" loading="lazy">](https://techreviewer.co/companies/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/c2c-review-top-rated-badge.webp" alt="C2C Review Top Rated Badge" width="1774" height="887" loading="lazy">](https://c2creview.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/agency-spotter-recognized-by-agency-spotter.webp" alt="Recognized by Agency Spotter" width="1774" height="887" loading="lazy">](https://www.agencyspotter.com/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/itfirms-listed-on-itfirms.webp" alt="Listed on ITFirms Badge" width="1774" height="887" loading="lazy">](https://www.itfirms.co/)[<img src="/wp-content/uploads/2026/06/trustpilot-find-us-on-trustpilot.webp" alt="Find us on Trustpilot Badge" width="1774" height="887" loading="lazy">](https://www.trustpilot.com/review/websitemaintenanceservices.org)
-
- [<img src="/wp-content/uploads/2026/06/clutch-trusted-by-clients.webp" alt="Clutch Trusted Partner Badge" width="1838" height="856" loading="lazy">](https://clutch.co/profile/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/sortlist-verified-agency.webp" alt="Sortlist Verified Agency Badge" width="664" height="226" loading="lazy">](https://www.sortlist.com/agency/website-maintenance-services-usa)[<img src="/wp-content/uploads/2026/06/goodfirms-partner-badge.webp" alt="GoodFirms Partner Badge" width="1930" height="815" loading="lazy">](https://www.goodfirms.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/techreviewer-featured-on-techreviewer.webp" alt="Featured on Techreviewer" width="1774" height="887" loading="lazy">](https://techreviewer.co/companies/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/c2c-review-top-rated-badge.webp" alt="C2C Review Top Rated Badge" width="1774" height="887" loading="lazy">](https://c2creview.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/agency-spotter-recognized-by-agency-spotter.webp" alt="Recognized by Agency Spotter" width="1774" height="887" loading="lazy">](https://www.agencyspotter.com/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/itfirms-listed-on-itfirms.webp" alt="Listed on ITFirms Badge" width="1774" height="887" loading="lazy">](https://www.itfirms.co/)[<img src="/wp-content/uploads/2026/06/trustpilot-find-us-on-trustpilot.webp" alt="Find us on Trustpilot Badge" width="1774" height="887" loading="lazy">](https://www.trustpilot.com/review/websitemaintenanceservices.org)
-
 <div class="cards">
 
 <div class="card">
@@ -398,7 +422,7 @@ We run a full website audit, fix urgent issues, and set up security, backups, an
 
 <div class="card">
 
-<p class="pair"><strong>Expert Developers</strong> <span>Experienced team</span></p>
+<p class="pair"><strong>Expert Developers</strong> <span>Certified, experienced team</span></p>
 
 </div>
 
@@ -423,7 +447,7 @@ From hosting and SEO to content, backups, and updates — we handle it all under
 
 Real Results
 
-## Real Maintenance Results
+## Real Maintenance Results, Backed by Numbers
 
 Here’s what consistent website maintenance did for one of our clients — a busy healthcare clinic running on WordPress.
 
@@ -433,7 +457,7 @@ Here’s what consistent website maintenance did for one of our clients — a bu
 
 Page Load Speed
 
-<p class="pair"><strong>Slow</strong> <span>Optimized</span></p>
+<p class="pair"><strong>4.8s</strong> <span>1.9s</span></p>
 
 </div>
 
@@ -449,7 +473,7 @@ Security
 
 Downtime
 
-<p class="pair"><strong>Often</strong> <span>Reduced</span></p>
+<p class="pair"><strong>Often</strong> <span>~0%</span></p>
 
 </div>
 
@@ -469,7 +493,7 @@ Case Study
 
 Healthcare WordPress USA Monthly Maintenance
 
-This mental-health clinic relied on its website for patient bookings, but it was slow, had a broken appointment form, occasional downtime, and no security monitoring. We optimized speed, set up 24/7 security and malware protection, fixed the booking form, and took over all updates — turning it into a fast, stable, patient-ready site.
+This mental-health clinic relied on its website for patient bookings, but it was slow (4.8s loads), had a broken appointment form, occasional downtime, and no security monitoring. We optimized speed, set up 24/7 security and malware protection, fixed the booking form, and took over all updates — turning it into a fast, stable, patient-ready site.
 
 [Read the Full Case Study](/website-maintenance-case-study/) [Get the Same Results](/get-a-free-quote/)
 
@@ -691,7 +715,7 @@ Every month you get a clear report of exactly what we updated, fixed, and improv
 
 ## Countries We Serve
 
-We provide dedicated website maintenance services to businesses across these key regions — with support ready in your time zone.
+We provide dedicated website maintenance services to businesses in the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Switzerland and the Caribbean, with support ready in your time zone.
 
 <div class="cards">
 

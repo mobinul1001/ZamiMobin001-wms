@@ -203,3 +203,9 @@
 
 ## Brand guideline (2026-11-02)
 - BRAND-GUIDELINE.md added: colours, type, spacing, components and themes, with steps for reusing the system at another company. Values checked against mockups/v2/design.css.
+
+## Claims restored, company facts, page end, rollout (2026-11-02)
+- Claims confirmed by the owner are back; their build checks are removed. Old contact details and location lines replaced sitewide (scripts/lib/company-facts.mjs, claims.mjs).
+- Design moved from the mockup into the site: src/styles/site.css, Base.astro, all templates, src/lib/home.ts, polish.ts, plans.ts, icons.ts. mockups/v2 and build-mockups-v2.mjs removed.
+- Every page ends with the GMB block, final CTA box and new footer. A short call to action at the end of a page moves into the CTA box.
+- scripts/design-qa.mjs runs on dist/ for 11 templates.

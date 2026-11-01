@@ -1,10 +1,10 @@
 # Brand and Design Guideline
 
-The design system behind the websitemaintenanceservices.org homepage mockup: colours, type, spacing and components, in a light and a dark theme.
+The design system behind websitemaintenanceservices.org: colours, type, spacing and components, in a light and a dark theme.
 
-**Source of truth:** `mockups/v2/design.css`. If this file and the CSS differ, the CSS is right.
+**Source of truth:** `src/styles/site.css`. If this file and the CSS differ, the CSS is right.
 
-**Status:** the homepage mockup is waiting for owner approval, so values may still change.
+**Status:** in use on the site; values may still change during owner review.
 
 ## 1. Reusing this for another company
 
@@ -252,7 +252,10 @@ A rounded band using the final gradient, text on the left, buttons on the right.
 Logo, Services dropdown, other nav links, theme switch and one primary button, on a sticky blurred bar. At 1080px and below: a hamburger opens a full menu. On phones the primary button moves into that menu.
 
 ### Footer
-4px gradient line on top, logo with a short line, contact details, 4 link columns, a "Find us on" badge row, then copyright and cookie settings.
+4px gradient line on top; logo, short description, three icon lines and social buttons on the left; 3 link columns on the right; a "Find us on" badge row; a bottom bar with copyright on the left and legal links on the right.
+
+### Page end
+On every page, in this order: business details block (eyebrow, name, one line, then address, phone and website cards in one bordered row), final call-to-action box, footer.
 
 Badges are all 48px high (40px on phones). They are colour in light mode, and greyscale until hover in dark mode.
 

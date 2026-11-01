@@ -1751,4 +1751,4 @@ Start with a free health check, or jump straight into a plan that fits your site
 
 [Get a Free Website Health Check](/get-a-free-quote/) [View Monthly Plans](#pricing)
 
-No Contract • Cancel Anytime • 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+No Contract • Cancel Anytime • 650+ websites maintained in 12+ years.

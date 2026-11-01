@@ -25,7 +25,7 @@ Looking for complete site care? Pair your organic growth with our [ongoing websi
 
 <div class="card">
 
-<div class="status-panel"><p class="status-head"><span>● Real-time SEO Growth</span><span class="tag">Example</span></p><p class="status-note">Organic Search Traffic</p><p class="status-note">Target Keywords</p><p class="status-note">Technical SEO Audit</p><p class="status-note">Trusted SEO Agency • US, UK, CA &amp; AU</p></div>
+<div class="status-panel"><p class="status-head"><span>● Real-time SEO Growth</span><span class="tag">Example</span></p><p class="status-row"><strong>Organic Search Traffic</strong> <em>+142% Growth</em></p><p class="status-row"><strong>Target Keywords</strong> <em>Page 1 Top 3</em></p><p class="status-row"><strong>Technical SEO Audit</strong> <em>98/100 Passed</em></p><p class="status-note">Trusted SEO Agency • US, UK, CA &amp; AU</p></div>
 
 </div>
 
@@ -43,7 +43,7 @@ Looking for complete site care? Pair your organic growth with our [ongoing websi
 
 <div class="card">
 
-30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+650+ websites maintained in 12+ years.
 
 </div>
 
@@ -158,6 +158,8 @@ Rather than applying generic tactics, an effective **search engine optimization 
 In addition to keyword targeting, search algorithms strongly favor fast, secure websites. Incorporating [secure hosting and SSL practices supports rankings](/wordpress-malware-removal-service/) and builds trust with potential clients.
 
 SEO
+
+<p class="pair"><strong>Reviewed by Senior SEO Lead</strong> <span>12+ Years Enterprise SEO Experience</span></p>
 
 </div>
 
@@ -707,6 +709,7 @@ Full Scope Inclusions
 | --- | --- | --- |
 | Contract Length | 6 to 12-month mandatory lock-in contracts | Month-to-month contracts (Cancel anytime) |
 | Inclusions Depth | 4–6 vague bullet points with hidden upsells | Clear deliverables listed for each plan |
+| Account Management | Junior account managers with high turnover | Direct senior SEO strategist (12+ yrs exp) |
 | Reporting Transparency | Obfuscated monthly PDFs with vanity metrics | Live GA4 & GSC keyword rank tracking |
 
 Want to see proof of our results first? [See our real client case studies](#case-studies).

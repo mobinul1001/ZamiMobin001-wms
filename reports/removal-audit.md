@@ -2,6 +2,7 @@
 
 ## /
 
+- Trusted & Rated by Clients Worldwide
 - Simple, Transparent Pricing
 - Website Maintenance Plans & Pricing
 - Affordable monthly website maintenance plans for every business — no long-term contracts, cancel anytime. Save 20% with annual billing.
@@ -343,7 +344,6 @@
 ## /website-design-services/
 
 - responsive-ui-frame.v2
-- 99/100 Passed
 - Unlimited Pages & Custom Animations
 - Advanced CRM / API & Payment Gateway Setup
 - Dedicated Senior Project Manager
@@ -606,9 +606,6 @@
 ## /website-seo-services/
 
 - seo-performance-tracker.v2
-- +142% Growth
-- Page 1 Top 3
-- 98/100 Passed
 - Dedicated Strategist
 - Direct access to an experienced lead SEO engineer with 12+ years of hands-on experience, not a junior account manager.
 - Local SEO & Google Business Profile

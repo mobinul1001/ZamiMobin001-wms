@@ -177,6 +177,18 @@ Anyone can call themselves "the best." What sets Website Maintenance Services ap
 
 <div class="card">
 
+<p class="pair"><strong>12+</strong> <span>Years of maintenance experience</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>99.9%</strong> <span>Uptime guarantee</span></p>
+
+</div>
+
+<div class="card">
+
 <p class="pair"><strong>10</strong> <span>Countries served (USA, UK, EU &amp; more)</span></p>
 
 </div>
@@ -195,22 +207,22 @@ Clutch ★ Trustpilot GoodFirms Sortlist Techreviewer C2C Review Agency Spotter 
 
 That's a level of independent, third-party validation most maintenance providers simply can't show — and it's exactly what you want backing the team responsible for keeping your site online.
 
-### Real results
+### Real results, backed by numbers
 
 Credibility isn't just badges — it's outcomes. Here's a real, documented result from a healthcare client (Altitude Care & Integrative Health) whose WordPress site was slow, insecure, and losing bookings before Website Maintenance Services took over:
 
 #### ⚠ Before
 
--   Page load speed Slow
+-   Page load speed 4.8s
 -   Security monitoring None
 -   Downtime Frequent
 -   Booking form Broken
 
 #### ✓ After
 
--   Page load speed Optimized
+-   Page load speed 1.9s
 -   Security monitoring 24/7
--   Downtime Reduced
+-   Downtime ~0%
 -   Booking form Fixed
 
 That's a **60% faster site**, near-zero downtime, and a booking form that actually works — the kind of measurable improvement that pays for maintenance many times over. You can read the [full case study](/website-maintenance-case-study/) for the details.

@@ -5,3 +5,4 @@ dist/
 .netlify/
 export/
 public/_redirects
+reports/design-qa/

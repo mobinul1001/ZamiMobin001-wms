@@ -31,7 +31,7 @@ Move your website to any host or platform without losing traffic, data, or SEO r
 
 <div class="card">
 
-30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+650+ websites maintained in 12+ years.
 
 </div>
 

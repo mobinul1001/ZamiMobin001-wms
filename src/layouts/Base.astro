@@ -1,5 +1,7 @@
 ---
 import '../styles/site.css';
+import site from '../data/site.json';
+import { icon } from '../lib/icons';
 
 interface Props {
   title: string;
@@ -8,9 +10,9 @@ interface Props {
   social?: Record<string, unknown>;
   schema?: unknown[];
   lang?: string;
-  plansHref?: string;
+  cta?: { id?: string; title: string; text: string; links: { href: string; label: string }[] };
 }
-const { title, description, robots, social = {}, schema = [], lang = 'en-US', plansHref = '/monthly-website-maintenance-packages/' } = Astro.props;
+const { title, description, robots, social = {}, schema = [], lang = 'en-US', cta } = Astro.props;
 
 // Netlify sets CONTEXT and URL during builds. Only a production build on the real domain
 // may be indexed, so the netlify.app address and any misconfigured build stay noindex.
@@ -33,16 +35,25 @@ const main = [
   ['About', '/about-us/'],
   ['Contact', '/contact/'],
 ];
-const current = Astro.url.pathname;
-const isPt = lang.startsWith('pt');
+const quote = '/get-a-free-quote/';
+const code = lang.slice(0, 2);
+const isPt = code === 'pt';
 const cookieText = isPt
   ? { message: 'Usamos cookies de análise para melhorar este site.', accept: 'Aceitar', reject: 'Recusar', policy: 'Política de privacidade', settings: 'Configurações de cookies' }
   : { message: 'We use analytics cookies to improve this site.', accept: 'Accept', reject: 'Reject', policy: 'Privacy policy', settings: 'Cookie settings' };
+const CTA_DEFAULT: Record<string, { title: string; text: string; links: { href: string; label: string }[] }> = {
+  en: { title: 'Keep your website fast, secure and up to date.', text: 'Tell us what your site needs. We reply with a clear plan and price.', links: [{ href: quote, label: 'Get a free quote' }, { href: '/monthly-website-maintenance-packages/', label: 'See plans & pricing' }] },
+  es: { title: 'Mantén tu sitio web rápido, seguro y actualizado.', text: 'Cuéntanos qué necesita tu sitio. Te respondemos con un plan y un precio claros.', links: [{ href: quote, label: 'Pedir un presupuesto gratis' }, { href: '/monthly-website-maintenance-packages/', label: 'Ver planes y precios' }] },
+  pt: { title: 'Mantenha seu site rápido, seguro e atualizado.', text: 'Conte o que seu site precisa. Respondemos com um plano e um preço claros.', links: [{ href: quote, label: 'Pedir um orçamento grátis' }, { href: '/monthly-website-maintenance-packages/', label: 'Ver planos e preços' }] },
+};
+const finalCta = cta ?? CTA_DEFAULT[code] ?? CTA_DEFAULT.en;
 const footerCols = [
   ['Services', [...services, ['White label for agencies', '/white-label-website-maintenance-services-for-agencies/'], ['Website migration', '/website-migration-services/'], ['Speed optimization', '/website-speed-optimization-services/']]],
-  ['Company', [['About us', '/about-us/'], ['Our work', '/works/'], ['Pricing', '/monthly-website-maintenance-packages/'], ['Process', '/website-maintenance-process/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Blog', '/blogs/'], ['Partner program', '/wms-partner-program/'], ['Write for us', '/write-for-us/']]],
-  ['Help and trust', [['Contact', '/contact/'], ['Free website check', '/free-website-maintenance-audit/'], ['Malware scanner', '/website-malware-scanner/'], ['Get a quote', '/get-a-free-quote/'], ['Agreement', '/agreement/'], ['Privacy policy', '/privacy-policy/'], ['Terms', '/terms-conditions/'], ['Refund policy', '/refund-cancellation-policy/'], ['Cookie policy', '/cookie-policy/']]],
+  ['Company', [['About us', '/about-us/'], ['Our work', '/works/'], ['Pricing', '/monthly-website-maintenance-packages/'], ['Process', '/website-maintenance-process/'], ['Contact', '/contact/'], ['Get a quote', quote], ['Partner program', '/wms-partner-program/'], ['Write for us', '/write-for-us/']]],
+  ['Resources', [['Blog', '/blogs/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Free website check', '/free-website-maintenance-audit/'], ['Malware scanner', '/website-malware-scanner/'], ['Agreement', '/agreement/'], ['Refund policy', '/refund-cancellation-policy/'], ['Cookie policy', '/cookie-policy/']]],
 ] as [string, string[][]][];
+const SOCIAL_ICON: Record<string, string> = { Facebook: 'facebook', LinkedIn: 'linkedin', Instagram: 'instagram' };
+const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button" aria-label="Switch between light and dark theme">${icon('sun', 'sun')}${icon('moon', 'moon')}</button>`;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -54,6 +65,7 @@ const footerCols = [
     <meta name="robots" content={robotsContent} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <script is:inline>(function(){var t;try{t=localStorage.getItem('wms-theme')}catch(e){}if(t!=='dark'&&t!=='light')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';var r=document.documentElement;r.setAttribute('data-theme',t);r.classList.add('js')})()</script>
     <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     {socialTags.map(({ key, content }) => (key.startsWith('twitter:') ? <meta name={key} content={content} /> : <meta property={key} content={content} />))}
     {schema.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
@@ -70,38 +82,94 @@ const footerCols = [
     <script is:inline defer src="/consent.js"></script>
   </head>
   <body>
-    <header class="site-head"><div class="wrap">
-      <a class="logo" href="/"><img src={logo} alt="WMS logo" width="325" height="108" /></a>
+    <header class="top site-head"><div class="wrap">
+      <a class="logo" href="/" aria-label="Home"><img src={logo} alt="WMS logo" width="325" height="108" /></a>
       <nav class="nav" aria-label="Main">
-        <details class="nav-drop"><summary>Services</summary><ul>{services.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
-        {main.map(([label, href]) => <a href={href} class:list={{ on: current === href }}>{label}</a>)}
-        <a class="btn" href={plansHref}>See plans</a>
-      </nav>
-      <details class="menu"><summary>Menu</summary><div>
-        {services.map(([label, href]) => <a class="sub-link" href={href}>{label}</a>)}
+        <details class="drop"><summary>Services<Fragment set:html={icon('down')} /></summary><ul>{services.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
         {main.map(([label, href]) => <a href={href}>{label}</a>)}
-        <a class="btn" href={plansHref}>See plans</a>
-      </div></details>
+        <Fragment set:html={themeBtn('theme')} />
+        <a class="btn primary" href={quote}>Get a free quote</a>
+      </nav>
+      <a class="btn primary cta-m" href={quote}>Get a free quote</a>
+      <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><Fragment set:html={icon('menu', 'open') + icon('x', 'close')} /></button>
     </div></header>
+    <nav class="mnav" id="mnav" aria-label="Mobile">
+      <details open><summary>Services<Fragment set:html={icon('down')} /></summary>{services.map(([label, href]) => <a href={href}>{label}</a>)}</details>
+      {main.map(([label, href]) => <a href={href}>{label}</a>)}
+      <div class="theme-row"><span>Theme</span><Fragment set:html={themeBtn('theme-m')} /></div>
+      <a class="btn primary" href={quote}>Get a free quote</a>
+    </nav>
     <main>
       <slot />
     </main>
-    <footer class="foot"><div class="wrap">
-      <div class="foot-grid">
-        <div>
-          <img src={logo} alt="WMS logo" width="325" height="108" style="height:38px;width:auto" loading="lazy" />
-          <p class="muted small" style="margin-top:10px">Dhaka-based team, working US &amp; UK business hours.<br />No contract. Cancel anytime.</p>
-          <p class="small" style="margin-top:10px"><a href="mailto:contact@websitemaintenanceservices.org">contact@websitemaintenanceservices.org</a><br /><a href="https://wa.me/8801815840813">+8801815840813</a></p>
-        </div>
-        {footerCols.map(([heading, links]) => (
-          <div><h3>{heading}</h3><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></div>
-        ))}
+    <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
+      <div>
+        <p class="eyebrow">{site.gbp.eyebrow}</p>
+        <p class="gmb-title">{site.gbp.name}</p>
+        <p class="gmb-line">{site.gbp.line}</p>
       </div>
-      <p class="legal">© 2026 WMS. websitemaintenanceservices.org · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></p>
+      <div class="gmb-cards">
+        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('pin')}</span>`} /><div><small>ADDRESS</small><span>{site.address}</span></div></div>
+        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('phone')}</span>`} /><div><small>PHONE</small><a href={site.phoneHref}>{site.phone}</a></div></div>
+        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('globe')}</span>`} /><div><small>WEBSITE</small><a href="/">{site.website}</a></div></div>
+      </div>
+    </div></section>
+    <section class="cta-sec" data-sec="final"><div class="wrap"><div class="final">
+      <div>
+        {cta ? <h2 id={cta.id} set:html={finalCta.title} /> : <p class="final-title">{finalCta.title}</p>}
+        <p set:html={finalCta.text} />
+      </div>
+      <div class="act">{finalCta.links.map((l, i) => <a class:list={['btn', i === 0 ? 'white' : 'ghost']} href={l.href}>{l.label}</a>)}</div>
+    </div></div></section>
+    <footer class="foot" data-sec="footer"><div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <img src={logo} alt="WMS logo" width="325" height="108" loading="lazy" />
+          <p>{site.brand} keeps your website fast, secure and up to date. Plain monthly reports show you what we did.</p>
+          <ul class="foot-lines">
+            <li><Fragment set:html={icon('globe')} />Remote — serving USA, Canada, UK, Australia &amp; Europe</li>
+            <li><Fragment set:html={icon('clock')} />{site.hours}</li>
+            <li><Fragment set:html={icon('check')} />No contract • Cancel anytime</li>
+          </ul>
+          <div class="foot-social">
+            {site.social.map(([name, href]) => <a href={href} rel="noopener" aria-label={name} set:html={icon(SOCIAL_ICON[name])} />)}
+            <a href={`mailto:${site.email}`} aria-label="Email" set:html={icon('mail')} />
+          </div>
+        </div>
+        <div class="foot-cols">
+          {footerCols.map(([heading, links]) => (
+            <div><h2>{heading}</h2><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></div>
+          ))}
+        </div>
+      </div>
+      <div class="foot-find"><h2>Find us on</h2><ul>{site.badges.map(([href, src, alt, w, h]) => <li><a href={String(href)} rel="noopener"><img src={String(src)} alt={String(alt)} width={Number(w)} height={Number(h)} loading="lazy" /></a></li>)}</ul></div>
+      <div class="foot-bottom">
+        <span>© 2026 {site.brandShort}. All rights reserved.</span>
+        <span class="foot-legal"><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a> · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button> · <a href={`mailto:${site.email}`}>{site.email}</a></span>
+      </div>
     </div></footer>
     <div id="cookie-bar" class="cookie-bar" role="region" aria-label={cookieText.settings} hidden>
       <p>{cookieText.message} <a href="/privacy-policy/">{cookieText.policy}</a></p>
-      <div class="cookie-actions"><button type="button" id="cookie-accept" class="btn ghost">{cookieText.accept}</button><button type="button" id="cookie-reject" class="btn ghost">{cookieText.reject}</button></div>
+      <div class="cookie-actions"><button type="button" id="cookie-accept">{cookieText.accept}</button><button type="button" id="cookie-reject">{cookieText.reject}</button></div>
     </div>
+    <script is:inline>
+      (function () {
+        var d = document, r = d.documentElement;
+        function flip() { var t = r.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'; r.setAttribute('data-theme', t); try { localStorage.setItem('wms-theme', t); } catch (e) {} }
+        d.getElementById('theme').addEventListener('click', flip);
+        d.getElementById('theme-m').addEventListener('click', flip);
+        var b = d.getElementById('burger'), m = d.getElementById('mnav');
+        function menu(on) { m.classList.toggle('on', on); b.setAttribute('aria-expanded', on); d.body.classList.toggle('menu-open', on); if (on) { var f = m.querySelector('summary'); if (f) f.focus(); } }
+        b.addEventListener('click', function () { menu(b.getAttribute('aria-expanded') !== 'true'); });
+        d.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { if (m.classList.contains('on')) { menu(false); b.focus(); } d.querySelectorAll('.drop[open]').forEach(function (x) { x.open = false; }); }
+          if (e.key === 'Tab' && m.classList.contains('on')) { var a = [b].concat([].slice.call(m.querySelectorAll('a,summary,button'))).filter(function (x) { return x.offsetParent !== null; }), l = a[a.length - 1]; if (e.shiftKey && d.activeElement === b) { e.preventDefault(); l.focus(); } else if (!e.shiftKey && d.activeElement === l) { e.preventDefault(); b.focus(); } }
+        });
+        d.addEventListener('click', function (e) { d.querySelectorAll('.drop[open]').forEach(function (x) { if (!x.contains(e.target)) x.open = false; }); });
+        matchMedia('(min-width: 1081px)').addEventListener('change', function (e) { if (e.matches) menu(false); });
+        var all = d.querySelectorAll('.fade');
+        if ('IntersectionObserver' in window) { var o = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' }); all.forEach(function (e) { o.observe(e); }); } else all.forEach(function (e) { e.classList.add('in'); });
+      })();
+    </script>
   </body>
 </html>

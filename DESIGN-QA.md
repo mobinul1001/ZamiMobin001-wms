@@ -31,7 +31,9 @@ The owner should NOT have to point out design problems one by one. Act as a seni
 ## 3. Checklist (every page, both themes, 3 widths)
 - [ ] Header: logo, nav links, theme switch, primary CTA "Get a free quote" (desktop). **Mobile: hamburger menu** opening a full menu (all nav links + Services submenu + CTA), keyboard and screen-reader accessible.
 - [ ] Header nav: Services (dropdown), Pricing, Blog, About, Contact. The primary header CTA is **"Get a free quote"** (to /get-a-free-quote/); "See plans" is not the header CTA.
-- [ ] Footer: logo + short line, 4 link columns, contact, "Find us on" badges row, cookie settings, copyright. Styled for both themes, with a visual separation from the page.
+- [ ] Page end, in this order: GMB block → final CTA box → footer.
+- [ ] GMB block: eyebrow, business name, one line; address, phone and website cards in one bordered row. Stacks on mobile.
+- [ ] Footer: logo, short description, three icon lines, social icon buttons; 3 link columns (Services, Company, Resources); "Find us on" badges; bottom bar with copyright left, Privacy · Terms · Cookie settings · email right. Styled for both themes, with a visual separation from the page.
 - [ ] No empty half-width areas; every block aligned to the container edges.
 - [ ] All buttons follow the button rules; equal widths when stacked on mobile.
 - [ ] Every section has an eyebrow label + H2 + intro in the same style.
@@ -45,18 +47,16 @@ The owner should NOT have to point out design problems one by one. Act as a seni
 ## 4. Known issues from the owner's review (2026-11-01), all must be fixed
 1. **Mobile header has no menu.** Add a hamburger menu. Header CTA = "Get a free quote".
 2. **"How it works":** the line runs past step 4, the steps look empty, and there is a second 5-step process ("How do I get started") further down. Merge them into ONE process section styled like the live site's process (cards with number + icon), improved.
-3. **"Find us on":** use the real badge/logo images from the live site, each linking to the **same profile URL the live site uses**. Show them at the same height in one row (wrapping on mobile), greyscale with colour on hover in dark mode, colour in light mode. No ratings or stars. Keep only profiles the owner confirms; ITFirms is out.
+3. **"Find us on":** use the real badge/logo images from the live site, each linking to the **same profile URL the live site uses**. Show them at the same height in one row (wrapping on mobile), greyscale with colour on hover in dark mode, colour in light mode. Stars inside a badge image are fine, they are real. Keep only profiles the owner confirms; ITFirms is out.
 4. **"Why maintenance matters":** the "Bottom line" callout is half width with empty space on the right. Make it full container width. Highlight the table header, and tint the "With Maintenance" column (light and dark).
 5. **Case study card:** the text uses half the card and the right side is empty. Use two columns: text + buttons on the left, a stats/visual panel on the right.
 6. **Mobile stacked buttons** ("Choose a plan / Get a quote", "Learn more about us / See our works"): full width, equal width.
 7. **"What's Included in Every Plan":** narrow pills with empty space. Use a grid of icon cards (2 columns on mobile, 3–4 on desktop).
 8. **Light mode** generally lacks highlights. Apply the light-mode highlight rules to every section.
 
-## 5. Claims still on the mockups (follow CLAIMS-AND-DESIGN.md section A)
-- Remove "+142% Growth", "Page 1 Top 3", "98/100 Passed" (SEO page) and "99/100 Passed" (design page), even with an "Example" label.
-- Remove "Certified" from "Expert Developers: Certified, experienced team" (no certification confirmed).
-- Case study (Altitude Care): keep the numbers only if the owner confirms them; until then show the problem and the work done, without numbers.
-- "Expert, Dedicated Team" card text (draft, owner to confirm): "A Dhaka-based team of WordPress developers who work your business hours and explain every change in plain words."
+## 5. Claims
+Owner confirmed these as true on 2026-11-02, and they stay: "+142% Growth", "Page 1 Top 3", "98/100 Passed", "99/100 Passed", "Expert Developers: Certified, experienced team", the Altitude Care numbers (shown prominently), "99.9% uptime guarantee", "Certified, Experienced, Trusted." and "Google Partner". See CLAIMS-AND-DESIGN.md section A.
+- "Expert, Dedicated Team" card text (draft, owner to confirm): "A team of WordPress developers who work US & UK business hours and explain every change in plain words."
 
 ## 6. Workflow
 1. Apply this file to the **homepage**, run the self-review loop, and send screenshots.

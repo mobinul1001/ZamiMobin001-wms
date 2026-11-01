@@ -222,39 +222,15 @@
     },
     {
       "path": "/",
-      "change": "price text gone",
-      "from": "4.8s1.9s",
-      "to": ""
+      "change": "price",
+      "from": "Trusted by businesses in the USA, UK, Canada, Australia & Europe",
+      "to": "Trusted by businesses in the USA, Canada, the UK, Australia and Europe"
     },
     {
       "path": "/",
       "change": "price",
-      "from": "<strong>4.8s</strong> <span>1.9s</span>",
-      "to": "<strong>Slow</strong> <span>Optimized</span>"
-    },
-    {
-      "path": "/",
-      "change": "price",
-      "from": "<strong>Often</strong> <span>~0%</span>",
-      "to": "<strong>Often</strong> <span>Reduced</span>"
-    },
-    {
-      "path": "/",
-      "change": "price",
-      "from": "it was slow (4.8s loads), had",
-      "to": "it was slow, had"
-    },
-    {
-      "path": "/",
-      "change": "price",
-      "from": "## Real Maintenance Results, Backed by Numbers",
-      "to": "## Real Maintenance Results"
-    },
-    {
-      "path": "/",
-      "change": "price",
-      "from": "Certified, experienced team",
-      "to": "Experienced team"
+      "from": "to businesses across these key regions — with support ready in your time zone.",
+      "to": "to businesses in the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Switzerland and the Caribbean, with support ready in your time zone."
     },
     {
       "path": "/",
@@ -421,30 +397,6 @@
       "change": "price",
       "from": "/^\\$95$/m",
       "to": "$79"
-    },
-    {
-      "path": "/best-fixrunner-alternatives/",
-      "change": "price",
-      "from": "Page load speed 4.8s",
-      "to": "Page load speed Slow"
-    },
-    {
-      "path": "/best-fixrunner-alternatives/",
-      "change": "price",
-      "from": "Page load speed 1.9s",
-      "to": "Page load speed Optimized"
-    },
-    {
-      "path": "/best-fixrunner-alternatives/",
-      "change": "price",
-      "from": "Downtime ~0%",
-      "to": "Downtime Reduced"
-    },
-    {
-      "path": "/best-fixrunner-alternatives/",
-      "change": "price",
-      "from": "### Real results, backed by numbers",
-      "to": "### Real results"
     },
     {
       "path": "/best-fixrunner-alternatives/",
@@ -964,30 +916,6 @@
     },
     {
       "path": "/best-wp-buffs-alternatives/",
-      "change": "price",
-      "from": "Page load speed 4.8s",
-      "to": "Page load speed Slow"
-    },
-    {
-      "path": "/best-wp-buffs-alternatives/",
-      "change": "price",
-      "from": "Page load speed 1.9s",
-      "to": "Page load speed Optimized"
-    },
-    {
-      "path": "/best-wp-buffs-alternatives/",
-      "change": "price",
-      "from": "Downtime ~0%",
-      "to": "Downtime Reduced"
-    },
-    {
-      "path": "/best-wp-buffs-alternatives/",
-      "change": "price",
-      "from": "### Real results, backed by numbers",
-      "to": "### Real results"
-    },
-    {
-      "path": "/best-wp-buffs-alternatives/",
       "change": "schema same",
       "question": "Is WP Buffs a good WordPress maintenance service?"
     },
@@ -1055,6 +983,12 @@
       "path": "/caribbean-taxi-transport-website-guide/",
       "change": "schema synced",
       "question": "What's included when you build my transport website?"
+    },
+    {
+      "path": "/contact/",
+      "change": "price",
+      "from": "/-   WhatsApp \\/ Phone\\s+\\[\\+8801815840813\\]\\(https:\\/\\/wa\\.me\\/8801815840813\\)/",
+      "to": "-   Phone\n    [+1 212-496-1637](tel:+12124961637)\n\n-   Address\n    14 Wall St Ste 2036, New York, NY 10005, United States"
     },
     {
       "path": "/contact/",
@@ -2672,24 +2606,6 @@
     },
     {
       "path": "/sitecare-alternative/",
-      "change": "price",
-      "from": "Page load speed 4.8s",
-      "to": "Page load speed Slow"
-    },
-    {
-      "path": "/sitecare-alternative/",
-      "change": "price",
-      "from": "Page load speed 1.9s",
-      "to": "Page load speed Optimized"
-    },
-    {
-      "path": "/sitecare-alternative/",
-      "change": "price",
-      "from": "Downtime ~0%",
-      "to": "Downtime Reduced"
-    },
-    {
-      "path": "/sitecare-alternative/",
       "change": "schema synced",
       "question": "Is SiteCare a good WordPress maintenance service?"
     },
@@ -3012,6 +2928,12 @@
     },
     {
       "path": "/website-hacked-recovery-services/",
+      "change": "price",
+      "from": "[Chat on WhatsApp](https://wa.me/8801815840813)",
+      "to": "[Call +1 212-496-1637](tel:+12124961637)"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
       "change": "schema same",
       "question": "How fast can you fix a hacked website?"
     },
@@ -3144,36 +3066,6 @@
       "path": "/website-maintenance-case-study/",
       "change": "price",
       "from": "/^We help clinics, therapists[^\\n]*$/m"
-    },
-    {
-      "path": "/website-maintenance-case-study/",
-      "change": "price",
-      "from": "4.8 seconds average load time, causing high bounce rates.",
-      "to": "Slow load times, causing high bounce rates."
-    },
-    {
-      "path": "/website-maintenance-case-study/",
-      "change": "price",
-      "from": "### Speed Optimization (4.8s → 1.9s)",
-      "to": "### Speed Optimization"
-    },
-    {
-      "path": "/website-maintenance-case-study/",
-      "change": "price",
-      "from": "    4.8s",
-      "to": "    Slow"
-    },
-    {
-      "path": "/website-maintenance-case-study/",
-      "change": "price",
-      "from": "    1.9s",
-      "to": "    Optimized"
-    },
-    {
-      "path": "/website-maintenance-case-study/",
-      "change": "price",
-      "from": "    Near 0%",
-      "to": "    Reduced"
     },
     {
       "path": "/website-maintenance-checklist/",

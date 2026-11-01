@@ -44,8 +44,9 @@ const server = createServer((req, res) => {
 });
 await new Promise((r) => server.listen(4395, r));
 const shot = (file, p, w, h) => new Promise((done) => {
-  const args = ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--user-data-dir=${mkdtempSync(join(tmpdir(), 'dr-'))}`, `--window-size=${Math.max(w, 500)},${h}`, '--force-device-scale-factor=1', '--virtual-time-budget=5000', `--screenshot=${resolve(file)}`, `http://localhost:4395/_w?p=${encodeURIComponent(p)}&w=${w}&h=${h}`];
-  spawn(CHROME, args).on('exit', done);
+  const profile = mkdtempSync(join(tmpdir(), 'dr-'));
+  const args = ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--user-data-dir=${profile}`, `--window-size=${Math.max(w, 500)},${h}`, '--force-device-scale-factor=1', '--virtual-time-budget=5000', `--screenshot=${resolve(file)}`, `http://localhost:4395/_w?p=${encodeURIComponent(p)}&w=${w}&h=${h}`];
+  spawn(CHROME, args).on('exit', () => { setTimeout(() => { rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 300 }); done(); }, 200); });
 });
 const SIZES = { desktop: [1440, 900], mobile: [390, 844] };
 for (const [name, p] of PAGES) for (const [size, [w, h]] of Object.entries(SIZES)) {

@@ -32,8 +32,15 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - **Edit hours:** unused hours don't roll over.
 - **Response time:** Essential 2 business days, Growth 1 business day, Business 4 hours + 24/7 emergency fixes.
 - **"Find us on":** use the badge images and profile URLs exactly as on the live site. Keep Clutch, GoodFirms, Sortlist, Techreviewer, C2C Review, Trustpilot. Agency Spotter only if the live site links to our profile (it does: agencyspotter.com/website-maintenance-services). ITFirms is out.
-- **Claims:** remove everything in `DESIGN-QA.md` section 5.
+- **Claims:** the section 5 removal was reversed on 2026-11-02, see below.
 - **Design process:** from now on follow `DESIGN-QA.md`: self-review at 1440, 768 and 390 in both themes, fix, then report with the checklist table. Homepage first; after approval, roll out in batches.
+
+## Owner decisions (2026-11-02)
+- Restored, confirmed true: "+142% Growth", "Page 1 Top 3", "98/100 Passed", "99/100 Passed", "Expert Developers: Certified, experienced team", the Altitude Care numbers, H2 "Real Maintenance Results, Backed by Numbers", "99.9% uptime guarantee". Build checks that blocked them are gone. "Certified, Experienced, Trusted." and "Google Partner" stay.
+- Company facts, contact details and reach: `CLAIMS-AND-DESIGN.md` section A; values in `src/data/site.json`. No Dhaka, Bangladesh or +880 about the company.
+- Every page ends: GMB block → final CTA box → footer.
+- Service cards: no "5-Star Service" line (already gone).
+- General mentions of Bangladesh stay in 5 blog posts (CDN regions, .bd domains, Shopify pricing) and one portfolio link, since they are not about the company. The owner can ask to remove them.
 
 ## Design fixes done (2026-11-01)
 - `CLAIMS-AND-DESIGN.md` section B is now "Modern premium SaaS". Section A is unchanged.
@@ -127,9 +134,9 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Hash plan links: `/get-a-free-quote/#essential`, `#growth`, `#business`, `#growth-design`, `#starter-seo` and so on. Never link to `?plan=`, `?package=` or `?industry=`. Old query URLs get no redirect.
 
 **Claims (CLAIMS-AND-DESIGN.md section A, applied sitewide)**
-- One line for numbers: "30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh."
+- Numbers: see "Owner decisions (2026-11-02)".
 - Years, star ratings, review counts and all testimonials removed. "John Doe" and "Trusted by 500+" removed from `/contact/`.
-- "Dhaka-based team, working US & UK business hours."
+- "We work US & UK business hours."
 - **Promises allowed, and no others:** (1) "If we can't clean your hacked site, you don't pay." (2) Malware: free re-clean if reinfected within 30 days. (3) Migration: free fix within 30 days if something we moved breaks. (4) Repair: "No fix, no fee: we check your site and quote before we start. If we can't fix the issue, you don't pay. (Excludes problems caused by your hosting provider's outage or by third-party services we don't control.)" The build fails on the removed wording.
 - Portfolio block and "Client words" stay empty until the owner confirms.
 
@@ -160,7 +167,6 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 ## 3. Open questions waiting for the owner
 
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
-3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
 4. **Plan gaps:** answered, see "Owner answers, plans".
 5. **Real author:** name, role, photo and bio; also team photos and the founding year.
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, people and claims inside images.
@@ -173,6 +179,20 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label process text still has some old lines to check against Essential level. Update page case studies keep their old claims, with master plan names.
 - Some articles still describe staging in general advice, which is not a claim about our plans.
+
+
+**Later list (owner, 2026-11-02):**
+- **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
+- Testimonials.
+- More case studies.
+- Full portfolio list.
+- Social URLs (the footer uses the URLs from the old site's schema until then).
+- Google Partner profile link, to link the badge.
+- Current number of active client sites.
+- How WMS relates to Chrein (owner to explain).
+- A possible "Big-agency experience, small-team care" section (owner to confirm which promises are true).
+- Real team photos. The stock team photo from the old homepage is left out.
+- Update the review profiles: they still show a Dhaka address, and Clutch shows "Founded 2025".
 
 **After the owner pushes (not blocking current work):**
 - Formspree form ID (`src/data/forms.json`, `default`).

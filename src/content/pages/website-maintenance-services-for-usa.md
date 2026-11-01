@@ -9,7 +9,7 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Dhaka-based team, working US & UK business hours.
+We work US & UK business hours.
 
 Keep Your Website Secure, Updated & Performing at Its Best.  
 We ensure your site never experiences downtime, security breaches, or poor performance.

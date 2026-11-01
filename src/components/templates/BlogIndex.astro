@@ -3,25 +3,26 @@
 import { getCollection } from 'astro:content';
 import hubs from '../../data/blog-hubs.json';
 import { splitBy } from '../../lib/html-sections';
+import { polish, hlLast } from '../../lib/polish';
 
 const { entry } = Astro.props;
 const posts = await getCollection('blog');
 const find = (s: string) => posts.find((p) => p.data.path === `/${s}/`);
 const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
 ---
-<div class="wrap">
+<section class="page-hero"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
-  <div class="page-head"><h1>{entry.data.h1}</h1></div>
-  <div class="prose" style="max-width:70ch" set:html={intro} />
-  {hubs.map((t) => (
-    <section class="post-topic">
-      <h2>{t.name}</h2>
-      <div class="post-list">
-        {t.posts.map((s) => (
-          <a class="post-link" href={`/${s}/`}><b>{find(s)?.data.h1}</b>{find(s)?.data.updatedAt && <span class="small muted">Updated {new Date(find(s)!.data.updatedAt!).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>}</a>
-        ))}
-      </div>
-    </section>
-  ))}
-  {sections.map((s) => <div class="prose" style="margin-block:48px;max-width:70ch" set:html={s.html} />)}
-</div>
+  <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
+  {intro && <div class="prose hero-intro" set:html={polish(intro, { sections: false })} />}
+</div></section>
+{hubs.map((t, i) => (
+  <section class:list={['sec', { alt: i % 2 === 1 }]}><div class="wrap">
+    <div class="head"><p class="eyebrow">Topic</p><h2>{t.name}</h2><p class="intro">{t.posts.length} articles</p></div>
+    <div class="post-list">
+      {t.posts.map((s) => (
+        <a class="card post-link" href={`/${s}/`}><b>{find(s)?.data.h1}</b>{find(s)?.data.updatedAt && <span>Updated {new Date(find(s)!.data.updatedAt!).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>}</a>
+      ))}
+    </div>
+  </div></section>
+))}
+<Fragment set:html={polish(sections.map((s) => s.html).join(''), { start: hubs.length })} />

@@ -572,7 +572,7 @@ PROVEN GLOBAL TRACK RECORD
 
 ### Industries and Site Types We Protect
 
-30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+650+ websites maintained in 12+ years.
 
 <div class="cards">
 

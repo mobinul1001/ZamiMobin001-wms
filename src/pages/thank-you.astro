@@ -1,13 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
 ---
 <Base title="Thank You | WMS" description="We have your message." robots="noindex, follow">
-  <div class="prose-page" style="min-height:45vh">
-    <div class="page-head"><h1>Thank you</h1></div>
-    <div class="prose">
-      <p>We have your message and will reply by email. We take payment only after a short call, so there is nothing to pay now.</p>
-      <p>If it is urgent, message us on <a href="https://wa.me/8801815840813">WhatsApp</a> or write to <a href="mailto:contact@websitemaintenanceservices.org">contact@websitemaintenanceservices.org</a>.</p>
-      <p><a href="/monthly-website-maintenance-packages/">See plans and pricing</a> · <a href="/blogs/">Read the blog</a></p>
-    </div>
-  </div>
+  <section class="page-hero"><div class="wrap">
+    <h1>Thank <span class="hl">you</span></h1>
+    <p class="sub">We have your message and will reply by email. We take payment only after a short call, so there is nothing to pay now.</p>
+    <p class="sub">If it is urgent, call <a href={site.phoneHref}>{site.phone}</a> or write to <a href={`mailto:${site.email}`}>{site.email}</a>.</p>
+    <div class="btn-row cta-row"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans and pricing</a><a class="btn ghost" href="/blogs/">Read the blog</a></div>
+  </div></section>
 </Base>

@@ -1,8 +1,21 @@
 ---
+import site from '../../data/site.json';
+import { polish, hlLast } from '../../lib/polish';
+import { icon } from '../../lib/icons';
+
 const { entry } = Astro.props;
+const isAbout = entry.data.path === '/about-us/';
+const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 });
 ---
-<div class="prose-page">
+<section class="page-hero"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
-  <div class="page-head" style="padding-top:14px"><h1>{entry.data.h1}</h1></div>
-  <div class="prose" set:html={entry.rendered?.html} />
-</div>
+  <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
+</div></section>
+{isAbout && (
+  <section class="sec" data-sec="stats"><div class="wrap">
+    <div class="head"><p class="eyebrow">Track record</p><h2><span class="hl">12+ years</span> of keeping websites running</h2><p class="intro">{site.domainLine}</p></div>
+    <div class="stats">{site.stats.map(([v, l]) => <div class="stat"><b>{v}</b><span>{l}</span></div>)}</div>
+    <div class="callout"><div><p><strong>{site.statsLine}</strong></p><p>We work with businesses in {site.reachFull}.</p></div><div class="act"><a class="btn primary" href="/works/">See our work<Fragment set:html={icon('arrow')} /></a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>
+  </div></section>
+)}
+<Fragment set:html={html} />
