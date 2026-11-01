@@ -1,6 +1,6 @@
 ---
 path: "/website-speed-optimization-services/"
-title: "Website Speed Optimization Services - Pass Core Web Vitals"
+title: "Website Speed Optimization Services - Pass Core Web Vitals | WMS"
 description: "Professional website speed optimization services to pass Core Web Vitals, fix slow PageSpeed scores, & boost conversion rates. 100% risk-free."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Speed Optimization Services - From Slow to Sub-2-Second Load Times."

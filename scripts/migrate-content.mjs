@@ -8,8 +8,21 @@ import * as cheerio from 'cheerio';
 import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
+import { applyApprovedRemovals } from './lib/approved-removals.mjs';
+import { readCsv } from './lib/csv.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
+// Titles and H1s from the keyword map the owner approved on 2026-11-01.
+const keywordMap = new Map(readCsv('reports/phase-3-keyword-map.csv').map((r) => [r.path, r]));
+// Existing wording only: links an unlinked phrase already in the text to the service page.
+const SERVICE_LINKS = [
+  { path: '/wordpress-malware-removal/', phrase: /our WordPress malware removal service/ },
+  { path: '/wordpress-security-checklist/', phrase: /malware removal/i },
+  { path: '/website-repair-services/', phrase: /malware removal/i },
+  { path: '/website-hacked-recovery-services/', phrase: /malware removal/i },
+  { path: '/monthly-website-maintenance-packages/', phrase: /malware removal/i },
+];
+const SERVICE_URL = '/wordpress-malware-removal-service/';
 const cells = (line) => {
   const o = [];
   let c = '';
@@ -36,7 +49,7 @@ const catName = new Map(rest.categories.map((c) => [c.id, c.name]));
 const userName = new Map(rest.users.map((u) => [u.id, u.name]));
 
 const PLAN_HASH = { basic: 'basic-migration', standard: 'standard-migration', enterprise: 'enterprise-migration' };
-const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0 };
+const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0, serviceLinks: [] };
 
 function resolveLink(href, pagePath) {
   const raw = href.trim();
@@ -195,21 +208,26 @@ async function convert(path, record) {
     offer.remove();
   }
 
-  // H1 moves to the frontmatter; the layout prints it once.
+  applyApprovedRemovals($, path);
+
+  // The approved H1 goes in the frontmatter and the layout prints it once. On pages with no H1
+  // today, the first heading stays in the body as it was.
+  const h1 = keywordMap.get(path).newH1;
   const h1s = $('h1');
-  let h1 = h1s.first().text().replace(/\s+/g, ' ').trim();
-  if (h1s.length) {
-    h1s.first().remove();
-    if (h1s.length > 1) log.demotedH1.push(path);
-    $('h1').each((_, e) => {
+  if (h1s.length > 1) log.demotedH1.push(path);
+  if (path === '/website-maintenance-services-for-brazil/') {
+    // The new H1 is a line already on the page, and the old H1 stays as a subheading.
+    $('body *').filter((_, e) => $(e).children().length === 0 && $(e).text().trim() === h1).first().remove();
+    h1s.each((_, e) => {
       e.tagName = 'h2';
     });
   } else {
-    const first = $('h2, h3').first();
-    h1 = first.text().replace(/\s+/g, ' ').trim() || record.title;
-    log.promotedH1.push({ path, h1 });
-    first.remove();
+    h1s.first().remove();
+    $('h1').each((_, e) => {
+      e.tagName = 'h2';
+    });
   }
+  if (!h1s.length) log.promotedH1.push({ path, h1 });
 
   const keepIds = anchorTargets.get(path) ?? new Set();
   $('[id]').each((_, e) => {
@@ -260,7 +278,18 @@ async function convert(path, record) {
     if (e.attribs?.id && !(e.tagName === 'a' && !e.attribs.href)) delete e.attribs.id;
   });
 
-  const body = service.turndown($('body').html() ?? '').replace(/\n{3,}/g, '\n\n').trim();
+  let body = service.turndown($('body').html() ?? '').replace(/\n{3,}/g, '\n\n').trim();
+  for (const link of SERVICE_LINKS.filter((l) => l.path === path)) {
+    const lines = body.split('\n');
+    const i = lines.findIndex((l) => l.length > 40 && link.phrase.test(l) && !/^#|^\||\[[^\]]*malware removal|<summary|<details|<form/i.test(l));
+    if (i === -1) {
+      log.serviceLinks.push({ path, phrase: String(link.phrase), added: false });
+      continue;
+    }
+    lines[i] = lines[i].replace(link.phrase, (m) => `[${m}](${SERVICE_URL})`);
+    log.serviceLinks.push({ path, phrase: String(link.phrase), added: true, line: lines[i].slice(0, 160) });
+    body = lines.join('\n');
+  }
   return { h1, body };
 }
 
@@ -301,7 +330,7 @@ for (const [u, m] of pages) {
   const r = restByLink.get(u);
   const front = {
     path,
-    title: record.title,
+    title: keywordMap.get(path).newTitle,
     description: record.metaDescription ?? '',
     robots: ['/get-a-free-quote/', '/free-website-maintenance-audit/'].includes(path) ? 'noindex, follow' : record.robots ?? '',
     h1,
@@ -354,6 +383,7 @@ const report = {
   missingImages: [...log.missingImages],
   faqQuestionsNotFoundInBody: log.faqMissing,
   formsKeptDisabled: log.forms,
+  serviceLinks: log.serviceLinks,
 };
 writeFileSync('reports/migration-report.json', JSON.stringify(report, null, 2));
 console.log(JSON.stringify({ ...report, countdownBlocksRemoved: report.countdownBlocksRemoved.length, countdownSample: report.countdownBlocksRemoved[0], schemaRemoved: report.schemaRemoved.length, faqQuestionsNotFoundInBody: report.faqQuestionsNotFoundInBody.length, faqSample: report.faqQuestionsNotFoundInBody.slice(0, 6) }, null, 1));

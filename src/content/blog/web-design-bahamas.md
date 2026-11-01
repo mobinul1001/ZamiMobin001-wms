@@ -1,6 +1,6 @@
 ---
 path: "/web-design-bahamas/"
-title: "Web Design Bahamas: Services, Costs & Complete Guide"
+title: "Web Design Bahamas: Services, Costs & Complete Guide | WMS"
 description: "Explore web design in the Bahamas, including pricing, custom websites, Shopify development, responsive design, and tips for choosing a web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Bahamas: Services, Costs & Complete Guide"

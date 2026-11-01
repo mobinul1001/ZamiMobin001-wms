@@ -1,6 +1,6 @@
 ---
 path: "/website-design-trinidad/"
-title: "Website Design Trinidad: Costs, Services & Expert Guide"
+title: "Website Design Trinidad: Costs, Services & Expert Guide | WMS"
 description: "Discover website design in Trinidad, including pricing, responsive design, development services, and tips for choosing the right web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Design Trinidad: Costs, Services & Expert Guide"

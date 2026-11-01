@@ -1,6 +1,6 @@
 ---
 path: "/website-repair-services/"
-title: "Fix Your Website Fast | Professional Website Repair Services"
+title: "Website Repair and Maintenance Services | WMS"
 description: "Broken website? Our engineers diagnose and repair WordPress, Shopify & custom sites fast - no data loss, no SEO damage. Free diagnostic, 30-day warranty"
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Repair Services That Fix What's Broken - Fast, Safely, Guaranteed"
@@ -826,7 +826,7 @@ No. Every repair begins with a full backup before any change is made.
 
 Can you fix a hacked website?
 
-Yes — malware removal, backdoor closure, and blocklist/warning removal are part of our hacked website recovery service.
+Yes — [malware removal](/wordpress-malware-removal-service/), backdoor closure, and blocklist/warning removal are part of our hacked website recovery service.
 
 Do you work with WordPress specifically?
 

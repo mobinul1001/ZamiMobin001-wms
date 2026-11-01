@@ -1,6 +1,6 @@
 ---
 path: "/how-long-does-it-take-to-redesign-a-website/"
-title: "How Long Does It Take to Redesign a Website? (2026)"
+title: "How Long Does It Take to Redesign a Website? (2026) | WMS"
 description: "Most website redesigns take 6–16 weeks. See realistic timelines by site size, the phase-by-phase breakdown, and the real reasons projects run late."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Long Does It Take to Redesign a Website? (2026)"

@@ -1,6 +1,6 @@
 ---
 path: "/website-rebuild-guide/"
-title: "Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign"
+title: "Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign | WMS"
 description: "A complete guide to website rebuilds — real costs, timelines, a step-by-step checklist, rebuild vs redesign, and how to protect your SEO. Get a free rebuild estimate."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign"

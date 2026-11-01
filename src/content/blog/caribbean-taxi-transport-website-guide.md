@@ -1,6 +1,6 @@
 ---
 path: "/caribbean-taxi-transport-website-guide/"
-title: "Caribbean Taxi & Transport Website Guide: Booking, SEO & More"
+title: "Caribbean Taxi & Transport Website Guide: Booking, SEO & More | WMS"
 description: "The complete guide to building a taxi, water taxi, or transfer website in the Caribbean — must-have features, booking tools, SEO, maintenance, and how to avoid getting locked in by an agency."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Caribbean Taxi & Transport Website Guide: Booking, SEO & More"

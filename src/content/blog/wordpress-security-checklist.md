@@ -1,6 +1,6 @@
 ---
 path: "/wordpress-security-checklist/"
-title: "WordPress Security Checklist 2026: Lock Down Your Site"
+title: "WordPress Security Checklist 2026: Lock Down Your Site | WMS"
 description: "A complete, priority-ordered WordPress security checklist for 2026 — updates, logins, 2FA, file hardening, firewalls, backups, and monitoring. Harden your site step by step."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Security Checklist 2026: Lock Down Your Site"
@@ -126,7 +126,7 @@ Security isn't a one-time setup — it's an ongoing habit. The sites that stay s
 
 ## EmergencyWhat to Do If Your WordPress Site Is Already Hacked
 
-If you're reading this because your site is already compromised, work through this in order: put the site into maintenance mode or take it offline to protect visitors, contact your host (many have a security response process), and restore from a clean pre-infection backup if you have one. If you don't, scan with a security plugin or use a professional malware removal service to clean the site.
+If you're reading this because your site is already compromised, work through this in order: put the site into maintenance mode or take it offline to protect visitors, contact your host (many have a security response process), and restore from a clean pre-infection backup if you have one. If you don't, scan with a security plugin or use a professional [malware removal](/wordpress-malware-removal-service/) service to clean the site.
 
 The critical final step everyone skips: after cleaning, change **all** passwords (WordPress, hosting, FTP, database), audit every user account, and work through this entire checklist before bringing the site back online. Skipping the hardening step is exactly how sites get reinfected within days, because hackers leave backdoors behind.
 

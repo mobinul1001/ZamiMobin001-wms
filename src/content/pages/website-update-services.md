@@ -1,6 +1,6 @@
 ---
 path: "/website-update-services/"
-title: "Website Update Services | Professional WordPress Maintenance Plans"
+title: "Website Update Services | WMS"
 description: "Expert website update services for WordPress. Plugin, theme & core updates with backup, staging testing & QA. Plans from $49/month. Free health check"
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Professional Website Update Services"

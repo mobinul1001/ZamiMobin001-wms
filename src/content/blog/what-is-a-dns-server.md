@@ -1,6 +1,6 @@
 ---
 path: "/what-is-a-dns-server/"
-title: "What Is a DNS Server? How It Works, Types & Examples"
+title: "What Is a DNS Server? How It Works, Types & Examples | WMS"
 description: "What is a DNS server? Learn how DNS servers work, their types, DNS records, public DNS addresses, Wi-Fi settings, security, and troubleshooting."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is a DNS Server? How It Works, Types & Examples"

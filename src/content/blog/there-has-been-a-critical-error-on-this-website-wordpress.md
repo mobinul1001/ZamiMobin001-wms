@@ -1,6 +1,6 @@
 ---
 path: "/there-has-been-a-critical-error-on-this-website-wordpress/"
-title: "\"There Has Been a Critical Error on This Website\" — How to Fix It"
+title: "\"There Has Been a Critical Error on This Website\" — How to Fix It | WMS"
 description: "Seeing \"There has been a critical error on this website\" in WordPress? This step-by-step guide covers every cause and fix, so you can get your site back online fast."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "There Has Been a Critical Error on This Website” — How to Fix It in WordPress (2026)"

@@ -1,6 +1,6 @@
 ---
 path: "/wordpress-backup-services/"
-title: "WordPress Backup Services | Automated Off-Site Cloud Backups"
+title: "WordPress Backup Services | Automated Off-Site Cloud Backups | WMS"
 description: "Managed WordPress backup services with daily off-site backups, 1-click restores, and 24/7 monitoring. Get a free backup audit."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Backup Services That Actually Let You Sleep at Night."

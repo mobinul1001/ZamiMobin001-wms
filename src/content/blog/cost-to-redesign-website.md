@@ -1,6 +1,6 @@
 ---
 path: "/cost-to-redesign-website/"
-title: "How Much Does It Cost to Redesign a Website in 2026?"
+title: "How Much Does It Cost to Redesign a Website in 2026? | WMS"
 description: "Website redesign costs range from $2,000 to $100,000+ in 2026. See real pricing by site size, what drives the cost, hidden fees to watch for, and how to budget."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Much Does It Cost to Redesign a Website in 2026?"

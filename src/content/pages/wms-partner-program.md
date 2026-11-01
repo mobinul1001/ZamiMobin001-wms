@@ -1,6 +1,6 @@
 ---
 path: "/wms-partner-program/"
-title: "Website Maintenance Partner Program | Reseller & White Label - WMS"
+title: "Website Partner Program: Reseller & White Label | WMS"
 description: "Partner with Website Maintenance Services. Offer ongoing WordPress care, security, and technical website maintenance to your clients. Set your own prices and keep your profit margins."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Turn Your Client Relationships Into a New Revenue Stream"

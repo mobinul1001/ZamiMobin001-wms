@@ -1,6 +1,6 @@
 ---
 path: "/how-much-does-website-maintenance-cost/"
-title: "How Much Does Website Maintenance Cost? (2026 Guide)"
+title: "How Much Does Website Maintenance Cost? (2026) | WMS"
 description: "Website maintenance costs $20-$500+/mo in 2026. Full breakdown by site type, platform & provider, plus monthly, yearly & hourly rates, cost factors & how to save."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Much Does Website Maintenance Cost? (2026 Guide)"

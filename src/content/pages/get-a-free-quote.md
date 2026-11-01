@@ -1,6 +1,6 @@
 ---
 path: "/get-a-free-quote/"
-title: "Get a Free Quote from Website Maintenance Company"
+title: "Get a Free Quote | WMS"
 description: "Request a free quote for reliable website maintenance services tailored to your business needs."
 robots: "noindex, follow"
 h1: "Get a Free Quote"

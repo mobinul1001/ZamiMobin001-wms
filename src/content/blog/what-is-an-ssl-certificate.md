@@ -1,6 +1,6 @@
 ---
 path: "/what-is-an-ssl-certificate/"
-title: "What Is an SSL Certificate? How It Works & Types"
+title: "What Is an SSL Certificate? How It Works & Types | WMS"
 description: "What is an SSL certificate? Learn how SSL/TLS certificates work, their types, HTTPS security, free SSL options, installation, validation, and renewal."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is an SSL Certificate? How It Works & Types"

@@ -42,7 +42,7 @@ const NOISE = /^(yes|other similar\?|no more than 5|contents services|wibuku mai
 
 // [title without suffix, H1, primary, secondary overrides or null, reason]
 const PLAN = {
-  '/': ['Website Maintenance Services & Support Plans', 'Website Maintenance Services', 'website maintenance services', null, 'Plan list 4 and 5. Semrush: 4,400/mo, KD 23.'],
+  '/': ['Website Maintenance Services & Support', 'Website Maintenance Services', 'website maintenance services', null, 'Owner-approved title. "Plans" belongs to the packages page. Semrush: 4,400/mo, KD 23.'],
   '/best-website-maintenance-companies/': ['10 Best Website Maintenance Companies in 2026 (Ranked)', '10 Best Website Maintenance Companies in 2026', 'best website maintenance companies', null, 'Keeps its #6. Service, company and agency phrases leave headings.'],
   '/best-website-maintenance-for-small-business/': ['Small Business Website Maintenance: Best Options', 'Small Business Website Maintenance: Best Options', 'small business website maintenance', ['website maintenance package pricing small business', 'website maintenance for small business', 'website maintenance plans for small business', 'website maintenance company for small businesses', 'best website maintenance services for small businesses'], 'Ranks #4. "Packages" leaves the title and H1.'],
   '/monthly-website-maintenance-packages/': ['Website Maintenance Packages, Plans & Pricing', 'Website Maintenance Packages, Plans & Pricing', 'website maintenance packages', ['website maintenance plans', 'website maintenance plan', 'monthly website maintenance packages', 'monthly website maintenance', 'monthly website maintenance plans', 'website maintenance pricing', 'website management services'], 'Semrush: "plans" 1,300/mo vs "pricing" 140/mo. Absorbs two merged pages.'],
@@ -70,7 +70,7 @@ const PLAN = {
   '/website-maintenance-services-for-netherlands/': ['Website Maintenance Services in the Netherlands', 'Website Maintenance Services in the Netherlands', 'website maintenance services netherlands', ['website onderhoud nederland', 'website onderhoud amsterdam', 'webshop maintenance'], ''],
   '/website-maintenance-services-for-switzerland/': ['Website Maintenance Services in Switzerland', 'Website Maintenance Services in Switzerland', 'website maintenance services switzerland', ['website wartung schweiz', 'website wartung'], 'Live page has no H1.'],
   '/website-maintenance-services-for-ireland/': ['Website Maintenance Services in Ireland', 'Website Maintenance Services in Ireland', 'website maintenance services ireland', ['website maintenance ireland'], 'H1 lacks the country today. Semrush: 50/mo, KD 0.'],
-  '/website-maintenance-services-for-brazil/': ['Website Maintenance Services in Brazil', 'Website Maintenance Services in Brazil', 'website maintenance services brazil', ['manutenção de sites'], 'H1 is in Portuguese today and lacks the country. Check which language this page should use.'],
+  '/website-maintenance-services-for-brazil/': ['Website Maintenance Services in Brazil', 'Serviços de Manutenção de Sites no Brasil', 'website maintenance services brazil', ['manutenção de sites'], 'Owner: H1 in the page language. Uses the Portuguese line already on the page; the old H1 stays as an H2.'],
   '/best-wp-buffs-alternatives/': ['Best WP Buffs Alternatives (Compared & Reviewed)', 'Best WP Buffs Alternatives in 2026 (Compared & Reviewed)', 'wp buffs alternative', null, 'Link to SiteCare page: "WP Buffs vs SiteCare".'],
   '/sitecare-alternative/': ['Best SiteCare Alternatives', 'Best SiteCare Alternatives', 'sitecare alternative', null, 'Homepage phrase leaves the title and H1.'],
   '/best-fixrunner-alternatives/': ['Best FixRunner Alternatives (Compared & Reviewed)', 'Best FixRunner Alternatives in 2026 (Compared & Reviewed)', 'fixrunner alternatives', ['fixrunner reviews', 'fixrunner'], ''],
@@ -105,7 +105,15 @@ const shorten = (t) => {
   return s;
 };
 
+// Owner rule: a page already in the top 10 for its primary keeps its current title plus the suffix.
+// Under this many impressions, a position says nothing, so the rule does not apply.
+const MIN_IMPRESSIONS_FOR_TOP10 = 5;
+// Owner decision: the article keeps its title until the service page gets impressions.
+const DEFERRED = {
+  '/wordpress-malware-removal/': 'Deferred by owner: change only after the service page gets impressions. Then title "How to Remove Malware From WordPress (2026 Guide) | WMS", H1 "How to Remove Malware From WordPress: Scan, Clean & Protect (2026)".',
+};
 const out = [];
+const topTen = [];
 for (const m of pages) {
   const path = m[0].replace(O, '');
   const r = recs.get(m[0]);
@@ -113,8 +121,13 @@ for (const m of pages) {
   const plan = PLAN[path];
   const target = targets[path];
   const topClean = qs.filter((q) => !NOISE.test(q.q)).map((q) => q.q);
-  const title = plan ? plan[0] : shorten(r.title);
-  const h1 = plan ? plan[1] : r.headings.h1[0] ?? title;
+  const primaryForRank = plan ? plan[2] : topClean[0];
+  const rank = qs.find((q) => q.q.toLowerCase() === String(primaryForRank).toLowerCase());
+  const isTopTen = rank && rank.pos <= 10.5;
+  const keepsTitle = isTopTen && rank.impr >= MIN_IMPRESSIONS_FOR_TOP10;
+  if (isTopTen) topTen.push({ path, primary: primaryForRank, pos: rank.pos, impr: rank.impr, keepsTitle, title: r.title, planned: plan?.[0] ?? null });
+  const title = DEFERRED[path] || keepsTitle ? r.title : plan ? plan[0] : shorten(r.title);
+  const h1 = DEFERRED[path] ? r.headings.h1[0] : plan ? plan[1] : r.headings.h1[0] ?? title;
   const primary = plan ? plan[2] : topClean[0] ?? path.replace(/\//g, '').replace(/-/g, ' ');
   const secondary = (plan?.[3] ?? (target ? target.secondary : topClean.slice(1, 7))).filter((k) => k && !NOISE.test(k) && k !== primary);
   out.push({
@@ -131,7 +144,7 @@ for (const m of pages) {
     impr: qs.reduce((a, b) => a + b.impr, 0),
     clicks: qs.reduce((a, b) => a + b.clicks, 0),
     topQueries: qs.slice(0, 5).map((q) => `${q.q} (${q.impr} impr, #${q.pos.toFixed(0)})`).join('; '),
-    reason: plan?.[4] ?? 'Title unchanged except brand suffix',
+    reason: DEFERRED[path] ?? (keepsTitle && plan ? `Top-10 rule: keeps current title (#${rank.pos.toFixed(1)}). ${plan[4]}` : plan?.[4] ?? 'Title unchanged except brand suffix'),
     source: plan ? 'hand' : 'auto',
   });
 }
@@ -156,4 +169,5 @@ const md = ['# Keyword map plan: full table', '', `${out.length} indexable pages
 writeFileSync('reports/phase-3-keyword-map.md', md);
 
 const over = out.filter((o) => o.titleLen > 60);
-console.log(JSON.stringify({ pages: out.length, hand: out.filter((o) => o.source === 'hand').length, auto: out.filter((o) => o.source === 'auto').length, conflicts, titlesOver60: over.map((o) => `${o.path} ${o.titleLen}`), noH1Today: out.filter((o) => !o.oldH1).map((o) => o.path) }, null, 1));
+writeFileSync('reports/phase-3-top10-pages.json', JSON.stringify(topTen, null, 2));
+console.log(JSON.stringify({ topTen: topTen.map((t) => `${t.path} | ${t.primary} | #${t.pos.toFixed(1)} | ${t.impr} impr | keeps title: ${t.keepsTitle}`), pages: out.length, hand: out.filter((o) => o.source === 'hand').length, auto: out.filter((o) => o.source === 'auto').length, conflicts, titlesOver60: over.map((o) => `${o.path} ${o.titleLen}`), noH1Today: out.filter((o) => !o.oldH1).map((o) => o.path) }, null, 1));

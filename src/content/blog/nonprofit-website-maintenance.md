@@ -1,6 +1,6 @@
 ---
 path: "/nonprofit-website-maintenance/"
-title: "Nonprofit Website Maintenance: Keep Your Site Donation-Ready (2026)"
+title: "Nonprofit Website Maintenance (2026) | WMS"
 description: "Your nonprofit's website is a live fundraising tool. Learn what nonprofit website maintenance includes, why donation-form reliability is critical, and what it costs."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Nonprofit Website Maintenance: Keep Your Site Donation-Ready (2026)"

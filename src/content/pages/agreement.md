@@ -1,6 +1,6 @@
 ---
 path: "/agreement/"
-title: "Website Maintenance Agreement & Contract Guide + Template"
+title: "Website Maintenance Agreement & Contract Template | WMS"
 description: "What is a website maintenance agreement? See what to include, a free contract template, agreement vs terms explained, and how billing works. Plain-English & fair."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Agreement & Contract Guide"
@@ -10,6 +10,8 @@ faqs: [{"q":"What is a website maintenance agreement?","a":"A website maintenanc
 ---
 
 Agreements & Contracts
+
+## Website Maintenance Agreement & Contract Guide
 
 A clear website maintenance agreement protects both you and your provider. This guide explains what a website maintenance contract is, exactly what clauses to include, a ready-to-use template structure, and how our transparent agreement keeps your site covered — with no confusing fine print.
 

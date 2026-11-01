@@ -1,6 +1,6 @@
 ---
 path: "/how-to-buy-a-domain-name/"
-title: "How to Buy a Domain Name in 2026: Step-by-Step Guide"
+title: "How to Buy a Domain Name in 2026: Step-by-Step Guide | WMS"
 description: "Learn how to buy a domain name in 2026. Compare registrars, check availability, understand pricing, register your domain, and connect it to your website."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How to Buy a Domain Name in 2026: Step-by-Step Guide"

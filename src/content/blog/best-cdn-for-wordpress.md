@@ -1,6 +1,6 @@
 ---
 path: "/best-cdn-for-wordpress/"
-title: "Best CDN for WordPress in 2026: 12 Free & Cheap Options"
+title: "Best CDN for WordPress in 2026: 12 Free & Cheap Options | WMS"
 description: "Discover the best CDN for WordPress in 2026. Compare 12 free, cheap, and premium CDN providers, pricing, features, image optimization, and setup guides."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Best CDN for WordPress in 2026: 12 Free & Cheap Options"

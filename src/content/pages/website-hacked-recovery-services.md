@@ -1,6 +1,6 @@
 ---
 path: "/website-hacked-recovery-services/"
-title: "Website Hacked Recovery Services | Emergency Website Repair"
+title: "Hacked Website Recovery Services | WMS"
 description: "Need to fix a hacked website? We recover hacked WordPress, Shopify, WooCommerce, & custom websites with malware removal & security hardening"
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Hacked? Get Expert Recovery Now"
@@ -55,7 +55,7 @@ Don't risk your compromised website with unverified freelancers. We are a top-ra
 
 [Clutch. 5.0 / 5.0 Rating Top B2B Service Provider](https://clutch.co/profile/website-maintenance-services)[Sortlist Verified Agency Top Security Experts](https://www.sortlist.com/agency/website-maintenance-services-usa)[GoodFirms 5.0 / 5.0 Rating Top Rated Web Agency](https://www.goodfirms.co/company/website-maintenance-services)[TechReviewer Top Web Maintenance Recognized Leader](https://techreviewer.co/companies/website-maintenance-services)[ITFirms. Top IT Services Verified Profile](https://www.itfirms.co/)
 
-100% Malware Removal & Blacklist Reversal Guarantee
+100% [Malware Removal](/wordpress-malware-removal-service/) & Blacklist Reversal Guarantee
 
 Diagnosis
 

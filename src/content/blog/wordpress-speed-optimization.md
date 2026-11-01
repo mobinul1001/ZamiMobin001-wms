@@ -1,6 +1,6 @@
 ---
 path: "/wordpress-speed-optimization/"
-title: "WordPress Speed Optimization: Speed Up Your WordPress Site"
+title: "WordPress Speed Optimization: Speed Up Your WordPress Site | WMS"
 description: "Is your WordPress site slow? Learn exactly why and how to fix it. Expert speed optimization tips, best plugins, and professional services to make your WordPress site load fast."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Speed Optimization: How to Speed Up Your WordPress Site in 2026"

@@ -1,6 +1,6 @@
 ---
 path: "/caribbean-web-design/"
-title: "Caribbean Web Design: Services, Costs & Complete Guide"
+title: "Caribbean Web Design: Services, Costs & Complete Guide | WMS"
 description: "Explore Caribbean web design costs, services, and website solutions by country. Compare platforms, pricing, and design needs for different businesses."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Caribbean Web Design: Services, Costs & Complete Guide"

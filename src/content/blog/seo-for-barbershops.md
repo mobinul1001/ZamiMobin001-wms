@@ -1,6 +1,6 @@
 ---
 path: "/seo-for-barbershops/"
-title: "SEO for Barbershops: Get Found and Book More Clients"
+title: "SEO for Barbershops: Get Found and Book More Clients | WMS"
 description: "Learn how barbershop SEO improves Google visibility, reviews, website performance, online bookings, and customer retention with a practical strategy."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "SEO for Barbershops: Get Found and Book More Clients"

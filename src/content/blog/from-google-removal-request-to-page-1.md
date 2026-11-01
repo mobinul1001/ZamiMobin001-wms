@@ -1,6 +1,6 @@
 ---
 path: "/from-google-removal-request-to-page-1/"
-title: "SEO Recovery Case Study: 10 Lessons That Restored Rankings"
+title: "SEO Recovery Case Study: 10 Lessons That Restored Rankings | WMS"
 description: "Real SEO case study: technical fixes, internal linking, maintenance, and the hidden Search Console issue that held a tourism site back."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "From Google Removal Request to Page 1: 10 SEO Lessons From Recovering a Tourism Website"

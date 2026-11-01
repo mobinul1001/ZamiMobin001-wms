@@ -1,6 +1,6 @@
 ---
 path: "/ecommerce-website-redesign/"
-title: "Ecommerce Website Redesign: When, How & Cost (2026 Guide)"
+title: "Ecommerce Website Redesign: When, How & Cost (2026) | WMS"
 description: "An ecommerce redesign can grow sales or quietly kill them. Learn the signs your store needs a redesign, how to do it without losing rankings or revenue, and what it costs."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Ecommerce Website Redesign: When, How & Cost (2026 Guide)"

@@ -1,6 +1,6 @@
 ---
 path: "/website-hosting-and-maintenance/"
-title: "Website Hosting and Maintenance: Services, Packages & Cost (2026)"
+title: "Website Hosting and Maintenance: Services & Cost | WMS"
 description: "Hosting keeps your site online; maintenance keeps it working. Learn the difference, what's included in each, package options, and what website hosting and maintenance costs."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Hosting and Maintenance: Services, Packages & Cost (2026)"

@@ -1,6 +1,6 @@
 ---
 path: "/website-redesign-services/"
-title: "Website Redesign Services That Protect (and Improve) Your SEO"
+title: "Website Redesign Services That Protect (and Improve) Your SEO | WMS"
 description: "Full redesign, zero ranking loss — SEO-first website redesign services for growing businesses. Get a free redesign & SEO audit."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign Services That Protect (and Improve) Your SEO Rankings."

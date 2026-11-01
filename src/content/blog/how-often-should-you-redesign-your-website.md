@@ -1,6 +1,6 @@
 ---
 path: "/how-often-should-you-redesign-your-website/"
-title: "How Often Should You Redesign Your Website? (2026 Guide)"
+title: "How Often Should You Redesign Your Website? (2026) | WMS"
 description: "The average website lasts under 3 years — but the calendar isn't what matters. Learn the real signs it's time to redesign, industry benchmarks, and how to decide."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Often Should You Redesign Your Website? (2026 Guide)"

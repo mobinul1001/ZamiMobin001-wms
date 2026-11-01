@@ -1,6 +1,6 @@
 ---
 path: "/how-to-redesign-a-website-without-losing-seo/"
-title: "How to Redesign a Website Without Losing SEO (2026 Guide)"
+title: "How to Redesign a Website Without Losing SEO (2026) | WMS"
 description: "A careless redesign can wipe out years of rankings overnight. Follow this step-by-step guide to redesign your website and keep every bit of your SEO and traffic."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How to Redesign a Website Without Losing SEO (2026 Guide)"

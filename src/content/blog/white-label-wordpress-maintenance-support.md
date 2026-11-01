@@ -1,6 +1,6 @@
 ---
 path: "/white-label-wordpress-maintenance-support/"
-title: "White Label WordPress Maintenance & Support for Agencies"
+title: "White Label WordPress Maintenance & Support for Agencies | WMS"
 description: "Offer white label WordPress maintenance & support under your own brand. We handle updates, security & backups; you keep the client, brand & margin. Resell now."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "White Label WordPress Maintenance & Support for Agencies"

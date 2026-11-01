@@ -1,6 +1,6 @@
 ---
 path: "/what-is-dns/"
-title: "What Is DNS? How the Domain Name System Works (2026)"
+title: "What Is DNS? How the Domain Name System Works (2026) | WMS"
 description: "Learn what DNS means, how the Domain Name System works, DNS records, servers, caching, DNSSEC, troubleshooting, and how DNS connects domains to websites."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is DNS? How the Domain Name System Works (2026)"

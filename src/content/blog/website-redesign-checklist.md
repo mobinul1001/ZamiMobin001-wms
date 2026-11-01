@@ -1,6 +1,6 @@
 ---
 path: "/website-redesign-checklist/"
-title: "Website Redesign Checklist 2026: Every Step From Plan to Launch"
+title: "Website Redesign Checklist 2026: Every Step From Plan to Launch | WMS"
 description: "A complete website redesign checklist covering planning, SEO, design, development, pre-launch, and post-launch..."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign Checklist 2026: Every Step From Plan to Launch"

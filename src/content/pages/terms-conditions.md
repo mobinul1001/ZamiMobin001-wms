@@ -1,6 +1,6 @@
 ---
 path: "/terms-conditions/"
-title: "Terms & Conditions for Website Maintenance Company"
+title: "Terms & Conditions | WMS"
 description: "Learn the terms and conditions governing our website maintenance and support services."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Terms & Conditions"

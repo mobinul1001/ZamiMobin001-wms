@@ -1,6 +1,6 @@
 ---
 path: "/best-fixrunner-alternatives/"
-title: "Best FixRunner Alternatives in 2026 (Compared & Reviewed)"
+title: "Best FixRunner Alternatives (Compared & Reviewed) | WMS"
 description: "Looking for a FixRunner alternative? Compare pricing, contracts, hosting, support, and value — plus why Website Maintenance Services is the best-value pick for 2026."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Best FixRunner Alternatives in 2026 (Compared & Reviewed)"

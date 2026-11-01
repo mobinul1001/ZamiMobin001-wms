@@ -1,6 +1,6 @@
 ---
 path: "/write-for-us/"
-title: "Write for Us - Submit a Guest Post | Website Maintenance Services"
+title: "Write for Us: Submit a Guest Post | WMS"
 description: "Share your expertise on website maintenance, WordPress, web security, speed optimization, and SEO. Read our editorial guidelines and submit your guest post today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Share Your Expertise With Our Web & Technology Community"

@@ -1,6 +1,6 @@
 ---
 path: "/how-long-does-website-maintenance-take/"
-title: "How Long Does Website Maintenance Take? (2026 Guide)"
+title: "How Long Does Website Maintenance Take? (2026 Guide) | WMS"
 description: "How long does website maintenance take? Routine upkeep takes 1-3 hours a month. See exact times per task, by site type, plus scheduled maintenance windows."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Long Does Website Maintenance Take in 2026"

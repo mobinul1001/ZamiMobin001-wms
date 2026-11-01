@@ -1,6 +1,6 @@
 ---
 path: "/refund-cancellation-policy/"
-title: "Refund & Cancellation Policy of Website Maintenance Company"
+title: "Refund & Cancellation Policy | WMS"
 description: "Review our refund and cancellation guidelines for all website maintenance services and packages."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Refund & Cancellation Policy"

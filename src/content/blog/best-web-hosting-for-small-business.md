@@ -1,6 +1,6 @@
 ---
 path: "/best-web-hosting-for-small-business/"
-title: "Best Web Hosting for Small Business in 2026: Top 12"
+title: "Best Web Hosting for Small Business in 2026: Top 12 | WMS"
 description: "Compare the 12 best web hosting services for small businesses in 2026. Explore pricing, speed, security, WordPress hosting, and affordable hosting options."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Best Web Hosting for Small Business in 2026: Top 12"

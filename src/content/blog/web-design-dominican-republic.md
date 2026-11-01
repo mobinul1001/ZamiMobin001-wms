@@ -1,6 +1,6 @@
 ---
 path: "/web-design-dominican-republic/"
-title: "Web Design Dominican Republic: Services, Costs & Guide"
+title: "Web Design Dominican Republic: Services, Costs & Guide | WMS"
 description: "Explore web design in the Dominican Republic, including website costs, custom development, Shopify, SEO, and tips for choosing the right web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Dominican Republic: Services, Costs & Guide"

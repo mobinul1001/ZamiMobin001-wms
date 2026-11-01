@@ -1,6 +1,6 @@
 ---
 path: "/privacy-policy/"
-title: "Privacy Policy of Website Maintenance Company"
+title: "Privacy Policy | WMS"
 description: "Read how we protect your personal data and ensure privacy while delivering website maintenance services."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Privacy Policy"

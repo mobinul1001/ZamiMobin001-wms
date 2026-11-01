@@ -1,6 +1,6 @@
 ---
 path: "/what-is-a-domain-name/"
-title: "What Is a Domain Name? Definition, Examples & Types"
+title: "What Is a Domain Name? Definition, Examples & Types | WMS"
 description: "What is a domain name? Learn its meaning, real examples, how DNS works, domain vs. URL differences, domain types, registration, costs, and security."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is a Domain Name? Definition, Examples & Types"

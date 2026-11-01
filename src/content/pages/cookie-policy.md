@@ -1,6 +1,6 @@
 ---
 path: "/cookie-policy/"
-title: "Cookie Policy for Website Maintenance Company"
+title: "Cookie Policy | WMS"
 description: "Understand how we use cookies to improve your experience and maintain website functionality."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Cookie Policy"

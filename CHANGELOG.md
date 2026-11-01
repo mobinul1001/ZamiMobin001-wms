@@ -24,6 +24,14 @@
 - Proposed the keyword map in `reports/phase-3-keyword-plan.md`; not applied.
 - Commits stay local. The owner pushes later.
 
+## Keyword map applied (2026-11-01)
+- Owner approved the keyword map with changes. All 92 pages now use its titles and H1s (`reports/phase-3-keyword-map.csv`). Heading and secondary-keyword edits inside page bodies are still to do.
+- Top-10 rule: pages with 5+ impressions in the top 10 for their primary keep their current title plus `| WMS` (`reports/phase-3-top10-pages.json`).
+- `/wordpress-malware-removal/` keeps its title and H1 until the service page gets impressions. The service page has its new title and H1, and existing phrases on 5 pages now link to it.
+- Brazil H1 is in Portuguese, using a line already on the page. The old H1 stays as a subheading.
+- `/contact/`: "John Doe" testimonial and "Trusted by 500+ Businesses" removed.
+- Added `reports/claims-list.md`, `reports/claims-list.csv` and `reports/faq-not-visible.md` for owner review.
+
 ## Owner decisions (2026-11-01)
 - Added `CMS-REQUIREMENTS.md`. CMS plan approved: Sveltia CMS, fine-grained GitHub token with 1-year expiry, no 410, Editorial Workflow included in the small test. Nothing is installed yet.
 - Separate service packages stay on the design, migration, SEO, speed and white-label pages; the master price list covers maintenance plans and one-time fixes only. Each price is listed for the owner to confirm or correct before launch. Their buttons use the hash method, for example `/get-a-free-quote/#growth-design` and `#starter-seo`. `?industry=` and `?package=` URLs follow the `?plan=` rule: no redirect, no internal links. White-label agency prices must be clearly labelled as wholesale for agencies so they do not contradict the main plan prices.

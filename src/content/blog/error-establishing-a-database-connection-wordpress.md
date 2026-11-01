@@ -1,6 +1,6 @@
 ---
 path: "/error-establishing-a-database-connection-wordpress/"
-title: "\"Error Establishing a Database Connection\" — How to Fix It (2026)"
+title: "\"Error Establishing a Database Connection\" — How to Fix It (2026) | WMS"
 description: "Getting \"Error Establishing a Database Connection\" in WordPress? This complete guide explains every cause and gives you step-by-step fixes to get your site back online fast."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "“Error Establishing a Database Connection” WordPress — How to Fix It (2026)"

@@ -1,6 +1,6 @@
 ---
 path: "/website-redesign-seo/"
-title: "Website Redesign SEO: Protect & Improve Rankings (2026 Guide)"
+title: "Website Redesign SEO: Protect & Improve Rankings (2026) | WMS"
 description: "Website redesign SEO done right protects your rankings — done wrong, it destroys them. Learn how redesigns affect SEO, the mistakes to avoid, and the full checklist."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign SEO: Protect & Improve Rankings (2026 Guide)"

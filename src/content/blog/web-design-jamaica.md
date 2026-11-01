@@ -1,6 +1,6 @@
 ---
 path: "/web-design-jamaica/"
-title: "Web Design Jamaica: Services, Costs & Complete Guide"
+title: "Web Design Jamaica: Services, Costs & Complete Guide | WMS"
 description: "now write code for this. make sure you will not write any meta data, seo direction, graphic derections in the code.make sure you are not missing any content"
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Jamaica: Services, Costs & Complete Guide"

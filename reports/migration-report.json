@@ -135,23 +135,23 @@
     },
     {
       "path": "/contact/",
-      "h1": "Let’s Connect – We’re Here to Help!"
+      "h1": "Contact Us"
     },
     {
       "path": "/free-website-maintenance-audit/",
-      "h1": "Get Your Free Website Review"
+      "h1": "Free Website Audit"
     },
     {
       "path": "/shopify-website-maintenance-packages/",
-      "h1": "Shopify Website Maintenance Packages, Plans & Costs"
+      "h1": "Shopify Website Maintenance Services & Packages"
     },
     {
       "path": "/website-maintenance-process/",
-      "h1": "What Is the Website Maintenance Process?"
+      "h1": "Our Website Maintenance Process"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
-      "h1": "Website Maintenance Services for Switzerland"
+      "h1": "Website Maintenance Services in Switzerland"
     },
     {
       "path": "/website-malware-scanner/",
@@ -159,7 +159,7 @@
     },
     {
       "path": "/works/",
-      "h1": "Featured Maintenance Projects"
+      "h1": "Our Work"
     }
   ],
   "secondH1DemotedToH2": [],
@@ -270,5 +270,37 @@
       "q": "Do you offer white label WordPress maintenance services specifically?"
     }
   ],
-  "formsKeptDisabled": 12
+  "formsKeptDisabled": 12,
+  "serviceLinks": [
+    {
+      "path": "/monthly-website-maintenance-packages/",
+      "phrase": "/malware removal/i",
+      "added": true,
+      "line": "Our monthly website maintenance packages include security monitoring, CMS/plugin/theme updates, backups, speed optimization, [malware removal](/wordpress-malwar"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "phrase": "/malware removal/i",
+      "added": true,
+      "line": "100% [Malware Removal](/wordpress-malware-removal-service/) & Blacklist Reversal Guarantee"
+    },
+    {
+      "path": "/website-repair-services/",
+      "phrase": "/malware removal/i",
+      "added": true,
+      "line": "Yes — [malware removal](/wordpress-malware-removal-service/), backdoor closure, and blocklist/warning removal are part of our hacked website recovery service."
+    },
+    {
+      "path": "/wordpress-malware-removal/",
+      "phrase": "/our WordPress malware removal service/",
+      "added": true,
+      "line": "At Website Maintenance Services, [our WordPress malware removal service](/wordpress-malware-removal-service/) includes all of the above — plus ongoing monitorin"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "phrase": "/malware removal/i",
+      "added": true,
+      "line": "If you're reading this because your site is already compromised, work through this in order: put the site into maintenance mode or take it offline to protect vi"
+    }
+  ]
 }

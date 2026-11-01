@@ -1,6 +1,6 @@
 ---
 path: "/salon-seo/"
-title: "Salon SEO: How Hair and Beauty Salons Rank Locally"
+title: "Salon SEO: How Hair and Beauty Salons Rank Locally | WMS"
 description: "Learn how salon SEO improves Google Maps visibility, service rankings, reviews, website traffic, calls, and online bookings for beauty businesses."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Salon SEO: How Hair and Beauty Salons Rank Locally"

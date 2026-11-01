@@ -4,8 +4,11 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
+import { applyApprovedRemovals, hasApprovedRemoval } from './lib/approved-removals.mjs';
+import { readCsv } from './lib/csv.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
+const keywordMap = new Map(readCsv('reports/phase-3-keyword-map.csv').map((r) => [r.path, r]));
 const cells = (line) => {
   const o = [];
   let c = '';
@@ -29,6 +32,7 @@ const recs = new Map(readdirSync('export/pages').map((f) => {
 }));
 const totalImages = { old: 0, new: 0 };
 const totalLines = { old: 0, missing: 0 };
+const changed = { titles: 0, h1s: 0 };
 const allMissing = [];
 const redirectLines = readFileSync('dist/_redirects', 'utf8').split(/\r?\n/).filter((l) => l && !l.startsWith('#')).map((l) => l.trim().split(/\s+/));
 const pathRules = new Map(redirectLines.filter((p) => p.length === 3).map((p) => [p[0].replace(/\/$/, '') || '/', p[1]]));
@@ -108,16 +112,24 @@ for (const row of map) {
       const robots = norm($('meta[name="robots"]').attr('content'));
       const { count } = wordsOf(html);
       Object.assign(out, { oldTitle: r.title, newTitle: title, oldH1: (r.headings?.h1 ?? []).join(' // '), newH1: h1, oldCanonical: r.canonical, newCanonical: canonical, oldRobots: r.robots, newRobots: robots, oldWords: r.wordCount, newWords: count, wordPct: r.wordCount ? Math.round((count / r.wordCount) * 1000) / 10 : '' });
-      if (title !== norm(r.title)) bad(`title differs: "${title}"`);
+      const approved = keywordMap.get(u.pathname);
+      if (title !== norm(approved.newTitle)) bad(`title "${title}" is not the approved "${approved.newTitle}"`);
       if (canonical !== r.canonical) bad(`canonical ${canonical} vs ${r.canonical}`);
       const oldH1s = (r.headings?.h1 ?? []).map(LOOSE);
       if ($('h1').length !== 1) bad(`${$('h1').length} H1 tags`);
-      if (oldH1s.length && !oldH1s.includes(LOOSE(h1))) bad(`H1 differs: "${h1}"`);
-      if (!oldH1s.length) info(`old page had no H1; first heading used: "${h1}"`);
-      if (oldH1s.length > 1) info(`old page had ${oldH1s.length} H1 tags; one kept, other in the removed page header`);
+      if (LOOSE(h1) !== LOOSE(approved.newH1)) bad(`H1 "${h1}" is not the approved "${approved.newH1}"`);
+      if (title !== norm(r.title)) changed.titles++;
+      if (!oldH1s.includes(LOOSE(h1))) changed.h1s++;
       const expectedNoindex = ['/get-a-free-quote/', '/free-website-maintenance-audit/'].includes(u.pathname);
       if (expectedNoindex ? robots !== 'noindex, follow' : robots !== norm(r.robots)) bad(`robots "${robots}" vs "${r.robots}"`);
-      if (count < r.wordCount * 0.95) bad(`words ${count} of ${r.wordCount} (${out.wordPct}%)`);
+      let expectedWords = r.wordCount;
+      if (hasApprovedRemoval(u.pathname)) {
+        const $base = cheerio.load(readFileSync(join('export/raw', `${recFile.get(oldUrl).replace('.json', '')}.html`), 'utf8'));
+        applyApprovedRemovals($base, u.pathname);
+        expectedWords = wordsOf($base.html()).count;
+        info(`owner-approved removal: expected words ${expectedWords}, not ${r.wordCount}`);
+      }
+      if (count < expectedWords * 0.95) bad(`words ${count} of ${expectedWords}`);
       const newTypes = typesOf(html);
       const missing = (r.jsonLdTypes ?? []).filter((t) => !newTypes.has(t) && t !== 'Review' && t !== 'AggregateRating');
       if (missing.length) bad(`schema types missing: ${missing.join(', ')}`);
@@ -130,6 +142,9 @@ for (const row of map) {
       const rawFile = join('export/raw', `${recFile.get(oldUrl).replace('.json', '')}.html`);
       const $old = cheerio.load(readFileSync(rawFile, 'utf8'));
       $old('script, style, noscript, template, svg, header, footer, nav, .wms-offer, .skip-link').remove();
+      applyApprovedRemovals($old, u.pathname);
+      // The old H1 is replaced by the approved H1, except on Brazil where it stays as a subheading.
+      if (u.pathname !== '/website-maintenance-services-for-brazil/') $old('h1').first().remove();
       const newImgs = new Map($('main img').toArray().map((e) => [$(e).attr('src'), $(e).attr('alt') ?? '']));
       let oldImgCount = 0;
       $old('body img').each((_, e) => {
@@ -176,4 +191,4 @@ const pct = pages.map((r) => r.wordPct).sort((a, b) => a - b);
 const highs = pages.filter((p) => p.wordPct > 103).sort((a, b) => b.wordPct - a.wordPct).map((p) => `${p.url} ${p.oldWords}->${p.newWords} (${p.wordPct}%)`);
 const lows = pages.filter((p) => p.wordPct < 99).sort((a, b) => a.wordPct - b.wordPct).map((p) => `${p.url} ${p.oldWords}->${p.newWords} (${p.wordPct}%)`);
 writeFileSync('reports/parity-missing-text.json', JSON.stringify(allMissing, null, 2));
-console.log(JSON.stringify({ rows: results.length, counts, images: totalImages, textLines: totalLines, missingSample: allMissing.slice(0, 12), wordsOver103: highs, wordsUnder99: lows, pagesCompared: pages.length, oldWords: pages.reduce((a, r) => a + r.oldWords, 0), newWords: pages.reduce((a, r) => a + r.newWords, 0), wordPctMin: pct[0], wordPctMedian: pct[Math.floor(pct.length / 2)], wordPctMax: pct[pct.length - 1], fails: fails.slice(0, 40).map((f) => `${f.url}: ${f.notes.join(' | ')}`) }, null, 1));
+console.log(JSON.stringify({ rows: results.length, counts, changedFromOld: changed, images: totalImages, textLines: totalLines, missingSample: allMissing.slice(0, 12), wordsOver103: highs, wordsUnder99: lows, pagesCompared: pages.length, oldWords: pages.reduce((a, r) => a + r.oldWords, 0), newWords: pages.reduce((a, r) => a + r.newWords, 0), wordPctMin: pct[0], wordPctMedian: pct[Math.floor(pct.length / 2)], wordPctMax: pct[pct.length - 1], fails: fails.slice(0, 40).map((f) => `${f.url}: ${f.notes.join(' | ')}`) }, null, 1));
