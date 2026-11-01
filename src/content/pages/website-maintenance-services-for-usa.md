@@ -9,7 +9,7 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-USA-Based Business Support
+Dhaka-based team, working US & UK business hours.
 
 Keep Your Website Secure, Updated & Performing at Its Best.  
 We ensure your site never experiences downtime, security breaches, or poor performance.
@@ -118,7 +118,7 @@ $199/mo
 -   Everything in Standard +
 -   Daily Monitoring & Security
 -   **Daily** + Cloud Backups
--   Guaranteed Malware Removal
+-   Malware Removal
 -   **Full eCommerce** Maintenance
 -   Uptime Status Every 5 Min
 -   **5 Hours** Support/mo

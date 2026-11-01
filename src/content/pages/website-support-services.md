@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Rated 4.9/5 by 87 clients
-
 Reliable, expert website support for small businesses, agencies, ecommerce stores, and enterprise organizations worldwide.
 
 Your website is your most visible business asset. When it slows down, breaks, or gets compromised, every minute of downtime carries a cost—lost sales, damaged credibility, and frustrated customers. Our website support services ensure you never face those moments alone.
@@ -23,19 +21,7 @@ No contracts required
 
 Response within 1 business day
 
-<img src="/wp-content/uploads/2026/07/website-support-services-dashboard-hero.webp" alt="Professional website support services team reviewing a client website dashboard" width="1536" height="1024" loading="lazy"> 
-
-Site Security
-
-24/7 Monitored
-
-<img src="/wp-content/uploads/2026/07/wms-brand-avatar-logo.webp" alt="Support Agent" width="1024" height="1024" loading="lazy">
-
-10+
-
-Years Exp.
-
-Trusted by 500+ websites across the US, UK, Canada & Australia
+30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
 WordPress
 
@@ -237,8 +223,6 @@ End of Month
 
 Every month, you receive a report that shows exactly what was done, any issues found and resolved, current performance scores, and recommendations for the next cycle. No jargon — just clear, useful information.
 
-#### Quality Assurance Guarantee
-
 Every task goes through a quality assurance review before being marked complete. **Our senior team members spot-check all work** before closing any ticket.
 
 Transparent Pricing
@@ -407,42 +391,6 @@ Based teams serving clients in the US, UK, Canada, and Australia — with suppor
 Our support team holds certifications in WordPress development, web security, and Google Core Web Vitals optimization.  
 We maintain active partnerships with leading hosting providers and security platforms.
 
-## What Our Clients Say
-
-Don't just take our word for it. Here is what businesses worldwide say about our proactive website support services.
-
-"Since they took over our website support, our booking system has been flawless. They optimized our mobile performance, meaning our clients can easily book appointments on the go."
-
-WB
-
-#### Woodward Barbers
-
-United States
-
-"Managing a busy salon means I don't have time to mess with the website. They handle our image galleries and ensure the mobile booking experience is seamless for clients."
-
-GH
-
-#### Glam Hair Studio UK
-
-United Kingdom
-
-"As a property management platform, real-time accuracy is everything. Their team handles our database optimization and listing updates efficiently. Our site has never been faster."
-
-MP
-
-#### Mi Property Portal
-
-Australia
-
-"Server stability was our biggest concern. Now, our corporate portfolio is always accessible and loads instantly for our engineering clients worldwide. Exceptional support."
-
-AC
-
-#### AFR Consulting
-
-Canada
-
 ## Frequently Asked Questions
 
 Still have questions? Our support team is here to help.
@@ -453,7 +401,7 @@ A website support plan typically includes CMS updates (core, plugins, themes), s
 
 How quickly will you respond to a support request?
 
-Response times depend on your plan. Our Essential plan guarantees a response within 48 business hours. Professional plan clients receive a 24-hour response. Priority plan subscribers receive a 4-hour response SLA, with emergency escalation available around the clock.
+Response times depend on your plan. Professional plan clients receive a 24-hour response. Priority plan subscribers receive a 4-hour response SLA, with emergency escalation available around the clock.
 
 Do I need to sign a long-term contract?
 
@@ -486,5 +434,3 @@ Every day without a proper website support and maintenance plan is a day your si
 We make it easy to get expert support in place — with no contracts, no jargon, and no ticket queues where your issue disappears for three days.
 
 [Get My Free Website Support Quote →](/contact/) [View All Support Plans →](/monthly-website-maintenance-packages/)
-
-Join 500+ businesses across the US, UK, Canada, and Australia who trust us to keep their websites running — so they don't have to think about it.

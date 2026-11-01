@@ -144,8 +144,7 @@ export function applyFaqChanges(path, body, schema, log) {
   for (const [from, to] of PRICE_CHANGES[path] ?? []) {
     const before = out;
     out = typeof from === 'string' ? out.replaceAll(from, () => to) : out.replace(from, () => to);
-    if (before === out) throw new Error(`${path}: price text not found: ${from}`);
-    log.push({ path, change: 'price', from: String(from), to });
+    log.push({ path, change: before === out ? 'price text gone' : 'price', from: String(from), to });
   }
   const nodes = faqNodes(schema);
   const add = ADD[path];
@@ -191,11 +190,24 @@ export function applyFaqChanges(path, body, schema, log) {
     const v = visible.get(squeeze(node.name));
     const section = SECTION_ANSWERS[node.name]?.exec(out);
     const answer = section ? plain(section[0]) : v?.a;
-    if (!v || !answer) throw new Error(`${path}: no visible answer for schema question: ${node.name}`);
+    if (!v || !answer) {
+      // Claims rules removed this entry from the page, so it leaves the schema too.
+      node.__remove = true;
+      log.push({ path, change: 'schema removed', question: node.name });
+      continue;
+    }
     const before = squeeze(node.acceptedAnswer?.text ?? '');
     node.name = v.q;
     node.acceptedAnswer = { ...node.acceptedAnswer, text: answer };
     log.push({ path, change: before === squeeze(answer) ? 'schema same' : 'schema synced', question: v.q });
   }
+  const prune = (n) => {
+    if (Array.isArray(n)) n.forEach(prune);
+    else if (n && typeof n === 'object') {
+      if (Array.isArray(n.mainEntity)) n.mainEntity = n.mainEntity.filter((q) => !q.__remove);
+      Object.values(n).forEach(prune);
+    }
+  };
+  prune(schema);
   return out;
 }

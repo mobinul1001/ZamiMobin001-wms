@@ -19,10 +19,6 @@ Security & Backups Updates & Fixes 24/7 Support
 
 [Get Your Free Website Review](/free-website-maintenance-audit/) [View Plans & Pricing](/monthly-website-maintenance-packages/)
 
-5.0 · 5-Star Rated Maintenance Service
-
-Always-On Care 99.9% Uptime
-
 ## Everything We Take Care Of
 
 Security & MalwareScans, hardening & removal
@@ -38,22 +34,6 @@ SEO Health ChecksBroken links & errors
 24/7 MonitoringUptime & support
 
 Monthly performance reports [See full checklist →](/website-maintenance-checklist/)
-
-10+
-
-Years Experience
-
-99.9%
-
-Uptime Guarantee
-
-24/7
-
-Monitoring & Support
-
-100%
-
-Transparent Reporting
 
 Complete Website Support
 
@@ -224,20 +204,6 @@ Predictable monthly cost
 
 See exactly what needs to be done to keep your site healthy.
 
-<img src="/wp-content/uploads/2025/11/website-maintenance-services-team.jpg" alt="Our website maintenance team at work" width="756" height="756" loading="lazy">
-
-10+
-
-Years Experience
-
-99.9%
-
-Uptime Guarantee
-
-24/7 Support
-
-Always Available
-
 Who We Are
 
 ## Your Dedicated Website Maintenance Partner
@@ -261,8 +227,6 @@ A complete suite of website maintenance services built to keep your site secure,
 
 Keep your WordPress site secure, updated, and lightning-fast with expert core, theme & plugin management, daily backups, and 24/7 malware protection.
 
-5-Star Service
-
 [Learn More](/wordpress-website-maintenance-packages/)
 
 <img src="/wp-content/uploads/2025/11/Shopify-Maintenance.jpg" alt="Shopify website maintenance services" width="688" height="574" loading="lazy">
@@ -270,8 +234,6 @@ Keep your WordPress site secure, updated, and lightning-fast with expert core, t
 ### Shopify Maintenance
 
 Focus on selling while we handle your Shopify store’s updates, security, speed, and 24/7 uptime monitoring — so checkout never breaks during a sale.
-
-5-Star Service
 
 [Learn More](/shopify-website-maintenance-packages/)
 
@@ -281,8 +243,6 @@ Focus on selling while we handle your Shopify store’s updates, security, speed
 
 Complete support for your online store: product updates, payment-gateway security, performance tuning, and reliable backups that keep sales flowing.
 
-5-Star Service
-
 [Learn More](/ecommerce-website-maintenance-packages/)
 
 <img src="/wp-content/uploads/2025/11/Website-Management.jpg" alt="Full-service website management and maintenance" width="688" height="574" loading="lazy">
@@ -290,8 +250,6 @@ Complete support for your online store: product updates, payment-gateway securit
 ### Website Management
 
 Hands-off website management — updates, security, content changes, and ongoing strategic support — all handled for you by one dedicated team.
-
-5-Star Service
 
 [Learn More](/monthly-website-maintenance-packages/)
 
@@ -332,8 +290,6 @@ We run a full website audit, fix urgent issues, and set up security, backups, an
 [Choose a Plan](/monthly-website-maintenance-packages/) [Get a Quote](/get-a-free-quote/)
 
 ## Trusted & Rated by Clients Worldwide
-
-Recognized for reliable, 5-star website maintenance across leading review platforms.
 
  [<img src="/wp-content/uploads/2026/06/clutch-trusted-by-clients.webp" alt="Clutch Trusted Partner Badge" width="1838" height="856" loading="lazy">](https://clutch.co/profile/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/sortlist-verified-agency.webp" alt="Sortlist Verified Agency Badge" width="664" height="226" loading="lazy">](https://www.sortlist.com/agency/website-maintenance-services-usa)[<img src="/wp-content/uploads/2026/06/goodfirms-partner-badge.webp" alt="GoodFirms Partner Badge" width="1930" height="815" loading="lazy">](https://www.goodfirms.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/techreviewer-featured-on-techreviewer.webp" alt="Featured on Techreviewer" width="1774" height="887" loading="lazy">](https://techreviewer.co/companies/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/c2c-review-top-rated-badge.webp" alt="C2C Review Top Rated Badge" width="1774" height="887" loading="lazy">](https://c2creview.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/agency-spotter-recognized-by-agency-spotter.webp" alt="Recognized by Agency Spotter" width="1774" height="887" loading="lazy">](https://www.agencyspotter.com/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/itfirms-listed-on-itfirms.webp" alt="Listed on ITFirms Badge" width="1774" height="887" loading="lazy">](https://www.itfirms.co/)[<img src="/wp-content/uploads/2026/06/trustpilot-find-us-on-trustpilot.webp" alt="Find us on Trustpilot Badge" width="1774" height="887" loading="lazy">](https://www.trustpilot.com/review/websitemaintenanceservices.org)
 
@@ -464,53 +420,7 @@ Healthcare WordPress USA Monthly Maintenance
 
 This mental-health clinic relied on its website for patient bookings, but it was slow (4.8s loads), had a broken appointment form, occasional downtime, and no security monitoring. We optimized speed, set up 24/7 security and malware protection, fixed the booking form, and took over all updates — turning it into a fast, stable, patient-ready site.
 
-> “Our website is performing better than ever — faster, more reliable, and far more professional. Support is fast and consistent.”
-
 [Read the Full Case Study](/website-maintenance-case-study/) [Get the Same Results](/get-a-free-quote/)
-
-### TESTIMONIALS
-
-## What Our Clients Say About Us
-
-<img src="/wp-content/uploads/2025/12/Affordable-Roofing-and-Construction-logo-204w.webp" alt="AFRCONS logo" width="200" height="60" loading="lazy">
-
-“Their website maintenance has kept our site running smoothly every day. Everything stays updated, secure, and faster than ever. Highly recommend!”
-
-<img src="https://www.google.com/s2/favicons?domain=AFRCONS.com&sz=128" alt="afrcons.com website icon" loading="lazy">
-
-#### Kris Stone
-
-afrcons.com
-
-<img src="/wp-content/uploads/2025/12/CL-deep-blue-color-2048x559-1.png" alt="CL Consultant logo" width="1600" height="437" loading="lazy">
-
-“Their maintenance support keeps our website clean, stable, and fully optimized. Every update is handled quickly, and the improvement is noticeable. Great service!”
-
-<img src="https://www.google.com/s2/favicons?domain=CLConsultant.co.uk&sz=128" alt="clconsultant.co.uk website icon" loading="lazy">
-
-#### Daniel Carter
-
-clconsultant.co.uk
-
-<img src="/wp-content/uploads/2025/12/Riad-al-ashekin-logo-1.png" alt="Riad Al Ashekin logo" width="390" height="93" loading="lazy">
-
-“Thanks to their maintenance, our site now loads faster and stays error-free. They handle updates effortlessly, making everything run better than before.”
-
-<img src="https://www.google.com/s2/favicons?domain=RiadAlAshekin.com&sz=128" alt="riadalashekin.com website icon" loading="lazy">
-
-#### Riad Ashekin
-
-riadalashekin.com
-
-<img src="/wp-content/uploads/2025/12/loh_cropped.webp" alt="JRC Home Remodeling logo" width="300" height="71" loading="lazy">
-
-“Their website maintenance has made a huge difference for us. The site is smoother, quicker, and always up to date. Truly a reliable and efficient service!”
-
-<img src="https://www.google.com/s2/favicons?domain=JRCHomeRemodeling.com&sz=128" alt="jrchomeremodeling.com website icon" loading="lazy">
-
-#### Jason Reed
-
-jrchomeremodeling.com
 
 Guides & Resources
 
@@ -656,8 +566,6 @@ Of course. You can request content updates, design tweaks, or new features anyti
 We’re more than a maintenance service — we’re your dedicated partner in keeping your website secure, fast, and profitable. We handle every technical detail so you can focus on growing your business with complete peace of mind.
 
 ### Expert, Dedicated Team
-
-Certified developers, security specialists, and support engineers handle your site — backed by 10+ years of website maintenance experience.
 
 ### Proactive Security
 

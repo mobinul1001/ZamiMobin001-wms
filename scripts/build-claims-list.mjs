@@ -43,6 +43,7 @@ for (const r of pages) {
   for (const m of removed.matchAll(/"aggregateRating":\{[^}]*?"ratingValue":"?([\d.]+)"?[^}]*?\}/g)) rows.push({ group: 'Ratings and reviews', claim: `Schema rating ${m[1]}`, page: path, likely: 'likely ours', text: m[0].slice(0, 200) });
 }
 
+rows.unshift({ group: 'TODO', claim: 'founding year: owner to confirm', page: '(sitewide)', likely: 'ours', text: 'All years-of-experience claims are removed until the owner confirms the founding year (CLAIMS-AND-DESIGN.md A2).' });
 const cell = (v) => `"${String(v).replace(/"/g, '""')}"`;
 writeFileSync('reports/claims-list.csv', '﻿' + ['group,claim,page,likely,text,confirmed_or_change', ...rows.map((r) => [r.group, r.claim, r.page, r.likely, r.text, ''].map(cell).join(','))].join('\n') + '\n');
 

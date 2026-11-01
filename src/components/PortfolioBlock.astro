@@ -1,0 +1,26 @@
+---
+// "Websites we look after" (CLAIMS-AND-DESIGN.md A4). Stays empty until the owner confirms the table.
+import sites from '../data/portfolio.json';
+const clients = sites.filter((s) => s.group !== 'project');
+const projects = sites.filter((s) => s.group === 'project');
+---
+{clients.length > 0 && (
+  <section>
+    <h2>Websites we look after</h2>
+    <ul>
+      {clients.map((s) => (
+        <li><a href={s.url} rel="nofollow noopener">{s.name}</a> · {s.industry} · {s.country}</li>
+      ))}
+    </ul>
+  </section>
+)}
+{projects.length > 0 && (
+  <section>
+    <h2>Our projects</h2>
+    <ul>
+      {projects.map((s) => (
+        <li><a href={s.url} rel="nofollow noopener">{s.name}</a> · {s.industry} · {s.country}</li>
+      ))}
+    </ul>
+  </section>
+)}

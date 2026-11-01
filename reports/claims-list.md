@@ -1,6 +1,6 @@
 # Claims list for owner verification
 
-Pattern scan of 96 pages (old site text), 976 matches. Every line with its page is in `claims-list.csv`, with a column for your answer. It can miss claims and also catches general statements; "likely ours" is a best guess.
+Pattern scan of 96 pages (old site text), 977 matches. Every line with its page is in `claims-list.csv`, with a column for your answer. It can miss claims and also catches general statements; "likely ours" is a best guess.
 
 ## Conflicts to settle first
 

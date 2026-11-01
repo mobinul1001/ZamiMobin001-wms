@@ -105,10 +105,6 @@ The Results
 
 The improvements were immediate and significant. The clinic now has a stable, fast, and fully optimized website that patients can trust, leading to a more professional online presence and reliable lead generation.
 
-"Our website is performing better than ever. The speed and reliability improvements helped us create a more professional online presence. Your support is fast, reliable, and consistent."
-
-— Client Feedback (Paraphrased)
-
 ### At a Glance: Before vs. After
 
 -   Category

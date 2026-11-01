@@ -142,8 +142,6 @@ Slow websites lose users and rankings. We optimize caching, images, databases, a
 
 #### Backups & Instant Restore
 
-If something goes wrong, we restore your site immediately using secure cloud backups—no data loss, no panic.
-
 #### 24/7 Uptime Monitoring
 
 We monitor your website around the clock. If it goes down, we act fast—often before your customers even notice.

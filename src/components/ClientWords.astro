@@ -1,0 +1,15 @@
+---
+// Real client quotes only: name, company and written OK from the owner (CLAIMS-AND-DESIGN.md A4).
+import quotes from '../data/client-words.json';
+---
+{quotes.length > 0 && (
+  <section>
+    <h2>Client words</h2>
+    {quotes.map((q) => (
+      <blockquote>
+        <p>{q.quote}</p>
+        <footer>{q.name}, {q.company}</footer>
+      </blockquote>
+    ))}
+  </section>
+)}

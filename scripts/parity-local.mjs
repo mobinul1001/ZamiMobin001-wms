@@ -4,7 +4,8 @@
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
-import { applyApprovedRemovals, hasApprovedRemoval } from './lib/approved-removals.mjs';
+import { applyApprovedRemovals } from './lib/approved-removals.mjs';
+import { applyClaims } from './lib/claims.mjs';
 import { readCsv } from './lib/csv.mjs';
 import { isApprovedOldLine } from './lib/faq-approved.mjs';
 
@@ -123,13 +124,13 @@ for (const row of map) {
       if (!oldH1s.includes(LOOSE(h1))) changed.h1s++;
       const expectedNoindex = ['/get-a-free-quote/', '/free-website-maintenance-audit/'].includes(u.pathname);
       if (expectedNoindex ? robots !== 'noindex, follow' : robots !== norm(r.robots)) bad(`robots "${robots}" vs "${r.robots}"`);
-      let expectedWords = r.wordCount;
-      if (hasApprovedRemoval(u.pathname)) {
-        const $base = cheerio.load(readFileSync(join('export/raw', `${recFile.get(oldUrl).replace('.json', '')}.html`), 'utf8'));
-        applyApprovedRemovals($base, u.pathname);
-        expectedWords = wordsOf($base.html()).count;
-        info(`owner-approved removal: expected words ${expectedWords}, not ${r.wordCount}`);
-      }
+      // Expected words: the old page after the owner-approved removals and claim rules.
+      const $base = cheerio.load(readFileSync(join('export/raw', `${recFile.get(oldUrl).replace('.json', '')}.html`), 'utf8'));
+      $base('script, style, noscript, template, svg, header, footer, nav, .wms-offer').remove();
+      applyApprovedRemovals($base, u.pathname);
+      applyClaims($base, u.pathname);
+      const expectedWords = wordsOf($base.html()).count;
+      out.expectedWords = expectedWords;
       if (count < expectedWords * 0.95) bad(`words ${count} of ${expectedWords}`);
       const newTypes = typesOf(html);
       const missing = (r.jsonLdTypes ?? []).filter((t) => !newTypes.has(t) && t !== 'Review' && t !== 'AggregateRating');
@@ -144,6 +145,7 @@ for (const row of map) {
       const $old = cheerio.load(readFileSync(rawFile, 'utf8'));
       $old('script, style, noscript, template, svg, header, footer, nav, .wms-offer, .skip-link').remove();
       applyApprovedRemovals($old, u.pathname);
+      applyClaims($old, u.pathname);
       // The old H1 is replaced by the approved H1, except on Brazil where it stays as a subheading.
       if (u.pathname !== '/website-maintenance-services-for-brazil/') $old('h1').first().remove();
       const newImgs = new Map($('main img').toArray().map((e) => [$(e).attr('src'), $(e).attr('alt') ?? '']));

@@ -17,7 +17,7 @@ If your website has been hacked, defaced, or flagged by Google, every minute of 
 
 Avg. Response: 30 Mins
 
-100% Secure Recovery
+Secure Recovery
 
 ### Security Status:
 
@@ -31,7 +31,7 @@ Blacklist Risk: High
 
 \> root@server:/var/www/html# ./scan\_malware --critical
 
-Trusted by 500+ websites across the US, UK, Canada & Australia
+30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
 WordPress
 
@@ -53,9 +53,9 @@ Webflow
 
 Don't risk your compromised website with unverified freelancers. We are a top-rated security and maintenance agency trusted globally.
 
-[Clutch. 5.0 / 5.0 Rating Top B2B Service Provider](https://clutch.co/profile/website-maintenance-services)[Sortlist Verified Agency Top Security Experts](https://www.sortlist.com/agency/website-maintenance-services-usa)[GoodFirms 5.0 / 5.0 Rating Top Rated Web Agency](https://www.goodfirms.co/company/website-maintenance-services)[TechReviewer Top Web Maintenance Recognized Leader](https://techreviewer.co/companies/website-maintenance-services)[ITFirms. Top IT Services Verified Profile](https://www.itfirms.co/)
+[Sortlist Verified Agency Top Security Experts](https://www.sortlist.com/agency/website-maintenance-services-usa)[TechReviewer Top Web Maintenance Recognized Leader](https://techreviewer.co/companies/website-maintenance-services)[ITFirms. Top IT Services Verified Profile](https://www.itfirms.co/)
 
-100% [Malware Removal](/wordpress-malware-removal-service/) & Blacklist Reversal Guarantee
+If we can't clean your hacked site, you don't pay.
 
 Diagnosis
 
@@ -168,8 +168,6 @@ We update your CMS core, themes, and plugins to patched versions, apply firewall
 
 We run a final clean scan, document exactly what was found and fixed in a plain-English report, and — if you choose — set up ongoing Website Monitoring so any future intrusion attempt is caught before it becomes a repeat emergency.
 
-#### Verified Recovery Guarantee
-
 If backups exist, our [Website Backup Services](/wordpress-backup-services/) can also verify your backups weren't compromised alongside the live site, which is a step many DIY cleanups skip entirely.
 
 ## What's Included in Every Recovery
@@ -210,7 +208,7 @@ Technologies
 
 ## Platforms We Recover
 
-We handle malware removal and emergency recovery for all major CMS and ecommerce platforms. Every platform has its own unique vulnerabilities and backdoor locations—we know exactly where to look.
+We handle [malware removal](/wordpress-malware-removal-service/) and emergency recovery for all major CMS and ecommerce platforms. Every platform has its own unique vulnerabilities and backdoor locations—we know exactly where to look.
 
 Primary Specialization
 
@@ -291,38 +289,6 @@ Proven Success
 ## Real Recovery Outcomes
 
 See how we've helped businesses across various industries recover from critical security breaches, remove Google blacklists, and get back online fast.
-
-Recovery Time
-
-Under 4 Hours
-
-"Our WooCommerce store was hit with a malicious redirect, killing our checkout traffic during a major campaign. The team had the malware isolated, patched, and the Google blacklist warning removed unbelievably fast. We didn't lose any customer data."
-
-GB
-
-#### Ghorer Bazar
-
-eCommerce Store
-
-Critical Outcome
-
-100% Data Secured
-
-"As a healthcare provider, data integrity and uptime are non-negotiable. When our portal faced a sophisticated injection attack, their security specialists handled the forensic recovery with strict confidentiality and patched the vulnerabilities perfectly."
-
-#### Green Life Hospital
-
-Healthcare & Medical
-
-SEO Restoration
-
-Rankings Recovered
-
-"We noticed a sudden drop in local SEO rankings due to Japanese spam pages injected into our site. The recovery team not only cleaned the deep infection but worked directly with Google Search Console to restore our search presence within days."
-
-#### Dogtopia
-
-Pet Care Franchise
 
 Also Trusted By Brands Like:
 
@@ -420,8 +386,6 @@ DIY Cleanup Rarely
 
 ### Typical Time to Resolution
 
-Professional Hours (Guaranteed)
-
 Security Plugin Hours (Incomplete)
 
 DIY Cleanup Days to Weeks
@@ -470,11 +434,6 @@ Google Blacklist Removal
 Root-Cause Identification
 
  | Rarely | No | Yes |
-| 
-
-Typical Time to Resolution
-
- | Days to Weeks | Hours (Incomplete) | Hours (Guaranteed) |
 | 
 
 Risk of Reinfection
@@ -582,6 +541,6 @@ Yes, we offer monthly website maintenance and 24/7 security monitoring plans to 
 
 Every hour a hack goes unresolved increases the risk of Google blacklisting, lost customers, and deeper malware reinfection. Our security specialists are ready to isolate the breach and restore your site immediately.
 
-Instant Diagnosis 30-Min SLA Response 100% Confidential
+Instant Diagnosis 30-Min SLA Response Confidential
 
 [Get Emergency Help Now](/contact/) [Chat on WhatsApp](https://wa.me/8801815840813)

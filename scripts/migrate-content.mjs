@@ -10,6 +10,7 @@ import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
 import { readCsv } from './lib/csv.mjs';
+import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
 import { applyFaqChanges } from './lib/faq-approved.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
@@ -59,7 +60,7 @@ const catName = new Map(rest.categories.map((c) => [c.id, c.name]));
 const userName = new Map(rest.users.map((u) => [u.id, u.name]));
 
 const PLAN_HASH = { basic: 'basic-migration', standard: 'standard-migration', enterprise: 'enterprise-migration' };
-const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0, serviceLinks: [], faqChanges: [] };
+const log = { unknownLinks: new Map(), unlinked: new Map(), hashLinks: 0, rewritten: 0, offerBlocks: [], schemaRemoved: [], promotedH1: [], demotedH1: [], missingImages: new Set(), faqMissing: [], forms: 0, serviceLinks: [], faqChanges: [], claims: [] };
 
 function resolveLink(href, pagePath) {
   const raw = href.trim();
@@ -219,6 +220,7 @@ async function convert(path, record) {
   }
 
   applyApprovedRemovals($, path);
+  applyClaims($, path, log.claims);
 
   // The approved H1 goes in the frontmatter and the layout prints it once. On pages with no H1
   // today, the first heading stays in the body as it was.
@@ -323,6 +325,22 @@ for (const [u, m] of pages) {
   const removed = [];
   const schema = (record.jsonLd ?? []).map((d) => stripSchema(d, removed)).filter(Boolean);
   const body = applyFaqChanges(path, converted.body, schema, log.faqChanges);
+  // Claims rules also cover meta descriptions, social tags and every schema text.
+  const own = OWN_CLAIM_PAGES.has(path);
+  const cleanValue = (v, where) => {
+    if (!bannedIn(v, own)) return v;
+    const cleaned = cleanString(v, own);
+    log.claims.push({ path, rule: bannedIn(v, own), before: `${where}: ${v}`.slice(0, 300), after: cleaned });
+    return cleaned;
+  };
+  const cleanSchema = (n, key = '') => {
+    if (Array.isArray(n)) return n.map((x) => cleanSchema(x, key));
+    if (n && typeof n === 'object') return Object.fromEntries(Object.entries(n).map(([k, v]) => [k, cleanSchema(v, k)]).filter(([, v]) => v !== ''));
+    return typeof n === 'string' && !/^https?:|^@/.test(n) && !['@type', '@id', 'url'].includes(key) ? cleanValue(n, `schema ${key}`) : n;
+  };
+  schema.splice(0, schema.length, ...schema.map((d) => cleanSchema(d)));
+  record.metaDescription = cleanValue(record.metaDescription ?? '', 'meta description');
+  for (const [k, v] of Object.entries(record.socialTags ?? {})) if (typeof v === 'string' && !/^https?:/.test(v)) record.socialTags[k] = cleanValue(v, k);
   if (removed.length) log.schemaRemoved.push({ path, removed: [...new Set(removed)] });
   const faqs = [];
   const walk = (n) => {
@@ -407,5 +425,9 @@ const report = {
   faqChanges: log.faqChanges,
 };
 writeFileSync('reports/migration-report.json', JSON.stringify(report, null, 2));
+const claimCell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+writeFileSync('reports/claims-applied.csv', '﻿' + ['page,rule,before,after', ...log.claims.map((c) => [c.path, c.rule, c.before, c.after].map(claimCell).join(','))].join('\n') + '\n');
+const byRule = log.claims.reduce((m, c) => ((m[c.rule] = (m[c.rule] ?? 0) + 1), m), {});
+console.log('claims applied', JSON.stringify(byRule));
 console.log(JSON.stringify({ ...report, countdownBlocksRemoved: report.countdownBlocksRemoved.length, countdownSample: report.countdownBlocksRemoved[0], schemaRemoved: report.schemaRemoved.length, faqQuestionsNotFoundInBody: report.faqQuestionsNotFoundInBody.length, faqSample: report.faqQuestionsNotFoundInBody.slice(0, 6) }, null, 1));
 void copyFileSync;

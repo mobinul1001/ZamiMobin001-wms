@@ -118,7 +118,7 @@ Best for eCommerce, large organisations & high-traffic sites.
 -   Everything in Standard +
 -   Daily Security Monitoring
 -   **Daily** + Cloud Backups
--   Guaranteed Malware Removal
+-   Malware Removal
 -   **Full eCommerce** Support
 -   Checkout & Payment Testing
 -   **5 Hours** Support/mo

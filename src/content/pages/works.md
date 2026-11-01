@@ -209,13 +209,7 @@ aceracetours.com
 
 ### Why Clients Trust Us
 
-10+ Years Experience
-
-Zero Downtime
-
-Priority Support
-
-Global Reach
+Priority Support Global Reach
 
 #### Want to Add Your Website to This List?
 

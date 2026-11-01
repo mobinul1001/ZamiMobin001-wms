@@ -827,8 +827,6 @@ Start with the right CDN, check cache behavior, optimize images, and measure rea
 
 [Compare CDN Providers →](#quick-answer)[Read the Setup Guide](#setup)
 
-<a id="publishing"></a>
-
 share on
 
 Facebook

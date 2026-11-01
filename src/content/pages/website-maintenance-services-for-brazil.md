@@ -10,8 +10,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Serviços de Manutenção de Sites no Brasil
-
 ## Mantenha seu Site Seguro, Rápido e Sempre Funcional
 
 No competitivo mercado digital brasileiro, seu website é o cartão de visita do seu negócio. Garantimos que seu site permaneça seguro, otimizado, sem erros e sempre pronto para converter visitantes em clientes.

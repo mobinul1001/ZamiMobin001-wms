@@ -2,7 +2,7 @@
   "migrated": 92,
   "posts": 48,
   "pages": 44,
-  "linksRewritten": 379,
+  "linksRewritten": 377,
   "planLinksToHash": 28,
   "unknownLinks": [],
   "unlinked404Targets": {
@@ -158,6 +158,10 @@
       "h1": "Free Website Malware Scanner"
     },
     {
+      "path": "/website-migration-services/",
+      "h1": "Professional Website Migration Service"
+    },
+    {
       "path": "/works/",
       "h1": "Our Work"
     }
@@ -182,7 +186,7 @@
       "path": "/website-hacked-recovery-services/",
       "phrase": "/malware removal/i",
       "added": true,
-      "line": "100% [Malware Removal](/wordpress-malware-removal-service/) & Blacklist Reversal Guarantee"
+      "line": "We handle [malware removal](/wordpress-malware-removal-service/) and emergency recovery for all major CMS and ecommerce platforms. Every platform has its own un"
     },
     {
       "path": "/website-repair-services/",
@@ -306,7 +310,7 @@
     },
     {
       "path": "/best-fixrunner-alternatives/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "Why would I choose a FixRunner alternative?"
     },
     {
@@ -446,7 +450,7 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
-      "change": "schema same",
+      "change": "schema removed",
       "question": "Do you offer a refund or money-back guarantee?"
     },
     {
@@ -1131,7 +1135,7 @@
     },
     {
       "path": "/sitecare-alternative/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What's the best SiteCare alternative?"
     },
     {
@@ -1584,7 +1588,7 @@
     },
     {
       "path": "/website-migration-services/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "Do you offer a guarantee if something breaks?"
     },
     {
@@ -1979,7 +1983,7 @@
     },
     {
       "path": "/website-repair-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What if the problem comes back after you fix it?"
     },
     {
@@ -2179,7 +2183,7 @@
     },
     {
       "path": "/website-speed-optimization-services/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "How much does website speed optimization cost?"
     },
     {
@@ -2479,7 +2483,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "How fast do you respond to emergency support requests?"
     },
     {
@@ -2504,7 +2508,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What happens if a client's site gets hacked?"
     },
     {
@@ -2569,7 +2573,7 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
-      "change": "schema same",
+      "change": "schema removed",
       "question": "Is the service really 100% white label?"
     },
     {

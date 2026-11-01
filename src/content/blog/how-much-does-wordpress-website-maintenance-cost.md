@@ -27,8 +27,6 @@ This is the most complete, no-fluff guide to WordPress maintenance costs on the 
 
 $95–$395Typical managed plan / month
 
-4.9/5From 213 client reviews
-
 43%of the web runs on WordPress
 
 20%saved by paying annually
@@ -337,53 +335,7 @@ If your site generates any revenue or serves customers directly, outsourcing mai
 
 ## ReviewsWhat Our WordPress Clients Say
 
-4.9
-
-★★★★★
-
-out of 5
-
-Based on **213 verified reviews** from WordPress site owners on our maintenance plans. **97%** would recommend us to another business owner.
-
-★★★★★
-
-“We moved to the Advanced plan after a plugin update broke our site. Since then every update is tested first and we have had zero downtime. Easily worth $195 a month.”
-
-M
-
-Mark D.
-
-Owner, B2B services site
-
-★★★★★
-
-“Our WooCommerce store was hacked once before. The Elevate plan caught and removed malware fast, and the daily backups give me real peace of mind.”
-
-L
-
-Lena P.
-
-Founder, WooCommerce store
-
-★★★★★
-
-“Transparent pricing and no lock-in. The monthly performance report shows exactly what was done. The Essential plan is perfect for my small business site.”
-
-T
-
-Tom R.
-
-Owner, small business website
-
-★★★★★
-
-“Speed optimization alone improved our Core Web Vitals and rankings. Support replies fast and actually fixes things. Highly recommend the Advanced plan.”
-
-A
-
-Aisha K.
-
-Marketing lead, content site
+Based on from WordPress site owners on our maintenance plans. **97%**
 
 <a id="s15"></a>
 

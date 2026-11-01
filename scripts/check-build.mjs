@@ -4,6 +4,7 @@
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
+import { findBanned } from './lib/claims.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
 const fails = [];
@@ -128,6 +129,10 @@ for (const file of htmlFiles) {
   if (isLive && noindex && sitemapUrls.has(`${O}${path}`)) fail('noindex', `${path} is in the sitemap but has noindex.`);
   if (!isLive && !/noindex/.test(robots)) fail('noindex', `${path}: preview build must be noindex.`);
 
+  // Owner rules from CLAIMS-AND-DESIGN.md section A: banned claims stay off the page, meta and schema.
+  const claimTexts = [$('main').text().replace(/[ \t]+/g, ' '), title, desc, ...$('meta[property^="og:"], meta[name^="twitter:"]').toArray().map((m) => $(m).attr('content') ?? '').filter((v) => !/^https?:/.test(v))];
+  for (const text of claimTexts) for (const line of findBanned(text, path).slice(0, 3)) fail('claims', `${path}: banned claim: ${line.slice(0, 110)}`);
+  if (/\bJohn Doe\b|\bParaphrased\b/.test($('main').text())) fail('claims', `${path}: placeholder testimonial text.`);
   // Owner rule: annual prices always say "2 months free" (Spanish: "2 meses gratis").
   $('main p, main li, main td, main div, main h2, main h3, main details').each((_, e) => {
     if ($(e).children('p, div, li, table, details').length) return;

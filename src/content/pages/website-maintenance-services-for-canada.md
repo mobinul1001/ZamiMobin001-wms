@@ -118,7 +118,7 @@ CAD 199/mo
 -   Everything in Standard +
 -   Daily Website Monitoring
 -   **Daily** + Cloud Backups
--   Guaranteed Malware Removal
+-   Malware Removal
 -   **Complete eCommerce** Maintenance
 -   Checkout & Payment Testing
 -   **5 Hours** Technical Support/mo

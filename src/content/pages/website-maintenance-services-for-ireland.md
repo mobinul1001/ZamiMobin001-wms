@@ -122,7 +122,7 @@ For eCommerce, high-traffic & mission-critical sites.
 -   Everything in Standard +
 -   **Weekly** Updates
 -   Daily Monitoring
--   Guaranteed Malware Removal
+-   Malware Removal
 -   **Full eCommerce** Support
 -   Checkout & Payment Tests
 -   **5 Custom Edits**/mo

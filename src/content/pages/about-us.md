@@ -105,7 +105,7 @@ Our clients trust us because we deliver consistent results, clear communication,
     
     We fix issues before they become problems for your visitors.
     
--   ### Experience with 100+ Websites
+-   ### 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
     
     Across multiple industries and platforms (WordPress, Shopify, etc.).
     
