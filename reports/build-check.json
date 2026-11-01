@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01T11:01:35.017Z",
+  "checkedAt": "2026-11-01T11:12:41.770Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
@@ -10,7 +10,10 @@
   "redirects": 246,
   "queryRedirects": 97,
   "manifestSource": "url-map.csv",
-  "failures": [],
+  "failures": [
+    "[country-price] /website-maintenance-services-for-uk/: £590 is missing.",
+    "[country-price] /website-maintenance-services-for-uk/: shows a dollar price: $79"
+  ],
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 54,
@@ -49,7 +52,7 @@
     "[seo-length] /website-design-trinidad/: title is 61 characters (aim for 60).",
     "[seo-length] /website-hosting-and-maintenance/: description is 173 characters (aim for 155).",
     "[seo-length] /website-maintenance-checklist/: description is 166 characters (aim for 155).",
-    "[seo-length] /website-maintenance-services-for-switzerland/: description is 167 characters (aim for 155).",
+    "[seo-length] /website-maintenance-services-for-switzerland/: description is 159 characters (aim for 155).",
     "[seo-length] /website-malware-scanner/: description is 197 characters (aim for 155).",
     "[seo-length] /website-rebuild-guide/: title is 67 characters (aim for 60).",
     "[seo-length] /website-rebuild-guide/: description is 166 characters (aim for 155).",

@@ -1456,6 +1456,282 @@
       "question": "Do updates cause downtime during the process?"
     },
     {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "AUD 99/mo\n\n[Select Plan](/get-a-free-quote/)",
+      "to": "A$112/mo\n\nor A$1,120/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "#### Basic Care\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "AUD 199/mo\n\n[Select Plan](/get-a-free-quote/)",
+      "to": "A$212/mo\n\nor A$2,120/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "#### Standard Care\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "AUD 399/mo\n\n[Select Plan](/get-a-free-quote/)",
+      "to": "A$426/mo\n\nor A$4,260/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "#### Premium Care\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "monthly (Basic), bi-weekly (Standard), or weekly (Premium)",
+      "to": "monthly (Essential), bi-weekly (Growth), or weekly (Business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "specifically included in our Premium plan",
+      "to": "specifically included in our Business plan"
+    },
+    {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "for our Standard and Premium plan clients",
+      "to": "for our Growth and Business plan clients"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "R$ 249/mês\n\n[Escolher Plano](/get-a-free-quote/)",
+      "to": "R$ 429/mês\n\nou R$ 4.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "#### Plano Básico\n",
+      "to": "#### Plano Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "R$ 499/mês\n\n[Escolher Plano](/get-a-free-quote/)",
+      "to": "R$ 809/mês\n\nou R$ 8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "#### Plano Padrão\n",
+      "to": "#### Plano Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "R$ 999/mês\n\n[Escolher Plano](/get-a-free-quote/)",
+      "to": "R$ 1.624/mês\n\nou R$ 16.240/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "#### Plano Premium\n",
+      "to": "#### Plano Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "Inclui tudo no Básico +",
+      "to": "Inclui tudo no Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "Inclui tudo no Padrão +",
+      "to": "Inclui tudo no Growth +"
+    },
+    {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "Escolha entre Básico, Padrão ou Premium.",
+      "to": "Escolha entre Essential, Growth ou Business."
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "CAD 49/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "CA$110/mo\n\nor CA$1,100/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "#### Basic\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "CAD 99/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "CA$208/mo\n\nor CA$2,080/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "#### Standard\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "CAD 199/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "CA$418/mo\n\nor CA$4,180/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "#### Premium\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "#### Basic Plan\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "#### Standard Plan\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "#### Premium Plan\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "Pick Basic, Standard, or Premium based on your needs.",
+      "to": "Pick Essential, Growth, or Business based on your needs."
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "#### Basic Plan\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "#### Standard Plan\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "#### Premium Plan\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "Pick Basic, Standard, or Premium based on your needs.",
+      "to": "Pick Essential, Growth, or Business based on your needs."
+    },
+    {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.",
@@ -1464,14 +1740,38 @@
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
-      "from": "### Advanced",
-      "to": "### Growth"
+      "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price text gone",
+      "from": "#### Essential\n",
+      "to": "#### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
-      "from": "### Elevate",
-      "to": "### Business"
+      "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price text gone",
+      "from": "#### Advanced\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price text gone",
+      "from": "#### Elevate\n",
+      "to": "#### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -1482,38 +1782,20 @@
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
-      "from": "$95/mo",
-      "to": "$79/mo"
+      "from": "/Prices shown in USD; (?:EUR|CHF) billing available on request\\./",
+      "to": "Prices shown in EUR."
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
-      "from": "$195/mo",
-      "to": "$149/mo"
+      "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
+      "to": "Our plans start at €71/month (Essential), €133/month (Growth), and €268/month (Business), or €710, €1,330 and €2,680 per year (2 months free). Prices are shown in EUR."
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price",
-      "from": "$395/mo",
-      "to": "$299/mo"
-    },
-    {
-      "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price",
-      "from": "or $76/mo billed annually",
-      "to": "or $790/yr, 2 months free"
-    },
-    {
-      "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price",
-      "from": "or $156/mo billed annually",
-      "to": "or $1,490/yr, 2 months free"
-    },
-    {
-      "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price",
-      "from": "or $316/mo billed annually",
-      "to": "or $2,990/yr, 2 months free"
+      "change": "price text gone",
+      "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
+      "to": "Nuestros planes comienzan en €71/mes (Essential), €133/mes (Growth) y €268/mes (Business), o 710, 1.330 y 2.680 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -1554,14 +1836,38 @@
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
-      "from": "### Advanced",
-      "to": "### Growth"
+      "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€71/mo\n\nor €710/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price text gone",
+      "from": "#### Essential\n",
+      "to": "#### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
-      "from": "### Elevate",
-      "to": "### Business"
+      "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€133/mo\n\nor €1,330/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price text gone",
+      "from": "#### Advanced\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "€268/mo\n\nor €2,680/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price text gone",
+      "from": "#### Elevate\n",
+      "to": "#### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1572,38 +1878,20 @@
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
-      "from": "$95/mo",
-      "to": "$79/mo"
+      "from": "/Prices shown in USD; (?:EUR|CHF) billing available on request\\./",
+      "to": "Prices shown in EUR."
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price text gone",
+      "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
+      "to": "Our plans start at €71/month (Essential), €133/month (Growth), and €268/month (Business), or €710, €1,330 and €2,680 per year (2 months free). Prices are shown in EUR."
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
-      "from": "$195/mo",
-      "to": "$149/mo"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "change": "price",
-      "from": "$395/mo",
-      "to": "$299/mo"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "change": "price",
-      "from": "or $76/mo billed annually",
-      "to": "or $790/yr, 2 meses gratis"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "change": "price",
-      "from": "or $156/mo billed annually",
-      "to": "or $1,490/yr, 2 meses gratis"
-    },
-    {
-      "path": "/website-maintenance-services-for-spain/",
-      "change": "price",
-      "from": "or $316/mo billed annually",
-      "to": "or $2,990/yr, 2 meses gratis"
+      "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
+      "to": "Nuestros planes comienzan en €71/mes (Essential), €133/mes (Growth) y €268/mes (Business), o 710, 1.330 y 2.680 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1649,14 +1937,38 @@
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
-      "from": "### Advanced",
-      "to": "### Growth"
+      "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "CHF 65/mo\n\nor CHF 650/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price text gone",
+      "from": "#### Essential\n",
+      "to": "#### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
-      "from": "### Elevate",
-      "to": "### Business"
+      "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "CHF 123/mo\n\nor CHF 1,230/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price text gone",
+      "from": "#### Advanced\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
+      "to": "CHF 246/mo\n\nor CHF 2,460/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price text gone",
+      "from": "#### Elevate\n",
+      "to": "#### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -1667,38 +1979,20 @@
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
-      "from": "$95/mo",
-      "to": "$79/mo"
+      "from": "/Prices shown in USD; (?:EUR|CHF) billing available on request\\./",
+      "to": "Prices shown in CHF."
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
-      "from": "$195/mo",
-      "to": "$149/mo"
+      "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
+      "to": "Our plans start at CHF 65/month (Essential), CHF 123/month (Growth), and CHF 246/month (Business), or CHF 650, CHF 1,230 and CHF 2,460 per year (2 months free). Prices are shown in CHF."
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price",
-      "from": "$395/mo",
-      "to": "$299/mo"
-    },
-    {
-      "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price",
-      "from": "or $76/mo billed annually",
-      "to": "or $790/yr, 2 months free"
-    },
-    {
-      "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price",
-      "from": "or $156/mo billed annually",
-      "to": "or $1,490/yr, 2 months free"
-    },
-    {
-      "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price",
-      "from": "or $316/mo billed annually",
-      "to": "or $2,990/yr, 2 months free"
+      "change": "price text gone",
+      "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
+      "to": "Nuestros planes comienzan en CHF 65/mes (Essential), CHF 123/mes (Growth) y CHF 246/mes (Business), o CHF 650, CHF 1.230 y CHF 2.460 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -1731,22 +2025,58 @@
       "question": "Which platforms do you maintain?"
     },
     {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "£39/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "£59/mo\n\nor £590/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "#### Basic\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "£89/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "£111/mo\n\nor £1,110/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "#### Standard\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "£179/mo\n\n[Choose Plan](/get-a-free-quote/)",
+      "to": "£223/mo\n\nor £2,230/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "#### Premium\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$49/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$79/mo\n\n[Get Started](/get-a-free-quote/#essential)"
-    },
-    {
-      "path": "/website-maintenance-services-for-usa/",
-      "change": "price",
-      "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$149/mo\n\n[Get Started](/get-a-free-quote/#growth)"
-    },
-    {
-      "path": "/website-maintenance-services-for-usa/",
-      "change": "price",
-      "from": "$199/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$299/mo\n\n[Get Started](/get-a-free-quote/#business)"
+      "to": "$79/mo\n\nor $790/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
@@ -1757,8 +2087,20 @@
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
+      "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
+      "to": "$149/mo\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
       "from": "#### Standard\n",
       "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "$199/mo\n\n[Get Started](/get-a-free-quote/)",
+      "to": "$299/mo\n\nor $2,990/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
     },
     {
       "path": "/website-maintenance-services-for-usa/",

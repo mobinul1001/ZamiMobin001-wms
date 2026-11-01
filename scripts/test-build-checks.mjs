@@ -7,6 +7,7 @@ const env = { ...process.env, CONTEXT: 'production', URL: 'https://websitemainte
 const run = () => spawnSync('node', ['scripts/check-build.mjs'], { env, encoding: 'utf8' });
 const HOME = 'dist/index.html';
 const REDIRECTS = 'dist/_redirects';
+const COUNTRY = 'dist/website-maintenance-services-for-uk/index.html';
 const PAGE = 'dist/about-us/index.html';
 const append = (file, text) => writeFileSync(file, readFileSync(file, 'utf8') + text);
 const replaceIn = (file, from, to) => writeFileSync(file, readFileSync(file, 'utf8').replace(from, to));
@@ -26,6 +27,8 @@ const cases = [
   ['Link to ?plan=', () => replaceIn(PAGE, /<main[^>]*>/, '<main><a href="/get-a-free-quote/?plan=growth">x</a>'), /query URL/],
   ['Broken internal link', () => replaceIn(PAGE, /<main[^>]*>/, '<main><a href="/no-such-page/">x</a>'), /Broken link/],
   ['Noindex on a sitemap URL', () => replaceIn(HOME, /<meta name="?robots"?[^>]*>/, '<meta name="robots" content="noindex">'), /is in the sitemap but has noindex/],
+  ['Dollar price on a country page', () => replaceIn(COUNTRY, /<main[^>]*>/, '<main><p>From $79 a month.</p>'), /shows a dollar price/],
+  ['Local price missing on a country page', () => replaceIn(COUNTRY, /£590/g, '£599'), /£590 is missing/],
   ['Annual price without the note', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Essential is $790 per year.</p>'), /annual price without/],
   ['FAQ schema not on the page', () => replaceIn(PAGE, '</head>', '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"name":"Not on page?","acceptedAnswer":{"text":"Nope"}}]}</script></head>'), /schema question not on the page/],
   ['Banned claim on a page', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Trusted by 500+ businesses.</p>'), /banned claim/],

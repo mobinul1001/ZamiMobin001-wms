@@ -140,13 +140,15 @@ Transparent, affordable tiers for Australian businesses.
 
 BRONZE
 
-#### Basic Care
+#### Essential
 
 Essential updates & security for small sites.
 
-AUD 99/mo
+A$112/mo
 
-[Select Plan](/get-a-free-quote/)
+or A$1,120/yr, 2 months free
+
+[Select Plan](/get-a-free-quote/#essential)
 
 -   Monthly Updates
 -   Security Monitoring
@@ -165,15 +167,17 @@ SILVER
 
 MOST POPULAR
 
-#### Standard Care
+#### Growth
 
 Ideal for growing businesses & service websites.
 
-AUD 199/mo
+A$212/mo
 
-[Select Plan](/get-a-free-quote/)
+or A$2,120/yr, 2 months free
 
--   Everything in Basic +
+[Select Plan](/get-a-free-quote/#growth)
+
+-   Everything in Essential +
 -   **Bi-Weekly** Updates
 -   Advanced Security Hardening
 -   Advanced Speed Optimization
@@ -189,15 +193,17 @@ AUD 199/mo
 
 GOLD
 
-#### Premium Care
+#### Business
 
 For high-traffic, eCommerce & mission-critical sites.
 
-AUD 399/mo
+A$426/mo
 
-[Select Plan](/get-a-free-quote/)
+or A$4,260/yr, 2 months free
 
--   Everything in Standard +
+[Select Plan](/get-a-free-quote/#business)
+
+-   Everything in Growth +
 -   **Weekly** Updates
 -   Real-Time Uptime/Security
 -   **eCommerce** Maintenance
@@ -303,15 +309,15 @@ Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart, Darwin, Gold Coa
 
 #### 1\. How often will you update my website?
 
-Depending on your plan, we perform updates monthly (Basic), bi-weekly (Standard), or weekly (Premium).
+Depending on your plan, we perform updates monthly (Essential), bi-weekly (Growth), or weekly (Business).
 
 #### 2\. Do you handle eCommerce websites?
 
-Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Premium plan.
+Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Business plan.
 
 #### 3\. What if my website gets hacked?
 
-We fix hacked websites immediately at no extra cost for our Standard and Premium plan clients.
+We fix hacked websites immediately at no extra cost for our Growth and Business plan clients.
 
 #### 4\. Do you work with Australian agencies?
 

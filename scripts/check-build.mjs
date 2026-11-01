@@ -5,6 +5,7 @@ import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from '
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
 import { findBanned } from './lib/claims.mjs';
+const masterPrices = JSON.parse(readFileSync('src/data/prices.json', 'utf8'));
 
 const O = 'https://websitemaintenanceservices.org';
 const fails = [];
@@ -140,6 +141,17 @@ for (const file of htmlFiles) {
     if (!$(form).find('input[name="form-name"]').length) fail('forms', `${path}: form has no form-name field.`);
     if ($(form).find('input:not([type="button"]), select, textarea').toArray().some((c) => !$(c).attr('name'))) fail('forms', `${path}: a form field has no name, so its value would not be sent.`);
   });
+  // Owner rule: country pages show the master plans in local currency, and no dollar price unless the page is the USA one.
+  const localPrice = masterPrices.local[path];
+  if (localPrice) {
+    const mainText = $('main').text();
+    for (const p of [...localPrice.monthly, ...localPrice.annual]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
+    if (localPrice.currency !== 'USD' && /(?<![A-Z])\$\s?\d/.test(mainText)) fail('country-price', `${path}: shows a dollar price: ${/(?<![A-Z])\$\s?\d[^ ]*/.exec(mainText)[0]}`);
+    $('main p, main li').each((_, e) => {
+      const line = $(e).text();
+      if (localPrice.annual.some((p) => line.includes(p)) && /\/(?:yr|ano)\b/.test(line) && !/2 months free|2 meses gr[aá]tis/i.test(line)) fail('annual-note', `${path}: annual price without the note: ${line.trim().slice(0, 80)}`);
+    });
+  }
   // Owner rule: annual prices always say "2 months free" (Spanish: "2 meses gratis").
   $('main p, main li, main td, main div, main h2, main h3, main details').each((_, e) => {
     if ($(e).children('p, div, li, table, details').length) return;

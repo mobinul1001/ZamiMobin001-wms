@@ -130,13 +130,15 @@ Professional 3-tier plans tailored for small businesses, growing companies, and 
 
 <div class="card">
 
-#### Basic
+#### Essential
 
 Perfect for small businesses, startups & personal websites.
 
-CAD 49/mo
+CA$110/mo
 
-[Choose Plan](/get-a-free-quote/)
+or CA$1,100/yr, 2 months free
+
+[Choose Plan](/get-a-free-quote/#essential)
 
 -   Monthly Updates
 -   Monthly Full Backups
@@ -153,15 +155,17 @@ CAD 49/mo
 
 POPULAR
 
-#### Standard
+#### Growth
 
 Great for growing service businesses and content-heavy websites.
 
-CAD 99/mo
+CA$208/mo
 
-[Choose Plan](/get-a-free-quote/)
+or CA$2,080/yr, 2 months free
 
--   Everything in Basic +
+[Choose Plan](/get-a-free-quote/#growth)
+
+-   Everything in Essential +
 -   **Weekly** Updates
 -   **Weekly** Automated Backups
 -   Advanced Firewall & Malware
@@ -175,15 +179,17 @@ CAD 99/mo
 
 <div class="card">
 
-#### Premium
+#### Business
 
 Best for eCommerce, large businesses & high-traffic platforms.
 
-CAD 199/mo
+CA$418/mo
 
-[Choose Plan](/get-a-free-quote/)
+or CA$4,180/yr, 2 months free
 
--   Everything in Standard +
+[Choose Plan](/get-a-free-quote/#business)
+
+-   Everything in Growth +
 -   Daily Website Monitoring
 -   **Daily** + Cloud Backups
 -   Malware Removal

@@ -1,10 +1,193 @@
 {
-  "annualNote": { "en": "2 months free", "es": "2 meses gratis" },
+  "annualNote": {
+    "en": "2 months free",
+    "es": "2 meses gratis",
+    "pt": "2 meses grátis"
+  },
   "plans": [
-    { "name": "Essential", "monthly": 79, "annual": 790, "includes": ["Weekly updates", "Weekly backups", "Security scan", "Uptime monitoring", "1 hour edits/month"] },
-    { "name": "Growth", "popular": true, "monthly": 149, "annual": 1490, "includes": ["Everything in Essential", "Daily backups", "3 hours edits/month", "Malware removal", "Speed optimization", "Monthly report", "WooCommerce support"] },
-    { "name": "Business", "monthly": 299, "annual": 2990, "includes": ["Everything in Growth", "6 hours edits/month", "Staging-tested updates", "24/7 emergency fixes", "Priority support"] }
+    {
+      "name": "Essential",
+      "monthly": 79,
+      "annual": 790,
+      "includes": [
+        "Weekly updates",
+        "Weekly backups",
+        "Security scan",
+        "Uptime monitoring",
+        "1 hour edits/month"
+      ]
+    },
+    {
+      "name": "Growth",
+      "popular": true,
+      "monthly": 149,
+      "annual": 1490,
+      "includes": [
+        "Everything in Essential",
+        "Daily backups",
+        "3 hours edits/month",
+        "Malware removal",
+        "Speed optimization",
+        "Monthly report",
+        "WooCommerce support"
+      ]
+    },
+    {
+      "name": "Business",
+      "monthly": 299,
+      "annual": 2990,
+      "includes": [
+        "Everything in Growth",
+        "6 hours edits/month",
+        "Staging-tested updates",
+        "24/7 emergency fixes",
+        "Priority support"
+      ]
+    }
   ],
   "oneTimeFixFrom": 49,
-  "hackedSiteCleanup": 149
+  "hackedSiteCleanup": 149,
+  "localRatesDate": "2026-10-30",
+  "local": {
+    "/website-maintenance-services-for-usa/": {
+      "currency": "USD",
+      "rate": 1,
+      "monthly": [
+        "$79",
+        "$149",
+        "$299"
+      ],
+      "annual": [
+        "$790",
+        "$1,490",
+        "$2,990"
+      ]
+    },
+    "/website-maintenance-services-for-uk/": {
+      "currency": "GBP",
+      "rate": 0.74633,
+      "monthly": [
+        "£59",
+        "£111",
+        "£223"
+      ],
+      "annual": [
+        "£590",
+        "£1,110",
+        "£2,230"
+      ]
+    },
+    "/website-maintenance-services-for-canada/": {
+      "currency": "CAD",
+      "rate": 1.3969,
+      "monthly": [
+        "CA$110",
+        "CA$208",
+        "CA$418"
+      ],
+      "annual": [
+        "CA$1,100",
+        "CA$2,080",
+        "CA$4,180"
+      ]
+    },
+    "/website-maintenance-services-for-australia/": {
+      "currency": "AUD",
+      "rate": 1.4236,
+      "monthly": [
+        "A$112",
+        "A$212",
+        "A$426"
+      ],
+      "annual": [
+        "A$1,120",
+        "A$2,120",
+        "A$4,260"
+      ]
+    },
+    "/website-maintenance-services-for-france/": {
+      "currency": "EUR",
+      "rate": 0.89509,
+      "monthly": [
+        "€71",
+        "€133",
+        "€268"
+      ],
+      "annual": [
+        "€710",
+        "€1,330",
+        "€2,680"
+      ]
+    },
+    "/website-maintenance-services-for-ireland/": {
+      "currency": "EUR",
+      "rate": 0.89509,
+      "monthly": [
+        "€71",
+        "€133",
+        "€268"
+      ],
+      "annual": [
+        "€710",
+        "€1,330",
+        "€2,680"
+      ]
+    },
+    "/website-maintenance-services-for-netherlands/": {
+      "currency": "EUR",
+      "rate": 0.89509,
+      "monthly": [
+        "€71",
+        "€133",
+        "€268"
+      ],
+      "annual": [
+        "€710",
+        "€1,330",
+        "€2,680"
+      ]
+    },
+    "/website-maintenance-services-for-spain/": {
+      "currency": "EUR",
+      "rate": 0.89509,
+      "monthly": [
+        "€71",
+        "€133",
+        "€268"
+      ],
+      "annual": [
+        "€710",
+        "€1,330",
+        "€2,680"
+      ]
+    },
+    "/website-maintenance-services-for-switzerland/": {
+      "currency": "CHF",
+      "rate": 0.82295,
+      "monthly": [
+        "CHF 65",
+        "CHF 123",
+        "CHF 246"
+      ],
+      "annual": [
+        "CHF 650",
+        "CHF 1,230",
+        "CHF 2,460"
+      ]
+    },
+    "/website-maintenance-services-for-brazil/": {
+      "currency": "BRL",
+      "rate": 5.4325,
+      "monthly": [
+        "R$ 429",
+        "R$ 809",
+        "R$ 1.624"
+      ],
+      "annual": [
+        "R$ 4.290",
+        "R$ 8.090",
+        "R$ 16.240"
+      ]
+    }
+  }
 }

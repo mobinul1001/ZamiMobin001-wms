@@ -1,3 +1,5 @@
+import { readFileSync } from 'node:fs';
+import { countryPairs, countryMeta, COUNTRY_OLD_LINES } from './country-prices.mjs';
 // FAQ changes the owner approved on 2026-11-01. Questions that were in the schema but not on the
 // page are shown; where the page already asks the same question, nothing is duplicated and the
 // schema is aligned to the visible wording.
@@ -59,22 +61,10 @@ const BODY_LINKS = {
 // they are listed in reports/faq-schema-sync.md for the owner.
 const PLANS_EN = 'Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free).';
 const PLANS_OLD = 'Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.';
+const LOCAL_PATHS = JSON.parse(readFileSync('src/data/prices.json', 'utf8')).local;
+
 const CARD_PRICES = {
-  // Owner, 2026-11-01: the USA page uses the master prices and plan names.
-  '/website-maintenance-services-for-usa/': [
-    ['$49/mo\n\n[Get Started](/get-a-free-quote/)', '$79/mo\n\n[Get Started](/get-a-free-quote/#essential)'],
-    ['$99/mo\n\n[Get Started](/get-a-free-quote/)', '$149/mo\n\n[Get Started](/get-a-free-quote/#growth)'],
-    ['$199/mo\n\n[Get Started](/get-a-free-quote/)', '$299/mo\n\n[Get Started](/get-a-free-quote/#business)'],
-    ['#### Basic\n', '#### Essential\n'],
-    ['#### Standard\n', '#### Growth\n'],
-    ['#### Premium\n', '#### Business\n'],
-    ['Everything in Basic +', 'Everything in Essential +'],
-    ['Everything in Standard +', 'Everything in Growth +'],
-  ],
   // Master price list on pages whose plan cards still showed the old $95/$195/$395 plans.
-  '/website-maintenance-services-for-netherlands/': [["### Advanced","### Growth"],["### Elevate","### Business"],["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
-  '/website-maintenance-services-for-switzerland/': [["### Advanced","### Growth"],["### Elevate","### Business"],["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
-  '/website-maintenance-services-for-spain/': [["### Advanced","### Growth"],["### Elevate","### Business"],["Save 20% with annual billing.","2 meses gratis with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 meses gratis"],["or $156/mo billed annually","or $1,490/yr, 2 meses gratis"],["or $316/mo billed annually","or $2,990/yr, 2 meses gratis"]],
   '/wordpress-website-maintenance-packages/': [
     ['starting at $95/month, with 20% off when you pay annually', 'starting at $79/month, with 2 months free when you pay annually'],
     ['Pay annually and save 20% on every plan.', 'Pay annually and get 2 months free on every plan.'],
@@ -128,7 +118,8 @@ const PRICE_CHANGES = {
 // Old text the owner approved replacing, so the parity test does not report it as lost.
 const allFrom = [...Object.values(PRICE_CHANGES), ...Object.values(CARD_PRICES)].flat().map(([from]) => from).filter((f) => typeof f === 'string');
 const CHANGED_TABLE_ROWS = ['Basic', 'Standard', 'Premium', '$49/mo', '$99/mo', '$199/mo', 'WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
-export const isApprovedOldLine = (line) => ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
+const countryFrom = Object.keys(LOCAL_PATHS).flatMap((p) => countryPairs(p)).map(([from]) => from).filter((s) => typeof s === 'string' && !s.includes('\n'));
+export const isApprovedOldLine = (line) => COUNTRY_OLD_LINES.includes(line) || countryFrom.some((s) => line.includes(s)) || ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
 // Schema question whose visible text is a section rather than an FAQ entry.
 const SECTION_ANSWERS = {
@@ -176,7 +167,7 @@ export function visibleFaqs(body, schemaQuestions) {
 
 export function applyFaqChanges(path, body, schema, log) {
   let out = body;
-  for (const [from, to] of [...(PRICE_CHANGES[path] ?? []), ...(CARD_PRICES[path] ?? [])]) {
+  for (const [from, to] of [...(PRICE_CHANGES[path] ?? []), ...(CARD_PRICES[path] ?? []), ...countryPairs(path)]) {
     const before = out;
     out = typeof from === 'string' ? out.replaceAll(from, () => to) : out.replace(from, () => to);
     log.push({ path, change: before === out ? 'price text gone' : 'price', from: String(from), to });
@@ -249,6 +240,7 @@ export function applyFaqChanges(path, body, schema, log) {
 
 // Same pages: old plan prices in meta descriptions, social tags and schema.
 export function masterPriceMeta(path, value) {
+  if (LOCAL_PATHS[path]) return countryMeta(path, value);
   if (!CARD_PRICES[path] || typeof value !== 'string') return value;
   return value
     .replace(/\$95\b/g, '$79')

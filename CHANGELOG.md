@@ -103,3 +103,8 @@
 ## USA prices (2026-11-01, owner's decision)
 - USA page: Basic $49, Standard $99, Premium $199 became Essential $79, Growth $149, Business $299. Plan buttons use the hash links. Card feature lists are unchanged.
 - Corrected a Batch 3 mistake: "Plans from $79/mo" was on the UK, France and Ireland first screens, whose cards show £ and € prices. Removed until the owner decides those prices.
+
+## Country prices (2026-11-01, owner's decision)
+- All 10 country pages: homepage plans converted to local currency with the local sign. See reports/country-prices.md. Names Essential, Growth, Business; buttons use hash links; annual price added to each card.
+- Corrected: Canada, Australia and Brazil also had their own prices, and their first screens wrongly said "Plans from $79/mo".
+- Build check fails if a country page misses a local price or shows a dollar price (USA excepted).

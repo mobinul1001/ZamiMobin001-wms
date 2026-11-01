@@ -137,13 +137,15 @@ Transparent, effective maintenance tiers for French businesses.
 
 <div class="card">
 
-#### Basic Plan
+#### Essential
 
 Perfect for small websites and local businesses.
 
-€49/mo
+€71/mo
 
-[Choose Plan](/get-a-free-quote/)
+or €710/yr, 2 months free
+
+[Choose Plan](/get-a-free-quote/#essential)
 
 -   Monthly Updates
 -   Basic Malware Scan
@@ -160,15 +162,17 @@ Perfect for small websites and local businesses.
 
 POPULAR
 
-#### Standard Plan
+#### Growth
 
 Ideal for growing businesses & service websites.
 
-€99/mo
+€133/mo
 
-[Choose Plan](/get-a-free-quote/)
+or €1,330/yr, 2 months free
 
--   Everything in Basic +
+[Choose Plan](/get-a-free-quote/#growth)
+
+-   Everything in Essential +
 -   **Bi-Weekly** Updates
 -   Advanced Firewall
 -   Advanced Speed Opt
@@ -183,15 +187,17 @@ Ideal for growing businesses & service websites.
 
 <div class="card">
 
-#### Premium Plan
+#### Business
 
 For eCommerce, high-traffic & mission-critical sites.
 
-€199/mo
+€268/mo
 
-[Choose Plan](/get-a-free-quote/)
+or €2,680/yr, 2 months free
 
--   Everything in Standard +
+[Choose Plan](/get-a-free-quote/#business)
+
+-   Everything in Growth +
 -   **Weekly** Updates
 -   Daily Monitoring
 -   Malware Removal
@@ -217,7 +223,7 @@ We check your site for security risks, speed issues, and errors.
 
 #### 2\. Choose a Care Plan
 
-Pick Basic, Standard, or Premium based on your needs.
+Pick Essential, Growth, or Business based on your needs.
 
 #### 3\. Onboarding & Setup
 

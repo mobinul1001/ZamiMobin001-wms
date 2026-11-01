@@ -6,26 +6,18 @@ import prices from '../../data/prices.json';
 
 const { entry } = Astro.props;
 const { path, lang, h1 } = entry.data;
-const low = prices.plans[0].monthly;
+const local = (prices.local as Record<string, { monthly: string[] }>)[path];
+const low = local?.monthly[0] ?? `$${prices.plans[0].monthly}`;
 const plans = '/monthly-website-maintenance-packages/';
 const quote = '/get-a-free-quote/';
 const check = '/free-website-maintenance-audit/';
 
 // Starting prices come only from the master list. Pages with an unanswered price set show none.
-const FROM_LOW = [
-  '/wordpress-website-maintenance-packages/',
-  '/website-maintenance-services-for-usa/',
-  '/website-maintenance-services-for-canada/',
-  '/website-maintenance-services-for-australia/',
-  '/website-maintenance-services-for-netherlands/',
-  '/website-maintenance-services-for-switzerland/',
-  '/website-maintenance-services-for-spain/',
-  '/website-maintenance-services-for-brazil/',
-];
+const FROM_LOW = ['/wordpress-website-maintenance-packages/', ...Object.keys(prices.local)];
 const text = {
-  en: { home: 'Home', from: `Plans from $${low}/mo · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
-  es: { home: 'Inicio', from: `Planes desde $${low}/mes · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
-  pt: { home: 'Início', from: `Planos a partir de $${low}/mês · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
+  en: { home: 'Home', from: `Plans from ${low}/mo · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
+  es: { home: 'Inicio', from: `Planes desde ${low}/mes · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
+  pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
 }[(lang ?? 'en').slice(0, 2)] ?? { home: 'Home', from: '', plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' };
 
 let priceLine = FROM_LOW.includes(path) ? text.from : '';

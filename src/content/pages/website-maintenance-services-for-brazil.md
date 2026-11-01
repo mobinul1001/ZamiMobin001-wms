@@ -138,13 +138,15 @@ Planos transparentes e eficazes para empresas brasileiras.
 
 <div class="card">
 
-#### Plano Básico
+#### Plano Essential
 
 Perfeito para pequenos sites e negócios locais.
 
-R$ 249/mês
+R$ 429/mês
 
-[Escolher Plano](/get-a-free-quote/)
+ou R$ 4.290/ano, 2 meses grátis
+
+[Escolher Plano](/get-a-free-quote/#essential)
 
 -   Atualizações Mensais
 -   Verificação Básica de Malware
@@ -161,15 +163,17 @@ R$ 249/mês
 
 POPULAR
 
-#### Plano Padrão
+#### Plano Growth
 
 Ideal para empresas em crescimento e sites de serviços.
 
-R$ 499/mês
+R$ 809/mês
 
-[Escolher Plano](/get-a-free-quote/)
+ou R$ 8.090/ano, 2 meses grátis
 
--   Inclui tudo no Básico +
+[Escolher Plano](/get-a-free-quote/#growth)
+
+-   Inclui tudo no Essential +
 -   **Atualizações Quinzenais**
 -   Proteção Avançada de Firewall
 -   Otimização Avançada de Velocidade
@@ -184,15 +188,17 @@ R$ 499/mês
 
 <div class="card">
 
-#### Plano Premium
+#### Plano Business
 
 Para sites de eCommerce, tráfego alto e sites críticos.
 
-R$ 999/mês
+R$ 1.624/mês
 
-[Escolher Plano](/get-a-free-quote/)
+ou R$ 16.240/ano, 2 meses grátis
 
--   Inclui tudo no Padrão +
+[Escolher Plano](/get-a-free-quote/#business)
+
+-   Inclui tudo no Growth +
 -   **Atualizações Semanais**
 -   Monitoramento Diário
 -   Garantia de Remoção de Malware
@@ -218,7 +224,7 @@ Analisamos segurança, velocidade e possíveis erros.
 
 #### 2\. Escolha de Plano
 
-Escolha entre Básico, Padrão ou Premium.
+Escolha entre Essential, Growth ou Business.
 
 #### 3\. Onboarding e Configuração
 

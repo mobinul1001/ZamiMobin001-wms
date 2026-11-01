@@ -130,13 +130,15 @@ Professional 3-tier plans designed for small businesses, growing companies, and 
 
 <div class="card">
 
-#### Basic
+#### Essential
 
 Perfect for small UK businesses, bloggers, and startups.
 
-£39/mo
+£59/mo
 
-[Choose Plan](/get-a-free-quote/)
+or £590/yr, 2 months free
+
+[Choose Plan](/get-a-free-quote/#essential)
 
 -   Monthly Updates
 -   Monthly Backups
@@ -153,15 +155,17 @@ Perfect for small UK businesses, bloggers, and startups.
 
 POPULAR
 
-#### Standard
+#### Growth
 
 Ideal for service businesses, agencies & high-content websites.
 
-£89/mo
+£111/mo
 
-[Choose Plan](/get-a-free-quote/)
+or £1,110/yr, 2 months free
 
--   Everything in Basic +
+[Choose Plan](/get-a-free-quote/#growth)
+
+-   Everything in Essential +
 -   **Weekly** Updates
 -   **Weekly** Automated Backups
 -   Advanced Firewall
@@ -175,15 +179,17 @@ Ideal for service businesses, agencies & high-content websites.
 
 <div class="card">
 
-#### Premium
+#### Business
 
 Best for eCommerce, large organisations & high-traffic sites.
 
-£179/mo
+£223/mo
 
-[Choose Plan](/get-a-free-quote/)
+or £2,230/yr, 2 months free
 
--   Everything in Standard +
+[Choose Plan](/get-a-free-quote/#business)
+
+-   Everything in Growth +
 -   Daily Security Monitoring
 -   **Daily** + Cloud Backups
 -   Malware Removal
