@@ -59,6 +59,25 @@ const BODY_LINKS = {
 // they are listed in reports/faq-schema-sync.md for the owner.
 const PLANS_EN = 'Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free).';
 const PLANS_OLD = 'Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.';
+const CARD_PRICES = {
+  // Master price list on pages whose plan cards still showed the old $95/$195/$395 plans.
+  '/website-maintenance-services-for-netherlands/': [["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
+  '/website-maintenance-services-for-switzerland/': [["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
+  '/website-maintenance-services-for-spain/': [["Save 20% with annual billing.","2 meses gratis with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 meses gratis"],["or $156/mo billed annually","or $1,490/yr, 2 meses gratis"],["or $316/mo billed annually","or $2,990/yr, 2 meses gratis"]],
+  '/wordpress-website-maintenance-packages/': [
+    ['starting at $95/month, with 20% off when you pay annually', 'starting at $79/month, with 2 months free when you pay annually'],
+    ['Pay annually and save 20% on every plan.', 'Pay annually and get 2 months free on every plan.'],
+    ['Save 20% with annual billing', '2 months free with annual billing'],
+    ['Off Annual Billing', 'Free With Annual Billing'],
+    [/^20%$/m, '2 months'],
+    ['| WP Starter | $1,140 | $912 | $228 |', '| WP Starter | $948 | $790, 2 months free | $158 |'],
+    ['| WP Growth | $2,340 | $1,872 | $468 |', '| WP Growth | $1,788 | $1,490, 2 months free | $298 |'],
+    ['| WP Premium | $4,740 | $3,792 | $948 |', '| WP Premium | $3,588 | $2,990, 2 months free | $598 |'],
+    ['| Annual Billing (per month) | $76 | $156 | $316 |', '| Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |'],
+    ...[["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
+  ],
+};
+
 const PRICE_CHANGES = {
   '/monthly-website-maintenance-packages/': [
     ['Our plans start at $95 per month for basic maintenance and go up to $395 per month for advanced, mission-critical website care.', 'Our plans start at $79 per month for basic maintenance and go up to $299 per month for advanced, mission-critical website care.'],
@@ -96,8 +115,9 @@ const PRICE_CHANGES = {
   ],
 };
 // Old text the owner approved replacing, so the parity test does not report it as lost.
-const allFrom = Object.values(PRICE_CHANGES).flat().map(([from]) => from).filter((f) => typeof f === 'string');
-export const isApprovedOldLine = (line) => /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
+const allFrom = [...Object.values(PRICE_CHANGES), ...Object.values(CARD_PRICES)].flat().map(([from]) => from).filter((f) => typeof f === 'string');
+const CHANGED_TABLE_ROWS = ['WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
+export const isApprovedOldLine = (line) => line === '20%' || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
 // Schema question whose visible text is a section rather than an FAQ entry.
 const SECTION_ANSWERS = {
@@ -145,7 +165,7 @@ export function visibleFaqs(body, schemaQuestions) {
 
 export function applyFaqChanges(path, body, schema, log) {
   let out = body;
-  for (const [from, to] of PRICE_CHANGES[path] ?? []) {
+  for (const [from, to] of [...(PRICE_CHANGES[path] ?? []), ...(CARD_PRICES[path] ?? [])]) {
     const before = out;
     out = typeof from === 'string' ? out.replaceAll(from, () => to) : out.replace(from, () => to);
     log.push({ path, change: before === out ? 'price text gone' : 'price', from: String(from), to });
@@ -214,4 +234,17 @@ export function applyFaqChanges(path, body, schema, log) {
   };
   prune(schema);
   return out;
+}
+
+// Same pages: old plan prices in meta descriptions, social tags and schema.
+export function masterPriceMeta(path, value) {
+  if (!CARD_PRICES[path] || typeof value !== 'string') return value;
+  return value
+    .replace(/\$95\b/g, '$79')
+    .replace(/\$195\b/g, '$149')
+    .replace(/\$395\b/g, '$299')
+    .replace(/20% off annual( billing)?/g, '2 months free on annual$1')
+    .replace(/^95\.00$/, '79.00')
+    .replace(/^195\.00$/, '149.00')
+    .replace(/^395\.00$/, '299.00');
 }

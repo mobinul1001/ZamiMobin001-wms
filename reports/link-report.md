@@ -15,13 +15,11 @@ None
 - /wms-partner-program/
 - /write-for-us/
 
-## Fewer than 3 body links in (9)
+## Fewer than 3 body links in (7)
 - /agreement/ (1)
 - /cookie-policy/ (1)
-- /error-establishing-a-database-connection-wordpress/ (2)
 - /privacy-policy/ (1)
 - /refund-cancellation-policy/ (1)
 - /terms-conditions/ (1)
-- /there-has-been-a-critical-error-on-this-website-wordpress/ (2)
 - /website-hacked-recovery-services/ (2)
 - /website-update-services/ (2)

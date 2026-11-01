@@ -200,6 +200,10 @@ article { min-width: 0; }
 }
 
 /* Site additions */
+.service-body { max-width: 980px; padding-block: 28px 64px; }
+.service-body .prose { margin-top: 0; max-width: none; }
+.service-body .prose p, .service-body .prose li { max-width: 70ch; }
+.service-body .card p, .service-body .card li { max-width: none; }
 .eyebrow { margin: 2em 0 -1.2em; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent-ink); }
 .post-meta-list { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 0; padding: 0 !important; list-style: none; font-size: 0.93rem; color: var(--muted); }
 .post-meta-list a { color: var(--muted); }

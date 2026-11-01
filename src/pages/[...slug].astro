@@ -6,6 +6,7 @@ import Pricing from '../components/templates/Pricing.astro';
 import Generic from '../components/templates/Generic.astro';
 import Article from '../components/templates/Article.astro';
 import BlogIndex from '../components/templates/BlogIndex.astro';
+import Service from '../components/templates/Service.astro';
 
 export async function getStaticPaths() {
   const entries = [...(await getCollection('pages')), ...(await getCollection('blog'))];
@@ -18,11 +19,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { title, description, robots, social, schema, lang, path } = entry.data;
 const ARTICLE_PAGES = ['/agreement/', '/website-maintenance-checklist/', '/website-maintenance-process/', '/website-maintenance-case-study/'];
+const SERVICE_PAGES = ['/wordpress-website-maintenance-packages/', '/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/', '/website-repair-services/', '/website-hacked-recovery-services/', '/wordpress-malware-removal-service/', '/website-migration-services/', '/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/wordpress-backup-services/', '/white-label-website-maintenance-services-for-agencies/', '/wms-partner-program/'];
 const pick = () => {
   if (path === '/') return Home;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (entry.collection === 'blog' || ARTICLE_PAGES.includes(path)) return Article;
+  if (SERVICE_PAGES.includes(path) || path.startsWith('/website-maintenance-services-for-')) return Service;
   return Generic;
 };
 const Template = pick();

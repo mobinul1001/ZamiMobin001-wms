@@ -1463,6 +1463,48 @@
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "Get 2 months free with annual billing."
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
       "change": "schema synced",
       "question": "Do you offer website maintenance services in the Netherlands?"
     },
@@ -1496,6 +1538,48 @@
       "change": "price",
       "from": "/95(?:&nbsp;|\\s)USD\\/mes \\(Essential\\), 195(?:&nbsp;|\\s)USD\\/mes \\(Advanced\\) y 395(?:&nbsp;|\\s)USD\\/mes \\(Elevate\\), con un 20% de descuento en el pago anual/g",
       "to": "79 USD/mes (Essential), 149 USD/mes (Growth) y 299 USD/mes (Business), o 790, 1.490 y 2.990 USD al año (2 meses gratis)"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "2 meses gratis with annual billing."
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 meses gratis"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 meses gratis"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 meses gratis"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1537,6 +1621,48 @@
       "change": "price",
       "from": "Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.",
       "to": "Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free)."
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "Get 2 months free with annual billing."
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -2948,6 +3074,96 @@
       "change": "price",
       "from": "The WP Premium plan includes full WooCommerce",
       "to": "The Business plan includes full WooCommerce"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "starting at $95/month, with 20% off when you pay annually",
+      "to": "starting at $79/month, with 2 months free when you pay annually"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Pay annually and save 20% on every plan.",
+      "to": "Pay annually and get 2 months free on every plan."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Save 20% with annual billing",
+      "to": "2 months free with annual billing"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "Off Annual Billing",
+      "to": "Free With Annual Billing"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^20%$/m",
+      "to": "2 months"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "| WP Starter | $1,140 | $912 | $228 |",
+      "to": "| WP Starter | $948 | $790, 2 months free | $158 |"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "| WP Growth | $2,340 | $1,872 | $468 |",
+      "to": "| WP Growth | $1,788 | $1,490, 2 months free | $298 |"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "| WP Premium | $4,740 | $3,792 | $948 |",
+      "to": "| WP Premium | $3,588 | $2,990, 2 months free | $598 |"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "| Annual Billing (per month) | $76 | $156 | $316 |",
+      "to": "| Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
     },
     {
       "path": "/wordpress-website-maintenance-packages/",
