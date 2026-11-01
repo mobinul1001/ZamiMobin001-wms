@@ -25,9 +25,21 @@ migration-pipeline.v2
 
 ● Live Transfer
 
-Old Hosting Source Server
+<div class="cards">
 
-New Hosting Optimized Server
+<div class="card">
+
+<p class="pair"><strong>Old Hosting</strong> <span>Source Server</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>New Hosting</strong> <span>Optimized Server</span></p>
+
+</div>
+
+</div>
 
 Database & Files Transferred
 
@@ -55,19 +67,19 @@ In Progress
 
 <div class="card">
 
-100% Data Integrity Saved
+<p class="pair"><strong>100%</strong> <span>Data Integrity Saved</span></p>
 
 </div>
 
 <div class="card">
 
-Zero SEO Ranking Loss
+<p class="pair"><strong>Zero</strong> <span>SEO Ranking Loss</span></p>
 
 </div>
 
 <div class="card">
 
-&lt; 15 Mins Average Downtime
+<p class="pair"><strong>&lt; 15 Mins</strong> <span>Average Downtime</span></p>
 
 </div>
 
@@ -436,12 +448,9 @@ New Platform
 
 Move your site to a different platform.
 
-From $999 / one-time fee
+<p class="pair"><strong>Custom Quote</strong> <span>Starting from $1499</span></p>
 
--   Move between platforms, such as Wix, Joomla or Drupal to WordPress
--   Quoted after we review your site
-
-[Ask About a Platform Change](/get-a-free-quote/#platform-migration)
+[Get a Custom Quote](/get-a-free-quote/#enterprise-migration)
 
 </div>
 
@@ -575,7 +584,7 @@ Proven Social Proof
 
 <div class="card">
 
-Healthcare Portal Case #01
+<p class="pair"><strong>Healthcare Portal</strong> <span>Case #01</span></p>
 
 ### AMZ Hospital BD
 
@@ -589,13 +598,13 @@ Patient & client portals: we build them as a separate, secured system — your m
 
 <div class="card">
 
-0 Mins Downtime
+<p class="pair"><strong>0 Mins</strong> <span>Downtime</span></p>
 
 </div>
 
 <div class="card">
 
-+45% Speed Gain
+<p class="pair"><strong>+45%</strong> <span>Speed Gain</span></p>
 
 </div>
 
@@ -607,7 +616,7 @@ Result: SEO Preserved
 
 <div class="card">
 
-Travel & Tours Case #02
+<p class="pair"><strong>Travel &amp; Tours</strong> <span>Case #02</span></p>
 
 ### St. Lucian Taxi & Tours
 
@@ -619,13 +628,13 @@ stluciantaxiandtours.com
 
 <div class="card">
 
-&lt;24 Hrs Turnaround
+<p class="pair"><strong>&lt;24 Hrs</strong> <span>Turnaround</span></p>
 
 </div>
 
 <div class="card">
 
-100% Booking Integrity
+<p class="pair"><strong>100%</strong> <span>Booking Integrity</span></p>
 
 </div>
 
@@ -637,7 +646,7 @@ Result: Zero Lost Orders
 
 <div class="card">
 
-Real Estate Directory Case #03
+<p class="pair"><strong>Real Estate Directory</strong> <span>Case #03</span></p>
 
 ### MI Property Portal
 
@@ -649,13 +658,13 @@ mipropertyportal.com
 
 <div class="card">
 
-100% Database Integrity
+<p class="pair"><strong>100%</strong> <span>Database Integrity</span></p>
 
 </div>
 
 <div class="card">
 
-0 Errors GSC Index
+<p class="pair"><strong>0 Errors</strong> <span>GSC Index</span></p>
 
 </div>
 

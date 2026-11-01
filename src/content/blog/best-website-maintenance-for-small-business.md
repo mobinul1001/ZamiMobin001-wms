@@ -19,11 +19,27 @@ Quick answer: Small business website maintenance costs $20 to $600+ per month in
 
 Running a small business without proper website maintenance is like owning a shop and never cleaning it — your site might exist, but it will not convert, rank, or perform. For most small businesses, the website is the #1 sales channel, so the real question is not *whether* to maintain it, but which website maintenance plan and price fit your budget.
 
-$75–$200Typical plan / month
+<div class="cards">
 
-43%of attacks hit small business
+<div class="card">
 
-2 months free on annual billing
+<p class="pair"><strong>$95+</strong> <span>Typical plan / month</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>43%</strong> <span>of attacks hit small business</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>20%</strong> <span>saved billed annually</span></p>
+
+</div>
+
+</div>
 
 <a id="cost"></a>
 
@@ -343,11 +359,27 @@ Consistent website maintenance improves security, performance, rankings, and bus
 
 Maintenance is not optional for a business website — the numbers make the case:
 
-~43%of cyberattacks target small businesses
+<div class="cards">
 
-43%of all sites run on WordPress
+<div class="card">
 
-53%leave if a page takes 3s+ (Google)
+<p class="pair"><strong>~43%</strong> <span>of cyberattacks target small businesses</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>43%</strong> <span>of all sites run on WordPress</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>53%</strong> <span>leave if a page takes 3s+ (Google)</span></p>
+
+</div>
+
+</div>
 
 Outdated plugins, slow pages, and missing backups directly cost small businesses traffic, rankings, and sales. Consistent maintenance protects all three — preventive care is always cheaper than emergency repair.
 

@@ -9,8 +9,8 @@ Not pushing yet. A plan and the owner's approval before each step. Commit locall
 
 | Step | Status |
 |---|---|
-| 1. Design review screenshots | Done: `reports/design-review/`. The owner finds the current design too plain. New design work is below. |
-| 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Plan approved. Research and outlines for homepage, pricing and WordPress may run now. No new text goes into pages until the owner chooses design A or B. |
+| 1. Design review screenshots | Done. Mockups A and B built: `mockups/v2/`, screenshots in `reports/mockups-v2/`. **Waiting for the owner to choose A or B.** |
+| 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Research and outlines done for homepage, pricing and WordPress: `reports/content-outlines/`. No new text goes into pages until the owner chooses A or B and approves the outlines. |
 | 3. Service pages: problem, included, price, FAQ | Not started. |
 | 4. H2/H3 keyword edits and internal-link hub | Not started. |
 | 5. Sveltia CMS in local mode | Not started. |
@@ -26,6 +26,19 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Both include: headings 56–72px on desktop; hero with headline, subline, offer line and real buttons, plus a large "live maintenance dashboard" visual in HTML/CSS/SVG labelled "Example"; platforms strip (WordPress, WooCommerce, Shopify); bento grid for "What's included" with inline SVG icons and mini visuals; pricing cards with Growth highlighted by gradient border and glow, monthly/annual toggle; 4-step timeline with connecting line; comparison table as cards; FAQ accordion; dark gradient final CTA band; buttons instead of text links for CTAs; hover lift and scroll fade-in that respect prefers-reduced-motion; the purple/neon style of the blog images.
 - Limits: no heavy libraries, Lighthouse mobile at least 90, CLS 0, all existing text kept (parity).
 - Also fix: left alignment on service and country pages; the old fake panel and broken text rows on the repair page; flattened stats and labels; duplicate "About Us" and UK heading text.
+
+## Design fixes done (2026-11-01)
+- `CLAIMS-AND-DESIGN.md` section B is now "Modern premium SaaS". Section A is unchanged.
+- Left alignment on service and country pages fixed.
+- Flattened stats fixed in the converter: 2 text pieces become a title and label (`.pair`), and rows of them become cards.
+- Repair page: old panel is now a clean status panel labelled "Example"; the "emergency-repair-engine.v2" label is gone.
+- Duplicate line under the H1 removed on about, UK, Canada, France and Ireland.
+- A "99.99% Uptime SLA" stat on the white-label agencies page had escaped the check because its text was joined to the next word. The owner had already removed this claim, so it is now removed.
+
+**Waiting on the owner:**
+- Choose design A or B.
+- The same fake labels as the repair page remain on 6 other pages: design (responsive-ui-frame.v2), migration (migration-pipeline.v2), SEO (seo-performance-tracker.v2), updates (managed-update-engine.v4), backup (offsite-backup-engine.v2), malware (security-scanner.v4). Not removed, since the owner named only the repair page.
+- Outline questions in `reports/content-outlines/README.md`.
 
 ## 1. What is done, per phase
 
@@ -156,8 +169,8 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 
 ## 4. Next steps
 
-1. Update `CLAIMS-AND-DESIGN.md` section B and build mockups A and B, once the brief is confirmed after the compact. The owner chooses one.
-2. Research and outlines for homepage, pricing and WordPress. Apply the chosen design to the templates, then write new text after outline approval.
+1. Owner chooses A or B. Then apply it to all templates (homepage first).
+2. Write new text after the outlines are approved.
 3. Steps 3 to 6 of the work order, each with a plan and approval.
 4. Keep every template change passing: `npm run build`, `npm run parity`, `node scripts/test-build-checks.mjs`, `node scripts/test-browser-features.mjs`, `node scripts/link-report.mjs`.
 5. Owner creates the private GitHub repo, pushes, and connects Netlify. Steps were given earlier in this project; no custom domain and no DNS change.

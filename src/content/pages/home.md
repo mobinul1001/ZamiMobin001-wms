@@ -21,17 +21,45 @@ Security & Backups Updates & Fixes 24/7 Support
 
 ## Everything We Take Care Of
 
-Security & MalwareScans, hardening & removal
+<div class="cards">
 
-WordPress & Plugin UpdatesSafe, tested updates
+<div class="card">
 
-Daily BackupsBackup & fast recovery
+<p class="pair"><strong>Security &amp; Malware</strong> <span>Scans, hardening &amp; removal</span></p>
 
-Speed OptimizationCore Web Vitals
+</div>
 
-SEO Health ChecksBroken links & errors
+<div class="card">
 
-24/7 MonitoringUptime & support
+<p class="pair"><strong>WordPress &amp; Plugin Updates</strong> <span>Safe, tested updates</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Daily Backups</strong> <span>Backup &amp; fast recovery</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Speed Optimization</strong> <span>Core Web Vitals</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>SEO Health Checks</strong> <span>Broken links &amp; errors</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>24/7 Monitoring</strong> <span>Uptime &amp; support</span></p>
+
+</div>
+
+</div>
 
 Monthly performance reports [See full checklist →](/website-maintenance-checklist/)
 
@@ -348,13 +376,33 @@ We run a full website audit, fix urgent issues, and set up security, backups, an
 
  [<img src="/wp-content/uploads/2026/06/clutch-trusted-by-clients.webp" alt="Clutch Trusted Partner Badge" width="1838" height="856" loading="lazy">](https://clutch.co/profile/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/sortlist-verified-agency.webp" alt="Sortlist Verified Agency Badge" width="664" height="226" loading="lazy">](https://www.sortlist.com/agency/website-maintenance-services-usa)[<img src="/wp-content/uploads/2026/06/goodfirms-partner-badge.webp" alt="GoodFirms Partner Badge" width="1930" height="815" loading="lazy">](https://www.goodfirms.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/techreviewer-featured-on-techreviewer.webp" alt="Featured on Techreviewer" width="1774" height="887" loading="lazy">](https://techreviewer.co/companies/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/c2c-review-top-rated-badge.webp" alt="C2C Review Top Rated Badge" width="1774" height="887" loading="lazy">](https://c2creview.co/company/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/agency-spotter-recognized-by-agency-spotter.webp" alt="Recognized by Agency Spotter" width="1774" height="887" loading="lazy">](https://www.agencyspotter.com/website-maintenance-services)[<img src="/wp-content/uploads/2026/06/itfirms-listed-on-itfirms.webp" alt="Listed on ITFirms Badge" width="1774" height="887" loading="lazy">](https://www.itfirms.co/)[<img src="/wp-content/uploads/2026/06/trustpilot-find-us-on-trustpilot.webp" alt="Find us on Trustpilot Badge" width="1774" height="887" loading="lazy">](https://www.trustpilot.com/review/websitemaintenanceservices.org)
 
-No Long-Term Contracts Cancel anytime, no penalty
+<div class="cards">
 
-Fast Response Times Urgent issues handled quickly
+<div class="card">
 
-Transparent Pricing No hidden fees, ever
+<p class="pair"><strong>No Long-Term Contracts</strong> <span>Cancel anytime, no penalty</span></p>
 
-Expert Developers Certified, experienced team
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Fast Response Times</strong> <span>Urgent issues handled quickly</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Transparent Pricing</strong> <span>No hidden fees, ever</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Expert Developers</strong> <span>Certified, experienced team</span></p>
+
+</div>
+
+</div>
 
 ## Everything Your Website Needs in One Place
 
@@ -385,7 +433,7 @@ Here’s what consistent website maintenance did for one of our clients — a bu
 
 Page Load Speed
 
-4.8s1.9s
+<p class="pair"><strong>4.8s</strong> <span>1.9s</span></p>
 
 </div>
 
@@ -393,7 +441,7 @@ Page Load Speed
 
 Security
 
-None24/7
+<p class="pair"><strong>None</strong> <span>24/7</span></p>
 
 </div>
 
@@ -401,7 +449,7 @@ None24/7
 
 Downtime
 
-Often~0%
+<p class="pair"><strong>Often</strong> <span>~0%</span></p>
 
 </div>
 
@@ -409,7 +457,7 @@ Often~0%
 
 Booking Form
 
-ErrorsFixed
+<p class="pair"><strong>Errors</strong> <span>Fixed</span></p>
 
 </div>
 

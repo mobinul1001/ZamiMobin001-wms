@@ -13,8 +13,6 @@ Welcome to Website Maintenance Services, your trusted partner for keeping websit
 
 [Get Your Free Quote](/get-a-free-quote/) [Our Works](/works/)
 
-About Us
-
 ## Who We Are
 
 Website Maintenance Services is a dedicated team of web professionals focused solely on maintaining, updating, optimizing, and protecting websites. Unlike general web design agencies, our entire expertise is centered on one thing—ongoing website care.

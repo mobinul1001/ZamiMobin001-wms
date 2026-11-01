@@ -124,6 +124,7 @@ const STORE_REMOVALS = {
   '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Essential', 'Advanced', 'Elevate']),
   '/white-label-website-maintenance-services-for-agencies/': ($) => {
     removeCardFeatures($, 'white-label', ['Starter Plan', 'Growth Plan', 'Agency+ Custom']);
+    removeMatching($, [/^99\.99%\s*Uptime SLA$/]);
     removeTierCards($, 'agency-portal.v3', 'Your Brand');
     removeTierCards($, 'agency-ticketing-v2', 'PDF Ready');
     for (const block of ['Central Agency Dashboard', 'Dedicated Slack Channel', '24/7 Emergency Line', 'Need Custom SLA Options for an Enterprise Client?', 'How does your agency dashboard work?', 'Web Application Firewall']) removeBlock($, block);
@@ -212,7 +213,22 @@ export const hasApprovedRemoval = (path) => path in REMOVALS;
 const MAX_WORDS = { '/white-label-website-maintenance-services-for-agencies/': 1000, ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 620])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/white-label-website-maintenance-services-for-agencies/': 1000, '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
+// Owner, 2026-11-01: a line that repeats the page heading right under it goes. So does the fake label on the repair panel.
+const DUPLICATE_LINES = {
+  '/about-us/': 'About Us',
+  '/website-maintenance-services-for-uk/': 'Website Maintenance Services for the UK',
+  '/website-maintenance-services-for-canada/': 'Website Maintenance Services for Canada',
+  '/website-maintenance-services-for-france/': 'Website Maintenance Services for France',
+  '/website-maintenance-services-for-ireland/': 'Website Maintenance Services for Ireland',
+  '/website-repair-services/': 'emergency-repair-engine.v2',
+};
+
 export function applyApprovedRemovals($, path) {
+  if (DUPLICATE_LINES[path]) {
+    const text = DUPLICATE_LINES[path];
+    const found = $('body *').filter((_, x) => !$(x).is('h1, a, title') && !$(x).closest('nav, header, footer').length && $(x).text().trim() === text && !$(x).children().toArray().some((c) => $(c).text().trim() === text));
+    found.first().remove();
+  }
   if (!REMOVALS[path]) return;
   const before = countWords($);
   REMOVALS[path]($);

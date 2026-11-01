@@ -21,11 +21,27 @@ categories: ["Industry"]
 
 The numbers tell the story: security researchers track more than 250 new plugin vulnerabilities every week, brute-force login attacks make up roughly 40% of all attempted breaches, and thousands of WordPress sites are compromised every single day.
 
-250+new plugin vulnerabilities tracked every week
+<div class="cards">
 
-~40%of attempted breaches are brute-force login attacks
+<div class="card">
 
-43%+of the web runs on WordPress — the biggest target
+<p class="pair"><strong>250+</strong> <span>new plugin vulnerabilities tracked every week</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>~40%</strong> <span>of attempted breaches are brute-force login attacks</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>43%+</strong> <span>of the web runs on WordPress — the biggest target</span></p>
+
+</div>
+
+</div>
 
 This checklist walks through every layer of WordPress security, ordered by priority. Start at the top and work down. You don't need to be a developer to do most of it, and each step closes a door that attackers actively try.
 
@@ -33,7 +49,7 @@ This checklist walks through every layer of WordPress security, ordered by prior
 
 <a id="p1"></a>
 
-P1Keep Everything Updated
+<p class="pair"><strong>P1</strong> <span>Keep Everything Updated</span></p>
 
 This is the single most impactful thing you can do, because outdated software is the number-one cause of hacked WordPress sites. Around 96% of WordPress vulnerabilities are found in plugins and themes — not the core software — and attackers exploit newly disclosed flaws within hours.
 
@@ -45,7 +61,7 @@ This is the single most impactful thing you can do, because outdated software is
 
 <a id="p2"></a>
 
-P2Lock Down Your Login Page
+<p class="pair"><strong>P2</strong> <span>Lock Down Your Login Page</span></p>
 
 The login page is the most attacked URL on any WordPress site, because its location is predictable and bots hammer it thousands of times per second. Hardening it stops the most common attack outright.
 
@@ -58,7 +74,7 @@ The login page is the most attacked URL on any WordPress site, because its locat
 
 <a id="p3"></a>
 
-P3Install a Security Plugin and Firewall
+<p class="pair"><strong>P3</strong> <span>Install a Security Plugin and Firewall</span></p>
 
 A good security plugin adds the monitoring and active defense layer that hardening alone doesn't provide.
 
@@ -69,7 +85,7 @@ A good security plugin adds the monitoring and active defense layer that hardeni
 
 <a id="p4"></a>
 
-P4Secure Your Critical Files and Configuration
+<p class="pair"><strong>P4</strong> <span>Secure Your Critical Files and Configuration</span></p>
 
 A few configuration changes eliminate entire categories of attack. Some of these are more technical — if you're not comfortable editing server files, this is a good point to get help.
 
@@ -82,7 +98,7 @@ A few configuration changes eliminate entire categories of attack. Some of these
 
 <a id="p5"></a>
 
-P5Enforce HTTPS/SSL
+<p class="pair"><strong>P5</strong> <span>Enforce HTTPS/SSL</span></p>
 
 SSL is baseline in 2026, not optional. It encrypts data between your site and visitors, and browsers flag sites without it as "Not Secure."
 
@@ -92,7 +108,7 @@ SSL is baseline in 2026, not optional. It encrypts data between your site and vi
 
 <a id="p6"></a>
 
-P6Set Up Reliable, Off-Site Backups
+<p class="pair"><strong>P6</strong> <span>Set Up Reliable, Off-Site Backups</span></p>
 
 Backups are your safety net — if everything else fails, a clean backup is the difference between a quick recovery and starting over.
 
@@ -103,7 +119,7 @@ Backups are your safety net — if everything else fails, a clean backup is the 
 
 <a id="p7"></a>
 
-P7Harden Hosting and Database
+<p class="pair"><strong>P7</strong> <span>Harden Hosting and Database</span></p>
 
 Your hosting environment is part of your security posture.
 
@@ -113,7 +129,7 @@ Your hosting environment is part of your security posture.
 
 <a id="p8"></a>
 
-P8Monitor Continuously
+<p class="pair"><strong>P8</strong> <span>Monitor Continuously</span></p>
 
 Security isn't a one-time setup — it's an ongoing habit. The sites that stay safe are the ones being watched.
 

@@ -409,6 +409,7 @@
 
 ## /website-maintenance-services-for-canada/
 
+- Website Maintenance Services for Canada
 - Monthly Updates
 - Monthly Full Backups
 - Basic Security Scanning
@@ -438,6 +439,7 @@
 
 ## /website-maintenance-services-for-france/
 
+- Website Maintenance Services for France
 - Monthly Updates
 - Basic Malware Scan
 - Monthly Backups
@@ -468,6 +470,7 @@
 
 ## /website-maintenance-services-for-ireland/
 
+- Website Maintenance Services for Ireland
 - Monthly Updates
 - Basic Malware Scan
 - Monthly Backups
@@ -507,6 +510,7 @@
 
 ## /website-maintenance-services-for-uk/
 
+- Website Maintenance Services for the UK
 - Monthly Updates
 - Monthly Backups
 - Basic Security Scan
@@ -591,6 +595,7 @@
 
 ## /website-repair-services/
 
+- emergency-repair-engine.v2
 - Zero Risk Protection
 - If anything related to the original issue resurfaces within 30 days, we fix it again at no extra charge. We stand behind our engineering work.
 - What if the problem comes back after you fix it?
@@ -756,6 +761,8 @@
 - Included Free
 - Self-Serve Agency Portal Dashboard
 - Included
+- 99.99%
+- Uptime SLA
 - 1–5 Client Websites Maintained
 - 24-Hour SLA Response Time
 - 24/7 Security & Weekly Cloud Backups

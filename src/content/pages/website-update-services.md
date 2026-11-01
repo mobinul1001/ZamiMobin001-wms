@@ -27,15 +27,15 @@ managed-update-engine.v4
 
 ● Active Auto-Protection
 
-WordPress Core & Plugin Updates Tested & Applied Monthly
+<p class="pair"><strong>WordPress Core &amp; Plugin Updates</strong> <span>Tested &amp; Applied Monthly</span></p>
 
 Fully Updated
 
-Pre-Update Cloud Backup Off-Site Encrypted Storage
+<p class="pair"><strong>Pre-Update Cloud Backup</strong> <span>Off-Site Encrypted Storage</span></p>
 
 Verified Safe
 
-Staging-tested updates on the Business plan Functionality & QA Checked
+<p class="pair"><strong>Staging Environment Testing</strong> <span>Functionality &amp; QA Checked</span></p>
 
 Passed QA
 
@@ -79,7 +79,7 @@ Most website problems do not announce themselves — they build quietly until th
 
 Of WordPress websites have at least one vulnerable plugin installed that is exposed to public security exploits.
 
-Source: WPScan Research
+<p class="pair"><strong>Source:</strong> <span>WPScan Research</span></p>
 
 </div>
 
@@ -89,7 +89,7 @@ Source: WPScan Research
 
 Of hacked WordPress sites were running outdated core software at the time the security breach occurred.
 
-Source: Sucuri Threat Reports
+<p class="pair"><strong>Source:</strong> <span>Sucuri Threat Reports</span></p>
 
 </div>
 
@@ -99,7 +99,7 @@ Source: Sucuri Threat Reports
 
 Websites experiences unmanaged downtime or broken form functionality every single month due to unmonitored software conflicts.
 
-Source: Hosting Industry Data
+<p class="pair"><strong>Source:</strong> <span>Hosting Industry Data</span></p>
 
 </div>
 
@@ -109,7 +109,7 @@ $5,600
 
 Average cost of one hour of website downtime for a small business when lost sales, leads, and brand trust are factored in.
 
-Source: Gartner Estimates
+<p class="pair"><strong>Source:</strong> <span>Gartner Estimates</span></p>
 
 </div>
 
@@ -1567,7 +1567,7 @@ Swipe left/right to view all stories
 
 <div class="card">
 
-Legal Industry Plan: Growth
+<p class="pair"><strong>Legal Industry</strong> <span>Plan: Growth</span></p>
 
 ### Law Firm — Dallas, TX
 
@@ -1583,7 +1583,7 @@ Result: Submission Reliability Restored
 
 <div class="card">
 
-eCommerce Industry Plan: Business
+<p class="pair"><strong>eCommerce Industry</strong> <span>Plan: Business</span></p>
 
 ### eCommerce Store — Beauty Brand, UK
 
@@ -1599,7 +1599,7 @@ Result: 14 Months Zero Checkout Downtime
 
 <div class="card">
 
-Healthcare Industry Plan: Growth
+<p class="pair"><strong>Healthcare Industry</strong> <span>Plan: Growth</span></p>
 
 ### Healthcare Clinic — Toronto, Canada
 

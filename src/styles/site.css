@@ -217,7 +217,19 @@ article { min-width: 0; }
 .scan-form .btn { justify-self: start; border: 0; cursor: pointer; }
 .prose form button[type="submit"] { display: inline-flex; align-items: center; min-height: 46px; padding: 10px 20px; border: 0; border-radius: 8px; background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
 .prose form label { font-weight: 600; font-size: 0.95rem; }
-.service-body { max-width: 980px; padding-block: 28px 64px; }
+.service-body { padding-block: 28px 64px; }
+.prose .pair { margin: 12px 0; }
+.prose .pair strong { display: block; color: var(--ink); }
+.prose .pair span { color: var(--muted); font-size: 0.95rem; }
+.prose .card .pair { margin: 0; }
+.prose .card .pair strong { font-size: 1.15rem; }
+.status-panel { max-width: 640px; margin: 24px 0; padding: 8px 18px 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--soft); }
+.prose .status-panel p { max-width: none; }
+.status-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin: 8px 0; font-weight: 600; }
+.status-head .tag { font-size: 0.8rem; color: var(--muted); }
+.status-row { display: grid; grid-template-columns: 1fr auto; gap: 0 14px; margin: 0; padding: 10px 0; border-top: 1px solid var(--line); }
+.status-row span { grid-column: 1; color: var(--muted); font-size: 0.93rem; }
+.status-row em { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-style: normal; font-weight: 600; color: var(--ok); }
 .service-body .prose { margin-top: 0; max-width: none; }
 .service-body .prose p, .service-body .prose li { max-width: 70ch; }
 .service-body .card p, .service-body .card li { max-width: none; }

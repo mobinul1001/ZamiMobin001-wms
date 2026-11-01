@@ -23,7 +23,7 @@ This is that checklist. It walks through every phase of a redesign in order — 
 
 <a id="phase1"></a>
 
-1Planning and Discovery Checklist
+<p class="pair"><strong>1</strong> <span>Planning and Discovery Checklist</span></p>
 
 Skipping this phase is why so many redesigns look nice but fail to perform. Nail down the strategy before anyone touches a design.
 
@@ -39,7 +39,7 @@ Skipping this phase is why so many redesigns look nice but fail to perform. Nail
 
 <a id="phase2"></a>
 
-2The Pre-Redesign SEO Checklist
+<p class="pair"><strong>2</strong> <span>The Pre-Redesign SEO Checklist</span></p>
 
 This is the phase that protects your rankings, and the one most often skipped. Do it before development begins, because you can't protect what you haven't measured.
 
@@ -53,7 +53,7 @@ This is the phase that protects your rankings, and the one most often skipped. D
 
 <a id="phase3"></a>
 
-3Design and UX Checklist
+<p class="pair"><strong>3</strong> <span>Design and UX Checklist</span></p>
 
 With strategy set, move to how the site looks and works.
 
@@ -69,7 +69,7 @@ With strategy set, move to how the site looks and works.
 
 <a id="phase4"></a>
 
-4Development and Content Checklist
+<p class="pair"><strong>4</strong> <span>Development and Content Checklist</span></p>
 
 Build the site on staging, never live.
 
@@ -86,7 +86,7 @@ Build the site on staging, never live.
 
 <a id="phase5"></a>
 
-5Pre-Launch Checklist
+<p class="pair"><strong>5</strong> <span>Pre-Launch Checklist</span></p>
 
 This is your last chance to catch problems before real users and real rankings are affected.
 
@@ -104,7 +104,7 @@ This is your last chance to catch problems before real users and real rankings a
 
 <a id="phase6"></a>
 
-6Launch Day Checklist
+<p class="pair"><strong>6</strong> <span>Launch Day Checklist</span></p>
 
 -   **Remove the staging noindex** so Google can crawl the live site. (Double-check this — it's a classic, costly mistake.)
 -   **Switch the domain** to the new site.
@@ -117,7 +117,7 @@ This is your last chance to catch problems before real users and real rankings a
 
 <a id="phase7"></a>
 
-7Post-Launch Checklist
+<p class="pair"><strong>7</strong> <span>Post-Launch Checklist</span></p>
 
 The work isn't done at launch. The first month determines whether your rankings survive.
 

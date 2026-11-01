@@ -25,11 +25,27 @@ Launching a WordPress website is the easy part — *keeping* it secure, fast, an
 
 This is the most complete, no-fluff guide to WordPress maintenance costs on the internet: real published pricing, a full plan comparison, every cost factor, the hidden fees nobody warns you about, and an honest DIY-vs-pro breakdown. By the end you'll have an exact number for *your* site. For a platform-agnostic view, see our wider guide on [general website maintenance cost](/how-much-does-website-maintenance-cost/).
 
-$149–$299Typical managed plan / month
+<div class="cards">
 
-43%of the web runs on WordPress
+<div class="card">
 
-2 months free by paying annually
+<p class="pair"><strong>$95–$395</strong> <span>Typical managed plan / month</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>43%</strong> <span>of the web runs on WordPress</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>20%</strong> <span>saved by paying annually</span></p>
+
+</div>
+
+</div>
 
 <a id="s1"></a>
 

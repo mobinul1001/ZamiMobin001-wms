@@ -23,13 +23,33 @@ If this is happening to you right now, take a breath. You are not alone. WordPre
 
 This guide will walk you through exactly what to do when your WordPress site has been hacked: how to confirm it, how to clean it, how to recover it, and — most importantly — how to make sure it never happens again.
 
-40%+Of the internet runs on WordPress
+<div class="cards">
 
-1000sWordPress sites hacked daily
+<div class="card">
 
-$200–$500Typical one-time cleanup cost
+<p class="pair"><strong>40%+</strong> <span>Of the internet runs on WordPress</span></p>
 
-$79/moPrevention via maintenance
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>1000s</strong> <span>WordPress sites hacked daily</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>$200–$500</strong> <span>Typical one-time cleanup cost</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>$95/mo</strong> <span>Prevention via maintenance</span></p>
+
+</div>
+
+</div>
 
 <a id="know"></a>
 

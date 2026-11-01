@@ -510,49 +510,141 @@ When a site is compromised, the first instinct is often to install a free securi
 
 ### Removes Hidden Backdoors
 
-Professional Yes, Always
+<div class="cards">
 
-Security Plugin Sometimes
+<div class="card">
 
-DIY Cleanup Rarely
+<p class="pair"><strong>Professional</strong> <span>Yes, Always</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>Sometimes</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>Rarely</span></p>
+
+</div>
+
+</div>
 
 ### Google Blacklist Removal
 
-Professional Managed for you
+<div class="cards">
 
-Security Plugin No
+<div class="card">
 
-DIY Cleanup No
+<p class="pair"><strong>Professional</strong> <span>Managed for you</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>No</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>No</span></p>
+
+</div>
+
+</div>
 
 ### Root-Cause Identification
 
-Professional Yes
+<div class="cards">
 
-Security Plugin No
+<div class="card">
 
-DIY Cleanup Rarely
+<p class="pair"><strong>Professional</strong> <span>Yes</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>No</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>Rarely</span></p>
+
+</div>
+
+</div>
 
 ### Typical Time to Resolution
 
-Security Plugin Hours (Incomplete)
+<div class="cards">
 
-DIY Cleanup Days to Weeks
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>Hours (Incomplete)</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>Days to Weeks</span></p>
+
+</div>
+
+</div>
 
 ### Risk of Reinfection
 
-Professional Low (Hardened)
+<div class="cards">
 
-Security Plugin Moderate
+<div class="card">
 
-DIY Cleanup High
+<p class="pair"><strong>Professional</strong> <span>Low (Hardened)</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>Moderate</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>High</span></p>
+
+</div>
+
+</div>
 
 ### Expert Verification Report
 
-Professional Yes, Provided
+<div class="cards">
 
-Security Plugin No
+<div class="card">
 
-DIY Cleanup No
+<p class="pair"><strong>Professional</strong> <span>Yes, Provided</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>Security Plugin</strong> <span>No</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>DIY Cleanup</strong> <span>No</span></p>
+
+</div>
+
+</div>
 
 | Recovery Capability | DIY Manual Cleanup Deleting unfamiliar files via FTP. | Security Plugin Scan Running free/paid plugin scanners. | Professional Service Forensic review & manual patching. |
 | --- | --- | --- | --- |

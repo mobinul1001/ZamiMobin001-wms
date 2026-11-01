@@ -29,7 +29,7 @@ seo-performance-tracker.v2
 
 ● Real-time SEO Growth
 
-Organic Search Traffic +142% Growth
+<p class="pair"><strong>Organic Search Traffic</strong> <span>+142% Growth</span></p>
 
 Target Keywords
 
@@ -51,7 +51,7 @@ Trusted SEO Agency • US, UK, CA & AU
 
 <div class="card">
 
-Google Partner Agency
+<p class="pair"><strong>Google</strong> <span>Partner Agency</span></p>
 
 </div>
 
@@ -63,19 +63,19 @@ Google Partner Agency
 
 <div class="card">
 
-Top Rated Clutch SEO Agency
+<p class="pair"><strong>Top Rated</strong> <span>Clutch SEO Agency</span></p>
 
 </div>
 
 <div class="card">
 
-100% White-Hat SEO
+<p class="pair"><strong>100%</strong> <span>White-Hat SEO</span></p>
 
 </div>
 
 <div class="card">
 
-Global Reach US, UK, CA & AU
+<p class="pair"><strong>Global Reach</strong> <span>US, UK, CA &amp; AU</span></p>
 
 </div>
 
@@ -183,15 +183,15 @@ Search Journey
 
 1
 
-User Search Query Customer searches for your service on Google.
+<p class="pair"><strong>User Search Query</strong> <span>Customer searches for your service on Google.</span></p>
 
 2
 
-Technical & On-Page Optimization Your site is optimized for speed, schema, and keywords.
+<p class="pair"><strong>Technical &amp; On-Page Optimization</strong> <span>Your site is optimized for speed, schema, and keywords.</span></p>
 
 3
 
-Top Page 1 Ranking & Leads Google ranks your site at the top, driving sales.
+<p class="pair"><strong>Top Page 1 Ranking &amp; Leads</strong> <span>Google ranks your site at the top, driving sales.</span></p>
 
 </div>
 
@@ -739,7 +739,7 @@ Explore real proof of how our data-driven **seo case study** frameworks delivere
 
 <div class="card">
 
-Local & Tourism SEO Case #01
+<p class="pair"><strong>Local &amp; Tourism SEO</strong> <span>Case #01</span></p>
 
 ### Woodward Barbers & St. Lucian Tours
 
@@ -751,13 +751,13 @@ woodwardbarbers.com • stluciantaxiandtours.com
 
 <div class="card">
 
-+210% Local Traffic
+<p class="pair"><strong>+210%</strong> <span>Local Traffic</span></p>
 
 </div>
 
 <div class="card">
 
-Top 3 Google Maps
+<p class="pair"><strong>Top 3</strong> <span>Google Maps</span></p>
 
 </div>
 
@@ -769,7 +769,7 @@ Timeframe: 6 Months
 
 <div class="card">
 
-Healthcare SEO Case #02
+<p class="pair"><strong>Healthcare SEO</strong> <span>Case #02</span></p>
 
 ### Altitude Care Portal
 
@@ -781,13 +781,13 @@ altitudecare.net
 
 <div class="card">
 
-+165% Organic Leads
+<p class="pair"><strong>+165%</strong> <span>Organic Leads</span></p>
 
 </div>
 
 <div class="card">
 
-Page 1 Care Keywords
+<p class="pair"><strong>Page 1</strong> <span>Care Keywords</span></p>
 
 </div>
 
@@ -799,7 +799,7 @@ Timeframe: 4 Months
 
 <div class="card">
 
-Real Estate & B2B Case #03
+<p class="pair"><strong>Real Estate &amp; B2B</strong> <span>Case #03</span></p>
 
 ### MI Property & AFR Consulting
 
@@ -811,13 +811,13 @@ mipropertyportal.com • afrcons.com
 
 <div class="card">
 
-+185% B2B Inquiries
+<p class="pair"><strong>+185%</strong> <span>B2B Inquiries</span></p>
 
 </div>
 
 <div class="card">
 
-100% Crawl Indexing
+<p class="pair"><strong>100%</strong> <span>Crawl Indexing</span></p>
 
 </div>
 
@@ -893,14 +893,9 @@ Enterprise
 
 Tailored for SaaS portals, multi-location brands, healthcare networks, and high-volume sites.
 
-$999 / month
+<p class="pair"><strong>Custom Quote</strong> <span>Starting from $1,999/month</span></p>
 
--   Everything in SEO Growth
--   4 articles/month
--   Link outreach
--   1 call/month
-
-[Choose SEO Pro](/get-a-free-quote/#pro-seo)
+[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)
 
 </div>
 

@@ -43,7 +43,7 @@ New Redesign Modern & Fast 0.9s Load • 2x CR
 
 </div>
 
-Organic Traffic Trend +120% Post-Launch
+<p class="pair"><strong>Organic Traffic Trend</strong> <span>+120% Post-Launch</span></p>
 
 301 Redirect Mapping
 
@@ -323,7 +323,7 @@ Executing [our full migration process](/website-migration-services/) with instan
 
 <div class="card">
 
-07 Phase 7 (Post-Launch)
+<p class="pair"><strong>07</strong> <span>Phase 7 (Post-Launch)</span></p>
 
 ### Post-Launch SEO & Rank Monitoring
 
@@ -728,7 +728,7 @@ Local & Small Biz
 
 Ideal for local service providers, medical clinics, law firms, and brochure sites (up to 10 pages).
 
-$1,200 – $2,500 Average project estimate
+<p class="pair"><strong>$1,200 – $2,500</strong> <span>Average project estimate</span></p>
 
 -   Custom Mobile-First Responsive Design
 -   1:1 301 Redirect Mapping (Up to 50 URLs)
@@ -750,7 +750,7 @@ Growth & Store
 
 Perfect for growing B2B brands, online stores (WooCommerce/Shopify), and database-driven sites.
 
-$2,500 – $5,500 Average project estimate
+<p class="pair"><strong>$2,500 – $5,500</strong> <span>Average project estimate</span></p>
 
 -   Custom UI/UX & Information Architecture
 -   1:1 301 Redirect Mapping (Unlimited URLs)
@@ -771,7 +771,7 @@ Enterprise
 
 Tailored for large corporate portals, multisite networks, headless CMS, or complex API integrations.
 
-Custom Quote Projects from $5,500+
+<p class="pair"><strong>Custom Quote</strong> <span>Projects from $5,500+</span></p>
 
 -   Complex Architecture & Custom Codebase
 -   Multi-Language / Multisite SEO Preservation
@@ -803,13 +803,13 @@ Proven Client Results
 
 <div class="card">
 
-Retained Organic Traffic Record
+<p class="pair"><strong>Retained</strong> <span>Organic Traffic Record</span></p>
 
 </div>
 
 <div class="card">
 
-24/7 Support Post-Launch Care
+<p class="pair"><strong>24/7 Support</strong> <span>Post-Launch Care</span></p>
 
 </div>
 

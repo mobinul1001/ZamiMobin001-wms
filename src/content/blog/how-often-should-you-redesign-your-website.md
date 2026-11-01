@@ -29,11 +29,27 @@ Here's the better answer, backed by real data: you should redesign your website 
 
 If you want a benchmark, the research is fairly consistent. Studies of real websites put the average lifespan between roughly two and three years before a significant redesign — one widely cited study found about 2 years and 7 months, another around 2 years and 4 months. Surveys of marketers echo this: most report redesigning every one to three years.
 
-2 yr 7 moOne widely cited study's average lifespan
+<div class="cards">
 
-2 yr 4 moAnother study's average before redesign
+<div class="card">
 
-1–3 yrsWhat most marketers report redesigning on
+<p class="pair"><strong>2 yr 7 mo</strong> <span>One widely cited study's average lifespan</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>2 yr 4 mo</strong> <span>Another study's average before redesign</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>1–3 yrs</strong> <span>What most marketers report redesigning on</span></p>
+
+</div>
+
+</div>
 
 But averages hide the truth. The same research shows lifespans swing wildly by industry. Fast-moving fields like agencies and beauty brands often redesign in under two years, while slower industries like construction can go five years or more between redesigns. Plenty of well-run sites thrive for five-plus years without a full redesign, and plenty of poorly built ones need one within twelve months.
 

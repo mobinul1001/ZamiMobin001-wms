@@ -573,7 +573,7 @@ Solopreneurs & Small Biz
 
 Ideal for small businesses needing a clean, high-converting 5-page digital storefront.
 
-$799 one-time
+<p class="pair"><strong>$1,499</strong> <span>Starting project estimate</span></p>
 
 -   Up to 5 Custom Mobile-Responsive Pages
 -   Basic Technical SEO & Schema Setup
@@ -595,7 +595,7 @@ Growing Businesses
 
 For businesses that need up to 10 pages, a blog, and speed and SEO setup.
 
-$1,499 one-time
+<p class="pair"><strong>$2,999</strong> <span>Starting project estimate</span></p>
 
 -   Up to 10 Pages Custom UI/UX Design
 -   SEO-Friendly Architecture & Blog Setup
@@ -615,12 +615,9 @@ Online Stores
 
 A WooCommerce store with up to 50 products.
 
-$2,499 one-time
+<p class="pair"><strong>Custom Quote</strong> <span>Starting from $5,499+</span></p>
 
--   WooCommerce store design
--   Up to 50 products
-
-[Choose Store](/get-a-free-quote/#store-design)
+[Request Custom Quote](/get-a-free-quote/#enterprise-design)
 
 </div>
 
@@ -655,7 +652,7 @@ Explore real proof of how our custom **website design services** transformed onl
 
 <div class="card">
 
-Medical & Dermatology Case #01
+<p class="pair"><strong>Medical &amp; Dermatology</strong> <span>Case #01</span></p>
 
 ### Dermatology Practice Web Design
 
@@ -667,13 +664,13 @@ dermatologywebsitedesign.com
 
 <div class="card">
 
-+185% Patient Leads
+<p class="pair"><strong>+185%</strong> <span>Patient Leads</span></p>
 
 </div>
 
 <div class="card">
 
-0.8s LCP Load Speed
+<p class="pair"><strong>0.8s</strong> <span>LCP Load Speed</span></p>
 
 </div>
 
@@ -685,7 +682,7 @@ Result: Patient-Friendly UI
 
 <div class="card">
 
-Travel & Tour Portals Case #02
+<p class="pair"><strong>Travel &amp; Tour Portals</strong> <span>Case #02</span></p>
 
 ### St. Lucian & Marc's Taxi Tours
 
@@ -697,13 +694,13 @@ stluciantaxiandtours.com • marcstaxiservicetours.com
 
 <div class="card">
 
-+210% Tour Bookings
+<p class="pair"><strong>+210%</strong> <span>Tour Bookings</span></p>
 
 </div>
 
 <div class="card">
 
-100% Mobile WCAG
+<p class="pair"><strong>100%</strong> <span>Mobile WCAG</span></p>
 
 </div>
 
@@ -715,7 +712,7 @@ Result: Mobile Booking Funnel
 
 <div class="card">
 
-Grooming & eCommerce Case #03
+<p class="pair"><strong>Grooming &amp; eCommerce</strong> <span>Case #03</span></p>
 
 ### Woodward Barbers & Gootipa
 
@@ -727,13 +724,13 @@ woodwardbarbers.com • gootipa.com
 
 <div class="card">
 
-+160% Cart Conversions
+<p class="pair"><strong>+160%</strong> <span>Cart Conversions</span></p>
 
 </div>
 
 <div class="card">
 
-\-40% Bounce Rate
+<p class="pair"><strong>-40%</strong> <span>Bounce Rate</span></p>
 
 </div>
 

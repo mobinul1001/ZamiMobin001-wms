@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Website Maintenance Services for Canada
-
 Whether you operate an eCommerce store, professional service website, SaaS platform, or local business, your website represents your brand across Canada.  
 We ensure your site stays optimized, protected, and error-free.
 

@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Website Maintenance Services for Ireland
-
 Ireland’s digital market is competitive, and your website is a key business asset. We ensure your site is secure, optimized, error-free, and always ready to convert visitors into customers.
 
 <div class="cards">

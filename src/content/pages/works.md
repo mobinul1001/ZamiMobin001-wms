@@ -25,7 +25,7 @@ We proudly support diverse businesses worldwide. Here are some of the websites w
 
 A premium barbershop website featuring service listings, gallery, and integrated booking functionality. We ensure smooth appointment scheduling and fast mobile performance.
 
-Local Biz Booking
+<p class="pair"><strong>Local Biz</strong> <span>Booking</span></p>
 
 [Visit Site](https://woodwardbarbers.com)
 
@@ -39,7 +39,7 @@ Local Biz Booking
 
 A specialized care service website prioritizing accessibility and trust. We provide security monitoring and ensure compliance standards are met for sensitive user data.
 
-Healthcare Security
+<p class="pair"><strong>Healthcare</strong> <span>Security</span></p>
 
 [Visit Site](https://altitudecare.net)
 
@@ -53,7 +53,7 @@ Healthcare Security
 
 A dynamic property management platform. We handle database optimization and listing updates to ensure real-time accuracy for property seekers.
 
-Real Estate Portal
+<p class="pair"><strong>Real Estate</strong> <span>Portal</span></p>
 
 [Visit Site](https://www.mipropertyportal.com)
 
@@ -67,7 +67,7 @@ Real Estate Portal
 
 A modern portfolio site for a digital agency. We ensure high-speed performance for global traffic and regular content updates for their case studies.
 
-Agency Global
+<p class="pair"><strong>Agency</strong> <span>Global</span></p>
 
 [Visit Site](http://nextwebglobal.com/)
 
@@ -81,7 +81,7 @@ Agency Global
 
 Corporate website for a construction and engineering consultancy. We maintain server stability and ensure the professional portfolio is always accessible.
 
-Construction Corporate
+<p class="pair"><strong>Construction</strong> <span>Corporate</span></p>
 
 [Visit Site](https://afrcons.com/)
 
@@ -95,7 +95,7 @@ Construction Corporate
 
 A B2B lead generation site for custom software services. We optimize landing pages for conversions and maintain strict uptime SLAs.
 
-SaaS / Tech B2B
+<p class="pair"><strong>SaaS / Tech</strong> <span>B2B</span></p>
 
 [Visit Site](https://softwaredevelopmentontario.ca/)
 
@@ -109,7 +109,7 @@ SaaS / Tech B2B
 
 A stylish UK-based salon website. We manage image galleries, update service price lists, and ensure the mobile experience is flawless for clients.
 
-Beauty Lifestyle
+<p class="pair"><strong>Beauty</strong> <span>Lifestyle</span></p>
 
 [Visit Site](https://www.glamhairstudio.uk/)
 
@@ -123,7 +123,7 @@ Beauty Lifestyle
 
 A professional personal brand website. We provide regular content updates for blogs/projects and ensure fast global loading speeds.
 
-Portfolio Personal
+<p class="pair"><strong>Portfolio</strong> <span>Personal</span></p>
 
 [Visit Site](https://riadalashekin.com)
 

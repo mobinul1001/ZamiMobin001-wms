@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Website Maintenance Services for France
-
 In France’s competitive digital market, your website must always perform at its best. We ensure your site is secure, optimized, error-free, and always ready to convert visitors into customers.
 
 <div class="cards">

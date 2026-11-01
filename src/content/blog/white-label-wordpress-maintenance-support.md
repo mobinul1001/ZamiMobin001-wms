@@ -23,13 +23,33 @@ categories: ["Industry"]
 
 If you build or host WordPress sites for clients, ongoing maintenance is both a headache and a missed revenue stream. A white label WordPress maintenance service solves both: you add a recurring care plan to every project without hiring a team or pulling your developers off billable work. This guide explains how white-label WordPress support works, what it includes, exact per-site and volume pricing, how it compares to GoWP and WP Buffs, and how to launch it under your own brand.
 
-$39+Per site / month at volume
+<div class="cards">
 
-2-3xTypical reseller markup
+<div class="card">
 
-100%Unbranded & white-label
+<p class="pair"><strong>$39+</strong> <span>Per site / month at volume</span></p>
 
-0Hires needed to scale
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>2-3x</strong> <span>Typical reseller markup</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>100%</strong> <span>Unbranded &amp; white-label</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>0</strong> <span>Hires needed to scale</span></p>
+
+</div>
+
+</div>
 
 <a id="what"></a>
 

@@ -63,19 +63,19 @@ Interaction to Next Paint (INP)
 
 <div class="card">
 
-&lt; 2.0s Avg Load Time
+<p class="pair"><strong>&lt; 2.0s</strong> <span>Avg Load Time</span></p>
 
 </div>
 
 <div class="card">
 
-90+ PageSpeed Score
+<p class="pair"><strong>90+</strong> <span>PageSpeed Score</span></p>
 
 </div>
 
 <div class="card">
 
-Certified Speed Experts
+<p class="pair"><strong>Certified</strong> <span>Speed Experts</span></p>
 
 </div>
 
@@ -637,37 +637,37 @@ Industry-Standard Diagnostic & Performance Tool Stack
 
 <div class="card">
 
-PageSpeed Insights Google Benchmark
+<p class="pair"><strong>PageSpeed Insights</strong> <span>Google Benchmark</span></p>
 
 </div>
 
 <div class="card">
 
-Google Lighthouse Lab Data Audit
+<p class="pair"><strong>Google Lighthouse</strong> <span>Lab Data Audit</span></p>
 
 </div>
 
 <div class="card">
 
-GTmetrix Waterfall Analysis
+<p class="pair"><strong>GTmetrix</strong> <span>Waterfall Analysis</span></p>
 
 </div>
 
 <div class="card">
 
-LiteSpeed Cache LSCache Server
+<p class="pair"><strong>LiteSpeed Cache</strong> <span>LSCache Server</span></p>
 
 </div>
 
 <div class="card">
 
-Cloudflare CDN APO Edge Caching
+<p class="pair"><strong>Cloudflare CDN</strong> <span>APO Edge Caching</span></p>
 
 </div>
 
 <div class="card">
 
-WP Rocket Asset Minification
+<p class="pair"><strong>WP Rocket</strong> <span>Asset Minification</span></p>
 
 </div>
 
@@ -841,7 +841,7 @@ $499 / one-time fee
 
 <div class="card">
 
-Custom Quote Starting from $499/mo
+<p class="pair"><strong>Custom Quote</strong> <span>Starting from $499/mo</span></p>
 
 -   Everything in Advanced Speed
 -   24/7 Automated Speed Monitoring

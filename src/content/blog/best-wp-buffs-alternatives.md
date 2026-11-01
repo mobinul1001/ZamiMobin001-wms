@@ -173,9 +173,21 @@ Once hosting is in the equation, the "premium" entry price becomes the *lower* r
 
 Anyone can call themselves "the best." What sets Website Maintenance Services apart is that the credibility is independently verifiable.
 
-10Countries served (USA, UK, EU & more)
+<div class="cards">
 
-24/7Emergency fixes on Business
+<div class="card">
+
+<p class="pair"><strong>10</strong> <span>Countries served (USA, UK, EU &amp; more)</span></p>
+
+</div>
+
+<div class="card">
+
+<p class="pair"><strong>24/7</strong> <span>Monitoring &amp; emergency support</span></p>
+
+</div>
+
+</div>
 
 Independently verified & rated on
 
@@ -189,17 +201,17 @@ Credibility isn't just badges — it's outcomes. Here's a real, documented resul
 
 #### ⚠ Before
 
--   Page load speed4.8s
--   Security monitoringNone
--   DowntimeFrequent
--   Booking formBroken
+-   Page load speed 4.8s
+-   Security monitoring None
+-   Downtime Frequent
+-   Booking form Broken
 
 #### ✓ After
 
--   Page load speed1.9s
--   Security monitoring24/7
--   Downtime~0%
--   Booking formFixed
+-   Page load speed 1.9s
+-   Security monitoring 24/7
+-   Downtime ~0%
+-   Booking form Fixed
 
 That's a **60% faster site**, near-zero downtime, and a booking form that actually works — the kind of measurable improvement that pays for maintenance many times over. You can read the [full case study](/website-maintenance-case-study/) for the details.
 

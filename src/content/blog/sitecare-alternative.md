@@ -75,35 +75,35 @@ SiteCare figures reflect publicly reported 2026 pricing and features and may cha
 
 Eight rounds, one winner each. Here's who takes each — and why.
 
-Round 1 — Price & ValueWebsite Maint. Services
+<p class="pair"><strong>Round 1 — Price &amp; Value</strong> <span>Website Maint. Services</span></p>
 
 Both bundle hosting, so this is a fair fight. SiteCare's reported plans run roughly $99–$299/month; Website Maintenance Services starts at $79/month and tops out at $299 for premium eCommerce care — a lower entry point and more accessible tiers for small and mid-size businesses, without giving up full-service coverage.
 
-Round 2 — HostingWebsite Maint. Services
+<p class="pair"><strong>Round 2 — Hosting</strong> <span>Website Maint. Services</span></p>
 
 Both include hosting — a genuine strength they share. The tiebreaker: Website Maintenance Services includes a full **year of hosting free**, a concrete first-year saving SiteCare doesn't match.
 
-Round 3 — Free ExtrasWebsite Maint. Services
+<p class="pair"><strong>Round 3 — Free Extras</strong> <span>Website Maint. Services</span></p>
 
 Beyond hosting, Website Maintenance Services throws in 2 free business webmails and a free first month of maintenance. These aren't standard with SiteCare, and they add real value on day one.
 
-Round 4 — FlexibilityWebsite Maint. Services
+<p class="pair"><strong>Round 4 — Flexibility</strong> <span>Website Maint. Services</span></p>
 
 SiteCare leans toward annual plans. Website Maintenance Services offers no long-term contract — cancel anytime — so you stay because the service earns it, not because you're committed upfront.
 
-Round 5 — Emergency SupportWebsite Maint. Services
+<p class="pair"><strong>Round 5 — Emergency Support</strong> <span>Website Maint. Services</span></p>
 
 Both offer support, but Website Maintenance Services adds direct **WhatsApp emergency support**, with 24/7 emergency fixes on Business — a real person, no ticket queue, when your site goes down at the worst moment.
 
-Round 6 — Verified TrustWebsite Maint. Services
+<p class="pair"><strong>Round 6 — Verified Trust</strong> <span>Website Maint. Services</span></p>
 
 Both are reputable.
 
-Round 7 — Core Care (updates, backups, security)Tie
+<p class="pair"><strong>Round 7 — Core Care (updates, backups, security)</strong> <span>Tie</span></p>
 
 Credit where it's due: both do the fundamentals well — backups, security monitoring, and performance work, with staging-tested updates on our Business plan. On the core, they're evenly matched.
 
-Round 8 — Enterprise ComplianceSiteCare
+<p class="pair"><strong>Round 8 — Enterprise Compliance</strong> <span>SiteCare</span></p>
 
 Fair is fair: SiteCare holds SOC 2 compliance, which matters for large or regulated organisations with strict data-security requirements. If that's a hard requirement for you, SiteCare has the edge here (Website Maintenance Services offers enterprise arrangements on request).
 
@@ -251,17 +251,17 @@ Credibility isn't just badges — it's outcomes. Here's a documented result from
 
 #### ⚠ Before
 
--   Page load speed4.8s
--   Security monitoringNone
--   DowntimeFrequent
--   Booking formBroken
+-   Page load speed 4.8s
+-   Security monitoring None
+-   Downtime Frequent
+-   Booking form Broken
 
 #### ✓ After
 
--   Page load speed1.9s
--   Security monitoring24/7
--   Downtime~0%
--   Booking formFixed
+-   Page load speed 1.9s
+-   Security monitoring 24/7
+-   Downtime ~0%
+-   Booking form Fixed
 
 That's a **60% faster site** with near-zero downtime and a working booking form. Read the [full case study](/website-maintenance-case-study/) for the details.
 

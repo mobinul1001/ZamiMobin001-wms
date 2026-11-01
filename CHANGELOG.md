@@ -179,3 +179,11 @@
 ## Design review (2026-11-01)
 - reports/design-review/: desktop and mobile, full page and first screen, for 11 templates (scripts/design-review.mjs).
 - Fixed a bug found in the screenshots: removing the Hosting Management add-on had taken the whole add-on list off the WordPress page. Added scripts/audit-removals.mjs, which lists what each approved removal takes (reports/removal-audit.md).
+
+## New design direction, mockups and fixes (2026-11-01)
+- CLAIMS-AND-DESIGN.md section B rewritten as "Modern premium SaaS".
+- Mockups A (dark premium) and B (light vibrant): mockups/v2/, built by scripts/build-mockups-v2.mjs from prices.json and the old homepage text. Screenshots and Lighthouse by scripts/screenshot-mockups-v2.mjs, in reports/mockups-v2/.
+- Converter: run-together text pieces become title + label, rows of them become cards; repair panel rebuilt and labelled "Example".
+- Approved removals: repeated line under the H1 on about, UK, Canada, France, Ireland; fake label on repair; 99.99% Uptime SLA on white-label agencies.
+- Service and country body now lines up with the page heading.
+- Research and outlines: reports/content-outlines/. No new text in pages.

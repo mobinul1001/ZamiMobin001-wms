@@ -131,13 +131,29 @@ service.addRule('eyebrow', {
   filter: (n) => n.getAttribute('data-eyebrow') !== null,
   replacement: (content) => `\n\n<p class="eyebrow">${content.trim()}</p>\n\n`,
 });
+const safe = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const pairHtml = (n) => {
+  const [a, b] = JSON.parse(n.getAttribute('data-pair'));
+  return `<p class="pair"><strong>${safe(a)}</strong> <span>${safe(b)}</span></p>`;
+};
+service.addRule('pair', {
+  filter: (n) => n.getAttribute('data-pair') !== null,
+  replacement: (_, n) => `\n\n${pairHtml(n)}\n\n`,
+});
+service.addRule('statusPanel', {
+  filter: (n) => n.getAttribute('data-status-panel') !== null,
+  replacement: (_, n) => {
+    const { head, rows } = JSON.parse(n.getAttribute('data-status-panel'));
+    return `\n\n<div class="status-panel"><p class="status-head"><span>${safe(head)}</span><span class="tag">Example</span></p>${rows.map(([t, d, s]) => `<p class="status-row"><strong>${safe(t)}</strong> <span>${safe(d)}</span> <em>${safe(s)}</em></p>`).join('')}</div>\n\n`;
+  },
+});
 service.addRule('cardGrid', {
   filter: (n) => n.nodeName === 'DIV' && n.getAttribute('data-cards') !== null,
   replacement: (content) => (content.trim() ? `\n\n<div class="cards">\n\n${content.trim()}\n\n</div>\n\n` : ''),
 });
 service.addRule('card', {
   filter: (n) => n.getAttribute('data-card') !== null,
-  replacement: (content) => (content.trim() ? `\n\n<div class="card">\n\n${content.trim()}\n\n</div>\n\n` : ''),
+  replacement: (content, n) => (content.trim() ? `\n\n<div class="card">\n\n${n.getAttribute('data-pair') ? pairHtml(n) : content.trim()}\n\n</div>\n\n` : ''),
 });
 service.addRule('oneLineCell', {
   filter: ['th', 'td'],
@@ -314,6 +330,44 @@ async function convert(path, record) {
     const kids = $(a).children('span, b, strong, small, em, div, p');
     if (kids.length > 1) kids.each((_, k) => { $(k).after(' '); });
   });
+  // The old repair panel: rows of title, detail and status, shown as an example.
+  const panelHead = $('span').filter((_, s) => $(s).children().length === 0 && $(s).text().trim() === 'Issue Fixed ✔').first();
+  if (panelHead.length) {
+    let panel = panelHead.parent();
+    while (panel.length && !panel.find('.space-y-3').length) panel = panel.parent();
+    const rows = panel.find('.space-y-3').first().children('div').toArray().map((r) => $(r).find('span').toArray().map((s) => $(s).text().trim()).filter(Boolean));
+    if (rows.length < 2 || rows.some((r) => r.length !== 3)) throw new Error(`${path}: repair panel rows changed`);
+    panel.replaceWith($('<div data-status-panel="">x</div>').attr('data-status-panel', JSON.stringify({ head: panelHead.text().trim(), rows })));
+  }
+  // Two short text pieces with no space between them ran together ("10Countries served"): number or title, then its label.
+  $('div, span').each((_, e) => {
+    const box = $(e);
+    if (e.name === 'span' && box.parent()[0]?.name !== 'div') return;
+    if (box.closest('a, table, form, details, h1, h2, h3, h4, h5, h6, button, nav, label, p, li, pre').length) return;
+    if (box.contents().toArray().some((c) => c.type === 'text' && c.data.trim())) return;
+    const all = box.children().toArray();
+    if (!all.every((k) => ['span', 'small', 'b', 'strong', 'em'].includes(k.name))) return;
+    const kids = all.filter((k) => $(k).text().trim());
+    if (kids.length !== 2 || $(kids[0]).find('a, img').length || $(kids[1]).find('a, img').length) return;
+    // A price and its unit ("$79" "/mo") stay on one line.
+    if (box.text().trim().split(/\s+/).length > 30 || /^\//.test($(kids[1]).text().trim())) return;
+    box.attr('data-pair', JSON.stringify([$(kids[0]).text().replace(/\s+/g, ' ').trim(), $(kids[1]).text().replace(/\s+/g, ' ').trim()]));
+    // A row of these stays a row of cards.
+    let holder = box;
+    while (holder.parent().length && holder.parent().children().toArray().filter((c) => $(c).text().trim()).length === 1 && holder.parent()[0].name !== 'body') holder = holder.parent();
+    holder.attr('data-pair-holder', '');
+  });
+  $('[data-pair-holder]').parent().each((_, g) => {
+    const kids = $(g).children().toArray().filter((c) => $(c).text().trim());
+    if (kids.length >= 2 && g.name !== 'body' && kids.every((c) => $(c).is('[data-pair-holder]'))) {
+      $(g).attr('data-cards', '');
+      kids.forEach((c) => { $(c).attr('data-card', ''); });
+    }
+  });
+  $('li').each((_, e) => {
+    const kids = $(e).children('span, b, strong, small, em');
+    if (kids.length > 1 && !$(e).contents().toArray().some((c) => c.type === 'text' && c.data.trim())) kids.each((_, k) => { $(k).after(' '); });
+  });
   // Mobile-only copies of table labels would print twice.
   $('td [class*="md:hidden"], td [class*="sm:hidden"], td [class*="lg:hidden"]').remove();
   // Card grids stay as cards.
@@ -332,7 +386,7 @@ async function convert(path, record) {
     });
   });
 
-  const keepAttr = new Set(['data-eyebrow', 'data-cards', 'data-card', 'href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
+  const keepAttr = new Set(['data-eyebrow', 'data-cards', 'data-card', 'data-pair', 'data-status-panel','href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
   $('body *').each((_, e) => {
     for (const attr of Object.keys(e.attribs ?? {})) {
       if (!keepAttr.has(attr)) delete e.attribs[attr];

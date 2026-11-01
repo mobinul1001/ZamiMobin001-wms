@@ -27,21 +27,7 @@ No fix, no fee: we check your site and quote before we start. If we can't fix th
 
 <div class="card">
 
-emergency-repair-engine.v2
-
-Issue Fixed ✔
-
-White Screen / 500 Error Fix Root Cause Isolated & Resolved
-
-Site Restored
-
-Checkout & Contact Form Repair Order & Lead Flow Verified
-
-Working
-
-Zero Data & SEO Loss Safety Pre-Repair Backup Enforced
-
-Data Safe
+<div class="status-panel"><p class="status-head"><span>Issue Fixed ✔</span><span class="tag">Example</span></p><p class="status-row"><strong>White Screen / 500 Error Fix</strong> <span>Root Cause Isolated &amp; Resolved</span> <em>Site Restored</em></p><p class="status-row"><strong>Checkout &amp; Contact Form Repair</strong> <span>Order &amp; Lead Flow Verified</span> <em>Working</em></p><p class="status-row"><strong>Zero Data &amp; SEO Loss Safety</strong> <span>Pre-Repair Backup Enforced</span> <em>Data Safe</em></p></div>
 
 </div>
 
@@ -715,7 +701,7 @@ Complete Deliverable Scope
 
 No hidden charges, no surprises. Every repair job includes these 8 standard engineering deliverables:
 
-Feature Deliverable What It Means For You
+<p class="pair"><strong>Feature Deliverable</strong> <span>What It Means For You</span></p>
 
 Free Diagnostic Audit
 
@@ -942,7 +928,7 @@ Swipe left/right to view all repair stories
 
 <div class="card">
 
-eCommerce Store ● 6-Hour Recovery
+<p class="pair"><strong>eCommerce Store</strong> <span>● 6-Hour Recovery</span></p>
 
 ### eCommerce Checkout Recovery
 
@@ -958,7 +944,7 @@ Verified 40+ Test Checkout Transactions
 
 <div class="card">
 
-Corporate Site ● Security Cleanup
+<p class="pair"><strong>Corporate Site</strong> <span>● Security Cleanup</span></p>
 
 ### Hacked WordPress Site Recovery
 
@@ -974,7 +960,7 @@ Google Search Warning Removed
 
 <div class="card">
 
-High-Traffic Blog ● 4-Hour Restore
+<p class="pair"><strong>High-Traffic Blog</strong> <span>● 4-Hour Restore</span></p>
 
 ### White Screen of Death (WSOD)
 

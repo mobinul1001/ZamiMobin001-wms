@@ -27,13 +27,13 @@ Social Proof & Agency Credentials
 
 <div class="card">
 
-10,000+ Websites Managed
+<p class="pair"><strong>10,000+</strong> <span>Websites Managed</span></p>
 
 </div>
 
 <div class="card">
 
-100% White Label & NDA
+<p class="pair"><strong>100%</strong> <span>White Label &amp; NDA</span></p>
 
 </div>
 
@@ -125,7 +125,7 @@ In a **private label web support** partnership, your agency owns the client rela
 
 Whether managing single business sites or complex multi-site client portfolios, our team delivers [our full WordPress maintenance service](/wordpress-website-maintenance-packages/) with strict non-disclosure protection.
 
-Unbranded Service Your Clients Never See Our Name or Logo
+<p class="pair"><strong>Unbranded Service</strong> <span>Your Clients Never See Our Name or Logo</span></p>
 
 </div>
 
@@ -520,13 +520,13 @@ Automated daily and weekly encrypted cloud backups allowing 1-click site restore
 
 <div class="card">
 
-Real-Time Monitoring
+<p class="pair"><strong>24/7</strong> <span>Real-Time Monitoring</span></p>
 
 </div>
 
 <div class="card">
 
-Strict NDA Brand Protection
+<p class="pair"><strong>Strict NDA</strong> <span>Brand Protection</span></p>
 
 </div>
 
@@ -790,7 +790,7 @@ Explore real proof of how our **white label website maintenance case study** fra
 
 <div class="card">
 
-Digital Agency (35 Sites) Case #01
+<p class="pair"><strong>Digital Agency (35 Sites)</strong> <span>Case #01</span></p>
 
 ### Scaling Retainers from $5k to $22k/Mo
 
@@ -800,13 +800,13 @@ Digital Agency (35 Sites) Case #01
 
 <div class="card">
 
-+$17k/Mo MRR Growth
+<p class="pair"><strong>+$17k/Mo</strong> <span>MRR Growth</span></p>
 
 </div>
 
 <div class="card">
 
-$6,500 Payroll Saved/Mo
+<p class="pair"><strong>$6,500</strong> <span>Payroll Saved/Mo</span></p>
 
 </div>
 
@@ -818,25 +818,13 @@ Outcome: 340% Retainer Increase
 
 <div class="card">
 
-eCommerce Studio (18 Stores) Case #02
+<p class="pair"><strong>eCommerce Studio (18 Stores)</strong> <span>Case #02</span></p>
 
 ### Zero Client Churn Across WooCommerce Stores
 
 **Challenge:** Frequent plugin breakages and payment gateway outages causing client frustration and account cancellations.
 
-<div class="cards">
-
-<div class="card">
-
-0% Churn In 12 Months
-
-</div>
-
-<div class="card">
-
-</div>
-
-</div>
+<p class="pair"><strong>0% Churn</strong> <span>In 12 Months</span></p>
 
 Outcome: Zero Transaction Outages
 
@@ -844,7 +832,7 @@ Outcome: Zero Transaction Outages
 
 <div class="card">
 
-SEO Agency (50+ Sites) Case #03
+<p class="pair"><strong>SEO Agency (50+ Sites)</strong> <span>Case #03</span></p>
 
 ### 50+ Client Site Fleet Onboarding
 
@@ -854,13 +842,13 @@ SEO Agency (50+ Sites) Case #03
 
 <div class="card">
 
-120+ Hrs Dev Saved/Mo
+<p class="pair"><strong>120+ Hrs</strong> <span>Dev Saved/Mo</span></p>
 
 </div>
 
 <div class="card">
 
-7 Days Full Fleet Launch
+<p class="pair"><strong>7 Days</strong> <span>Full Fleet Launch</span></p>
 
 </div>
 
@@ -940,17 +928,9 @@ Large Agencies & SaaS
 
 For large agencies managing 21+ client websites.
 
-$39 / site / month
+<p class="pair"><strong>Custom Quote</strong> <span>Volume Discounts Available</span></p>
 
--   Weekly updates
--   Weekly backups
--   Security scan
--   Uptime monitoring
--   1 hour edits/month per site
--   Unbranded client reports
--   Hosting not included
-
-[Start Agency Scale](/get-a-free-quote/#whitelabel-scale)
+[Talk to Sales](/contact/)
 
 </div>
 

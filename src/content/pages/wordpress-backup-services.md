@@ -27,15 +27,15 @@ offsite-backup-engine.v2
 
 ● Off-Site Backup Active
 
-Daily Database & Files Snapshot Off-Site Encrypted Storage
+<p class="pair"><strong>Daily Database &amp; Files Snapshot</strong> <span>Off-Site Encrypted Storage</span></p>
 
 Verifed
 
-Human-Verified Restore Test Tested in Staging Environment
+<p class="pair"><strong>Human-Verified Restore Test</strong> <span>Tested in Staging Environment</span></p>
 
 Passed Today
 
-Rolling Backup History Restore to Any Date In History
+<p class="pair"><strong>Rolling Backup History</strong> <span>Restore to Any Date In History</span></p>
 
 90-Day Archive
 
@@ -307,13 +307,13 @@ Managing WordPress Sites Across US, UK, CA & AU
 
 <div class="card">
 
-100% In-House Engineering (Zero Outsourcing)
+<p class="pair"><strong>100%</strong> <span>In-House Engineering (Zero Outsourcing)</span></p>
 
 </div>
 
 <div class="card">
 
-0 Forced Migrations (Works With Any Host)
+<p class="pair"><strong>0</strong> <span>Forced Migrations (Works With Any Host)</span></p>
 
 </div>
 
@@ -546,37 +546,37 @@ When server crashes, malware attacks, or human errors happen, our managed backup
 
 <div class="card">
 
-E-Commerce Store ● 41-Min Recovery
+<p class="pair"><strong>E-Commerce Store</strong> <span>● 41-Min Recovery</span></p>
 
 ### Ransomware-Style Plugin Exploit
 
 A WooCommerce store was compromised through a vulnerable third-party plugin. Files were altered and the checkout page redirected to a spam domain. Because we had a clean restore point from the morning before the exploit, the site was back to normal in 41 minutes — before most customers even noticed.
 
-Total Order Loss: Effectively $0
+<p class="pair"><strong>Total Order Loss:</strong> <span>Effectively $0</span></p>
 
 </div>
 
 <div class="card">
 
-Law Firm Site ● Same-Day Restore
+<p class="pair"><strong>Law Firm Site</strong> <span>● Same-Day Restore</span></p>
 
 ### Host Server Hardware Crash
 
 The client's hosting provider had a hardware failure that corrupted their server-side backups entirely. Because our backups are stored off-site on separate cloud infrastructure, we restored their full site — including the contact form submission database — to a new host within the same day.
 
-Data Loss Status: Restored
+<p class="pair"><strong>Data Loss Status:</strong> <span>Restored</span></p>
 
 </div>
 
 <div class="card">
 
-Healthcare Practice ● Granular Rollback
+<p class="pair"><strong>Healthcare Practice</strong> <span>● Granular Rollback</span></p>
 
 ### Accidental Content Deletion
 
 A staff member accidentally deleted several service pages while updating patient content. With daily version history, we rolled back the affected pages without touching anything the client had legitimately changed or updated since the mistake occurred.
 
-Downtime Impact: Zero Site Outage
+<p class="pair"><strong>Downtime Impact:</strong> <span>Zero Site Outage</span></p>
 
 </div>
 

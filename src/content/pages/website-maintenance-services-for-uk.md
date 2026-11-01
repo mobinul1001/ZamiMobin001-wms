@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-Website Maintenance Services for the UK
-
 Your website is one of your most valuable business assets. Whether you run an eCommerce shop, agency, or local business, your website must stay updated and protected.  
 We ensure your site remains secure, stable, and ready to convert visitors—24/7.
 
