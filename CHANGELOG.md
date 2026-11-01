@@ -175,3 +175,7 @@
 ## Cookie policy without advertising (2026-11-01)
 - Removed the marketing and retargeting card and the targeted advertising line; the site has no ad tags. Build fails if advertising wording returns to the cookie or privacy policy.
 - Hostinger confirmed as the email provider. Later items listed in STATUS.md.
+
+## Design review (2026-11-01)
+- reports/design-review/: desktop and mobile, full page and first screen, for 11 templates (scripts/design-review.mjs).
+- Fixed a bug found in the screenshots: removing the Hosting Management add-on had taken the whole add-on list off the WordPress page. Added scripts/audit-removals.mjs, which lists what each approved removal takes (reports/removal-audit.md).

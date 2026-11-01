@@ -39,7 +39,11 @@ const removeCardFeatures = ($, path, heads) => {
 const removeLeaf = ($, text) => {
   const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === text);
   if (!leaf.length) throw new Error(`"${text}" not found`);
-  leaf.parent().remove();
+  leaf.each((_, x) => {
+    const box = $(x).parent();
+    if (box.text().trim() === text) box.remove();
+    else $(x).remove();
+  });
 };
 // Owner, 2026-11-01: comparison tables are rebuilt from the price file, so the old rows go.
 const removeCompareRows = ($) => {

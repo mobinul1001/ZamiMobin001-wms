@@ -258,6 +258,40 @@ Pay annually and get 2 months free on every WordPress maintenance plan.
 
 ## Optional Add-On Services
 
+<div class="cards">
+
+<div class="card">
+
+Custom Development Hours
+
+</div>
+
+<div class="card">
+
+Monthly SEO Optimization
+
+</div>
+
+<div class="card">
+
+Speed Boost Package
+
+</div>
+
+<div class="card">
+
+Website Redesign
+
+</div>
+
+<div class="card">
+
+Cloudflare Enterprise Setup
+
+</div>
+
+</div>
+
 ## Full WordPress Maintenance Packages Comparison
 
 Every feature, side by side, so you can choose the right plan with confidence.

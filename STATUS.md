@@ -4,6 +4,18 @@ Last updated: 2026-11-01. Project folder: `C:\Users\user\wms-rebuild`. All work 
 
 Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREMENTS.md`, `CLAIMS-AND-DESIGN.md` and `PROMPTS.md`.
 
+## Current work order (owner, 2026-11-01)
+Not pushing yet. A plan and the owner's approval before each step. Commit locally, update this file after each step.
+
+| Step | Status |
+|---|---|
+| 1. Design review screenshots | Sent: `reports/design-review/`. Waiting for the owner's feedback. |
+| 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Plan written, waiting for approval. |
+| 3. Service pages: problem, included, price, FAQ | Not started. |
+| 4. H2/H3 keyword edits and internal-link hub | Not started. |
+| 5. Sveltia CMS in local mode | Not started. |
+| 6. Image conversion and schema validation | Not started. |
+
 ## 1. What is done, per phase
 
 | Phase | Status | Result |
