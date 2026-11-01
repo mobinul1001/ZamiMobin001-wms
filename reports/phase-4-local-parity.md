@@ -10,7 +10,7 @@ Old crawl against a local production build. Keyword, title and price changes are
 | Old text lines found in the new page | 20,492 of 20,492 (the "Skip to content" link is left to the layout) |
 | Images in page bodies | 130 of 130, same alt text |
 | Upload files in build | 919 of 919 |
-| Words, old to new | 224,308 to 226,726; per page 96% to 118.3%, median 99.9% |
+| Words, old to new | 224,308 to 226,722; per page 96% to 118.3%, median 99.9% |
 
 Word counts above 100% come from spacing: the old count joined neighbouring table cells into one word. The text-line check confirms no text was lost.
 
