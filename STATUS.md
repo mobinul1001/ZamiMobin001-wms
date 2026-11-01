@@ -12,7 +12,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 | 1 Read-only crawl | Done | 817 URLs, 96 real pages, 919 upload files (53.6 MB), 0 failed. Output in `export/` (not in git). |
 | 2 URL map | Done, final | `url-map.csv`: 815 rows (121 at 200, 680 at 301, 14 at 404). 0 chains, 0 missing targets. |
 | Keyword map | Approved and applied to titles and H1s | `reports/phase-3-keyword-map.csv`, 92 pages. Heading and secondary-keyword edits inside page bodies are not done. |
-| 3 Design | Mockups waiting for approval | "Calm engineering": `mockups/` and `reports/mockups/`. No other templates built. |
+| 3 Design | Mockups approved 2026-11-01; template plan waiting for approval | "Calm engineering": `mockups/` and `reports/mockups/`. No other templates built. |
 | 4 Build pages | Partly done | 92 pages migrated into `src/content/` on a plain placeholder layout. Claims and FAQs applied. See "not done" below. |
 | 5 Parity | Local version passes | 815/815 rows, 92/92 pages; no old text lost apart from approved changes. `reports/parity-local.csv`. The live-versus-preview run waits for a deploy. |
 | Redirects and build checks | Done | 246 path rules, 97 query rules, 1 feed rewrite. 18 failure tests pass. |
@@ -73,7 +73,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 ## 3. Open questions waiting for the owner
 
-1. **Mockups:** approve or change the homepage, pricing and blog mockups.
+1. **Template plan:** approve the plan for building the templates. (Mockups were approved on 2026-11-01.)
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
 4. **Mockup gaps:** response time, add-on prices (6), what counts as an edit hour, what happens on cancel.
@@ -91,7 +91,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 ## 4. Next steps
 
-1. Owner answers the mockups and portfolio table.
+1. Owner approves the template plan and answers the portfolio table.
 2. Build the approved templates: homepage, pricing, service, blog, country, contact, 404, thank-you. Then Lighthouse.
 3. Apply master prices across bodies, tables and schema; move the merged pages' content; make keyword edits inside bodies, homepage and packages page first; fix internal links and hubs.
 4. Build real Netlify forms with hash pre-selection, image conversion and 404 tracking.
