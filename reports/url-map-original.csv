@@ -1,0 +1,17 @@
+old_url,new_url,status,type,action,notes
+https://websitemaintenanceservices.org/,https://websitemaintenanceservices.org/,200,page,keep+expand,Owner of "website maintenance services"
+https://websitemaintenanceservices.org/home/,https://websitemaintenanceservices.org/,301,duplicate,redirect,Duplicate homepage
+https://websitemaintenanceservices.org/plan-packages-and-costs/,https://websitemaintenanceservices.org/monthly-website-maintenance-packages/,301,page,merge,Move plans/prices first
+https://websitemaintenanceservices.org/plan-packages-and-costs,https://websitemaintenanceservices.org/monthly-website-maintenance-packages/,301,no-slash,redirect,Straight to final URL (no chain)
+https://websitemaintenanceservices.org/website-management-packages/,https://websitemaintenanceservices.org/monthly-website-maintenance-packages/,301,page,merge,Move management-package content first
+https://websitemaintenanceservices.org/website-maintenance-services-for-small-business/,https://websitemaintenanceservices.org/best-website-maintenance-for-small-business/,301,page,merge,Move unique content first
+https://websitemaintenanceservices.org/website-support/,https://websitemaintenanceservices.org/website-support-services/,301,page,merge,Move unique content first
+https://websitemaintenanceservices.org/about-us,https://websitemaintenanceservices.org/about-us/,301,no-slash,redirect,
+https://websitemaintenanceservices.org/contact,https://websitemaintenanceservices.org/contact/,301,no-slash,redirect,
+https://websitemaintenanceservices.org/works,https://websitemaintenanceservices.org/works/,301,no-slash,redirect,
+https://websitemaintenanceservices.org/website-maintenance-process,https://websitemaintenanceservices.org/website-maintenance-process/,301,no-slash,redirect,
+https://websitemaintenanceservices.org/ecommerce-website-maintenance-packages,https://websitemaintenanceservices.org/ecommerce-website-maintenance-packages/,301,no-slash,redirect,
+https://websitemaintenanceservices.org/monthly-website-maintenance-packages/,https://websitemaintenanceservices.org/monthly-website-maintenance-packages/,200,page,keep+expand,Becomes the Pricing page
+https://websitemaintenanceservices.org/best-website-maintenance-companies/,https://websitemaintenanceservices.org/best-website-maintenance-companies/,200,page,keep+de-optimize,Comparison only; link to homepage
+https://websitemaintenanceservices.org/best-website-maintenance-for-small-business/,https://websitemaintenanceservices.org/best-website-maintenance-for-small-business/,200,page,keep+re-scope,Small business phrases only
+https://websitemaintenanceservices.org/wordpress-website-maintenance-packages/,https://websitemaintenanceservices.org/wordpress-website-maintenance-packages/,200,page,keep+expand,

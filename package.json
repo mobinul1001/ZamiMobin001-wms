@@ -1,0 +1,19 @@
+{
+  "name": "wms-rebuild",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/preview-headers.mjs",
+    "preview": "astro preview",
+    "crawl": "node scripts/crawl.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.4.4"
+  },
+  "devDependencies": {
+    "cheerio": "^1.2.0"
+  }
+}

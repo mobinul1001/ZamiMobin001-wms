@@ -1,0 +1,30 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  robots?: string;
+}
+const { title, description, robots } = Astro.props;
+
+// Netlify sets CONTEXT and URL during builds. Only a production build on the real domain
+// may be indexed, so the netlify.app address and any misconfigured build stay noindex.
+const isProduction = process.env.CONTEXT === 'production' && process.env.URL === Astro.site?.origin;
+const robotsContent = isProduction ? (robots ?? 'index, follow') : 'noindex, nofollow';
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="robots" content={robotsContent} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

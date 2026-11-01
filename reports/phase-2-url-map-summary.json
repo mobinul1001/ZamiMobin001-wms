@@ -1,0 +1,66 @@
+{
+  "total": 815,
+  "byStatus": {
+    "200": 121,
+    "301": 680,
+    "404": 14
+  },
+  "byType": {
+    "200 page": 44,
+    "301 wp-id": 97,
+    "301 attachment": 370,
+    "301 dead-link-target": 58,
+    "301 no-slash": 97,
+    "404 dead-link-target": 14,
+    "301 archive": 14,
+    "301 feed": 34,
+    "200 post": 48,
+    "301 no-slash-query": 3,
+    "200 query-variant": 28,
+    "200 feed": 1,
+    "301 page": 5,
+    "301 pagination": 2
+  },
+  "problems": {
+    "chains": {
+      "count": 0,
+      "sample": []
+    },
+    "selfRedirect": {
+      "count": 0,
+      "sample": []
+    },
+    "targetMissing": {
+      "count": 0,
+      "sample": []
+    },
+    "missingFile": {
+      "count": 0,
+      "sample": []
+    },
+    "lostOriginal": {
+      "count": 0,
+      "sample": []
+    },
+    "backlink404": {
+      "count": 0,
+      "sample": []
+    },
+    "gsc404": {
+      "count": 0,
+      "sample": []
+    }
+  },
+  "redirectsToHomepage": [
+    "/?p=42",
+    "/home",
+    "/home/",
+    "/page/2",
+    "/page/2/",
+    "/services",
+    "/Site",
+    "/website-maintenance-services",
+    "/website-maintenance-services/"
+  ],
+  "unsure": []
+}

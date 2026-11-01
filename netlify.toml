@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Every build except production on the real domain gets X-Robots-Tag: noindex, nofollow
+# from scripts/preview-headers.mjs, which writes dist/_headers during the build.
+# After the custom domain is added on launch day, run a new production build.
