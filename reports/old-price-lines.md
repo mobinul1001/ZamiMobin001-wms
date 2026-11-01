@@ -4,4 +4,4 @@
 
 | Page | Line | Text |
 |---|---|---|
-| wordpress-malware-removal-service | 623 | $249 / single site |
+| wordpress-malware-removal-service | 629 | $249 / single site |
