@@ -60,6 +60,17 @@ const BODY_LINKS = {
 const PLANS_EN = 'Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free).';
 const PLANS_OLD = 'Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.';
 const CARD_PRICES = {
+  // Owner, 2026-11-01: the USA page uses the master prices and plan names.
+  '/website-maintenance-services-for-usa/': [
+    ['$49/mo\n\n[Get Started](/get-a-free-quote/)', '$79/mo\n\n[Get Started](/get-a-free-quote/#essential)'],
+    ['$99/mo\n\n[Get Started](/get-a-free-quote/)', '$149/mo\n\n[Get Started](/get-a-free-quote/#growth)'],
+    ['$199/mo\n\n[Get Started](/get-a-free-quote/)', '$299/mo\n\n[Get Started](/get-a-free-quote/#business)'],
+    ['#### Basic\n', '#### Essential\n'],
+    ['#### Standard\n', '#### Growth\n'],
+    ['#### Premium\n', '#### Business\n'],
+    ['Everything in Basic +', 'Everything in Essential +'],
+    ['Everything in Standard +', 'Everything in Growth +'],
+  ],
   // Master price list on pages whose plan cards still showed the old $95/$195/$395 plans.
   '/website-maintenance-services-for-netherlands/': [["### Advanced","### Growth"],["### Elevate","### Business"],["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
   '/website-maintenance-services-for-switzerland/': [["### Advanced","### Growth"],["### Elevate","### Business"],["Save 20% with annual billing.","Get 2 months free with annual billing."],["$95/mo","$79/mo"],["$195/mo","$149/mo"],["$395/mo","$299/mo"],["or $76/mo billed annually","or $790/yr, 2 months free"],["or $156/mo billed annually","or $1,490/yr, 2 months free"],["or $316/mo billed annually","or $2,990/yr, 2 months free"]],
@@ -116,7 +127,7 @@ const PRICE_CHANGES = {
 };
 // Old text the owner approved replacing, so the parity test does not report it as lost.
 const allFrom = [...Object.values(PRICE_CHANGES), ...Object.values(CARD_PRICES)].flat().map(([from]) => from).filter((f) => typeof f === 'string');
-const CHANGED_TABLE_ROWS = ['WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
+const CHANGED_TABLE_ROWS = ['Basic', 'Standard', 'Premium', '$49/mo', '$99/mo', '$199/mo', 'WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
 export const isApprovedOldLine = (line) => ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
 // Schema question whose visible text is a section rather than an FAQ entry.

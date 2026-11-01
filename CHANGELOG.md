@@ -99,3 +99,7 @@
 - Text pieces inside links no longer run together.
 - Added scripts/test-browser-features.mjs: runs the quote hash and the scanner in headless Chrome. It caught the scanner crashing on a missing results list before commit.
 - The forms check found 9 service-page forms not connected. All 12 forms now post to Netlify Forms with unique names.
+
+## USA prices (2026-11-01, owner's decision)
+- USA page: Basic $49, Standard $99, Premium $199 became Essential $79, Growth $149, Business $299. Plan buttons use the hash links. Card feature lists are unchanged.
+- Corrected a Batch 3 mistake: "Plans from $79/mo" was on the UK, France and Ireland first screens, whose cards show £ and € prices. Removed until the owner decides those prices.

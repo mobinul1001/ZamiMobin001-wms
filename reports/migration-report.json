@@ -1731,6 +1731,54 @@
       "question": "Which platforms do you maintain?"
     },
     {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "$49/mo\n\n[Get Started](/get-a-free-quote/)",
+      "to": "$79/mo\n\n[Get Started](/get-a-free-quote/#essential)"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
+      "to": "$149/mo\n\n[Get Started](/get-a-free-quote/#growth)"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "$199/mo\n\n[Get Started](/get-a-free-quote/)",
+      "to": "$299/mo\n\n[Get Started](/get-a-free-quote/#business)"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "#### Basic\n",
+      "to": "#### Essential\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "#### Standard\n",
+      "to": "#### Growth\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "#### Premium\n",
+      "to": "#### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "Everything in Basic +",
+      "to": "Everything in Essential +"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "Everything in Standard +",
+      "to": "Everything in Growth +"
+    },
+    {
       "path": "/website-migration-services/",
       "change": "schema synced",
       "question": "How long does website migration take?"

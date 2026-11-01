@@ -14,11 +14,9 @@ const check = '/free-website-maintenance-audit/';
 // Starting prices come only from the master list. Pages with an unanswered price set show none.
 const FROM_LOW = [
   '/wordpress-website-maintenance-packages/',
-  '/website-maintenance-services-for-uk/',
+  '/website-maintenance-services-for-usa/',
   '/website-maintenance-services-for-canada/',
   '/website-maintenance-services-for-australia/',
-  '/website-maintenance-services-for-france/',
-  '/website-maintenance-services-for-ireland/',
   '/website-maintenance-services-for-netherlands/',
   '/website-maintenance-services-for-switzerland/',
   '/website-maintenance-services-for-spain/',
@@ -38,7 +36,7 @@ if (path === '/website-repair-services/') {
 } else if (path === '/website-hacked-recovery-services/') {
   priceLine = `Hacked site cleanup $${prices.hackedSiteCleanup}`;
   primary = { label: 'Get my site cleaned', href: quote };
-} else if (!FROM_LOW.includes(path) && !path.includes('-for-usa') && !path.includes('-maintenance-packages')) {
+} else if (!FROM_LOW.includes(path) && !path.includes('-services-for-') && !path.includes('-maintenance-packages')) {
   primary = { label: 'Get a quote', href: quote };
 }
 

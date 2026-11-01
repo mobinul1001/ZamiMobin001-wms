@@ -130,13 +130,13 @@ Full site health summary, performance metrics, security status, and improvement 
 
 <div class="card">
 
-#### Basic
+#### Essential
 
 Perfect for small websites & local businesses.
 
-$49/mo
+$79/mo
 
-[Get Started](/get-a-free-quote/)
+[Get Started](/get-a-free-quote/#essential)
 
 -   Monthly Updates
 -   Monthly Backups
@@ -153,15 +153,15 @@ $49/mo
 
 POPULAR
 
-#### Standard
+#### Growth
 
 Ideal for actively growing service-based businesses.
 
-$99/mo
+$149/mo
 
-[Get Started](/get-a-free-quote/)
+[Get Started](/get-a-free-quote/#growth)
 
--   Everything in Basic +
+-   Everything in Essential +
 -   **Weekly** Updates
 -   **Weekly** Backups
 -   Advanced Firewall & Malware
@@ -175,15 +175,15 @@ $99/mo
 
 <div class="card">
 
-#### Premium
+#### Business
 
 Best for eCommerce, enterprise, & high-traffic sites.
 
-$199/mo
+$299/mo
 
-[Get Started](/get-a-free-quote/)
+[Get Started](/get-a-free-quote/#business)
 
--   Everything in Standard +
+-   Everything in Growth +
 -   Daily Monitoring & Security
 -   **Daily** + Cloud Backups
 -   Malware Removal

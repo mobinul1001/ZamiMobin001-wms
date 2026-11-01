@@ -21,7 +21,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 | 7 Launch, 8 Monitoring | Not started | |
 
 **Not done in Phase 4 yet:**
-- Master prices are on the homepage, pricing, WordPress packages, Netherlands, Spain and Switzerland. 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
+- Master prices are on the homepage, pricing, WordPress packages, USA, Netherlands, Spain and Switzerland. 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
 - Moving unique content from the 4 merged pages to their targets.
 - Keyword edits inside page bodies, and expanding the homepage and packages page.
 - Rearranging service pages (problem, included, price, FAQ): first screen is new, the rest keeps its old order.
@@ -84,7 +84,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
 10. **FAQ market ranges:** change to $79–$149 and $79–$299, or keep as they are?
-11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup, the USA page (Basic $49, Standard $99, Premium $199), and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
+11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup, UK (£39, £89, £179), France and Ireland (€49, €99, €199), and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
 12. **Service package prices:** confirm each in `reports/service-package-prices.md`, including the migration and design conflicts and the four white-label points.
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.

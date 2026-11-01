@@ -1,9 +1,18 @@
 # Old plan prices still in page bodies
 
-122 lines on 10 pages.
+131 lines on 13 pages.
 
 | Page | Line | Text |
 |---|---|---|
+| website-maintenance-services-for-france | 144 | €49/mo |
+| website-maintenance-services-for-france | 167 | €99/mo |
+| website-maintenance-services-for-france | 190 | €199/mo |
+| website-maintenance-services-for-ireland | 144 | €49/mo |
+| website-maintenance-services-for-ireland | 167 | €99/mo |
+| website-maintenance-services-for-ireland | 190 | €199/mo |
+| website-maintenance-services-for-uk | 137 | £39/mo |
+| website-maintenance-services-for-uk | 160 | £89/mo |
+| website-maintenance-services-for-uk | 182 | £179/mo |
 | wordpress-website-maintenance-packages | 16 | Choose from three flexible WordPress maintenance plans — WP Starter, WP Growth, and WP Premium — starting at $79/month, with 2 months free when you pay annually. Every plan includes core updates, security monitoring, bac |
 | wordpress-website-maintenance-packages | 116 | Our WordPress maintenance plans scale with your business. The **WP Starter** plan ($79/mo) suits blogs and small sites, the **WP Growth** plan ($149/mo) is our most popular WordPress monthly maintenance package for growi |
 | wordpress-website-maintenance-packages | 184 | ### WP Starter |
