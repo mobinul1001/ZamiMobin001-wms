@@ -1203,6 +1203,12 @@
     },
     {
       "path": "/ecommerce-website-redesign/",
+      "change": "price",
+      "from": "Ongoing maintenance — updates tested on staging, security monitoring",
+      "to": "Ongoing maintenance — updates, security monitoring"
+    },
+    {
+      "path": "/ecommerce-website-redesign/",
       "change": "schema same",
       "question": "How much does an ecommerce website redesign cost?"
     },
@@ -5210,6 +5216,12 @@
     },
     {
       "path": "/what-does-website-maintenance-include/",
+      "change": "price text gone",
+      "from": "software, plugin and theme updates tested on staging, security monitoring",
+      "to": "software, plugin and theme updates, security monitoring"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
       "change": "price",
       "from": "Software, plugin, and theme updates (tested on staging first)",
       "to": "Software, plugin, and theme updates"
@@ -5677,8 +5689,8 @@
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
-      "from": "### Isolated Staging Clone",
-      "to": "### Pre-Update Snapshot"
+      "from": "Isolated Staging Clone",
+      "to": "Pre-Update Snapshot"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -6432,6 +6444,12 @@
       "path": "/wordpress-malware-removal/",
       "change": "schema synced",
       "question": "How much does professional WordPress malware removal cost?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "price text gone",
+      "from": "Managed WordPress security and maintenance: updates tested on staging,",
+      "to": "Managed WordPress security and maintenance: updates,"
     },
     {
       "path": "/wordpress-security-checklist/",

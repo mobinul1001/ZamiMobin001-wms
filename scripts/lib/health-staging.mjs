@@ -57,7 +57,7 @@ export const EXTRA_CHANGES = {
     ['#### Execution & Staging QA', '#### Execution & QA'],
     ['Task executed, tested on an isolated staging server, and verified for quality', 'Task executed and verified for quality'],
     ['Every plugin, theme, and core update in our **white label wordpress maintenance** routine goes through isolated staging testing before touching live servers.', 'Updates in our **white label wordpress maintenance** routine follow a careful order: snapshot first, then the update, then checks.'],
-    ['### Isolated Staging Clone', '### Pre-Update Snapshot'],
+    ['Isolated Staging Clone', 'Pre-Update Snapshot'],
     [/We clone your client's live website onto an isolated \*\*staging environment\*\* first[^\n]*/, "We take a snapshot of your client's website before any update, so a change can be rolled back."],
     [/^Zero Live Server Risk$/m, 'Rollback Ready'],
     ['### Visual Regression QA', '### Safe Live Deployment'],
@@ -70,10 +70,12 @@ export const EXTRA_CHANGES = {
   '/white-label-wordpress-maintenance-support/': [['-   WordPress core, plugin & theme updates (safely tested on staging)', '-   WordPress core, plugin & theme updates']],
   '/how-much-does-wordpress-website-maintenance-cost/': [['On managed plans, updates are tested on staging first so they never break your live site.', STAGING]],
   '/what-does-website-maintenance-include/': [
+    ['software, plugin and theme updates tested on staging, security monitoring', 'software, plugin and theme updates, security monitoring'],
     ['Software, plugin, and theme updates (tested on staging first)', 'Software, plugin, and theme updates'],
     ['We handle the whole stack — updates tested on staging, security monitoring', 'We handle the whole stack — updates, with staging-tested updates on the Business plan, security monitoring'],
   ],
-  '/wordpress-security-checklist/': [['for you: updates tested on staging, continuous security monitoring', 'for you: updates, with staging-tested updates on the Business plan, continuous security monitoring']],
+  '/ecommerce-website-redesign/': [['Ongoing maintenance — updates tested on staging, security monitoring', 'Ongoing maintenance — updates, security monitoring']],
+  '/wordpress-security-checklist/': [['Managed WordPress security and maintenance: updates tested on staging,', 'Managed WordPress security and maintenance: updates,'],['for you: updates tested on staging, continuous security monitoring', 'for you: updates, with staging-tested updates on the Business plan, continuous security monitoring']],
   '/nonprofit-website-maintenance/': [
     ['Applied promptly and tested on a staging copy first, so an update never breaks your live donation form in front of a ready donor.', 'Applied promptly, with staging-tested updates on the Business plan, to protect your donation form.'],
     ['Software and plugin updates (tested on staging)', 'Software and plugin updates'],
