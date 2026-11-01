@@ -138,3 +138,10 @@
 - White-label: same Essential-level features on all 3 tiers. Removed unlimited edits, dedicated manager, speed, emergency and staging claims. "50%+" replaced; build fails if it returns.
 - Backup retention 30, 60, 90 days; "9 deliverables" removed. Free migration line on pricing and migration pages.
 - Unique content moved from the 3 remaining merged pages. Add-ons from website-management-packages added to pricing.
+
+## Promises, white-label claims, SEO tiers, layout shift (2026-11-01)
+- Removed backup free month and refund, repair "no fix no fee" and 30-day refix, redesign free fix, small business refund, migration full redo. Kept malware re-clean and migration fix.
+- White-label: removed 99.99% SLA, 24/7 SLA, 3.8-hour response, Slack, dashboard, WAF and the two mock panels. "Hosting not included" on agency tiers.
+- SEO tiers set; dedicated strategist, weekly call and SLA removed; "11 deliverables" wording changed.
+- Malware tiers: vulnerability patch and short written report on all three.
+- Metric-matched fallback font and a fixed logo width, to stop text reflow when the web font loads.

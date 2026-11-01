@@ -272,9 +272,9 @@ export const ARTICLE_CHANGES = {
     ['Essential\n\n$49/site/mo\n\nor $39/site/mo billed annually', '1–5 sites\n\n$59/site/mo'],
     ['Most Popular\n\nAdvanced\n\n$99/site/mo\n\nor $79/site/mo billed annually', '6–20 sites\n\n$49/site/mo'],
     ['Elevate\n\n$179/site/mo\n\nor $143/site/mo billed annually', '21+ sites\n\n$39/site/mo'],
-    ['Starter care for client blogs, brochure & small sites.', 'Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
-    ['Active care for client business & lead-gen sites.', 'The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
-    ['Premium care for client stores & high-traffic sites.', 'The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports'],
+    ['Starter care for client blogs, brochure & small sites.', 'Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included'],
+    ['Active care for client business & lead-gen sites.', 'The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included'],
+    ['Premium care for client stores & high-traffic sites.', 'The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included'],
     ['Annual billing saves roughly 20% (about 2.4 months free) on every tier.', 'Annual billing gives 2 months free.'],
     ["| Client Sites | Your Discount | Essential | Advanced | Elevate |\n| --- | --- | --- | --- | --- |\n| 1 – 4 sites | Standard rate | $49 | $99 | $179 |\n| 5 – 9 sites | 10% off | $44 | $89 | $161 |\n| 10 – 24 sites | 20% off | $39 | $79 | $143 |\n| 25+ sites | Custom volume | Let's talk | Let's talk | Let's talk |", '| Client Sites | Wholesale price per site/month |\n| --- | --- |\n| 1 – 5 sites | $59 |\n| 6 – 20 sites | $49 |\n| 21+ sites | $39 |'],
     ['Prices are per site per month. Annual billing applies an additional discount on top.', 'Wholesale for agencies. Prices are per site per month. Annual billing gives 2 months free.'],
@@ -315,7 +315,7 @@ const coveredByPair = (line, path) => {
     return f.includes(s) || (f.length >= 20 && s.includes(f));
   });
 };
-export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full/.test(line));
+export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full|related to the original issue|No fix, no fee|SLA|Slack/.test(line));
 
 // Schema offers on these pages follow the same prices. White-label tiers without a confirmed price lose their offer.
 const OFFER_NAMES = {
@@ -334,6 +334,9 @@ function fixOfferNode(node, path) {
   if (named) return { ...node, name: named[0], price: named[1] };
   const out = {};
   for (const [k, v] of Object.entries(node)) out[k] = k === 'name' && typeof v === 'string' ? planName(v) : fixOfferNode(v, path);
+  if (path === '/white-label-website-maintenance-services-for-agencies/') {
+    if (typeof out.description === 'string') out.description = out.description.replace(/ with 99\.99% uptime SLA/, '').replace(/ with (?:24|12)-hour SLA(?: and dedicated account manager)?/, '').replace(/ with 4-hour emergency SLA/, '').replace(/20\+ client sites/, '21+ client sites').replace(/custom volume pricing/i, 'white label website maintenance');
+  }
   if (path === '/website-repair-services/' && out.priceSpecification) {
     const spec = { 'Small Website Repair': ['49.00', '49.00'], 'WordPress Repair': ['99.00', '299.00'], 'Business Website Repair': ['99.00', '299.00'] }[out.name];
     if (spec) Object.assign(out.priceSpecification, { minPrice: spec[0], maxPrice: spec[1] });
@@ -377,6 +380,10 @@ export function fixSchemaOffers(path, schema) {
 export function articleMeta(path, value) {
   if (!ARTICLE_CHANGES[path] || typeof value !== 'string') return value;
   let out = value;
-  for (const [from, to] of ARTICLE_CHANGES[path]) if (typeof from === 'string' && typeof to === 'string' && !from.includes('\n')) out = out.replaceAll(from, () => to);
+  for (const [from, to] of ARTICLE_CHANGES[path]) {
+    if (typeof to !== 'string') continue;
+    if (typeof from === 'string' && !from.includes('\n')) out = out.replaceAll(from, () => to);
+    else if (from instanceof RegExp && /\[\^"\]/.test(from.source)) out = out.replace(from, () => to);
+  }
   return out;
 }

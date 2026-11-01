@@ -4,13 +4,14 @@ import { MANAGEMENT_SECTIONS, PLAN_FAQS, SMALL_BUSINESS_SECTIONS } from './merge
 const list = (items) => items.map((i) => `-   ${i}`).join('\n');
 const FREE = 'Free migration with any annual plan';
 
-const AGENCY_FEATURES = list(['Weekly updates', 'Weekly backups', 'Security scan', 'Uptime monitoring', '1 hour edits/month per site', 'Unbranded client reports']);
+// Hero and FAQ claims on the white-label page: see the entry below.
+const AGENCY_FEATURES = list(['Weekly updates', 'Weekly backups', 'Security scan', 'Uptime monitoring', '1 hour edits/month per site', 'Unbranded client reports', 'Hosting not included']);
 const agencyCard = (oldPrice, oldButton, price, label, hash) => [`${oldPrice}\n\n${oldButton}`, `${price} / site / month\n\n${AGENCY_FEATURES}\n\n[${label}](/get-a-free-quote/#${hash})`];
 
 const MALWARE = {
-  cleanup: ['Full file and database malware scan', 'Infected code and shell removal', 'Backdoor removal'],
-  protect: ['Everything in Cleanup', 'Blacklist removal', 'Security hardening'],
-  priority: ['Everything in Cleanup + Protect', 'Work starts within 4 hours', '3 months of monitoring'],
+  cleanup: ['Full file and database malware scan', 'Infected code and shell removal', 'Backdoor removal', 'Patch the vulnerability that let the hack in', 'Short written report'],
+  protect: ['Everything in Cleanup', 'Patch the vulnerability that let the hack in', 'Short written report', 'Blacklist removal', 'Security hardening'],
+  priority: ['Everything in Cleanup + Protect', 'Patch the vulnerability that let the hack in', 'Short written report', 'Work starts within 4 hours', '3 months of monitoring'],
 };
 
 export const SERVICE_CHANGES = {
@@ -23,7 +24,7 @@ export const SERVICE_CHANGES = {
     ['$349 / single site\n\n[Get Priority Emergency](/contact/#priority-emergency)', `$349 / single site\n\n${list(MALWARE.priority)}\n\n[Choose Priority](/get-a-free-quote/#malware-priority)`],
     ['or hosting-suspended accounts needing same-day service.', 'or hosting-suspended accounts needing a fast start.'],
     [/Emergency same-day express service is available[^.\n]*\./, 'Our Priority tier starts within 4 hours.'],
-    [/Our service includes a full file and database scan[^\n]*/, 'Every tier includes a full file and database scan, malware removal and backdoor removal. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring.'],
+    [/Our service includes a full file and database scan[^\n]*/, 'Every tier includes a full file and database scan, malware removal, backdoor removal, a patch for the vulnerability that let the hack in, and a short written report. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring.'],
   ],
   '/website-speed-optimization-services/': [
     ['### Starter Audit', '### Speed Boost'], ['### Standard Speed', '### Core Web Vitals'], ['### WooCommerce Speed', '### WooCommerce / Large Site'],
@@ -38,6 +39,8 @@ export const SERVICE_CHANGES = {
     ['### How much does website speed optimization cost?\n\n', '### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n'],
   ],
   '/website-migration-services/': [
+    ['If anything breaks, fails, or experiences unexpected downtime within 30 days of migration, our engineers will fix it immediately or provide a full redo free of charge.', 'Free fix within 30 days if something we moved breaks.'],
+    ['Yes. If any error or broken link occurs post-launch, we fix it immediately free of charge.', 'Yes. If something we moved breaks within 30 days, we fix it free.'],
     ['### Basic Migration', '### Host-to-Host Move'], ['### Standard Migration', '### Full Migration'], ['### Enterprise / Custom', '### Platform Change'],
     [/^Basic Site$/m, 'Same Platform'], [/^Business & WP$/m, 'Domain & SEO'], [/^eCommerce & Large$/m, 'New Platform'],
     ['Ideal for small blogs, personal sites, or simple brochure websites under 1GB.', `Move to a new host, up to 20 pages, with no downtime. **Free with any annual plan.**`],
@@ -74,16 +77,63 @@ export const SERVICE_CHANGES = {
   ],
   '/website-seo-services/': [
     ['### Starter SEO', '### Local SEO Starter'], ['### Growth SEO', '### SEO Growth'], ['### Enterprise SEO', '### SEO Pro'],
-    ['$499 / month (Starting at)', '$299 / month'], ['$999 / month (Starting at)', '$599 / month'],
-    ['Custom Quote Starting from $1,999/month', '$999 / month'],
-    ['-   Everything in Starter SEO', '-   Everything in Local SEO Starter'], ['-   Everything in Growth SEO', '-   Everything in SEO Growth'],
-    ['[Choose Starter Plan](/get-a-free-quote/#starter-seo)', '[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)'],
-    ['[Get Growth SEO Plan]', '[Choose SEO Growth]'], ['[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)', '[Choose SEO Pro](/get-a-free-quote/#pro-seo)'],
+    ['$499 / month (Starting at)\n\n[Choose Starter Plan](/get-a-free-quote/#starter-seo)', `$299 / month\n\n${list(['Google Business Profile optimization', 'On-page SEO for 5 pages', 'Monthly report'])}\n\n[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)`],
+    ['$999 / month (Starting at)\n\n[Get Growth SEO Plan](/get-a-free-quote/#growth-seo)', `$599 / month\n\n${list(['Everything in Local SEO Starter', '2 articles/month', 'Local citations'])}\n\n[Choose SEO Growth](/get-a-free-quote/#growth-seo)`],
+    ['Custom Quote Starting from $1,999/month\n\n[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)', `$999 / month\n\n${list(['Everything in SEO Growth', '4 articles/month', 'Link outreach', '1 call/month'])}\n\n[Choose SEO Pro](/get-a-free-quote/#pro-seo)`],
+    ['Every monthly campaign includes 11 granular deliverables — from', 'Depending on your plan, monthly campaigns cover deliverables from'],
+    ['white-hat SEO, 11 granular deliverables, and complete', 'white-hat SEO, clear deliverables, and complete'],
+    ['### 11 Granular Scope Items', '### Clear Scope'],
+    ['Complete transparency. Every campaign covers technical, on-page, schema, Core Web Vitals, and off-page link building.', 'Complete transparency. You know exactly what each plan covers.'],
+    ['| 11 granular technical & content deliverables |', '| Clear deliverables listed for each plan |'],
+    ['Our full-service engagement covers 11 granular deliverables: technical SEO audits, keyword research, competitor analysis, on-page optimization, Schema markup, Core Web Vitals speed tuning, image SEO, and white-hat link building.', 'Depending on your plan, our SEO work covers Google Business Profile optimization, on-page SEO, articles, local citations, link outreach, and a monthly report.'],
+    ['Providing white-label SEO fulfillment and dedicated account management for agency partners.', 'Providing white-label SEO fulfillment for agency partners.'],
+    ['local citations, review response management, and weekly Google posts.', 'local citations, and review response management.'],
     ['#### Not sure which monthly SEO plan fits your business?', 'One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?'],
     [/Our monthly SEO pricing starts at \$499\/month for local small businesses, \$999\/month for scaling eCommerce brands, and custom estimates for enterprise portals\./, 'Our monthly SEO plans are $299 (Local SEO Starter), $599 (SEO Growth) and $999 (SEO Pro). A one-time SEO audit is $199.'],
     ['Our Starter SEO package ($499/mo)', 'Our Local SEO Starter plan ($299/mo)'],
   ],
+  '/website-repair-services/': [
+    ['No fix, no fee on diagnostics • ', ''],
+    [/^If it.s related to the original issue, we fix it again at no charge\.\n+/m, ''],
+  ],
+  '/wms-partner-program/': [['and guarantee technical stability.', 'and look after technical stability.']],
+  '/agreement/': [['Guaranteed support and turnaround times mean', 'Clear support and turnaround times mean']],
   '/white-label-website-maintenance-services-for-agencies/': [
+    ['Deliver SLA-backed **white label wordpress support**', 'Deliver **white label wordpress support**'],
+    ['with 24/7 security monitoring, offsite backups,', 'with security monitoring, offsite backups,'],
+    ['our technical team executes 24/7 security scans,', 'our technical team executes security scans,'],
+    ['with strict uptime SLAs and strict non-disclosure protection.', 'with strict non-disclosure protection.'],
+    ['-   • 24/7 Security, Backups & Updates', '-   • Security, Backups & Updates'],
+    ['to confirm your SLA needs and client site count.', 'to confirm your client site count.'],
+    ['### NDA & SLA Setup', '### NDA Setup'],
+    ['### Dashboard & Go-Live', '### Go-Live'],
+    ['Gain full access to your central agency dashboard. Maintenance officially begins', 'Maintenance officially begins'],
+    [/^24\/7 Protection$/m, 'Protection'],
+    [/Enterprise-grade (\[white label website security\]\([^)]*\)) featuring WAF firewalls, SSL management, and brute-force login hardening\./, (m, link) => `Regular ${link} scans for every client site.`],
+    ['### 24/7 Uptime Monitoring', '### Uptime Monitoring'],
+    ['Submit tickets, request small edits, and track SLA turnaround times through our flexible **white label wordpress maintenance plans** portal.', 'Submit tickets and request small edits by email through our flexible **white label wordpress maintenance plans**.'],
+    ['via email or self-serve **agency dashboard** portal.', 'via email.'],
+    ['#### Priority Queue & SLA Routing', '#### Task Routing'],
+    [/Request routes automatically to your[^\n]*/, 'Your request goes to your backend engineer.'],
+    ['Ticket closed, task logged in your dashboard, and unbranded monthly reports', 'Ticket closed and unbranded monthly reports'],
+    ['Whether you prefer real-time Slack channels, unbranded ticket helpdesks, or direct phone support,', 'Whether you prefer unbranded ticket helpdesks or email,'],
+    [/^Brand & SLA Safeguards$/m, 'Brand Safeguards'],
+    [/^24\/7 Real-Time Monitoring$/m, 'Real-Time Monitoring'],
+    ['and 24/7 uptime monitoring for **Shopify maintenance** clients.', 'and uptime monitoring for **Shopify maintenance** clients.'],
+    ['about agency white-labeling, SLAs, NDA protection, dashboard ticketing, and partner pricing.', 'about agency white-labeling, NDA protection, and partner pricing.'],
+    ['You onboard your client sites to our agency portal. Our engineers execute 24/7 security scans, daily backups, staging-first updates, and small edits.', 'You onboard your client sites with us. Our engineers run security scans, weekly backups, updates, and small edits.'],
+    ['All email ticket responses, plugin branding, and reporting dashboards display', 'All email ticket responses, plugin branding, and reports display'],
+    ['automated daily offsite cloud backups via our', 'automated weekly offsite cloud backups via our'],
+    ['and active WAF firewall monitoring via our', 'and regular security scans via our'],
+    [/^(?:Slack & Email Direct Channel|Slack \/ Teams Integration|1-Hour Escalation SLA|99\.99% Uptime SLA|Outcome: White Label SLA)\n+/gm, ''],
+    ['NDA & SLA Setup', 'NDA Setup'],
+    ['Dashboard Setup & Go Live', 'Go Live'],
+    [/Gain agency dashboard access[^"]*/, 'Maintenance begins and unbranded reports activate.'],
+    ['via email or agency dashboard portal', 'via email'],
+    ['Priority Queue & SLA Routing', 'Task Routing'],
+    [/Task routes to dedicated backend[^"]*/, 'Your request goes to your backend engineer.'],
+    ['Ticket closed, task logged in agency dashboard, and', 'Ticket closed and'],
+    ['and (4) Access your agency dashboard.', 'and (4) Start maintenance.'],
     agencyCard('$59 / site / month', '[Start Starter Plan](/get-a-free-quote/#whitelabel-starter)', '$59', 'Start Agency Starter', 'whitelabel-starter'),
     agencyCard('$39 / site / month', '[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)', '$49', 'Start Agency Growth', 'whitelabel-growth'),
     agencyCard('Custom Quote Volume Discounts Available', '[Talk to Sales](/contact/)', '$39', 'Start Agency Scale', 'whitelabel-scale'),

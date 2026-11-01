@@ -1,4 +1,5 @@
 /* "Calm engineering" site styles (CLAIMS-AND-DESIGN.md section B), approved 2026-11-01. */
+@font-face { font-family: 'Inter Fallback'; src: local('Arial'); size-adjust: 107.4%; ascent-override: 90.2%; descent-override: 22.48%; line-gap-override: 0%; }
 @font-face { font-family: Inter; src: url('/fonts/inter-latin-wght-normal.woff2') format('woff2'); font-weight: 100 900; font-display: swap; }
 :root {
   --ink: #16161a; --muted: #5c5f66; --line: #e4e5e8; --soft: #f7f7f8; --white: #fff;
@@ -7,7 +8,7 @@
 }
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; font: 400 17px/1.6 Inter, system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--ink); background: var(--white); font-feature-settings: 'tnum' 1, 'cv11' 1; }
+body { margin: 0; font: 400 17px/1.6 Inter, 'Inter Fallback', system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--ink); background: var(--white); font-feature-settings: 'tnum' 1, 'cv11' 1; }
 img { max-width: 100%; height: auto; }
 a { color: var(--accent-ink); text-underline-offset: 2px; }
 h1, h2, h3 { line-height: 1.2; letter-spacing: -0.015em; margin: 0; font-weight: 700; }
@@ -23,7 +24,7 @@ p { margin: 0; }
 /* Header */
 .site-head { border-bottom: 1px solid var(--line); background: var(--white); }
 .site-head .wrap { display: flex; align-items: center; gap: 24px; min-height: 72px; }
-.logo img { display: block; height: 42px; width: auto; }
+.logo img { display: block; height: 42px; width: 126px; }
 .nav { display: flex; gap: 24px; margin-left: auto; align-items: center; }
 .nav a { color: var(--ink); text-decoration: none; font-size: 0.96rem; }
 .nav a:hover, .nav a.on { color: var(--accent-ink); }

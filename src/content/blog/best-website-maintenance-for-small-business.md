@@ -315,8 +315,6 @@ WordPress, WooCommerce, and Shopify all covered by one team.
 
 ✅
 
-Not happy in the first two weeks? We refund your first payment.
-
 <a id="choose"></a>
 
 <p class="eyebrow">Section 13</p>

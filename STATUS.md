@@ -55,6 +55,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Removal of the /blogs/ hidden list and the quote-form coupon box: confirmed by the owner.
 - Repair: small fix $49, most repairs $99–$299, complex work quoted, hacked cleanup $149. Backup and updates are in every plan; emergency restore and catch-up update from $99 without a plan.
 - White-label wholesale per site/month: 1–5 sites $59, 6–20 $49, 21+ $39. Hosting after year one: $19/month or $190/year. Guarantee wording approved: "If we can't clean your hacked site, you don't pay."
+- Promises allowed: "If we can't clean your hacked site, you don't pay."; malware free re-clean if reinfected within 30 days; migration free fix within 30 days if something we moved breaks. No others; the build fails on the removed wording.
+- SEO tiers: Local SEO Starter $299 (Google Business Profile, on-page SEO for 5 pages, monthly report); SEO Growth $599 (+2 articles/month, local citations); SEO Pro $999 (+4 articles/month, link outreach, 1 call/month).
 - Service prices set: see `reports/service-package-prices.md`. Free migration (host-to-host) with any annual plan. White-label tiers have the same Essential-level features; only the rate changes. Backup retention 30/60/90 days.
 - /plan-packages-and-costs/, /website-management-packages/ and /website-maintenance-services-for-small-business/: unique content moved, 301s kept.
 - 48 blog posts confirmed against the owner's list. /website-support/ is a 301 to /website-support-services/, its unique content moved there.
@@ -99,10 +101,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- Guarantee-style promises beyond the approved line: backup page ("Free month if we fail to recover", "30-Day Satisfaction... full refund"), malware page (re-clean within 30 days free), migration page (fix or full redo free within 30 days).
-- White-label service page still claims a 24/7 SLA, 99.99% SLA, 3.8-hour response, Slack channel, agency dashboard and WAF. These are above Essential level. Hosting and webmail are not listed on agency tiers.
-- Malware page: the process section still lists vulnerability patching and a written post-cleanup report, which the tier lists no longer have.
-- SEO tiers kept their old feature lists at lower prices, including a dedicated strategist, link building, weekly calls and an SLA.
+- White-label service page: the process section still says every update is tested on staging first, a "HIPAA-compliant" line remains, and the free-audit and NDA steps keep their old text. Check against Essential level.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps

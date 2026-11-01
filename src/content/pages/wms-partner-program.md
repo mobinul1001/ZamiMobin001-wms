@@ -281,7 +281,7 @@ Find the opportunity, manage your client relationship, and set your own prices.
 
 #### Our Role
 
-Execute updates, perform backups, secure the site, and guarantee technical stability.
+Execute updates, perform backups, secure the site, and look after technical stability.
 
 Commercial Clarity
 

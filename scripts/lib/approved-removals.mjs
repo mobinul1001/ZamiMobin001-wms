@@ -68,12 +68,21 @@ const removeTierCards = ($, firstLabel, lastLabel) => {
   box.remove();
 };
 // A heading with its text: the card when it holds only this heading, otherwise the text up to the next heading.
+// Owner, 2026-11-01: the only promises left are the hacked-site line, the malware re-clean and the migration fix.
+const removeMatching = ($, patterns, optional = false) => {
+  for (const re of patterns) {
+    const found = $('body *').filter((_, x) => re.test($(x).text().trim()) && !$(x).children().toArray().some((c) => re.test($(c).text().trim())));
+    if (!found.length && !optional) throw new Error(`${re} not found`);
+    found.remove();
+  }
+};
 const removeBlock = ($, text) => {
   const heads = $('h2, h3, h4, h5').filter((_, e) => $(e).text().trim() === text);
   if (!heads.length) throw new Error(`block "${text}" not found`);
   heads.each((_, e) => {
     const h = $(e);
-    const box = h.parent();
+    let box = h.parent();
+    while (box.text().trim() === text) box = box.parent();
     if (box.find('h1, h2, h3, h4, h5').length === 1 && box.text().trim().split(/\s+/).length < 80) box.remove();
     else { h.nextUntil('h1, h2, h3, h4, h5').remove(); h.remove(); }
   });
@@ -93,11 +102,24 @@ const STORE_REMOVALS = {
     removeCompareRows($);
     removeFromList($, /^What's Included in Every Plan\?$/, ['Broken Link Monitoring', 'Monthly Health Report']);
   },
-  '/wordpress-backup-services/': ($) => removeTierCards($, 'Starter Tier', 'Agency Tier'),
+  '/wordpress-backup-services/': ($) => {
+    removeTierCards($, 'Starter Tier', 'Agency Tier');
+    // The whole "Our Restore Guarantee" panel.
+    const panel = $('body *').filter((_, x) => $(x).text().trim() === 'Zero Risk Commitment' && $(x).children().length === 0).first().parent();
+    if (!/Restore SLA/.test(panel.text()) || panel.text().trim().split(/\s+/).length > 150) throw new Error('backup guarantee panel not found');
+    panel.remove();
+  },
+  '/website-redesign-services/': ($) => removeBlock($, 'What if something breaks after launch?'),
+  '/website-repair-services/': ($) => removeMatching($, [/^Zero Risk Protection$/, /^If anything related to the original issue resurfaces within 30 days/, /^What if the problem comes back after you fix it\?$/]),
   '/website-update-services/': ($) => removeTierCards($, 'Starter Plan', 'Agency / eCommerce'),
   '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Essential', 'Advanced', 'Elevate']),
   '/white-label-website-maintenance-services-for-agencies/': ($) => {
     removeCardFeatures($, 'white-label', ['Starter Plan', 'Growth Plan', 'Agency+ Custom']);
+    removeTierCards($, 'agency-portal.v3', 'Your Brand');
+    removeTierCards($, 'agency-ticketing-v2', 'PDF Ready');
+    for (const block of ['Central Agency Dashboard', 'Dedicated Slack Channel', '24/7 Emergency Line', 'Need Custom SLA Options for an Enterprise Client?', 'How does your agency dashboard work?', 'Web Application Firewall']) removeBlock($, block);
+    removeMatching($, [/^24\/7 Agency SLA Included$/, /^WAF Firewall & SSL Active$/, /^24\/7 SLA$/, /^Average SLA Response Time/, /^Senior Account Lead$/, /^PageSpeed & Demo Funnel SLAs$/, /^Checkout & Cart SLA Supported$/, /^API & Custom Codebase SLA$/, /^99\.99% Uptime SLA$/, /^Outcome: White Label SLA$/, /^Request Agency Dashboard Demo$/], true);
+    $('tr').filter((_, r) => /^(24\/7 Emergency Hack Recovery|Self-Serve Agency Portal Dashboard)/.test($(r).text().trim())).remove();
     for (const block of ['Unlimited Small Edits', 'Dedicated Account Manager', 'Performance Optimization', 'Emergency Support', 'Will we have a dedicated account manager?', 'Can you handle unlimited small fixes and edits?']) removeBlock($, block);
     $('p, div').filter((_, x) => /^(Yes! Agencies on our Growth and Agency\+|Yes\. We execute unlimited content edits)/.test($(x).text().trim()) && $(x).children('p, div').length === 0).remove();
     removeLeaves($, ['• Unlimited Small Edits & Fixes', 'Dedicated Account Manager', 'Staging Environment Tested', 'Visual Regression Tested']);
@@ -110,7 +132,11 @@ const STORE_REMOVALS = {
   },
   '/website-migration-services/': ($) => removeCardFeatures($, 'migration', ['Basic Migration', 'Standard Migration', 'Enterprise / Custom']),
   '/website-design-services/': ($) => removeCardFeatures($, 'design', ['Premium / Enterprise']),
-  '/best-website-maintenance-for-small-business/': ($) => { removeCardFeatures($, 'small business', ARTICLE_HEADS); removeCompareRows($); },
+  '/website-seo-services/': ($) => {
+    removeCardFeatures($, 'SEO', ['Starter SEO', 'Growth SEO', 'Enterprise SEO']);
+    removeBlock($, 'Dedicated Strategist');
+  },
+  '/best-website-maintenance-for-small-business/': ($) => { removeCardFeatures($, 'small business', ARTICLE_HEADS); removeCompareRows($); removeMatching($, [/^(✅\s*)?Not happy in the first two weeks\?/]); },
   '/how-much-does-website-maintenance-cost/': ($) => removeCardFeatures($, 'cost', ARTICLE_HEADS),
   '/how-much-does-wordpress-website-maintenance-cost/': ($) => { removeCardFeatures($, 'WordPress cost', ARTICLE_HEADS); removeCompareRows($); },
   '/ecommerce-website-maintenance-packages/': ($) => { removeCardFeatures($, 'ecommerce', ['Ecommerce Starter', 'Ecommerce Growth', 'Ecommerce Premium']); removeCompareRows($); },
@@ -174,7 +200,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 620])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
+const MAX_WORDS = { '/white-label-website-maintenance-services-for-agencies/': 1000, ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 620])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/white-label-website-maintenance-services-for-agencies/': 1000, '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

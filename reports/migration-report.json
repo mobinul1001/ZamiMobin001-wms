@@ -2,7 +2,7 @@
   "migrated": 92,
   "posts": 48,
   "pages": 44,
-  "linksRewritten": 373,
+  "linksRewritten": 372,
   "planLinksToHash": 28,
   "unknownLinks": [],
   "unlinked404Targets": {
@@ -267,6 +267,12 @@
       "path": "/",
       "change": "schema same",
       "question": "Can I request additional updates or changes?"
+    },
+    {
+      "path": "/agreement/",
+      "change": "price",
+      "from": "Guaranteed support and turnaround times mean",
+      "to": "Clear support and turnaround times mean"
     },
     {
       "path": "/agreement/",
@@ -3505,6 +3511,18 @@
     {
       "path": "/website-migration-services/",
       "change": "price",
+      "from": "If anything breaks, fails, or experiences unexpected downtime within 30 days of migration, our engineers will fix it immediately or provide a full redo free of charge.",
+      "to": "Free fix within 30 days if something we moved breaks."
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "Yes. If any error or broken link occurs post-launch, we fix it immediately free of charge.",
+      "to": "Yes. If something we moved breaks within 30 days, we fix it free."
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
       "from": "### Basic Migration",
       "to": "### Host-to-Host Move"
     },
@@ -3818,7 +3836,7 @@
     },
     {
       "path": "/website-redesign-services/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "What if something breaks after launch?"
     },
     {
@@ -3840,6 +3858,18 @@
       "path": "/website-redesign-services/",
       "change": "schema synced",
       "question": "What ongoing support is available after launch?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "No fix, no fee on diagnostics • ",
+      "to": ""
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/^If it.s related to the original issue, we fix it again at no charge\\.\\n+/m",
+      "to": ""
     },
     {
       "path": "/website-repair-services/",
@@ -4049,7 +4079,7 @@
     },
     {
       "path": "/website-repair-services/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "What if the problem comes back after you fix it?"
     },
     {
@@ -4128,50 +4158,68 @@
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "$499 / month (Starting at)",
-      "to": "$299 / month"
+      "from": "$499 / month (Starting at)\n\n[Choose Starter Plan](/get-a-free-quote/#starter-seo)",
+      "to": "$299 / month\n\n-   Google Business Profile optimization\n-   On-page SEO for 5 pages\n-   Monthly report\n\n[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "$999 / month (Starting at)",
-      "to": "$599 / month"
+      "from": "$999 / month (Starting at)\n\n[Get Growth SEO Plan](/get-a-free-quote/#growth-seo)",
+      "to": "$599 / month\n\n-   Everything in Local SEO Starter\n-   2 articles/month\n-   Local citations\n\n[Choose SEO Growth](/get-a-free-quote/#growth-seo)"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "Custom Quote Starting from $1,999/month",
-      "to": "$999 / month"
+      "from": "Custom Quote Starting from $1,999/month\n\n[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)",
+      "to": "$999 / month\n\n-   Everything in SEO Growth\n-   4 articles/month\n-   Link outreach\n-   1 call/month\n\n[Choose SEO Pro](/get-a-free-quote/#pro-seo)"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "-   Everything in Starter SEO",
-      "to": "-   Everything in Local SEO Starter"
+      "from": "Every monthly campaign includes 11 granular deliverables — from",
+      "to": "Depending on your plan, monthly campaigns cover deliverables from"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "-   Everything in Growth SEO",
-      "to": "-   Everything in SEO Growth"
+      "from": "white-hat SEO, 11 granular deliverables, and complete",
+      "to": "white-hat SEO, clear deliverables, and complete"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "[Choose Starter Plan](/get-a-free-quote/#starter-seo)",
-      "to": "[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)"
+      "from": "### 11 Granular Scope Items",
+      "to": "### Clear Scope"
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "[Get Growth SEO Plan]",
-      "to": "[Choose SEO Growth]"
+      "from": "Complete transparency. Every campaign covers technical, on-page, schema, Core Web Vitals, and off-page link building.",
+      "to": "Complete transparency. You know exactly what each plan covers."
     },
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)",
-      "to": "[Choose SEO Pro](/get-a-free-quote/#pro-seo)"
+      "from": "| 11 granular technical & content deliverables |",
+      "to": "| Clear deliverables listed for each plan |"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "Our full-service engagement covers 11 granular deliverables: technical SEO audits, keyword research, competitor analysis, on-page optimization, Schema markup, Core Web Vitals speed tuning, image SEO, and white-hat link building.",
+      "to": "Depending on your plan, our SEO work covers Google Business Profile optimization, on-page SEO, articles, local citations, link outreach, and a monthly report."
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "Providing white-label SEO fulfillment and dedicated account management for agency partners.",
+      "to": "Providing white-label SEO fulfillment for agency partners."
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "local citations, review response management, and weekly Google posts.",
+      "to": "local citations, and review response management."
     },
     {
       "path": "/website-seo-services/",
@@ -4806,20 +4854,229 @@
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
+      "from": "Deliver SLA-backed **white label wordpress support**",
+      "to": "Deliver **white label wordpress support**"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "with 24/7 security monitoring, offsite backups,",
+      "to": "with security monitoring, offsite backups,"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "our technical team executes 24/7 security scans,",
+      "to": "our technical team executes security scans,"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "with strict uptime SLAs and strict non-disclosure protection.",
+      "to": "with strict non-disclosure protection."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "-   • 24/7 Security, Backups & Updates",
+      "to": "-   • Security, Backups & Updates"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "to confirm your SLA needs and client site count.",
+      "to": "to confirm your client site count."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### NDA & SLA Setup",
+      "to": "### NDA Setup"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Dashboard & Go-Live",
+      "to": "### Go-Live"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Gain full access to your central agency dashboard. Maintenance officially begins",
+      "to": "Maintenance officially begins"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^24\\/7 Protection$/m",
+      "to": "Protection"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/Enterprise-grade (\\[white label website security\\]\\([^)]*\\)) featuring WAF firewalls, SSL management, and brute-force login hardening\\./"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### 24/7 Uptime Monitoring",
+      "to": "### Uptime Monitoring"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Submit tickets, request small edits, and track SLA turnaround times through our flexible **white label wordpress maintenance plans** portal.",
+      "to": "Submit tickets and request small edits by email through our flexible **white label wordpress maintenance plans**."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "via email or self-serve **agency dashboard** portal.",
+      "to": "via email."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "#### Priority Queue & SLA Routing",
+      "to": "#### Task Routing"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/Request routes automatically to your[^\\n]*/",
+      "to": "Your request goes to your backend engineer."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Ticket closed, task logged in your dashboard, and unbranded monthly reports",
+      "to": "Ticket closed and unbranded monthly reports"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Whether you prefer real-time Slack channels, unbranded ticket helpdesks, or direct phone support,",
+      "to": "Whether you prefer unbranded ticket helpdesks or email,"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Brand & SLA Safeguards$/m",
+      "to": "Brand Safeguards"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^24\\/7 Real-Time Monitoring$/m",
+      "to": "Real-Time Monitoring"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "and 24/7 uptime monitoring for **Shopify maintenance** clients.",
+      "to": "and uptime monitoring for **Shopify maintenance** clients."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "about agency white-labeling, SLAs, NDA protection, dashboard ticketing, and partner pricing.",
+      "to": "about agency white-labeling, NDA protection, and partner pricing."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "You onboard your client sites to our agency portal. Our engineers execute 24/7 security scans, daily backups, staging-first updates, and small edits.",
+      "to": "You onboard your client sites with us. Our engineers run security scans, weekly backups, updates, and small edits."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "All email ticket responses, plugin branding, and reporting dashboards display",
+      "to": "All email ticket responses, plugin branding, and reports display"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "automated daily offsite cloud backups via our",
+      "to": "automated weekly offsite cloud backups via our"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "and active WAF firewall monitoring via our",
+      "to": "and regular security scans via our"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^(?:Slack & Email Direct Channel|Slack \\/ Teams Integration|1-Hour Escalation SLA|99\\.99% Uptime SLA|Outcome: White Label SLA)\\n+/gm",
+      "to": ""
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "NDA & SLA Setup",
+      "to": "NDA Setup"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "Dashboard Setup & Go Live",
+      "to": "Go Live"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "/Gain agency dashboard access[^\"]*/",
+      "to": "Maintenance begins and unbranded reports activate."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "via email or agency dashboard portal",
+      "to": "via email"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "Priority Queue & SLA Routing",
+      "to": "Task Routing"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "/Task routes to dedicated backend[^\"]*/",
+      "to": "Your request goes to your backend engineer."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price text gone",
+      "from": "Ticket closed, task logged in agency dashboard, and",
+      "to": "Ticket closed and"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "and (4) Access your agency dashboard.",
+      "to": "and (4) Start maintenance."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
       "from": "$59 / site / month\n\n[Start Starter Plan](/get-a-free-quote/#whitelabel-starter)",
-      "to": "$59 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Starter](/get-a-free-quote/#whitelabel-starter)"
+      "to": "$59 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Starter](/get-a-free-quote/#whitelabel-starter)"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
       "from": "$39 / site / month\n\n[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)",
-      "to": "$49 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Growth](/get-a-free-quote/#whitelabel-growth)"
+      "to": "$49 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Growth](/get-a-free-quote/#whitelabel-growth)"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
       "from": "Custom Quote Volume Discounts Available\n\n[Talk to Sales](/contact/)",
-      "to": "$39 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n\n[Start Agency Scale](/get-a-free-quote/#whitelabel-scale)"
+      "to": "$39 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Scale](/get-a-free-quote/#whitelabel-scale)"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -4901,13 +5158,13 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
+      "change": "price text gone",
       "from": "We offer custom SLAs and dedicated account management.",
       "to": "We offer custom SLAs."
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
+      "change": "price text gone",
       "from": "your dedicated backend engineer",
       "to": "your backend engineer"
     },
@@ -5070,7 +5327,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "How does your agency dashboard work?"
     },
     {
@@ -5080,7 +5337,7 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How do you onboard a new agency partner?"
     },
     {
@@ -5115,19 +5372,19 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Starter care for client blogs, brochure & small sites.",
-      "to": "Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
+      "to": "Wholesale for agencies managing client sites.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Active care for client business & lead-gen sites.",
-      "to": "The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
+      "to": "The same features at a lower per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Premium care for client stores & high-traffic sites.",
-      "to": "The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports"
+      "to": "The same features at our lowest per-site rate.\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -5311,6 +5568,12 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "schema same",
       "question": "How do I become a white label WordPress maintenance partner?"
+    },
+    {
+      "path": "/wms-partner-program/",
+      "change": "price",
+      "from": "and guarantee technical stability.",
+      "to": "and look after technical stability."
     },
     {
       "path": "/wordpress-backup-services/",
@@ -5498,19 +5761,19 @@
       "path": "/wordpress-malware-removal-service/",
       "change": "price",
       "from": "$149 / single site\n\n[Choose Standard Plan](/contact/#standard-cleanup)",
-      "to": "$149 / single site\n\n-   Full file and database malware scan\n-   Infected code and shell removal\n-   Backdoor removal\n\n[Choose Cleanup](/get-a-free-quote/#malware-cleanup)"
+      "to": "$149 / single site\n\n-   Full file and database malware scan\n-   Infected code and shell removal\n-   Backdoor removal\n-   Patch the vulnerability that let the hack in\n-   Short written report\n\n[Choose Cleanup](/get-a-free-quote/#malware-cleanup)"
     },
     {
       "path": "/wordpress-malware-removal-service/",
       "change": "price",
       "from": "$249 / single site\n\n[Get Complete Recovery](/contact/#complete-recovery)",
-      "to": "$249 / single site\n\n-   Everything in Cleanup\n-   Blacklist removal\n-   Security hardening\n\n[Choose Cleanup + Protect](/get-a-free-quote/#malware-protect)"
+      "to": "$249 / single site\n\n-   Everything in Cleanup\n-   Patch the vulnerability that let the hack in\n-   Short written report\n-   Blacklist removal\n-   Security hardening\n\n[Choose Cleanup + Protect](/get-a-free-quote/#malware-protect)"
     },
     {
       "path": "/wordpress-malware-removal-service/",
       "change": "price",
       "from": "$349 / single site\n\n[Get Priority Emergency](/contact/#priority-emergency)",
-      "to": "$349 / single site\n\n-   Everything in Cleanup + Protect\n-   Work starts within 4 hours\n-   3 months of monitoring\n\n[Choose Priority](/get-a-free-quote/#malware-priority)"
+      "to": "$349 / single site\n\n-   Everything in Cleanup + Protect\n-   Patch the vulnerability that let the hack in\n-   Short written report\n-   Work starts within 4 hours\n-   3 months of monitoring\n\n[Choose Priority](/get-a-free-quote/#malware-priority)"
     },
     {
       "path": "/wordpress-malware-removal-service/",
@@ -5528,7 +5791,7 @@
       "path": "/wordpress-malware-removal-service/",
       "change": "price",
       "from": "/Our service includes a full file and database scan[^\\n]*/",
-      "to": "Every tier includes a full file and database scan, malware removal and backdoor removal. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring."
+      "to": "Every tier includes a full file and database scan, malware removal, backdoor removal, a patch for the vulnerability that let the hack in, and a short written report. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring."
     },
     {
       "path": "/wordpress-malware-removal-service/",

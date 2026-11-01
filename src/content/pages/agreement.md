@@ -103,7 +103,7 @@ Costs, billing cycles, and what triggers extra charges are agreed up front — n
 
 ### Defined Response Times
 
-Guaranteed support and turnaround times mean you know help arrives when you need it.
+Clear support and turnaround times mean you know help arrives when you need it.
 
 </div>
 

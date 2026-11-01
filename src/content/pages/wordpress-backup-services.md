@@ -694,28 +694,6 @@ Backups are included in every plan: weekly on Essential, daily on Growth and Bus
 
 Looking for comprehensive website maintenance including speed and security? View our [full maintenance plans and packages](/monthly-website-maintenance-packages/).
 
-Zero Risk Commitment
-
-If we ever fail to restore your site from a valid backup within our stated timeframe, **that month's service is free** — no argument, no fine print gymnastics. We are confident in this because we test restores in advance, before you ever need one, not after a disaster occurs.
-
-<div class="cards">
-
-<div class="card">
-
-Restore SLA Free month if we fail to recover your site in time.
-
-</div>
-
-<div class="card">
-
-30-Day Satisfaction Period Cancel in your first month and get a full refund.
-
-</div>
-
-</div>
-
-No Fine Print Gymnastics • Pre-Tested Restores • Instant Cancel Anytime
-
 Industry Data Factors
 
 ## The Numbers Behind Why This Matters

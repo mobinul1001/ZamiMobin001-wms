@@ -122,6 +122,7 @@ Wholesale for agencies managing client sites.
 -   Uptime monitoring
 -   1 hour edits/month per site
 -   Unbranded client reports
+-   Hosting not included
 
 [Request Rate Card](/get-a-free-quote/)
 
@@ -137,6 +138,7 @@ The same features at a lower per-site rate.
 -   Uptime monitoring
 -   1 hour edits/month per site
 -   Unbranded client reports
+-   Hosting not included
 
 [Request Rate Card](/get-a-free-quote/)
 
@@ -152,6 +154,7 @@ The same features at our lowest per-site rate.
 -   Uptime monitoring
 -   1 hour edits/month per site
 -   Unbranded client reports
+-   Hosting not included
 
 [Request Rate Card](/get-a-free-quote/)
 
