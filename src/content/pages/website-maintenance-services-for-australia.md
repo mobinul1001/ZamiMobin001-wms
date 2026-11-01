@@ -144,20 +144,21 @@ BRONZE
 
 Essential updates & security for small sites.
 
-A$112/mo
+A$109/mo
 
-or A$1,120/yr, 2 months free
+First month free
 
-[Select Plan](/get-a-free-quote/#essential)
+or A$1,090/yr, 2 months free
 
--   Monthly Updates
--   Security Monitoring
--   Backup & Restore
--   Basic Speed Optimization
--   Uptime Monitoring
--   Malware Scan
--   Email Support
--   Basic Performance Reports
+[Select Plan](/get-a-free-quote/#essential-aud)
+
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -171,21 +172,23 @@ MOST POPULAR
 
 Ideal for growing businesses & service websites.
 
-A$212/mo
+A$209/mo
 
-or A$2,120/yr, 2 months free
+First month free
 
-[Select Plan](/get-a-free-quote/#growth)
+or A$2,090/yr, 2 months free
 
--   Everything in Essential +
--   **Bi-Weekly** Updates
--   Advanced Security Hardening
--   Advanced Speed Optimization
--   Database Optimization
--   Staging Environment Testing
--   **3 Content Updates**/mo
--   Spam Prevention
--   Priority Support
+[Select Plan](/get-a-free-quote/#growth-aud)
+
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -197,21 +200,21 @@ GOLD
 
 For high-traffic, eCommerce & mission-critical sites.
 
-A$426/mo
+A$429/mo
 
-or A$4,260/yr, 2 months free
+First month free
 
-[Select Plan](/get-a-free-quote/#business)
+or A$4,290/yr, 2 months free
 
--   Everything in Growth +
--   **Weekly** Updates
--   Real-Time Uptime/Security
--   **eCommerce** Maintenance
--   **Backup Every 12 Hours**
--   Conversion Optimization
--   **5 Custom Dev Tasks**/mo
--   Monthly A/B Testing
--   24/7 Priority Emergency Fix
+[Select Plan](/get-a-free-quote/#business-aud)
+
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 
@@ -309,11 +312,11 @@ Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart, Darwin, Gold Coa
 
 #### 1\. How often will you update my website?
 
-Depending on your plan, we perform updates monthly (Essential), bi-weekly (Growth), or weekly (Business).
+We perform updates weekly on every plan.
 
 #### 2\. Do you handle eCommerce websites?
 
-Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Business plan.
+Yes, we specialize in WooCommerce and Shopify maintenance. WooCommerce support is included from our Growth plan.
 
 #### 3\. What if my website gets hacked?
 

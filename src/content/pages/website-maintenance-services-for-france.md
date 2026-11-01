@@ -141,20 +141,21 @@ Transparent, effective maintenance tiers for French businesses.
 
 Perfect for small websites and local businesses.
 
-€71/mo
+€69/mo
 
-or €710/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#essential)
+or €690/yr, 2 months free
 
--   Monthly Updates
--   Basic Malware Scan
--   Monthly Backups
--   Speed Optimization (Basic)
--   Uptime Monitoring
--   Broken Link Checks
--   Email Support
--   Monthly Report
+[Choose Plan](/get-a-free-quote/#essential-eur)
+
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -166,22 +167,23 @@ POPULAR
 
 Ideal for growing businesses & service websites.
 
-€133/mo
+€129/mo
 
-or €1,330/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#growth)
+or €1,290/yr, 2 months free
 
--   Everything in Essential +
--   **Bi-Weekly** Updates
--   Advanced Firewall
--   Advanced Speed Opt
--   Database Optimization
--   Staging Environment
--   **3 Content Updates**/mo
--   Spam & Bot Protection
--   SEO Performance Check
--   Priority Support
+[Choose Plan](/get-a-free-quote/#growth-eur)
+
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -191,21 +193,21 @@ or €1,330/yr, 2 months free
 
 For eCommerce, high-traffic & mission-critical sites.
 
-€268/mo
+€269/mo
 
-or €2,680/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#business)
+or €2,690/yr, 2 months free
 
--   Everything in Growth +
--   **Weekly** Updates
--   Daily Monitoring
--   Malware Removal
--   **Full eCommerce** Support
--   Checkout & Payment Tests
--   **5 Custom Edits**/mo
--   Backup Every 12 Hours
--   24/7 Emergency Support
+[Choose Plan](/get-a-free-quote/#business-eur)
+
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 

@@ -289,11 +289,11 @@ Transparent Pricing
 
 ## Website Support Plans & Pricing
 
-Choose the level of coverage your business requires. Save 20% on all plans when you choose annual billing. No long-term contracts.
+Choose the level of coverage your business requires. Get 2 months free on all plans when you choose annual billing. No long-term contracts.
 
 Monthly
 
-Annually Save 20%
+Annually: 2 months free
 
 <div class="cards">
 

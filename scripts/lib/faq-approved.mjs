@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { countryPairs, countryMeta, COUNTRY_OLD_LINES } from './country-prices.mjs';
+import { articlePairs, isChangedArticleLine } from './article-prices.mjs';
 // FAQ changes the owner approved on 2026-11-01. Questions that were in the schema but not on the
 // page are shown; where the page already asks the same question, nothing is duplicated and the
 // schema is aligned to the visible wording.
@@ -119,7 +120,7 @@ const PRICE_CHANGES = {
 const allFrom = [...Object.values(PRICE_CHANGES), ...Object.values(CARD_PRICES)].flat().map(([from]) => from).filter((f) => typeof f === 'string');
 const CHANGED_TABLE_ROWS = ['Basic', 'Standard', 'Premium', '$49/mo', '$99/mo', '$199/mo', 'WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
 const countryFrom = Object.keys(LOCAL_PATHS).flatMap((p) => countryPairs(p)).map(([from]) => from).filter((s) => typeof s === 'string' && !s.includes('\n'));
-export const isApprovedOldLine = (line) => COUNTRY_OLD_LINES.includes(line) || countryFrom.some((s) => line.includes(s)) || ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
+export const isApprovedOldLine = (line, path) => isChangedArticleLine(line, path) || COUNTRY_OLD_LINES.includes(line) || countryFrom.some((s) => line.includes(s)) || ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
 // Schema question whose visible text is a section rather than an FAQ entry.
 const SECTION_ANSWERS = {
@@ -167,9 +168,10 @@ export function visibleFaqs(body, schemaQuestions) {
 
 export function applyFaqChanges(path, body, schema, log) {
   let out = body;
-  for (const [from, to] of [...(PRICE_CHANGES[path] ?? []), ...(CARD_PRICES[path] ?? []), ...countryPairs(path)]) {
+  for (const [from, to] of [...(PRICE_CHANGES[path] ?? []), ...(CARD_PRICES[path] ?? []), ...countryPairs(path), ...articlePairs(path)]) {
     const before = out;
-    out = typeof from === 'string' ? out.replaceAll(from, () => to) : out.replace(from, () => to);
+    const swap = typeof to === 'function' ? to : () => to;
+    out = typeof from === 'string' ? out.replaceAll(from, swap) : out.replace(from, swap);
     log.push({ path, change: before === out ? 'price text gone' : 'price', from: String(from), to });
   }
   const nodes = faqNodes(schema);

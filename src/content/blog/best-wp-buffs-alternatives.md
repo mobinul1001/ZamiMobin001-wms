@@ -95,7 +95,7 @@ Here's how WP Buffs' entry plan stacks up against [Website Maintenance Services]
 | Hidden charges | Add-ons priced separately | ✓ None |
 | No lock-in / you own everything | ✓ Yes | ✓ Yes |
 | No forced maintenance after a build | — | ✓ Never forced |
-| Entry price | ~$79/mo + hosting extra | $95/mo, hosting included (1yr free) |
+| Entry price | ~$79/mo + hosting extra | $79/mo, hosting included (1yr free) |
 
 WP Buffs figures reflect publicly reported 2026 pricing and features and may change — always confirm current details directly with each provider before deciding.
 
@@ -133,7 +133,7 @@ SiteCare
 
 Website Maint. Services
 
-$95
+$79
 
 On the sticker number alone, Website Maintenance Services isn't the cheapest — and we won't pretend it is. But that entry price is doing far more work than the others, because it already includes things the "cheaper" plans bill separately. The most important is **hosting**. WP Buffs and most of the list maintain your site but leave you to pay for hosting on your own — typically $30–$100/month elsewhere. Add that back in and the picture flips completely:
 
@@ -143,7 +143,7 @@ Entry maintenance fee plus typical hosting. Website Maintenance Services include
 
 Website Maint. Services
 
-$95 (hosting free)
+$79 (hosting free)
 
 WP Buffs + hosting
 

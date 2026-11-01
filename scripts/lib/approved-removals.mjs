@@ -1,6 +1,22 @@
+import { cardHeadsFor, localPaths } from './country-prices.mjs';
+
 // Text the owner approved removing from old pages. Used by the migration and the parity test,
 // so parity does not report it as lost.
+// Owner, 2026-11-01: country plan cards list the master features, so each old list goes.
+const removeCardList = ($, path) => {
+  for (const head of cardHeadsFor(path)) {
+    const h = $('h3, h4, h5').filter((_, e) => $(e).text().trim() === head).first();
+    if (!h.length) throw new Error(`${path}: plan card "${head}" not found`);
+    // Some cards have no list. Stop climbing at the grid that holds the other plans.
+    let card = h.parent();
+    while (!card.find('ul').length && card.parent().find('h3, h4, h5').length === 1) card = card.parent();
+    card.find('ul').remove();
+  }
+};
+const countryRemovals = Object.fromEntries(localPaths().map((path) => [path, ($) => removeCardList($, path)]));
+
 const REMOVALS = {
+  ...countryRemovals,
   // Owner, 2026-11-01: the master price list replaces the old plan cards.
   '/': ($) => {
     const section = $('a').filter((_, e) => /Choose Essential/.test($(e).text())).first().closest('section.pricing-container');
@@ -31,6 +47,8 @@ const REMOVALS = {
     const coupon = $('input[name="coupon_code"]');
     const site = $('input[name="website_url"]');
     if (!coupon.length || !site.length) throw new Error('/get-a-free-quote/: form fields not found');
+    const currencies = ['USD', 'GBP', 'EUR', 'CAD', 'AUD', 'CHF', 'BRL'];
+    wrapper($('select[name="plan"]')).after(`<div><label for="currency">Currency</label> <select name="currency">${currencies.map((c) => `<option>${c}</option>`).join('')}</select></div>`);
     wrapper(coupon).remove();
     $('form button[type="button"]').filter((_, b) => /^Apply$/.test($(b).text().trim())).remove();
     wrapper(site).after('<div><label for="platform">Platform</label> <select name="platform" required><option value="">(Select one)</option><option>WordPress</option><option>WooCommerce</option><option>Shopify</option><option>Other or not sure</option></select></div>');
@@ -50,7 +68,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
+const MAX_WORDS = { ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

@@ -142,20 +142,21 @@ Planos transparentes e eficazes para empresas brasileiras.
 
 Perfeito para pequenos sites e negócios locais.
 
-R$ 429/mês
+R$429/mês
 
-ou R$ 4.290/ano, 2 meses grátis
+Primeiro mês grátis
 
-[Escolher Plano](/get-a-free-quote/#essential)
+ou R$4.290/ano, 2 meses grátis
 
--   Atualizações Mensais
--   Verificação Básica de Malware
--   Backups Mensais
--   Otimização Básica de Velocidade
--   Monitoramento de Uptime
--   Verificação de Links Quebrados
--   Suporte por E-mail
--   Relatório Mensal
+[Escolher Plano](/get-a-free-quote/#essential-brl)
+
+-   Hospedagem grátis no primeiro ano
+-   2 contas de webmail grátis
+-   Atualizações semanais
+-   Backups semanais
+-   Verificação de segurança
+-   Monitoramento de disponibilidade
+-   1 hora de edições/mês
 
 </div>
 
@@ -167,22 +168,23 @@ POPULAR
 
 Ideal para empresas em crescimento e sites de serviços.
 
-R$ 809/mês
+R$809/mês
 
-ou R$ 8.090/ano, 2 meses grátis
+Primeiro mês grátis
 
-[Escolher Plano](/get-a-free-quote/#growth)
+ou R$8.090/ano, 2 meses grátis
 
--   Inclui tudo no Essential +
--   **Atualizações Quinzenais**
--   Proteção Avançada de Firewall
--   Otimização Avançada de Velocidade
--   Otimização de Banco de Dados
--   Ambiente de Testes (Staging)
--   **3 Atualizações de Conteúdo**/mês
--   Proteção contra Spam e Bots
--   Verificação Mensal de SEO
--   Suporte Prioritário
+[Escolher Plano](/get-a-free-quote/#growth-brl)
+
+-   Tudo do Essential
+-   Hospedagem grátis no primeiro ano
+-   2 contas de webmail grátis
+-   Backups diários
+-   3 horas de edições/mês
+-   Remoção de malware
+-   Otimização de velocidade
+-   Relatório mensal
+-   Suporte WooCommerce
 
 </div>
 
@@ -192,21 +194,21 @@ ou R$ 8.090/ano, 2 meses grátis
 
 Para sites de eCommerce, tráfego alto e sites críticos.
 
-R$ 1.624/mês
+R$1.629/mês
 
-ou R$ 16.240/ano, 2 meses grátis
+Primeiro mês grátis
 
-[Escolher Plano](/get-a-free-quote/#business)
+ou R$16.290/ano, 2 meses grátis
 
--   Inclui tudo no Growth +
--   **Atualizações Semanais**
--   Monitoramento Diário
--   Garantia de Remoção de Malware
--   **Suporte Completo eCommerce**
--   Testes de Checkout e Pagamento
--   **5 Customizações**/mês
--   Backup a Cada 12 Horas
--   Suporte de Emergência 24/7
+[Escolher Plano](/get-a-free-quote/#business-brl)
+
+-   Tudo do Growth
+-   Hospedagem grátis no primeiro ano
+-   2 contas de webmail grátis
+-   6 horas de edições/mês
+-   Atualizações testadas em staging
+-   Correções de emergência 24/7
+-   Suporte prioritário
 
 </div>
 

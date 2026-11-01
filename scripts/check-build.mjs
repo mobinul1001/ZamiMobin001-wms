@@ -145,7 +145,10 @@ for (const file of htmlFiles) {
   const localPrice = masterPrices.local[path];
   if (localPrice) {
     const mainText = $('main').text();
-    for (const p of [...localPrice.monthly, ...localPrice.annual]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
+    if (!$('#plans').length) fail('country-price', `${path}: #plans anchor is missing.`);
+    if ($('.site-head a.btn').first().attr('href') !== '#plans') fail('country-price', `${path}: header See plans does not go to #plans.`);
+    for (const f of ['Free hosting for the first year', '2 free webmail accounts', 'First month free'].filter(() => localPrice.currency !== 'BRL')) if (!mainText.includes(f)) fail('country-price', `${path}: "${f}" is missing.`);
+    for (const p of [...localPrice.monthly, ...localPrice.annual, localPrice.fix, localPrice.cleanup]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
     if (localPrice.currency !== 'USD' && /(?<![A-Z])\$\s?\d/.test(mainText)) fail('country-price', `${path}: shows a dollar price: ${/(?<![A-Z])\$\s?\d[^ ]*/.exec(mainText)[0]}`);
     $('main p, main li').each((_, e) => {
       const line = $(e).text();

@@ -20,11 +20,13 @@ const explain = features.explain as Record<string, string>;
         {toggle ? (
           <>
             <div class="price"><span class="m">{money(p.monthly)}<small>/mo</small></span><span class="y">{money(p.annual)}<small>/yr</small></span></div>
+            <p class="first-month"><span class="m">{prices.firstMonthNote.en}</span></p>
             <p class="annual"><span class="m">or {money(p.annual)}/yr, <b>{prices.annualNote.en}</b></span><span class="y"><b>{prices.annualNote.en}</b></span></p>
           </>
         ) : (
           <>
             <div class="price">{money(p.monthly)}<small>/mo</small></div>
+            <p class="first-month">{prices.firstMonthNote.en}</p>
             <p class="annual">or {money(p.annual)}/yr, <b>{prices.annualNote.en}</b></p>
           </>
         )}

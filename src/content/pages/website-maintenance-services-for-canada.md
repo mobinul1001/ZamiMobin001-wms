@@ -134,20 +134,21 @@ Professional 3-tier plans tailored for small businesses, growing companies, and 
 
 Perfect for small businesses, startups & personal websites.
 
-CA$110/mo
+CA$109/mo
 
-or CA$1,100/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#essential)
+or CA$1,090/yr, 2 months free
 
--   Monthly Updates
--   Monthly Full Backups
--   Basic Security Scanning
--   24/7 Uptime Monitoring
--   **1 Hr** Small Fixes/mo
--   Browser/Mobile Checks
--   Email Support
--   Monthly Maintenance Report
+[Choose Plan](/get-a-free-quote/#essential-cad)
+
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -159,21 +160,23 @@ POPULAR
 
 Great for growing service businesses and content-heavy websites.
 
-CA$208/mo
+CA$209/mo
 
-or CA$2,080/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#growth)
+or CA$2,090/yr, 2 months free
 
--   Everything in Essential +
--   **Weekly** Updates
--   **Weekly** Automated Backups
--   Advanced Firewall & Malware
--   Speed Optimization
--   Broken Link Repair
--   **3 Hours** Technical Help/mo
--   SEO Performance Audit
--   Priority Support
+[Choose Plan](/get-a-free-quote/#growth-cad)
+
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -183,21 +186,21 @@ or CA$2,080/yr, 2 months free
 
 Best for eCommerce, large businesses & high-traffic platforms.
 
-CA$418/mo
+CA$419/mo
 
-or CA$4,180/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#business)
+or CA$4,190/yr, 2 months free
 
--   Everything in Growth +
--   Daily Website Monitoring
--   **Daily** + Cloud Backups
--   Malware Removal
--   **Complete eCommerce** Maintenance
--   Checkout & Payment Testing
--   **5 Hours** Technical Support/mo
--   Conversion Optimization Insights
--   Dedicated Canadian Manager
+[Choose Plan](/get-a-free-quote/#business-cad)
+
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 

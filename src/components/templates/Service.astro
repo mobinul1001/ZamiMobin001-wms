@@ -6,7 +6,7 @@ import prices from '../../data/prices.json';
 
 const { entry } = Astro.props;
 const { path, lang, h1 } = entry.data;
-const local = (prices.local as Record<string, { monthly: string[] }>)[path];
+const local = (prices.local as Record<string, { monthly: string[]; fix: string; cleanup: string }>)[path];
 const low = local?.monthly[0] ?? `$${prices.plans[0].monthly}`;
 const plans = '/monthly-website-maintenance-packages/';
 const quote = '/get-a-free-quote/';
@@ -15,13 +15,13 @@ const check = '/free-website-maintenance-audit/';
 // Starting prices come only from the master list. Pages with an unanswered price set show none.
 const FROM_LOW = ['/wordpress-website-maintenance-packages/', ...Object.keys(prices.local)];
 const text = {
-  en: { home: 'Home', from: `Plans from ${low}/mo · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
-  es: { home: 'Inicio', from: `Planes desde ${low}/mes · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
-  pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
+  en: { home: 'Home', from: `Plans from ${low}/mo · First month free · Free hosting for 1 year · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
+  es: { home: 'Inicio', from: `Planes desde ${low}/mes · Primer mes gratis · Alojamiento gratis por 1 año · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
+  pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Primeiro mês grátis · Hospedagem grátis por 1 ano · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
 }[(lang ?? 'en').slice(0, 2)] ?? { home: 'Home', from: '', plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' };
 
 let priceLine = FROM_LOW.includes(path) ? text.from : '';
-let primary = { label: text.plans, href: plans };
+let primary = { label: text.plans, href: local ? '#plans' : plans };
 if (path === '/website-repair-services/') {
   priceLine = `One-time fix from $${prices.oneTimeFixFrom} · No contract`;
   primary = { label: 'Get my website fixed', href: quote };
@@ -36,7 +36,20 @@ if (path === '/website-repair-services/') {
 const paragraph = /<p>((?:(?!<\/p>|<img|<a ).){60,420})<\/p>/s;
 const html = entry.rendered?.html ?? '';
 const sub = paragraph.exec(html)?.[1];
-const body = sub ? html.replace(paragraph, '') : html;
+let body = sub ? html.replace(paragraph, '') : html;
+
+// Country pages: "#plans" marks the local plan cards, buy-now links go there, and the local one-off prices sit under the cards.
+if (local) {
+  const essential = body.search(/<h[34][^>]*>(?:Plano )?Essential<\/h[34]>/);
+  const section = body.slice(0, essential).search(/<h[1-4][^>]*>(?![\s\S]*<h[1-4])/);
+  const business = body.search(/<h[34][^>]*>(?:Plano )?Business<\/h[34]>/);
+  const closing = /<\/ul>\s*<\/div>\s*<\/div>/.exec(body.slice(business));
+  if (essential < 0 || section < 0 || business < 0 || !closing) throw new Error(`${path}: plan cards not found`);
+  const end = business + closing.index + closing[0].length;
+  const extras = lang === 'pt-BR' ? `Correção avulsa a partir de ${local.fix} · Limpeza de site invadido ${local.cleanup}` : `One-time fix from ${local.fix} · Hacked site cleanup ${local.cleanup}`;
+  body = `${body.slice(0, section)}<div id="plans"></div>${body.slice(section, end)}<p class="plan-extras">${extras}</p>${body.slice(end)}`;
+  body = body.replace(/<a href="\/monthly-website-maintenance-packages\/">((?:Choose|Get|Let us|Escolha)[^<]*)<\/a>/g, '<a href="#plans">$1</a>');
+}
 
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);

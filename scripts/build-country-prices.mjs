@@ -1,27 +1,39 @@
-// Converts the master USD plan prices into each country's currency and writes them to src/data/prices.json.
-// To update: change RATES and DATE, run this, then run migrate-content.mjs and build. Rates do not update by themselves.
-// Rule: monthly price rounds to a whole number; annual is 10 times the local monthly, so "2 months free" stays exact.
+// Writes the owner's country price table and the plan offers to src/data/prices.json, plus reports/country-prices.md.
+// Prices are the owner's rounded table (2026-11-01), not live conversions. Annual is always 10 times the monthly.
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const FILE = 'src/data/prices.json';
-const DATE = '2026-10-30'; // ECB reference rates, from api.frankfurter.dev, per 1 USD
-const RATES = { USD: 1, GBP: 0.74633, EUR: 0.89509, CAD: 1.3969, AUD: 1.4236, CHF: 0.82295, BRL: 5.4325 };
-const COUNTRIES = { usa: ['USD', '$'], uk: ['GBP', '£'], canada: ['CAD', 'CA$'], australia: ['AUD', 'A$'], france: ['EUR', '€'], ireland: ['EUR', '€'], netherlands: ['EUR', '€'], spain: ['EUR', '€'], switzerland: ['CHF', 'CHF '], brazil: ['BRL', 'R$ '] };
+const OFFERS = ['Free hosting for the first year', '2 free webmail accounts'];
+const EUR = { currency: 'EUR', sign: '€', monthly: [69, 129, 269], fix: 39, cleanup: 129 };
+const TABLE = {
+  usa: { currency: 'USD', sign: '$', monthly: [79, 149, 299], fix: 49, cleanup: 149 },
+  uk: { currency: 'GBP', sign: '£', monthly: [59, 109, 219], fix: 39, cleanup: 109 },
+  canada: { currency: 'CAD', sign: 'CA$', monthly: [109, 209, 419], fix: 69, cleanup: 209 },
+  australia: { currency: 'AUD', sign: 'A$', monthly: [109, 209, 429], fix: 69, cleanup: 209 },
+  france: EUR,
+  ireland: EUR,
+  netherlands: EUR,
+  spain: EUR,
+  switzerland: { currency: 'CHF', sign: 'CHF ', monthly: [69, 119, 249], fix: 39, cleanup: 119 },
+  brazil: { currency: 'BRL', sign: 'R$', monthly: [429, 809, 1629], fix: 269, cleanup: 809 },
+};
 
 const prices = JSON.parse(readFileSync(FILE, 'utf8'));
-const usd = prices.plans.map((p) => p.monthly);
+for (const plan of prices.plans) {
+  const own = plan.includes.filter((f) => !OFFERS.includes(f));
+  const at = own[0].startsWith('Everything') ? 1 : 0;
+  plan.includes = [...own.slice(0, at), ...OFFERS, ...own.slice(at)];
+}
 const local = {};
-for (const [country, [currency, sign]] of Object.entries(COUNTRIES)) {
-  const tag = currency === 'BRL' ? 'pt-BR' : 'en-US';
-  const show = (n) => `${sign}${n.toLocaleString(tag)}`;
-  const monthly = usd.map((n) => Math.round(n * RATES[currency]));
-  local[`/website-maintenance-services-for-${country}/`] = { currency, rate: RATES[currency], monthly: monthly.map(show), annual: monthly.map((n) => show(n * 10)) };
+for (const [country, t] of Object.entries(TABLE)) {
+  const show = (n) => `${t.sign}${n.toLocaleString(t.currency === 'BRL' ? 'pt-BR' : 'en-US')}`;
+  local[`/website-maintenance-services-for-${country}/`] = { currency: t.currency, monthly: t.monthly.map(show), annual: t.monthly.map((n) => show(n * 10)), fix: show(t.fix), cleanup: show(t.cleanup) };
 }
 prices.annualNote.pt = '2 meses grátis';
-prices.localRatesDate = DATE;
+prices.firstMonthNote = { en: 'First month free', pt: 'Primeiro mês grátis' };
+delete prices.localRatesDate;
 prices.local = local;
-const json = JSON.stringify(prices, null, 2);
-writeFileSync(FILE, `${json}\n`);
-const rows = Object.entries(local).map(([path, l]) => `| ${path.replace('/website-maintenance-services-for-', '').replace('/', '')} | ${l.currency} | ${l.rate} | ${l.monthly.join(' / ')} | ${l.annual.join(' / ')} |`);
-writeFileSync('reports/country-prices.md', `# Country plan prices\n\nMaster USD prices converted at ECB reference rates dated ${DATE}. Monthly rounds to a whole number; annual is 10 times the local monthly (2 months free). Rates do not update by themselves: see scripts/build-country-prices.mjs.\n\n| Country | Currency | Rate per 1 USD | Monthly: Essential / Growth / Business | Annual: Essential / Growth / Business |\n|---|---|---|---|---|\n${rows.join('\n')}\n`);
+writeFileSync(FILE, `${JSON.stringify(prices, null, 2)}\n`);
+const rows = Object.entries(local).map(([path, l]) => `| ${path.replace('/website-maintenance-services-for-', '').replace('/', '')} | ${l.currency} | ${l.monthly.join(' / ')} | ${l.annual.join(' / ')} | ${l.fix} | ${l.cleanup} |`);
+writeFileSync('reports/country-prices.md', `# Country plan prices\n\nThe owner's rounded table (2026-11-01). Annual is 10 times the monthly (2 months free). To change a price, edit TABLE in scripts/build-country-prices.mjs, run it, then run migrate-content.mjs and build.\n\n| Country | Currency | Monthly: Essential / Growth / Business | Annual | One-time fix from | Hacked site cleanup |\n|---|---|---|---|---|---|\n${rows.join('\n')}\n`);
 console.log(rows.join('\n'));

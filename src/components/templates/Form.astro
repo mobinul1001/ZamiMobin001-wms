@@ -23,9 +23,12 @@ if (isScanner) {
     (function () {
       var hash = decodeURIComponent(location.hash.slice(1)).toLowerCase();
       if (!hash) return;
+      var parts = /^(.+)-(usd|gbp|eur|cad|aud|chf|brl)$/.exec(hash);
+      var chosen = parts ? parts[1] : hash;
+      if (parts) document.querySelector('select[name="currency"]').value = parts[2].toUpperCase();
       var plan = document.querySelector('select[name="plan"]');
-      var known = plan && Array.prototype.find.call(plan.options, function (o) { return o.value === hash; });
-      if (plan) plan.value = known ? hash : 'other';
+      var known = plan && Array.prototype.find.call(plan.options, function (o) { return o.value === chosen; });
+      if (plan) plan.value = known ? chosen : 'other';
       document.getElementById('requested-package').value = hash;
     })();
   </script>

@@ -136,18 +136,19 @@ Perfect for small UK businesses, bloggers, and startups.
 
 £59/mo
 
+First month free
+
 or £590/yr, 2 months free
 
-[Choose Plan](/get-a-free-quote/#essential)
+[Choose Plan](/get-a-free-quote/#essential-gbp)
 
--   Monthly Updates
--   Monthly Backups
--   Basic Security Scan
--   24/7 Uptime Monitoring
--   **1 Hr** Fixes/Changes
--   Mobile Compatibility
--   Email Support
--   Monthly Report
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -159,21 +160,23 @@ POPULAR
 
 Ideal for service businesses, agencies & high-content websites.
 
-£111/mo
+£109/mo
 
-or £1,110/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#growth)
+or £1,090/yr, 2 months free
 
--   Everything in Essential +
--   **Weekly** Updates
--   **Weekly** Automated Backups
--   Advanced Firewall
--   Speed Optimisation
--   Broken Link Fixing
--   **3 Hours** Support/mo
--   SEO Performance Monitor
--   Priority Support
+[Choose Plan](/get-a-free-quote/#growth-gbp)
+
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -183,21 +186,21 @@ or £1,110/yr, 2 months free
 
 Best for eCommerce, large organisations & high-traffic sites.
 
-£223/mo
+£219/mo
 
-or £2,230/yr, 2 months free
+First month free
 
-[Choose Plan](/get-a-free-quote/#business)
+or £2,190/yr, 2 months free
 
--   Everything in Growth +
--   Daily Security Monitoring
--   **Daily** + Cloud Backups
--   Malware Removal
--   **Full eCommerce** Support
--   Checkout & Payment Testing
--   **5 Hours** Support/mo
--   Conversion Optimisation
--   Dedicated UK Manager
+[Choose Plan](/get-a-free-quote/#business-gbp)
+
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 

@@ -83,7 +83,7 @@ Here's how FixRunner's entry plan compares with [Website Maintenance Services](/
 
 | Feature | FixRunner (entry) | Website Maintenance Services |
 | --- | --- | --- |
-| Entry price | ~$59/mo + hosting extra | $95/mo, hosting included (1yr free) |
+| Entry price | ~$59/mo + hosting extra | $79/mo, hosting included (1yr free) |
 | Hosting | ✗ Optional / paid extra | ✓ Included — 1 year free |
 | Contract | 3-month minimum | ✓ No long-term contract |
 | Support model | Metered (~90 min entry) | ✓ Included fixes + 24/7 care |
@@ -128,7 +128,7 @@ SiteCare
 
 Website Maint. Services
 
-$95
+$79
 
 FixRunner wins the sticker-price line — and we won't pretend otherwise. But that $59 covers maintenance only, with hosting billed separately and a fixed block of support time. Add hosting back in (and remember Website Maintenance Services includes a year of it free), and the "cheaper" plan quietly becomes the pricier one:
 
@@ -138,7 +138,7 @@ Entry maintenance fee plus typical hosting. Website Maintenance Services include
 
 Website Maint. Services
 
-$95 (hosting free)
+$79 (hosting free)
 
 FixRunner + hosting
 
@@ -152,7 +152,7 @@ SiteCare + hosting
 
 ~$112–$182
 
-Once hosting is in the equation, the "premium" $95 becomes the *lower* real cost — and that's before counting the 2 free webmails, the free first month of maintenance, the cancel-anytime freedom (no 3-month lock-in), and zero hidden add-on charges. **Cheapest sticker isn't cheapest total.** That's the difference between price and value.
+Once hosting is in the equation, the "premium" $79 becomes the *lower* real cost — and that's before counting the 2 free webmails, the free first month of maintenance, the cancel-anytime freedom (no 3-month lock-in), and zero hidden add-on charges. **Cheapest sticker isn't cheapest total.** That's the difference between price and value.
 
 <a id="us"></a>
 

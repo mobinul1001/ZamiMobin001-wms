@@ -60,6 +60,9 @@ const leadParts = lead ? splitBy(dropHeading(lead.html), 3) : { intro: '', secti
   <div class="faq">
     <details open><summary>How does billing work?</summary><p>Pay monthly, or pay yearly and get {prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.</p></details>
     <details><summary>Is there a contract?</summary><p>No contract. Cancel anytime.</p></details>
+    <details><summary>What happens after the first year of free hosting?</summary><p>Hosting is free for your first year on every plan. Before that year ends, we tell you the hosting price for your site, and you decide whether to keep hosting with us or move it. There is no contract.</p></details>
+    <details><summary>How does the free month work?</summary><p>On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has {prices.annualNote.en}.</p></details>
+    <details><summary>What do the webmail accounts include?</summary><p>Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.</p></details>
   </div>
   {faq && <div class="prose" style="margin-top:36px" set:html={faq.html} />}
 </div></section>

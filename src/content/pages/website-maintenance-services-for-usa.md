@@ -136,18 +136,19 @@ Perfect for small websites & local businesses.
 
 $79/mo
 
+First month free
+
 or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
 
--   Monthly Updates
--   Monthly Backups
--   Basic Security Scan
--   Uptime Monitoring
--   **1 Hr** Minor Fixes/mo
--   Mobile Compatibility Checks
--   Email Support
--   Monthly Performance Report
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Weekly updates
+-   Weekly backups
+-   Security scan
+-   Uptime monitoring
+-   1 hour edits/month
 
 </div>
 
@@ -161,19 +162,21 @@ Ideal for actively growing service-based businesses.
 
 $149/mo
 
+First month free
+
 or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
 
--   Everything in Essential +
--   **Weekly** Updates
--   **Weekly** Backups
--   Advanced Firewall & Malware
--   Speed Opt (Images/Scripts)
--   Broken Link Fixing
--   **3 Hours** Support/mo
--   SEO Performance Check
--   Priority Support
+-   Everything in Essential
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   Daily backups
+-   3 hours edits/month
+-   Malware removal
+-   Speed optimization
+-   Monthly report
+-   WooCommerce support
 
 </div>
 
@@ -185,19 +188,19 @@ Best for eCommerce, enterprise, & high-traffic sites.
 
 $299/mo
 
+First month free
+
 or $2,990/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#business)
 
--   Everything in Growth +
--   Daily Monitoring & Security
--   **Daily** + Cloud Backups
--   Malware Removal
--   **Full eCommerce** Maintenance
--   Uptime Status Every 5 Min
--   **5 Hours** Support/mo
--   Conversion Optimization Tips
--   Dedicated Manager
+-   Everything in Growth
+-   Free hosting for the first year
+-   2 free webmail accounts
+-   6 hours edits/month
+-   Staging-tested updates
+-   24/7 emergency fixes
+-   Priority support
 
 </div>
 

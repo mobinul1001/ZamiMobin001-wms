@@ -305,6 +305,30 @@
     },
     {
       "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "$95/mo, hosting included (1yr free)",
+      "to": "$79/mo, hosting included (1yr free)"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "$95 (hosting free)",
+      "to": "$79 (hosting free)"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "the \"premium\" $95 becomes",
+      "to": "the \"premium\" $79 becomes"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "/^\\$95$/m",
+      "to": "$79"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
       "change": "schema synced",
       "question": "Is FixRunner a good WordPress maintenance service?"
     },
@@ -341,6 +365,65 @@
     },
     {
       "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "/(^-   In: .*$)/m"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "/^\\$15–\\$500$/m",
+      "to": "$15–$600"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "Plans scale from a $95/mo Essential tier to a $395/mo Elevate tier, with 20% off annual billing",
+      "to": "Plans scale from a $79/mo Essential tier to a $299/mo Business tier, with 2 months free on annual billing"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "from just $95/month",
+      "to": "from just $79/month"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "A mid-tier plan around $95–$195/month",
+      "to": "A plan around $75–$200/month"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "$95–$500+/mo",
+      "to": "$149–$600+/mo"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "$95–$500+ per month",
+      "to": "$149–$600+ per month"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price text gone",
+      "from": "$95–$500+/month",
+      "to": "$149–$600+/month"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
+      "change": "price",
+      "from": "typically $95–$195/month",
+      "to": "typically $75–$200/month"
+    },
+    {
+      "path": "/best-website-maintenance-companies/",
       "change": "schema synced",
       "question": "What is the best website maintenance company?"
     },
@@ -371,7 +454,7 @@
     },
     {
       "path": "/best-website-maintenance-companies/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do website maintenance companies work with small businesses?"
     },
     {
@@ -405,12 +488,231 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
+      "change": "price text gone",
+      "from": "costs $20-$500+/month in 2026; most pay $95-$195",
+      "to": "costs $20-$600+/month in 2026; most pay $75-$200"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$20 to $500+",
+      "to": "$20 to $600+"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$20–$500+",
+      "to": "$20–$600+"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price text gone",
+      "from": "costs $95-$195/mo",
+      "to": "costs $75-$200/mo"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$95+Typical plan / month",
+      "to": "$75–$200Typical plan / month"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "20%saved billed annually",
+      "to": "2 months free on annual billing"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Basic / brochure site | $20 – $95 | Essential | DIY or Essential |",
+      "to": "| Basic / brochure site | $49 – $99 | Essential | DIY or Essential |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Small business WordPress site | $95 – $195 | Full-service | Essential / Advanced |",
+      "to": "| Small business WordPress site | $75 – $200 | Full-service | Essential / Growth |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Lead-gen / service business | $195 | Growth | Advanced |",
+      "to": "| Lead-gen / service business | $149 – $299 | Growth | Growth |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Small WooCommerce store | $395+ | Premium | Elevate |",
+      "to": "| Small WooCommerce store | $300 – $600+ | Premium | Business |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$95–$195",
+      "to": "$75–$200"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Save 20% when you pay annually.",
+      "to": "Get 2 months free when you pay annually."
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "**Advanced ($195/mo)**",
+      "to": "**Growth ($149/mo)**"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Essential | $1,140 | $912 | $228 |",
+      "to": "| Essential | $948 | $790, 2 months free | $158 |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Advanced | $2,340 | $1,872 | $468 |",
+      "to": "| Growth | $1,788 | $1,490, 2 months free | $298 |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Elevate | $4,740 | $3,792 | $948 |",
+      "to": "| Business | $3,588 | $2,990, 2 months free | $598 |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Feature | Essential ($95) | Advanced ($195) | Elevate ($395) |",
+      "to": "| Feature | Essential ($79) | Growth ($149) | Business ($299) |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "| Professional company | $95 – $395 |",
+      "to": "| Professional company | $49 – $600+ |"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "**$95/month (or $76/month billed annually)**",
+      "to": "**$79/month (or $790/year, 2 months free)**"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "upgrade to Advanced or Elevate anytime",
+      "to": "upgrade to Growth or Business anytime"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Published plans from $95/mo",
+      "to": "Published plans from $79/mo"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "can run $395+/month",
+      "to": "can run $300–$600+/month"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Our plans: Essential $95, Advanced $195 (most popular), Elevate $395",
+      "to": "Our plans: Essential $79, Growth $149 (most popular), Business $299"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Save 20% with annual billing",
+      "to": "Get 2 months free with annual billing"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Plans from $95/month",
+      "to": "Plans from $79/month"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Choose Advanced",
+      "to": "Choose Growth"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "Choose Elevate",
+      "to": "Choose Business"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "/^(### )?Advanced$/m"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "/^(### )?Elevate$/m"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price text gone",
+      "from": "/^Advanced$/m",
+      "to": "Growth"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "/[\\s\\S]+/"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
       "change": "schema aligned",
       "question": "Can you recommend a reliable WordPress website maintenance company?"
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does website maintenance cost for a small business in 2026?"
     },
     {
@@ -435,7 +737,7 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does monthly website maintenance cost for a small business?"
     },
     {
@@ -445,13 +747,31 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Should I do my own website maintenance or hire a company?"
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
       "change": "schema removed",
       "question": "Do you offer a refund or money-back guarantee?"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "$95/mo, hosting included (1yr free)",
+      "to": "$79/mo, hosting included (1yr free)"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "$95 (hosting free)",
+      "to": "$79 (hosting free)"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "/^\\$95$/m",
+      "to": "$79"
     },
     {
       "path": "/best-wp-buffs-alternatives/",
@@ -716,12 +1036,237 @@
     },
     {
       "path": "/how-much-does-website-maintenance-cost/",
-      "change": "schema same",
+      "change": "price",
+      "from": "$20 to $500+",
+      "to": "$20 to $600+"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$20–$500+",
+      "to": "$20–$600+"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "costs $20-$500+/mo",
+      "to": "costs $20-$600+/mo"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "professional managed plans cost **$95–$395/month** for most businesses",
+      "to": "professional managed plans cost **$149–$299/month** for most businesses"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "pays around **$100–$200/month**",
+      "to": "pays around **$75–$200/month**"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^20%$/m",
+      "to": "2 months free"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "saved billed annually",
+      "to": "on annual billing"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Basic / brochure site | $20 – $95 | $240 – $1,140 |",
+      "to": "| Basic / brochure site | $49 – $99 | $588 – $1,188 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Small business website | $95 – $195 | $1,140 – $2,340 |",
+      "to": "| Small business website | $75 – $200 | $900 – $2,400 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| WordPress business site | $95 – $395 | $1,140 – $4,740 |",
+      "to": "| WordPress business site | $149 – $299 | $1,788 – $3,588 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Ecommerce / online store | $195 – $595 | $2,340 – $7,140 |",
+      "to": "| Ecommerce / online store | $300 – $600+ | $3,600 – $7,200+ |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Custom / enterprise | $395 – $1,000+ | $4,740 – $12,000+ |",
+      "to": "| Custom / enterprise | $600 – $1,000+ | $7,200 – $12,000+ |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Agency / managed plan | $95 – $500+/mo |",
+      "to": "| Agency / managed plan | $149 – $600+/mo |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| WordPress | $95 – $395 |",
+      "to": "| WordPress | $149 – $299 |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Magento | $395+ |",
+      "to": "| Magento | $300 – $600+ |"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "with most businesses paying $95–$195/month",
+      "to": "with most small businesses paying $75–$200/month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$1,140–$4,740 for a typical plan. Annual billing usually saves ~20% vs monthly.",
+      "to": "$948–$3,588 for a typical plan. Annual billing usually gives 2 months free."
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "with annual plans typically saving around 20% compared to paying month to month",
+      "to": "with annual plans typically giving 2 months free compared to paying month to month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "**$95 to $195 per month**",
+      "to": "**$75 to $200 per month**"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "Pay annually to save around 20% vs monthly billing",
+      "to": "Pay annually to get 2 months free"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "Save 20% with annual billing.",
+      "to": "Get 2 months free with annual billing."
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "professional managed plans $95–$395/month",
+      "to": "professional managed plans $149–$299/month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "Most businesses pay $95–$195 per month",
+      "to": "Most small businesses pay $75–$200 per month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "run $200–$600+ per month",
+      "to": "run $300–$600+ per month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "around $100–$300 per month",
+      "to": "around $75–$299 per month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$95–$195",
+      "to": "$75–$200"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "reliable website care from $95/month",
+      "to": "reliable website care from $79/month"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "Choose Advanced",
+      "to": "Choose Growth"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "Choose Elevate",
+      "to": "Choose Business"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^(### )?Advanced$/m"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^(### )?Elevate$/m"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "price",
+      "from": "/[\\s\\S]+/"
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "change": "schema synced",
       "question": "How much does website maintenance cost?"
     },
     {
       "path": "/how-much-does-website-maintenance-cost/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does website maintenance cost per month?"
     },
     {
@@ -798,6 +1343,327 @@
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "($95–$395/mo)",
+      "to": "($79–$299/mo)"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "costs $20-$500+/month",
+      "to": "costs $20-$600+/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "Essential $95, Advanced $195, Elevate $395 per month (20% off annually)",
+      "to": "Essential $79, Growth $149, Business $299 per month (2 months free annually)"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "a proper Elevate-tier plan",
+      "to": "a proper Business-tier plan"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$20 to $500+",
+      "to": "$20 to $600+"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$20–$500+",
+      "to": "$20–$600+"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "plans from $95–$395/mo",
+      "to": "plans from $79–$299/mo"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "typically run **$95–$395/month**. Our transparent plans are **$95 (Essential)**, **$195 (Advanced)**, and **$395 (Elevate)** per month — with 20% off when billed annually.",
+      "to": "typically run **$149–$299/month**. Our transparent plans are **$79 (Essential)**, **$149 (Growth)**, and **$299 (Business)** per month — with 2 months free when billed annually."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$95–$395Typical managed plan / month",
+      "to": "$149–$299Typical managed plan / month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "20%saved by paying annually",
+      "to": "2 months free by paying annually"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "the middle and upper range — $95–$395/month —",
+      "to": "the middle and upper range — $149–$299/month —"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "to roughly $95/month for small business sites, with premium plans reaching $395+",
+      "to": "to roughly $49–$99/month for small business sites, with premium plans reaching $300–$600+"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "expect **$195/month** on a managed Advanced plan",
+      "to": "expect **$149/month** on a managed Growth plan"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Save 20% when billed annually.",
+      "to": "Get 2 months free when billed annually."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "**Advanced ($195/mo)**",
+      "to": "**Growth ($149/mo)**"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Choose **Elevate** only",
+      "to": "Choose **Business** only"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Feature | Essential $95 | Advanced $195 | Elevate $395 |",
+      "to": "| Feature | Essential $79 | Growth $149 | Business $299 |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Paying annually cuts 20% off every plan.",
+      "to": "Paying annually gives you 2 months free on every plan."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Essential | $1,140 | $912 | $228/yr |",
+      "to": "| Essential | $948 | $790, 2 months free | $158/yr |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Advanced | $2,340 | $1,872 | $468/yr |",
+      "to": "| Growth | $1,788 | $1,490, 2 months free | $298/yr |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Elevate | $4,740 | $3,792 | $948/yr |",
+      "to": "| Business | $3,588 | $2,990, 2 months free | $598/yr |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "**Basic care plan:** $20–$95/month",
+      "to": "**Basic care plan:** $49–$99/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "**Standard care plan:** ~$195/month",
+      "to": "**Standard care plan:** $149–$299/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "**Premium care plan:** $395–$500+/month",
+      "to": "**Premium care plan:** $300–$600+/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "(like our Elevate plan)",
+      "to": "(like our Business plan)"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Personal blog / portfolio | $20–$95 | Essential |",
+      "to": "| Personal blog / portfolio | $49–$99 | Essential |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Small business / brochure | $95–$195 | Essential → Advanced |",
+      "to": "| Small business / brochure | $75–$200 | Essential → Growth |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Lead-gen / service business | $195 | Advanced |",
+      "to": "| Lead-gen / service business | $149–$299 | Growth |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Content / news (high traffic) | $195–$395 | Advanced → Elevate |",
+      "to": "| Content / news (high traffic) | $149–$299 | Growth → Business |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| WooCommerce store | $395+ | Elevate |",
+      "to": "| WooCommerce store | $300–$600+ | Business |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Membership / booking | $395+ | Elevate + custom |",
+      "to": "| Membership / booking | $300–$600+ | Business + custom |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$195–$600+/month",
+      "to": "$149–$600+/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "**past $195/month** for piecemeal services — which is exactly why a bundled plan like Advanced",
+      "to": "**past $149/month** for piecemeal services — which is exactly why a bundled plan like Growth"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "| Agency plan | $95–$500+ |",
+      "to": "| Agency plan | $149–$600+ |"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "built into our Advanced and Elevate plans",
+      "to": "built into our Growth and Business plans"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "an instant 20% off, the single easiest saving",
+      "to": "2 months free, the single easiest saving"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "At $195/month, the Advanced plan",
+      "to": "At $149/month, the Growth plan"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "professional managed care plans run $95–$395/month",
+      "to": "professional managed care plans run $149–$299/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "managed plans run $95–$395/month",
+      "to": "managed plans run $149–$299/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "Our transparent plans: Essential $95, Advanced $195 (most popular), Elevate $395 — 20% off annually",
+      "to": "Our transparent plans: Essential $79, Growth $149 (most popular), Business $299 — 2 months free annually"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "best served by the Advanced plan",
+      "to": "best served by the Growth plan"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "need Elevate-tier care ($395+/month)",
+      "to": "need Business-tier care ($299+/month)"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "once you pass ~$195/month",
+      "to": "once you pass ~$149/month"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "Choose Advanced",
+      "to": "Choose Growth"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price text gone",
+      "from": "Choose Elevate",
+      "to": "Choose Business"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$95/mo",
+      "to": "$79/mo"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$195/mo",
+      "to": "$149/mo"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "$395/mo",
+      "to": "$299/mo"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $76/mo billed annually",
+      "to": "or $790/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $156/mo billed annually",
+      "to": "or $1,490/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "or $316/mo billed annually",
+      "to": "or $2,990/yr, 2 months free"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^(### )?Advanced$/m"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^(### )?Elevate$/m"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "/[\\s\\S]+/"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "schema aligned",
       "question": "What's the difference between a maintenance plan and managed hosting?"
     },
@@ -823,7 +1689,7 @@
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does WooCommerce maintenance cost?"
     },
     {
@@ -1139,6 +2005,42 @@
       "change": "price",
       "from": "starts at $95/month with a year",
       "to": "starts at $79/month with a year"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "$95/mo ($195 / $395 tiers)",
+      "to": "$79/mo ($149 / $299 tiers)"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "starts at $95/month and tops out at $395 for premium eCommerce care",
+      "to": "starts at $79/month and tops out at $299 for premium eCommerce care"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "$95 + 1yr free hosting",
+      "to": "$79 + 1yr free hosting"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "$395 (eCommerce)",
+      "to": "$299 (eCommerce)"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "/^\\$95$/m",
+      "to": "$79"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "/^\\$195$/m",
+      "to": "$149"
     },
     {
       "path": "/sitecare-alternative/",
@@ -1459,61 +2361,49 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 99/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$112/mo\n\nor A$1,120/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#essential)"
+      "to": "A$109/mo\n\nFirst month free\n\nor A$1,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#essential-aud)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
-      "from": "#### Basic Care\n",
-      "to": "#### Essential\n"
+      "from": "### Basic Care\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 199/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$212/mo\n\nor A$2,120/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth)"
+      "to": "A$209/mo\n\nFirst month free\n\nor A$2,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth-aud)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
-      "from": "#### Standard Care\n",
-      "to": "#### Growth\n"
+      "from": "### Standard Care\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 399/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$426/mo\n\nor A$4,260/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#business)"
+      "to": "A$429/mo\n\nFirst month free\n\nor A$4,290/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#business-aud)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
-      "from": "#### Premium Care\n",
-      "to": "#### Business\n"
+      "from": "### Premium Care\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
+      "from": "Depending on your plan, we perform updates monthly (Basic), bi-weekly (Standard), or weekly (Premium).",
+      "to": "We perform updates weekly on every plan."
     },
     {
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
-    },
-    {
-      "path": "/website-maintenance-services-for-australia/",
-      "change": "price",
-      "from": "monthly (Basic), bi-weekly (Standard), or weekly (Premium)",
-      "to": "monthly (Essential), bi-weekly (Growth), or weekly (Business)"
-    },
-    {
-      "path": "/website-maintenance-services-for-australia/",
-      "change": "price",
-      "from": "specifically included in our Premium plan",
-      "to": "specifically included in our Business plan"
+      "from": "Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Premium plan.",
+      "to": "Yes, we specialize in WooCommerce and Shopify maintenance. WooCommerce support is included from our Growth plan."
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -1525,49 +2415,37 @@
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 249/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$ 429/mês\n\nou R$ 4.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#essential)"
+      "to": "R$429/mês\n\nPrimeiro mês grátis\n\nou R$4.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#essential-brl)\n\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Atualizações semanais\n-   Backups semanais\n-   Verificação de segurança\n-   Monitoramento de disponibilidade\n-   1 hora de edições/mês"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
-      "from": "#### Plano Básico\n",
-      "to": "#### Plano Essential\n"
+      "from": "### Plano Básico\n",
+      "to": "### Plano Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 499/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$ 809/mês\n\nou R$ 8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth)"
+      "to": "R$809/mês\n\nPrimeiro mês grátis\n\nou R$8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth-brl)\n\n-   Tudo do Essential\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Backups diários\n-   3 horas de edições/mês\n-   Remoção de malware\n-   Otimização de velocidade\n-   Relatório mensal\n-   Suporte WooCommerce"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
-      "from": "#### Plano Padrão\n",
-      "to": "#### Plano Growth\n"
+      "from": "### Plano Padrão\n",
+      "to": "### Plano Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 999/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$ 1.624/mês\n\nou R$ 16.240/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#business)"
+      "to": "R$1.629/mês\n\nPrimeiro mês grátis\n\nou R$16.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#business-brl)\n\n-   Tudo do Growth\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   6 horas de edições/mês\n-   Atualizações testadas em staging\n-   Correções de emergência 24/7\n-   Suporte prioritário"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
-      "from": "#### Plano Premium\n",
-      "to": "#### Plano Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-brazil/",
-      "change": "price",
-      "from": "Inclui tudo no Básico +",
-      "to": "Inclui tudo no Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-brazil/",
-      "change": "price",
-      "from": "Inclui tudo no Padrão +",
-      "to": "Inclui tudo no Growth +"
+      "from": "### Plano Premium\n",
+      "to": "### Plano Business\n"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
@@ -1579,97 +2457,73 @@
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$110/mo\n\nor CA$1,100/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+      "to": "CA$109/mo\n\nFirst month free\n\nor CA$1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-cad)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
-      "from": "#### Basic\n",
-      "to": "#### Essential\n"
+      "from": "### Basic\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$208/mo\n\nor CA$2,080/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+      "to": "CA$209/mo\n\nFirst month free\n\nor CA$2,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-cad)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
-      "from": "#### Standard\n",
-      "to": "#### Growth\n"
+      "from": "### Standard\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$418/mo\n\nor CA$4,180/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+      "to": "CA$419/mo\n\nFirst month free\n\nor CA$4,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-cad)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
-      "from": "#### Premium\n",
-      "to": "#### Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-canada/",
-      "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-canada/",
-      "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
+      "from": "### Premium\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+      "to": "€69/mo\n\nFirst month free\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
-      "from": "#### Basic Plan\n",
-      "to": "#### Essential\n"
+      "from": "### Basic Plan\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
-      "from": "#### Standard Plan\n",
-      "to": "#### Growth\n"
+      "from": "### Standard Plan\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+      "to": "€269/mo\n\nFirst month free\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
-      "from": "#### Premium Plan\n",
-      "to": "#### Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-france/",
-      "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-france/",
-      "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
+      "from": "### Premium Plan\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-france/",
@@ -1681,49 +2535,37 @@
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+      "to": "€69/mo\n\nFirst month free\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
-      "from": "#### Basic Plan\n",
-      "to": "#### Essential\n"
+      "from": "### Basic Plan\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
-      "from": "#### Standard Plan\n",
-      "to": "#### Growth\n"
+      "from": "### Standard Plan\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+      "to": "€269/mo\n\nFirst month free\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
-      "from": "#### Premium Plan\n",
-      "to": "#### Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-ireland/",
-      "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-ireland/",
-      "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
+      "from": "### Premium Plan\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
@@ -1741,37 +2583,37 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€71/mo\n\nor €710/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
+      "to": "€69/mo\n\nFirst month free\n\nor €690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price text gone",
-      "from": "#### Essential\n",
-      "to": "#### Essential\n"
+      "from": "### Essential\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€133/mo\n\nor €1,330/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price text gone",
-      "from": "#### Advanced\n",
-      "to": "#### Growth\n"
+      "change": "price",
+      "from": "### Advanced\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€268/mo\n\nor €2,680/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
+      "to": "€269/mo\n\nFirst month free\n\nor €2,690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
-      "change": "price text gone",
-      "from": "#### Elevate\n",
-      "to": "#### Business\n"
+      "change": "price",
+      "from": "### Elevate\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -1789,13 +2631,13 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
-      "to": "Our plans start at €71/month (Essential), €133/month (Growth), and €268/month (Business), or €710, €1,330 and €2,680 per year (2 months free). Prices are shown in EUR."
+      "to": "Our plans start at €69/month (Essential), €129/month (Growth), and €269/month (Business), or €690, €1,290 and €2,690 per year (2 months free). Prices are shown in EUR."
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price text gone",
       "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
-      "to": "Nuestros planes comienzan en €71/mes (Essential), €133/mes (Growth) y €268/mes (Business), o 710, 1.330 y 2.680 EUR al año (2 meses gratis). Los precios se muestran en EUR."
+      "to": "Nuestros planes comienzan en €69/mes (Essential), €129/mes (Growth) y €269/mes (Business), o 690, 1.290 y 2.690 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -1837,37 +2679,37 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€71/mo\n\nor €710/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#essential)"
+      "to": "€69/mo\n\nFirst month free\n\nor €690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price text gone",
-      "from": "#### Essential\n",
-      "to": "#### Essential\n"
+      "from": "### Essential\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€133/mo\n\nor €1,330/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth)"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
-      "change": "price text gone",
-      "from": "#### Advanced\n",
-      "to": "#### Growth\n"
+      "change": "price",
+      "from": "### Advanced\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€268/mo\n\nor €2,680/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#business)"
+      "to": "€269/mo\n\nFirst month free\n\nor €2,690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
-      "change": "price text gone",
-      "from": "#### Elevate\n",
-      "to": "#### Business\n"
+      "change": "price",
+      "from": "### Elevate\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1885,13 +2727,13 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price text gone",
       "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
-      "to": "Our plans start at €71/month (Essential), €133/month (Growth), and €268/month (Business), or €710, €1,330 and €2,680 per year (2 months free). Prices are shown in EUR."
+      "to": "Our plans start at €69/month (Essential), €129/month (Growth), and €269/month (Business), or €690, €1,290 and €2,690 per year (2 months free). Prices are shown in EUR."
     },
     {
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
-      "to": "Nuestros planes comienzan en €71/mes (Essential), €133/mes (Growth) y €268/mes (Business), o 710, 1.330 y 2.680 EUR al año (2 meses gratis). Los precios se muestran en EUR."
+      "to": "Nuestros planes comienzan en €69/mes (Essential), €129/mes (Growth) y €269/mes (Business), o 690, 1.290 y 2.690 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -1938,37 +2780,37 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 65/mo\n\nor CHF 650/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
+      "to": "CHF 69/mo\n\nFirst month free\n\nor CHF 690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-chf)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price text gone",
-      "from": "#### Essential\n",
-      "to": "#### Essential\n"
+      "from": "### Essential\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 123/mo\n\nor CHF 1,230/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+      "to": "CHF 119/mo\n\nFirst month free\n\nor CHF 1,190/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-chf)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price text gone",
-      "from": "#### Advanced\n",
-      "to": "#### Growth\n"
+      "change": "price",
+      "from": "### Advanced\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 246/mo\n\nor CHF 2,460/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
+      "to": "CHF 249/mo\n\nFirst month free\n\nor CHF 2,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-chf)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
-      "change": "price text gone",
-      "from": "#### Elevate\n",
-      "to": "#### Business\n"
+      "change": "price",
+      "from": "### Elevate\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -1986,13 +2828,13 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "/Our plans start at \\$79\\/month \\(Essential\\), \\$149\\/month \\(Growth\\), and \\$299\\/month \\(Business\\), or \\$790, \\$1,490 and \\$2,990 per year \\(2 months free\\)\\.[\\s ]+Prices are shown in USD with (?:EUR|CHF) billing available on request\\./",
-      "to": "Our plans start at CHF 65/month (Essential), CHF 123/month (Growth), and CHF 246/month (Business), or CHF 650, CHF 1,230 and CHF 2,460 per year (2 months free). Prices are shown in CHF."
+      "to": "Our plans start at CHF 69/month (Essential), CHF 119/month (Growth), and CHF 249/month (Business), or CHF 690, CHF 1,190 and CHF 2,490 per year (2 months free). Prices are shown in CHF."
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price text gone",
       "from": "/Nuestros planes comienzan en 79[\\s ]USD\\/mes \\(Essential\\), 149[\\s ]USD\\/mes \\(Growth\\) y 299[\\s ]USD\\/mes \\(Business\\), o 790, 1\\.490 y 2\\.990[\\s ]USD al año \\(2 meses gratis\\)\\.[\\s ]+Los precios se muestran en USD; facturación en EUR disponible bajo petición\\./",
-      "to": "Nuestros planes comienzan en CHF 65/mes (Essential), CHF 123/mes (Growth) y CHF 246/mes (Business), o CHF 650, CHF 1.230 y CHF 2.460 EUR al año (2 meses gratis). Los precios se muestran en EUR."
+      "to": "Nuestros planes comienzan en CHF 69/mes (Essential), CHF 119/mes (Growth) y CHF 249/mes (Business), o CHF 690, CHF 1.190 y CHF 2.490 EUR al año (2 meses gratis). Los precios se muestran en EUR."
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -2028,97 +2870,73 @@
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£39/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£59/mo\n\nor £590/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential)"
+      "to": "£59/mo\n\nFirst month free\n\nor £590/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-gbp)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
-      "from": "#### Basic\n",
-      "to": "#### Essential\n"
+      "from": "### Basic\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£89/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£111/mo\n\nor £1,110/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth)"
+      "to": "£109/mo\n\nFirst month free\n\nor £1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-gbp)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
-      "from": "#### Standard\n",
-      "to": "#### Growth\n"
+      "from": "### Standard\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£179/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£223/mo\n\nor £2,230/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business)"
+      "to": "£219/mo\n\nFirst month free\n\nor £2,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-gbp)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
-      "from": "#### Premium\n",
-      "to": "#### Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-uk/",
-      "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-uk/",
-      "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
+      "from": "### Premium\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$49/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$79/mo\n\nor $790/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)"
+      "to": "$79/mo\n\nFirst month free\n\nor $790/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
-      "from": "#### Basic\n",
-      "to": "#### Essential\n"
+      "from": "### Basic\n",
+      "to": "### Essential\n"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$149/mo\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)"
+      "to": "$149/mo\n\nFirst month free\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
-      "from": "#### Standard\n",
-      "to": "#### Growth\n"
+      "from": "### Standard\n",
+      "to": "### Growth\n"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$199/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$299/mo\n\nor $2,990/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)"
+      "to": "$299/mo\n\nFirst month free\n\nor $2,990/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
-      "from": "#### Premium\n",
-      "to": "#### Business\n"
-    },
-    {
-      "path": "/website-maintenance-services-for-usa/",
-      "change": "price",
-      "from": "Everything in Basic +",
-      "to": "Everything in Essential +"
-    },
-    {
-      "path": "/website-maintenance-services-for-usa/",
-      "change": "price",
-      "from": "Everything in Standard +",
-      "to": "Everything in Growth +"
+      "from": "### Premium\n",
+      "to": "### Business\n"
     },
     {
       "path": "/website-migration-services/",
@@ -2841,6 +3659,18 @@
       "question": "What tools do you use to test and verify speed improvements?"
     },
     {
+      "path": "/website-support-services/",
+      "change": "price",
+      "from": "Save 20% on all plans when you choose annual billing.",
+      "to": "Get 2 months free on all plans when you choose annual billing."
+    },
+    {
+      "path": "/website-support-services/",
+      "change": "price",
+      "from": "Annually Save 20%",
+      "to": "Annually: 2 months free"
+    },
+    {
       "path": "/website-update-services/",
       "change": "shown",
       "question": "What happens when a WordPress update breaks your site?"
@@ -3107,6 +3937,174 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "$49/site/mo\n\nor $39/site/mo billed annually",
+      "to": "$59/site/mo"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Advanced\n\n$99/site/mo\n\nor $79/site/mo billed annually",
+      "to": "Growth\n\nAsk for your rate"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Elevate\n\n$179/site/mo\n\nor $143/site/mo billed annually",
+      "to": "Business\n\nAsk for your rate"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Everything in Advanced",
+      "to": "Everything in Growth"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Annual billing saves roughly 20% (about 2.4 months free) on every tier.",
+      "to": "Annual billing gives 2 months free."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Client Sites | Your Discount | Essential | Advanced | Elevate |",
+      "to": "| Client Sites | Your Discount | Essential | Growth | Business |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| 1 – 4 sites | Standard rate | $49 | $99 | $179 |",
+      "to": "| 1 – 4 sites | Standard rate | $59 | Let's talk | Let's talk |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| 5 – 9 sites | 10% off | $44 | $89 | $161 |",
+      "to": "| 5 – 9 sites | Let's talk | Let's talk | Let's talk | Let's talk |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| 10 – 24 sites | 20% off | $39 | $79 | $143 |",
+      "to": "| 10 – 24 sites | Let's talk | Let's talk | Let's talk | Let's talk |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Annual billing applies an additional discount on top.",
+      "to": "Annual billing gives 2 months free."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Here is a realistic example using our most popular Advanced tier:",
+      "to": "Here is a realistic example:"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "### Example: 15 client sites on Advanced",
+      "to": "### Example: 15 client sites"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "You pay us **$79/site/mo** (10+ sites rate) and resell to your clients at a typical **$195/site/mo**. That's a margin of **$116/site/mo**.",
+      "to": "You pay us **$59/site/mo** and resell to your clients at **$149/site/mo**. That's a margin of **$90/site/mo**."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "$1,740 / month profit",
+      "to": "$1,350 / month profit"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "**$20,880/year**",
+      "to": "**$16,200/year**"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Entry price /site/mo | From $39 |",
+      "to": "| Entry price /site/mo | From $59 |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Speed optimization | Advanced+ |",
+      "to": "| Speed optimization | Growth+ |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| WooCommerce care | Elevate |",
+      "to": "| WooCommerce care | Growth+ |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Content edits included | Advanced+ |",
+      "to": "| Content edits included | Essential+ |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Annual discount | ~20% |",
+      "to": "| Annual discount | 2 months free |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Volume discounts | 5 / 10 / 25+ sites |",
+      "to": "| Volume discounts | Let's talk |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "| Dedicated account manager | Elevate |",
+      "to": "| Dedicated account manager | Business |"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Wholesale per-site pricing starts at $49/month for Essential, $99/month for Advanced, and $179/month for Elevate. Volume discounts bring this down to $39, $79, and $143 per site at 10+ sites, with extra savings on annual billing. You set",
+      "to": "Wholesale pricing is $59 per site per month. Ask us for a rate on more client sites. You set"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Pricing drops as you add sites: standard rate for 1-4 sites, 10% off for 5-9 sites, 20% off for 10-24 sites, and custom volume pricing for 25+ sites. Annual billing applies a further discount on top.",
+      "to": "Wholesale pricing is $59 per site per month. Ask us for a rate on more client sites. Annual billing gives 2 months free."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "For example, buying Advanced at $79/site and reselling at $195/site earns $116/site/month. Across 15 client sites that's $1,740/month, or about $20,880/year",
+      "to": "For example, buying at $59/site and reselling at $149/site earns $90/site/month. Across 15 client sites that's $1,350/month, or about $16,200/year"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "annual and volume discounts, and a dedicated account manager on Elevate",
+      "to": "annual billing with 2 months free, and a dedicated account manager on Business"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Volume discounts: 10% off at 5+ sites, 20% off at 10+ sites, custom at 25+",
+      "to": "Wholesale price: $59/site/month; ask for a rate on more client sites"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Annual billing saves a further ~20% on every tier",
+      "to": "Annual billing gives 2 months free"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
       "change": "schema same",
       "question": "What is white label WordPress maintenance?"
     },
@@ -3117,7 +4115,7 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How is your pricing different for more client sites?"
     },
     {
@@ -3404,6 +4402,12 @@
     },
     {
       "path": "/wordpress-site-hacked-what-to-do/",
+      "change": "price",
+      "from": "$95/moPrevention via maintenance",
+      "to": "$79/moPrevention via maintenance"
+    },
+    {
+      "path": "/wordpress-site-hacked-what-to-do/",
       "change": "schema same",
       "question": "Can a hacked WordPress site be fully recovered?"
     },
@@ -3590,6 +4594,29 @@
       "change": "price",
       "from": "or $316/mo billed annually",
       "to": "or $2,990/yr, 2 months free"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "WP Starter",
+      "to": "Essential"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "WP Growth",
+      "to": "Growth"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "WP Premium",
+      "to": "Business"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "/[\\s\\S]+/"
     },
     {
       "path": "/wordpress-website-maintenance-packages/",

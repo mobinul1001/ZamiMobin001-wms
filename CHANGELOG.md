@@ -108,3 +108,12 @@
 - All 10 country pages: homepage plans converted to local currency with the local sign. See reports/country-prices.md. Names Essential, Growth, Business; buttons use hash links; annual price added to each card.
 - Corrected: Canada, Australia and Brazil also had their own prices, and their first screens wrongly said "Plans from $79/mo".
 - Build check fails if a country page misses a local price or shows a dollar price (USA excepted).
+
+## Owner's price and offer instructions (2026-11-01)
+- Country prices: owner's rounded table, plus local one-time fix and hacked cleanup prices under the plan cards.
+- Country pages: See plans goes to #plans; quote links carry the currency (#growth-gbp); quote form has a Currency field, pre-filled from the link.
+- Country plan cards list the master features exactly; Australia's FAQ changed to match. Fixed Advanced and Elevate still showing on the Netherlands, Spain and Switzerland cards.
+- Offers: free hosting for the first year and 2 free webmail accounts on every plan card and in the comparison table; first month free under the monthly price; hero lines on home, country and WordPress pages; 3 pricing FAQ answers (drafts).
+- Articles and WordPress page: master names and prices, 2 months free, market ranges from the owner. Hosting claims on the FixRunner, WP Buffs and SiteCare pages kept.
+- White-label post: wholesale $59/site/month, example resell at $149 for a $90 margin. Tiers and volume rows without a confirmed price now say "Ask for your rate" or "Let's talk".
+- Best companies listicle: disclosure added near the top.

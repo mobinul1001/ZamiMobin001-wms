@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-01T11:12:41.770Z",
+  "checkedAt": "2026-11-01T11:37:58.305Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6317,
+  "links": 6280,
   "images": 305,
   "faqs": 492,
   "sitemapUrls": 90,
@@ -16,7 +16,7 @@
   ],
   "warningCounts": {
     "missing-urls": 1,
-    "seo-length": 54,
+    "seo-length": 53,
     "image-size": 1,
     "anchors": 9
   },
@@ -75,7 +75,6 @@
     "[seo-length] /wordpress-site-hacked-what-to-do/: description is 174 characters (aim for 155).",
     "[seo-length] /wordpress-speed-optimization/: title is 64 characters (aim for 60).",
     "[seo-length] /wordpress-speed-optimization/: description is 176 characters (aim for 155).",
-    "[seo-length] /wordpress-website-maintenance-packages/: description is 158 characters (aim for 155).",
     "[seo-length] /write-for-us/: description is 162 characters (aim for 155).",
     "[anchors] /website-hacked-recovery-services/: anchor #contact has no target.",
     "[anchors] /website-hacked-recovery-services/: anchor #scan has no target.",

@@ -200,6 +200,9 @@ article { min-width: 0; }
 }
 
 /* Site additions */
+.first-month { margin: 6px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--ok); }
+#plans { scroll-margin-top: 16px; }
+.plan-extras { margin-top: 14px; font-weight: 600; }
 .scan-form { display: grid; gap: 8px; max-width: 520px; }
 .scan-form input { margin: 0 !important; }
 .scan-form .btn { justify-self: start; border: 0; cursor: pointer; }

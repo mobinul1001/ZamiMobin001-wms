@@ -35,6 +35,6 @@ const pick = () => {
 const Template = pick();
 if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, path);
 ---
-<Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang}>
+<Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} plansHref={path.startsWith('/website-maintenance-services-for-') ? '#plans' : undefined}>
   <Template entry={entry} />
 </Base>

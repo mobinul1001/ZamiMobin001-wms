@@ -29,7 +29,7 @@ This guide will walk you through exactly what to do when your WordPress site has
 
 $200–$500Typical one-time cleanup cost
 
-$95/moPrevention via maintenance
+$79/moPrevention via maintenance
 
 <a id="know"></a>
 

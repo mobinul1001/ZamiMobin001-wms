@@ -8,8 +8,9 @@ interface Props {
   social?: Record<string, unknown>;
   schema?: unknown[];
   lang?: string;
+  plansHref?: string;
 }
-const { title, description, robots, social = {}, schema = [], lang = 'en-US' } = Astro.props;
+const { title, description, robots, social = {}, schema = [], lang = 'en-US', plansHref = '/monthly-website-maintenance-packages/' } = Astro.props;
 
 // Netlify sets CONTEXT and URL during builds. Only a production build on the real domain
 // may be indexed, so the netlify.app address and any misconfigured build stay noindex.
@@ -82,12 +83,12 @@ const footerCols = [
       <nav class="nav" aria-label="Main">
         <details class="nav-drop"><summary>Services</summary><ul>{services.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
         {main.map(([label, href]) => <a href={href} class:list={{ on: current === href }}>{label}</a>)}
-        <a class="btn" href="/monthly-website-maintenance-packages/">See plans</a>
+        <a class="btn" href={plansHref}>See plans</a>
       </nav>
       <details class="menu"><summary>Menu</summary><div>
         {services.map(([label, href]) => <a class="sub-link" href={href}>{label}</a>)}
         {main.map(([label, href]) => <a href={href}>{label}</a>)}
-        <a class="btn" href="/monthly-website-maintenance-packages/">See plans</a>
+        <a class="btn" href={plansHref}>See plans</a>
       </div></details>
     </div></header>
     <main>

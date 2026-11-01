@@ -1,5 +1,7 @@
 {
   "explain": {
+    "Free hosting for the first year": "We host your site free for your first year.",
+    "2 free webmail accounts": "Two business email accounts you can use in a browser.",
     "Weekly updates": "We update WordPress, plugins and themes every week.",
     "Weekly backups": "A full copy of your site is saved every week.",
     "Security scan": "We check your site for malware and known weak spots.",
@@ -17,9 +19,101 @@
     "Priority support": "Your requests go to the front of the queue."
   },
   "groups": [
-    { "name": "Care", "rows": [["Weekly updates", "Essential"], ["Staging-tested updates", "Business"], ["Security scan", "Essential"], ["Malware removal", "Growth"], ["Uptime monitoring", "Essential"], ["Speed optimization", "Growth"], ["WooCommerce support", "Growth"]] },
-    { "name": "Backups", "rows": [["Weekly backups", "Essential"], ["Daily backups", "Growth"]] },
-    { "name": "Edits and support", "rows": [["1 hour edits/month", "Essential"], ["3 hours edits/month", "Growth"], ["6 hours edits/month", "Business"], ["Monthly report", "Growth"], ["24/7 emergency fixes", "Business"], ["Priority support", "Business"]] }
+    {
+      "name": "Hosting and email",
+      "rows": [
+        [
+          "Free hosting for the first year",
+          "Essential"
+        ],
+        [
+          "2 free webmail accounts",
+          "Essential"
+        ]
+      ]
+    },
+    {
+      "name": "Care",
+      "rows": [
+        [
+          "Weekly updates",
+          "Essential"
+        ],
+        [
+          "Staging-tested updates",
+          "Business"
+        ],
+        [
+          "Security scan",
+          "Essential"
+        ],
+        [
+          "Malware removal",
+          "Growth"
+        ],
+        [
+          "Uptime monitoring",
+          "Essential"
+        ],
+        [
+          "Speed optimization",
+          "Growth"
+        ],
+        [
+          "WooCommerce support",
+          "Growth"
+        ]
+      ]
+    },
+    {
+      "name": "Backups",
+      "rows": [
+        [
+          "Weekly backups",
+          "Essential"
+        ],
+        [
+          "Daily backups",
+          "Growth"
+        ]
+      ]
+    },
+    {
+      "name": "Edits and support",
+      "rows": [
+        [
+          "1 hour edits/month",
+          "Essential"
+        ],
+        [
+          "3 hours edits/month",
+          "Growth"
+        ],
+        [
+          "6 hours edits/month",
+          "Business"
+        ],
+        [
+          "Monthly report",
+          "Growth"
+        ],
+        [
+          "24/7 emergency fixes",
+          "Business"
+        ],
+        [
+          "Priority support",
+          "Business"
+        ]
+      ]
+    }
   ],
-  "addons": ["Hosting management", "Custom development hours", "Monthly SEO optimization", "Speed boost package", "Website redesign", "Cloudflare security setup"]
+  "addons": [
+    "Hosting management",
+    "Custom development hours",
+    "Monthly SEO optimization",
+    "Speed boost package",
+    "Website redesign",
+    "Cloudflare security setup"
+  ]
 }

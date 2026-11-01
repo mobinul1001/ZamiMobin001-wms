@@ -21,7 +21,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 | 7 Launch, 8 Monitoring | Not started | |
 
 **Not done in Phase 4 yet:**
-- Master prices are on the homepage, pricing and WordPress packages. All 10 country pages show the same plans in local currency (`reports/country-prices.md`). 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
+- Master prices are on the homepage, pricing, WordPress packages and the articles. All 10 country pages use the owner's rounded local prices (`reports/country-prices.md`). 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
 - Moving unique content from the 4 merged pages to their targets.
 - Keyword edits inside page bodies, and expanding the homepage and packages page.
 - Rearranging service pages (problem, included, price, FAQ): first screen is new, the rest keeps its old order.
@@ -50,7 +50,9 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 
 **Prices and buying**
 - Essential $79/mo or $790/yr, Growth $149/mo or $1,490/yr (most popular), Business $299/mo or $2,990/yr. One-time fix from $49. Hacked site cleanup $149. `src/data/prices.json`.
-- Country pages show the homepage plans converted to local currency with the local sign, rounded to a whole number; annual is 10 times the local monthly. Rates dated 2026-10-30, fixed until someone reruns `scripts/build-country-prices.mjs`.
+- Country pages use the owner's rounded table (`scripts/build-country-prices.mjs`); annual is 10 times the local monthly. Quote links carry the currency (`#growth-gbp`) and the form pre-fills Currency.
+- Every plan includes free hosting for the first year and 2 free webmail accounts. First month free applies to monthly billing only.
+- Market ranges in articles: $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
 - Annual prices always say "2 months free" (Spanish "2 meses gratis"); the build enforces it.
 - Write "Included", not tick icons. "No contract. Cancel anytime."
 - Form-only payment: no checkout on the site. Plan buttons open a form (name, email, website URL, platform, message, plan pre-selected), then Netlify Forms, a thank-you page, and manual payment after a call.
@@ -84,12 +86,20 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 7. **Removed guarantees:** say if any were real terms (30-day warranties, 14-day satisfaction, money-back, 4-hour SLA).
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
-10. **FAQ market ranges:** change to $79–$149 and $79–$299, or keep as they are?
 11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): Ecommerce, Shopify, update services, white-label post, repair $99–$899, backup, and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
 12. **Service package prices:** confirm each in `reports/service-package-prices.md`, including the migration and design conflicts and the four white-label points.
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.
 15. **Bing and Organization schema:** Bing Webmaster Tools verification, the IndexNow key in Netlify, and real profile URLs for `sameAs`.
+
+**TODO for the owner (added 2026-11-01):**
+- Hosting price after the first year: no number is shown anywhere. Decide it, then update the pricing FAQ.
+- Pricing FAQ drafts to confirm: "before that year ends, we tell you the hosting price" and "we go through the setup with you on your call". Mailbox size and limits are not stated.
+- /wordpress-website-maintenance-packages/ lists an add-on "Hosting Management ($20/mo)". Check it against the free first year.
+- White-label: the post now shows a flat $59/site. /white-label-website-maintenance-services-for-agencies/ still says $39/site for 6-20 sites. Confirm whether the volume rate is real.
+- Plan cards in articles and the WordPress page keep their old feature text, with the two offers added. Only country pages, homepage and pricing list the master features exactly.
+- /ecommerce-website-maintenance-packages/ still says "Save 20% with annual billing". Its prices wait for question 11, so it is unchanged.
+- /how-much-does-wordpress-website-maintenance-cost/ says emergency response is built into Growth and Business; the master list has 24/7 emergency fixes on Business only.
 
 ## 4. Next steps
 

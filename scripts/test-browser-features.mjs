@@ -10,12 +10,14 @@ const TESTER = `<!doctype html><body><pre id="out"></pre><script>
 const load = (src) => new Promise((done) => { const f = document.createElement('iframe'); f.onload = () => done(f); f.src = src; document.body.appendChild(f); });
 (async () => {
   const out = {};
-  const plan = async (hash) => { const d = (await load('/get-a-free-quote/' + hash)).contentDocument; return [d.querySelector('select[name="plan"]').value, d.getElementById('requested-package').value]; };
+  const plan = async (hash) => { const d = (await load('/get-a-free-quote/' + hash)).contentDocument; return [d.querySelector('select[name="plan"]').value, d.getElementById('requested-package').value, d.querySelector('select[name="currency"]').value]; };
   out.none = await plan('');
   out.growth = await plan('#growth');
   out.essential = await plan('#essential');
   out.business = await plan('#business');
   out.starterDesign = await plan('#starter-design');
+  out.growthGbp = await plan('#growth-gbp');
+  out.businessBrl = await plan('#business-brl');
   const d = (await load('/website-malware-scanner/')).contentDocument;
   const run = (v) => { d.getElementById('scan-url').value = v; d.getElementById('scan-form').requestSubmit(); return { quick: [...d.querySelectorAll('#scan-quick li')].map((l) => l.textContent), deep: [...d.querySelectorAll('#scan-deep a')].map((a) => a.href) }; };
   out.scanGood = run('https://example.com/page');
@@ -50,11 +52,13 @@ const r = JSON.parse(json.replace(/&amp;/g, '&'));
 console.log(JSON.stringify(r, null, 1));
 const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const checks = {
-  'no hash leaves the plan empty': eq(r.none, ['', '']),
-  'growth hash selects Growth': eq(r.growth, ['growth', 'growth']),
-  'essential hash selects Essential': eq(r.essential, ['essential', 'essential']),
-  'business hash selects Business': eq(r.business, ['business', 'business']),
-  'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design']),
+  'no hash leaves the plan empty': eq(r.none, ['', '', 'USD']),
+  'growth hash selects Growth': eq(r.growth, ['growth', 'growth', 'USD']),
+  'essential hash selects Essential': eq(r.essential, ['essential', 'essential', 'USD']),
+  'business hash selects Business': eq(r.business, ['business', 'business', 'USD']),
+  'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
+  'growth-gbp picks plan and currency': eq(r.growthGbp, ['growth', 'growth-gbp', 'GBP']),
+  'business-brl picks plan and currency': eq(r.businessBrl, ['business', 'business-brl', 'BRL']),
   'scanner gives 3 links': r.scanGood.deep.length === 3 && r.scanGood.deep.every((u) => u.includes('example.com')),
   'scanner reads HTTPS': r.scanGood.quick[1] === 'Address uses HTTPS.',
   'scanner reads HTTP': r.scanHttp[1] === 'Address uses HTTP, not HTTPS.',

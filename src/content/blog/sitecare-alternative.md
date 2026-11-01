@@ -53,7 +53,7 @@ The complete head-to-head. Both are full-service, hosting-included providers —
 
 | Feature | SiteCare | Website Maintenance Services |
 | --- | --- | --- |
-| Entry price (reported) | ~$99–$299/mo | $95/mo ($195 / $395 tiers) |
+| Entry price (reported) | ~$99–$299/mo | $79/mo ($149 / $299 tiers) |
 | Hosting included | ✓ Yes | ✓ Yes — 1 year free |
 | Staging-tested updates | ✓ Yes | ✓ Yes |
 | Daily backups & security | ✓ Yes | ✓ Yes |
@@ -77,7 +77,7 @@ Eight rounds, one winner each. Here's who takes each — and why.
 
 Round 1 — Price & ValueWebsite Maint. Services
 
-Both bundle hosting, so this is a fair fight. SiteCare's reported plans run roughly $99–$299/month; Website Maintenance Services starts at $95/month and tops out at $395 for premium eCommerce care — a lower entry point and more accessible tiers for small and mid-size businesses, without giving up full-service coverage.
+Both bundle hosting, so this is a fair fight. SiteCare's reported plans run roughly $99–$299/month; Website Maintenance Services starts at $79/month and tops out at $299 for premium eCommerce care — a lower entry point and more accessible tiers for small and mid-size businesses, without giving up full-service coverage.
 
 Round 2 — HostingWebsite Maint. Services
 
@@ -121,7 +121,7 @@ Approximate published starting prices for full-service, hosting-included care.
 
 Website Maint. Services
 
-$95 + 1yr free hosting
+$79 + 1yr free hosting
 
 SiteCare
 
@@ -135,7 +135,7 @@ Entry → mid → premium. Lower is better for the same full-service coverage.
 
 WMS Entry
 
-$95
+$79
 
 SiteCare Entry
 
@@ -143,7 +143,7 @@ SiteCare Entry
 
 WMS Mid
 
-$195
+$149
 
 SiteCare Mid
 
@@ -155,7 +155,7 @@ SiteCare Premium
 
 WMS Premium
 
-$395 (eCommerce)
+$299 (eCommerce)
 
 Tiers aren't identically scoped between providers; compare inclusions alongside price. Figures are reported 2026 approximations.
 
