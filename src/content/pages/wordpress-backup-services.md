@@ -649,7 +649,25 @@ Comprehensive WordPress Care
 
 Backups are just one part of site health. Combine your backup strategy with our other expert services:
 
-[### WordPress Security Proactive malware scans, firewall hardening, & instant cleanup. Learn More →](/wordpress-malware-removal-service/)[### Speed Optimization Core Web Vitals tuning, caching & database speedups. Learn More →](/website-speed-optimization-services/)[### Monthly Care Plans Full-service maintenance, backups, security, & edits. Learn More →](/monthly-website-maintenance-packages/)[### WordPress Updates Safe, tested core, theme, & plugin update management. Learn More →](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)[### White-Label Services Unbranded backup & care solutions for digital agencies. Learn More →](/white-label-website-maintenance-services-for-agencies/)
+### [WordPress Security](/wordpress-malware-removal-service/)
+
+[Proactive malware scans, firewall hardening, & instant cleanup. Learn More →](/wordpress-malware-removal-service/)
+
+### [Speed Optimization](/website-speed-optimization-services/)
+
+[Core Web Vitals tuning, caching & database speedups. Learn More →](/website-speed-optimization-services/)
+
+### [Monthly Care Plans](/monthly-website-maintenance-packages/)
+
+[Full-service maintenance, backups, security, & edits. Learn More →](/monthly-website-maintenance-packages/)
+
+### [WordPress Updates](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
+
+[Safe, tested core, theme, & plugin update management. Learn More →](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
+
+### [White-Label Services](/white-label-website-maintenance-services-for-agencies/)
+
+[Unbranded backup & care solutions for digital agencies. Learn More →](/white-label-website-maintenance-services-for-agencies/)
 
 Free PDF Checklist
 

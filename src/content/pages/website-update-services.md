@@ -1155,7 +1155,21 @@ Comprehensive WordPress Care
 
 Explore our full ecosystem of specialized website maintenance, speed, security, and backup services:
 
-[### WordPress Security Service Proactive malware scanning, firewall management, login hardening, and incident response for WordPress websites. Learn More →](/wordpress-malware-removal-service/)[### Website Speed Optimization Core Web Vitals improvement, image compression, caching setup, and performance auditing for faster-loading websites. Learn More →](/website-speed-optimization-services/)[### WordPress Care Plans Comprehensive managed WordPress services combining maintenance, hosting support, content edits, and strategic guidance. Learn More →](/monthly-website-maintenance-packages/)[### Website Backup Service Automated daily backups with offsite cloud storage, 30-day retention, and one-click restore capability for WordPress sites. Learn More →](/wordpress-backup-services/)
+### [WordPress Security Service](/wordpress-malware-removal-service/)
+
+[Proactive malware scanning, firewall management, login hardening, and incident response for WordPress websites. Learn More →](/wordpress-malware-removal-service/)
+
+### [Website Speed Optimization](/website-speed-optimization-services/)
+
+[Core Web Vitals improvement, image compression, caching setup, and performance auditing for faster-loading websites. Learn More →](/website-speed-optimization-services/)
+
+### [WordPress Care Plans](/monthly-website-maintenance-packages/)
+
+[Comprehensive managed WordPress services combining maintenance, hosting support, content edits, and strategic guidance. Learn More →](/monthly-website-maintenance-packages/)
+
+### [Website Backup Service](/wordpress-backup-services/)
+
+[Automated daily backups with offsite cloud storage, 30-day retention, and one-click restore capability for WordPress sites. Learn More →](/wordpress-backup-services/)
 
 Protect Your Website Today
 

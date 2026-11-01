@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-01T08:34:43.009Z",
-  "context": "deploy-preview",
-  "isLive": false,
+  "checkedAt": "2026-11-01T08:37:44.880Z",
+  "context": "production",
+  "isLive": true,
   "pages": 92,
-  "links": 4063,
+  "links": 4092,
   "images": 130,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -11,11 +11,13 @@
   "manifestSource": "url-map.csv",
   "failures": [],
   "warningCounts": {
+    "missing-urls": 1,
     "seo-length": 53,
     "image-size": 5,
     "anchors": 7
   },
   "warnings": [
+    "[missing-urls] Could not read the live URL list; checked against url-map.csv only.",
     "[seo-length] /agreement/: description is 162 characters (aim for 155).",
     "[seo-length] /best-fixrunner-alternatives/: description is 165 characters (aim for 155).",
     "[seo-length] /best-website-maintenance-companies/: description is 157 characters (aim for 155).",

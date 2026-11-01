@@ -902,7 +902,45 @@ Topical Authority Silo
 
 Explore our full suite of proactive website care, security, backup, speed, and emergency recovery solutions:
 
-[### Website Maintenance Ongoing care that prevents most repair needs before they start.](/monthly-website-maintenance-packages/)[### WordPress Maintenance Managed updates, backups, and monitoring for WordPress sites.](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)[### Website Security Hardening, firewalls, and vulnerability protection.](/wordpress-malware-removal-service/)[### Malware Removal Dedicated malware detection and removal service.](/wordpress-malware-removal-service/)[### Website Backup Automated, tested cloud backup solutions.](/wordpress-backup-services/)[### Website Monitoring 24/7 uptime and error monitoring.](/monthly-website-maintenance-packages/)[### Website Speed Optimization Dedicated performance tuning beyond emergency repair.](/website-speed-optimization-services/)[### Website Support Ongoing technical support plans.](/website-support-services/)[### Emergency Website Recovery Our fastest-response service tier.](/website-repair-services/)[### Website Updates Safe, tested plugin, theme, and core updates.](/website-update-services/)
+### [Website Maintenance](/monthly-website-maintenance-packages/)
+
+[Ongoing care that prevents most repair needs before they start.](/monthly-website-maintenance-packages/)
+
+### [WordPress Maintenance](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
+
+[Managed updates, backups, and monitoring for WordPress sites.](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
+
+### [Website Security](/wordpress-malware-removal-service/)
+
+[Hardening, firewalls, and vulnerability protection.](/wordpress-malware-removal-service/)
+
+### [Malware Removal](/wordpress-malware-removal-service/)
+
+[Dedicated malware detection and removal service.](/wordpress-malware-removal-service/)
+
+### [Website Backup](/wordpress-backup-services/)
+
+[Automated, tested cloud backup solutions.](/wordpress-backup-services/)
+
+### [Website Monitoring](/monthly-website-maintenance-packages/)
+
+[24/7 uptime and error monitoring.](/monthly-website-maintenance-packages/)
+
+### [Website Speed Optimization](/website-speed-optimization-services/)
+
+[Dedicated performance tuning beyond emergency repair.](/website-speed-optimization-services/)
+
+### [Website Support](/website-support-services/)
+
+[Ongoing technical support plans.](/website-support-services/)
+
+### [Emergency Website Recovery](/website-repair-services/)
+
+[Our fastest-response service tier.](/website-repair-services/)
+
+### [Website Updates](/website-update-services/)
+
+[Safe, tested plugin, theme, and core updates.](/website-update-services/)
 
 Fix What's Broken Today
 

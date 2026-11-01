@@ -122,6 +122,13 @@ service.addRule('flatLink', {
   replacement: (content, n) => {
     const text = content.replace(/\s*\n\s*/g, ' ').trim();
     if (!text) return '';
+    // A whole card wrapped in a link: keep its heading as a real heading.
+    const heading = /^\s*(#{1,6}) +(.+?)\s*(?:\n+([\s\S]*))?$/.exec(content);
+    if (heading) {
+      const href = n.getAttribute('href').replace(/ /g, '%20').replace(/\)/g, '%29').replace(/\(/g, '%28');
+      const rest = (heading[3] ?? '').replace(/\s*\n\s*/g, ' ').trim();
+      return `\n\n${heading[1]} [${heading[2]}](${href})\n\n${rest ? `[${rest}](${href})\n\n` : ''}`;
+    }
     const rel = n.getAttribute('rel');
     const target = n.getAttribute('target');
     const href = n.getAttribute('href');
