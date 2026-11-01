@@ -156,3 +156,8 @@
 - Healthcare note added once on each page that offers healthcare or medical sites. Hacked recovery risk lines kept.
 - Staging claims about our plans changed to "Staging-tested updates on the Business plan." White-label process rewritten without staging. Migration, redesign, repair and backup keep their own staging steps; store plans keep theirs.
 - Repair time: one wording. "No fix, no fee" restored on the repair page with the owner's exclusions.
+
+## Portals, healthcare by country, Formspree (2026-11-01)
+- Healthcare sections: portal wording and booking wording from the owner. Migration case line removed. Country notes use UK GDPR, GDPR, PIPEDA, the Privacy Act and LGPD; USA keeps the HIPAA wording.
+- All 12 forms post to Formspree (src/data/forms.json). Honeypot _gotcha, form_name field. Removed the disabled attribute that the migration had left on every submit button. Line about patient information under forms on healthcare-related pages.
+- Build checks and browser tests expect Formspree. A real Netlify production build fails without IDs.

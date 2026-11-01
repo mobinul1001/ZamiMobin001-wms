@@ -419,9 +419,11 @@ Healthcare
 
 ### Healthcare & Medical Clinics
 
-**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.
+**Healthcare website design** and **medical website design**. We build patient trust and doctor directories. We connect your practice's booking system to your website, or build a booking feature inside your patient portal.
 
 Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
+Patient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil).
 
 Patient Friendly
 
@@ -659,7 +661,7 @@ Medical & Dermatology Case #01
 
 dermatologywebsitedesign.com
 
-**Challenge:** Complex medical procedure pages requiring patient booking funnels and ultra-fast mobile PageSpeed load times.
+**Challenge:** Complex medical procedure pages requiring clear booking paths and ultra-fast mobile PageSpeed load times.
 
 <div class="cards">
 

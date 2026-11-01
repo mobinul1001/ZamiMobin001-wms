@@ -19,9 +19,8 @@ Local builds cannot prove these. Each one gets real `curl` output or a screensho
 | 13 | Firewall and bot access | The named search and AI bots are not blocked |
 
 ## Added with the page templates (Batch 4)
-- Submit the contact, quote and audit forms on the preview. Confirm the email arrives and the browser lands on /thank-you/.
-- Open /get-a-free-quote/#growth. Confirm Growth is selected. Open /get-a-free-quote/#starter-design. Confirm "Other or not sure" is selected and the submission shows package = starter-design.
-- Fill the honeypot field through dev tools. Confirm the submission is dropped.
-- Confirm Netlify lists 3 forms: contact, quote, audit.
+- After adding Formspree IDs: submit each form on the preview. Confirm the email arrives and the browser lands on /thank-you/.
+- Open /get-a-free-quote/#growth. Confirm Growth is selected. Open /get-a-free-quote/#starter-design. Confirm "Other or not sure" is selected and the email shows package = starter-design.
+- Fill the _gotcha field through dev tools. Confirm Formspree ignores the submission.
 - Open a missing URL on the live build. Confirm HTTP 404, and a page_not_found event in Google Analytics.
 - Confirm the Google tag and Clarity load only on the production domain.

@@ -16,6 +16,8 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   out.essential = await plan('#essential');
   out.business = await plan('#business');
   out.starterDesign = await plan('#starter-design');
+  const quote = (await load('/get-a-free-quote/')).contentDocument.querySelector('main form');
+  out.quoteForm = { action: quote.getAttribute('action'), disabled: quote.querySelectorAll('button[disabled]').length, honeypotHidden: quote.querySelector('input[name="_gotcha"]').style.display };
   out.growthGbp = await plan('#growth-gbp');
   out.businessBrl = await plan('#business-brl');
   out.storeGrowth = await plan('#store-growth');
@@ -59,6 +61,9 @@ const checks = {
   'essential hash selects Essential': eq(r.essential, ['essential', 'essential', 'USD']),
   'business hash selects Business': eq(r.business, ['business', 'business', 'USD']),
   'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
+  'quote form posts to Formspree': r.quoteForm.action.startsWith('https://formspree.io/f/'),
+  'quote form can be submitted': r.quoteForm.disabled === 0,
+  'honeypot is hidden': r.quoteForm.honeypotHidden === 'none',
   'growth-gbp picks plan and currency': eq(r.growthGbp, ['growth', 'growth-gbp', 'GBP']),
   'business-brl picks plan and currency': eq(r.businessBrl, ['business', 'business-brl', 'BRL']),
   'store-growth selects the store plan': eq(r.storeGrowth, ['store-growth', 'store-growth', 'USD']),

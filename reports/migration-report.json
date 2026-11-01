@@ -790,7 +790,7 @@
       "path": "/best-website-maintenance-for-small-business/",
       "change": "price",
       "from": "law firms and medical practices, startups and coaches.",
-      "to": "law firms and medical practices, startups and coaches.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "law firms and medical practices, startups and coaches.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
@@ -2759,7 +2759,13 @@
       "path": "/website-design-services/",
       "change": "price",
       "from": "**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.",
-      "to": "**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "**Healthcare website design** and **medical website design**. We build patient trust and doctor directories. We connect your practice's booking system to your website, or build a booking feature inside your patient portal.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "requiring patient booking funnels",
+      "to": "requiring clear booking paths"
     },
     {
       "path": "/website-design-services/",
@@ -2877,7 +2883,7 @@
       "path": "/website-hacked-recovery-services/",
       "change": "price",
       "from": "Recovery handled with care for sensitive patient data.",
-      "to": "Recovery handled with care for sensitive patient data.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "Recovery handled with care for sensitive patient data.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
     {
       "path": "/website-hacked-recovery-services/",
@@ -3791,7 +3797,7 @@
       "path": "/website-migration-services/",
       "change": "price",
       "from": "**Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.",
-      "to": "**Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
     {
       "path": "/website-migration-services/",
@@ -3949,6 +3955,12 @@
       "change": "price",
       "from": "Local Citation & HIPAA Safeguards",
       "to": "Local Citation Safeguards"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "price",
+      "from": "We preserve local SEO maps, doctor profiles, and patient portals while protecting appointment forms.",
+      "to": "We preserve local SEO maps, doctor profiles, and patient portals. We connect your practice's booking system to your website, or build a booking feature inside your patient portal."
     },
     {
       "path": "/website-redesign-services/",
@@ -4165,7 +4177,7 @@
       "path": "/website-repair-services/",
       "change": "price",
       "from": "Technical repair work that respects compliance, patient form security, and data sensitivity.",
-      "to": "Technical repair work that respects compliance, patient form security, and data sensitivity.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "Technical repair work that respects compliance, patient form security, and data sensitivity.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
     {
       "path": "/website-repair-services/",
@@ -4755,7 +4767,14 @@
     {
       "path": "/website-speed-optimization-services/",
       "change": "price",
-      "from": "/^Fast LCP load speeds for clinic portals[^\\n]*$/m"
+      "from": "Fast LCP load speeds for clinic portals, doctor directories, and patient online appointment booking forms.",
+      "to": "Fast LCP load speeds for clinic websites and doctor directories. We connect your practice's booking system to your website, or build a booking feature inside your patient portal.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "/^Fast Patient Appointment UX$/m",
+      "to": "Fast Patient UX"
     },
     {
       "path": "/website-speed-optimization-services/",
@@ -4920,7 +4939,7 @@
       "path": "/website-support-services/",
       "change": "price",
       "from": "Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.",
-      "to": "Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
     {
       "path": "/website-update-services/",
@@ -6138,7 +6157,13 @@
     {
       "path": "/wordpress-backup-services/",
       "change": "price",
-      "from": "/^Patient-facing appointment forms and medical content[^\\n]*$/m"
+      "from": "Patient-facing appointment forms and medical content need clean,",
+      "to": "Medical content needs clean,"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "/^Medical content needs clean,[^\\n]*$/m"
     },
     {
       "path": "/wordpress-backup-services/",
@@ -6791,7 +6816,7 @@
       "path": "/works/",
       "change": "price",
       "from": "#### Healthcare & Medical",
-      "to": "#### Healthcare & Medical\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+      "to": "#### Healthcare & Medical\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     }
   ]
 }

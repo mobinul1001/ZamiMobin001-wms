@@ -1,3 +1,4 @@
+import formIds from '../data/forms.json';
 // Splits rendered page HTML into sections so a template can place them. All text stays in the HTML.
 export interface Section {
   title: string;
@@ -29,7 +30,10 @@ const LINK_CONTEXT: Record<string, string> = {
 export const describeLinks = (html: string) =>
   html.replace(/<a href="([^"]+)">Learn More<\/a>/g, (all, href) => (LINK_CONTEXT[href] ? `<a href="${href}">Learn More<span class="sr-only"> ${LINK_CONTEXT[href]}</span></a>` : all));
 
-// Every old form posts to Netlify Forms and lands on /thank-you/. Each form on the site needs its own name.
+// Every form posts to Formspree. IDs live in src/data/forms.json; the redirect to /thank-you/ is set in each form's Formspree settings.
+const FORM_IDS = formIds as Record<string, string>;
+const HEALTH_FORM_LINE = '<p class="small muted form-note">Please don\'t send patient or health information through this form.</p>';
+const HEALTH_FORM_PAGES = ['/website-design-services/', '/website-redesign-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/white-label-website-maintenance-services-for-agencies/', '/wordpress-backup-services/', '/wordpress-malware-removal-service/'];
 const FORM_NAMES: Record<string, string> = { '/contact/': 'contact', '/get-a-free-quote/': 'quote', '/free-website-maintenance-audit/': 'audit' };
 export function wireForms(html: string, path: string) {
   const base = FORM_NAMES[path] ?? path.replace(/^\/|\/$/g, '');
@@ -38,10 +42,14 @@ export function wireForms(html: string, path: string) {
     count += 1;
     const name = count === 1 ? base : `${base}-${count}`;
     const extra = name === 'quote' ? '<input type="hidden" name="package" id="requested-package">' : '';
-    return `<form name="${name}" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="${name}"><p hidden><label>Leave this empty <input name="bot-field"></label></p>${extra}`;
+    const id = FORM_IDS[name] || FORM_IDS.default || `MISSING-${name}`;
+    return `<form data-form="${name}" method="POST" action="https://formspree.io/f/${id}"><input type="hidden" name="form_name" value="${name}"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">${extra}`;
   });
+  // The migration kept the old disabled submit buttons.
+  const enabled = wired.replace(/<button([^>]*?) disabled(?:="[^"]*")?([^>]*)>/g, '<button$1$2>');
+  const noted = HEALTH_FORM_PAGES.includes(path) ? enabled.replace(/<\/form>/g, `</form>${HEALTH_FORM_LINE}`) : enabled;
   // The old labels point at ids the converter removed. Each control gets its label's id back.
-  return wired.replace(/<label for="([^"]+)">((?:(?!<\/label>).)*)<\/label>(\s*(?:<div>\s*)?)<(input|select|textarea) /gs, '<label for="$1">$2</label>$3<$4 id="$1" ');
+  return noted.replace(/<label for="([^"]+)">((?:(?!<\/label>).)*)<\/label>(\s*(?:<div>\s*)?)<(input|select|textarea) /gs, '<label for="$1">$2</label>$3<$4 id="$1" ');
 }
 
 export const dropHeading = (html: string) => html.replace(/^\s*<h\d[^>]*>.*?<\/h\d>/s, '');

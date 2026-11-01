@@ -1337,6 +1337,8 @@ Patient trust starts with a professional, fast, and secure web presence. Healthc
 
 Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
 
+Patient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil).
+
 ✓ Heightened Security & Form Protection
 
 </div>

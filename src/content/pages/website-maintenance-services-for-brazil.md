@@ -271,7 +271,9 @@ Relatório mensal detalhado e suporte contínuo.
 
 ### Indústrias que Atendemos
 
-Sites de saúde: mantemos as informações de pacientes fora do site. Formulários que coletam dados de saúde passam por um provedor de formulários elegível à HIPAA que assina um BAA com sua clínica.
+Sites de saúde: mantemos as informações de pacientes fora do site. Formulários que coletam dados de saúde passam por um provedor seguro de formulários que atende à LGPD e assina um acordo de processamento de dados com sua clínica.
+
+Portais de pacientes e clientes: nós os construímos como um sistema separado e protegido — o site de marketing fica livre de dados de pacientes. Os portais de pacientes rodam em hospedagem elegível à HIPAA (EUA) ou em hospedagem que atende à lei local de privacidade, e nós os construímos e mantemos sob um BAA assinado (EUA) ou um acordo de processamento de dados (Reino Unido, UE, Canadá, Austrália, Brasil).
 
 Lojas e eCommerce Saúde e Clínicas Advocacia Finanças e Contabilidade Construção e Serviços Educação e Ensino Fitness e Bem-Estar Agências Criativas Automotivo Restaurantes e Turismo Corporações ONGs e Governo
 

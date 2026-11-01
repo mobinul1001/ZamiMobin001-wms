@@ -25,7 +25,7 @@ Rebuild https://websitemaintenanceservices.org/ (currently WordPress + Elementor
 - Content in **Astro content collections** (Markdown/MDX): `src/content/pages/`, `src/content/blog/`.
 - **Blog editing for non-developers:** a git-based CMS at `/admin/` (Decap CMS or Sveltia CMS, GitHub backend). `/admin/` is `noindex` and excluded from the sitemap. Check the CMS's current documentation for the auth setup on Netlify before implementing.
 - **Images:** keep every image at its original path under `public/wp-content/uploads/...` so existing image URLs keep working. Keep original alt text. Add width/height and modern formats where possible without changing the URL.
-- **Forms:** contact/quote forms via Netlify Forms (with honeypot spam protection), sending to the owner's email; show a thank-you page.
+- **Forms:** all forms post to Formspree (owner's decision, 2026-11-01), with honeypot spam protection, sending to the owner's email; show a thank-you page. IDs in `src/data/forms.json`; setup in `reports/formspree-setup.md`.
 - **Redirects:** server-side 301s in `public/_redirects` (or `netlify.toml`), generated from `url-map.csv`. No JavaScript or meta-refresh redirects. No redirect chains: every old URL points straight to its final URL.
 - **Sitemap** via `@astrojs/sitemap`, listing only indexable canonical URLs. `robots.txt` points to it.
 - **Real 404 page** returning HTTP 404 with `noindex`.

@@ -24,7 +24,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Master prices are on the homepage, pricing, WordPress packages and the articles. All 10 country pages use the owner's rounded local prices (`reports/country-prices.md`). 122 lines on 10 pages still show old plan prices (`reports/old-price-lines.md`, run `node scripts/list-old-prices.mjs`). Ecommerce, Shopify, USA and the other sets wait for question 11. Launch stays blocked until these are settled.
 - Keyword edits inside page bodies, and expanding the homepage and packages page.
 - Rearranging service pages (problem, included, price, FAQ): first screen is new, the rest keeps its old order.
-- Section-based page fields, CMS, build-time image conversion, schema validation. Forms and 404 tracking are built but can only be proven on Netlify.
+- Section-based page fields, CMS, build-time image conversion, schema validation. Forms post to Formspree once IDs are added; 404 tracking can only be proven on Netlify.
 
 ## 2. Decisions the owner approved on 2026-11-01
 
@@ -63,7 +63,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Market ranges in articles: $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
 - Annual prices always say "2 months free" (Spanish "2 meses gratis"); the build enforces it.
 - Write "Included", not tick icons. "No contract. Cancel anytime."
-- Form-only payment: no checkout on the site. Plan buttons open a form (name, email, website URL, platform, message, plan pre-selected), then Netlify Forms, a thank-you page, and manual payment after a call.
+- Form-only payment: no checkout on the site. Plan buttons open a form (name, email, website URL, platform, message, plan pre-selected), then Formspree, a thank-you page, and manual payment after a call.
 - Hash plan links: `/get-a-free-quote/#essential`, `#growth`, `#business`, `#growth-design`, `#starter-seo` and so on. Never link to `?plan=`, `?package=` or `?industry=`. Old query URLs get no redirect.
 - Service packages stay on the design, migration, SEO, speed and white-label pages. The owner confirms each price before launch. White-label prices must say wholesale for agencies.
 
@@ -101,7 +101,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- Healthcare note is on these pages, but some still describe patient portals, booking forms and a "large patient booking database" case. Confirm these fit "we keep patient information off the website". BAA and HIPAA are US terms and now appear on the UK, Canada, Australia, France, Ireland and Brazil pages too.
+- Formspree: the owner sends form IDs and buys the Personal plan (`reports/formspree-setup.md`). The privacy policy does not name Formspree as a processor yet.
+- Service pages use the US healthcare note, because they are not country pages. The portal wording on all pages still mentions the US, UK, EU, Canada, Australia and Brazil.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps

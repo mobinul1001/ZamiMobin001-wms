@@ -201,6 +201,7 @@ article { min-width: 0; }
 }
 
 /* Site additions */
+.form-note { margin-top: 8px; }
 .first-month { margin: 6px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--ok); }
 #plans { scroll-margin-top: 16px; }
 .plan-extras { margin-top: 14px; font-weight: 600; }

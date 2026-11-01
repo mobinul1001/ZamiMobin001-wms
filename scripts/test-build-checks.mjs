@@ -29,13 +29,15 @@ const cases = [
   ['Noindex on a sitemap URL', () => replaceIn(HOME, /<meta name="?robots"?[^>]*>/, '<meta name="robots" content="noindex">'), /is in the sitemap but has noindex/],
   ['Dollar price on a country page', () => replaceIn(COUNTRY, /<main[^>]*>/, '<main><p>From $79 a month.</p>'), /shows a dollar price/],
   ['Local price missing on a country page', () => replaceIn(COUNTRY, /£590/g, '£599'), /£590 is missing/],
+  ['Form not posting to Formspree', () => replaceIn('dist/contact/index.html', /action="https:\/\/formspree\.io[^"]*"/, 'action="/somewhere/"'), /does not post to Formspree/],
+  ['Disabled submit button', () => replaceIn('dist/contact/index.html', /<button type="submit"/, '<button disabled type="submit"'), /submit button is disabled/],
   ['Annual price without the note', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Essential is $790 per year.</p>'), /annual price without/],
   ['FAQ schema not on the page', () => replaceIn(PAGE, '</head>', '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"name":"Not on page?","acceptedAnswer":{"text":"Nope"}}]}</script></head>'), /schema question not on the page/],
   ['Banned claim on a page', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Trusted by 500+ businesses.</p>'), /banned claim/],
   ['robots.txt blocks a search bot', () => append('dist/robots.txt', '\nUser-agent: Googlebot\nDisallow: /\n'), /blocks a search bot/],
 ];
 
-const files = [REDIRECTS, HOME, PAGE, 'dist/robots.txt'];
+const files = [REDIRECTS, HOME, PAGE, 'dist/robots.txt', 'dist/contact/index.html', COUNTRY];
 const saved = new Map(files.map((f) => [f, readFileSync(f)]));
 
 const baseline = run();
