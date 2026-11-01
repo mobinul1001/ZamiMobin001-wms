@@ -1,0 +1,274 @@
+{
+  "migrated": 92,
+  "posts": 48,
+  "pages": 44,
+  "linksRewritten": 379,
+  "planLinksToHash": 28,
+  "unknownLinks": [],
+  "unlinked404Targets": {
+    "/white-label-local-seo-for-agencies/": 1,
+    "/agency-resources/": 1,
+    "/white-label-local-ranking-reports/": 1,
+    "/reporting-guides/": 1,
+    "/local-seo-white-label-pricing/": 2,
+    "/affiliate-disclosure/": 1,
+    "/copyright-notice/": 1
+  },
+  "countdownBlocksRemoved": [
+    {
+      "path": "/agreement/",
+      "count": 1,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "count": 7,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "count": 7,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/caribbean-taxi-transport-website-guide/",
+      "count": 6,
+      "text": "🌐1 Year FreeFree Hosting for 1 YearYour site is hosted free for a full year — fast, secure hosting with no hidden bill "
+    },
+    {
+      "path": "/how-much-does-website-maintenance-cost/",
+      "count": 1,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "count": 1,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/importance-of-website-maintenance/",
+      "count": 1,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "count": 6,
+      "text": "🌐1 Year FreeFree Hosting for 1 YearHosting is bundled by both — but a full year free is a concrete first-year saving."
+    },
+    {
+      "path": "/website-maintenance-services-for-netherlands/",
+      "count": 1,
+      "text": "LIMITED-TIME OFFER Get 50% OFF any maintenance plan New clients • First billing period REFRESHES IN 05DAYS 00HRS 00MIN 0"
+    }
+  ],
+  "schemaRemoved": [
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-design-services/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-migration-services/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-repair-services/",
+      "removed": [
+        "aggregateRating",
+        "Review",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-seo-services/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/website-update-services/",
+      "removed": [
+        "Review",
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "removed": [
+        "aggregateRating",
+        "review"
+      ]
+    }
+  ],
+  "promotedH1": [
+    {
+      "path": "/agreement/",
+      "h1": "Website Maintenance Agreement & Contract Guide"
+    },
+    {
+      "path": "/contact/",
+      "h1": "Let’s Connect – We’re Here to Help!"
+    },
+    {
+      "path": "/free-website-maintenance-audit/",
+      "h1": "Get Your Free Website Review"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
+      "h1": "Shopify Website Maintenance Packages, Plans & Costs"
+    },
+    {
+      "path": "/website-maintenance-process/",
+      "h1": "What Is the Website Maintenance Process?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "h1": "Website Maintenance Services for Switzerland"
+    },
+    {
+      "path": "/website-malware-scanner/",
+      "h1": "Free Website Malware Scanner"
+    },
+    {
+      "path": "/works/",
+      "h1": "Featured Maintenance Projects"
+    }
+  ],
+  "secondH1DemotedToH2": [],
+  "missingImages": [],
+  "faqQuestionsNotFoundInBody": [
+    {
+      "path": "/agreement/",
+      "q": "What is the difference between a maintenance agreement and a support contract?"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "q": "Can you recommend a reliable WordPress website maintenance company for a small business?"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "q": "What is the difference between a maintenance plan and managed hosting?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "q": "Ofrecen servicios de mantenimiento web en Espana?"
+    },
+    {
+      "path": "/website-maintenance-services-for-spain/",
+      "q": "Cuanto cuesta el mantenimiento web en Espana?"
+    },
+    {
+      "path": "/website-maintenance-services-for-switzerland/",
+      "q": "Proposez-vous la maintenance de sites web en Suisse?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "q": "What's the difference between a website redesign and a website refresh?"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "q": "What ongoing support is available after the redesign launches?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "What is website repair?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How to fix a broken website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "Why is my website showing a White Screen of Death (WSOD)?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How to fix a 500 Internal Server Error on WordPress?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How do I fix broken 404 links on my website?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How to resolve WordPress plugin conflicts?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "Why is my website contact form not sending emails?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "Why is my WooCommerce checkout not working?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How to repair a hacked website or malware infection?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "What is the difference between website repair and website maintenance?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "What is the difference between website repair and website redesign?"
+    },
+    {
+      "path": "/website-repair-services/",
+      "q": "How fast is emergency website repair vs scheduled repair?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "q": "Does page speed affect Google SEO rankings?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "q": "How does website speed affect conversion rates?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "q": "Why is my WordPress website slow on mobile?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "q": "How does speed optimization work with your maintenance and security plans?"
+    },
+    {
+      "path": "/website-update-services/",
+      "q": "What happens when a WordPress update breaks your site?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "q": "Do you offer white label WordPress maintenance services specifically?"
+    }
+  ],
+  "formsKeptDisabled": 12
+}

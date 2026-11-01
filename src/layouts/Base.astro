@@ -1,16 +1,21 @@
 ---
+import chrome from '../data/site-chrome.json';
+
 interface Props {
   title: string;
   description?: string;
   robots?: string;
+  social?: Record<string, unknown>;
+  schema?: unknown[];
 }
-const { title, description, robots } = Astro.props;
+const { title, description, robots, social = {}, schema = [] } = Astro.props;
 
 // Netlify sets CONTEXT and URL during builds. Only a production build on the real domain
 // may be indexed, so the netlify.app address and any misconfigured build stay noindex.
 const isProduction = process.env.CONTEXT === 'production' && process.env.URL === Astro.site?.origin;
-const robotsContent = isProduction ? (robots ?? 'index, follow') : 'noindex, nofollow';
+const robotsContent = isProduction ? robots || 'index, follow' : 'noindex, nofollow';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const socialTags = Object.entries(social).flatMap(([key, value]) => (Array.isArray(value) ? value : [value]).map((content) => ({ key, content: String(content) })));
 ---
 <!doctype html>
 <html lang="en">
@@ -22,9 +27,35 @@ const canonical = new URL(Astro.url.pathname, Astro.site).href;
     <meta name="robots" content={robotsContent} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <slot name="head" />
+    {socialTags.map(({ key, content }) => (key.startsWith('twitter:') ? <meta name={key} content={content} /> : <meta property={key} content={content} />))}
+    {schema.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
+    <style>
+      /* Neutral placeholder only. The visual design comes after the owner approves a direction. */
+      body { margin: 0 auto; max-width: 52rem; padding: 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #222; background: #fff; }
+      header nav, footer nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
+      header { border-bottom: 1px solid #ccc; padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
+      footer { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 0.75rem; font-size: 0.9rem; }
+      img, iframe, video { max-width: 100%; height: auto; }
+      main { overflow-wrap: anywhere; }
+      main table { border-collapse: collapse; display: block; overflow-x: auto; }
+      main th, main td { border: 1px solid #ccc; padding: 0.25rem 0.5rem; }
+      input, select, textarea { display: block; margin: 0.25rem 0 0.75rem; }
+    </style>
   </head>
   <body>
-    <slot />
+    <header>
+      <nav aria-label="Main">
+        {chrome.nav.map((link) => <a href={link.href}>{link.label}</a>)}
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>{chrome.tagline}</p>
+      <nav aria-label="Footer">
+        {chrome.footer.map((link) => <a href={link.href}>{link.label}</a>)}
+      </nav>
+    </footer>
   </body>
 </html>

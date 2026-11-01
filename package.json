@@ -5,15 +5,20 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/preview-headers.mjs",
+    "build": "node scripts/generate-redirects.mjs && astro build && node scripts/preview-headers.mjs && node scripts/check-build.mjs",
+    "parity": "node scripts/parity-local.mjs",
     "preview": "astro preview",
     "crawl": "node scripts/crawl.mjs"
   },
   "dependencies": {
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.4.4"
   },
   "devDependencies": {
-    "cheerio": "^1.2.0"
+    "cheerio": "^1.2.0",
+    "sharp": "^0.35.5",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2"
   }
 }

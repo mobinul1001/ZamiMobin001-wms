@@ -1,0 +1,163 @@
+{
+  "nav": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About us",
+      "href": "/about-us/"
+    },
+    {
+      "label": "Our Works",
+      "href": "/works/"
+    },
+    {
+      "label": "Process",
+      "href": "/website-maintenance-process/"
+    },
+    {
+      "label": "Plans",
+      "href": "/monthly-website-maintenance-packages/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "label": "Get a Free Quote",
+      "href": "/get-a-free-quote/"
+    }
+  ],
+  "footer": [
+    {
+      "label": "Chat with us on WhatsApp",
+      "href": "https://wa.me/8801815840813"
+    },
+    {
+      "label": "WordPress Website Maintenance",
+      "href": "/wordpress-website-maintenance-packages/"
+    },
+    {
+      "label": "Shopify Website Maintenance",
+      "href": "/shopify-website-maintenance-packages/"
+    },
+    {
+      "label": "Monthly Website Maintenance",
+      "href": "/monthly-website-maintenance-packages/"
+    },
+    {
+      "label": "Ecommerce Website Maintenance",
+      "href": "/ecommerce-website-maintenance-packages/"
+    },
+    {
+      "label": "Small Business Website Maintenance",
+      "href": "/best-website-maintenance-for-small-business/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about-us/"
+    },
+    {
+      "label": "Our Works",
+      "href": "/works/"
+    },
+    {
+      "label": "Our Plans",
+      "href": "/monthly-website-maintenance-packages/"
+    },
+    {
+      "label": "Process",
+      "href": "/website-maintenance-process/"
+    },
+    {
+      "label": "Checklist",
+      "href": "/website-maintenance-checklist/"
+    },
+    {
+      "label": "Blogs",
+      "href": "/blogs/"
+    },
+    {
+      "label": "Case Studies",
+      "href": "/website-maintenance-case-study/"
+    },
+    {
+      "label": "Contact Us",
+      "href": "/contact/"
+    },
+    {
+      "label": "Get a Free Quote",
+      "href": "/get-a-free-quote/"
+    },
+    {
+      "label": "Free Maintenance Audit",
+      "href": "/free-website-maintenance-audit/"
+    },
+    {
+      "label": "Agreement",
+      "href": "/agreement/"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy/"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "/terms-conditions/"
+    },
+    {
+      "label": "Refund Policy",
+      "href": "/refund-cancellation-policy/"
+    },
+    {
+      "label": "Cookie Policy",
+      "href": "/cookie-policy/"
+    },
+    {
+      "label": "WordPress Maintenance",
+      "href": "/wordpress-website-maintenance-packages/"
+    },
+    {
+      "label": "Shopify Maintenance",
+      "href": "/shopify-website-maintenance-packages/"
+    },
+    {
+      "label": "Monthly Maintenance",
+      "href": "/monthly-website-maintenance-packages/"
+    },
+    {
+      "label": "Ecommerce Maintenance",
+      "href": "/ecommerce-website-maintenance-packages/"
+    },
+    {
+      "label": "Small Business Maintenance",
+      "href": "/best-website-maintenance-for-small-business/"
+    },
+    {
+      "label": "Free Website Audit",
+      "href": "/free-website-maintenance-audit/"
+    },
+    {
+      "label": "WhatsApp",
+      "href": "https://wa.me/message/Q4TKXOWKHFTQK1"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/web-maintenance-services/"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://www.facebook.com/webmaintenanceservices"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://www.youtube.com/@WebMaintenanceServices"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/websitemaintenanceservices"
+    }
+  ],
+  "tagline": "Professional website maintenance services that keep your website secure, updated, optimized, and running at peak performance."
+}
