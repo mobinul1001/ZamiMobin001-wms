@@ -333,7 +333,14 @@ function fixOfferNode(node, path) {
   if (named === null) return null;
   if (named) return { ...node, name: named[0], price: named[1] };
   const out = {};
-  for (const [k, v] of Object.entries(node)) out[k] = k === 'name' && typeof v === 'string' ? planName(v) : fixOfferNode(v, path);
+  for (const [k, v] of Object.entries(node)) {
+    // This repair FAQ is built from its schema answer, after the page's text pairs have run.
+    if (path === '/website-repair-services/' && k === 'text' && typeof v === 'string' && /under 60 minutes/.test(v)) {
+      out[k] = v.replace(/Emergency website repair offers an average response time under 60 minutes[^.]*\./, 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.');
+      continue;
+    }
+    out[k] = k === 'name' && typeof v === 'string' ? planName(v) : fixOfferNode(v, path);
+  }
   if (path === '/white-label-website-maintenance-services-for-agencies/') {
     if (typeof out.description === 'string') out.description = out.description.replace(/ with 99\.99% uptime SLA/, '').replace(/ with (?:24|12)-hour SLA(?: and dedicated account manager)?/, '').replace(/ with 4-hour emergency SLA/, '').replace(/20\+ client sites/, '21+ client sites').replace(/custom volume pricing/i, 'white label website maintenance');
   }

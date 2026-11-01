@@ -3958,7 +3958,7 @@
     {
       "path": "/website-repair-services/",
       "change": "price text gone",
-      "from": "Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations.",
+      "from": "/Emergency website repair offers an average response time under 60 minutes[^.\\n]*\\./g",
       "to": "Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day."
     },
     {

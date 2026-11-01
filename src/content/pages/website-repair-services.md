@@ -1108,7 +1108,7 @@ Hacked website recovery requires containing the infection, [clearing malicious f
 
 How fast is emergency website repair vs scheduled repair?
 
-Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations. Scheduled standard repairs average 24 to 48 hours.
+Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day. Scheduled standard repairs average 24 to 48 hours.
 
 ## Related Services
 

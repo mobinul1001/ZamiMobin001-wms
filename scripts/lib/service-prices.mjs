@@ -119,7 +119,7 @@ export const SERVICE_CHANGES = {
     ['| Response time | Under 60 minutes |', '| Response time | Usually the same business day |'],
     ['Standard repairs average 24 hours; emergencies are typically responded to within 60 minutes.', 'Most issues are fixed within 24 hours. Repair work usually starts the same business day.'],
     ['Yes, with an average response time under 60 minutes for site-down and checkout-down situations.', 'Yes. Repair work usually starts the same business day.'],
-    ['Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations.', 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.'],
+    [/Emergency website repair offers an average response time under 60 minutes[^.\n]*\./g, 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.'],
     ['Under 60-min emergency response • Serving', 'Repair work usually starts the same business day. • Serving'],
     [/^If it.s related to the original issue, we fix it again at no charge\.\n+/m, ''],
   ],
