@@ -62,17 +62,6 @@ These cookies remember your preferences and settings.
 
 </div>
 
-<div class="card">
-
-### d) Marketing & Third-Party
-
-Used by trusted third-party services for marketing.
-
--   Track visits for ad campaigns
--   Enable retargeting (e.g., Google Ads)
-
-</div>
-
 </div>
 
 ## 3 Third-Party Cookies
@@ -98,7 +87,6 @@ Information collected through cookies may be used to:
 
 -   Improve website functionality and user experience
 -   Analyze visitor behavior and website performance
--   Provide relevant content and targeted advertising
 -   Ensure website security and prevent fraud
 
 ## 6 Updates to This Cookie Policy

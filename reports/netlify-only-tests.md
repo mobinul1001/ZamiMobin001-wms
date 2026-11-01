@@ -24,3 +24,8 @@ Local builds cannot prove these. Each one gets real `curl` output or a screensho
 - Fill the _gotcha field through dev tools. Confirm Formspree ignores the submission.
 - Open a missing URL on the live build. Confirm HTTP 404, and a page_not_found event in Google Analytics.
 - Confirm the Google tag and Clarity load only on the production domain.
+
+## Consent (after the owner pushes)
+- On the live production build, with no earlier choice: confirm the bar shows and no request goes to Google Analytics or Clarity.
+- Select Accept. Confirm data arrives in GA4 and Clarity.
+- Reload, then use Cookie settings and Reject. Confirm the analytics cookies are gone and no further requests are sent.

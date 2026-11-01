@@ -101,10 +101,18 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- Formspree: Free plan, one shared ID from the owner (`reports/formspree-setup.md`). Test reCAPTCHA with fetch on the first real submission. The privacy policy names Hostinger as the email provider, from the domain MX record; the owner confirms.
+- Formspree: Free plan, one shared ID from the owner (`reports/formspree-setup.md`). Test reCAPTCHA with fetch on the first real submission. The privacy policy names Hostinger as the email provider, confirmed by the owner.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
-**For later, after the owner pushes (not blocking current work):** portfolio table and case study; real author details; webmail details; Netlify redirect tests.
+**For later, after the owner pushes (not blocking current work):**
+- Formspree form ID (`src/data/forms.json`, `default`).
+- Confirm the GA4 Measurement ID and Clarity project ID. The site keeps the old site's IDs (`GT-K522B6T8`, `wqnjbhbxww`) unless the owner sends new ones.
+- Clarity dashboard consent setting.
+- Live consent test: Accept, then confirm data arrives in GA4 and Clarity.
+- Portfolio table and case study.
+- Real author details.
+- Webmail details.
+- Netlify redirect tests.
 
 ## 4. Next steps
 

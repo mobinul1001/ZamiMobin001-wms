@@ -168,6 +168,7 @@ for (const file of htmlFiles) {
   if (/form provider|meets (?:UK )?GDPR|meets PIPEDA/i.test($('main').text())) fail('healthcare', `${path}: old healthcare note.`);
   if (/HIPAA[- ](?:compl|certif)|secure online appointment booking|patient online appointment booking|Large patient booking database/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
   if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
+  if (['/cookie-policy/', '/privacy-policy/'].includes(path) && /retargeting|targeted advertising|Google Ads|advertising providers/i.test($('main').text())) fail('consent', `${path}: describes advertising, but the site has no ad tags.`);
   // Owner rule: analytics load only after Accept, and every page offers the choice.
   if ($('script[src*="googletagmanager"], script[src*="clarity.ms"]').length) fail('consent', `${path}: analytics tag loads before consent.`);
   if (!$('#cookie-bar').length || !$('#cookie-accept').length || !$('#cookie-reject').length || !$('#cookie-settings').length || !$('script[src="/consent.js"]').length) fail('consent', `${path}: cookie bar is missing.`);

@@ -102,6 +102,11 @@ const STORE_REMOVALS = {
     removeCompareRows($);
     removeFromList($, /^What's Included in Every Plan\?$/, ['Broken Link Monitoring', 'Monthly Health Report']);
   },
+  // Owner, 2026-11-01: no ad tags on this site, so the policy does not describe any.
+  '/cookie-policy/': ($) => {
+    removeBlock($, 'd) Marketing & Third-Party');
+    removeMatching($, [/^Provide relevant content and targeted advertising$/]);
+  },
   '/wordpress-backup-services/': ($) => {
     removeTierCards($, 'Starter Tier', 'Agency Tier');
     // The whole "Our Restore Guarantee" panel.

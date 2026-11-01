@@ -247,7 +247,7 @@
 "/contact/?plan=standard-cleanup","200","query-variant","PASS","","","","","","","","","","","",""
 "/contact/?plan=starter","200","query-variant","PASS","","","","","","","","","","","",""
 "/cookie-policy","301","no-slash","PASS","","","","","","","","","","","","slash only: Netlify handling (to verify after push)"
-"/cookie-policy/","200","page","PASS","395","439","111.1","Cookie Policy for Website Maintenance Company","Cookie Policy | WMS","Cookie Policy","Cookie Policy","https://websitemaintenanceservices.org/cookie-policy/","https://websitemaintenanceservices.org/cookie-policy/","index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1","index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",""
+"/cookie-policy/","200","page","PASS","395","412","104.3","Cookie Policy for Website Maintenance Company","Cookie Policy | WMS","Cookie Policy","Cookie Policy","https://websitemaintenanceservices.org/cookie-policy/","https://websitemaintenanceservices.org/cookie-policy/","index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1","index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",""
 "/copyright-notice","404","dead-link-target","PASS","","","","","","","","","","","",""
 "/copyright-notice/","404","dead-link-target","PASS","","","","","","","","","","","",""
 "/cost-to-redesign-website","301","no-slash","PASS","","","","","","","","","","","","slash only: Netlify handling (to verify after push)"

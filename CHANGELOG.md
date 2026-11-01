@@ -171,3 +171,7 @@
 - Bottom bar with Accept and Reject of equal weight, privacy link, and a Cookie settings link in the footer. The choice is remembered. Google Analytics and Clarity load only after Accept, with Consent Mode v2 default denied and Clarity consentv2.
 - Privacy policy names Formspree, Hostinger, Google Analytics, Microsoft Clarity, Netlify and WhatsApp. Cookie policy names Google Analytics and Clarity and describes the choice.
 - Launch checklist: set the Effective Date on launch day. Later items recorded in STATUS.md.
+
+## Cookie policy without advertising (2026-11-01)
+- Removed the marketing and retargeting card and the targeted advertising line; the site has no ad tags. Build fails if advertising wording returns to the cookie or privacy policy.
+- Hostinger confirmed as the email provider. Later items listed in STATUS.md.
