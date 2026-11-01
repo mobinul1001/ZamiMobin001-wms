@@ -86,6 +86,8 @@ Replaces "Calm engineering" (owner, 2026-11-01), which looked too plain: mostly 
 
 **Goal:** the site should look like a premium software product, and the visitor should still see exactly what they get and what it costs. Honest claims and visible prices remain the advantage.
 
+`DESIGN-QA.md` adds the detailed design rules and the required self-review loop.
+
 ### B1. Look
 One design with two themes (owner, 2026-11-01), switched by a sun/moon button in the header. The default follows the visitor's system setting, the choice is remembered, and an inline script in `<head>` sets the theme so there is no flash on load.
 - **Dark:** dark navy with brand purple glow and gradients in CSS only, in the spirit of linear.app and vercel.com.
@@ -110,7 +112,7 @@ Both themes pass contrast checks and keep CLS 0. Also in both:
 6. **Example monthly report**, labelled "Example".
 7. **Websites we look after:** portfolio block (A4), when the owner confirms the table.
 8. **Comparison:** WMS, freelancer and typical agency, shown as cards. No competitor brand names on the homepage.
-9. **Existing homepage content:** all kept, each part in the new design as a proper section, not accordions under the bento. "Find us on": one row of profile names, no badges, ratings or stars. FAQ as an accordion.
+9. **Existing homepage content:** all kept, each part in the new design as a proper section, not accordions under the bento. "Find us on": the real badge images and profile links from the live site, in the footer, one height, greyscale until hover in dark mode. FAQ as an accordion.
 10. **Final CTA:** dark gradient band with buttons.
 
 ### B3. Pricing page (most important commercial page)

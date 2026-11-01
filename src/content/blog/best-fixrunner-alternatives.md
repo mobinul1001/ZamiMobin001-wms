@@ -188,22 +188,22 @@ Clutch ★ Trustpilot GoodFirms Sortlist Techreviewer C2C Review Agency Spotter 
 
 That's a level of independent, third-party validation many maintenance providers simply can't show — exactly what you want backing the team responsible for keeping your site online.
 
-### Real results, backed by numbers
+### Real results
 
 Credibility isn't just badges — it's outcomes. Here's a real, documented result from a healthcare client (Altitude Care & Integrative Health) whose WordPress site was slow, insecure, and losing bookings before Website Maintenance Services took over:
 
 #### ⚠ Before
 
--   Page load speed 4.8s
+-   Page load speed Slow
 -   Security monitoring None
 -   Downtime Frequent
 -   Booking form Broken
 
 #### ✓ After
 
--   Page load speed 1.9s
+-   Page load speed Optimized
 -   Security monitoring 24/7
--   Downtime ~0%
+-   Downtime Reduced
 -   Booking form Fixed
 
 That's a **60% faster site**, near-zero downtime, and a booking form that actually works — the kind of measurable improvement that pays for maintenance many times over. Read the [full case study](/website-maintenance-case-study/) for the details.

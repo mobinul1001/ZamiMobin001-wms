@@ -27,23 +27,9 @@ The WordPress page has the largest gap, about 2,000 words. The pricing page is a
 - **Page builders and PHP:** Elementor, Divi, Beaver Builder, WPBakery and Gutenberg; we upgrade sites from PHP 7.4 to 8.x.
 - **Add-on prices:** "Ask for a price".
 
-## Still open
-The owner said to use the answers in `STATUS.md`, but it lists these only as open questions. These sections stay unwritten until answered:
-1. **Cancel:** recorded so far: "No contract. Cancel anytime." and hosting after the first year at $19/month or $190/year. Not recorded: who keeps the files, hosting and email after cancelling.
-2. **Edit hours:** recorded so far: "small text, image or layout changes". Not recorded: whether unused hours roll over.
-3. **Response time per plan:** recorded so far: "Repair work usually starts the same business day." and 24/7 emergency fixes on Business. Not recorded: a response time for each plan.
-
-## "Find us on" profiles, for the owner to confirm
-| Profile | Link | Checked |
-|---|---|---|
-| Clutch | clutch.co/profile/website-maintenance-services | Page opens, our profile |
-| GoodFirms | goodfirms.co/company/website-maintenance-services | Page opens, our profile |
-| Sortlist | sortlist.com/agency/website-maintenance-services-usa | Page opens, our profile |
-| Techreviewer | techreviewer.co/companies/website-maintenance-services | Page opens, our name and domain |
-| C2C Review | c2creview.co/company/website-maintenance-services | Page opens, our name and domain |
-| Trustpilot | trustpilot.com/review/websitemaintenanceservices.org | Page opens, claimed profile, no reviews yet |
-| Agency Spotter | agencyspotter.com/website-maintenance-services | Could not check: the site blocked the request |
-| ITFirms | itfirms.co | Left out: the old link goes to their homepage, not a profile |
+- **Cancel:** anytime. Service runs to the end of the paid month; no partial-month refunds. After cancelling, the site, files and data stay the client's. Hosting and email can continue at $19/month.
+- **Edit hours:** small text, image or layout changes; unused hours don't roll over.
+- **Response time:** Essential 2 business days, Growth 1 business day, Business 4 hours + 24/7 emergency fixes.
 
 ## One existing heading to check
 The homepage has the H2 "Plans and pricing". "Plans" and "pricing" belong to the packages page. The heading is short and has no "website maintenance" in it, so it is left as it is. The owner can ask for it to change.

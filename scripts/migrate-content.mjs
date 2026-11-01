@@ -347,14 +347,15 @@ async function convert(path, record) {
     const walk = (n) => {
       const kids = filled(n);
       if (!kids.length) { if (clean(n)) notes.push(clean(n)); return; }
-      if (kids.length === 2) {
+      // The SEO panel lost its status column, so nothing there is a title and status pair.
+      if (kids.length === 2 && path !== '/website-seo-services/') {
         const [a, b] = [leaves(kids[0]), leaves(kids[1])];
         if (a.length <= 2 && b.length === 1 && b[0].split(' ').length <= 4) { rows.push([a[0], a[1] ?? '', b[0]]); return; }
       }
       kids.forEach(walk);
     };
     walk(panel[0]);
-    if (rows.length < 2 || notes.join(' ').split(' ').length > 40) throw new Error(`${path}: panel rows changed`);
+    if (rows.length + notes.length < 2 || notes.join(' ').split(' ').length > 40) throw new Error(`${path}: panel rows changed`);
     panel.replaceWith($('<div>x</div>').attr('data-status-panel', JSON.stringify({ head, rows, notes })));
   }
   // Two short text pieces with no space between them ran together ("10Countries served"): number or title, then its label.

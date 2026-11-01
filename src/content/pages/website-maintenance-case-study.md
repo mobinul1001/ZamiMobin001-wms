@@ -51,7 +51,7 @@ Before our maintenance began, the client was facing several issues affecting use
 
 ### Slow Loading Times
 
-4.8 seconds average load time, causing high bounce rates.
+Slow load times, causing high bounce rates.
 
 </div>
 
@@ -107,7 +107,7 @@ Our Solution
 
 <div class="card">
 
-### Speed Optimization (4.8s → 1.9s)
+### Speed Optimization
 
 To improve user experience and SEO, we optimized images, database tables, caching rules, CSS/JS delivery, and server response time. This cut page load time significantly.
 
@@ -195,13 +195,13 @@ The improvements were immediate and significant. The clinic now has a stable, fa
     
     <div class="card">
     
-    4.8s
+    Slow
     
     </div>
     
     <div class="card">
     
-    1.9s
+    Optimized
     
     </div>
     
@@ -245,7 +245,7 @@ The improvements were immediate and significant. The clinic now has a stable, fa
     
     <div class="card">
     
-    Near 0%
+    Reduced
     
     </div>
     

@@ -229,7 +229,14 @@ const DUPLICATE_LINES = {
   '/wordpress-malware-removal-service/': 'security-scanner.v4',
 };
 
+// Owner, 2026-11-01 (DESIGN-QA.md section 5): these results go, even with an Example label.
+const PANEL_CLAIMS = {
+  '/website-seo-services/': ['+142% Growth', 'Page 1 Top 3', '98/100 Passed'],
+  '/website-design-services/': ['99/100 Passed'],
+};
+
 export function applyApprovedRemovals($, path) {
+  if (PANEL_CLAIMS[path]) removeLeaves($, PANEL_CLAIMS[path]);
   if (DUPLICATE_LINES[path]) {
     const text = DUPLICATE_LINES[path];
     const found = $('body *').filter((_, x) => !$(x).is('h1, a, title') && !$(x).closest('nav, header, footer').length && $(x).text().trim() === text && !$(x).children().toArray().some((c) => $(c).text().trim() === text));

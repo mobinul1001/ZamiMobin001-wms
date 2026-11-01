@@ -398,7 +398,7 @@ We run a full website audit, fix urgent issues, and set up security, backups, an
 
 <div class="card">
 
-<p class="pair"><strong>Expert Developers</strong> <span>Certified, experienced team</span></p>
+<p class="pair"><strong>Expert Developers</strong> <span>Experienced team</span></p>
 
 </div>
 
@@ -423,7 +423,7 @@ From hosting and SEO to content, backups, and updates — we handle it all under
 
 Real Results
 
-## Real Maintenance Results, Backed by Numbers
+## Real Maintenance Results
 
 Here’s what consistent website maintenance did for one of our clients — a busy healthcare clinic running on WordPress.
 
@@ -433,7 +433,7 @@ Here’s what consistent website maintenance did for one of our clients — a bu
 
 Page Load Speed
 
-<p class="pair"><strong>4.8s</strong> <span>1.9s</span></p>
+<p class="pair"><strong>Slow</strong> <span>Optimized</span></p>
 
 </div>
 
@@ -449,7 +449,7 @@ Security
 
 Downtime
 
-<p class="pair"><strong>Often</strong> <span>~0%</span></p>
+<p class="pair"><strong>Often</strong> <span>Reduced</span></p>
 
 </div>
 
@@ -469,7 +469,7 @@ Case Study
 
 Healthcare WordPress USA Monthly Maintenance
 
-This mental-health clinic relied on its website for patient bookings, but it was slow (4.8s loads), had a broken appointment form, occasional downtime, and no security monitoring. We optimized speed, set up 24/7 security and malware protection, fixed the booking form, and took over all updates — turning it into a fast, stable, patient-ready site.
+This mental-health clinic relied on its website for patient bookings, but it was slow, had a broken appointment form, occasional downtime, and no security monitoring. We optimized speed, set up 24/7 security and malware protection, fixed the booking form, and took over all updates — turning it into a fast, stable, patient-ready site.
 
 [Read the Full Case Study](/website-maintenance-case-study/) [Get the Same Results](/get-a-free-quote/)
 

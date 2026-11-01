@@ -222,6 +222,42 @@
     },
     {
       "path": "/",
+      "change": "price text gone",
+      "from": "4.8s1.9s",
+      "to": ""
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "<strong>4.8s</strong> <span>1.9s</span>",
+      "to": "<strong>Slow</strong> <span>Optimized</span>"
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "<strong>Often</strong> <span>~0%</span>",
+      "to": "<strong>Often</strong> <span>Reduced</span>"
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "it was slow (4.8s loads), had",
+      "to": "it was slow, had"
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "## Real Maintenance Results, Backed by Numbers",
+      "to": "## Real Maintenance Results"
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "Certified, experienced team",
+      "to": "Experienced team"
+    },
+    {
+      "path": "/",
       "change": "schema same",
       "question": "What is website maintenance?"
     },
@@ -385,6 +421,30 @@
       "change": "price",
       "from": "/^\\$95$/m",
       "to": "$79"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "Page load speed 4.8s",
+      "to": "Page load speed Slow"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "Page load speed 1.9s",
+      "to": "Page load speed Optimized"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "Downtime ~0%",
+      "to": "Downtime Reduced"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "### Real results, backed by numbers",
+      "to": "### Real results"
     },
     {
       "path": "/best-fixrunner-alternatives/",
@@ -901,6 +961,30 @@
       "change": "price",
       "from": "/^\\$95$/m",
       "to": "$79"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "Page load speed 4.8s",
+      "to": "Page load speed Slow"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "Page load speed 1.9s",
+      "to": "Page load speed Optimized"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "Downtime ~0%",
+      "to": "Downtime Reduced"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "### Real results, backed by numbers",
+      "to": "### Real results"
     },
     {
       "path": "/best-wp-buffs-alternatives/",
@@ -2588,6 +2672,24 @@
     },
     {
       "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "Page load speed 4.8s",
+      "to": "Page load speed Slow"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "Page load speed 1.9s",
+      "to": "Page load speed Optimized"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "Downtime ~0%",
+      "to": "Downtime Reduced"
+    },
+    {
+      "path": "/sitecare-alternative/",
       "change": "schema synced",
       "question": "Is SiteCare a good WordPress maintenance service?"
     },
@@ -3042,6 +3144,36 @@
       "path": "/website-maintenance-case-study/",
       "change": "price",
       "from": "/^We help clinics, therapists[^\\n]*$/m"
+    },
+    {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "4.8 seconds average load time, causing high bounce rates.",
+      "to": "Slow load times, causing high bounce rates."
+    },
+    {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "### Speed Optimization (4.8s → 1.9s)",
+      "to": "### Speed Optimization"
+    },
+    {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "    4.8s",
+      "to": "    Slow"
+    },
+    {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "    1.9s",
+      "to": "    Optimized"
+    },
+    {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "    Near 0%",
+      "to": "    Reduced"
     },
     {
       "path": "/website-maintenance-checklist/",

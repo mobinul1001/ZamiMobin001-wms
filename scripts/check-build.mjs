@@ -182,6 +182,8 @@ for (const file of htmlFiles) {
     if (/Most issues are fixed within 24 hours/i.test(repairText) || !repairText.includes(repairTime) || !repairText.includes(noFix)) fail('repair', `${path}: repair time or No fix, no fee wording is wrong.`);
   }
   if (promise) fail('promises', `${path}: "${promise[0]}" is not an approved promise.`);
+  const unverified = /\+142%|Page 1 Top 3|9[89]\/100 Passed|Certified, experienced|\b4\.8 ?s\b|\b1\.9 ?s\b/.exec($('main').text());
+  if (unverified) fail('claims', `${path}: "${unverified[0]}" was removed by the owner (DESIGN-QA.md section 5).`);
   if (path === '/white-label-website-maintenance-services-for-agencies/') {
     const claim = /99\.\d+%|24\/7 (agency )?sla|3\.8 hours|slack|agency dashboard|\bWAF\b/i.exec($('main').text());
     if (claim) fail('white-label', `${path}: "${claim[0]}" was removed by the owner.`);

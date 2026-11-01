@@ -33,8 +33,8 @@ Annual math, from `prices.json`:
 | Business | $3,588 | $2,990 | $598 |
 
 ## New FAQs (answers 40 to 60 words)
-1. Do unused edit hours roll over? **Open, see README**
-2. What counts as an edit? Small text, image or layout changes. **Limits open, see README**
+1. Do unused edit hours roll over? No, unused hours don't roll over.
+2. What counts as an edit? Small text, image or layout changes. Unused hours do not roll over.
 3. Can I change plans later? Yes: upgrade or downgrade anytime; it takes effect from the next billing month.
 4. Do your website management services include content updates?
 5. What is the difference between a plan and a one-time fix?

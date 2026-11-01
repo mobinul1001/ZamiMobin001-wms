@@ -9,7 +9,7 @@ Not pushing yet. A plan and the owner's approval before each step. Commit locall
 
 | Step | Status |
 |---|---|
-| 1. Design review screenshots | Done. Owner chose both, as two themes of one design. Mockup: `mockups/v2/home.html`, screenshots in `reports/mockups-v2/`. **Waiting for the owner to approve the screenshots before any template changes.** |
+| 1. Design review screenshots | Done. Owner chose both, as two themes of one design. Mockup: `mockups/v2/home.html`, rebuilt to `DESIGN-QA.md`. QA: `node scripts/design-qa.mjs`, screenshots in `reports/design-qa/home/`. **Waiting for the owner to approve the homepage; then roll out to all templates in batches.** |
 | 2. Content expansion: homepage, pricing, WordPress, ecommerce, Shopify, cost post, WordPress cost post, small business, best companies, service pages | Research and outlines done for homepage, pricing and WordPress: `reports/content-outlines/`. No new text goes into pages until the owner approves the design screenshots. |
 | 3. Service pages: problem, included, price, FAQ | Not started. |
 | 4. H2/H3 keyword edits and internal-link hub | Not started. |
@@ -26,6 +26,14 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Both include: headings 56–72px on desktop; hero with headline, subline, offer line and real buttons, plus a large "live maintenance dashboard" visual in HTML/CSS/SVG labelled "Example"; platforms strip (WordPress, WooCommerce, Shopify); bento grid for "What's included" with inline SVG icons and mini visuals; pricing cards with Growth highlighted by gradient border and glow, monthly/annual toggle; 4-step timeline with connecting line; comparison table as cards; FAQ accordion; dark gradient final CTA band; buttons instead of text links for CTAs; hover lift and scroll fade-in that respect prefers-reduced-motion; the purple/neon style of the blog images.
 - Limits: no heavy libraries, Lighthouse mobile at least 90, CLS 0, all existing text kept (parity).
 - Also fix: left alignment on service and country pages; the old fake panel and broken text rows on the repair page; flattened stats and labels; duplicate "About Us" and UK heading text.
+
+## Owner answers, plans (2026-11-01)
+- **Cancel:** anytime. Service runs to the end of the paid month; no partial-month refunds. After cancelling, the site, files and data stay the client's. Hosting and email can continue at $19/month.
+- **Edit hours:** unused hours don't roll over.
+- **Response time:** Essential 2 business days, Growth 1 business day, Business 4 hours + 24/7 emergency fixes.
+- **"Find us on":** use the badge images and profile URLs exactly as on the live site. Keep Clutch, GoodFirms, Sortlist, Techreviewer, C2C Review, Trustpilot. Agency Spotter only if the live site links to our profile (it does: agencyspotter.com/website-maintenance-services). ITFirms is out.
+- **Claims:** remove everything in `DESIGN-QA.md` section 5.
+- **Design process:** from now on follow `DESIGN-QA.md`: self-review at 1440, 768 and 390 in both themes, fix, then report with the checklist table. Homepage first; after approval, roll out in batches.
 
 ## Design fixes done (2026-11-01)
 - `CLAIMS-AND-DESIGN.md` section B is now "Modern premium SaaS". Section A is unchanged.
@@ -45,9 +53,9 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Add-on prices: "Ask for a price".
 
 **Waiting on the owner:**
-- Approve the design screenshots.
-- Confirm the "Find us on" list (`reports/content-outlines/README.md`).
-- Cancel, edit hours and response times: the owner said to use the answers in this file, but this file only lists them as open (question 4 below). See the same README.
+- Approve the homepage.
+- Confirm the draft text: "Expert, Dedicated Team" card, short section labels (`DRAFT_LABELS` in `scripts/build-mockups-v2.mjs`), and the H2 "Real Maintenance Results".
+- Confirm the Altitude Care numbers if they should come back (removed from the homepage, case study page and 3 comparison posts).
 
 ## 1. What is done, per phase
 
@@ -153,7 +161,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 
 2. **Portfolio table:** tick client or our project, and may show, in `reports/portfolio-table.md`.
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
-4. **Plan gaps:** response time, what counts as an edit hour and whether unused hours roll over, what happens on cancel. Add-on prices are answered: "Ask for a price".
+4. **Plan gaps:** answered, see "Owner answers, plans".
 5. **Real author:** name, role, photo and bio; also team photos and the founding year.
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.

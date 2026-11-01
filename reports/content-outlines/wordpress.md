@@ -34,7 +34,7 @@ Why you need it, what is in every plan, plan cards, monthly vs annual, add-ons, 
 2. Will updates break my WordPress site?
 3. Can you maintain a WordPress site someone else built?
 4. Do you work with page builders like Elementor? Yes: Elementor, Divi, Beaver Builder, WPBakery and Gutenberg.
-5. What happens to my WordPress site if I cancel? **Open, see README**
+5. What happens to my WordPress site if I cancel? Answer in README.
 
 ## Internal links to add
 `/how-much-does-wordpress-website-maintenance-cost/`, `/wordpress-security-checklist/`, `/wordpress-backup-services/`, `/wordpress-malware-removal-service/`, `/website-update-services/`, `/website-repair-services/`, `/website-speed-optimization-services/`, `/ecommerce-website-maintenance-packages/`, `/website-maintenance-checklist/`.

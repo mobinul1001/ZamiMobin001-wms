@@ -251,16 +251,16 @@ Credibility isn't just badges — it's outcomes. Here's a documented result from
 
 #### ⚠ Before
 
--   Page load speed 4.8s
+-   Page load speed Slow
 -   Security monitoring None
 -   Downtime Frequent
 -   Booking form Broken
 
 #### ✓ After
 
--   Page load speed 1.9s
+-   Page load speed Optimized
 -   Security monitoring 24/7
--   Downtime ~0%
+-   Downtime Reduced
 -   Booking form Fixed
 
 That's a **60% faster site** with near-zero downtime and a working booking form. Read the [full case study](/website-maintenance-case-study/) for the details.

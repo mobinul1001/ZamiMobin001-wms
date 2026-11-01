@@ -194,3 +194,9 @@
 - "Find us on" row replaces the badges in the mockup only. The live page keeps them until the design is approved.
 - Fake panels removed on design, migration, SEO, updates, backup and malware, the same way as repair: label gone, rows kept, labelled "Example".
 - Outlines updated with the owner's answers. Cancel, edit hours and response times are still open.
+
+## Design QA round (2026-11-01)
+- DESIGN-QA.md added. scripts/design-qa.mjs runs the self-review loop: 1440, 768, 390 and 360 in both themes, measured checklist, section montages, Lighthouse. Replaces screenshot-mockups-v2.mjs.
+- Homepage mockup rebuilt to the rules: hamburger menu, "Get a free quote" in the header, one process section, one included section, full-width callouts, tinted table column, two-column case study, icon-card grid for every-plan items, 4-column footer with Find us on badges.
+- Claims removed from the content, and the build now fails if they return: +142% Growth, Page 1 Top 3, 98/100 Passed, 99/100 Passed, "Certified" on Expert Developers, and the Altitude Care numbers on the homepage, case study page and 3 comparison posts. H2 shortened to "Real Maintenance Results".
+- STATUS.md: cancel, edit hours and response time answers saved.

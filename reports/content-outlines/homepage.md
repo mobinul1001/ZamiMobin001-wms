@@ -31,7 +31,7 @@ What's included, how it works, why it matters, our services, why choose us, coun
 2. Do I need website maintenance if my site rarely changes?
 3. What access do you need to my website?
 4. Can I do website maintenance myself?
-5. What happens to my website if I cancel? **Open, see README**
+5. What happens to my website if I cancel? Answer in README.
 
 ## Internal links to add
 `/website-maintenance-checklist/`, `/how-long-does-website-maintenance-take/`, `/how-much-does-website-maintenance-cost/`, `/best-website-maintenance-companies/`, `/wordpress-website-maintenance-packages/`, `/ecommerce-website-maintenance-packages/`, `/shopify-website-maintenance-packages/`, `/free-website-maintenance-audit/`.
