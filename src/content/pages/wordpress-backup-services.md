@@ -690,56 +690,6 @@ Backups are included in every plan: weekly on Essential, daily on Growth and Bus
 
 [See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)
 
-<div class="cards">
-
-<div class="card">
-
-★ Most Popular Choice
-
-Business Tier
-
-### Business-Critical Sites
-
-Best for e-commerce, leads & active revenue sites
-
-$59 / month
-
--   **Daily + Pre-Update** Safety Backups
--   **60-Day** Backup Version History
--   1-Click + **Assisted Restore** (&lt;30 Mins)
--   **Human-Monitored Log Audits**
--   1 WordPress Site Covered
--   WooCommerce / High DB Activity Support
--   White-Label Client Reporting
-
-[Get Business Care Plan](/get-a-free-quote/)
-
-</div>
-
-<div class="card">
-
-Agency Tier
-
-### Multi-Site Portfolios
-
-Best for agencies managing multiple client sites
-
-$199 / month
-
--   **Daily + On-Demand** Backups
--   **90-Day** Extended Retention History
--   **Priority White-Glove** Restore
--   Human-Monitored + Monthly Logs
--   **Up to 10 Sites Included** (Add More)
--   **Full White-Label Client Reports**
--   Dedicated Account Engineer
-
-[Start Agency Backup Plan](/get-a-free-quote/)
-
-</div>
-
-</div>
-
 • No Credit Card Required for Audit • Cancel Anytime
 
 Looking for comprehensive website maintenance including speed and security? View our [full maintenance plans and packages](/monthly-website-maintenance-packages/).

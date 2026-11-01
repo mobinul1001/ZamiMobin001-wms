@@ -155,6 +155,8 @@ for (const file of htmlFiles) {
       if (localPrice.annual.some((p) => line.includes(p)) && /\/(?:yr|ano)\b/.test(line) && !/2 months free|2 meses gr[aá]tis/i.test(line)) fail('annual-note', `${path}: annual price without the note: ${line.trim().slice(0, 80)}`);
     });
   }
+  // Owner rule: backup and update services are in every plan, so their old monthly tiers must not return.
+  if (['/wordpress-backup-services/', '/website-update-services/'].includes(path) && /\$\d+ \/ month/.test($('main').text())) fail('service-price', `${path}: old monthly tier price on the page.`);
   // Owner rule: the annual offer is "2 months free", and store pages carry their own plans.
   if (/\bsave[sd]? (?:around |roughly )?~?20%|\b20% off\b|two-and-a-half months/i.test($('main').text())) fail('annual-note', `${path}: says 20% instead of 2 months free.`);
   const storeSet = Object.values(masterPrices.storePlans).find((s) => s.path === path);

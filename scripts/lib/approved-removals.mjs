@@ -48,10 +48,13 @@ const removeFromList = ($, headRe, items) => {
     box.remove();
   }
 };
-const removeTierCards = ($, firstLabel) => {
-  const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === firstLabel).first();
-  if (!leaf.length) throw new Error(`"${firstLabel}" not found`);
-  leaf.parent().parent().remove();
+// The grid holding all tiers: the smallest box with both the first and the last label.
+const removeTierCards = ($, firstLabel, lastLabel) => {
+  let box = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === firstLabel).first();
+  if (!box.length) throw new Error(`"${firstLabel}" not found`);
+  while (!box.text().includes(lastLabel) && !box.is('body')) box = box.parent();
+  if (box.is('body')) throw new Error(`"${lastLabel}" not found`);
+  box.remove();
 };
 const ARTICLE_HEADS = ['Essential', 'Advanced', 'Elevate'];
 const STORE_REMOVALS = {
@@ -61,8 +64,8 @@ const STORE_REMOVALS = {
     removeCompareRows($);
     removeFromList($, /^What's Included in Every Plan\?$/, ['Broken Link Monitoring', 'Monthly Health Report']);
   },
-  '/wordpress-backup-services/': ($) => removeTierCards($, 'Starter Tier'),
-  '/website-update-services/': ($) => removeTierCards($, 'Starter Plan'),
+  '/wordpress-backup-services/': ($) => removeTierCards($, 'Starter Tier', 'Agency Tier'),
+  '/website-update-services/': ($) => removeTierCards($, 'Starter Plan', 'Agency / eCommerce'),
   '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Advanced', 'Elevate']),
   '/best-website-maintenance-for-small-business/': ($) => { removeCardFeatures($, 'small business', ARTICLE_HEADS); removeCompareRows($); },
   '/how-much-does-website-maintenance-cost/': ($) => removeCardFeatures($, 'cost', ARTICLE_HEADS),

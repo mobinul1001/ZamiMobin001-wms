@@ -1281,60 +1281,6 @@ Website updates are included in every plan, from $79/month. Has your site gone a
 
 [See our plans](/monthly-website-maintenance-packages/) [Request a catch-up update](/get-a-free-quote/#catch-up-update)
 
-<div class="cards">
-
-<div class="card">
-
-★ Most Popular Choice
-
-Professional Plan
-
-### Business Websites
-
-For business sites & custom functionality
-
-$99 / month
-
--   **Everything in Starter, plus:**
--   **Staging environment testing** before live updates
--   Security malware scan monthly
--   PHP version monitoring
--   Performance check — speed score & image audit
--   **3 content update requests/month** (text & images)
--   Priority email support (within 4 business hours)
--   Full backup retained 30 days
--   Post-update QA across all core page templates
-
-[Get Started with Professional](/get-a-free-quote/)
-
-</div>
-
-<div class="card">
-
-Agency / eCommerce
-
-### High-Traffic Sites
-
-For WooCommerce, membership & high-traffic sites
-
-$299 / month
-
--   **Everything in Professional, plus:**
--   Full WooCommerce update testing and QA
--   Checkout process verification after every update
--   Weekly security scans & DB optimization
--   Uptime monitoring 24/7
--   **Unlimited content update requests**
--   Dedicated account manager
--   Phone & priority email support
--   Emergency support response within 2 hours
-
-[Get Started with Agency Plan](/get-a-free-quote/)
-
-</div>
-
-</div>
-
 Custom plans available for agencies managing 10+ sites. Contact us for volume pricing and [white-label website maintenance programs](/white-label-website-maintenance-services-for-agencies/).
 
 Audience Qualification
