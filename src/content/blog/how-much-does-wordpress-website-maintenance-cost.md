@@ -172,7 +172,7 @@ Paying annually gives you 2 months free on every plan. Over a year, that's a mea
 | Growth | $1,788 | $1,490, 2 months free | $298/yr |
 | Business | $3,588 | $2,990, 2 months free | $598/yr |
 
-If you already know you'll keep your site for a year or more, annual billing is the obvious choice — you get roughly **two-and-a-half months free**.
+If you already know you'll keep your site for a year or more, annual billing is the obvious choice — you get **2 months free**.
 
 <a id="s5"></a>
 

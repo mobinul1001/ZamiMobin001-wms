@@ -88,6 +88,7 @@ export const ARTICLE_CHANGES = {
   ],
   '/best-website-maintenance-for-small-business/': [
     ['costs $20-$500+/month in 2026; most pay $95-$195', 'costs $20-$600+/month in 2026; most pay $75-$200'],
+    ['get roughly two-and-a-half months free on every plan', 'get 2 months free on every plan'],
     ...OVERALL,
     ['costs $95-$195/mo', 'costs $75-$200/mo'],
     ['$95+Typical plan / month', '$75–$200Typical plan / month'],
@@ -150,6 +151,7 @@ export const ARTICLE_CHANGES = {
   ],
   '/how-much-does-wordpress-website-maintenance-cost/': [
     ['($95–$395/mo)', '($79–$299/mo)'],
+    ['you get roughly **two-and-a-half months free**', 'you get **2 months free**'],
     ['costs $20-$500+/month', 'costs $20-$600+/month'],
     ['Essential $95, Advanced $195, Elevate $395 per month (20% off annually)', 'Essential $79, Growth $149, Business $299 per month (2 months free annually)'],
     ['a proper Elevate-tier plan', 'a proper Business-tier plan'],

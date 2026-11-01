@@ -126,7 +126,7 @@ Most small businesses choose **Growth ($149/mo)** for the best balance of value 
 
 ## Monthly vs Annual Pricing: How Much You Save
 
-Pay annually and get roughly two-and-a-half months free on every plan — here is the exact math:
+Pay annually and get 2 months free on every plan — here is the exact math:
 
 | Plan | Monthly (per year) | Annual (per year) | You Save |
 | --- | --- | --- | --- |
