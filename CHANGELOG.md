@@ -200,3 +200,6 @@
 - Homepage mockup rebuilt to the rules: hamburger menu, "Get a free quote" in the header, one process section, one included section, full-width callouts, tinted table column, two-column case study, icon-card grid for every-plan items, 4-column footer with Find us on badges.
 - Claims removed from the content, and the build now fails if they return: +142% Growth, Page 1 Top 3, 98/100 Passed, 99/100 Passed, "Certified" on Expert Developers, and the Altitude Care numbers on the homepage, case study page and 3 comparison posts. H2 shortened to "Real Maintenance Results".
 - STATUS.md: cancel, edit hours and response time answers saved.
+
+## Brand guideline (2026-11-02)
+- BRAND-GUIDELINE.md added: colours, type, spacing, components and themes, with steps for reusing the system at another company. Values checked against mockups/v2/design.css.
