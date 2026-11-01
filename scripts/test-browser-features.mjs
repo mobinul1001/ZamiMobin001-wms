@@ -18,6 +18,24 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   out.starterDesign = await plan('#starter-design');
   const quote = (await load('/get-a-free-quote/')).contentDocument.querySelector('main form');
   out.quoteForm = { action: quote.getAttribute('action'), disabled: quote.querySelectorAll('button[disabled]').length, honeypotHidden: quote.querySelector('input[name="_gotcha"]').style.display };
+  const sendTest = async (status, body) => {
+    const f = await load('/contact/');
+    const win = f.contentWindow;
+    await new Promise((r) => setTimeout(r, 200));
+    let sent = null;
+    win.fetch = (url, init) => { sent = { url, accept: init.headers.Accept, formName: init.body.get('form_name') }; return Promise.resolve(new win.Response(body, { status })); };
+    const form = f.contentDocument.querySelector('main form');
+    let nativePost = false;
+    form.submit = () => { nativePost = true; };
+    const moved = new Promise((r) => { f.addEventListener('load', () => r(true), { once: true }); setTimeout(() => r(false), 1500); });
+    form.dispatchEvent(new win.Event('submit', { cancelable: true, bubbles: true }));
+    const left = await moved;
+    return { sent, left, path: left ? f.contentWindow.location.pathname : '', nativePost, message: left ? '' : f.contentDocument.querySelector('.form-error')?.textContent ?? '' };
+  };
+  out.sendOk = await sendTest(200, '{"ok":true}');
+  out.sendInvalid = await sendTest(422, '{"errors":[{"message":"email is invalid"}]}');
+  out.sendLimited = await sendTest(429, '{}');
+  out.sendBroken = await sendTest(500, '{}');
   out.growthGbp = await plan('#growth-gbp');
   out.businessBrl = await plan('#business-brl');
   out.storeGrowth = await plan('#store-growth');
@@ -61,6 +79,11 @@ const checks = {
   'essential hash selects Essential': eq(r.essential, ['essential', 'essential', 'USD']),
   'business hash selects Business': eq(r.business, ['business', 'business', 'USD']),
   'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
+  'success opens /thank-you/': r.sendOk.path === '/thank-you/',
+  'fetch asks for JSON and sends form_name': r.sendOk.sent.accept === 'application/json' && r.sendOk.sent.formName === 'contact',
+  'validation error shows on the form': r.sendInvalid.message === 'email is invalid' && !r.sendInvalid.nativePost,
+  'rate limit shows a message': /Too many/.test(r.sendLimited.message) && !r.sendLimited.nativePost,
+  'server error falls back to a normal post': r.sendBroken.nativePost,
   'quote form posts to Formspree': r.quoteForm.action.startsWith('https://formspree.io/f/'),
   'quote form can be submitted': r.quoteForm.disabled === 0,
   'honeypot is hidden': r.quoteForm.honeypotHidden === 'none',

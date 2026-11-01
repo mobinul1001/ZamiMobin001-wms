@@ -707,7 +707,7 @@ Healthcare
 
 Fast LCP load speeds for clinic websites and doctor directories. We connect your practice's booking system to your website, or build a booking feature inside your patient portal.
 
-Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+Healthcare websites: patient form submissions go straight to your practice's own secure account — only your team can see them, not us. We don't store patient information on your website.
 
 Patient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil).
 

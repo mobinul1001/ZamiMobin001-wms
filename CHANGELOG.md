@@ -161,3 +161,8 @@
 - Healthcare sections: portal wording and booking wording from the owner. Migration case line removed. Country notes use UK GDPR, GDPR, PIPEDA, the Privacy Act and LGPD; USA keeps the HIPAA wording.
 - All 12 forms post to Formspree (src/data/forms.json). Honeypot _gotcha, form_name field. Removed the disabled attribute that the migration had left on every submit button. Line about patient information under forms on healthcare-related pages.
 - Build checks and browser tests expect Formspree. A real Netlify production build fails without IDs.
+
+## One healthcare note, Formspree Free with fetch (2026-11-01)
+- One healthcare note on every page and country (Portuguese on Brazil). No law or provider named in it. Portal line unchanged.
+- Formspree Free with one shared ID. public/forms.js submits with fetch and opens /thank-you/; validation and rate-limit messages show on the form; other failures fall back to a normal post; no JavaScript still works.
+- Privacy policy addition drafted, not applied.

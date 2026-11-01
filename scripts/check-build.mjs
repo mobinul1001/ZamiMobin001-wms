@@ -1,7 +1,7 @@
 // Build checks from CMS-REQUIREMENTS.md and SEO-GUARDRAILS.md. Runs on dist/ after astro build.
 // Any failure stops the deploy; the message says what to change. Warnings do not stop it.
 // Usage: node scripts/check-build.mjs
-import { healthNoteFor, PORTAL_NOTE as portalNote, HEALTH_PAGES as healthPages, REPAIR_TIME as repairTime, NO_FIX as noFix } from './lib/health-staging.mjs';
+import { HEALTH_NOTE as healthNote, PORTAL_NOTE as portalNote, HEALTH_PAGES as healthPages, REPAIR_TIME as repairTime, NO_FIX as noFix } from './lib/health-staging.mjs';
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
@@ -140,8 +140,9 @@ for (const file of htmlFiles) {
   $('main form:not(#scan-form)').each((_, form) => {
     const action = $(form).attr('action') ?? '';
     if (!/^https:\/\/formspree\.io\/f\/[\w-]+$/.test(action) || $(form).attr('method') !== 'POST') fail('forms', `${path}: form does not post to Formspree.`);
+    if (!$('script[src="/forms.js"]').length) fail('forms', `${path}: forms.js is not loaded, so visitors would not reach /thank-you/.`);
     if (/\/f\/MISSING-/.test(action)) {
-      if (process.env.NETLIFY === 'true' && process.env.CONTEXT === 'production') fail('forms', `${path}: no Formspree ID in src/data/forms.json.`);
+      if (process.env.NETLIFY === 'true' && process.env.CONTEXT === 'production') fail('forms', `${path}: no Formspree ID in src/data/forms.json (default).`);
       else warn('forms', `${path}: no Formspree ID yet.`);
     }
     if ($(form).find('button[disabled], input[type="submit"][disabled]').length) fail('forms', `${path}: submit button is disabled.`);
@@ -164,11 +165,12 @@ for (const file of htmlFiles) {
   }
   // Owner rule: backup and update services are in every plan, so their old monthly tiers must not return.
   if (['/wordpress-backup-services/', '/website-update-services/'].includes(path) && /\$\d+ \/ month/.test($('main').text())) fail('service-price', `${path}: old monthly tier price on the page.`);
+  if (/form provider|meets (?:UK )?GDPR|meets PIPEDA/i.test($('main').text())) fail('healthcare', `${path}: old healthcare note.`);
   if (/HIPAA[- ](?:compl|certif)|secure online appointment booking|patient online appointment booking|Large patient booking database/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
   if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
   // Owner rule: no guarantees beyond the hacked-site line, the malware re-clean and the migration fix.
   const promise = (path === '/website-repair-services/' ? /full refund/i : /no fix,? no fee|full refund/i).exec($('main').text()) ?? /full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());
-  if (healthPages.includes(path) && (!$('main').text().includes(healthNoteFor(path)) || !$('main').text().includes(portalNote))) fail('healthcare', `${path}: healthcare note is missing.`);
+  if (healthPages.includes(path) && (!$('main').text().replace(/\u2019/g, "'").includes(healthNote) || !$('main').text().replace(/\u2019/g, "'").includes(portalNote))) fail('healthcare', `${path}: healthcare note is missing.`);
   if (/On managed plans, updates are tested|Isolated Staging Clone|goes through isolated staging|apply and test every update/i.test($('main').text())) fail('staging', `${path}: staging claim outside the Business plan.`);
   if (path === '/website-repair-services/') {
     const repairText = $('main').text().replace(/\u2019/g, "'");

@@ -1,18 +1,9 @@
 // Owner's wording, 2026-11-01: healthcare note, staging claim, repair times and the repair promise.
-export const HEALTH_NOTE = 'Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.';
-const HEALTH_NOTE_PT = 'Sites de saúde: mantemos as informações de pacientes fora do site. Formulários que coletam dados de saúde passam por um provedor seguro de formulários que atende à LGPD e assina um acordo de processamento de dados com sua clínica.';
+export const HEALTH_NOTE = "Healthcare websites: patient form submissions go straight to your practice's own secure account — only your team can see them, not us. We don't store patient information on your website.";
+const HEALTH_NOTE_PT = 'Sites de saúde: os formulários de pacientes vão direto para a conta segura da sua clínica — somente a sua equipe pode vê-los, nós não. Não armazenamos informações de pacientes no seu site.';
 export const PORTAL_NOTE = 'Patient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil).';
 const PORTAL_NOTE_PT = 'Portais de pacientes e clientes: nós os construímos como um sistema separado e protegido — o site de marketing fica livre de dados de pacientes. Os portais de pacientes rodam em hospedagem elegível à HIPAA (EUA) ou em hospedagem que atende à lei local de privacidade, e nós os construímos e mantemos sob um BAA assinado (EUA) ou um acordo de processamento de dados (Reino Unido, UE, Canadá, Austrália, Brasil).';
 const BOOKING = "We connect your practice's booking system to your website, or build a booking feature inside your patient portal.";
-const countryNote = (law) => `Healthcare websites: we keep patient information off the website. Forms that collect health details go through a secure form provider that meets ${law} and signs a data processing agreement with your practice.`;
-const COUNTRY_NOTES = {
-  '/website-maintenance-services-for-uk/': countryNote('UK GDPR'),
-  '/website-maintenance-services-for-france/': countryNote('GDPR'),
-  '/website-maintenance-services-for-ireland/': countryNote('GDPR'),
-  '/website-maintenance-services-for-canada/': countryNote('PIPEDA'),
-  '/website-maintenance-services-for-australia/': countryNote('the Privacy Act'),
-};
-export const healthNoteFor = (path) => COUNTRY_NOTES[path] ?? HEALTH_NOTE;
 const BLOCK = `${HEALTH_NOTE}\n\n${PORTAL_NOTE}`;
 const STAGING = 'Staging-tested updates on the Business plan.';
 export const REPAIR_TIME = 'Small fixes are usually done within 24 hours; bigger repairs within 24–48 hours.';
@@ -20,7 +11,7 @@ export const NO_FIX = "No fix, no fee: we check your site and quote before we st
 
 const after = (text, note = BLOCK) => [text, `${text}\n\n${note}`];
 const afterLine = (re, note = BLOCK) => [re, (m) => `${m}\n\n${note}`];
-const industries = (path) => [/^### Industries We Serve[^\n]*$/m, (m) => `${m}\n\n${healthNoteFor(path)}\n\n${PORTAL_NOTE}`];
+const industries = () => [/^### Industries We Serve[^\n]*$/m, (m) => `${m}\n\n${HEALTH_NOTE}\n\n${PORTAL_NOTE}`];
 
 export const HEALTH_PAGES = ['about-us', 'website-design-services', 'website-hacked-recovery-services', 'website-maintenance-case-study', 'website-migration-services', 'website-redesign-services', 'website-repair-services', 'website-seo-services', 'website-speed-optimization-services', 'website-support-services', 'website-update-services', 'white-label-website-maintenance-services-for-agencies', 'wordpress-backup-services', 'wordpress-malware-removal-service', 'works', 'website-maintenance-services-for-usa', 'website-maintenance-services-for-uk', 'website-maintenance-services-for-canada', 'website-maintenance-services-for-australia', 'website-maintenance-services-for-france', 'website-maintenance-services-for-ireland'].map((n) => `/${n}/`);
 
@@ -49,12 +40,12 @@ export const EXTRA_CHANGES = {
   ],
   '/wordpress-malware-removal-service/': [afterLine(/^Patient privacy requirements make immediate[^\n]*$/m)],
   '/works/': [['#### Healthcare & Medical', `#### Healthcare & Medical\n\n${BLOCK}`]],
-  '/website-maintenance-services-for-usa/': [industries('/website-maintenance-services-for-usa/')],
-  '/website-maintenance-services-for-uk/': [industries('/website-maintenance-services-for-uk/')],
-  '/website-maintenance-services-for-canada/': [industries('/website-maintenance-services-for-canada/')],
-  '/website-maintenance-services-for-australia/': [industries('/website-maintenance-services-for-australia/')],
-  '/website-maintenance-services-for-france/': [industries('/website-maintenance-services-for-france/')],
-  '/website-maintenance-services-for-ireland/': [industries('/website-maintenance-services-for-ireland/')],
+  '/website-maintenance-services-for-usa/': [industries()],
+  '/website-maintenance-services-for-uk/': [industries()],
+  '/website-maintenance-services-for-canada/': [industries()],
+  '/website-maintenance-services-for-australia/': [industries()],
+  '/website-maintenance-services-for-france/': [industries()],
+  '/website-maintenance-services-for-ireland/': [industries()],
   '/website-maintenance-services-for-brazil/': [[/^### Indústrias que Atendemos$/m, (m) => `${m}\n\n${HEALTH_NOTE_PT}\n\n${PORTAL_NOTE_PT}`]],
   '/best-website-maintenance-for-small-business/': [after('law firms and medical practices, startups and coaches.'), ['We configure backups, security scanning, staging, and monitoring for your site.', 'We configure backups, security scanning and monitoring for your site.']],
 
