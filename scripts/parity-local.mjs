@@ -132,6 +132,8 @@ for (const row of map) {
       const expectedWords = wordsOf($base.html()).count;
       out.expectedWords = expectedWords;
       if (count < expectedWords * 0.95) bad(`words ${count} of ${expectedWords}`);
+      // Expected words shrink with the removals, so also compare against the untouched old page.
+      if (r.wordCount && count < r.wordCount * 0.75) bad(`words ${count} of ${r.wordCount} on the old page`);
       const newTypes = typesOf(html);
       const missing = (r.jsonLdTypes ?? []).filter((t) => !newTypes.has(t) && t !== 'Review' && t !== 'AggregateRating');
       if (missing.length) bad(`schema types missing: ${missing.join(', ')}`);

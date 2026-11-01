@@ -15,6 +15,10 @@ Our Portfolio
 
 We proudly support diverse businesses worldwide. Here are some of the websites we maintain and optimize.
 
+<div class="cards">
+
+<div class="card">
+
 <img src="/wp-content/uploads/2025/12/Woodward-Barber.jpg" alt="Woodward Barbers Website" width="865" height="527" loading="lazy">
 
 ### Woodward Barbers
@@ -24,6 +28,10 @@ A premium barbershop website featuring service listings, gallery, and integrated
 Local Biz Booking
 
 [Visit Site](https://woodwardbarbers.com)
+
+</div>
+
+<div class="card">
 
 <img src="/wp-content/uploads/2025/12/Altitude-care.jpg" alt="Altitude Care Website" width="1127" height="609" loading="lazy">
 
@@ -35,6 +43,10 @@ Healthcare Security
 
 [Visit Site](https://altitudecare.net)
 
+</div>
+
+<div class="card">
+
 <img src="/wp-content/uploads/2025/12/mipropertyportal.jpg" alt="Mi Property Portal Website" width="1075" height="559" loading="lazy">
 
 ### Mi Property Portal
@@ -44,6 +56,10 @@ A dynamic property management platform. We handle database optimization and list
 Real Estate Portal
 
 [Visit Site](https://www.mipropertyportal.com)
+
+</div>
+
+<div class="card">
 
 <img src="/wp-content/uploads/2025/12/Nextweb.jpg" alt="NextWeb Global Website" width="1166" height="644" loading="lazy">
 
@@ -55,6 +71,10 @@ Agency Global
 
 [Visit Site](http://nextwebglobal.com/)
 
+</div>
+
+<div class="card">
+
 <img src="/wp-content/uploads/2025/12/Affordable-Roofing.jpg" alt="AFR Consulting Website" width="1262" height="634" loading="lazy">
 
 ### AFR Consulting
@@ -64,6 +84,10 @@ Corporate website for a construction and engineering consultancy. We maintain se
 Construction Corporate
 
 [Visit Site](https://afrcons.com/)
+
+</div>
+
+<div class="card">
 
 <img src="/wp-content/uploads/2025/12/Toronto-software.jpg" alt="Software Dev Ontario Website" width="1236" height="639" loading="lazy">
 
@@ -75,6 +99,10 @@ SaaS / Tech B2B
 
 [Visit Site](https://softwaredevelopmentontario.ca/)
 
+</div>
+
+<div class="card">
+
 <img src="/wp-content/uploads/2025/12/Hairdresser.jpg" alt="Glam Hair Studio Website" width="1131" height="654" loading="lazy">
 
 ### Glam Hair Studio UK
@@ -84,6 +112,10 @@ A stylish UK-based salon website. We manage image galleries, update service pric
 Beauty Lifestyle
 
 [Visit Site](https://www.glamhairstudio.uk/)
+
+</div>
+
+<div class="card">
 
 <img src="/wp-content/uploads/2025/12/Riadalashekin.jpg" alt="Riad Al Ashekin Website" width="928" height="547" loading="lazy">
 
@@ -95,6 +127,10 @@ Portfolio Personal
 
 [Visit Site](https://riadalashekin.com)
 
+</div>
+
+</div>
+
 Global Portfolio
 
 ## Trusted by Global Brands
@@ -105,6 +141,10 @@ From fast-growing startups to established enterprises, we provide the technical 
 
 Active Partnerships
 
+<div class="cards">
+
+<div class="card">
+
 #### Education
 
 -   [greenwichcentralcollege.com →](https://greenwichcentralcollege.com)
@@ -112,16 +152,28 @@ Active Partnerships
 -   [ifatwa.info →](https://ifatwa.info)
 -   [edumig.com →](https://edumig.com)
 
+</div>
+
+<div class="card">
+
 #### Technology
 
 -   [gaotek.com →](https://gaotek.com)
 -   [gaorfid.com →](https://gaorfid.com)
 -   [bluestoneict.com →](https://bluestoneict.com)
 
+</div>
+
+<div class="card">
+
 #### Pet Care
 
 -   [dogtopia.com →](https://dogtopia.com)
 -   [doozydogclub.com →](https://doozydogclub.com)
+
+</div>
+
+<div class="card">
 
 #### Landscaping
 
@@ -129,11 +181,19 @@ Active Partnerships
 -   [ryanlawn.com →](https://ryanlawn.com)
 -   [groundsguys.com →](https://groundsguys.com)
 
+</div>
+
+<div class="card">
+
 #### eCommerce
 
 -   [ghorerbazar.com →](https://ghorerbazar.com)
 -   [gootipa.com →](https://gootipa.com)
 -   [neofarmers.com.bd →](https://neofarmers.com.bd)
+
+</div>
+
+<div class="card">
 
 #### Travel & Hospitality
 
@@ -141,11 +201,61 @@ Active Partnerships
 -   [kaziresort.com →](https://kaziresort.com)
 -   [cozycozy.com →](https://cozycozy.com/us)
 
+</div>
+
+<div class="card">
+
 #### Healthcare & Medical
 
-[greenlifehospital.com.bd](https://greenlifehospital.com.bd) [asgaralihospital.com](https://asgaralihospital.com) [shiphospitalbd.com](https://shiphospitalbd.com) [awmch.addinhospital.org](https://awmch.addinhospital.org) [bangladeshcityhospital.com](https://bangladeshcityhospital.com) [unicohospitals.com](https://unicohospitals.com)
+<div class="cards">
+
+<div class="card">
+
+[greenlifehospital.com.bd](https://greenlifehospital.com.bd)
+
+</div>
+
+<div class="card">
+
+[asgaralihospital.com](https://asgaralihospital.com)
+
+</div>
+
+<div class="card">
+
+[shiphospitalbd.com](https://shiphospitalbd.com)
+
+</div>
+
+<div class="card">
+
+[awmch.addinhospital.org](https://awmch.addinhospital.org)
+
+</div>
+
+<div class="card">
+
+[bangladeshcityhospital.com](https://bangladeshcityhospital.com)
+
+</div>
+
+<div class="card">
+
+[unicohospitals.com](https://unicohospitals.com)
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 ### What's Included in Edits
+
+<div class="cards">
+
+<div class="card">
 
 #### Content Updates
 
@@ -154,6 +264,10 @@ Active Partnerships
 -   ✓ **Video:** Embedding, updating, or removing video content.
 -   ✓ **Links:** Fixing broken links, updating menu items or buttons.
 
+</div>
+
+<div class="card">
+
 #### Structural Work
 
 -   ✓ **Files:** Uploading or updating PDFs, docs, and downloadable files.
@@ -161,49 +275,97 @@ Active Partnerships
 -   ✓ **Layouts:** Implementing design recommendations and structural modifications.
 -   ✓ **Brand:** Tweaking logos, headers, footers, or color schemes.
 
+</div>
+
+</div>
+
 Consistent website maintenance prevents issues and keeps your site running smoothly.
 
 ### Previous Projects
+
+<div class="cards">
+
+<div class="card">
 
 Education
 
 gcceducation.co.uk
 
+</div>
+
+<div class="card">
+
 Pet Care
 
 dcpetropolis.com
+
+</div>
+
+<div class="card">
 
 Automotive
 
 racetrading.com.au
 
+</div>
+
+<div class="card">
+
 Retail
 
 acehardware.com
+
+</div>
+
+<div class="card">
 
 Construction
 
 tradehouse.com.bd
 
+</div>
+
+<div class="card">
+
 Science
 
 drosophilabd.com
+
+</div>
+
+<div class="card">
 
 Hotels
 
 sixseasonshotel.com
 
+</div>
+
+<div class="card">
+
 Hospitals
 
 amzhospitalbd.com
+
+</div>
+
+<div class="card">
 
 Apparel
 
 sublimationgarments.com
 
+</div>
+
+<div class="card">
+
 Travel
 
 aceracetours.com
+
+</div>
+
+</div>
 
 \+ Many more across USA, UK, and Australia.
 

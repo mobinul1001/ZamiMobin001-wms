@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"What does a website SEO service include?","a":"Our full-service engagement covers 11 granular deliverables: technical SEO audits, keyword research, competitor analysis, on-page optimization, Schema markup, Core Web Vitals speed tuning, image SEO, and white-hat link building."},{"q":"How much do SEO services cost?","a":"Our monthly SEO pricing starts at $499/month for local small businesses, $999/month for scaling eCommerce brands, and custom estimates for enterprise portals. We operate on month-to-month contracts."},{"q":"How long does SEO take to show results?","a":"Most clients see initial ranking momentum and impression increases within 4 to 8 weeks. Significant, compounding organic traffic and lead growth typically manifest within 3 to 6 months."},{"q":"Do you offer local SEO services near me?","a":"Yes! We specialize in local SEO, optimizing Google Business Profiles (GBP), local citation building, and Google Maps Local Pack rankings for businesses across the US, UK, Canada & Australia."},{"q":"What's the difference between on-page and off-page SEO?","a":"On-page SEO optimizes elements directly on your site (content, headings, metadata, internal links). Off-page SEO builds external domain authority through white-hat backlinks and brand citations."},{"q":"Do you provide monthly SEO plans or one-time audits?","a":"We provide both! We offer comprehensive one-time technical SEO audits as well as ongoing monthly SEO growth retainers with zero long-term commitments."},{"q":"Will redesigning my website hurt my SEO rankings?","a":"Not if performed with 1:1 301 redirect mapping. Explore our dedicated Website Redesign Services"},{"q":"Can you fix technical SEO issues like Core Web Vitals?","a":"Yes. We resolve LCP, CLS, and INP speed issues, code bloat, and render-blocking scripts. Pair with our Website Monitoring Services for 24/7 uptime care."},{"q":"Do you offer SEO services for WordPress websites?","a":"Yes! WordPress is our primary core competency. Combine your SEO strategy with our dedicated WordPress maintenance plans for 24/7 security."},{"q":"Do you provide SEO for Shopify or ecommerce stores?","a":"Yes. We optimize WooCommerce and Shopify stores, resolving duplicate product collection canonical URLs, product Schema markup, and category breadcrumbs."},{"q":"Do you offer SEO for law firms and healthcare providers?","a":"Yes. We specialize in YMYL healthcare SEO and law firm practice area SEO, adhering strictly to HIPAA and bar association guidelines."},{"q":"What is included in a website SEO audit?","a":"Our audit covers technical crawl errors, indexation issues, XML sitemaps, PageSpeed benchmarks, competitor backlink gaps, and keyword optimization mapping."},{"q":"How do you optimize a Google Business Profile?","a":"We optimize category selection, business descriptions, geotagged photos, local citations, review response management, and weekly Google posts."},{"q":"Do you use white-hat, Google-approved SEO practices?","a":"yes. We strictly follow Google Search Essentials and E-E-A-T guidelines. We never use black-hat private blog networks (PBNs) or spammy link techniques."},{"q":"Will I get detailed SEO reporting each month?","a":"Yes. Every month you receive a transparent report tracking organic keyword positions, Google Analytics 4 conversions, completed tasks, and next-month strategy."},{"q":"Can SEO help my site recover from a Google penalty or hack?","a":"Yes. If your site was affected by malware or algorithmic penalties, we pair our technical audit with our malware removal service to recover rankings."},{"q":"Is SEO better than paid ads for small businesses?","a":"Paid ads stop generating traffic the moment you stop paying. SEO builds compounding domain authority, lower acquisition costs, and long-term brand equity."},{"q":"Do you offer affordable SEO packages for small businesses?","a":"Yes. Our Starter SEO package ($499/mo) is specifically structured for small local businesses needing map pack dominance without enterprise prices."},{"q":"How is AI search (AI Overviews, ChatGPT) changing SEO?","a":"AI search engines cite authoritative, well-structured content with clear Schema markup. We optimize your brand to become the primary cited source in AI Overviews."},{"q":"Do I need a contract, or can I cancel my SEO plan anytime?","a":"All our monthly SEO plans are month-to-month with no lock-in contracts. You can cancel or pause your plan at any time with zero cancellation penalties."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Revenue-Focused SEO Agency & Company
 
 Boost your organic visibility, dominate Google search rankings, and attract high-converting leads. Our data-driven **website SEO services** deliver measurable growth for businesses across the US, UK, Canada & Australia.
@@ -16,6 +20,10 @@ Boost your organic visibility, dominate Google search rankings, and attract high
 Looking for complete site care? Pair your organic growth with our [ongoing website maintenance](/) services.
 
 [Get a Free SEO Audit](/get-a-free-quote/) [See Pricing](#pricing)
+
+</div>
+
+<div class="card">
 
 seo-performance-tracker.v2
 
@@ -33,17 +41,45 @@ Technical SEO Audit
 
 Trusted SEO Agency • US, UK, CA & AU
 
+</div>
+
+</div>
+
 ## Trusted by Businesses Across the US, UK, Canada & Australia
+
+<div class="cards">
+
+<div class="card">
 
 Google Partner Agency
 
+</div>
+
+<div class="card">
+
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+
+</div>
+
+<div class="card">
 
 Top Rated Clutch SEO Agency
 
+</div>
+
+<div class="card">
+
 100% White-Hat SEO
 
+</div>
+
+<div class="card">
+
 Global Reach US, UK, CA & AU
+
+</div>
+
+</div>
 
 Google Search Console Certified
 
@@ -59,6 +95,10 @@ The 2026 Search Landscape
 
 In 2026, Google search algorithms have evolved with AI Overviews and generative search. Relying solely on paid ads or social media leads to unsustainable customer acquisition costs. A professional **website SEO service** builds long-term brand visibility, topical authority, and compounding ROI.
 
+<div class="cards">
+
+<div class="card">
+
 68%
 
 ### First Interaction Source
@@ -66,6 +106,10 @@ In 2026, Google search algorithms have evolved with AI Overviews and generative 
 Of all online experiences begin with a search engine query, making organic visibility the single largest source of customer acquisition.
 
 Source: BrightEdge Search Study
+
+</div>
+
+<div class="card">
 
 53.3%
 
@@ -75,6 +119,10 @@ Of all trackable web traffic comes directly from organic search, outperforming s
 
 Source: Organic Growth Benchmark
 
+</div>
+
+<div class="card">
+
 14.6%
 
 ### Lead Conversion Rate
@@ -83,6 +131,10 @@ Average close rate for inbound SEO leads compared to just 1.7% for outbound sale
 
 Source: HubSpot Conversion Report
 
+</div>
+
+<div class="card">
+
 75%
 
 ### Page 1 Dominance
@@ -90,6 +142,10 @@ Source: HubSpot Conversion Report
 Of users never scroll past the first page of Google results. If your business isn't on Page 1, you are losing leads to competitors.
 
 Source: Search Behavior Study
+
+</div>
+
+</div>
 
 #### Technical Site Health Directly Impacts Search Rankings
 
@@ -105,6 +161,10 @@ Service Definition
 
 A **website SEO service** is a professional digital marketing service that optimizes a website’s technical infrastructure, on-page content, and off-page backlink authority. The goal is to improve organic search rankings on Google, drive qualified web traffic, and turn searchers into paying customers without relying on continuous paid ad spend.
 
+<div class="cards">
+
+<div class="card">
+
 ### What Does an SEO Company Actually Do?
 
 Rather than applying generic tactics, an effective **search engine optimization service** involves **ongoing SEO management**. This includes deep technical audits, competitive keyword research, content optimization, authority link building, and transparent ROI reporting.
@@ -112,6 +172,10 @@ Rather than applying generic tactics, an effective **search engine optimization 
 In addition to keyword targeting, search algorithms strongly favor fast, secure websites. Incorporating [secure hosting and SSL practices supports rankings](/wordpress-malware-removal-service/) and builds trust with potential clients.
 
 SEO
+
+</div>
+
+<div class="card">
 
 Search Journey
 
@@ -129,6 +193,10 @@ Technical & On-Page Optimization Your site is optimized for speed, schema, and k
 
 Top Page 1 Ranking & Leads Google ranks your site at the top, driving sales.
 
+</div>
+
+</div>
+
 [Explore our 6-step SEO methodology](#process)
 
 <a id="process"></a>
@@ -141,6 +209,10 @@ Our battle-tested **seo process** combines technical precision with strategic co
 
 Average client sees initial ranking momentum in 4–8 weeks
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### Step 1 — Website SEO Audit
@@ -148,6 +220,10 @@ Average client sees initial ranking momentum in 4–8 weeks
 Deep technical **seo audit** inspecting crawl errors, indexation issues, Google Search Console security reports, and Core Web Vitals bottlenecks.
 
 Technical Baseline Established
+
+</div>
+
+<div class="card">
 
 02
 
@@ -157,6 +233,10 @@ In-depth **keyword research** mapping high-purchase-intent commercial search que
 
 Commercial Intent Mapped
 
+</div>
+
+<div class="card">
+
 03
 
 ### Step 3 — Technical SEO Fixes
@@ -164,6 +244,10 @@ Commercial Intent Mapped
 Resolving crawl budget limits, Schema markup implementation, XML sitemaps, and Core Web Vitals [site speed optimization](/website-speed-optimization-services/).
 
 Code & Speed Hardened
+
+</div>
+
+<div class="card">
 
 04
 
@@ -173,6 +257,10 @@ Refining H1-H3 heading structures, meta titles, internal link silos, and alignin
 
 On-Page Equity Optimized
 
+</div>
+
+<div class="card">
+
 05
 
 ### Step 5 — Off-Page SEO & Link Building
@@ -180,6 +268,10 @@ On-Page Equity Optimized
 Earning high-authority, relevant white-hat backlinks, brand citations, and Google Business Profile signals to build domain authority.
 
 Backlink Authority Growth
+
+</div>
+
+<div class="card">
 
 06
 
@@ -189,6 +281,10 @@ Monthly **seo reporting** with transparent keyword rank tracking, traffic growth
 
 Monthly Transparent Reports
 
+</div>
+
+</div>
+
 [Start Your SEO Campaign Today](/get-a-free-quote/)
 
 Core Service Catalogue
@@ -196,6 +292,10 @@ Core Service Catalogue
 ## Full-Service SEO Solutions for Sustainable Growth
 
 Explore our comprehensive **website SEO services** designed to cover every angle of organic search — from technical crawl optimization and on-page content tuning to local Google Business Profile rankings and white-hat link building.
+
+<div class="cards">
+
+<div class="card">
 
 +98/100 Health Score
 
@@ -205,6 +305,10 @@ Fixing crawlability errors, indexation limits, XML sitemaps, mobile-first indexi
 
 Crawl & Core Web Vitals [Get Quote](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 +140% Impressions
 
 ### On-Page SEO Services
@@ -212,6 +316,10 @@ Crawl & Core Web Vitals [Get Quote](/get-a-free-quote/)
 Optimizing H1-H3 heading structures, meta titles, internal link silos, keyword placement, and image ALT tags to align with Google AI Overviews and search intent.
 
 Content & Keyword Alignment [Get Quote](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 White-Hat Backlinks
 
@@ -221,6 +329,10 @@ Earning high-authority **off-page seo** backlinks, brand citations, and digital 
 
 Authority & Brand Citations [Get Quote](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Top 3 Local Pack
 
 ### Local SEO Services
@@ -228,6 +340,10 @@ Top 3 Local Pack
 Dominating Google Maps local pack search results, optimizing Google Business Profile (GBP) citations, and capturing high-intent local customer leads in your area.
 
 Google Business Profile Optimization [Get Quote](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 +210% Revenue Growth
 
@@ -237,6 +353,10 @@ Optimizing product category pages, SKU URLs, canonical tags, and structured prod
 
 Shopify & WooCommerce SEO [Get Quote](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Rank Math & Yoast
 
 ### WordPress SEO Services
@@ -244,6 +364,10 @@ Rank Math & Yoast
 Optimizing WordPress core files, Yoast/Rank Math configurations, and database speed. Combine with our [WordPress maintenance plans](/wordpress-website-maintenance-packages/) for complete care.
 
 Plugin & CMS Speed Audit [Get Quote](/get-a-free-quote/)
+
+</div>
+
+</div>
 
 [Request a Custom SEO Proposal](/get-a-free-quote/)
 
@@ -253,49 +377,97 @@ Comprehensive Scope
 
 We leave nothing to chance. Every monthly campaign includes 11 granular deliverables — from technical audits and schema markup to Core Web Vitals optimization and transparent reporting.
 
+<div class="cards">
+
+<div class="card">
+
 ### 1\. Website SEO Audit
 
 Comprehensive **seo audit services** detecting technical crawl errors, indexation limits, redirect chains, and baseline health scores.
+
+</div>
+
+<div class="card">
 
 ### 2\. Keyword Research & Strategy
 
 Data-driven **keyword research services** mapping high-purchase-intent search terms and search volume opportunities for your business.
 
+</div>
+
+<div class="card">
+
 ### 3\. Competitor Analysis
 
 Strategic **competitor analysis seo** reverse-engineering top ranking competitors' backlink profiles, content gaps, and keyword tactics.
+
+</div>
+
+<div class="card">
 
 ### 4\. Content Optimization
 
 Refining **content optimization**, H1-H3 heading structures, meta titles, descriptions, and keyword density to align with Google AI Overviews.
 
+</div>
+
+<div class="card">
+
 ### 5\. Internal Linking Strategy
 
 Structuring strategic **internal linking strategy** silos to distribute link equity and guide search crawlers to high-converting pages.
+
+</div>
+
+<div class="card">
 
 ### 6\. Schema Markup Implementation
 
 Deploying custom **schema markup services** (JSON-LD) for Organization, Service, Product, and FAQ rich snippets in Google search results.
 
+</div>
+
+<div class="card">
+
 ### 7\. Core Web Vitals Optimization
 
 Tuning LCP, CLS, and INP page experience metrics. Paired with automated [website monitoring & uptime tracking](/monthly-website-maintenance-packages/).
+
+</div>
+
+<div class="card">
 
 ### 8\. Image SEO & Media Asset Tuning
 
 Optimizing image ALT tags, WebP compression, and lazy loading. Backed by [website backup services](/wordpress-backup-services/).
 
+</div>
+
+<div class="card">
+
 ### 9\. Indexability & Crawlability
 
 Managing XML sitemaps, canonical tags, and robots.txt files to maximize Googlebot crawl budget efficiency.
+
+</div>
+
+<div class="card">
 
 ### 10\. Search Console Management
 
 Proactive GSC error monitoring, index resubmissions, and support via our [dedicated website support](/contact/) team.
 
+</div>
+
+<div class="card">
+
 ### 11\. Monthly SEO Reporting & Strategy Iteration
 
 Transparent monthly **seo reporting** tracking organic keyword positions, traffic growth, conversions, and continuous strategy refining.
+
+</div>
+
+</div>
 
 [Request a Custom SEO Plan](/get-a-free-quote/)
 
@@ -305,6 +477,10 @@ Vertical Relevance
 
 Every vertical faces distinct search competition, compliance rules, and conversion funnels. We tailor our **website SEO services** to match your industry's exact buyer intent and search algorithms.
 
+<div class="cards">
+
+<div class="card">
+
 YMYL / Healthcare
 
 ### Healthcare & Medical
@@ -312,6 +488,10 @@ YMYL / Healthcare
 Executing specialized **healthcare seo**. We optimize clinic local maps, doctor profiles, and medical content following YMYL and HIPAA guidelines.
 
 [Get Healthcare SEO Quote](/get-a-free-quote/#seo-healthcare)
+
+</div>
+
+<div class="card">
 
 Legal
 
@@ -321,6 +501,10 @@ High-converting **seo for law firms**. Capturing valuable attorney search leads 
 
 [Get Law Firm SEO Quote](/get-a-free-quote/#seo-legal)
 
+</div>
+
+<div class="card">
+
 Small Business
 
 ### Small Business Services
@@ -328,6 +512,10 @@ Small Business
 Affordable **seo for small business**. Dominating local service area search queries, Google Business Profile citations, and customer calls.
 
 [Get Small Biz Quote](/get-a-free-quote/#seo-small-business)
+
+</div>
+
+<div class="card">
 
 eCommerce
 
@@ -337,6 +525,10 @@ Revenue-driven **ecommerce seo** for WooCommerce & Shopify stores. Optimizing pr
 
 [Get eCommerce Quote](/get-a-free-quote/#seo-ecommerce)
 
+</div>
+
+<div class="card">
+
 SaaS & Tech
 
 ### B2B & SaaS Tech
@@ -344,6 +536,10 @@ SaaS & Tech
 Scalable **saas seo** strategies. Optimizing feature landing pages, demo funnels, and long-tail software comparison keywords.
 
 [Get SaaS SEO Quote](/get-a-free-quote/#seo-saas)
+
+</div>
+
+<div class="card">
 
 Contractors
 
@@ -353,6 +549,10 @@ High-intent **seo for contractors** (Roofing, HVAC, Plumbing). Capturing emergen
 
 [Get Contractor Quote](/get-a-free-quote/#seo-contractors)
 
+</div>
+
+<div class="card">
+
 Real Estate
 
 ### Real Estate & Property
@@ -360,6 +560,10 @@ Real Estate
 Localized **seo for real estate** agencies. Optimizing property directory pages, neighborhood guides, and agent bios.
 
 [Get Real Estate Quote](/get-a-free-quote/#seo-real-estate)
+
+</div>
+
+<div class="card">
 
 Agencies
 
@@ -369,6 +573,10 @@ Reliable **seo for agencies** . Providing white-label SEO fulfillment and dedica
 
 [Get Agency Partner Rates](/get-a-free-quote/#seo-agency)
 
+</div>
+
+</div>
+
 [Discuss Your Industry SEO Strategy](/get-a-free-quote/)
 
 Technical CMS Breadth
@@ -376,6 +584,10 @@ Technical CMS Breadth
 ## Platforms & CMS Systems We Support
 
 Our SEO engineers possess deep technical expertise across all major open-source CMS platforms, SaaS e-commerce site builders, and custom headless web architectures.
+
+<div class="cards">
+
+<div class="card">
 
 WordPress
 
@@ -385,6 +597,10 @@ Optimizing Yoast & Rank Math configurations, resolving theme bloat, and Core Web
 
 Certified WordPress Specialists
 
+</div>
+
+<div class="card">
+
 Shopify
 
 ### Shopify SEO Services
@@ -392,6 +608,10 @@ Shopify
 Custom Liquid theme optimization, canonical product collection URL mapping, and structured product Schema markup for Shopify stores.
 
 Product Collection SEO
+
+</div>
+
+<div class="card">
 
 WooCommerce
 
@@ -401,6 +621,10 @@ Optimizing product SKU URLs, category breadcrumbs, database queries, and checkou
 
 eCommerce Database Tuning
 
+</div>
+
+<div class="card">
+
 Webflow
 
 ### Webflow SEO Services
@@ -408,6 +632,10 @@ Webflow
 Designing custom CMS collection schemas, optimizing Webflow animations for PageSpeed, and 301 redirect management.
 
 Custom CMS Schema
+
+</div>
+
+<div class="card">
 
 SaaS Builder
 
@@ -417,6 +645,10 @@ Overcoming SaaS builder limitations, setting up custom sitemaps, canonical tags,
 
 SaaS Builder Optimization
 
+</div>
+
+<div class="card">
+
 Headless / Custom
 
 ### Headless & Custom CMS
@@ -424,6 +656,10 @@ Headless / Custom
 Server-side rendering (SSR) optimization, Next.js / React SEO, and custom database schema implementation for enterprise sites.
 
 React & Next.js SSR SEO
+
+</div>
+
+</div>
 
 #### Don't see your specific platform or CMS listed above?
 
@@ -437,19 +673,35 @@ Competitive Differentiation
 
 Searching for the **best seo agency** for your business? Unlike traditional agencies that lock you into 12-month contracts and hide behind vague monthly summaries, we provide white-hat SEO, 11 granular deliverables, and complete transparency.
 
+<div class="cards">
+
+<div class="card">
+
 ### No Lock-in Contracts
 
 Total flexibility. We earn your business every single month with real ranking results rather than locking you into long-term contracts.
 
 Cancel Anytime
 
+</div>
+
+<div class="card">
+
 ### White-Hat SEO
 
 Ethical, algorithm-safe optimization practices that build sustainable Google domain authority and protect against penalties.
 
+</div>
+
+<div class="card">
+
 ### Dedicated Strategist
 
 Direct Senior Access
+
+</div>
+
+<div class="card">
 
 ### 11 Granular Scope Items
 
@@ -457,44 +709,17 @@ Complete transparency. Every campaign covers technical, on-page, schema, Core We
 
 Full Scope Inclusions
 
+</div>
+
+</div>
+
 ### Our Service vs. Typical SEO Agencies
 
-| SEO Agency Feature | 
-Typical SEO Agencies
-
- | 
-
-Our SEO Agency
-
- |
+| SEO Agency Feature | Typical SEO Agencies | Our SEO Agency |
 | --- | --- | --- |
-| Contract Length | 
-
-6 to 12-month mandatory lock-in contracts
-
- | 
-
-Month-to-month contracts (Cancel anytime)
-
- |
-| Inclusions Depth | 
-
-4–6 vague bullet points with hidden upsells
-
- | 
-
-11 granular technical & content deliverables
-
- |
-| Reporting Transparency | 
-
-Obfuscated monthly PDFs with vanity metrics
-
- | 
-
-Live GA4 & GSC keyword rank tracking
-
- |
+| Contract Length | 6 to 12-month mandatory lock-in contracts | Month-to-month contracts (Cancel anytime) |
+| Inclusions Depth | 4–6 vague bullet points with hidden upsells | 11 granular technical & content deliverables |
+| Reporting Transparency | Obfuscated monthly PDFs with vanity metrics | Live GA4 & GSC keyword rank tracking |
 
 Want to see proof of our results first? [See our real client case studies](#case-studies).
 
@@ -508,6 +733,10 @@ Commercial Validation
 
 Explore real proof of how our data-driven **seo case study** frameworks delivered measurable **organic traffic growth**, top Google Maps rankings, and higher conversion ROI for our clients.
 
+<div class="cards">
+
+<div class="card">
+
 Local & Tourism SEO Case #01
 
 ### Woodward Barbers & St. Lucian Tours
@@ -516,11 +745,27 @@ woodwardbarbers.com • stluciantaxiandtours.com
 
 **Challenge:** Low local search visibility and unoptimized Google Business Profiles struggling to generate direct phone appointments and tour bookings.
 
+<div class="cards">
+
+<div class="card">
+
 +210% Local Traffic
+
+</div>
+
+<div class="card">
 
 Top 3 Google Maps
 
+</div>
+
+</div>
+
 Timeframe: 6 Months
+
+</div>
+
+<div class="card">
 
 Healthcare SEO Case #02
 
@@ -530,11 +775,27 @@ altitudecare.net
 
 **Challenge:** YMYL healthcare content requirements, poor Core Web Vitals scores, and unranked patient care keywords across target regional markets.
 
+<div class="cards">
+
+<div class="card">
+
 +165% Organic Leads
+
+</div>
+
+<div class="card">
 
 Page 1 Care Keywords
 
+</div>
+
+</div>
+
 Timeframe: 4 Months
+
+</div>
+
+<div class="card">
 
 Real Estate & B2B Case #03
 
@@ -544,11 +805,27 @@ mipropertyportal.com • afrcons.com
 
 **Challenge:** Crawlability bottlenecks on property listings and unoptimized B2B service silos failing to capture high-value commercial inquiries.
 
+<div class="cards">
+
+<div class="card">
+
 +185% B2B Inquiries
+
+</div>
+
+<div class="card">
 
 100% Crawl Indexing
 
+</div>
+
+</div>
+
 Timeframe: 5 Months
+
+</div>
+
+</div>
 
 Live Client Websites Optimized By Our SEO Team
 
@@ -566,6 +843,10 @@ No Hidden Fees • Cancel Anytime
 
 Wondering **how much does seo cost**? Choose a monthly **seo package** tailored to your growth goals. No long-term contracts, white-hat practices, and complete transparency.
 
+<div class="cards">
+
+<div class="card">
+
 Local & Small Biz
 
 ### Starter SEO
@@ -581,6 +862,10 @@ $499 / month (Starting at)
 -   No Long-Term Contract (Cancel Anytime)
 
 [Choose Starter Plan](/get-a-free-quote/#starter-seo)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -601,6 +886,10 @@ $999 / month (Starting at)
 
 [Get Growth SEO Plan](/get-a-free-quote/#growth-seo)
 
+</div>
+
+<div class="card">
+
 Enterprise
 
 ### Enterprise SEO
@@ -617,6 +906,10 @@ Custom Quote Starting from $1,999/month
 -   Weekly Strategy Calls & Custom Dashboard
 
 [Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)
+
+</div>
+
+</div>
 
 #### Not sure which monthly SEO plan fits your business?
 

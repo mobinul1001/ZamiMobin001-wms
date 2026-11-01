@@ -14,65 +14,129 @@ Australia’s Most Trusted Website Care
 Fast, Reliable & Ongoing Care for Australian Websites.  
 We ensure your site stays secure, updated, fast, and fully functional 24/7.
 
+<div class="cards">
+
+<div class="card">
+
 #### Faster Load Times
 
 Speed matters. We optimize your site to ensure lightning-fast load times for Australian users.
+
+</div>
+
+<div class="card">
 
 #### Stronger Protection
 
 We provide enterprise-grade security to protect your business data from cyber-attacks.
 
+</div>
+
+<div class="card">
+
 #### Higher SEO Performance
 
 Regular updates and optimizations help maintain and improve your search engine rankings.
+
+</div>
+
+<div class="card">
 
 #### Continuous Monitoring
 
 We watch your site 24/7. Issues are detected and resolved often before you even notice them.
 
+</div>
+
+<div class="card">
+
 #### Affordable Ongoing Support
 
 Get a dedicated technical team for a fraction of the cost of hiring in-house staff.
+
+</div>
+
+</div>
 
 ## What’s Included in Our Australian Services
 
 Comprehensive care for businesses across all states and territories.
 
+<div class="cards">
+
+<div class="card">
+
 #### Website Updates
 
 Core, plugin, and theme updates tested safely before applying.
+
+</div>
+
+<div class="card">
 
 #### Security Protection
 
 Advanced firewalls, malware blocking, brute-force protection.
 
+</div>
+
+<div class="card">
+
 #### Speed Optimization
 
 Image compression, caching, CDN setup, code cleanup.
+
+</div>
+
+<div class="card">
 
 #### 24/7 Monitoring
 
 Realtime uptime alerts + instant issue handling.
 
+</div>
+
+<div class="card">
+
 #### Backups & Restore
 
 Daily/weekly automated backups stored securely.
+
+</div>
+
+<div class="card">
 
 #### Technical Fixes
 
 Handling of bugs, errors, layout issues, or conflicts.
 
+</div>
+
+<div class="card">
+
 #### Content Updates
 
 Images, text, banner changes, product updates & more.
+
+</div>
+
+<div class="card">
 
 #### SEO Enhancements
 
 Fix speed issues, broken links, mobile problems, etc.
 
+</div>
+
+</div>
+
 ### Packages & Pricing (Australia)
 
 Transparent, affordable tiers for Australian businesses.
+
+<div class="cards">
+
+<div class="card">
 
 BRONZE
 
@@ -92,6 +156,10 @@ AUD 99/mo
 -   Malware Scan
 -   Email Support
 -   Basic Performance Reports
+
+</div>
+
+<div class="card">
 
 SILVER
 
@@ -115,6 +183,10 @@ AUD 199/mo
 -   Spam Prevention
 -   Priority Support
 
+</div>
+
+<div class="card">
+
 GOLD
 
 #### Premium Care
@@ -135,37 +207,97 @@ AUD 399/mo
 -   Monthly A/B Testing
 -   24/7 Priority Emergency Fix
 
+</div>
+
+</div>
+
 ### Industries We Serve Across Australia
+
+<div class="cards">
+
+<div class="card">
 
 Real Estate
 
+</div>
+
+<div class="card">
+
 Healthcare
+
+</div>
+
+<div class="card">
 
 Accounting
 
+</div>
+
+<div class="card">
+
 eCommerce
+
+</div>
+
+<div class="card">
 
 Restaurants
 
+</div>
+
+<div class="card">
+
 Trades
+
+</div>
+
+<div class="card">
 
 Law Firms
 
+</div>
+
+<div class="card">
+
 Beauty & Spa
+
+</div>
+
+<div class="card">
 
 Education
 
+</div>
+
+<div class="card">
+
 Automotive
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### Australian States We Serve
 
 New South Wales (NSW), Victoria (VIC), Queensland (QLD), Western Australia (WA), South Australia (SA), Tasmania (TAS), Australian Capital Territory (ACT), Northern Territory (NT).
+
+</div>
+
+<div class="card">
 
 #### Major Australian Cities
 
 Sydney, Melbourne, Brisbane, Perth, Adelaide, Canberra, Hobart, Darwin, Gold Coast, Sunshine Coast, Newcastle, Wollongong, Geelong — and hundreds of local towns across Australia.
 
 [Request a Free Website Audit](/free-website-maintenance-audit/)
+
+</div>
+
+</div>
 
 ### Frequently Asked Questions (Australia)
 

@@ -1,5 +1,5 @@
 ---
-import chrome from '../data/site-chrome.json';
+import '../styles/site.css';
 
 interface Props {
   title: string;
@@ -17,6 +17,27 @@ const isProduction = process.env.CONTEXT === 'production' && process.env.URL ===
 const robotsContent = isProduction ? robots || 'index, follow' : 'noindex, nofollow';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const socialTags = Object.entries(social).flatMap(([key, value]) => (Array.isArray(value) ? value : [value]).map((content) => ({ key, content: String(content) })));
+const logo = '/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png';
+const services = [
+  ['WordPress maintenance', '/wordpress-website-maintenance-packages/'],
+  ['Ecommerce maintenance', '/ecommerce-website-maintenance-packages/'],
+  ['Shopify maintenance', '/shopify-website-maintenance-packages/'],
+  ['Website support', '/website-support-services/'],
+  ['Website repair', '/website-repair-services/'],
+  ['Malware removal', '/wordpress-malware-removal-service/'],
+];
+const main = [
+  ['Pricing', '/monthly-website-maintenance-packages/'],
+  ['Blog', '/blogs/'],
+  ['About', '/about-us/'],
+  ['Contact', '/contact/'],
+];
+const current = Astro.url.pathname;
+const footerCols = [
+  ['Services', [...services, ['White label for agencies', '/white-label-website-maintenance-services-for-agencies/'], ['Website migration', '/website-migration-services/'], ['Speed optimization', '/website-speed-optimization-services/']]],
+  ['Company', [['About us', '/about-us/'], ['Our work', '/works/'], ['Pricing', '/monthly-website-maintenance-packages/'], ['Process', '/website-maintenance-process/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Blog', '/blogs/']]],
+  ['Help and trust', [['Contact', '/contact/'], ['Free website check', '/free-website-maintenance-audit/'], ['Get a quote', '/get-a-free-quote/'], ['Agreement', '/agreement/'], ['Privacy policy', '/privacy-policy/'], ['Terms', '/terms-conditions/'], ['Refund policy', '/refund-cancellation-policy/'], ['Cookie policy', '/cookie-policy/']]],
+] as [string, string[][]][];
 ---
 <!doctype html>
 <html lang={lang}>
@@ -28,35 +49,62 @@ const socialTags = Object.entries(social).flatMap(([key, value]) => (Array.isArr
     <meta name="robots" content={robotsContent} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     {socialTags.map(({ key, content }) => (key.startsWith('twitter:') ? <meta name={key} content={content} /> : <meta property={key} content={content} />))}
     {schema.map((item) => <script type="application/ld+json" set:html={JSON.stringify(item)} />)}
-    <style>
-      /* Neutral placeholder only. The visual design comes after the owner approves a direction. */
-      body { margin: 0 auto; max-width: 52rem; padding: 1rem; font: 1rem/1.6 system-ui, sans-serif; color: #222; background: #fff; }
-      header nav, footer nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
-      header { border-bottom: 1px solid #ccc; padding-bottom: 0.75rem; margin-bottom: 1.5rem; }
-      footer { border-top: 1px solid #ccc; margin-top: 2rem; padding-top: 0.75rem; font-size: 0.9rem; }
-      img, iframe, video { max-width: 100%; height: auto; }
-      main { overflow-wrap: anywhere; }
-      main table { border-collapse: collapse; display: block; overflow-x: auto; }
-      main th, main td { border: 1px solid #ccc; padding: 0.25rem 0.5rem; }
-      input, select, textarea { display: block; margin: 0.25rem 0 0.75rem; }
-    </style>
+    <slot name="head" />
+    {isProduction && (
+      <script is:inline>
+        // Analytics load after the page is interactive (SEO-GUARDRAILS section 3).
+        window.addEventListener('load', function () {
+          (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(function () {
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { dataLayer.push(arguments); };
+            gtag('js', new Date());
+            gtag('config', 'GT-K522B6T8');
+            var g = document.createElement('script');
+            g.async = true;
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=GT-K522B6T8';
+            document.head.appendChild(g);
+            window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
+            var c = document.createElement('script');
+            c.async = true;
+            c.src = 'https://www.clarity.ms/tag/wqnjbhbxww';
+            document.head.appendChild(c);
+          });
+        });
+      </script>
+    )}
   </head>
   <body>
-    <header>
-      <nav aria-label="Main">
-        {chrome.nav.map((link) => <a href={link.href}>{link.label}</a>)}
+    <header class="site-head"><div class="wrap">
+      <a class="logo" href="/"><img src={logo} alt="WMS logo" width="325" height="108" /></a>
+      <nav class="nav" aria-label="Main">
+        <details class="nav-drop"><summary>Services</summary><ul>{services.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
+        {main.map(([label, href]) => <a href={href} class:list={{ on: current === href }}>{label}</a>)}
+        <a class="btn" href="/monthly-website-maintenance-packages/">See plans</a>
       </nav>
-    </header>
+      <details class="menu"><summary>Menu</summary><div>
+        {services.map(([label, href]) => <a class="sub-link" href={href}>{label}</a>)}
+        {main.map(([label, href]) => <a href={href}>{label}</a>)}
+        <a class="btn" href="/monthly-website-maintenance-packages/">See plans</a>
+      </div></details>
+    </div></header>
     <main>
       <slot />
     </main>
-    <footer>
-      <p>{chrome.tagline} No contract. Cancel anytime.</p>
-      <nav aria-label="Footer">
-        {chrome.footer.map((link) => <a href={link.href}>{link.label}</a>)}
-      </nav>
-    </footer>
+    <footer class="foot"><div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <img src={logo} alt="WMS logo" width="325" height="108" style="height:38px;width:auto" loading="lazy" />
+          <p class="muted small" style="margin-top:10px">Dhaka-based team, working US &amp; UK business hours.<br />No contract. Cancel anytime.</p>
+          <p class="small" style="margin-top:10px"><a href="mailto:contact@websitemaintenanceservices.org">contact@websitemaintenanceservices.org</a><br /><a href="https://wa.me/8801815840813">+8801815840813</a></p>
+        </div>
+        {footerCols.map(([heading, links]) => (
+          <div><h3>{heading}</h3><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></div>
+        ))}
+      </div>
+      <p class="legal">© 2026 WMS. websitemaintenanceservices.org</p>
+    </div></footer>
   </body>
 </html>

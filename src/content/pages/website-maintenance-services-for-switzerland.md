@@ -23,42 +23,109 @@ Professional website and online shop maintenance for businesses across Switzerla
 
 Reliable, professional website care for companies across Switzerland.
 
+<div class="cards">
+
+<div class="card">
+
 ### Security & Sicherheit
 
 Continuous malware scanning, firewalls, and patching protect your site and customer data.
+
+</div>
+
+<div class="card">
 
 ### Speed & Performance
 
 Fast-loading pages and Core Web Vitals tuning keep Swiss visitors engaged and converting.
 
+</div>
+
+<div class="card">
+
 ### Online Shop Care
 
 Checkout testing, payment, and inventory checks keep your online shop selling without interruption.
+
+</div>
+
+<div class="card">
 
 ### Backups & Recovery
 
 Automated backups with fast restore mean your site is never more than minutes from recovery.
 
+</div>
+
+<div class="card">
+
 ### 24/7 Monitoring
 
 We watch for downtime, errors, and threats around the clock and fix issues fast.
+
+</div>
+
+<div class="card">
 
 ### Multilingual Support
 
 Ongoing support in German, French, and English whenever you need help with your website.
 
+</div>
+
+</div>
+
 ## What Our Switzerland Maintenance Includes
 
 Complete website care for Swiss businesses — WordPress, online shops, and custom sites.
 
--   Core & plugin updates
--   Security & malware scans
--   Daily/weekly backups
--   Speed optimization
--   Uptime & SSL monitoring
--   Online shop & checkout checks
--   Content & update services
--   Priority support (DE / FR / EN)
+<div class="card">
+
+Core & plugin updates
+
+</div>
+
+<div class="card">
+
+Security & malware scans
+
+</div>
+
+<div class="card">
+
+Daily/weekly backups
+
+</div>
+
+<div class="card">
+
+Speed optimization
+
+</div>
+
+<div class="card">
+
+Uptime & SSL monitoring
+
+</div>
+
+<div class="card">
+
+Online shop & checkout checks
+
+</div>
+
+<div class="card">
+
+Content & update services
+
+</div>
+
+<div class="card">
+
+Priority support (DE / FR / EN)
+
+</div>
 
 ## Website-Wartung und Sicherheit in der Schweiz
 
@@ -76,6 +143,10 @@ Pour les boutiques en ligne, nous proposons des tests de paiement et de panier, 
 
 Simple monthly pricing for Swiss businesses. Save 20% with annual billing.
 
+<div class="cards">
+
+<div class="card">
+
 ### Essential
 
 For small sites, blogs & brochure websites.
@@ -85,6 +156,10 @@ $95/mo
 or $76/mo billed annually
 
 [Get Started](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -98,6 +173,10 @@ or $156/mo billed annually
 
 [Get Started](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 ### Elevate
 
 For high-traffic sites & large online shops.
@@ -107,6 +186,10 @@ $395/mo
 or $316/mo billed annually
 
 [Get Started](/get-a-free-quote/)
+
+</div>
+
+</div>
 
 Prices shown in USD; CHF billing available on request. See full [plans, packages & costs](/monthly-website-maintenance-packages/).
 
@@ -138,7 +221,45 @@ About website maintenance services in Switzerland.
 
 ## Related Guides & Packages
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Ecommerce MaintenanceWooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/) [Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/) [Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+<div class="cards">
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Ecommerce MaintenanceWooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+
+</div>
+
+<div class="card">
+
+[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+</div>
 
 ## Outsource Your Website Maintenance Today
 

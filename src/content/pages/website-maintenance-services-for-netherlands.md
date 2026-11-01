@@ -21,42 +21,109 @@ Professional website and webshop maintenance for businesses across the Netherlan
 
 Reliable, professional website care for companies across the Netherlands.
 
+<div class="cards">
+
+<div class="card">
+
 ### Security & Beveiliging
 
 Continuous malware scanning, firewalls, and patching protect your site and customer data.
+
+</div>
+
+<div class="card">
 
 ### Speed & Performance
 
 Fast-loading pages and Core Web Vitals tuning keep Dutch visitors engaged and converting.
 
+</div>
+
+<div class="card">
+
 ### Webshop Maintenance
 
 Checkout testing, payment, and inventory checks keep your webshop selling without interruption.
+
+</div>
+
+<div class="card">
 
 ### Backups & Recovery
 
 Automated backups with fast restore mean your site is never more than minutes from recovery.
 
+</div>
+
+<div class="card">
+
 ### 24/7 Monitoring
 
 We watch for downtime, errors, and threats around the clock and fix issues fast.
+
+</div>
+
+<div class="card">
 
 ### Aftercare & Support
 
 Ongoing nazorg and support for custom (maatwerk) and corporate websites after launch.
 
+</div>
+
+</div>
+
 ## What Our Netherlands Maintenance Includes
 
 Complete website care for Dutch businesses — WordPress, webshops, and custom sites.
 
--   Core & plugin updates
--   Security & malware scans
--   Daily/weekly backups
--   Speed optimization
--   Uptime & SSL monitoring
--   Webshop & checkout checks
--   Content & update services
--   Priority support & nazorg
+<div class="card">
+
+Core & plugin updates
+
+</div>
+
+<div class="card">
+
+Security & malware scans
+
+</div>
+
+<div class="card">
+
+Daily/weekly backups
+
+</div>
+
+<div class="card">
+
+Speed optimization
+
+</div>
+
+<div class="card">
+
+Uptime & SSL monitoring
+
+</div>
+
+<div class="card">
+
+Webshop & checkout checks
+
+</div>
+
+<div class="card">
+
+Content & update services
+
+</div>
+
+<div class="card">
+
+Priority support & nazorg
+
+</div>
 
 ## Website Onderhoud en Beveiliging Uitbesteden
 
@@ -70,6 +137,10 @@ Wilt u uw website onderhoud en beveiliging uitbesteden? Wij verzorgen het volled
 
 Simple monthly pricing for Dutch businesses. Save 20% with annual billing.
 
+<div class="cards">
+
+<div class="card">
+
 ### Essential
 
 For small sites, blogs & brochure websites.
@@ -79,6 +150,10 @@ $95/mo
 or $76/mo billed annually
 
 [Get Started](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -92,6 +167,10 @@ or $156/mo billed annually
 
 [Get Started](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 ### Elevate
 
 For high-traffic sites & large webshops.
@@ -101,6 +180,10 @@ $395/mo
 or $316/mo billed annually
 
 [Get Started](/get-a-free-quote/)
+
+</div>
+
+</div>
 
 Prices shown in USD; EUR billing available on request. See full [plans, packages & costs](/monthly-website-maintenance-packages/).
 
@@ -132,7 +215,45 @@ About website maintenance services in the Netherlands.
 
 ## Related Guides & Packages
 
-[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Ecommerce / Webshop MaintenanceWooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/) [Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/) [Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+<div class="cards">
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Ecommerce / Webshop MaintenanceWooCommerce, Shopify & Magento](/ecommerce-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+
+</div>
+
+<div class="card">
+
+[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+</div>
 
 ## Outsource Your Website Maintenance Today
 

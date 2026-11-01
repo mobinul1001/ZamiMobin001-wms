@@ -6,7 +6,7 @@ export const LINE_HACKED = "If we can't clean your hacked site, you don't pay.";
 export const LINE_PLAN = 'No contract. Cancel anytime.';
 
 export const NUMBERS = /(?<![$£€\d,.–-])\b(?:400|500|4,800)\+|\b100\+\s*Websites\b|\b1(?:20|50|65|80|87)\+\s*(?:Verified|Accelerated|Managed|clients|small business)/i;
-export const YEARS = /\b1[0-2]\+\s*(?:years?|yrs?)\b|\ba decade of experience\b|\bsince 2016\b/i;
+export const YEARS = /\b1[0-2]\+\s*(?:years?|yrs?)\b|\ba decade of experience\b|\bfor over a decade\b|\bsince 2016\b/i;
 export const RATINGS = /\b[1-5](?:\.\d)?\s*\/\s*5(?:\.0)?\b|\b[345]\.\d\s*(?:★|-?\s*star)|\b5[- ]star\b|★{2,}|\brated\s+4\.9|\bverified reviews\b|\breview platforms\b|\bRating Based\b|\bwould recommend us\b|\bClutch & G2 Rated\b|\bGoogle & Clutch Rating\b/i;
 export const GUARANTEES = /\bguarantee[sd]?\b|\bwarrant(?:y|ies)\b|\bmoney[- ]back\b|\brisk[- ]free\b|\b99\.9\s*%|\bAverage Rating\b|(?<!near-)\bzero[- ](?:downtime|traffic loss|ranking loss|rank loss|data loss)\b|\bno data loss\b|\b0 rank loss\b/i;
 const LOCATION = /\b(?:USA|US)[- ]Based\b/i;

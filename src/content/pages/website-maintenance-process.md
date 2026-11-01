@@ -25,6 +25,10 @@ How We Work
 
 Our comprehensive 9-step workflow ensures your website stays healthy, secure, and optimized 365 days a year.
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### Initial Setup & Audit
@@ -36,6 +40,10 @@ Foundation
 -   Firewall configuration & hardening
 -   Performance benchmarking
 -   Uptime monitoring installation
+
+</div>
+
+<div class="card">
 
 02
 
@@ -49,6 +57,10 @@ Every 24 Hours
 -   Malware scan alerts
 -   Server health monitoring
 
+</div>
+
+<div class="card">
+
 03
 
 ### Weekly Maintenance
@@ -60,6 +72,10 @@ Routine Care
 -   Database optimization
 -   Basic speed optimization
 -   Form testing (contact, checkout)
+
+</div>
+
+<div class="card">
 
 04
 
@@ -73,6 +89,10 @@ Deep Optimization
 -   Security audit + malware removal
 -   Monthly performance report
 
+</div>
+
+<div class="card">
+
 05
 
 ### Quarterly Optimization
@@ -84,6 +104,10 @@ Strategic Review
 -   Server/hosting performance review
 -   UX/UI experience review
 -   SEO technical audit & Accessibility
+
+</div>
+
+<div class="card">
 
 06
 
@@ -97,6 +121,10 @@ Future Proofing
 -   Website scalability planning
 -   Annual in-depth performance report
 
+</div>
+
+<div class="card">
+
 07
 
 ### Support & Content
@@ -108,6 +136,10 @@ We're Here
 -   Priority support & Emergency fix (24/7)
 -   Quick bug fixes & enhancements
 -   Email/WhatsApp/CRM communication
+
+</div>
+
+<div class="card">
 
 08
 
@@ -121,6 +153,10 @@ Safety First
 -   Daily vulnerability tracking
 -   Spam protection for forms & comments
 
+</div>
+
+<div class="card">
+
 09
 
 ### Performance
@@ -132,6 +168,10 @@ Speed & Efficiency
 -   Image optimization & compression
 -   Minification & Database cleanup
 -   Mobile performance fixes
+
+</div>
+
+</div>
 
 ## Maintenance Process Schedule at a Glance
 
@@ -174,7 +214,45 @@ Common questions about the website maintenance process.
 
 ## Related Guides & Packages
 
-[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/) [How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/) [Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [Importance of MaintenanceWhy it matters](/importance-of-website-maintenance/) [WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+<div class="cards">
+
+<div class="card">
+
+[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+
+</div>
+
+<div class="card">
+
+[How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/)
+
+</div>
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[Importance of MaintenanceWhy it matters](/importance-of-website-maintenance/)
+
+</div>
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+</div>
 
 ## Let Our Proven Process Take Care of Your Site
 

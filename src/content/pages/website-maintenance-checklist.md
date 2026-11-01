@@ -19,7 +19,75 @@ Everything you need to keep your website secure, fast, and running — organized
 
 ## On this page
 
-[Why use a checklist](#why) [Daily tasks](#daily) [Weekly tasks](#weekly) [Monthly tasks](#monthly) [Quarterly tasks](#quarterly) [Annual tasks](#annual) [Maintenance schedule](#schedule) [By platform](#platforms) [Recommended tools](#tools) [Template & PDF](#template) [FAQ](#faq)
+<div class="cards">
+
+<div class="card">
+
+[Why use a checklist](#why)
+
+</div>
+
+<div class="card">
+
+[Daily tasks](#daily)
+
+</div>
+
+<div class="card">
+
+[Weekly tasks](#weekly)
+
+</div>
+
+<div class="card">
+
+[Monthly tasks](#monthly)
+
+</div>
+
+<div class="card">
+
+[Quarterly tasks](#quarterly)
+
+</div>
+
+<div class="card">
+
+[Annual tasks](#annual)
+
+</div>
+
+<div class="card">
+
+[Maintenance schedule](#schedule)
+
+</div>
+
+<div class="card">
+
+[By platform](#platforms)
+
+</div>
+
+<div class="card">
+
+[Recommended tools](#tools)
+
+</div>
+
+<div class="card">
+
+[Template & PDF](#template)
+
+</div>
+
+<div class="card">
+
+[FAQ](#faq)
+
+</div>
+
+</div>
 
 <a id="why"></a>
 
@@ -35,37 +103,101 @@ Whether you maintain your own site or hire a provider, this checklist is the sta
 
 Essential for ecommerce and high-traffic sites; automated for everyone else.
 
+<div class="cards">
+
+<div class="card">
+
 Confirm the site is online (uptime check)
+
+</div>
+
+<div class="card">
 
 Run automated security & malware scan
 
+</div>
+
+<div class="card">
+
 Verify daily backup completed successfully
+
+</div>
+
+<div class="card">
 
 Review downtime & error alerts
 
+</div>
+
+<div class="card">
+
 Check checkout & key forms work (stores)
 
+</div>
+
+<div class="card">
+
 Monitor for unusual traffic or login attempts
+
+</div>
+
+</div>
 
 <a id="weekly"></a>
 
 ## Weekly Website Maintenance Tasks
 
+<div class="cards">
+
+<div class="card">
+
 Update core software, plugins & themes (test on staging)
+
+</div>
+
+<div class="card">
 
 Verify backups and that restore works
 
+</div>
+
+<div class="card">
+
 Scan for and fix broken links & 404s
+
+</div>
+
+<div class="card">
 
 Remove spam comments & pending junk
 
+</div>
+
+<div class="card">
+
 Review security logs & firewall activity
+
+</div>
+
+<div class="card">
 
 Spot-check page speed on key pages
 
+</div>
+
+<div class="card">
+
 Check SSL certificate status
 
+</div>
+
+<div class="card">
+
 Review uptime & traffic reports
+
+</div>
+
+</div>
 
 <a id="monthly"></a>
 
@@ -73,65 +205,181 @@ Review uptime & traffic reports
 
 The core monthly routine every website should follow.
 
+<div class="cards">
+
+<div class="card">
+
 Run a full security audit & deep malware scan
+
+</div>
+
+<div class="card">
 
 Full speed & Core Web Vitals audit
 
+</div>
+
+<div class="card">
+
 Optimize & clean the database
+
+</div>
+
+<div class="card">
 
 Test all forms, CTAs & checkout flows
 
+</div>
+
+<div class="card">
+
 Fix 404 errors & redirect issues
+
+</div>
+
+<div class="card">
 
 SEO health check (titles, meta, sitemap, indexing)
 
+</div>
+
+<div class="card">
+
 Review Google Analytics & Search Console
+
+</div>
+
+<div class="card">
 
 Update or refresh outdated content
 
+</div>
+
+<div class="card">
+
 Check mobile responsiveness & cross-browser display
+
+</div>
+
+<div class="card">
 
 Optimize new images for speed
 
+</div>
+
+<div class="card">
+
 Review user accounts & permissions
 
+</div>
+
+<div class="card">
+
 Test a full backup restore & send a health report
+
+</div>
+
+</div>
 
 <a id="quarterly"></a>
 
 ## Quarterly Website Maintenance Tasks
 
+<div class="cards">
+
+<div class="card">
+
 Full content audit & refresh
+
+</div>
+
+<div class="card">
 
 Audit plugins/apps & remove unused ones
 
+</div>
+
+<div class="card">
+
 Design & UX review
+
+</div>
+
+<div class="card">
 
 Deeper SEO & keyword review
 
+</div>
+
+<div class="card">
+
 Accessibility check
+
+</div>
+
+<div class="card">
 
 Review hosting plan & resource usage
 
+</div>
+
+<div class="card">
+
 Update legal pages & policies
 
+</div>
+
+<div class="card">
+
 Test all third-party integrations
+
+</div>
+
+</div>
 
 <a id="annual"></a>
 
 ## Annual Website Maintenance Tasks
 
+<div class="cards">
+
+<div class="card">
+
 Renew domain & SSL certificate
+
+</div>
+
+<div class="card">
 
 Full security review & penetration check
 
+</div>
+
+<div class="card">
+
 Major version & framework upgrades
+
+</div>
+
+<div class="card">
 
 Review branding & consider a design refresh
 
+</div>
+
+<div class="card">
+
 Audit and renew all subscriptions & licenses
 
+</div>
+
+<div class="card">
+
 Review goals, analytics trends & strategy
+
+</div>
+
+</div>
 
 <a id="schedule"></a>
 
@@ -155,6 +403,10 @@ How often the most important maintenance tasks should run.
 
 Each platform has extra tasks on top of the universal checklist above.
 
+<div class="cards">
+
+<div class="card">
+
 ### WordPress Checklist
 
 -   Update WordPress core, plugins & themes
@@ -163,6 +415,10 @@ Each platform has extra tasks on top of the universal checklist above.
 -   Review security plugin & firewall settings
 
 [WordPress maintenance packages](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
 
 ### Shopify Checklist
 
@@ -173,6 +429,10 @@ Each platform has extra tasks on top of the universal checklist above.
 
 [Shopify maintenance packages](/shopify-website-maintenance-packages/)
 
+</div>
+
+<div class="card">
+
 ### WooCommerce Checklist
 
 -   Test payment gateways after updates
@@ -181,6 +441,10 @@ Each platform has extra tasks on top of the universal checklist above.
 -   Review PCI-aware security hardening
 
 [Ecommerce maintenance packages](/ecommerce-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
 
 ### Magento Monthly Checklist
 
@@ -191,35 +455,67 @@ Each platform has extra tasks on top of the universal checklist above.
 
 [Ecommerce maintenance packages](/ecommerce-website-maintenance-packages/)
 
+</div>
+
+</div>
+
 <a id="tools"></a>
 
 ## Recommended Website Maintenance Tools
 
 The tool categories that make working through this checklist faster and easier.
 
+<div class="cards">
+
+<div class="card">
+
 ### Uptime Monitoring
 
 Tools like UptimeRobot alert you the moment your site or domain & SSL goes down.
+
+</div>
+
+<div class="card">
 
 ### Security & Malware
 
 Scanners and firewalls (such as Wordfence or Sucuri) detect threats and block attacks.
 
+</div>
+
+<div class="card">
+
 ### Backups
 
 Automated backup tools keep restorable copies so you can recover in minutes.
+
+</div>
+
+<div class="card">
 
 ### Speed Testing
 
 Use Google PageSpeed Insights or GTmetrix to track Core Web Vitals and load time.
 
+</div>
+
+<div class="card">
+
 ### Analytics & SEO
 
 Google Analytics and Search Console reveal traffic, errors, and ranking changes.
 
+</div>
+
+<div class="card">
+
 ### Broken Link Checkers
 
 Crawlers find broken links and 404s before your visitors and Google do.
+
+</div>
+
+</div>
 
 <a id="template"></a>
 
@@ -247,7 +543,45 @@ Common questions about website maintenance checklists.
 
 ## Related Guides & Packages
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/) [Importance of MaintenanceWhy it matters](/importance-of-website-maintenance/) [WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/) [Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/)
+<div class="cards">
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[How Long It TakesTime per task & site type](/how-long-does-website-maintenance-take/)
+
+</div>
+
+<div class="card">
+
+[Importance of MaintenanceWhy it matters](/importance-of-website-maintenance/)
+
+</div>
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/)
+
+</div>
+
+</div>
 
 ## Skip the Checklist — We'll Handle It All
 
@@ -259,4 +593,66 @@ Get every task on this checklist done for you, on schedule, by experts. Secure, 
 
 We provide dedicated support to businesses in these key regions, with teams ready to assist you.
 
-[USA](/website-maintenance-services-for-usa/) [Canada](/website-maintenance-services-for-canada/) [UK](/website-maintenance-services-for-uk/) [Australia](/website-maintenance-services-for-australia/) [Netherlands](/website-maintenance-services-for-netherlands/) [France](/website-maintenance-services-for-france/) [Spain](/website-maintenance-services-for-spain/) [Brazil](/website-maintenance-services-for-brazil/) [Ireland](/website-maintenance-services-for-ireland/) [Switzerland](/website-maintenance-services-for-switzerland/)
+<div class="cards">
+
+<div class="card">
+
+[USA](/website-maintenance-services-for-usa/)
+
+</div>
+
+<div class="card">
+
+[Canada](/website-maintenance-services-for-canada/)
+
+</div>
+
+<div class="card">
+
+[UK](/website-maintenance-services-for-uk/)
+
+</div>
+
+<div class="card">
+
+[Australia](/website-maintenance-services-for-australia/)
+
+</div>
+
+<div class="card">
+
+[Netherlands](/website-maintenance-services-for-netherlands/)
+
+</div>
+
+<div class="card">
+
+[France](/website-maintenance-services-for-france/)
+
+</div>
+
+<div class="card">
+
+[Spain](/website-maintenance-services-for-spain/)
+
+</div>
+
+<div class="card">
+
+[Brazil](/website-maintenance-services-for-brazil/)
+
+</div>
+
+<div class="card">
+
+[Ireland](/website-maintenance-services-for-ireland/)
+
+</div>
+
+<div class="card">
+
+[Switzerland](/website-maintenance-services-for-switzerland/)
+
+</div>
+
+</div>

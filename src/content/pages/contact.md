@@ -15,7 +15,15 @@ Get In Touch
 
 Whether you’re a business looking for website maintenance, a potential partner, or an affiliate, we’d love to hear from you.
 
+<div class="cards">
+
+<div class="card">
+
 <form data-placeholder-form="true"><div><label for="inquiry-type">I am contacting you for:</label><div><select name="inquiry_type"><option value="maintenance">Website Maintenance / Support Request</option> <option value="partnership">Partnership / Collaboration</option> <option value="affiliate">Affiliate Program</option> <option value="vendor">Vendor / Supplier Inquiry</option> <option value="other">Other</option></select></div></div><div><div><label for="full-name">Full Name / Company Name</label> <input type="text" name="full_name" placeholder="Enter your name" required=""></div><div><label for="email">Email Address</label> <input type="email" name="email" placeholder="you@company.com" required=""></div></div><div><div><label for="phone">Phone Number (Optional)</label> <input type="tel" name="phone" placeholder="+1 (555) 000-0000"></div><div><label for="website">Website URL / Portfolio</label> <input type="url" name="website" placeholder="https://yourwebsite.com"></div></div><div><label for="message">Brief Description / Message</label><textarea name="message" rows="4" placeholder="How can we help you today?" required=""></textarea></div><button type="submit" disabled="disabled"><span>Send Message</span></button><p>We respect your privacy. Your information is safe with us.</p></form>
+
+</div>
+
+<div class="card">
 
 ### Other Ways to Connect
 
@@ -30,7 +38,10 @@ Whether you’re a business looking for website maintenance, a potential partner
 -   Live Chat
     
     Available Mon-Fri, 9am - 5pm EST
-    
+
+</div>
+
+</div>
 
 ### Common Questions
 

@@ -35,11 +35,19 @@ Please fill out the details below, and our team will send your website review wi
 
 We analyze your website from top to bottom.
 
+<div class="cards">
+
+<div class="card">
+
 #### Speed & Performance
 
 -   Loading time analysis
 -   Core Web Vitals check
 -   Image optimization issues
+
+</div>
+
+<div class="card">
 
 #### Security & Vulnerability
 
@@ -47,11 +55,19 @@ We analyze your website from top to bottom.
 -   Outdated plugins/themes
 -   SSL & firewall risks
 
+</div>
+
+<div class="card">
+
 #### Technical SEO Audit
 
 -   On-page structure
 -   Broken links & indexing
 -   Mobile-friendliness
+
+</div>
+
+<div class="card">
 
 #### User Experience (UX)
 
@@ -59,9 +75,21 @@ We analyze your website from top to bottom.
 -   Mobile responsiveness
 -   Layout improvements
 
+</div>
+
+<div class="card">
+
 #### Overall Website Health Score
 
 We don't just give you data; we give you clarity. You’ll receive a simple score that shows how your website is performing and a full breakdown with easy-to-understand actionable recommendations.
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 ### Why Get a Free Review?
 
@@ -80,6 +108,10 @@ Prevent hacks, downtime, and data loss by knowing your vulnerabilities early.
 ##### Boost Google Rankings
 
 Fixing technical SEO helps your website climb search results faster.
+
+</div>
+
+<div class="card">
 
 ### How It Works
 
@@ -106,3 +138,7 @@ Receive a complete review with actionable recommendations.
 ##### Fix It Yourself or Let Us Help
 
 You’re free to use the report however you want—no strings attached.
+
+</div>
+
+</div>

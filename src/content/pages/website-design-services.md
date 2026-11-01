@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"How much does professional website design cost?","a":"Professional website design packages start at $1,499 for small business 5-page sites, $2,999 for growth businesses up to 10 pages, and custom quotes for enterprise portals."},{"q":"What's included in a website design package?","a":"Our packages include custom UI/UX design, mobile responsiveness, SEO architecture, Schema markup, Core Web Vitals optimization, and 30 to 90 days of post-launch support."},{"q":"How long does it take to design a website?","a":"On average, a custom website design project takes 4 to 8 weeks from discovery to live launch, depending on page count and custom functionality."},{"q":"Do you offer website design for small businesses?","a":"Yes. We offer budget-friendly small business website design packages engineered to establish local search authority and generate customer phone calls."},{"q":"What's the difference between website design and website development?","a":"Website design handles the front-end visual look, UI/UX wireframes, and layout. Web development deals with underlying code, CMS integration, and backend functionality."},{"q":"Do you build custom websites or use templates?","a":"We build custom websites from scratch using Figma wireframes and clean code. We never use pre-made, bloated drag-and-drop templates."},{"q":"Will my new website be mobile-friendly and responsive?","a":"Yes. Every website we build follows a mobile-first design philosophy, rigorously tested across 15+ mobile, tablet, and desktop screen sizes before launch."},{"q":"Is SEO included in your website design services?","a":"Yes. Every site includes foundational SEO architecture: clean heading tags, Schema markup, PageSpeed optimization, and XML sitemaps built-in from day one."},{"q":"Which platforms do you design on — WordPress, Shopify, Squarespace?","a":"We design custom sites on WordPress (Gutenberg/WooCommerce), Shopify, Webflow, Squarespace, and custom headless PHP/React frameworks."},{"q":"Do I own my website after it's built?","a":"Yes, 100%. Upon final project completion, you own full intellectual property rights, files, database, and domain ownership with no lock-in clauses."},{"q":"What happens after my website launches — is maintenance included?","a":"Every package includes 30 to 90 days of post-launch care. You can also pair your new build with our monthly website maintenance packages."},{"q":"Can you redesign my existing website instead of building a new one?","a":"Yes. If you want to overhaul an existing site without losing SEO rankings, explore our dedicated website redesign services."},{"q":"Do you design websites for specific industries like law firms or healthcare?","a":"Yes. We build tailored websites for law firms, medical clinics, contractors, eCommerce brands, SaaS companies, and professional services firms."},{"q":"How many revisions are included in the design process?","a":"Starter plans include 1 round, Growth plans include 2 rounds, and Enterprise packages include unlimited wireframe/prototype revisions within scope."},{"q":"Will my website be secure and protected from hackers?","a":"Yes. We deploy SSL HTTPS encryption, file permission hardening, and WAF firewall rules. Learn more about our website security services."},{"q":"Do you offer website design packages for agencies (white-label)?","a":"Yes! We partner with digital agencies to deliver unbranded web design and maintenance. Explore our white-label maintenance solutions."},{"q":"What information do you need from me to start my website design?","a":"We need your brand assets (logo, colors), general copy or content inventory, competitor examples, and domain/hosting login details."},{"q":"Can you migrate my content from my old website to the new one?","a":"Yes. We handle full database, blog post, image, and page content migrations with 1:1 301 redirect mapping to protect your Google rankings."},{"q":"Do you offer payment plans for website design projects?","a":"Yes. Most projects are split into a 50% deposit to initiate design and 50% upon final client signoff prior to live server deployment."},{"q":"What if I need urgent changes or support after launch?","a":"Every design comes with dedicated post-launch support. You can also submit emergency requests directly to our team anytime."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Custom Conversion-Focused Web Design
 
 Transform your online presence with bespoke, mobile-first **website design services**. We combine custom UI/UX design with built-in long-term maintenance, security, and PageSpeed performance to turn visitors into loyal customers.
@@ -19,15 +23,35 @@ Custom Code (No Templates)
 
 Serving US, UK, CA, AU, Netherlands, France, Spain, Brazil, Ireland, & Switzerland
 
+</div>
+
+<div class="card">
+
 responsive-ui-frame.v2
 
 ● Responsive
 
+<div class="cards">
+
+<div class="card">
+
 Desktop 4K
+
+</div>
+
+<div class="card">
 
 Tablet Pro
 
+</div>
+
+<div class="card">
+
 Mobile First
+
+</div>
+
+</div>
 
 PageSpeed & Core Web Vitals
 
@@ -38,6 +62,10 @@ SEO & Accessibility (WCAG)
 Compliant
 
 Custom UI/UX Design + Built-In Security & Support
+
+</div>
+
+</div>
 
 ## Trusted by Businesses Across the US, UK, Canada & Australia
 
@@ -59,6 +87,10 @@ The Core Differentiator
 
 Unlike traditional agencies that treat web design as a one-off project and abandon you post-launch, our professional **website design company** pairs custom, conversion-focused design with built-in long-term maintenance, security, and PageSpeed optimization. We build scalable digital assets engineered for growth.
 
+<div class="cards">
+
+<div class="card">
+
 No Template Shortcuts
 
 ### Custom UI/UX
@@ -66,6 +98,10 @@ No Template Shortcuts
 Bespoke wireframes and high-fidelity mockups designed from scratch. We never use cheap drag-and-drop templates or bloated theme frameworks.
 
 Bespoke Figma Prototyping
+
+</div>
+
+<div class="card">
 
 SEO & Speed Built-In
 
@@ -75,6 +111,10 @@ Engineered from day one with clean code, Core Web Vitals optimization, and Schem
 
 PageSpeed Passed Day 1
 
+</div>
+
+<div class="card">
+
 Long-Term Partnership
 
 ### Design + Support Bundle
@@ -83,6 +123,10 @@ Design is just the start. As a leading **web design agency**, we bundle post-lau
 
 Post-Launch Care Included
 
+</div>
+
+<div class="card">
+
 Conversion Architecture
 
 ### CRO & Lead Generation
@@ -90,6 +134,10 @@ Conversion Architecture
 Designed for revenue, not just looks. We build strategic sales funnels, clear CTA placements, and mobile touch targets that convert traffic.
 
 Built to Drive Sales
+
+</div>
+
+</div>
 
 [Start Your Custom Design Project](/get-a-free-quote/)
 
@@ -101,6 +149,10 @@ Educational Definition
 
 **Website design** is the process of planning, conceptualizing, and arranging content, layout, and visual elements for the web. It combines user interface (UI) design, user experience (UX) research, color theory, typography, and information architecture to create an aesthetically pleasing, mobile-first, and easy-to-navigate digital experience.
 
+<div class="cards">
+
+<div class="card">
+
 ### Design vs. Development — What's the Difference?
 
 While often used interchangeably, **web design** and web development are two distinct disciplines. Website design focuses on the front-end visual look, feel, wireframes, color psychology, and conversion user journeys.
@@ -109,9 +161,17 @@ Web development, on the other hand, deals with the underlying code (HTML5, CSS, 
 
 Full-Service Agency: We Handle Both Design (UI/UX) & Development (Code)
 
+</div>
+
+<div class="card">
+
 Scope Breakdown
 
 #### Design vs. Development Matrix
+
+<div class="cards">
+
+<div class="card">
 
 WEBSITE DESIGN (UI/UX)
 
@@ -120,12 +180,24 @@ WEBSITE DESIGN (UI/UX)
 -   • Typography, Colors & Branding
 -   • Mobile Touch Target Optimization
 
+</div>
+
+<div class="card">
+
 WEB DEVELOPMENT (Code)
 
 -   • Clean HTML5, CSS3 & JavaScript
 -   • Custom WordPress / CMS Integration
 -   • Core Web Vitals PageSpeed Tuning
 -   • Database & Security Configuration
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 [Explore our 5-stage website design process](#process)
 
@@ -139,6 +211,10 @@ We follow a transparent, 5-stage **website design process** to ensure your new s
 
 Dedicated Project Manager Assigned | Fixed Milestones & Timelines
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 Stage 01
@@ -148,6 +224,10 @@ Stage 01
 Deep dive into your business goals, target audience personas, and competitor landscapes before creating mockups.
 
 Strategy Call & Roadmap
+
+</div>
+
+<div class="card">
 
 02
 
@@ -159,6 +239,10 @@ Building low-fidelity wireframes and conversion-focused user journeys to map pag
 
 Conversion Funnel Architecture
 
+</div>
+
+<div class="card">
+
 03
 
 Stage 03
@@ -168,6 +252,10 @@ Stage 03
 Designing custom Figma mockups with bespoke typography, brand colors, and mobile-first responsive breakpoints.
 
 Custom Interactive Prototypes
+
+</div>
+
+<div class="card">
 
 04
 
@@ -179,6 +267,10 @@ Clean code building on WordPress/Shopify, 50+ point cross-browser QA testing, an
 
 Multi-Device QA Tested
 
+</div>
+
+<div class="card">
+
 05
 
 Stage 05
@@ -189,6 +281,10 @@ Flawless live deployment with [seamless website migration](/website-migration-se
 
 Post-Launch Training & Care
 
+</div>
+
+</div>
+
 [Start Your Design Project Today](/get-a-free-quote/)
 
 Full-Service Capabilities
@@ -196,6 +292,10 @@ Full-Service Capabilities
 ## Core Web Design Solutions & Capabilities
 
 From custom UI/UX prototyping and mobile-first responsive architecture to SEO-first WordPress development and security hardening, we build high-performing digital assets.
+
+<div class="cards">
+
+<div class="card">
 
 User Experience
 
@@ -205,6 +305,10 @@ User-centered **ui ux design**, wireframing, and interactive Figma prototyping t
 
 Figma Prototypes Tested
 
+</div>
+
+<div class="card">
+
 Mobile First
 
 ### Responsive Design
@@ -212,6 +316,10 @@ Mobile First
 Fluid **responsive website design** engineered to render flawlessly across smartphones, tablets, laptops, and 4K desktop screens.
 
 Tested Across 15+ Devices
+
+</div>
+
+<div class="card">
 
 SEO Built-In
 
@@ -221,6 +329,10 @@ Strategic **seo website design** with clean URL silos, heading tag hierarchy, Sc
 
 Search Engine Ready Day 1
 
+</div>
+
+<div class="card">
+
 Custom Architecture
 
 ### Custom Website Design
@@ -228,6 +340,10 @@ Custom Architecture
 Bespoke **custom website design** with zero drag-and-drop template bloat, tailored specifically to your unique brand identity.
 
 Unique Brand Code
+
+</div>
+
+<div class="card">
 
 WordPress Experts
 
@@ -237,6 +353,10 @@ Bespoke **wordpress website design company** solutions with custom Gutenberg blo
 
 Gutenberg & WooCommerce
 
+</div>
+
+<div class="card">
+
 PPC & Conversion
 
 ### Landing Page Design
@@ -245,11 +365,19 @@ High-converting **landing page design** built for paid ad campaigns, A/B testing
 
 Conversion Funnel Optimized
 
+</div>
+
+<div class="card">
+
 Core Web Vitals
 
 ### PageSpeed Optimization
 
 Sub-2-second **website speed optimization**, WebP image compression, lazy loading, and Core Web Vitals green scores.
+
+</div>
+
+<div class="card">
 
 Security Hardened
 
@@ -259,6 +387,10 @@ SSL HTTPS setup and file hardening included. In case of existing infections, acc
 
 SSL & Firewall Hardened
 
+</div>
+
+</div>
+
 [Request Custom Web Design Proposal](/get-a-free-quote/)
 
 Industry-Specific Excellence
@@ -266,6 +398,10 @@ Industry-Specific Excellence
 ## Industries We Serve with Custom Web Design
 
 Every sector faces distinct compliance rules, trust barriers, and conversion funnels. We tailor our **website design services** to match your industry's exact buyer expectations and search algorithms.
+
+<div class="cards">
+
+<div class="card">
 
 Legal
 
@@ -275,6 +411,10 @@ High-converting **law firm website design** and **web design for lawyers**. We b
 
 Practice Area Silos Built-In
 
+</div>
+
+<div class="card">
+
 Healthcare
 
 ### Healthcare & Medical Clinics
@@ -282,6 +422,10 @@ Healthcare
 HIPAA-aware **healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.
 
 HIPAA Compliant & Patient Friendly
+
+</div>
+
+<div class="card">
 
 Contractors
 
@@ -291,6 +435,10 @@ High-lead **website design for contractors** and **contractor website design** (
 
 Local Lead Generation Focused
 
+</div>
+
+<div class="card">
+
 eCommerce
 
 ### eCommerce & Retail Stores
@@ -298,6 +446,10 @@ eCommerce
 Custom **ecommerce website design** on Shopify & WooCommerce. High-converting product catalog UX, mobile shopping carts, and fast PCI-compliant checkout.
 
 Shopify & WooCommerce Cart UX
+
+</div>
+
+<div class="card">
 
 SaaS & Tech
 
@@ -307,6 +459,10 @@ High-converting **saas website design**. Designing feature comparison tables, in
 
 Demo & Trial Conversion Funnels
 
+</div>
+
+<div class="card">
+
 Small Business
 
 ### Small Business & Services
@@ -314,6 +470,10 @@ Small Business
 Affordable **website design for small business**. Transforming local storefronts into modern digital lead generators that rank in Google Maps local pack.
 
 Google Maps Local Pack Ready
+
+</div>
+
+</div>
 
 ### Are You a Digital Agency or Web Studio Partner?
 
@@ -329,6 +489,10 @@ Whether you prefer the flexibility of open-source CMS or the convenience of host
 
 Certified Partners & Experience Across Leading CMS Platforms
 
+<div class="cards">
+
+<div class="card">
+
 WordPress
 
 ### WordPress Design
@@ -338,6 +502,10 @@ Best for: Business Sites & Blogs
 Bespoke **wordpress website design** with custom Gutenberg blocks and clean code. Combine with [ongoing WordPress maintenance and updates](/wordpress-website-maintenance-packages/).
 
 Gutenberg & WooCommerce Ready
+
+</div>
+
+<div class="card">
 
 Shopify
 
@@ -349,6 +517,10 @@ Conversion-driven **shopify website design**. Custom Liquid theme design, produc
 
 Liquid Theme & Cart UX
 
+</div>
+
+<div class="card">
+
 Webflow
 
 ### Webflow Design
@@ -358,6 +530,10 @@ Best for: SaaS & Tech Startups
 Modern Webflow development with advanced scroll interactions, custom CMS collection schemas, and sub-2-second page load speeds.
 
 Custom CMS & Micro-Animations
+
+</div>
+
+<div class="card">
 
 Squarespace
 
@@ -369,6 +545,10 @@ Customizing **squarespace website design** or executing full [website migration 
 
 Custom CSS & Migration Ready
 
+</div>
+
+</div>
+
 [Discuss Your Preferred CMS Platform](/get-a-free-quote/)
 
 Transparent Investment Tiers
@@ -376,6 +556,10 @@ Transparent Investment Tiers
 ## Custom Website Design Packages & Pricing
 
 Transparent, scope-based **website design packages** with zero hidden fees. Choose a plan below or request a custom quote for complex corporate portals or eCommerce stores.
+
+<div class="cards">
+
+<div class="card">
 
 Solopreneurs & Small Biz
 
@@ -392,6 +576,10 @@ $1,499 Starting project estimate
 -   30-Day Post-Launch Support Included
 
 [Choose Starter Package](/get-a-free-quote/#starter-design)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -411,6 +599,10 @@ $2,999 Starting project estimate
 
 [Choose Growth Package](/get-a-free-quote/#growth-design)
 
+</div>
+
+<div class="card">
+
 Corporate & Agency
 
 ### Premium / Enterprise
@@ -426,6 +618,10 @@ Custom Quote Starting from $5,499+
 -   12-Month Maintenance Bundle Option
 
 [Request Custom Quote](/get-a-free-quote/#enterprise-design)
+
+</div>
+
+</div>
 
 ### Feature Comparison: Our Packages vs. Typical Competitors
 
@@ -452,6 +648,10 @@ Evidence-Based Design Proof
 
 Explore real proof of how our custom **website design services** transformed online presence, improved mobile user experience, and delivered measurable conversion growth for medical practices, e-commerce brands, and tourism portals.
 
+<div class="cards">
+
+<div class="card">
+
 Medical & Dermatology Case #01
 
 ### Dermatology Practice Web Design
@@ -460,11 +660,27 @@ dermatologywebsitedesign.com
 
 **Challenge:** Complex medical procedure pages requiring HIPAA-aware patient booking funnels and ultra-fast mobile PageSpeed load times.
 
+<div class="cards">
+
+<div class="card">
+
 +185% Patient Leads
+
+</div>
+
+<div class="card">
 
 0.8s LCP Load Speed
 
+</div>
+
+</div>
+
 Result: HIPAA Compliant Patient UI
+
+</div>
+
+<div class="card">
 
 Travel & Tour Portals Case #02
 
@@ -474,11 +690,27 @@ stluciantaxiandtours.com • marcstaxiservicetours.com
 
 **Challenge:** Tourist drop-offs during airport transfer booking. Redesigned with intuitive mobile ride cards and instant WhatsApp lead CTAs.
 
+<div class="cards">
+
+<div class="card">
+
 +210% Tour Bookings
+
+</div>
+
+<div class="card">
 
 100% Mobile WCAG
 
+</div>
+
+</div>
+
 Result: Mobile Booking Funnel
+
+</div>
+
+<div class="card">
 
 Grooming & eCommerce Case #03
 
@@ -488,11 +720,27 @@ woodwardbarbers.com • gootipa.com
 
 **Challenge:** Slow product catalog loading on mobile devices. Rebuilt with custom responsive UI, fast cart drawer, and appointment booking.
 
+<div class="cards">
+
+<div class="card">
+
 +160% Cart Conversions
+
+</div>
+
+<div class="card">
 
 \-40% Bounce Rate
 
+</div>
+
+</div>
+
 Result: Fast Custom UI/UX
+
+</div>
+
+</div>
 
 Explore All 8 Live Websites Designed & Maintained By Our Team
 

@@ -17,49 +17,97 @@ Choose from three flexible WordPress maintenance plans — WP Starter, WP Growth
 
 [View Plans & Pricing](#pricing) [Get a Free Quote](/get-a-free-quote/)
 
+<div class="cards">
+
+<div class="card">
+
 3
 
 Flexible Plans
+
+</div>
+
+<div class="card">
 
 24/7
 
 Security Scanning
 
+</div>
+
+<div class="card">
+
 20%
 
 Off Annual Billing
+
+</div>
+
+<div class="card">
 
 0
 
 Lock-in Contracts
 
+</div>
+
+</div>
+
 ## Why You Need Our WordPress Website Maintenance Packages
 
 A WordPress website is not a "set it and forget it" system — it needs ongoing care to stay secure and fast.
+
+<div class="cards">
+
+<div class="card">
 
 ### Security Protection
 
 Prevent malware, brute-force attacks, spam injections, and hacking attempts before they damage your business.
 
+</div>
+
+<div class="card">
+
 ### Speed & Performance
 
 Faster websites gain higher conversions and better SEO rankings. We keep your site optimized.
+
+</div>
+
+<div class="card">
 
 ### Regular Updates
 
 WordPress core, plugins, and themes are updated safely without breaking your site layout or functionality.
 
+</div>
+
+<div class="card">
+
 ### Reliable Backups
 
 Daily and weekly backups ensure your website can be restored quickly in case of any server failure.
+
+</div>
+
+<div class="card">
 
 ### Continuous Monitoring
 
 Your website is checked 24/7 for downtime, security threats, broken links, and performance issues.
 
+</div>
+
+<div class="card">
+
 ### Technical Support
 
 Get expert help anytime something breaks or you need updates. We are your dedicated technical partner.
+
+</div>
+
+</div>
 
 ## WordPress Website Maintenance Packages, Plans & Pricing Explained
 
@@ -73,14 +121,53 @@ Not sure how much to budget? Read our guide on [how much WordPress website maint
 
 No matter which WordPress maintenance package you choose, you get the core essentials to keep your business running smoothly.
 
--   Core, Plugin & Theme Updates
--   Secure Backups
--   24/7 Security Scanning
--   Uptime & SSL Monitoring
--   Broken Link Monitoring
--   Monthly Health Report
--   Expert Human Support
--   No Lock-in Contracts
+<div class="card">
+
+Core, Plugin & Theme Updates
+
+</div>
+
+<div class="card">
+
+Secure Backups
+
+</div>
+
+<div class="card">
+
+24/7 Security Scanning
+
+</div>
+
+<div class="card">
+
+Uptime & SSL Monitoring
+
+</div>
+
+<div class="card">
+
+Broken Link Monitoring
+
+</div>
+
+<div class="card">
+
+Monthly Health Report
+
+</div>
+
+<div class="card">
+
+Expert Human Support
+
+</div>
+
+<div class="card">
+
+No Lock-in Contracts
+
+</div>
 
 <a id="pricing"></a>
 
@@ -89,6 +176,10 @@ No matter which WordPress maintenance package you choose, you get the core essen
 Professionally structured WordPress maintenance plans for every stage of business.
 
 Save 20% with annual billing
+
+<div class="cards">
+
+<div class="card">
 
 ### WP Starter
 
@@ -113,6 +204,10 @@ Uptime & SSL Monitoring
 Broken Link Monitoring
 
 Monthly Website Health Report
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -146,6 +241,10 @@ Search Console & Analytics Monitoring
 
 Priority Support
 
+</div>
+
+<div class="card">
+
 ### WP Premium
 
 For Ecommerce, SaaS, and high-traffic sites.
@@ -176,6 +275,10 @@ Dedicated Account Manager
 
 Same-Day Emergency Response
 
+</div>
+
+</div>
+
 ## Monthly vs Annual Pricing: How Much You Save
 
 Pay annually and get roughly two-and-a-half months free on every WordPress maintenance plan.
@@ -188,26 +291,51 @@ Pay annually and get roughly two-and-a-half months free on every WordPress maint
 
 ## Optional Add-On Services
 
+<div class="cards">
+
+<div class="card">
+
 Hosting Management ($20/mo)
+
+</div>
+
+<div class="card">
 
 Custom Development Hours
 
+</div>
+
+<div class="card">
+
 Monthly SEO Optimization
+
+</div>
+
+<div class="card">
 
 Speed Boost Package
 
+</div>
+
+<div class="card">
+
 Website Redesign
 
+</div>
+
+<div class="card">
+
 Cloudflare Enterprise Setup
+
+</div>
+
+</div>
 
 ## Full WordPress Maintenance Packages Comparison
 
 Every feature, side by side, so you can choose the right plan with confidence.
 
-| Feature | WP Starter  
-$95/mo | WP Growth  
-$195/mo | WP Premium  
-$395/mo |
+| Feature | WP Starter $95/mo | WP Growth $195/mo | WP Premium $395/mo |
 | --- | --- | --- | --- |
 | Pricing & Frequency |
 | Annual Billing (per month) | $76 | $156 | $316 |
@@ -254,21 +382,41 @@ $395/mo |
 
 ## How to Choose the Right WordPress Maintenance Plan
 
+<div class="cards">
+
+<div class="card">
+
 ### Pick WP Starter if…
 
 You run a blog, portfolio, or small brochure site and need core updates, backups, and security handled affordably at $95/mo.
+
+</div>
+
+<div class="card">
 
 ### Pick WP Growth if…
 
 Your website generates leads or revenue and you want weekly updates, daily backups, SEO checks, and content edits. Our most popular plan.
 
+</div>
+
+<div class="card">
+
 ### Pick WP Premium if…
 
 You run a WooCommerce store or high-traffic site needing daily care, malware removal, emergency response, and a dedicated manager.
 
+</div>
+
+</div>
+
 Still unsure? Compare the [best website maintenance companies](/best-website-maintenance-companies/), review our [website maintenance checklist](/website-maintenance-checklist/), or [get a free quote](/get-a-free-quote/).
 
 ## How Our WordPress Maintenance Works
+
+<div class="cards">
+
+<div class="card">
 
 1
 
@@ -276,11 +424,19 @@ Still unsure? Compare the [best website maintenance companies](/best-website-mai
 
 We review your site's health, security, and speed, then recommend the right plan.
 
+</div>
+
+<div class="card">
+
 2
 
 ### Setup & Secure
 
 We configure backups, security scanning, staging, and monitoring for your site.
+
+</div>
+
+<div class="card">
 
 3
 
@@ -288,11 +444,19 @@ We configure backups, security scanning, staging, and monitoring for your site.
 
 Updates, optimization, and monitoring run on your plan's schedule — safely tested first.
 
+</div>
+
+<div class="card">
+
 4
 
 ### Report & Improve
 
 You get clear monthly reports so you always know your site is secure and performing.
+
+</div>
+
+</div>
 
 See our full [website maintenance process](/website-maintenance-process/) for details.
 
@@ -331,17 +495,33 @@ Updates
 
 Our expert team handles all your WordPress updates safely, so you do not have to.
 
+<div class="cards">
+
+<div class="card">
+
 ### No Lock-in Contracts
 
 Upgrade, downgrade, or cancel your plan anytime.
+
+</div>
+
+<div class="card">
 
 ### Transparent Pricing
 
 Published rates with no hidden fees or surprises.
 
+</div>
+
+<div class="card">
+
 ### Expert Human Team
 
 Real WordPress specialists, not automated bots.
+
+</div>
+
+</div>
 
 ## WordPress Maintenance Packages FAQ
 

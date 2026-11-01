@@ -13,65 +13,129 @@ Website Maintenance Services for Ireland
 
 Ireland’s digital market is competitive, and your website is a key business asset. We ensure your site is secure, optimized, error-free, and always ready to convert visitors into customers.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security Vulnerabilities
 
 Irish websites face rising cybersecurity threats. We protect your site from malware attacks and security breaches.
+
+</div>
+
+<div class="card">
 
 #### Slow Loading Times
 
 Slow speed affects SEO and user experience. We optimize caching and images for fast performance.
 
+</div>
+
+<div class="card">
+
 #### Broken Pages
 
 Broken features lose customers. We monitor and fix layout issues, broken links, and errors instantly.
+
+</div>
+
+<div class="card">
 
 #### Loss of Leads
 
 Unexpected downtime kills revenue. We ensure high availability for your eCommerce or service site.
 
+</div>
+
+<div class="card">
+
 #### GDPR Compliance
 
 We help ensure your website remains secure and compliant with Irish and EU data privacy regulations.
+
+</div>
+
+</div>
 
 ## Our Website Maintenance Services for Ireland
 
 Comprehensive care adapted to your industry needs.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security Protection
 
 Real-time monitoring, firewall, brute-force prevention, and malware cleanup.
+
+</div>
+
+<div class="card">
 
 #### Regular Updates
 
 CMS core, theme, and plugin updates with compatibility testing.
 
+</div>
+
+<div class="card">
+
 #### Speed Optimization
 
 Caching, image compression, code cleanup, and CDN integration.
+
+</div>
+
+<div class="card">
 
 #### eCommerce Maint.
 
 Checkout testing, inventory checks, and order workflow verification.
 
+</div>
+
+<div class="card">
+
 #### Technical Support
 
 Bug fixes, troubleshooting, content updates, and UX adjustments.
+
+</div>
+
+<div class="card">
 
 #### Backup & Restore
 
 Daily/weekly backups, cloud storage for safe-keeping, and one-click restore.
 
+</div>
+
+<div class="card">
+
 #### Monthly Reports
 
 Security status, website performance, tasks completed, and improvements.
+
+</div>
+
+<div class="card">
 
 #### Hosting Support
 
 We manage server-side issues to ensure maximum uptime.
 
+</div>
+
+</div>
+
 ### Packages & Pricing (Ireland)
 
 Transparent, effective maintenance tiers for businesses.
+
+<div class="cards">
+
+<div class="card">
 
 #### Basic Plan
 
@@ -89,6 +153,10 @@ Perfect for small websites and local businesses.
 -   Broken Link Checks
 -   Email Support
 -   Monthly Report
+
+</div>
+
+<div class="card">
 
 POPULAR
 
@@ -111,6 +179,10 @@ Ideal for growing businesses & service websites.
 -   SEO Performance Check
 -   Priority Support
 
+</div>
+
+<div class="card">
+
 #### Premium Plan
 
 For eCommerce, high-traffic & mission-critical sites.
@@ -128,6 +200,14 @@ For eCommerce, high-traffic & mission-critical sites.
 -   **5 Custom Edits**/mo
 -   Backup Every 12 Hours
 -   24/7 Emergency Support
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 ### How Our Process Works
 
@@ -151,6 +231,10 @@ We handle updates, monitoring, optimization, and fixes year-round.
 
 Receive detailed monthly reports and ongoing expert technical support.
 
+</div>
+
+<div class="card">
+
 ### Why Choose Us for Ireland?
 
 -   #### Local Expertise & GDPR
@@ -172,21 +256,36 @@ Receive detailed monthly reports and ongoing expert technical support.
 -   #### Platform Expertise
     
     WordPress, Shopify, WooCommerce, Magento, Laravel & Custom CMS.
-    
+
+</div>
+
+</div>
 
 ### Industries We Serve
 
 eCommerce & Retail Healthcare Law Firms Finance Construction Education Wellness Creative Agencies Automotive Hospitality Corporate Non-profit
 
+<div class="cards">
+
+<div class="card">
+
 #### Provinces & Regions
 
 Leinster, Munster, Connacht, Ulster (Northern part in ROI and NI). We cover businesses in every county, including both urban and rural areas.
+
+</div>
+
+<div class="card">
 
 #### Major Irish Cities
 
 Dublin, Cork, Limerick, Galway, Waterford, Drogheda, Dundalk, Swords, Bray, Navan, Kilkenny, Ennis, Tralee, Athlone, Wexford, Sligo — and many other towns.
 
 [Request a Free Website Health Audit](/free-website-maintenance-audit/)
+
+</div>
+
+</div>
 
 ## 🛎 Ready to Secure & Optimize Your Website?
 

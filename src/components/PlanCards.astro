@@ -1,0 +1,41 @@
+---
+import prices from '../data/prices.json';
+import features from '../data/features.json';
+
+interface Props {
+  toggle?: boolean;
+}
+const { toggle = false } = Astro.props;
+const money = (n: number) => `$${n.toLocaleString('en-US')}`;
+const explain = features.explain as Record<string, string>;
+---
+<div class="plans">
+  {prices.plans.map((p) => {
+    const own = p.includes.filter((f) => !f.startsWith('Everything'));
+    const inherit = p.includes.find((f) => f.startsWith('Everything'));
+    return (
+      <article class:list={['plan', { pop: p.popular }]}>
+        {p.popular && <span class="pop-tag">Most popular</span>}
+        <h3>{p.name}</h3>
+        {toggle ? (
+          <>
+            <div class="price"><span class="m">{money(p.monthly)}<small>/mo</small></span><span class="y">{money(p.annual)}<small>/yr</small></span></div>
+            <p class="annual"><span class="m">or {money(p.annual)}/yr, <b>{prices.annualNote.en}</b></span><span class="y"><b>{prices.annualNote.en}</b></span></p>
+          </>
+        ) : (
+          <>
+            <div class="price">{money(p.monthly)}<small>/mo</small></div>
+            <p class="annual">or {money(p.annual)}/yr, <b>{prices.annualNote.en}</b></p>
+          </>
+        )}
+        <a class:list={['btn', { ghost: !p.popular }]} href={`/get-a-free-quote/#${p.name.toLowerCase()}`}>Start {p.name}</a>
+        {inherit && <p class="small muted" style="margin-top:14px">{inherit}, plus:</p>}
+        <ul class="feat" style={inherit ? 'margin-top:8px' : undefined}>
+          {own.map((f) => (
+            <li><details><summary><span>{f}</span><span class="inc">Included</span></summary><p>{explain[f]}</p></details></li>
+          ))}
+        </ul>
+      </article>
+    );
+  })}
+</div>

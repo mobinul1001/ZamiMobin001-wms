@@ -1,0 +1,110 @@
+---
+// Homepage, CLAIMS-AND-DESIGN.md B2. Every old section stays in the HTML, regrouped under the new order.
+import PlanCards from '../PlanCards.astro';
+import PortfolioBlock from '../PortfolioBlock.astro';
+import ClientWords from '../ClientWords.astro';
+import prices from '../../data/prices.json';
+import { splitBy, take, dropHeading, describeLinks } from '../../lib/html-sections';
+
+const { entry } = Astro.props;
+const { intro, sections } = splitBy(describeLinks(entry.rendered?.html ?? ''), 2);
+const included = [take(sections, /^Everything We Take Care Of/), take(sections, /^What.s Included in Professional/)].filter(Boolean);
+const started = take(sections, /^How Do I Get Started/);
+const faq = take(sections, /^FAQs? About Website Maintenance/);
+const finalCta = take(sections, /^Let.s Keep Your Website/);
+const faqExtras = faq ? splitBy(faq.html, 3).sections.map((s) => s.html).join('') : '';
+const money = (n: number) => `$${n.toLocaleString('en-US')}`;
+const tiles = [
+  ['Updates', 'WordPress, plugins and themes kept current.'],
+  ['Backups', 'Regular copies of your site, stored safely.'],
+  ['Security', 'Scans for malware and known weak spots.'],
+  ['Uptime monitoring', 'We are alerted when your site goes down.'],
+  ['Speed', 'Images, caching and code tuned for faster pages.'],
+  ['Edits and support', 'Small changes each month, from a real person.'],
+];
+const low = prices.plans[0].monthly;
+const high = prices.plans[2].monthly;
+---
+<section class="hero"><div class="wrap">
+  <div>
+    <h1>{entry.data.h1}</h1>
+    <p class="sub">Your site kept fast, secure and up to date, by engineers who show you what they did.</p>
+    <p class="price-line">Plans from {money(low)}/mo · No contract</p>
+    <div class="cta-row"><a class="btn" href="/monthly-website-maintenance-packages/">See plans &amp; pricing</a><a href="/free-website-maintenance-audit/">Get a free website check</a></div>
+  </div>
+  <aside class="panel" aria-label="Example status panel">
+    <div class="panel-head"><span>yourwebsite.com</span><span class="tag">Example</span></div>
+    <div class="status"><span>Plugins and theme updated</span><span class="ok">Updated</span></div>
+    <div class="status"><span>Backup finished</span><span class="ok">Backed up</span></div>
+    <div class="status"><span>Malware scan</span><span class="ok">Clean</span></div>
+    <div class="status"><span>Site status</span><span class="ok">Up</span></div>
+  </aside>
+</div></section>
+<div class="facts"><div class="wrap"><span>Dhaka-based team</span><span>US &amp; UK hours</span><span>30+ websites maintained</span></div></div>
+
+<section class="band"><div class="wrap">
+  <div class="head"><h2>What's included</h2><p>The routine work a website needs, done for you each month.</p></div>
+  <div class="grid g3">{tiles.map(([t, d]) => <div class="tile"><h3>{t}</h3><p>{d}</p></div>)}</div>
+  <div style="margin-top:20px">
+    {included.map((s) => <details class="more"><summary><h2 class="more-h">{s!.title}</h2></summary><div class="prose" set:html={dropHeading(s!.html)} /></details>)}
+  </div>
+</div></section>
+
+<section class="band tint"><div class="wrap">
+  <div class="head"><h2>Plans and pricing</h2><p>Every price is on this page. Select any feature to see what it means.</p></div>
+  <PlanCards />
+  <p class="promise">No contract. Cancel anytime. <a href="/monthly-website-maintenance-packages/">Compare all features</a></p>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="head"><h2>How it works</h2></div>
+  <div class="grid g3">
+    <div class="tile"><div class="step-n">Step 1</div><h3>Free check</h3><p>Send your URL. We look at your site and tell you what needs attention.</p></div>
+    <div class="tile"><div class="step-n">Step 2</div><h3>Pick a plan</h3><p>Choose a plan. We talk through it on a short call and set you up.</p></div>
+    <div class="tile"><div class="step-n">Step 3</div><h3>We take care of it</h3><p>We do the work every month and send you a plain report.</p></div>
+  </div>
+  {started && <div style="margin-top:20px"><details class="more"><summary><h2 class="more-h">{started.title}</h2></summary><div class="prose" set:html={dropHeading(started.html)} /></details></div>}
+</div></section>
+
+<section class="band tint"><div class="wrap">
+  <div class="head"><h2>What a monthly report looks like</h2><p>An example of the numbers you would see. It is not real client data.</p></div>
+  <div class="panel" style="padding:16px">
+    <div class="panel-head" style="padding:0 0 12px;border:0"><span>Monthly report, yourwebsite.com</span><span class="tag">Example</span></div>
+    <div class="cards">
+      <div class="metric"><span>Updates applied</span><b>14</b></div>
+      <div class="metric"><span>Backups completed</span><b>30</b></div>
+      <div class="metric"><span>Malware found</span><b>0</b></div>
+      <div class="metric"><span>Edit time used</span><b>1h 40m</b></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <p class="muted" style="margin-bottom:8px">30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.</p>
+  <PortfolioBlock />
+  <ClientWords />
+  <div class="head" style="margin-top:24px"><h2>How we compare</h2></div>
+  <div class="table-box"><table>
+    <thead><tr><th><span class="sr-only">Compare</span></th><th class="us">WMS</th><th>Freelancer</th><th>Typical agency</th></tr></thead>
+    <tbody>
+      <tr><td>Price per month</td><td class="us">{money(low)}–{money(high)}</td><td>$50–$150</td><td>$95–$500+</td></tr>
+      <tr><td>Contract</td><td class="us">None. Cancel anytime.</td><td>Varies</td><td>Varies</td></tr>
+      <tr><td>Monthly report</td><td class="us">Growth and Business</td><td>Varies</td><td>Varies</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section class="band tint"><div class="wrap home-section">
+  <div class="prose" set:html={intro} />
+  {sections.map((s) => <div class:list={['prose', { badges: /^Trusted & Rated/.test(s.title) }]} style="margin-top:36px" set:html={s.html} />)}
+</div></section>
+
+<section class="band"><div class="wrap" style="max-width:820px">
+  <div class="head"><h2>{faq?.title}</h2></div>
+  <div class="faq">
+    {entry.data.faqs?.map((f: { q: string; a: string }) => <details><summary>{f.q}</summary><p>{f.a}</p></details>)}
+  </div>
+  {faqExtras && <div class="prose" style="margin-top:28px" set:html={faqExtras} />}
+</div></section>
+
+{finalCta && <section class="band tint cta-final"><div class="wrap" style="max-width:720px"><div class="prose" set:html={finalCta.html} /></div></section>}

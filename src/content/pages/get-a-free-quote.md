@@ -25,47 +25,115 @@ Please fill out the form below, and our team will get back to you within 24 hour
 
 ## Why Request a Quote?
 
+<div class="cards">
+
+<div class="card">
+
 ### 100% Free & No Obligation
 
 You only get real numbers, customized for your website’s size, platform, and requirements.
+
+</div>
+
+<div class="card">
 
 ### Tailored to Your Website
 
 Every website is different. Get a quote based on your CMS, traffic, level of maintenance, and goals.
 
+</div>
+
+<div class="card">
+
 ### Transparent Pricing
 
 We break down tasks, timelines, and deliverables so you know exactly what you're paying for.
+
+</div>
+
+<div class="card">
 
 ### Fast Response
 
 Our team reviews your request immediately and replies within 24 hours or less.
 
+</div>
+
+</div>
+
 ## What We Can Help You With
 
 Our maintenance quotes cover all types of services, including:
 
+<div class="cards">
+
+<div class="card">
+
 Website Updates & Technical Fixes
+
+</div>
+
+<div class="card">
 
 CMS & Plugin Updates
 
+</div>
+
+<div class="card">
+
 Speed Optimization
+
+</div>
+
+<div class="card">
 
 Security Monitoring & Malware Removal
 
+</div>
+
+<div class="card">
+
 Uptime Monitoring
+
+</div>
+
+<div class="card">
 
 Regular Backups
 
+</div>
+
+<div class="card">
+
 Bug Fixing
+
+</div>
+
+<div class="card">
 
 Performance Improvements
 
+</div>
+
+<div class="card">
+
 Content Updates
+
+</div>
+
+<div class="card">
 
 Hosting Assistance
 
+</div>
+
+<div class="card">
+
 Emergency Support
+
+</div>
+
+</div>
 
 If your website needs something specific—just mention it. We customize all plans.
 

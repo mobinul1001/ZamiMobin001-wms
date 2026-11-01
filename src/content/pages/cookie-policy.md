@@ -27,12 +27,20 @@ Cookies can be **session-based** (deleted when you close your browser) or **pers
 
 We use the following types of cookies on our website:
 
+<div class="cards">
+
+<div class="card">
+
 ### a) Necessary Cookies
 
 These cookies are essential for the website to function properly.
 
 -   Enable core functionality (forms, security)
 -   Cannot be disabled
+
+</div>
+
+<div class="card">
 
 ### b) Performance & Analytics
 
@@ -41,6 +49,10 @@ Help us understand how visitors interact with the website.
 -   Track pages visited & time spent
 -   Improve performance & UX
 
+</div>
+
+<div class="card">
+
 ### c) Functionality Cookies
 
 These cookies remember your preferences and settings.
@@ -48,12 +60,20 @@ These cookies remember your preferences and settings.
 -   Language preferences
 -   Form entries & display options
 
+</div>
+
+<div class="card">
+
 ### d) Marketing & Third-Party
 
 Used by trusted third-party services for marketing.
 
 -   Track visits for ad campaigns
 -   Enable retargeting (e.g., Google Ads)
+
+</div>
+
+</div>
 
 ## 3 Third-Party Cookies
 
@@ -89,4 +109,18 @@ We may update this Cookie Policy from time to time to reflect changes in technol
 
 If you have questions about our Cookie Policy or how we use cookies, please contact us:
 
-[Website websitemaintenanceservices.org](/)[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+<div class="cards">
+
+<div class="card">
+
+[Website websitemaintenanceservices.org](/)
+
+</div>
+
+<div class="card">
+
+[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+
+</div>
+
+</div>

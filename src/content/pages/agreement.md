@@ -21,7 +21,51 @@ A clear website maintenance agreement protects both you and your provider. This 
 
 ## On this page
 
-[What is a maintenance agreement?](#what) [Why you need one](#why) [What to include (clauses)](#include) [Agreement template](#template) [Agreement vs contract vs terms](#vs) [Quotes & invoicing](#invoice) [FAQ](#faq)
+<div class="cards">
+
+<div class="card">
+
+[What is a maintenance agreement?](#what)
+
+</div>
+
+<div class="card">
+
+[Why you need one](#why)
+
+</div>
+
+<div class="card">
+
+[What to include (clauses)](#include)
+
+</div>
+
+<div class="card">
+
+[Agreement template](#template)
+
+</div>
+
+<div class="card">
+
+[Agreement vs contract vs terms](#vs)
+
+</div>
+
+<div class="card">
+
+[Quotes & invoicing](#invoice)
+
+</div>
+
+<div class="card">
+
+[FAQ](#faq)
+
+</div>
+
+</div>
 
 <a id="what"></a>
 
@@ -37,29 +81,57 @@ For WordPress sites, a **WordPress website maintenance agreement** works the sam
 
 A written agreement protects everyone and keeps the relationship smooth and professional.
 
+<div class="cards">
+
+<div class="card">
+
 ### Clear Scope
 
 Everyone knows exactly what is and isn't included, so there is no confusion about deliverables.
+
+</div>
+
+<div class="card">
 
 ### Transparent Pricing
 
 Costs, billing cycles, and what triggers extra charges are agreed up front — no surprise bills.
 
+</div>
+
+<div class="card">
+
 ### Defined Response Times
 
 Guaranteed support and turnaround times mean you know help arrives when you need it.
+
+</div>
+
+<div class="card">
 
 ### Accountability
 
 Responsibilities for backups, security, and uptime are documented, so nothing falls through the cracks.
 
+</div>
+
+<div class="card">
+
 ### Protection & Privacy
 
 Confidentiality and data-handling clauses keep your logins, content, and customer data safe.
 
+</div>
+
+<div class="card">
+
 ### Easy Exit
 
 Clear term and cancellation terms mean you are never trapped — you can change or leave on agreed notice.
+
+</div>
+
+</div>
 
 <a id="include"></a>
 
@@ -126,17 +198,33 @@ A **website support contract** is simply a maintenance agreement focused on ongo
 
 A good agreement makes billing simple and predictable.
 
+<div class="cards">
+
+<div class="card">
+
 ### Clear quotation
 
 You get a transparent website maintenance quotation up front, so you know the exact price before you sign.
+
+</div>
+
+<div class="card">
 
 ### Simple invoicing
 
 Predictable monthly or annual invoices, with everything itemized — no hidden or surprise charges.
 
+</div>
+
+<div class="card">
+
 ### Flexible billing
 
 Pay monthly or save with annual billing, and scale your plan up or down as your needs change.
+
+</div>
+
+</div>
 
 See exact pricing on our [plans, packages and costs](/monthly-website-maintenance-packages/) page, or the [website maintenance cost guide](/how-much-does-website-maintenance-cost/).
 
@@ -164,7 +252,45 @@ Common questions about website maintenance agreements and contracts.
 
 ## Related Guides & Packages
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [Plans, Packages & CostsCompare every plan](/monthly-website-maintenance-packages/) [Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/) [WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/) [Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+<div class="cards">
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[Plans, Packages & CostsCompare every plan](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+
+</div>
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+
+</div>
+
+</div>
 
 ## Get a Clear, Fair Maintenance Agreement
 

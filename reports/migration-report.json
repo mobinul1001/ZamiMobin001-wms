@@ -2,7 +2,7 @@
   "migrated": 92,
   "posts": 48,
   "pages": 44,
-  "linksRewritten": 377,
+  "linksRewritten": 374,
   "planLinksToHash": 28,
   "unknownLinks": [],
   "unlinked404Targets": {
@@ -955,6 +955,18 @@
       "path": "/importance-of-website-maintenance/",
       "change": "schema synced",
       "question": "Is website maintenance worth the cost?"
+    },
+    {
+      "path": "/monthly-website-maintenance-packages/",
+      "change": "price",
+      "from": "Our plans start at $95 per month for basic maintenance and go up to $395 per month for advanced, mission-critical website care.",
+      "to": "Our plans start at $79 per month for basic maintenance and go up to $299 per month for advanced, mission-critical website care."
+    },
+    {
+      "path": "/monthly-website-maintenance-packages/",
+      "change": "price",
+      "from": "benefit from advanced or elevate plans",
+      "to": "benefit from Growth or Business plans"
     },
     {
       "path": "/nonprofit-website-maintenance/",

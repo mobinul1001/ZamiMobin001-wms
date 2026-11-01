@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"What Is Website Repair, Exactly?","a":"Website repair is the process of diagnosing and fixing technical faults that stop a website from working correctly — whether that's a page that won't load, a design that's collapsed, a form that silently fails, or a full site that's gone offline. It's distinct from a redesign (which changes how a site looks) and from routine maintenance (which prevents problems before they happen)."},{"q":"How to fix a broken website?","a":"Broken website recovery starts with an immediate backup of current files and database, followed by diagnostic server log analysis, PHP error isolation, and systematic rollback in a staging environment."},{"q":"What causes a white screen of death?","a":"Most commonly a PHP fatal error, memory limit issue, or plugin/theme conflict — we diagnose the exact cause before fixing it."},{"q":"How to fix a 500 Internal Server Error on WordPress?","a":"A 500 error indicates corrupted .htaccess files, memory limit spikes, or plugin conflicts. Isolate the issue in a staging environment before modifying server configuration."},{"q":"How do I fix broken 404 links on my website?","a":"Fixing 404 errors involves checking permalink structure, setting up proper 301 redirects for changed URLs, and restoring missing page templates or database entries."},{"q":"How to resolve WordPress plugin conflicts?","a":"Plugin conflicts are diagnosed by systematically testing active plugins in a staging environment, reviewing error changelogs, and applying permanent code fixes."},{"q":"Why is my website contact form not sending emails?","a":"Contact form failures are typically caused by server mail function blocks, broken SMTP settings, or plugin conflict. Testing SMTP routing and form plugins ensures delivery."},{"q":"Why is my WooCommerce checkout not working?","a":"WooCommerce checkout errors occur due to payment gateway API mismatches, cart plugin conflicts, or SSL issues. Staging testing verifies order transactions prior to live sync."},{"q":"How to repair a hacked website or malware infection?","a":"Hacked website recovery requires containing the infection, clearing malicious files and database injections, patching entry point vulnerabilities, and removing backdoor scripts."},{"q":"What's the difference between repair and maintenance?","a":"Repair fixes something that's already broken; maintenance prevents problems before they happen. Many clients start with a repair, then move to ongoing maintenance."},{"q":"What's the difference between repair and redesign?","a":"Repair restores existing functionality; redesign changes how the site looks or is structured. If something that worked has stopped working, that's a repair."},{"q":"How fast is emergency website repair vs scheduled repair?","a":"Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations. Scheduled standard repairs average 24 to 48 hours."},{"q":"How much does website repair cost?","a":"Most repairs range from $99–$899 depending on complexity, with a free diagnostic before any charge is confirmed."},{"q":"How fast can you fix my website?","a":"Standard repairs average 24 hours; emergencies are typically responded to within 60 minutes."},{"q":"Do I need someone local to fix my website?","a":"No — website repair is a remote service by nature. We work with clients across the USA, UK, Canada, and Australia without any need for an in-person visit."},{"q":"Will you lose my data during the repair?","a":"No. Every repair begins with a full backup before any change is made."},{"q":"Can you fix a hacked website?","a":"Yes — malware removal, backdoor closure, and blocklist/warning removal are part of our hacked website recovery service."},{"q":"Do you work with WordPress specifically?","a":"Yes, WordPress repair — plugin conflicts, theme errors, database issues — is one of our most common request types."},{"q":"Can you fix Shopify, Wix, or Webflow sites too?","a":"Yes, our team repairs issues across all major platforms, not just WordPress."},{"q":"What's the difference between repair and maintenance?","a":"Repair fixes something that's already broken; maintenance prevents problems before they happen. Many clients start with a repair, then move to ongoing maintenance."},{"q":"What's the difference between repair and redesign?","a":"Repair restores existing functionality; redesign changes how the site looks or is structured. If something that worked has stopped working, that's a repair."},{"q":"Will fixing my website affect my SEO rankings?","a":"No — we specifically check redirects, meta data, and indexing status after every repair to prevent SEO damage."},{"q":"What if the problem comes back after you fix it?","a":"If it's related to the original issue, we fix it again at no charge."},{"q":"Do you offer emergency website repair?","a":"Yes, with an average response time under 60 minutes for site-down and checkout-down situations."},{"q":"Can you fix a broken contact form?","a":"Yes — we test the full delivery chain from form submission to inbox to confirm it's actually resolved."},{"q":"My checkout isn't processing payments — can you help?","a":"Yes, checkout repair is treated as priority/emergency work given its direct revenue impact."},{"q":"What causes a white screen of death?","a":"Most commonly a PHP fatal error, memory limit issue, or plugin/theme conflict — we diagnose the exact cause before fixing it."},{"q":"Can you fix a 500 internal server error?","a":"Yes — usually caused by a corrupted .htaccess file, plugin conflict, or server resource limit."},{"q":"Do you provide a written report after the repair?","a":"Yes, every repair includes a plain-language summary of what broke, why, and what was done to fix it."},{"q":"Can you repair a website without redesigning it?","a":"Yes — repair is scoped specifically to restoring function, not changing your design, unless you request otherwise."},{"q":"How do I know if I need a repair or a full rebuild?","a":"If most of the site works and one thing is broken, it's a repair. If the underlying platform is outdated or unsupported, a rebuild may be more cost-effective — we'll tell you honestly which applies."},{"q":"Do you offer ongoing support after the repair is complete?","a":"Yes, many clients move into a website maintenance plan after their initial repair to prevent future issues."},{"q":"Can you fix issues caused by a bad plugin update?","a":"Yes — plugin conflict resolution is one of our most frequent repair types."},{"q":"Is my industry supported (healthcare, legal, nonprofit, etc.)?","a":"Yes — we work across small business, eCommerce, SaaS, corporate, healthcare, legal, nonprofit, and agency sites. Topical Authority Silo"}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Website Repair • USA • UK • CA • AU
 
 From a white screen of death to a checkout that won't process orders, our engineers diagnose and repair broken websites without losing your data, rankings, or design. Most issues are fixed within 24 hours.
@@ -16,6 +20,10 @@ From a white screen of death to a checkout that won't process orders, our engine
 [Get My Website Fixed Today](/get-a-free-quote/) [Free Website Diagnostic](/get-a-free-quote/)
 
 No fix, no fee on diagnostics • Avg response: under 60 mins •
+
+</div>
+
+<div class="card">
 
 emergency-repair-engine.v2
 
@@ -33,6 +41,10 @@ Zero Data & SEO Loss Safety Pre-Repair Backup Enforced
 
 Data Safe
 
+</div>
+
+</div>
+
 If we can't clean your hacked site, you don't pay.
 
 24-Hour Avg Turnaround
@@ -45,23 +57,47 @@ Tracked Internal Metrics
 
 ## Real Numbers From Real Website Repairs
 
+<div class="cards">
+
+<div class="card">
+
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+
+</div>
+
+<div class="card">
 
 98.4%
 
 First-time fix rate — no repeat visits needed
 
+</div>
+
+<div class="card">
+
 24 hrs
 
 Average turnaround for standard repairs
+
+</div>
+
+<div class="card">
 
 45 min
 
 Average emergency response time
 
+</div>
+
+<div class="card">
+
 0
 
 Sites where we caused data loss
+
+</div>
+
+</div>
 
 Root-Cause Diagnosis & Repair
 
@@ -77,25 +113,49 @@ Prevent future breaks with our ongoing care options:
 
 [Website Maintenance](/monthly-website-maintenance-packages/) • [WordPress Maintenance](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp) • [Website Backup](/wordpress-backup-services/)
 
+<div class="cards">
+
+<div class="card">
+
 #### Full Diagnostic Audit
 
 Before any changes are made
+
+</div>
+
+<div class="card">
 
 #### Pre-Repair Cloud Backup
 
 Before we touch anything
 
+</div>
+
+<div class="card">
+
 #### Root-Cause Fixing
 
 Not a temporary band-aid patch
+
+</div>
+
+<div class="card">
 
 #### Cross-Device & Browser QA
 
 Post-repair testing
 
+</div>
+
+<div class="card">
+
 #### Written Incident Summary
 
 What broke, why, & the fix
+
+</div>
+
+</div>
 
 Top-of-Funnel Definition
 
@@ -137,53 +197,105 @@ Self-Diagnostic Checklist
 
 Most broken websites don't fail all at once — they show warning signs first. If you're seeing any of the following, it's time to get a diagnostic before the problem gets worse or starts costing you customers.
 
+<div class="cards">
+
+<div class="card">
+
 Sign 01
 
 ### Pages take more than 3 seconds to load
+
+</div>
+
+<div class="card">
 
 Sign 02
 
 ### Forms submit but you never receive the message
 
+</div>
+
+<div class="card">
+
 Sign 03
 
 ### Checkout fails or hangs on payment
+
+</div>
+
+<div class="card">
 
 Sign 04
 
 ### Images or icons are missing across the site
 
+</div>
+
+<div class="card">
+
 Sign 05
 
 ### Layout looks broken on mobile but fine on desktop
+
+</div>
+
+<div class="card">
 
 Sign 06
 
 ### You see a white screen instead of your homepage
 
+</div>
+
+<div class="card">
+
 Sign 07
 
 ### Google Search Console is flagging new errors
+
+</div>
+
+<div class="card">
 
 Sign 08
 
 ### Your hosting provider has warned you about malware
 
+</div>
+
+<div class="card">
+
 Sign 09
 
 ### The site was working yesterday and isn't today
+
+</div>
+
+<div class="card">
 
 Sign 10
 
 ### A recent plugin or theme update caused a crash
 
+</div>
+
+<div class="card">
+
 Sign 11
 
 ### Traffic has dropped sharply with no content changes
 
+</div>
+
+<div class="card">
+
 Sign 12
 
 ### Browser or antivirus is flagging site as unsafe
+
+</div>
+
+</div>
 
 Seeing two or more of these? [Get a free diagnostic](/get-a-free-quote/) before it turns into an emergency.
 
@@ -293,6 +405,10 @@ Documented 5-Step System
 
 We follow the same documented troubleshooting process on every website — no improvising, no cutting corners.
 
+<div class="cards">
+
+<div class="card">
+
 1
 
 Root-Cause Isolation
@@ -302,6 +418,10 @@ Root-Cause Isolation
 We review your site's errors, logs, hosting environment, and recent change history to identify the actual root cause, not just the visible symptom.
 
 ✓ Free Initial Diagnosis
+
+</div>
+
+<div class="card">
 
 2
 
@@ -313,6 +433,10 @@ Before any change is made, we take a full backup and — where possible — repl
 
 ✓ Full Off-Site Backup Enforced
 
+</div>
+
+<div class="card">
+
 3
 
 Cross-Device QA
@@ -322,6 +446,10 @@ Cross-Device QA
 We apply the fix, then test it across browsers, devices, and user flows to confirm the issue is fully resolved, not just hidden under a quick workaround.
 
 ✓ Multi-Browser Verification
+
+</div>
+
+<div class="card">
 
 4
 
@@ -333,9 +461,17 @@ You receive a clear, plain-language summary: what broke, why it broke, and exact
 
 ✓ Plain-English Explanation
 
+</div>
+
+<div class="card">
+
 5
 
 If anything related to the original issue resurfaces within 30 days, we fix it again at no extra charge. We stand behind our engineering work.
+
+</div>
+
+</div>
 
 Core Engineering Advantages
 
@@ -343,13 +479,25 @@ Core Engineering Advantages
 
 We're more than a quick-fix service — we're your technical partner in keeping your website online, secure, and revenue-ready.
 
+<div class="cards">
+
+<div class="card">
+
 ### We Find the Cause, Not Just the Symptom
 
 Most repair services patch what's visible. We trace every fix back to its root cause so the same problem doesn't return next month.
 
 ✓ Permanent Code & Database Fixes
 
+</div>
+
+<div class="card">
+
 ### We Never Touch Your Site Without a Backup
+
+</div>
+
+<div class="card">
 
 ### We Explain What Happened in Plain English
 
@@ -357,19 +505,35 @@ You'll get a written summary of the issue and the fix, not a confusing technical
 
 ✓ Transparent Incident Summaries
 
+</div>
+
+<div class="card">
+
 ### We Work Across Every Major Platform
 
 WordPress, Shopify, Wix, Webflow, and custom-coded sites — one dedicated team, one proven process, consistent quality.
 
 ✓ Full Stack CMS & Custom Code Support
 
+</div>
+
+<div class="card">
+
 If anything related to the original issue resurfaces, we fix it again at zero extra cost.
+
+</div>
+
+<div class="card">
 
 ### We Respond Fast, Especially in Emergencies
 
 Average response time under 60 minutes for emergency site-down requests, and 24-hour average turnaround for standard repairs.
 
 ✓ &lt;60 Min Emergency Response
+
+</div>
+
+</div>
 
 See our real-world [case studies](#case-studies) and verified [client testimonials](#testimonials).
 
@@ -379,51 +543,99 @@ Segmented Industry Solutions
 
 Whether you run an e-commerce store, a law firm, a healthcare clinic, or a digital agency, we tailor our repair process to your platform's specific needs:
 
+<div class="cards">
+
+<div class="card">
+
 ### Small Businesses
 
 Fast, affordable technical fixes that don't require hiring an expensive in-house developer.
+
+</div>
+
+<div class="card">
 
 ### eCommerce Stores
 
 Priority checkout and cart repair, because every hour of downtime is directly lost revenue.
 
+</div>
+
+<div class="card">
+
 ### WordPress Sites
 
 Deep platform expertise across Elementor, Divi, custom themes, plugins, and page builders.
+
+</div>
+
+<div class="card">
 
 ### SaaS Companies
 
 Careful handling of app integrations, APIs, webhooks, and user-facing marketing funnels.
 
+</div>
+
+<div class="card">
+
 ### Corporate Websites
 
 Discreet, professional repair with change documentation that protects brand reputation.
+
+</div>
+
+<div class="card">
 
 ### Digital Agencies
 
 White-label repair support so you can focus on client relationships, not backend firefighting.
 
+</div>
+
+<div class="card">
+
 ### Healthcare Sites
 
 Technical repair work that respects compliance, patient form security, and data sensitivity.
+
+</div>
+
+<div class="card">
 
 ### Law Firms
 
 Fast turnaround for legal practices where downtime or form breaks directly damage client trust.
 
+</div>
+
+<div class="card">
+
 ### Nonprofits
 
 Budget-conscious repair plans that keep mission-critical donation forms and sites online.
 
+</div>
+
+<div class="card">
+
 ### Any Broken Site
 
 If it's online and it's broken, our engineering team can very likely fix it for you.
+
+</div>
+
+</div>
 
 Core Deliverable Value
 
 ## What You Get From Professional Website Repair
 
 Beyond just making a broken page work again, our engineering approach protects your site's data, SEO rankings, and long-term stability:
+
+<div class="cards">
+
+<div class="card">
 
 Time Saved
 
@@ -433,9 +645,17 @@ Stop spending hours guessing which plugin caused a conflict. Our engineers trace
 
 ✓ Immediate Expert Diagnosis
 
+</div>
+
+<div class="card">
+
 We never touch your site without taking a full off-site backup of your files and database first. If anything unexpected happens, your site can be restored in minutes.
 
 ✓ Pre-Repair Backup Enforced
+
+</div>
+
+<div class="card">
 
 Brand Safety
 
@@ -445,6 +665,10 @@ A bad repair can wipe custom CSS, reset theme options, or break mobile layouts. 
 
 ✓ Visual Integrity Preserved
 
+</div>
+
+<div class="card">
+
 SEO Protection
 
 ### No SEO Damage — Rankings & Redirects Checked
@@ -453,9 +677,17 @@ Downtime and 404 errors hurt Google rankings. Post-repair, we verify permalinks,
 
 ✓ Search Ranking Audit Included
 
+</div>
+
+<div class="card">
+
 30-Day Protection
 
 If anything related to the original issue resurfaces within 30 days, we fix it again immediately at zero extra charge.
+
+</div>
+
+<div class="card">
 
 Long-Term Stability
 
@@ -465,6 +697,10 @@ We don't just clear error messages — we fix the underlying code, database, or 
 
 ✓ Permanent Code & Server Isolation
 
+</div>
+
+<div class="card">
+
 Full Transparency
 
 ### Clear Communication at Every Stage of the Repair
@@ -472,6 +708,10 @@ Full Transparency
 No confusing jargon. You'll receive clear updates when we begin, when the fix is deployed, and a plain-English written report detailing what broke, why, and what was done to fix it.
 
 ✓ Plain-English Incident Report Included
+
+</div>
+
+</div>
 
 Complete Deliverable Scope
 
@@ -614,6 +854,10 @@ Transparent Scoped Quotes
 
 Every website's problem is different, so every quote is scoped to the actual issue — never a one-size-fits-all number. Below are typical ranges based on the repairs we complete most often:
 
+<div class="cards">
+
+<div class="card">
+
 Single Issue
 
 ### Small Website Repair
@@ -623,6 +867,10 @@ $99 – $249
 **Best For:** Single-issue fixes: broken contact form, layout bug, missing image, or minor CSS error.
 
 [Request Diagnostic](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 WordPress Focus
 
@@ -634,6 +882,10 @@ $149 – $499
 
 [Request Diagnostic](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Multi-Page Issues
 
 ### Business Website Repair
@@ -643,6 +895,10 @@ $250 – $699
 **Best For:** Multi-page layout issues, complex plugin/theme conflicts, and moderate functionality repairs.
 
 [Request Diagnostic](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 ⚡ Priority Response
 
@@ -656,6 +912,10 @@ $299 – $899
 
 [Priority Fix Request](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Enterprise Scope
 
 ### Custom Enterprise
@@ -665,6 +925,10 @@ Custom Quote
 **Best For:** Complex API integrations, high-traffic portals, and multi-system enterprise failures.
 
 [Contact Engineering](/get-a-free-quote/)
+
+</div>
+
+</div>
 
 No hidden fees, no charge for the initial diagnosis.
 
@@ -678,6 +942,10 @@ Read how our diagnostic engineering restored critical functionality for online s
 
 Swipe left/right to view all repair stories
 
+<div class="cards">
+
+<div class="card">
+
 eCommerce Store ● 6-Hour Recovery
 
 ### eCommerce Checkout Recovery
@@ -689,6 +957,10 @@ An online store's checkout began failing silently after a plugin update, with no
 **Result:** Checkout restored same-day, zero further incidents in the following 90 days.
 
 Verified 40+ Test Checkout Transactions
+
+</div>
+
+<div class="card">
 
 Corporate Site ● Security Cleanup
 
@@ -702,6 +974,10 @@ A corporate website was flagged by Google as "This site may be hacked." We remov
 
 Google Search Warning Removed
 
+</div>
+
+<div class="card">
+
 High-Traffic Blog ● 4-Hour Restore
 
 ### White Screen of Death (WSOD)
@@ -713,6 +989,10 @@ A content site went completely blank after a theme update. We diagnosed a PHP me
 **Result:** Site restored within 4 hours, zero content lost.
 
 Zero Content Lost During Memory Fix
+
+</div>
+
+</div>
 
 <a id="testimonials"></a>
 
@@ -848,45 +1128,89 @@ Emergency website repair offers an average response time under 60 minutes for si
 
 Explore our full suite of proactive website care, security, backup, speed, and emergency recovery solutions:
 
+<div class="cards">
+
+<div class="card">
+
 ### [Website Maintenance](/monthly-website-maintenance-packages/)
 
 [Ongoing care that prevents most repair needs before they start.](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
 
 ### [WordPress Maintenance](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
 
 [Managed updates, backups, and monitoring for WordPress sites.](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
 
+</div>
+
+<div class="card">
+
 ### [Website Security](/wordpress-malware-removal-service/)
 
 [Hardening, firewalls, and vulnerability protection.](/wordpress-malware-removal-service/)
+
+</div>
+
+<div class="card">
 
 ### [Malware Removal](/wordpress-malware-removal-service/)
 
 [Dedicated malware detection and removal service.](/wordpress-malware-removal-service/)
 
+</div>
+
+<div class="card">
+
 ### [Website Backup](/wordpress-backup-services/)
 
 [Automated, tested cloud backup solutions.](/wordpress-backup-services/)
+
+</div>
+
+<div class="card">
 
 ### [Website Monitoring](/monthly-website-maintenance-packages/)
 
 [24/7 uptime and error monitoring.](/monthly-website-maintenance-packages/)
 
+</div>
+
+<div class="card">
+
 ### [Website Speed Optimization](/website-speed-optimization-services/)
 
 [Dedicated performance tuning beyond emergency repair.](/website-speed-optimization-services/)
+
+</div>
+
+<div class="card">
 
 ### [Website Support](/website-support-services/)
 
 [Ongoing technical support plans.](/website-support-services/)
 
+</div>
+
+<div class="card">
+
 ### [Emergency Website Recovery](/website-repair-services/)
 
 [Our fastest-response service tier.](/website-repair-services/)
 
+</div>
+
+<div class="card">
+
 ### [Website Updates](/website-update-services/)
 
 [Safe, tested plugin, theme, and core updates.](/website-update-services/)
+
+</div>
+
+</div>
 
 Fix What's Broken Today
 

@@ -21,12 +21,41 @@ If you do not agree to these terms, you should not use our website or services.
 
 Website Maintenance Services provides professional website maintenance, updates, optimization, and security services. Services may include, but are not limited to:
 
--   Regular updates & maintenance
--   Security monitoring & malware removal
--   Speed optimization
--   Bug fixing & troubleshooting
--   Backup & recovery solutions
--   Custom support & consultation
+<div class="card">
+
+Regular updates & maintenance
+
+</div>
+
+<div class="card">
+
+Security monitoring & malware removal
+
+</div>
+
+<div class="card">
+
+Speed optimization
+
+</div>
+
+<div class="card">
+
+Bug fixing & troubleshooting
+
+</div>
+
+<div class="card">
+
+Backup & recovery solutions
+
+</div>
+
+<div class="card">
+
+Custom support & consultation
+
+</div>
 
 All services are subject to the scope and pricing agreed upon in your service contract or quote.
 
@@ -86,4 +115,18 @@ We may update these Terms & Conditions at any time without prior notice. Updated
 
 If you have questions about these Terms & Conditions, please contact us:
 
-[Website websitemaintenanceservices.org](/)[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+<div class="cards">
+
+<div class="card">
+
+[Website websitemaintenanceservices.org](/)
+
+</div>
+
+<div class="card">
+
+[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+
+</div>
+
+</div>

@@ -1,6 +1,9 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import Home from '../components/templates/Home.astro';
+import Pricing from '../components/templates/Pricing.astro';
+import Generic from '../components/templates/Generic.astro';
 
 export async function getStaticPaths() {
   const entries = [...(await getCollection('pages')), ...(await getCollection('blog'))];
@@ -11,10 +14,9 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await render(entry);
-const { title, description, robots, social, schema, h1, lang } = entry.data;
+const { title, description, robots, social, schema, lang, path } = entry.data;
+const Template = path === '/' ? Home : path === '/monthly-website-maintenance-packages/' ? Pricing : Generic;
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang}>
-  <h1>{h1}</h1>
-  <Content />
+  <Template entry={entry} />
 </Base>

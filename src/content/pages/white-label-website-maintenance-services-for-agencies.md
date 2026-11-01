@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"What is white label website maintenance?","a":"White label website maintenance is an outsourced B2B reseller service where our technical team manages, updates, and secures your clients' websites under your agency's brand name. All client communication and monthly reports carry your logo, keeping our backend team completely invisible."},{"q":"How does white label WordPress maintenance work for agencies?","a":"You onboard your client sites to our agency portal. Our engineers execute 24/7 security scans, daily backups, staging-first updates, and small edits. You receive unbranded PDF reports each month that you forward directly to your clients."},{"q":"Will my clients know you're maintaining their site?","a":"No. We operate white label. We never contact your clients directly unless requested. All email ticket responses, plugin branding, and reporting dashboards display your agency's name, logo, and brand colors."},{"q":"What's included in a white label website maintenance plan?","a":"Plans include core, theme, and plugin updates, 24/7 security WAF firewalls, daily offsite backups, PageSpeed tuning, unlimited small edits, and unbranded monthly client reports. Explore our full WordPress maintenance plans."},{"q":"Do you offer white label WordPress maintenance specifically?","a":"Yes. WordPress is our primary core competency. Our engineers are specialists in WordPress core, WooCommerce, Yoast, Elementor, Divi, and custom PHP theme frameworks."},{"q":"How much does a white label website maintenance retainer cost?","a":"Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites."},{"q":"Is there a minimum number of sites required to become a partner?","a":"No minimum required! Whether you are a solo freelancer with 1 client site or a scaling digital agency with 100+ sites, you qualify for our white-label partner program."},{"q":"Can I get monthly white label services without a long-term contract?","a":"Yes. All our agency partner plans operate on a flexible month-to-month retainer with zero long-term lock-in contracts. You can add, upgrade, or remove client sites at any time."},{"q":"Do you provide white label client reporting under our branding?","a":"Yes. Every monthly report PDF is generated with your agency logo, brand colors, contact information, and unbranded performance metrics ready to forward to your clients."},{"q":"What platforms do you support besides WordPress?","a":"In addition to WordPress and WooCommerce, our technical team supports Shopify, Webflow, Squarespace, Wix, and custom PHP headless web applications."},{"q":"Do you offer white label WordPress care plans?","a":"Yes. We offer fully white-labeled WordPress care plans that agencies can mark up and resell to their clients at 50%+ profit margins."},{"q":"How do backups and security work under your plans?","a":"We perform automated daily offsite cloud backups via our website backup service and active WAF firewall monitoring via our website security services."},{"q":"What happens if a client's site gets hacked?","a":"If an infection occurs, our engineers execute immediate malware removal and hack recovery"},{"q":"Will we have a dedicated account manager?","a":"Yes! Agencies on our Growth and Agency+ plans receive a dedicated senior account lead reachable directly via Slack, email, or scheduled video calls."},{"q":"How does your agency dashboard work?","a":"Your central agency portal gives you real-time visibility into all client site statuses, ticket resolution times, backup logs, and downloadable white-label client reports."},{"q":"Can you handle unlimited small fixes and edits?","a":"Yes. We execute unlimited content edits, image swaps, menu tweaks, and CSS styling adjustments (up to 30 minutes per task) under your maintenance plans."},{"q":"How do you onboard a new agency partner?","a":"Onboarding takes under 24 hours: (1) Fill partner app, (2) Sign mutual NDA, (3) Share client credentials, and (4) Access your agency dashboard."},{"q":"Do you sign an NDA to protect our client relationships?","a":"Yes, 100%. We sign a strict mutual NDA and non-solicitation agreement before touching any client site, ensuring your client relationships are legally protected."},{"q":"Can we white label your website migration and redesign services too?","a":"Yes! We offer white label site migrations and website redesigns so you can offer full digital services to your clients."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 White Label — Your Brand, Always
 
 We maintain, secure, and update your clients’ websites behind the scenes under your agency's brand name.
@@ -18,6 +22,10 @@ We maintain, secure, and update your clients’ websites behind the scenes under
 Unbranded Monthly Reports
 
 Strict Agency NDA Included
+
+</div>
+
+<div class="card">
 
 agency-portal.v3
 
@@ -39,13 +47,29 @@ Client Site C (Law Firm) White Label Report Sent
 
 Your Brand
 
+</div>
+
+</div>
+
 Social Proof & Agency Credentials
 
 ## 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
+<div class="cards">
+
+<div class="card">
+
 10,000+ Websites Managed
 
+</div>
+
+<div class="card">
+
 100% White Label & NDA
+
+</div>
+
+</div>
 
 Digital Marketing Agencies
 
@@ -63,6 +87,10 @@ Core Agency Value Proposition
 
 Digital marketing and web design agencies choose **white label website maintenance** to outsource tedious technical updates, protect profit margins, and generate predictable recurring monthly revenue without the payroll overhead of hiring in-house developers.
 
+<div class="cards">
+
+<div class="card">
+
 Time Savings
 
 ### Save 15+ Hours/Mo Per Site
@@ -70,6 +98,10 @@ Time Savings
 Stop wasting senior developer hours on routine plugin updates, PHP errors, and server troubleshooting. We handle all backend support under your brand.
 
 Focus on High-Value Client Work
+
+</div>
+
+<div class="card">
 
 Profitability
 
@@ -79,6 +111,10 @@ Deliver SLA-backed **white label wordpress support** at fixed wholesale partner 
 
 High Recurring Revenue
 
+</div>
+
+<div class="card">
+
 Scalability
 
 ### Scale Capacity Fast
@@ -87,6 +123,10 @@ Onboard 10, 50, or 100+ client sites to your agency portfolio overnight without 
 
 Zero Payroll Overhead
 
+</div>
+
+<div class="card">
+
 Risk Reduction
 
 ### Reduce Churn & Risk
@@ -94,6 +134,10 @@ Risk Reduction
 Prevent client-facing downtime and site hacks with 24/7 security monitoring, offsite backups, and instant [ongoing website support](/contact/).
 
 24/7 Agency SLA Included
+
+</div>
+
+</div>
 
 [See What's Included in Our Plans](#services-included)
 
@@ -105,6 +149,10 @@ Definitional Overview
 
 **White label website maintenance** is a B2B reseller model where a specialized technical team manages, secures, updates, and optimizes client websites on behalf of a digital agency. All client reports, support tickets, and communication are delivered under the agency’s brand name, keeping the backend team completely invisible.
 
+<div class="cards">
+
+<div class="card">
+
 ### How the Agency Reseller Model Works
 
 In a **private label web support** partnership, your agency owns the client relationship, sets retail pricing, and sends unbranded monthly reports. Meanwhile, our technical team executes 24/7 security scans, core/plugin updates, cloud backups, and small site edits behind the scenes.
@@ -112,6 +160,10 @@ In a **private label web support** partnership, your agency owns the client rela
 Whether managing single business sites or complex multi-site client portfolios, our team delivers [our full WordPress maintenance service](/wordpress-website-maintenance-packages/) with strict uptime SLAs and strict non-disclosure protection.
 
 Unbranded Service Your Clients Never See Our Name or Logo
+
+</div>
+
+<div class="card">
 
 Architecture
 
@@ -129,6 +181,10 @@ OUR TEAM (Invisible Backend)
 -   • Unlimited Small Edits & Fixes
 -   • White-Label Reports Branded to You
 
+</div>
+
+</div>
+
 [Learn how our partnership process works in 4 easy steps](#how-it-works)
 
 <a id="how-it-works"></a>
@@ -141,6 +197,10 @@ Our **white label partner program** makes handing off client sites smooth, secur
 
 Mutual NDA Protection Included | No Long-Term Contracts Required
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 Step 01
@@ -151,6 +211,10 @@ Fill out our short agency partner application, followed by a 15-minute discovery
 
 15-Min Scope Alignment
 
+</div>
+
+<div class="card">
+
 02
 
 Step 02
@@ -158,6 +222,10 @@ Step 02
 ### NDA & SLA Setup
 
 We sign a mutual NDA and white-label agreement protecting your agency's client relationships. Wholesale partner pricing is activated.
+
+</div>
+
+<div class="card">
 
 03
 
@@ -169,6 +237,10 @@ We conduct deep security, backup, and speed audits on each site, performing seam
 
 Full Technical Health Baseline
 
+</div>
+
+<div class="card">
+
 04
 
 Step 04
@@ -178,6 +250,10 @@ Step 04
 Gain full access to your central agency dashboard. Maintenance officially begins, account managers assign, and unbranded reports activate.
 
 Dedicated Account Manager
+
+</div>
+
+</div>
 
 [Start the Partnership Process](/get-a-free-quote/)
 
@@ -189,6 +265,10 @@ Full White Label Scope
 
 We deliver an end-to-end, unbranded technical safety net for your agency. From 24/7 security and automated backups to unlimited small edits and white-label client reports, here is what’s included in our **white label wordpress maintenance service**.
 
+<div class="cards">
+
+<div class="card">
+
 Core Service
 
 ### WordPress Maintenance
@@ -196,6 +276,10 @@ Core Service
 Comprehensive [white label wordpress maintenance](/wordpress-website-maintenance-packages/) covering core, theme, and plugin updates safely tested on staging first.
 
 Staging Environment Tested
+
+</div>
+
+<div class="card">
 
 24/7 Protection
 
@@ -205,6 +289,10 @@ Enterprise-grade [white label website security](/wordpress-malware-removal-servi
 
 WAF Firewall & SSL Active
 
+</div>
+
+<div class="card">
+
 Free Cleanup
 
 ### Malware Protection
@@ -212,6 +300,10 @@ Free Cleanup
 Proactive malware scans and immediate [website malware removal](/wordpress-malware-removal/) if an infection ever touches a client site.
 
 If we can't clean your hacked site, you don't pay.
+
+</div>
+
+<div class="card">
 
 Offsite Cloud
 
@@ -221,6 +313,10 @@ Daily/weekly automated cloud snapshots via our [website backup service](/wordpre
 
 Encrypted Offsite Storage
 
+</div>
+
+<div class="card">
+
 PageSpeed
 
 ### Performance Optimization
@@ -228,6 +324,10 @@ PageSpeed
 Continuous [website performance optimization](/wordpress-website-maintenance-packages/) covering database cleanup, caching, and Core Web Vitals tuning.
 
 Fast PageSpeed Scores
+
+</div>
+
+<div class="card">
 
 Safe Updates
 
@@ -237,6 +337,10 @@ Executing safe [wordpress plugin updates](/wordpress-website-maintenance-package
 
 Visual Regression Tested
 
+</div>
+
+<div class="card">
+
 24/7 SLA
 
 ### 24/7 Uptime Monitoring
@@ -244,6 +348,10 @@ Visual Regression Tested
 Real-time [website monitoring service](/monthly-website-maintenance-packages/) checking client site availability every 60 seconds with instant outage response.
 
 60-Second Ping Intervals
+
+</div>
+
+<div class="card">
 
 Priority Queue
 
@@ -253,6 +361,10 @@ Rapid-response [emergency website support](/website-repair-services/) for server
 
 Priority Response Queue
 
+</div>
+
+<div class="card">
+
 Unlimited
 
 ### Unlimited Small Edits
@@ -260,6 +372,10 @@ Unlimited
 Executing [unlimited website edits](/contact/) (text changes, image swaps, menu tweaks, CSS fixes) under 30 minutes each.
 
 Content & CSS Tweaks Included
+
+</div>
+
+<div class="card">
 
 Your Logo
 
@@ -269,6 +385,10 @@ Automated, monthly [white label reporting](#pricing) PDFs generated with your ag
 
 Custom Agency Branding
 
+</div>
+
+<div class="card">
+
 Direct Line
 
 ### Dedicated Account Manager
@@ -276,6 +396,10 @@ Direct Line
 Single point of contact via Slack/Email. Your [dedicated account manager](#why-agencies-choose) oversees all technical tickets and SLAs.
 
 Slack & Email Direct Channel
+
+</div>
+
+<div class="card">
 
 Central Hub
 
@@ -285,6 +409,10 @@ Manage all client websites from one central [agency dashboard](#how-it-works) �
 
 Multi-Site Single Sign-On
 
+</div>
+
+</div>
+
 [View Full Plan Details & Agency Pricing](#pricing)
 
 Operational Mechanics
@@ -292,6 +420,10 @@ Operational Mechanics
 ## Your White Label Agency Workflow
 
 Day-to-day client maintenance managed seamlessly. Submit tickets, request small edits, and track SLA turnaround times through our flexible **white label wordpress maintenance plans** portal.
+
+<div class="cards">
+
+<div class="card">
 
 ### How Client Tasks & Support Requests Are Processed
 
@@ -321,6 +453,10 @@ Ticket closed, task logged in your dashboard, and unbranded monthly reports auto
 
 Average SLA Response Time: 3.8 Hours | 99.2% On-Time Completion
 
+</div>
+
+<div class="card">
+
 agency-ticketing-v2
 
 ● SLA Active
@@ -341,6 +477,10 @@ August White-Label Report Branded with Your Agency Logo
 
 PDF Ready
 
+</div>
+
+</div>
+
 [Request Agency Dashboard Demo](/get-a-free-quote/)
 
 Operational Rigor
@@ -351,6 +491,10 @@ We treat every agency client website with extreme technical care. Every plugin, 
 
 Every Single Update Is Tested On Staging First
 
+<div class="cards">
+
+<div class="card">
+
 Phase 01
 
 ### Isolated Staging Clone
@@ -358,6 +502,10 @@ Phase 01
 We clone your client's live website onto an isolated **staging environment** first, ensuring 0% risk of live downtime or plugin conflicts during testing.
 
 Zero Live Server Risk
+
+</div>
+
+<div class="card">
 
 Phase 02
 
@@ -367,6 +515,10 @@ Automated and manual **QA testing** verifying font rendering, button layouts, ch
 
 Desktop & Mobile Verified
 
+</div>
+
+<div class="card">
+
 Phase 03
 
 ### Safe Live Deployment
@@ -375,6 +527,10 @@ Once verified on staging, updates are deployed to the live production server dur
 
 Off-Peak Offsite Snapshot
 
+</div>
+
+<div class="card">
+
 Phase 04
 
 ### Post-Update Health Check
@@ -382,6 +538,10 @@ Phase 04
 Executing post-deployment smoke tests: PageSpeed metrics, contact form submissions, SSL handshakes, and database health verification.
 
 Form & SSL Verified
+
+</div>
+
+</div>
 
 ### Is a Client's Site Too Outdated for Simple Maintenance?
 
@@ -395,6 +555,10 @@ Seamless Integration
 
 We integrate seamlessly with your agency's existing tools and workflows. Whether you prefer real-time Slack channels, unbranded ticket helpdesks, or direct phone support, you retain control over every client interaction.
 
+<div class="cards">
+
+<div class="card">
+
 Real-Time Sync
 
 ### Dedicated Slack Channel
@@ -402,6 +566,10 @@ Real-Time Sync
 Direct **agency communication** between your PMs and our senior engineers in a private Slack channel for instant task status updates.
 
 Slack / Teams Integration
+
+</div>
+
+<div class="card">
 
 Single Point of Contact
 
@@ -411,6 +579,10 @@ A single **dedicated account manager** who understands your agency's SLA needs, 
 
 Senior Account Lead
 
+</div>
+
+<div class="card">
+
 White-Label Emails
 
 ### Unbranded Ticket Helpdesk
@@ -418,6 +590,10 @@ White-Label Emails
 Support tickets answered under your agency email address (\`support@youragency.com\`) with white-label **white label wordpress support**.
 
 Your Agency Email Domain
+
+</div>
+
+<div class="card">
 
 Critical Outages
 
@@ -427,6 +603,10 @@ Priority escalation queue for critical server outages or malware attacks support
 
 1-Hour Escalation SLA
 
+</div>
+
+</div>
+
 [Talk to Our Agency Partnership Lead](/contact/)
 
 Brand & SLA Safeguards
@@ -434,6 +614,10 @@ Brand & SLA Safeguards
 ## How We Protect Your Clients & Your Agency Reputation
 
 Your agency's reputation is built on trust. We deploy multi-layered, enterprise-grade **white label website security** protocols across every client site to prevent hacks, server crashes, and embarrassing security warnings.
+
+<div class="cards">
+
+<div class="card">
 
 Layer 01
 
@@ -443,6 +627,10 @@ Active cloud WAF firewalls blocking brute-force login attempts, SQL injections, 
 
 Brute-Force & Bot Defense
 
+</div>
+
+<div class="card">
+
 Layer 02
 
 ### Daily Malware Scans
@@ -450,6 +638,10 @@ Layer 02
 Proactive daily file and database scans. In the rare event of an attack, we execute our immediate [hack recovery protocol](/website-hacked-recovery-services/).
 
 Proactive **Malware Protection**
+
+</div>
+
+<div class="card">
 
 Layer 03
 
@@ -459,15 +651,35 @@ Enforcing HTTPS SSL encryption, database prefix security, two-factor authenticat
 
 File Permission Hardened
 
+</div>
+
+<div class="card">
+
 Layer 04
 
 ### Isolated Offsite Backups
 
 Automated daily and weekly encrypted cloud backups allowing 1-click site restores in under 5 minutes if any emergency ever arises.
 
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
 24/7 Real-Time Monitoring
 
+</div>
+
+<div class="card">
+
 Strict NDA Brand Protection
+
+</div>
+
+</div>
 
 [Protect Your Clients & Your Agency Brand](/get-a-free-quote/)
 
@@ -477,6 +689,10 @@ Financial & Operational ROI
 
 Unlock compounding **agency recurring revenue**, protect client retainers, and scale your agency capacity without the financial risk or management headache of hiring in-house developers.
 
+<div class="cards">
+
+<div class="card">
+
 Margin Protection
 
 ### 50%+ Profit Margins
@@ -484,6 +700,10 @@ Margin Protection
 Buy wholesale website maintenance at flat partner rates, set your own retail pricing, and lock in predictable 50%+ profit margins on monthly retainers.
 
 Wholesale Partner Rates
+
+</div>
+
+<div class="card">
 
 Scale Capacity
 
@@ -493,11 +713,19 @@ As a trusted **white label reseller** partner, we allow you to take on 20, 50, o
 
 Unlimited Client Capacity
 
+</div>
+
+<div class="card">
+
 Client Retention
 
 ### Drastically Reduce Churn
 
 Longer LTV & Retainers
+
+</div>
+
+<div class="card">
 
 Service Upsells
 
@@ -506,6 +734,10 @@ Service Upsells
 Seamlessly upsell website security, malware cleanup, speed tuning, and [white label website redesigns](/website-redesign-services/) under your brand umbrella.
 
 Multi-Service Upsells
+
+</div>
+
+</div>
 
 Payroll Cost Savings Comparison
 
@@ -521,11 +753,19 @@ Vertical Versatility
 
 Whether you operate as an eCommerce studio, an SEO agency, a law firm marketing partner, or a healthcare agency, our **white label maintenance for marketing agencies** adapts seamlessly to your niche.
 
+<div class="cards">
+
+<div class="card">
+
 eCommerce
 
 ### eCommerce & Retail Agencies
 
 Supporting WooCommerce, Shopify, and Magento stores with zero transaction downtime, payment gateway security, and PCI compliance.
+
+</div>
+
+<div class="card">
 
 Healthcare
 
@@ -535,6 +775,10 @@ HIPAA-compliant site security and maintenance for clinic portals, doctor sites, 
 
 HIPAA Compliant Protocol
 
+</div>
+
+<div class="card">
+
 Legal
 
 ### Law Firm & Legal Agencies
@@ -542,6 +786,10 @@ Legal
 High-security, strictly confidential maintenance for law firm websites, attorney directories, and client lead capture forms.
 
 Confidential Legal Site Security
+
+</div>
+
+<div class="card">
 
 SaaS & Tech
 
@@ -551,6 +799,10 @@ SaaS & Tech
 
 PageSpeed & Demo Funnel SLAs
 
+</div>
+
+<div class="card">
+
 Real Estate
 
 ### Real Estate & Property Studios
@@ -559,6 +811,10 @@ Maintaining property listing databases, agent directories, image compression, an
 
 Media Library & DB Optimization
 
+</div>
+
+<div class="card">
+
 Local Trades
 
 ### Local Service & Trades Agencies
@@ -566,6 +822,10 @@ Local Trades
 Keeping local contractor, roofing, HVAC, and plumbing sites fast, secure, and Google Maps lead generation ready.
 
 Local Map Pack Lead Protection
+
+</div>
+
+</div>
 
 ### Need Custom SLA Options for an Enterprise Client?
 
@@ -581,6 +841,10 @@ While we are specialized **white label wordpress maintenance** experts, our tech
 
 WordPress Specialists • Multi-Platform Capable
 
+<div class="cards">
+
+<div class="card">
+
 Primary Specialization
 
 ### WordPress (Self-Hosted & WP.com)
@@ -589,11 +853,19 @@ Core, theme, and plugin updates tested on staging, security hardening, database 
 
 Certified WordPress Engineers
 
+</div>
+
+<div class="card">
+
 eCommerce
 
 ### WooCommerce Stores
 
 Checkout & Cart SLA Supported
+
+</div>
+
+<div class="card">
 
 SaaS eCommerce
 
@@ -603,6 +875,10 @@ Custom Liquid theme tweaks, app auditing, catalog speed optimization, and 24/7 u
 
 Liquid Theme & App Auditing
 
+</div>
+
+<div class="card">
+
 Visual CMS
 
 ### Webflow Sites
@@ -610,6 +886,10 @@ Visual CMS
 CMS collection updates, Webflow PageSpeed tuning, custom code embeds, and unbranded client task execution for **Webflow maintenance**.
 
 CMS Collections & Embeds
+
+</div>
+
+<div class="card">
 
 Hosted Builder
 
@@ -619,6 +899,10 @@ Managing hosted page updates, DNS records, domain transfers, and mobile responsi
 
 DNS & Content Management
 
+</div>
+
+<div class="card">
+
 Headless / Custom
 
 ### Custom PHP & Headless
@@ -626,6 +910,10 @@ Headless / Custom
 Custom PHP framework maintenance, Next.js / React headless SSR tuning, database optimization, and API integration support.
 
 API & Custom Codebase SLA
+
+</div>
+
+</div>
 
 #### Have a client website built on a custom or unique platform?
 
@@ -641,48 +929,15 @@ Looking for the **best white label website maintenance company** ? See how our u
 
 ### Feature-by-Feature Competitor Comparison
 
-| Agency Feature | 
-Our Service
-
-Recommended
-
- | WP Buffs | GoWP | FixRunner | Seahawk |
+| Agency Feature | Our Service Recommended | WP Buffs | GoWP | FixRunner | Seahawk |
 | --- | --- | --- | --- | --- | --- |
-| True White Label Invoicing & Reports | 
-
-Unbranded
-
- | Partial | Yes | Partial | Yes |
-| Dedicated Senior Account Manager | 
-
-Dedicated Lead
-
- | Yes | Partial | No | Partial |
-| Unlimited Small Edits & Fixes | 
-
-Included (30m/ea)
-
- | Yes | Yes | Partial | Yes |
-| 24/7 Emergency Hack Recovery | 
-
-Included Free
-
- | Partial | Partial | Yes | Partial |
-| Self-Serve Agency Portal Dashboard | 
-
-Included
-
- | Yes | Yes | No | Partial |
-| No Long-Term Contracts | 
-
-Month-to-Month
-
- | Partial | Yes | Partial | Yes |
-| Multi-Platform (Shopify/Webflow/etc.) | 
-
-Multi-CMS Capable
-
- | No | No | No | Partial |
+| True White Label Invoicing & Reports | Unbranded | Partial | Yes | Partial | Yes |
+| Dedicated Senior Account Manager | Dedicated Lead | Yes | Partial | No | Partial |
+| Unlimited Small Edits & Fixes | Included (30m/ea) | Yes | Yes | Partial | Yes |
+| 24/7 Emergency Hack Recovery | Included Free | Partial | Partial | Yes | Partial |
+| Self-Serve Agency Portal Dashboard | Included | Yes | Yes | No | Partial |
+| No Long-Term Contracts | Month-to-Month | Partial | Yes | Partial | Yes |
+| Multi-Platform (Shopify/Webflow/etc.) | Multi-CMS Capable | No | No | No | Partial |
 
 [Compare Our Agency Plans & Wholesale Pricing](#pricing)
 
@@ -692,17 +947,37 @@ Quantifiable Agency Growth
 
 Explore real proof of how our **white label website maintenance case study** frameworks helped digital agencies scale recurring retainer revenue, reduce payroll overhead, and eliminate client churn.
 
+<div class="cards">
+
+<div class="card">
+
 Digital Agency (35 Sites) Case #01
 
 ### Scaling Retainers from $5k to $22k/Mo
 
 **Challenge:** Agency developers drowning in client support tickets, preventing new sales and creating high payroll overhead.
 
+<div class="cards">
+
+<div class="card">
+
 +$17k/Mo MRR Growth
+
+</div>
+
+<div class="card">
 
 $6,500 Payroll Saved/Mo
 
+</div>
+
+</div>
+
 Outcome: 340% Retainer Increase
+
+</div>
+
+<div class="card">
 
 eCommerce Studio (18 Stores) Case #02
 
@@ -710,11 +985,27 @@ eCommerce Studio (18 Stores) Case #02
 
 **Challenge:** Frequent plugin breakages and payment gateway outages causing client frustration and account cancellations.
 
+<div class="cards">
+
+<div class="card">
+
 0% Churn In 12 Months
+
+</div>
+
+<div class="card">
 
 99.99% Uptime SLA
 
+</div>
+
+</div>
+
 Outcome: Zero Transaction Outages
+
+</div>
+
+<div class="card">
 
 SEO Agency (50+ Sites) Case #03
 
@@ -722,11 +1013,27 @@ SEO Agency (50+ Sites) Case #03
 
 **Challenge:** Managing technical site health and updates for 50+ diverse client sites without hiring in-house developers.
 
+<div class="cards">
+
+<div class="card">
+
 120+ Hrs Dev Saved/Mo
+
+</div>
+
+<div class="card">
 
 7 Days Full Fleet Launch
 
+</div>
+
+</div>
+
 Outcome: White Label SLA
+
+</div>
+
+</div>
 
 Want to see what agency owners say about partnering with us? [See our testimonials](#testimonials).
 
@@ -739,6 +1046,10 @@ Wholesale Agency Retainers
 ## White Label Website Maintenance Pricing
 
 Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Scale your client portfolio with predictable 50%+ profit margins and zero long-term contracts.
+
+<div class="cards">
+
+<div class="card">
 
 Freelancers & Small Studios
 
@@ -755,6 +1066,10 @@ $59 / site / month
 -   Shared Agency Support Team
 
 [Start Starter Plan](/get-a-free-quote/#whitelabel-starter)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -775,6 +1090,10 @@ $39 / site / month
 
 [Start Growth Plan](/get-a-free-quote/#whitelabel-growth)
 
+</div>
+
+<div class="card">
+
 Large Agencies & SaaS
 
 ### Agency+ Custom
@@ -790,6 +1109,10 @@ Custom Quote Volume Discounts Available
 -   Custom Multi-Platform Support (Shopify/Webflow)
 
 [Talk to Sales](/contact/)
+
+</div>
+
+</div>
 
 #### Need custom wholesale volume pricing for 50+ client sites?
 

@@ -39,41 +39,81 @@ Our Services
 
 At Website Maintenance Services, we take care of everything your website needs to stay updated and secure. Your website is an asset—and we ensure it stays protected and optimized 24/7.
 
+<div class="cards">
+
+<div class="card">
+
 ### Updates & Monitoring
 
 Weekly & monthly maintenance tasks.
+
+</div>
+
+<div class="card">
 
 ### WordPress Updates
 
 Core, theme, and plugin patching.
 
+</div>
+
+<div class="card">
+
 ### Security & Malware Protection
 
 24/7 monitoring and cleanup.
+
+</div>
+
+<div class="card">
 
 ### Daily/Weekly Backups
 
 Secure, off-site restoration points.
 
+</div>
+
+<div class="card">
+
 ### Speed Optimization
 
 Caching, image, and code optimization.
+
+</div>
+
+<div class="card">
 
 ### Bug Fixing & Errors
 
 Error troubleshooting and fixes.
 
+</div>
+
+<div class="card">
+
 ### Content & Image Updates
 
 Adding blogs, team members, or info.
+
+</div>
+
+<div class="card">
 
 ### Ecommerce Maintenance
 
 Product, order, and checkout support.
 
+</div>
+
+<div class="card">
+
 ### Technical Health Checks
 
 SEO, mobile, and link monitoring.
+
+</div>
+
+</div>
 
 FAST
 
@@ -114,7 +154,11 @@ Our clients trust us because we deliver consistent results, clear communication,
 
 We maintain websites for any business that needs a reliable maintenance partner.
 
+<div class="cards">
+
 Small & Local Businesses Service Businesses E-commerce Stores Agencies Professionals (Doctors, Lawyers) Contractors & Trades Real Estate & Rentals Travel & Hospitality Blog & Content Websites Consultants
+
+</div>
 
 ## Our Promise
 

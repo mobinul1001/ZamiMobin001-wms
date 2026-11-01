@@ -25,16 +25,28 @@ By purchasing or subscribing to our services, you agree to the terms outlined be
 
 ## 2 Cancellation Policy
 
+<div class="cards">
+
+<div class="card">
+
 ### a) Service Subscription Cancellation
 
 -   You may cancel your ongoing website maintenance subscription at any time by contacting us via email.
 -   Cancellation requests must be submitted at least **7 days** before the next billing cycle to avoid charges.
 -   After cancellation, you will continue to have access to paid services until the end of the current billing period.
 
+</div>
+
+<div class="card">
+
 ### b) One-Time Service Cancellation
 
 -   One-time service requests (e.g., urgent fixes, website review) can be canceled within **24 hours** of purchase.
 -   Requests made after 24 hours may not be eligible for cancellation if work has already begun.
+
+</div>
+
+</div>
 
 ## 3 Refund Policy
 
@@ -57,4 +69,18 @@ Refund requests must be submitted via email at [contact@websitemaintenanceservic
 
 We are committed to providing transparent and fair solutions to all clients. If you have any questions, concerns, or refund/cancellation requests, please contact us:
 
-[Website websitemaintenanceservices.org](/)[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+<div class="cards">
+
+<div class="card">
+
+[Website websitemaintenanceservices.org](/)
+
+</div>
+
+<div class="card">
+
+[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+
+</div>
+
+</div>

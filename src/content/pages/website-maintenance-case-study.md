@@ -45,29 +45,57 @@ The Challenge
 
 Before our maintenance began, the client was facing several issues affecting user experience and patient conversions.
 
+<div class="cards">
+
+<div class="card">
+
 ### Slow Loading Times
 
 4.8 seconds average load time, causing high bounce rates.
+
+</div>
+
+<div class="card">
 
 ### Outdated Plugins & Theme
 
 Version conflicts were causing instability and errors.
 
+</div>
+
+<div class="card">
+
 ### Occasional Downtime
 
 The site would periodically go offline without warning.
+
+</div>
+
+<div class="card">
 
 ### Broken Appointment Form
 
 The most critical conversion point was failing.
 
+</div>
+
+<div class="card">
+
 ### No Security Monitoring
 
 The site was vulnerable to attacks and malware.
 
+</div>
+
+<div class="card">
+
 ### Unoptimized Images
 
 Large image files were slowing down key pages.
+
+</div>
+
+</div>
 
 <a id="what-we-do"></a>
 
@@ -75,29 +103,57 @@ Our Solution
 
 ## What We Delivered
 
+<div class="cards">
+
+<div class="card">
+
 ### Speed Optimization (4.8s → 1.9s)
 
 To improve user experience and SEO, we optimized images, database tables, caching rules, CSS/JS delivery, and server response time. This cut page load time significantly.
+
+</div>
+
+<div class="card">
 
 ### Security Monitoring & Malware Protection
 
 We set up a 24/7 firewall, daily malware scans, login protection, SPAM filtering, and automated alerts. The website is now protected with a strong security layer.
 
+</div>
+
+<div class="card">
+
 ### Fixing Appointment Form Issues
 
 We debugged form errors, improved lead delivery reliability, fixed email routing, and implemented confirmation messages. This increased form submissions and reduced patient confusion.
+
+</div>
+
+<div class="card">
 
 ### Core, Theme & Plugin Updates
 
 We performed full updates and resolved all version conflicts to ensure stability and compatibility across the site, eliminating a major source of errors.
 
+</div>
+
+<div class="card">
+
 ### Mobile Optimization & UI Fixes
 
 We improved mobile responsiveness on services pages, the contact/appointment page, header navigation, and footer CTAs, making the site easier to use on all devices.
 
+</div>
+
+<div class="card">
+
 ### Monthly Content & Image Updates
 
 We regularly assist with updating service descriptions, adding new clinicians, uploading blog content, and changing opening hours to keep the website relevant.
+
+</div>
+
+</div>
 
 The Results
 
@@ -107,64 +163,204 @@ The improvements were immediate and significant. The clinic now has a stable, fa
 
 ### At a Glance: Before vs. After
 
--   Category
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Category
+    
+    </div>
+    
+    <div class="card">
     
     Before
     
+    </div>
+    
+    <div class="card">
+    
     After
     
--   Page Load Speed
+    </div>
+    
+    </div>
+    
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Page Load Speed
+    
+    </div>
+    
+    <div class="card">
     
     4.8s
     
+    </div>
+    
+    <div class="card">
+    
     1.9s
     
--   Security Monitoring
+    </div>
+    
+    </div>
+    
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Security Monitoring
+    
+    </div>
+    
+    <div class="card">
     
     None
     
+    </div>
+    
+    <div class="card">
+    
     24/7 Protection
     
--   Website Downtime
+    </div>
+    
+    </div>
+    
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Website Downtime
+    
+    </div>
+    
+    <div class="card">
     
     Occasional
     
+    </div>
+    
+    <div class="card">
+    
     Near 0%
     
--   Appointment Form
+    </div>
+    
+    </div>
+    
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Appointment Form
+    
+    </div>
+    
+    <div class="card">
     
     Errors
     
+    </div>
+    
+    <div class="card">
+    
     Fully Functional
     
--   Updates
+    </div>
+    
+    </div>
+    
+-   <div class="cards">
+    
+    <div class="card">
+    
+    Updates
+    
+    </div>
+    
+    <div class="card">
     
     Inconsistent
     
+    </div>
+    
+    <div class="card">
+    
     Fully Maintained
+    
+    </div>
+    
+    </div>
     
 
 ## Monthly Maintenance Includes
 
+<div class="cards">
+
+<div class="card">
+
 Weekly Updates
+
+</div>
+
+<div class="card">
 
 Speed Checks
 
+</div>
+
+<div class="card">
+
 Broken Link Fixes
+
+</div>
+
+<div class="card">
 
 Content Updates
 
+</div>
+
+<div class="card">
+
 Image Replacement
+
+</div>
+
+<div class="card">
 
 Security Scans
 
+</div>
+
+<div class="card">
+
 Backups
+
+</div>
+
+<div class="card">
 
 Form Testing
 
+</div>
+
+<div class="card">
+
 Uptime Monitoring
 
+</div>
+
+<div class="card">
+
 Bug Fixes
+
+</div>
+
+</div>
 
 <a id="cta"></a>
 

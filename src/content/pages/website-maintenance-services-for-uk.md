@@ -14,61 +14,121 @@ Website Maintenance Services for the UK
 Your website is one of your most valuable business assets. Whether you run an eCommerce shop, agency, or local business, your website must stay updated and protected.  
 We ensure your site remains secure, stable, and ready to convert visitors—24/7.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security Breaches
 
 UK businesses face increased cybersecurity threats. We implement robust protection to prevent data breaches and hacks.
+
+</div>
+
+<div class="card">
 
 #### Slow Performance
 
 Slow loading times drive customers away. We optimize code and assets to ensure top speed across the UK.
 
+</div>
+
+<div class="card">
+
 #### Broken Functionality
 
 Forms not working or checkout errors result in lost revenue. We fix issues immediately.
+
+</div>
+
+<div class="card">
 
 #### Loss of Ranking
 
 Google penalizes neglected sites. Our maintenance keeps your SEO technical health in top condition.
 
+</div>
+
+<div class="card">
+
 #### Customer Trust Issues
 
 A broken or slow site damages your brand reputation. We ensure a seamless, professional experience for every visitor.
+
+</div>
+
+</div>
 
 ## Our Website Maintenance Services for the UK
 
 Comprehensive care for small businesses, enterprises, and agencies.
 
+<div class="cards">
+
+<div class="card">
+
 #### 1\. Security Monitoring
 
 24/7 hack protection, real-time malware scans, firewall setup, and vulnerability fixes.
+
+</div>
+
+<div class="card">
 
 #### 2\. Software Updates
 
 Updates for CMS (WordPress, Shopify, Joomla), plugins, and themes with compatibility checks.
 
+</div>
+
+<div class="card">
+
 #### 3\. Speed Optimisation
 
 Caching setup, CSS/JS optimisation, CDN integration, and database clean-up.
+
+</div>
+
+<div class="card">
 
 #### 4\. eCommerce Maintenance
 
 Checkout & payment testing, product/inventory checks, and order notification testing.
 
+</div>
+
+<div class="card">
+
 #### 5\. Technical Support
 
 Bug fixes, content updates, adding new pages, troubleshooting, and layout adjustments.
+
+</div>
+
+<div class="card">
 
 #### 6\. Backup & Restore
 
 Automated backup schedules, one-click restore, and secure off-site cloud storage.
 
+</div>
+
+<div class="card">
+
 #### 7\. Monthly Reporting
 
 Detailed reports on security health, page speed analysis, updates performed, and issues resolved.
 
+</div>
+
+</div>
+
 ### Website Maintenance Packages & Pricing (UK)
 
 Professional 3-tier plans designed for small businesses, growing companies, and enterprise-level websites.
+
+<div class="cards">
+
+<div class="card">
 
 #### Basic
 
@@ -86,6 +146,10 @@ Perfect for small UK businesses, bloggers, and startups.
 -   Mobile Compatibility
 -   Email Support
 -   Monthly Report
+
+</div>
+
+<div class="card">
 
 POPULAR
 
@@ -107,6 +171,10 @@ Ideal for service businesses, agencies & high-content websites.
 -   SEO Performance Monitor
 -   Priority Support
 
+</div>
+
+<div class="card">
+
 #### Premium
 
 Best for eCommerce, large organisations & high-traffic sites.
@@ -125,31 +193,91 @@ Best for eCommerce, large organisations & high-traffic sites.
 -   Conversion Optimisation
 -   Dedicated UK Manager
 
+</div>
+
+</div>
+
 ### Industries We Serve Across the UK
+
+<div class="cards">
+
+<div class="card">
 
 Retail & eCommerce
 
+</div>
+
+<div class="card">
+
 Healthcare
+
+</div>
+
+<div class="card">
 
 Legal Firms
 
+</div>
+
+<div class="card">
+
 Finance
+
+</div>
+
+<div class="card">
 
 Construction
 
+</div>
+
+<div class="card">
+
 Education
+
+</div>
+
+<div class="card">
 
 Wellness
 
+</div>
+
+<div class="card">
+
 Creative Agencies
+
+</div>
+
+<div class="card">
 
 Automotive
 
+</div>
+
+<div class="card">
+
 Hospitality
+
+</div>
+
+<div class="card">
 
 Tourism
 
+</div>
+
+<div class="card">
+
 Corporate
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### UK Countries & Regions We Serve
 
@@ -161,11 +289,19 @@ Corporate
 
 **Northern Ireland:** Belfast, Derry/Londonderry.
 
+</div>
+
+<div class="card">
+
 #### Major UK Cities We Serve
 
 London, Manchester, Birmingham, Glasgow, Liverpool, Leeds, Edinburgh, Bristol, Sheffield, Newcastle upon Tyne, Nottingham, Leicester, Cardiff, Belfast, Coventry, Bradford, Wolverhampton, Southampton, Oxford, Cambridge — and hundreds of additional towns & local areas.
 
 [Request a Free Website Health Audit](/free-website-maintenance-audit/)
+
+</div>
+
+</div>
 
 ## 🛎 Ready to Protect & Optimise Your UK Website?
 

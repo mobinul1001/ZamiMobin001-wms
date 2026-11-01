@@ -98,4 +98,18 @@ Please review this page periodically to stay informed about how we protect your 
 
 If you have any questions or concerns about this Privacy Policy or how your information is handled, please contact us:
 
-[Website websitemaintenanceservices.org](/)[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+<div class="cards">
+
+<div class="card">
+
+[Website websitemaintenanceservices.org](/)
+
+</div>
+
+<div class="card">
+
+[Email contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
+
+</div>
+
+</div>

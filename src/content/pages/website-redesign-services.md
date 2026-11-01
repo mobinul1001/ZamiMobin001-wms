@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"Will redesigning my website hurt my SEO rankings?","a":"Not when executed with an SEO-first approach. While traditional design agencies often break URLs and cause a 30%-70% traffic drop, our process uses 1:1 301 redirect mapping, metadata retention, and staging audits to protect of your Google rankings."},{"q":"How do you redesign a website without losing SEO?","a":"We crawl your existing site to map every URL, preserve top-ranking H1-H3 heading structures and metadata patterns, test the new build on an isolated staging server, and submit updated XML sitemaps to Search Console upon launch."},{"q":"How long does a website redesign take?","a":"On average, a professional website redesign process takes 4 to 8 weeks depending on page volume, custom CMS features, and content complexity."},{"q":"How much does a website redesign cost?","a":"Pricing ranges from $1,200 to $2,500 for small business sites, $2,500 to $5,500 for growing eCommerce brands, and custom estimates for enterprise portals. We provide transparent fixed-rate quotes tailored to your scope."},{"q":"What's included in a website redesign SEO checklist?","a":"Key steps include a full pre-launch URL crawl, 1:1 301 redirect mapping, content equity preservation, staging QA testing, Core Web Vitals speed tuning, and 30–60 days of post-launch rank monitoring."},{"q":"Do you handle 301 redirects during a redesign?","a":"Yes, 100%. We map every single legacy URL to its corresponding new destination before the new site goes live, ensuring zero broken 404 links and preserving your backlink authority."},{"q":"How often should a business redesign its website?","a":"Most businesses redesign their site every 2 to 4 years to keep pace with changing mobile standards, Google Core Web Vitals algorithms, brand evolution, and conversion design benchmarks."},{"q":"Can you redesign my site without changing my CMS?","a":"Yes. If you love your current CMS (e.g., WordPress or Shopify), we can completely overhaul your front-end UI/UX and theme code without disturbing your underlying CMS content or database setup."},{"q":"Do you offer website redesign services for ecommerce sites?","a":"Yes. We specialize in WooCommerce and Shopify store redesigns, preserving high-value product category URLs, customer order histories, and SKU equity while optimizing checkout conversion rates."},{"q":"Will my content be preserved during the redesign?","a":"Yes. All existing blog posts, core service copy, image assets, and customer data are safely backed up and migrated to the new design framework without content loss."},{"q":"What happens to my backlinks after a redesign?","a":"By establishing accurate 301 redirects from old URLs to new pages, of your incoming backlink equity and domain authority is transferred seamlessly to the new site."},{"q":"Do you provide post-launch SEO monitoring?","a":"Yes. We monitor organic rank tracking and Search Console crawl reports for 30 to 60 days post-launch to catch and fix minor index fluctuations immediately."},{"q":"Can you redesign a WordPress site without breaking plugins?","a":"Yes. We conduct a thorough PHP compatibility audit on all active plugins on a staging server first, replacing outdated or slow plugins with lightweight, secure alternatives."},{"q":"What's the difference between a redesign and a refresh?","a":"A website refresh updates minor visual elements like fonts, colors, or banners. A full redesign re-engineers the site structure, code framework, mobile UX, and information architecture for higher conversions."},{"q":"Do you work with businesses outside the US?","a":"Yes! We serve growing businesses across the United States, United Kingdom, Canada, Australia, Netherlands, France, Spain, Brazil, Ireland, and Switzerland."},{"q":"What if something breaks after launch?","a":"If any technical issue occurs, our team resolves it immediately free of charge."},{"q":"Do I need a full redesign or just a partial update?","a":"During our initial free audit, we analyze your current site performance. If your backend code and speed are solid, we may recommend a targeted UI/UX overhaul rather than an expensive full rebuild."},{"q":"How do you handle mobile responsiveness in a redesign?","a":"We follow a mobile-first design strategy. Every wireframe is optimized for mobile touch targets, fast loading times, and responsive layouts before scaling up to desktop screens."},{"q":"Will I be involved in the design process?","a":"Absolutely. You review and approve wireframes, design prototypes, and staging builds at key milestones before we move forward to live deployment."},{"q":"What ongoing support is available after launch?","a":"We offer dedicated ongoing website maintenance plans covering daily backups, security monitoring, speed tuning, and monthly performance reports."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 SEO-First Website Redesign Service
 
 Redesign your website without losing SEO rankings or organic traffic. We combine modern, conversion-focused UI/UX design with technical SEO safeguards to protect your hard-earned Google positions while boosting conversions.
@@ -19,9 +23,25 @@ Organic Traffic Preserved
 
 Serving US, UK, CA, AU, Netherlands, France, Spain, Brazil, Ireland, & Switzerland
 
+</div>
+
+<div class="card">
+
+<div class="cards">
+
+<div class="card">
+
 Old Website Outdated & Slow 3.8s Load • Low CR
 
+</div>
+
+<div class="card">
+
 New Redesign Modern & Fast 0.9s Load • 2x CR
+
+</div>
+
+</div>
 
 Organic Traffic Trend +120% Post-Launch
 
@@ -32,6 +52,10 @@ Mapped
 Core Web Vitals Optimized
 
 Passed
+
+</div>
+
+</div>
 
 The Core Differentiator
 
@@ -45,11 +69,19 @@ Critical Redesign Risk
 
 Changing URL structures without 1:1 **301 redirect mapping** destroys years of backlink equity and search engine trust. Before touching design code, our team conducts a full URL crawl using Google Search Console to map every existing page, ensuring SEO preservation.
 
+<div class="cards">
+
+<div class="card">
+
 ### 1:1 Redirect Mapping
 
 We create precise 301 redirects for every old page URL, transferring of your backlink authority and search index signals to the new site.
 
 Zero 404 Errors
+
+</div>
+
+<div class="card">
 
 ### Content & Meta Audit
 
@@ -57,17 +89,29 @@ Preserving high-ranking H1-H3 heading structures, keyword density, and meta tags
 
 Keyword Equity Preserved
 
+</div>
+
+<div class="card">
+
 ### Technical Safeguards
 
 Comprehensive pre-launch crawls, XML sitemap validation, and [technical SEO safeguards](/wordpress-malware-removal-service/) to ensure flawless indexing.
 
 XML & Schema Audit
 
+</div>
+
+<div class="card">
+
 ### Core Web Vitals
 
 Optimizing code, clean CSS, and images for maximum [site speed optimization](/website-speed-optimization-services/) and instant page load speeds.
 
 PageSpeed Passed
+
+</div>
+
+</div>
 
 Global Service Area — Trusted SEO-First Website Redesign Across 10 Countries
 
@@ -79,6 +123,10 @@ Full Deliverable Scope
 
 We provide an end-to-end, full-service transformation. From deep UX research to custom CMS rebuilding and technical SEO preservation, here is everything included in our **professional website redesign** packages.
 
+<div class="cards">
+
+<div class="card">
+
 Scope 01
 
 ### UX & Content Audit
@@ -86,6 +134,10 @@ Scope 01
 In-depth **UX audit** analyzing your existing user behavior, conversion bottlenecks, and top-performing pages before drafting new layouts.
 
 Behavior & Funnel Analysis
+
+</div>
+
+<div class="card">
 
 Scope 02
 
@@ -95,6 +147,10 @@ Re-engineering site navigation, page hierarchy, and internal link silos for intu
 
 Navigation & Silo Map
 
+</div>
+
+<div class="card">
+
 Scope 03
 
 ### Responsive Design
@@ -102,6 +158,10 @@ Scope 03
 Modern, mobile-first **responsive design** tailored to look stunning and convert visitors on mobile, tablet, and desktop screens.
 
 Mobile-First UI/UX
+
+</div>
+
+<div class="card">
 
 Scope 04
 
@@ -111,6 +171,10 @@ Clean **CMS rebuild** on WordPress, WooCommerce, or Shopify — stripping away s
 
 Lightweight Custom Code
 
+</div>
+
+<div class="card">
+
 Scope 05
 
 ### SEO Preservation Layer
@@ -118,6 +182,10 @@ Scope 05
 1:1 301 redirect mapping, canonical tag retention, schema markup integration, and metadata preservation to prevent rank loss.
 
 301 Redirects & Meta
+
+</div>
+
+<div class="card">
 
 Scope 06
 
@@ -127,6 +195,10 @@ We perform a [full site backup before we touch anything](/wordpress-backup-servi
 
 Complete DB & Media Snapshot
 
+</div>
+
+<div class="card">
+
 Scope 07
 
 ### 50+ Point QA Testing
@@ -135,11 +207,19 @@ Rigorous **QA testing** covering cross-browser compatibility, form submissions, 
 
 Multi-Browser Tested
 
+</div>
+
+<div class="card">
+
 Scope 08
 
 ### Post-Launch Monitoring
 
 30 days of real-time rank tracking, crawl error checking, and options for [ongoing website maintenance after launch](/monthly-website-maintenance-packages/).
+
+</div>
+
+</div>
 
 ### Need Post-Launch Protection for Your New Site?
 
@@ -157,6 +237,10 @@ Transparent Timeline
 
 On average, a professional **website redesign process** takes **4 to 8 weeks** depending on page volume, custom CMS features, and content complexity.
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 Phase 1 (Week 1)
@@ -166,6 +250,10 @@ Phase 1 (Week 1)
 Crawling your existing site, exporting Google Search Console benchmarks, analyzing Core Web Vitals, and identifying core conversion goals.
 
 Timeline: 3–5 Days
+
+</div>
+
+<div class="card">
 
 02
 
@@ -177,6 +265,10 @@ Creating 1:1 **301 redirect mapping** databases, structuring information archite
 
 Timeline: 5–7 Days
 
+</div>
+
+<div class="card">
+
 03
 
 Phase 3 (Weeks 3–4)
@@ -186,6 +278,10 @@ Phase 3 (Weeks 3–4)
 Designing high-converting, mobile-first responsive wireframes and custom UI prototypes for your approval.
 
 Timeline: 7–10 Days
+
+</div>
+
+<div class="card">
 
 04
 
@@ -197,6 +293,10 @@ Building clean custom code on an isolated **staging environment** so your live w
 
 Timeline: 10–14 Days
 
+</div>
+
+<div class="card">
+
 05
 
 Phase 5 (Week 7)
@@ -207,6 +307,10 @@ Executing 50+ **QA testing** checklists: cross-browser audits, form testing, pay
 
 Timeline: 3–5 Days
 
+</div>
+
+<div class="card">
+
 06
 
 Phase 6 (Week 8)
@@ -215,11 +319,19 @@ Phase 6 (Week 8)
 
 Executing [our full migration process](/website-migration-services/) with instant 301 redirects, SSL installation, and low-TTL DNS updates.
 
+</div>
+
+<div class="card">
+
 07 Phase 7 (Post-Launch)
 
 ### Post-Launch SEO & Rank Monitoring
 
 [rollback and emergency support if anything goes wrong](/website-repair-services/).
+
+</div>
+
+</div>
 
 [Start Your Redesign Project](/get-a-free-quote/)
 
@@ -229,6 +341,10 @@ Tailored Industry Solutions
 
 Every vertical faces distinct website redesign risks — from patient appointment security in healthcare to product SKU equity in eCommerce. We tailor our technical SEO safeguards to match your industry's exact requirements.
 
+<div class="cards">
+
+<div class="card">
+
 Healthcare
 
 ### Healthcare & Medical
@@ -236,6 +352,10 @@ Healthcare
 Executing specialized **healthcare website redesign**. We preserve local SEO maps, doctor profiles, and patient portals while ensuring strict HIPAA security compliance and zero appointment form disruption.
 
 Local Citation & HIPAA Safeguards
+
+</div>
+
+<div class="card">
 
 eCommerce
 
@@ -245,6 +365,10 @@ Protecting high-converting product URLs, category hierarchies, and checkout orde
 
 Product Page SKU Equity Protected
 
+</div>
+
+<div class="card">
+
 Legal
 
 ### Law Firms & Legal Services
@@ -252,6 +376,10 @@ Legal
 Upgrading legal firm aesthetics and lead generation while shielding high-value practice area silos, partner attorney bio links, and localized Google Maps rankings.
 
 Practice Area Silos Preserved
+
+</div>
+
+<div class="card">
 
 SaaS & Tech
 
@@ -261,6 +389,10 @@ Executing strategic **b2b website redesign**. We re-architect feature pages, pri
 
 Demo Funnel & Speed Optimized
 
+</div>
+
+<div class="card">
+
 Small Business
 
 ### Small Business Services
@@ -268,6 +400,10 @@ Small Business
 Affordable **small business website redesign**. We transform outdated local websites into modern, high-converting digital storefronts that rank higher in local search without breaking budget.
 
 Local Search & Map Rankings
+
+</div>
+
+<div class="card">
 
 Nonprofit & Agency
 
@@ -277,6 +413,10 @@ Streamlining donor journeys and event pages for **nonprofit website redesign** p
 
 Donor Funnel & White-Label Ready
 
+</div>
+
+</div>
+
 [Discuss Your Industry Requirements](/get-a-free-quote/)
 
 CMS & Technical Credibility
@@ -284,6 +424,10 @@ CMS & Technical Credibility
 ## Platforms We Work With for SEO-First Redesign
 
 Whether you operate on an open-source CMS or a SaaS e-commerce builder, our engineers possess deep technical expertise to execute seamless website redesigns on any platform without losing organic search traffic.
+
+<div class="cards">
+
+<div class="card">
 
 WordPress
 
@@ -293,6 +437,10 @@ Auditing legacy theme/plugin bloat, custom Gutenberg block building, and Core We
 
 Theme & Plugin Audit
 
+</div>
+
+<div class="card">
+
 Shopify
 
 ### Shopify Website Redesign
@@ -300,6 +448,10 @@ Shopify
 Custom Liquid theme migration without breaking product SKU URLs, canonical collection structures, or checkout integration equity.
 
 Product Collection SEO
+
+</div>
+
+<div class="card">
 
 WooCommerce
 
@@ -309,6 +461,10 @@ Optimizing high-traffic product databases, cart funnels, and payment gateway sec
 
 Checkout & SKU Equity
 
+</div>
+
+<div class="card">
+
 Webflow
 
 ### Webflow Website Redesign
@@ -316,6 +472,10 @@ Webflow
 Clean, responsive visual design paired with custom Webflow CMS collection structures and strict 301 redirect mapping.
 
 Custom CMS Collections
+
+</div>
+
+<div class="card">
 
 Drupal
 
@@ -325,6 +485,10 @@ Enterprise content type migration, complex taxonomy mapping, and [platform-speci
 
 Enterprise Security Audit
 
+</div>
+
+<div class="card">
+
 Wix
 
 ### Wix Website Redesign
@@ -332,6 +496,10 @@ Wix
 Converting proprietary Wix or Wix Studio layouts into modern, fast-loading responsive frameworks or full WordPress conversions.
 
 Modern Framework Switch
+
+</div>
+
+<div class="card">
 
 Joomla
 
@@ -341,6 +509,10 @@ Upgrading legacy Joomla databases and templates to high-converting modern platfo
 
 Database Schema Mapping
 
+</div>
+
+<div class="card">
+
 Custom CMS
 
 ### Magento & Custom CMS
@@ -348,6 +520,10 @@ Custom CMS
 Handling complex database schemas, multi-store setups, and custom PHP frameworks with dedicated CLI/SSH migration tools.
 
 CLI & Database CLI
+
+</div>
+
+</div>
 
 [Discuss Your CMS Platform Redesign](/get-a-free-quote/)
 
@@ -361,56 +537,149 @@ Wondering **what should be included in a website redesign checklist?** We follow
 
 Summary of essential steps performed during every professional redesign:
 
--   1\. Full Pre-Redesign Site Crawl & URL Export
--   2\. Google Search Console Performance Benchmarking
--   3\. 1:1 301 Redirect Mapping for All Legacy URLs
--   4\. Title, Meta Description & Heading Structure Retention
--   5\. Internal Link Silo & Anchor Text Equity Preservation
--   6\. Staging Server Testing Before Live Cutover
--   7\. Canonical Tags, Robots.txt & XML Sitemap Re-generation
--   8\. Core Web Vitals & PageSpeed Benchmark Audit
--   9\. Google Analytics & GSC Property Re-verification
--   10\. 30/60/90 Day Post-Launch Rank & Crawl Error Tracking
+<div class="card">
+
+1\. Full Pre-Redesign Site Crawl & URL Export
+
+</div>
+
+<div class="card">
+
+2\. Google Search Console Performance Benchmarking
+
+</div>
+
+<div class="card">
+
+3\. 1:1 301 Redirect Mapping for All Legacy URLs
+
+</div>
+
+<div class="card">
+
+4\. Title, Meta Description & Heading Structure Retention
+
+</div>
+
+<div class="card">
+
+5\. Internal Link Silo & Anchor Text Equity Preservation
+
+</div>
+
+<div class="card">
+
+6\. Staging Server Testing Before Live Cutover
+
+</div>
+
+<div class="card">
+
+7\. Canonical Tags, Robots.txt & XML Sitemap Re-generation
+
+</div>
+
+<div class="card">
+
+8\. Core Web Vitals & PageSpeed Benchmark Audit
+
+</div>
+
+<div class="card">
+
+9\. Google Analytics & GSC Property Re-verification
+
+</div>
+
+<div class="card">
+
+10\. 30/60/90 Day Post-Launch Rank & Crawl Error Tracking
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 ### 1\. Full Pre-Launch Site Crawl
 
 Auditing every single active URL, image asset, and file parameter on your current live site using Screaming Frog and Google Search Console.
 
+</div>
+
+<div class="card">
+
 ### 2\. Traffic & Keyword Benchmarking
 
 Exporting exact organic traffic data, top-converting landing pages, and keyword rankings to establish a baseline before making changes.
+
+</div>
+
+<div class="card">
 
 ### 3\. 1:1 301 Redirect Mapping
 
 Mapping every old URL to its corresponding new destination to preserve of your backlink authority and eliminate 404 broken links.
 
+</div>
+
+<div class="card">
+
 ### 4\. Metadata & Heading Preservation
 
 Retaining your top-performing H1-H3 heading structures, meta titles, descriptions, and keyword density patterns across redesigned pages.
+
+</div>
+
+<div class="card">
 
 ### 5\. Internal Link Architecture
 
 Re-building strategic internal links, page silos, and footer navigation anchors to maintain internal PageRank distribution.
 
+</div>
+
+<div class="card">
+
 ### 6\. Staging Server QA Testing
 
 Testing the complete new website design on an isolated staging server with noindex tags to prevent duplicate content indexing.
+
+</div>
+
+<div class="card">
 
 ### 7\. XML Sitemap & Robots.txt
 
 Generating clean XML sitemaps, verifying Schema.org microdata, and updating robots.txt rules for seamless Googlebot crawling.
 
+</div>
+
+<div class="card">
+
 ### 8\. Core Web Vitals Optimization
 
 Benchmarking mobile and desktop PageSpeed scores, LCP, CLS, and FID to ensure your new design passes Google speed standards.
+
+</div>
+
+<div class="card">
 
 ### 9\. Analytics & GSC Verification
 
 Verifying Google Analytics 4 tracking codes, conversion goal tags, and submitting new sitemaps directly into Search Console.
 
+</div>
+
+<div class="card">
+
 ### 10\. 30/60/90 Day Rank Tracking
 
 Daily organic rank monitoring and crawl log analysis post-launch to catch and fix minor index fluctuations immediately.
+
+</div>
+
+</div>
 
 Want a deeper technical dive into each step? [Read our full SEO redesign checklist](/blogs/) guide.
 
@@ -430,73 +699,12 @@ Why risk a 50% drop in Google organic traffic? See how choosing a specialized **
 
 ### Transparent Feature-by-Feature Comparison
 
-| Redesign Factor | 
-DIY / Freelancer
-
- | 
-
-Typical Design Agency
-
- | 
-
-Our SEO-First Service
-
-Recommended
-
- |
+| Redesign Factor | DIY / Freelancer | Typical Design Agency | Our SEO-First Service Recommended |
 | --- | --- | --- | --- |
-| Pre-Launch Technical Audit | 
-
-None performed
-
- | 
-
-Focuses on visuals; ignores Search Console errors
-
- | 
-
-Full Screaming Frog & GSC benchmark audit
-
- |
-| Staging Testing & Rollback Safety | 
-
-Edited on live site; crashes bring site offline
-
- | 
-
-Basic backup without 50+ point QA checklist
-
- | 
-
-Isolated staging environment & full DB snapshot
-
- |
-| Post-Launch Rank Tracking | 
-
-Zero tracking
-
- | 
-
-Handed off at launch without post-launch SEO checks
-
- | 
-
-30–60 days of real-time GSC & rank monitoring
-
- |
-| Ongoing Maintenance & Support | 
-
-Ghosted when fatal errors happen
-
- | 
-
-Expensive hourly retainers for simple updates
-
- | 
-
-Seamless option for ongoing website maintenance
-
- |
+| Pre-Launch Technical Audit | None performed | Focuses on visuals; ignores Search Console errors | Full Screaming Frog & GSC benchmark audit |
+| Staging Testing & Rollback Safety | Edited on live site; crashes bring site offline | Basic backup without 50+ point QA checklist | Isolated staging environment & full DB snapshot |
+| Post-Launch Rank Tracking | Zero tracking | Handed off at launch without post-launch SEO checks | 30–60 days of real-time GSC & rank monitoring |
+| Ongoing Maintenance & Support | Ghosted when fatal errors happen | Expensive hourly retainers for simple updates | Seamless option for ongoing website maintenance |
 
 [Choose an SEO-First Redesign Partner](/get-a-free-quote/)
 
@@ -505,6 +713,10 @@ Scope-Based Pricing
 ## Website Redesign Pricing & Project Tiers
 
 Wondering **how much does a website redesign cost?** Because project scope varies by page count, custom functionality, and eCommerce complexity, we offer transparent scope-based tiers rather than opaque rigid pricing.
+
+<div class="cards">
+
+<div class="card">
 
 Local & Small Biz
 
@@ -521,6 +733,10 @@ $1,200 – $2,500 Average project estimate
 -   Google Search Console Re-Verification
 
 [Get Small Business Quote](/contact/)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -541,6 +757,10 @@ $2,500 – $5,500 Average project estimate
 
 [Get Growth Quote](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Enterprise
 
 ### Enterprise / Custom
@@ -557,6 +777,10 @@ Custom Quote Projects from $5,500+
 
 [Request Enterprise Quote](/contact/)
 
+</div>
+
+</div>
+
 #### What drives the average website redesign cost?
 
 Total **average website redesign cost** depends on total page count, custom functionality, eCommerce catalog size, and CRM/API integrations. Ready for an exact quote? Contact us to [get a custom quote](/get-a-free-quote/) or [see full pricing details](/monthly-website-maintenance-packages/).
@@ -565,11 +789,27 @@ Total **average website redesign cost** depends on total page count, custom func
 
 Proven Client Results
 
+<div class="cards">
+
+<div class="card">
+
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+
+</div>
+
+<div class="card">
 
 Retained Organic Traffic Record
 
+</div>
+
+<div class="card">
+
 24/7 Support Post-Launch Care
+
+</div>
+
+</div>
 
 Want to explore more client success stories and project showcases?
 

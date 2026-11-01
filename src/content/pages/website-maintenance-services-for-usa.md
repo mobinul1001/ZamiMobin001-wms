@@ -14,61 +14,121 @@ Dhaka-based team, working US & UK business hours.
 Keep Your Website Secure, Updated & Performing at Its Best.  
 We ensure your site never experiences downtime, security breaches, or poor performance.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security Vulnerabilities
 
 The USA is a top target for cyber threats. We protect your site from hacking attempts and malware vulnerabilities.
+
+</div>
+
+<div class="card">
 
 #### Slow Performance
 
 Fast websites rank better. Regular optimization ensures your pages load instantly across the entire country.
 
+</div>
+
+<div class="card">
+
 #### Broken Pages & Features
 
 Don't lose leads because a form stopped working. We fix broken pages and features immediately.
+
+</div>
+
+<div class="card">
 
 #### Lost Leads or Sales
 
 Even small errors in checkout or contact forms can cost thousands in missed opportunities.
 
+</div>
+
+<div class="card">
+
 #### Sudden Downtime
 
 We monitor uptime 24/7 to ensure your website stays safe, smooth, and sales-ready at all times.
+
+</div>
+
+</div>
 
 ## Our Complete Suite of Maintenance Solutions
 
 Comprehensive care for small businesses, enterprises, and agencies.
 
+<div class="cards">
+
+<div class="card">
+
 #### 1\. Security Monitoring
 
 Daily scans, firewall protection, malware cleanup, and hack prevention.
+
+</div>
+
+<div class="card">
 
 #### 2\. Regular Updates
 
 CMS core, plugin, and theme updates with full compatibility testing.
 
+</div>
+
+<div class="card">
+
 #### 3\. Speed Optimization
 
 Cache optimization, image compression, CDN integration, and DB cleaning.
+
+</div>
+
+<div class="card">
 
 #### 4\. eCommerce Care
 
 Checkout testing, payment gateway checks, inventory, and email workflow testing.
 
+</div>
+
+<div class="card">
+
 #### 5\. Technical Support
 
 Content edits, bug fixes, troubleshooting, and adding new pages/sections.
+
+</div>
+
+<div class="card">
 
 #### 6\. Backup & Restore
 
 Automated backups with full restore options and cloud-based storage.
 
+</div>
+
+<div class="card">
+
 #### 7\. Monthly Reports
 
 Full site health summary, performance metrics, security status, and improvement suggestions.
 
+</div>
+
+</div>
+
 ### Packages & Pricing (USA)
 
 3-tier packages designed specifically for USA businesses.
+
+<div class="cards">
+
+<div class="card">
 
 #### Basic
 
@@ -86,6 +146,10 @@ $49/mo
 -   Mobile Compatibility Checks
 -   Email Support
 -   Monthly Performance Report
+
+</div>
+
+<div class="card">
 
 POPULAR
 
@@ -107,6 +171,10 @@ $99/mo
 -   SEO Performance Check
 -   Priority Support
 
+</div>
+
+<div class="card">
+
 #### Premium
 
 Best for eCommerce, enterprise, & high-traffic sites.
@@ -125,31 +193,91 @@ $199/mo
 -   Conversion Optimization Tips
 -   Dedicated Manager
 
+</div>
+
+</div>
+
 ### Industries We Serve Across the USA
+
+<div class="cards">
+
+<div class="card">
 
 Retail & eCommerce
 
+</div>
+
+<div class="card">
+
 Healthcare
+
+</div>
+
+<div class="card">
 
 Legal Firms
 
+</div>
+
+<div class="card">
+
 Finance
+
+</div>
+
+<div class="card">
 
 Construction
 
+</div>
+
+<div class="card">
+
 Education
+
+</div>
+
+<div class="card">
 
 Wellness
 
+</div>
+
+<div class="card">
+
 Creative Agencies
+
+</div>
+
+<div class="card">
 
 Automotive
 
+</div>
+
+<div class="card">
+
 Professional
+
+</div>
+
+<div class="card">
 
 Hospitality
 
+</div>
+
+<div class="card">
+
 Corporate
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### States & Provinces We Serve
 
@@ -157,11 +285,19 @@ Corporate
 
 **U.S. Territories:** Puerto Rico, Guam, U.S. Virgin Islands, American Samoa, Northern Mariana Islands.
 
+</div>
+
+<div class="card">
+
 #### Major USA Cities We Serve
 
 New York City, Los Angeles, Chicago, Houston, Phoenix, Philadelphia, San Antonio, San Diego, Dallas, San Francisco, Miami, Boston, Washington DC, Seattle, Detroit, Denver, Orlando, Atlanta, Austin, Charlotte, Tampa, Minneapolis, Nashville, Baltimore, Raleigh, Portland, Las Vegas, Kansas City, Milwaukee—and hundreds more.
 
 [Request a Free Website Health Audit](/free-website-maintenance-audit/)
+
+</div>
+
+</div>
 
 ## 🛎 Ready to Protect and Grow Your Website?
 

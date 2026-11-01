@@ -9,9 +9,17 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"How long does website migration take?","a":"Most standard website migrations are completed within 4 to 8 hours. We first move and test your entire site on a staging environment before performing the final DNS cutover. Express 24-hour turnaround is available for urgent transfers."},{"q":"Will my SEO rankings be affected by migration?","a":"No. We follow strict SEO-safe protocols. We map all existing URLs, configure exact 301 redirects, preserve canonical tags, and update Google Search Console to ensure your search rankings and organic traffic remain intact."},{"q":"How much downtime will my site experience?","a":"Because we prepare and test everything on a staging server first, visitors won't notice any interruption during the DNS cutover."},{"q":"How much does website migration cost?","a":"Our website migration service pricing starts at a flat $99 for basic sites and $199 for standard WordPress websites up to 5GB. Enterprise, multisite, or large eCommerce stores receive custom fixed-rate quotes with zero hidden fees."},{"q":"What platforms and CMS do you support?","a":"We support transfers across all major web platforms, including WordPress, Shopify, WooCommerce, Wix, Squarespace, Joomla, Drupal, Webflow, HTML/static sites, and custom PHP databases."},{"q":"Is my website data and credentials safe?","a":"Yes, absolutely. All credentials, database files, and host logins are encrypted during transfer. We follow strict confidentiality policies and are happy to sign an NDA upon request before starting work. Yes. If any error or broken link occurs post-launch, we fix it immediately free of charge. In case of previous failed DIY attempts, explore our emergency website recovery service."},{"q":"Can you migrate a large eCommerce store?","a":"Yes. We specialize in WooCommerce and Shopify store migrations."},{"q":"Do I need to be available during the migration?","a":"No. Once you provide the necessary login details, our migration engineers handle everything asynchronously. We keep you updated via email/WhatsApp at each major stage of the process."},{"q":"What happens to my business email during migration?","a":"We carefully preserve all MX, SPF, and DKIM DNS records during the NameServer update. Your business emails continue sending and receiving without any interruption or dropped messages."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Move your website to any host or platform without losing traffic, data, or SEO rankings. Our expert team handles everything from files and databases to DNS, SSL, and post-migration testing.
 
 [Get a Free Migration Quote](/get-a-free-quote/) [View Our Process](#migration-process)
+
+</div>
+
+<div class="card">
 
 migration-pipeline.v2
 
@@ -33,13 +41,37 @@ DNS Cutover & SSL Check
 
 In Progress
 
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
+
+</div>
+
+<div class="card">
 
 100% Data Integrity Saved
 
+</div>
+
+<div class="card">
+
 Zero SEO Ranking Loss
 
+</div>
+
+<div class="card">
+
 &lt; 15 Mins Average Downtime
+
+</div>
+
+</div>
 
 Supported Hosts & Platforms
 
@@ -73,6 +105,10 @@ A **website migration service** is the process of safely transferring a website�
 
 While DIY plugins exist, they frequently cause timeout errors, database corruption, or broken 301 redirects on complex sites. Our dedicated **site migration service** eliminates these risks by testing everything on a secure staging server before going live — supported by our ongoing [WordPress maintenance](/wordpress-website-maintenance-packages/) and [website security](/wordpress-malware-removal-service/) standards.
 
+<div class="cards">
+
+<div class="card">
+
 Type 01
 
 ### Host & Server Migration
@@ -80,6 +116,10 @@ Type 01
 Moving your website from slow or unreliable web hosting to a fast VPS, dedicated server, or cloud host (like WP Engine, Kinsta, or SiteGround) with zero file or database loss.
 
 Includes DB export, SSL & PHP tuning
+
+</div>
+
+<div class="card">
 
 Type 02
 
@@ -89,6 +129,10 @@ Changing your primary domain URL or rebranding. We set up flawless 301 redirects
 
 Includes 301 redirects & GSC update
 
+</div>
+
+<div class="card">
+
 Type 03
 
 ### Platform & CMS Migration
@@ -96,6 +140,10 @@ Type 03
 Transferring your site from closed builders like Wix, Squarespace, or Shopify to WordPress/WooCommerce (or vice versa) while keeping all pages, content, blog posts, and media safe.
 
 Includes full content & media transfer
+
+</div>
+
+</div>
 
 [See what’s included in our migration packages](/monthly-website-maintenance-packages/)
 
@@ -107,51 +155,12 @@ Free DIY migration plugins work fine for basic blogs, but on large sites, eComme
 
 ### The Difference Between DIY Plugins & Professional Service
 
-| Migration Factor | 
-DIY Migration Plugins
-
- | 
-
-Our Professional Migration
-
- |
+| Migration Factor | DIY Migration Plugins | Our Professional Migration |
 | --- | --- | --- |
-| SEO Preservation & Redirects | 
-
-High risk of broken URLs and lost Google rankings
-
- | 
-
-URL mapping & 301 redirects preserved
-
- |
-| Database & File Size Limits | 
-
-Fails or times out on files/DB over 500MB
-
- | 
-
-Zero size limits; CLI/SSH transfer for large databases
-
- |
-| Email & DNS Cutover | 
-
-Plugins ignore MX records, breaking business email
-
- | 
-
-Full MX, SSL, and DNS record management included
-
- |
-| Safety & Rollback Plan | 
-
-No rollback if server crash occurs midway
-
- | 
-
-Full site snapshot via [website backup services](/wordpress-backup-services/)
-
- |
+| SEO Preservation & Redirects | High risk of broken URLs and lost Google rankings | URL mapping & 301 redirects preserved |
+| Database & File Size Limits | Fails or times out on files/DB over 500MB | Zero size limits; CLI/SSH transfer for large databases |
+| Email & DNS Cutover | Plugins ignore MX records, breaking business email | Full MX, SSL, and DNS record management included |
+| Safety & Rollback Plan | No rollback if server crash occurs midway | Full site snapshot via [website backup services](/wordpress-backup-services/) |
 
 If anything breaks, fails, or experiences unexpected downtime within 30 days of migration, our engineers will fix it immediately or provide a full redo free of charge. Facing a broken site from a previous failed DIY attempt? Contact our [emergency website recovery](/website-repair-services/) team right away.
 
@@ -165,6 +174,10 @@ Tested Methodology
 
 Our battle-tested **website migration process** Every site is moved through a dedicated staging environment before going live.
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### Pre-Migration Audit
@@ -172,6 +185,10 @@ Our battle-tested **website migration process** Every site is moved through a de
 We review your server environment, PHP version, database size, active plugins, and dependencies before touching a single file.
 
 Environment & DB Check
+
+</div>
+
+<div class="card">
 
 02
 
@@ -181,6 +198,10 @@ We perform a complete backup of all core files, media uploads, and a full **migr
 
 Off-Site Snapshot Saved
 
+</div>
+
+<div class="card">
+
 03
 
 ### Staging Server Transfer
@@ -188,6 +209,10 @@ Off-Site Snapshot Saved
 We clone your site onto an isolated staging server first, allowing us to perform **wordpress data migration** without touching your live visitors.
 
 Zero Live Risk
+
+</div>
+
+<div class="card">
 
 04
 
@@ -197,6 +222,10 @@ Rigorous testing of forms, checkout, images, SSL certificates, broken links, and
 
 Comprehensive Quality Check
 
+</div>
+
+<div class="card">
+
 05
 
 ### DNS Cutover & Propagation
@@ -204,6 +233,10 @@ Comprehensive Quality Check
 We update your domain DNS records with low TTL settings for instant server cutover, preserving MX mail records and preventing email loss.
 
 Seamless NameServer Update
+
+</div>
+
+<div class="card">
 
 06
 
@@ -213,6 +246,10 @@ Your new server officially goes live. We perform real-time smoke testing, databa
 
 Live & Fully Functional
 
+</div>
+
+<div class="card">
+
 07
 
 ### Post-Migration SEO Audit & Monitoring
@@ -220,6 +257,10 @@ Live & Fully Functional
 We crawl all migrated pages to verify 301 redirects, submit updated sitemaps to Google Search Console, and connect automated [website monitoring](/monthly-website-maintenance-packages/) to track uptime for 30 days.
 
 SEO Rankings Preserved
+
+</div>
+
+</div>
 
 [Start Your Migration Today](/get-a-free-quote/)
 
@@ -229,6 +270,10 @@ Full CMS Compatibility
 
 Our professional **website migration services** handle seamless transfers between any web hosting provider, SaaS site builder, or open-source CMS. We convert your design, database, and content with precision.
 
+<div class="cards">
+
+<div class="card">
+
 Wix → WP
 
 ### Wix to WordPress
@@ -236,6 +281,10 @@ Wix → WP
 Seamlessly **migrate wix to wordpress**. We convert closed Wix layouts, blog posts, and images into clean WordPress blocks.
 
 Content & Media Export
+
+</div>
+
+<div class="card">
 
 Squarespace → WP
 
@@ -245,6 +294,10 @@ Expert **squarespace to wordpress migration** without breaking post permalinks, 
 
 301 Redirect Mapping
 
+</div>
+
+<div class="card">
+
 Joomla → WP
 
 ### Joomla to WordPress
@@ -252,6 +305,10 @@ Joomla → WP
 Full **joomla to wordpress migration**. Transfer articles, categories, user accounts, and database tables safely.
 
 DB Category Preserved
+
+</div>
+
+<div class="card">
 
 Drupal → WP
 
@@ -261,6 +318,10 @@ Enterprise **drupal to wordpress migration**. Convert complex custom content typ
 
 Custom Taxonomy Transfer
 
+</div>
+
+<div class="card">
+
 eCommerce
 
 ### Shopify & WooCommerce
@@ -268,6 +329,10 @@ eCommerce
 Cross-migrate online stores. Easily **move shopify to wordpress** or **migrate from wordpress to shopify** with products & SKUs.
 
 Products & Order History
+
+</div>
+
+<div class="card">
 
 HTML → WP
 
@@ -277,6 +342,10 @@ Convert static sites easily. We **migrate html to wordpress**, converting flat p
 
 Modern Theme Conversion
 
+</div>
+
+<div class="card">
+
 WP.com → Org
 
 ### WP.com to Self-Hosted
@@ -285,6 +354,10 @@ Unlock full plugin freedom by moving from restricted WordPress.com to a full sel
 
 Full Plugin Freedom
 
+</div>
+
+<div class="card">
+
 Custom CMS
 
 ### Webflow & Custom CMS
@@ -292,6 +365,10 @@ Custom CMS
 Migrate from Webflow, HubSpot, or legacy custom PHP site builders to WordPress with custom database mapping.
 
 Custom Database Schema
+
+</div>
+
+</div>
 
 ### Don't See Your Platform or CMS Listed Above?
 
@@ -306,6 +383,10 @@ Transparent Pricing
 ## Website Migration Service Pricing & Packages
 
 Transparent, fixed-rate **website migration pricing** with zero hidden fees. Choose a package below or request a custom quote for complex eCommerce stores or multisite networks.
+
+<div class="cards">
+
+<div class="card">
 
 Basic Site
 
@@ -323,6 +404,10 @@ $499 / one-time fee
 -   7-Day Post-Migration Support
 
 [Choose Basic Plan](/get-a-free-quote/#basic-migration)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -342,6 +427,10 @@ $1199 / one-time fee
 
 [Get Started Now](/get-a-free-quote/#standard-migration)
 
+</div>
+
+<div class="card">
+
 eCommerce & Large
 
 ### Enterprise / Custom
@@ -358,6 +447,10 @@ Custom Quote Starting from $1499
 
 [Get a Custom Quote](/get-a-free-quote/#enterprise-migration)
 
+</div>
+
+</div>
+
 #### What affects your website migration service cost?
 
 Total **website migration cost** depends on your database size, file storage, eCommerce catalog size, and custom CMS platforms. Looking for long-term site care after migration? Check out our [monthly website maintenance packages](/monthly-website-maintenance-packages/).
@@ -370,51 +463,103 @@ Full Scope Breakdown
 
 We don't just move your files — we handle every single technical detail from **website content migration** and database optimization to DNS cutover and SEO redirects, ensuring your site is functional.
 
+<div class="cards">
+
+<div class="card">
+
 ### Full Site File Transfer
 
 All active themes, plugins, media uploads, and core files safely transferred.
+
+</div>
+
+<div class="card">
 
 ### Database Import & Export
 
 Full MySQL database export, optimization, and zero SQL data corruption.
 
+</div>
+
+<div class="card">
+
 ### DNS Records Update
 
 Precise NameServer and A-record propagation with low TTL settings.
+
+</div>
+
+<div class="card">
 
 ### SSL Certificate Setup
 
 HTTPS security transfer, SSL handshake check, and mixed content fixing.
 
+</div>
+
+<div class="card">
+
 ### Email & MX Records Config
 
 Complete MX, SPF, and DKIM record preservation so emails never drop.
+
+</div>
+
+<div class="card">
 
 ### 301 Redirect Mapping
 
 Flawless URL mapping to preserve of your Google SEO search rankings.
 
+</div>
+
+<div class="card">
+
 ### Google Search Console
 
 Domain re-verification and updated sitemap re-submission in GSC.
+
+</div>
+
+<div class="card">
 
 ### Post-Migration Speed Audit
 
 Performance benchmarking and server-level caching optimization.
 
+</div>
+
+<div class="card">
+
 ### Broken Link & 404 Scan
 
 Full automated site crawl to detect and fix dead or broken links instantly.
+
+</div>
+
+<div class="card">
 
 ### Forms & Checkout Testing
 
 Full test of contact forms, payment gateways, and checkout transactions.
 
+</div>
+
+<div class="card">
+
 ### Plugin Compatibility Audit
 
 Verifying PHP version compatibility across all active site plugins.
 
+</div>
+
+<div class="card">
+
 ### 30-Day Post Support Window
+
+</div>
+
+</div>
 
 Free Downloadable Resource
 
@@ -428,6 +573,10 @@ Proven Social Proof
 
 ## Real Migration Results & Case Studies
 
+<div class="cards">
+
+<div class="card">
+
 Healthcare Portal Case #01
 
 ### AMZ Hospital BD
@@ -436,11 +585,27 @@ amzhospitalbd.com
 
 **Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.
 
+<div class="cards">
+
+<div class="card">
+
 0 Mins Downtime
+
+</div>
+
+<div class="card">
 
 +45% Speed Gain
 
+</div>
+
+</div>
+
 Result: SEO Preserved
+
+</div>
+
+<div class="card">
 
 Travel & Tours Case #02
 
@@ -450,11 +615,27 @@ stluciantaxiandtours.com
 
 **Challenge:** Moving live WooCommerce booking forms and payment gateways to a new server without losing active tourist ride reservations or 301 redirects.
 
+<div class="cards">
+
+<div class="card">
+
 &lt;24 Hrs Turnaround
+
+</div>
+
+<div class="card">
 
 100% Booking Integrity
 
+</div>
+
+</div>
+
 Result: Zero Lost Orders
+
+</div>
+
+<div class="card">
 
 Real Estate Directory Case #03
 
@@ -464,11 +645,27 @@ mipropertyportal.com
 
 **Challenge:** Complex property directory database migration with thousands of dynamic listings, agent profiles, and high-resolution image assets.
 
+<div class="cards">
+
+<div class="card">
+
 100% Database Integrity
+
+</div>
+
+<div class="card">
 
 0 Errors GSC Index
 
+</div>
+
+</div>
+
 Result: Seamless DB Transfer
+
+</div>
+
+</div>
 
 More Successfully Migrated & Maintained Client Portals
 

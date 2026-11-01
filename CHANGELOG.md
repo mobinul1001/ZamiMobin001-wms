@@ -66,3 +66,12 @@
 - Master price list: Essential $79/mo or $790/yr, Growth $149/mo or $1,490/yr, Business $299/mo or $2,990/yr, one-time fix from $49, hacked site cleanup $149. All other own prices are removed. Use "Included", not tick icons.
 - No checkout on the site. Plan buttons open a form (name, email, website URL, platform, message, plan pre-selected) through Netlify Forms to a thank-you page. Payment is taken manually after a call.
 - Semrush data is from the US database.
+
+## Templates, Batch 1 (2026-11-01)
+- New global layout: header with no-JS Services dropdown, footer, approved "Calm engineering" CSS, self-hosted Inter. Google tag and Clarity load after the page is interactive, on the live production build only.
+- Converter keeps small card grids as cards; whole-section layout grids stay as normal flow; table cells stay on one line (fixes the homepage comparison table).
+- Homepage and pricing templates. Old plan sections removed under the approved plan: homepage pricing section, packages page plan cards.
+- Pricing page FAQ: 2 old price and plan lines changed to the master list.
+- A2: added "for over a decade" to the claim rules.
+- Guard added: an approved removal over its word limit stops the run, and parity fails any page under 75% of the old page's words. Reason: a removal bug took 85% of the homepage while parity still passed, because parity compared against the same removal. Found from the word ratio before any commit.
+- Added scripts/screenshot-pages.mjs, scripts/link-report.mjs and the lighthouse dev dependency.

@@ -9,6 +9,10 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"How fast can you fix a hacked website?","a":"Most emergency recoveries are completed within 24-48 hours. We prioritize critical outages to get your business back online as quickly as possible."},{"q":"How much does it cost to fix a hacked website?","a":"Costs vary based on site size, infection depth, and platform. We provide a free diagnosis and a transparent, flat-fee quote before any work starts."},{"q":"Can you remove a Google blacklist warning?","a":"Yes, we specialize in cleaning the infection and managing the submission process to get Google's red warning removed safely."},{"q":"Will my site get hacked again after cleanup?","a":"We apply firewall hardening and patch security vulnerabilities to drastically reduce risk. For long-term peace of mind, we recommend our ongoing maintenance plans."},{"q":"Do you fix hacked WordPress sites?","a":"WordPress is our primary specialization. We have successfully recovered thousands of WordPress sites from various complex malware and backdoor attacks."},{"q":"Should I take my website offline while it's hacked?","a":"Usually, yes. Taking it offline prevents further damage and protects your visitors, but let us assess the situation first to advise you correctly."},{"q":"How do I know if my website has been hacked?","a":"Common signs include malicious redirects, strange pop-ups, admin login errors, server resource spikes, or warnings from Google and your web host."},{"q":"What's the difference between a security plugin and professional recovery?","a":"Plugins scan for known signatures, but manual forensic recovery is required to find custom, mutated backdoors that automated scanners often miss."},{"q":"Can a hacked website be fully recovered, or is data always lost?","a":"In most cases, we fully recover the site without data loss. We prioritize cleaning database and core files over rebuilding from scratch."},{"q":"Do you work with Shopify and Magento stores, or only WordPress?","a":"We support major platforms including Shopify, Magento, WooCommerce, Joomla, Drupal, and custom-coded PHP sites."},{"q":"What happens if my hosting provider suspended my account?","a":"We work directly with your hosting support to provide proof of remediation, which helps in getting your account reactivated quickly."},{"q":"Will you tell me how the hack happened?","a":"Yes, our final report includes an analysis of the likely entry point so you know exactly how to prevent it in the future."},{"q":"Do I need to change all my passwords after a hack?","a":"Absolutely. Resetting credentials for CMS admin, FTP/SFTP, database, and hosting accounts is a mandatory step in our recovery process."},{"q":"Can you recover a hacked site if I don't have a recent backup?","a":"Yes, we can perform forensic recovery on live infected files even if you don't have a clean backup available."},{"q":"Is my customer data at risk if my website was hacked?","a":"Depending on the hack type, it is possible. We conduct an audit to identify if any PII or customer data was accessed or compromised."},{"q":"How do you prevent reinfection after cleanup?","a":"We harden your installation, update software, remove unauthorized admin access points, and implement strict security firewall rules."},{"q":"Do you offer emergency support outside business hours?","a":"Yes, our emergency incident response team operates 24/7 for critical website outages and security emergencies."},{"q":"What information do you need from me to start the recovery?","a":"Typically, we need your hosting control panel (cPanel/Plesk) or FTP/SFTP access and CMS admin credentials to begin our investigation."},{"q":"Can hacked websites affect my Google rankings permanently?","a":"If left ignored for weeks, yes. But with quick malware removal and proper Search Console resubmission, the SEO impact is usually temporary."},{"q":"Do you offer ongoing monitoring after the initial recovery?","a":"Yes, we offer monthly website maintenance and 24/7 security monitoring plans to ensure your site stays protected long-term."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Emergency Support Available
 
 If your website has been hacked, defaced, or flagged by Google, every minute of downtime costs you revenue and trust. Our security specialists provide fast, thorough recovery to get your business back online safely.
@@ -18,6 +22,10 @@ If your website has been hacked, defaced, or flagged by Google, every minute of 
 Avg. Response: 30 Mins
 
 Secure Recovery
+
+</div>
+
+<div class="card">
 
 ### Security Status:
 
@@ -30,6 +38,10 @@ Unusual Admin Accounts Found
 Blacklist Risk: High
 
 \> root@server:/var/www/html# ./scan\_malware --critical
+
+</div>
+
+</div>
 
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
@@ -53,7 +65,27 @@ Webflow
 
 Don't risk your compromised website with unverified freelancers. We are a top-rated security and maintenance agency trusted globally.
 
-[Sortlist Verified Agency Top Security Experts](https://www.sortlist.com/agency/website-maintenance-services-usa)[TechReviewer Top Web Maintenance Recognized Leader](https://techreviewer.co/companies/website-maintenance-services)[ITFirms. Top IT Services Verified Profile](https://www.itfirms.co/)
+<div class="cards">
+
+<div class="card">
+
+[Sortlist Verified Agency Top Security Experts](https://www.sortlist.com/agency/website-maintenance-services-usa)
+
+</div>
+
+<div class="card">
+
+[TechReviewer Top Web Maintenance Recognized Leader](https://techreviewer.co/companies/website-maintenance-services)
+
+</div>
+
+<div class="card">
+
+[ITFirms. Top IT Services Verified Profile](https://www.itfirms.co/)
+
+</div>
+
+</div>
 
 If we can't clean your hacked site, you don't pay.
 
@@ -63,38 +95,69 @@ Diagnosis
 
 Not every strange error is an attack, but certain signs are reliable indicators that your site has been compromised. If you're seeing any of the following, treat it as an active incident rather than a routine bug.
 
--   ### Google Warnings
-    
-    Google Chrome or Safari shows a "This site may be hacked" or "Deceptive site ahead" warning.
-    
--   ### Malicious Redirects
-    
-    Visitors are being unexpectedly redirected to unfamiliar, explicit, or spam websites.
-    
--   ### Spam Content Injection
-    
-    Pages contain content you didn't publish — often hidden links, pharmaceutical ads, or gibberish text.
-    
--   ### Unknown Admin Users
-    
-    There are admin accounts, authors, or FTP users in your dashboard that you don't recognize.
-    
--   ### Suspended Hosting
-    
-    Your hosting provider has suspended your account or emailed you about malware or resource abuse.
-    
--   ### Sudden SEO Drop
-    
-    Your organic rankings have dropped sharply overnight, or search results show foreign-language text.
-    
--   ### Site Crashing or Extremely Slow
-    
-    Your site is suddenly slow, constantly timing out, or serving a blank white screen (White Screen of Death).
-    
--   ### Outbound Spam Emails
-    
-    You are receiving reports of unexpected spam emails being sent from your server or domain.
-    
+<div class="card">
+
+### Google Warnings
+
+Google Chrome or Safari shows a "This site may be hacked" or "Deceptive site ahead" warning.
+
+</div>
+
+<div class="card">
+
+### Malicious Redirects
+
+Visitors are being unexpectedly redirected to unfamiliar, explicit, or spam websites.
+
+</div>
+
+<div class="card">
+
+### Spam Content Injection
+
+Pages contain content you didn't publish — often hidden links, pharmaceutical ads, or gibberish text.
+
+</div>
+
+<div class="card">
+
+### Unknown Admin Users
+
+There are admin accounts, authors, or FTP users in your dashboard that you don't recognize.
+
+</div>
+
+<div class="card">
+
+### Suspended Hosting
+
+Your hosting provider has suspended your account or emailed you about malware or resource abuse.
+
+</div>
+
+<div class="card">
+
+### Sudden SEO Drop
+
+Your organic rankings have dropped sharply overnight, or search results show foreign-language text.
+
+</div>
+
+<div class="card">
+
+### Site Crashing or Extremely Slow
+
+Your site is suddenly slow, constantly timing out, or serving a blank white screen (White Screen of Death).
+
+</div>
+
+<div class="card">
+
+### Outbound Spam Emails
+
+You are receiving reports of unexpected spam emails being sent from your server or domain.
+
+</div>
 
 #### If even one of these matches...
 
@@ -114,10 +177,7 @@ Once recovered, we strongly recommend implementing proactive hardening via our [
 
 ### The Real Cost of Waiting
 
-| Impact Area | Immediate Action  
-(Same Day) | Delayed Action  
-(1 Week Later) | Neglected  
-(1 Month Later) |
+| Impact Area | Immediate Action (Same Day) | Delayed Action (1 Week Later) | Neglected (1 Month Later) |
 | --- | --- | --- | --- |
 | SEO & Rankings | Minimal Impact Malware is removed before search engine crawlers index the spam pages. | Rankings Drop Spam content gets indexed, diluting your domain authority and organic keywords. | De-indexed Google applies a manual penalty, completely removing your site from search results. |
 | Blacklist Risk | Low Risk Cleaned before Google Safe Browsing or antivirus software flags the domain. | Red Warning Screen Visitors are blocked by a "Deceptive site ahead" browser warning. | Host Suspension Your hosting provider suspends or deletes your account for network abuse. |
@@ -210,11 +270,17 @@ Technologies
 
 We handle [malware removal](/wordpress-malware-removal-service/) and emergency recovery for all major CMS and ecommerce platforms. Every platform has its own unique vulnerabilities and backdoor locations—we know exactly where to look.
 
+<div class="cards">
+
+<div class="card">
+
 Primary Specialization
 
 ### WordPress Recovery
 
 Most of the recovery requests we handle involve WordPress. It is the most widely used CMS and, as a result, the most frequently targeted. We have removed thousands of WordPress-specific infections.
+
+<div class="cards">
 
 -   Compromised plugins & themes
 -   Injected `wp-content` backdoors
@@ -222,21 +288,43 @@ Most of the recovery requests we handle involve WordPress. It is the most widely
 -   Malicious core file edits
 -   Rogue admin user creation
 
+</div>
+
+</div>
+
+<div class="card">
+
 ### WooCommerce & Shopify
 
 Extra care is taken around payment data and order integrity. We isolate checkout pages to protect your customers.
+
+</div>
+
+<div class="card">
 
 ### Magento
 
 A frequent target for card-skimming (Magecart) malware. We identify and patch deep database and extension vulnerabilities.
 
+</div>
+
+<div class="card">
+
 ### Joomla & Drupal
 
 Thorough forensic cleaning for older or unsupported versions, followed by a safe migration path to patched releases.
 
+</div>
+
+<div class="card">
+
 ### Custom & Legacy Sites
 
 For sites where documentation is thin. We perform careful, manual line-by-line code review to find the specific injection point.
+
+</div>
+
+</div>
 
 Whatever platform your site runs on, learn more about ongoing protection through our [WordPress Maintenance](/wordpress-website-maintenance-packages/) and [Website Security Services](/wordpress-malware-removal-service/) once your emergency is resolved.
 
@@ -246,37 +334,73 @@ Who We Help
 
 Different industries face different risks. From maintaining HIPAA compliance to minimizing checkout downtime, we handle your recovery with your specific business needs in mind.
 
+<div class="cards">
+
+<div class="card">
+
 ### Small Businesses
 
 Fast, affordable recovery without needing an in-house developer or technical jargon.
+
+</div>
+
+<div class="card">
 
 ### Ecommerce Stores
 
 Priority handling to isolate checkout pages, secure payment gateways, and minimize revenue downtime.
 
+</div>
+
+<div class="card">
+
 ### Agencies
 
 White-label emergency recovery you can offer your own clients, complete with ready-to-send reports.
+
+</div>
+
+<div class="card">
 
 ### Healthcare Practices
 
 Recovery handled with a strict awareness of HIPAA compliance and sensitive patient data protection.
 
+</div>
+
+<div class="card">
+
 ### Law Firms
 
 Discreet handling of confidential client information and immediate restoration of firm credibility.
+
+</div>
+
+<div class="card">
 
 ### SaaS Companies
 
 Complex recovery that accounts for connected web applications, marketing sites, and integrated APIs.
 
+</div>
+
+<div class="card">
+
 ### Local Businesses
 
 Straightforward fixes to restore your local SEO rankings and get your Google Maps listing back on track.
 
+</div>
+
+<div class="card">
+
 ### Enterprise Orgs.
 
 Coordinated forensic recovery across multiple stakeholders, servers, and staging environments.
+
+</div>
+
+</div>
 
 #### Have questions about your specific situation?
 
@@ -334,21 +458,41 @@ Transparent Pricing
 
 Hack recovery isn't a one-size-fits-all service. A simple malicious redirect on a 5-page site requires a different level of forensic work than a deep database infection on a massive WooCommerce store. Here is how we determine the scope of your recovery.
 
+<div class="cards">
+
+<div class="card">
+
 ### Size & Complexity of the Site
 
 A large e-commerce platform with thousands of products and custom databases takes more forensic analysis and cleanup time than a standard informational website.
+
+</div>
+
+<div class="card">
 
 ### Severity of the Infection
 
 Has the malware been sitting untouched for months, spreading across multiple directories? Deeply embedded backdoors require more intense manual code review.
 
+</div>
+
+<div class="card">
+
 ### Blacklist & Host Suspensions
 
 If your domain has been blacklisted by Google Safe Browsing or suspended by your hosting provider, the recovery involves administrative appeals and compliance verification.
 
+</div>
+
+<div class="card">
+
 ### Ongoing Protection Needs
 
 Many businesses choose to bundle their emergency recovery with our proactive [Security Services](/wordpress-malware-removal-service/) to ensure they are never compromised again.
+
+</div>
+
+</div>
 
 #### Start with a Free Initial Diagnosis
 
@@ -406,44 +550,13 @@ Security Plugin No
 
 DIY Cleanup No
 
-| Recovery Capability | 
-DIY Manual Cleanup Deleting unfamiliar files via FTP.
-
- | 
-
-Security Plugin Scan Running free/paid plugin scanners.
-
- | 
-
-Professional Service Forensic review & manual patching.
-
- |
+| Recovery Capability | DIY Manual Cleanup Deleting unfamiliar files via FTP. | Security Plugin Scan Running free/paid plugin scanners. | Professional Service Forensic review & manual patching. |
 | --- | --- | --- | --- |
-| 
-
-Removes Hidden Backdoors
-
- | Rarely | Sometimes | Yes, Always |
-| 
-
-Google Blacklist Removal
-
- | No | No | Managed for you |
-| 
-
-Root-Cause Identification
-
- | Rarely | No | Yes |
-| 
-
-Risk of Reinfection
-
- | High | Moderate | Low (Hardened) |
-| 
-
-Expert Verification Report
-
- | No | No | Yes, Provided |
+| Removes Hidden Backdoors | Rarely | Sometimes | Yes, Always |
+| Google Blacklist Removal | No | No | Managed for you |
+| Root-Cause Identification | Rarely | No | Yes |
+| Risk of Reinfection | High | Moderate | Low (Hardened) |
+| Expert Verification Report | No | No | Yes, Provided |
 
 #### Why Plugins Aren't Enough for Recovery
 

@@ -21,134 +21,85 @@ Websites face daily risks—from security threats to software conflicts and perf
 
 Our monthly website maintenance packages ensure your website remains:
 
--   Secure against hacks and malware
--   Fast and optimized for performance
--   Fully updated with the latest software versions
--   Monitored, backed up, and professionally supported
+<div class="card">
+
+Secure against hacks and malware
+
+</div>
+
+<div class="card">
+
+Fast and optimized for performance
+
+</div>
+
+<div class="card">
+
+Fully updated with the latest software versions
+
+</div>
+
+<div class="card">
+
+Monitored, backed up, and professionally supported
+
+</div>
 
 Ongoing maintenance is not optional—it’s critical for long-term online success.
-
-### Our Monthly Website Maintenance Packages
-
-Choose a plan that aligns with your website size, traffic, and business goals.
-
-#### Essential Website Maintenance Package
-
-Best for small websites needing basic protection and updates
-
-$95/month
-
-(Save $228/year with annual billing)
-
-What's included:
-
-Regular website check-ups
-
-Security monitoring
-
-Monthly cloud backups
-
-Plugin & theme updates
-
-Minor fixes (up to 1 hour/month)
-
-Text, image, video & link updates
-
-Speed optimization
-
-Malware removal
-
-Not included: Advanced layout changes, new page creation, uptime monitoring, database optimization, priority support
-
-👉 Ideal for brochure websites, portfolios, and basic business sites.
-
-Most Popular
-
-#### Advanced Website Maintenance Package
-
-For growing businesses requiring active monthly maintenance
-
-$195/month
-
-(Save $468/year with annual billing)
-
-What's included:
-
-Everything in Essential, plus:
-
-Weekly backups
-
-Fixes & adjustments (up to 3 hours/month)
-
-Content updates (up to 10 posts/pages)
-
-Uptime monitoring
-
-Monthly performance report
-
-Layout modifications
-
-Advanced security firewall
-
-Database optimization
-
-Priority support
-
-👉 Perfect for service businesses, agencies, blogs, and lead-generation websites.
-
-#### Elevate Website Maintenance Package
-
-Mission-critical care for high-traffic and revenue-driven websites
-
-$395/month
-
-(Save $948/year with annual billing)
-
-What's included:
-
-Everything in Advanced, plus:
-
-Daily backups
-
-Fixes & improvements (up to 6 hours/month)
-
-Unlimited content uploads\*
-
-Broken link fixing
-
-New page creation
-
-Emergency fixes (24/7)
-
-Comprehensive website care
-
-👉 Best for eCommerce stores, SaaS platforms, enterprise sites, and high-traffic businesses.
 
 ### What You Get With Our Monthly Website Maintenance Services
 
 All our monthly website maintenance packages are built on a foundation of proactive care, not reactive fixes.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security & Hack Prevention
 
 Websites are constant targets for malware, bots, and brute-force attacks. We implement security hardening, firewalls, and continuous monitoring to keep your site protected.
+
+</div>
+
+<div class="card">
 
 #### Regular Updates & Compatibility Checks
 
 Outdated plugins, themes, and CMS files are the #1 cause of website hacks. We safely update everything while preventing conflicts and downtime.
 
+</div>
+
+<div class="card">
+
 #### Speed & Performance Optimization
 
 Slow websites lose users and rankings. We optimize caching, images, databases, and scripts to ensure fast load times and better user experience.
 
+</div>
+
+<div class="card">
+
 #### Backups & Instant Restore
+
+</div>
+
+<div class="card">
 
 #### 24/7 Uptime Monitoring
 
 We monitor your website around the clock. If it goes down, we act fast—often before your customers even notice.
 
+</div>
+
+<div class="card">
+
 #### Ongoing Technical Support
 
 From content edits to layout changes and bug fixes, our team acts as your dedicated website support department.
+
+</div>
+
+</div>
 
 ### Complete Website Care – Everything You Need
 
@@ -172,6 +123,10 @@ You’ll receive a clear, jargon-free PDF report each month showing:
 
 ### What’s Included in Website Edits
 
+<div class="cards">
+
+<div class="card">
+
 #### Content Updates
 
 -   • Text additions, updates, or removals
@@ -179,12 +134,20 @@ You’ll receive a clear, jargon-free PDF report each month showing:
 -   • Video embedding or removal
 -   • Link updates and broken link fixes
 
+</div>
+
+<div class="card">
+
 #### Structural & Design Work
 
 -   • File uploads (PDFs, docs, downloads)
 -   • New pages or blog posts (from provided content)
 -   • Layout and structural modifications
 -   • Brand tweaks (logos, headers, footers, colors)
+
+</div>
+
+</div>
 
 Consistent monthly maintenance prevents costly issues and keeps your website running smoothly.
 
@@ -232,21 +195,57 @@ Full transparency into everything done on your website.
 
 We don’t just “maintain” websites—we protect and improve them.
 
+<div class="cards">
+
+<div class="card">
+
 24/7 website monitoring
+
+</div>
+
+<div class="card">
 
 Expert developers & technicians
 
+</div>
+
+<div class="card">
+
 Fast response times
+
+</div>
+
+<div class="card">
 
 Transparent, predictable pricing
 
+</div>
+
+<div class="card">
+
 Enterprise-level security
+
+</div>
+
+<div class="card">
 
 Proven performance optimization
 
+</div>
+
+<div class="card">
+
 Dedicated account manager
 
+</div>
+
+<div class="card">
+
 Specialized platform support
+
+</div>
+
+</div>
 
 ## Ready to Protect & Improve Your Website?
 
@@ -276,7 +275,7 @@ Our monthly website maintenance packages include security monitoring, CMS/plugin
 
 ### 4\. How much do monthly website maintenance packages cost?
 
-The cost of monthly website maintenance packages depends on your website’s size, traffic, and support needs. Our plans start at $95 per month for basic maintenance and go up to $395 per month for advanced, mission-critical website care.
+The cost of monthly website maintenance packages depends on your website’s size, traffic, and support needs. Our plans start at $79 per month for basic maintenance and go up to $299 per month for advanced, mission-critical website care.
 
 ### 5\. Are monthly website maintenance packages worth it for small businesses?
 
@@ -300,4 +299,4 @@ If your website is compromised, our monthly website maintenance packages include
 
 ### 10\. How do I choose the right monthly website maintenance package?
 
-The right monthly website maintenance package depends on your website traffic, update frequency, and business importance. Small sites typically need basic protection, while growing or high-traffic websites benefit from advanced or elevate plans with more support hours and security.
+The right monthly website maintenance package depends on your website traffic, update frequency, and business importance. Small sites typically need basic protection, while growing or high-traffic websites benefit from Growth or Business plans with more support hours and security.

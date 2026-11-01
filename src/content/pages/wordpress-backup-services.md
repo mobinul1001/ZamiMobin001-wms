@@ -9,11 +9,19 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"What is a WordPress backup service?","a":"A WordPress backup service automatically copies your site's files and database to a secure off-site location on a schedule, so it can be restored if something goes wrong."},{"q":"How often should a WordPress site be backed up?","a":"Daily, at minimum — more frequently (hourly or real-time) for e-commerce sites where order data changes constantly."},{"q":"Where are backups stored?","a":"Off-site, on cloud infrastructure separate from your hosting server, so a host outage or server failure can't affect your backup."},{"q":"How long does a restore take?","a":"Most restores complete in under 30 minutes once initiated, though size and complexity can affect this."},{"q":"What's the difference between a backup plugin and a backup service?","a":"A plugin runs the backup; a service monitors that it actually worked, tests restores in advance, and provides support when something breaks."},{"q":"Will backups slow down my website?","a":"No — incremental backups run in the background and are scheduled to avoid peak traffic hours."},{"q":"What's included in a full WordPress backup?","a":"Files, themes, plugins, uploads/media, and the full database."},{"q":"Can I restore just one page instead of the whole site?","a":"Yes — granular restore lets you roll back specific files, pages, or database tables without affecting the rest of the site."},{"q":"What happens if my site gets hacked — can a backup fix that?","a":"Yes, provided you have a clean restore point from before the infection, which is why pre-update and scheduled backups matter."},{"q":"How much does a WordPress backup service cost?","a":"Plans typically range from $29–$199+/month depending on site count, retention length, and support level — see pricing above."},{"q":"Do I need a backup service if my host already backs up my site?","a":"Usually yes — most host backups live on the same server, meaning a server failure can take both your site and your backup down together."},{"q":"What is off-site backup?","a":"Off-site backup means your data is stored on infrastructure physically and logically separate from where your live site runs."},{"q":"Can backups protect against ransomware?","a":"Yes, if backups are stored off-site and immutable/version-controlled, since a clean restore point can bypass the need to pay a ransom."},{"q":"How long are backups kept (retention)?","a":"Typically 30, 60, or 90 days depending on plan, giving you options to roll back further than just the most recent copy."},{"q":"Is WordPress backup necessary for a small business site?","a":"Yes — small business sites are frequent targets for automated attacks specifically because they're less likely to have monitoring in place."},{"q":"What's the difference between incremental and full backups?","a":"A full backup copies everything; an incremental backup only copies what's changed since the last backup, saving time and storage."},{"q":"Do you test that backups actually work?","a":"Yes — scheduled restore testing in a staging environment confirms backups are usable before an emergency, not during one."},{"q":"Can agencies white-label this service for their clients?","a":"Yes — agency plans include white-label reporting so backups appear under your own brand."},{"q":"What if I'm on shared hosting — does that change anything?","a":"Shared hosting environments benefit even more from off-site backup, since resource limits and neighbor site issues are more common there."},{"q":"Do you support WooCommerce and e-commerce backups?","a":"Yes, including database heavy stores where order and inventory data changes frequently."},{"q":"What happens during the free backup audit?","a":"We review your current backup setup (if any), check for gaps, and give you an honest recommendation — no obligation to sign up."},{"q":"How do I get started?","a":"Start with the free backup audit above, or contact us directly — setup typically completes within 1–2 business days."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Your website is one bad plugin update, one hacked login, or one server crash away from disappearing. Managed **WordPress backup services** from our team mean your entire site — files, database, and media — is copied to secure off-site cloud storage every single day, tested for restorability, and ready to bring back online in minutes.
 
 We don't just install a plugin and walk away. **A real person checks your backups. A real person tests your restores.**
 
 [Get a Free Backup Audit](/get-a-free-quote/) [See Pricing](#pricing)
+
+</div>
+
+<div class="card">
 
 offsite-backup-engine.v2
 
@@ -33,6 +41,10 @@ Rolling Backup History Restore to Any Date In History
 
 Off-Site Storage • 1-Click Restores
 
+</div>
+
+</div>
+
 Managed Off-Site Protection
 
 ## What Our WordPress Backup Service Actually Does
@@ -43,6 +55,10 @@ WordPress backup services protect your website by automatically copying your fil
 
 A managed **WordPress backup service** is dedicated protection that stores complete, restorable copies of your website off-site on a recurring schedule, backed by human oversight to test and confirm those backups actually work when you need them.
 
+<div class="cards">
+
+<div class="card">
+
 Feature 01
 
 ### Full-Site + Incremental Backups
@@ -50,6 +66,10 @@ Feature 01
 We take a complete baseline backup, then only back up what's changed since — so daily backups run fast without hammering your server resources.
 
 Zero Server Overhead
+
+</div>
+
+<div class="card">
 
 Feature 02
 
@@ -59,6 +79,10 @@ Backups never sit on the same server as your live site. If your host has a total
 
 Isolated Cloud Infrastructure
 
+</div>
+
+<div class="card">
+
 Feature 03
 
 ### Human-Verified Restores
@@ -66,6 +90,10 @@ Feature 03
 Most backup plugins never get tested until the day you desperately need them. We test restores on a schedule in staging environments, not in a panic.
 
 Tested Before Disasters
+
+</div>
+
+<div class="card">
 
 Feature 04
 
@@ -75,6 +103,10 @@ Restore it yourself from a dashboard, or have our engineering team do it for you
 
 Restored in &lt; 30 Minutes
 
+</div>
+
+<div class="card">
+
 Rolling History
 
 ### 30, 60, or 90-Day Backup Retention
@@ -82,6 +114,10 @@ Rolling History
 Retention that matches how businesses actually work. Roll back further than "yesterday" when a broken plugin or security glitch isn't noticed until weeks after it occurred.
 
 Multi-Month Version History
+
+</div>
+
+</div>
 
 ### Looking for Complete Website Security & Maintenance?
 
@@ -95,6 +131,10 @@ The Risk of Unverified Backups
 
 We get calls from business owners in crisis mode more often than you'd think. Most website owners assume their web host or a free backup plugin has them covered — until an emergency strikes.
 
+<div class="cards">
+
+<div class="card">
+
 Plugin Breakage
 
 ### A plugin update breaks the site
@@ -102,6 +142,10 @@ Plugin Breakage
 When a **wordpress update broke my site**, you face an average of 6 to 14 hours of downtime while searching for a developer to fix it hourly.
 
 Cost: 6–14 Hours Downtime + Dev Fees
+
+</div>
+
+<div class="card">
 
 Malware Infection
 
@@ -111,6 +155,10 @@ When a **site got hacked no backup** is available, Google search rankings can dr
 
 Cost: Weeks of Lost SEO Traffic
 
+</div>
+
+<div class="card">
+
 Same Server Backup
 
 ### Host backup was on same server
@@ -118,6 +166,10 @@ Same Server Backup
 When your hosting server fails, the backup fails with it. Storing backups on the same live server happens far more than web hosts admit.
 
 Cost: Total Backup File Corruption
+
+</div>
+
+<div class="card">
 
 Untested Restore
 
@@ -127,6 +179,10 @@ You find out the backup file is corrupt, incomplete, or missing database tables 
 
 Cost: Unrestorable Backup Files
 
+</div>
+
+<div class="card">
+
 Human Error
 
 ### Accidental content deletion
@@ -134,6 +190,10 @@ Human Error
 A team member or editor accidentally deletes crucial pages or product categories. If you **lost website data** without rolling version history, that content is gone with no undo button.
 
 Cost: Permanent Loss of Content & Work
+
+</div>
+
+</div>
 
 ### The Uncomfortable Truth About Most Backups
 
@@ -153,11 +213,19 @@ Key Business Benefits
 
 Upgrading from an unmonitored backup plugin to our managed **automated WordPress backup**
 
+<div class="cards">
+
+<div class="card">
+
 Peace of Mind
 
 ### Sleep-at-Night Security
 
 Daily **automated WordPress backup** schedules mean your worst-case scenario is "restore from this morning," not "rebuild your entire business website from scratch."
+
+</div>
+
+<div class="card">
 
 Fast Recovery
 
@@ -167,6 +235,10 @@ Because we test **wordpress backup and restore** procedures in advance, when som
 
 Restores Completed in &lt;30 Mins
 
+</div>
+
+<div class="card">
+
 True Redundancy
 
 ### True Off-Site Redundancy
@@ -174,6 +246,10 @@ True Redundancy
 Your **off-site backup** lives on separate cloud infrastructure. Server crashes, hosting shutdowns, or ransomware attacks on your host can't touch it.
 
 Isolated Cloud Infrastructure
+
+</div>
+
+<div class="card">
 
 Human Oversight
 
@@ -183,6 +259,10 @@ Automated doesn't mean unmonitored. An engineer actually reviews whether backups
 
 Daily Manual Log Verification
 
+</div>
+
+<div class="card">
+
 Agency Ready
 
 ### White-Label Agency Options
@@ -190,6 +270,10 @@ Agency Ready
 If you manage client sites, explore our [white-label options for agencies](/white-label-website-maintenance-services-for-agencies/) to run invisibly with branded reports.
 
 Client-Ready Unbranded Reports
+
+</div>
+
+<div class="card">
 
 Archive History
 
@@ -199,6 +283,10 @@ Roll back 30, 60, or 90 days — essential when a broken plugin or database erro
 
 Up to 90 Days Rolling Backups
 
+</div>
+
+</div>
+
 [Switch to Managed Backups Today](/get-a-free-quote/)
 
 Tool vs. Service Differentiator
@@ -207,11 +295,31 @@ Tool vs. Service Differentiator
 
 Plugins back up files. They don't watch the logs, test the restores, or pick up the phone when your site is down at 11pm. That's the difference between a **tool** and a **managed service**.
 
+<div class="cards">
+
+<div class="card">
+
+<div class="card">
+
 Managing WordPress Sites Across US, UK, CA & AU
+
+</div>
+
+<div class="card">
 
 100% In-House Engineering (Zero Outsourcing)
 
+</div>
+
+<div class="card">
+
 0 Forced Migrations (Works With Any Host)
+
+</div>
+
+</div>
+
+<div class="card">
 
 Proven experience managing sites for agencies, small businesses, healthcare portals, and high-volume eCommerce stores.
 
@@ -231,6 +339,10 @@ Host-agnostic compatibility — whether on SiteGround, Bluehost, HostGator, or W
 
 Unbranded white-label reporting and multi-site dashboards as a trusted [managed backup provider](/white-label-website-maintenance-services-for-agencies/) for agency partners.
 
+</div>
+
+</div>
+
 [See Pricing & Compare Plans](#pricing)
 
 Full Technical Inclusions
@@ -239,41 +351,81 @@ Full Technical Inclusions
 
 We leave nothing to chance. Every managed plan includes 9 granular technical deliverables to keep your files, database, and business completely secure.
 
+<div class="cards">
+
+<div class="card">
+
 ### Daily Automated Backups
 
 Files, database, plugins, themes, and media library — captured every day without you lifting a finger.
+
+</div>
+
+<div class="card">
 
 ### Off-Site Encrypted Storage
 
 Backups stored safely away from your hosting server, encrypted in transit and at rest in cloud infrastructure.
 
+</div>
+
+<div class="card">
+
 ### Incremental Backup Technology
 
 Only modified files are backed up after the first full copy — faster, lighter, and zero server strain.
+
+</div>
+
+<div class="card">
 
 ### 30 / 60 / 90-Day Retention
 
 Roll back further than "yesterday" when a broken plugin or database issue isn't caught immediately.
 
+</div>
+
+<div class="card">
+
 ### 1-Click & Assisted Restores
 
 Restore an entire site or individual files/database tables yourself, or let our team handle it in under 30 minutes.
+
+</div>
+
+<div class="card">
 
 ### Human-Monitored Backup Logs
 
 We check that backups actually completed successfully — not just that an automated cron job "ran".
 
+</div>
+
+<div class="card">
+
 ### Pre-Update Safety Backups
 
 An extra backup taken automatically before major plugin, theme, or core WordPress updates are executed.
+
+</div>
+
+<div class="card">
 
 ### Malware-Aware Restore Points
 
 Restore to a clean point *before* an infection, not just the most recent (possibly infected) backup copy.
 
+</div>
+
+<div class="card">
+
 ### White-Label Client Reporting (Agency Plans)
 
 Client-ready monthly backup logs and performance reports generated under your own agency brand.
+
+</div>
+
+</div>
 
 [Protect My Site — View Backup Plans](#pricing)
 
@@ -285,43 +437,14 @@ Should you hire a freelancer, rely on your web host, or use a backup plugin? See
 
 ### Transparent Feature-by-Feature Comparison
 
-| Backup Factor | 
-Our Managed Service
-
-Recommended
-
- | Backup Plugin Alone | Freelancer | Host's Built-In Backup |
+| Backup Factor | Our Managed Service Recommended | Backup Plugin Alone | Freelancer | Host's Built-In Backup |
 | --- | --- | --- | --- | --- |
-| Off-Site Encrypted Storage | 
-
-Always Isolated Cloud
-
- | Only if set up | Depends on setup | Same Server |
-| Restore Tested in Advance | 
-
-Yes, Scheduled Staging Test
-
- | Rarely | Only if remembered | No |
-| Monitors for Failed Backup Logs | 
-
-Yes, Daily Human Audit
-
- | No | Inconsistent | No |
-| Immediate Support if Site Breaks | 
-
-Yes, Under 30 Mins
-
- | N/A (DIY) | Hourly availability | No |
-| Cost Structure | 
-
-Predictable Monthly Flat Rate
-
- | Cheap, but you do work | Variable hourly fees | Free, but limited |
-| Best Suited For | 
-
-Businesses that can't afford downtime
-
- | Hobby blogs & tech owners | One-off projects | Non-critical sites |
+| Off-Site Encrypted Storage | Always Isolated Cloud | Only if set up | Depends on setup | Same Server |
+| Restore Tested in Advance | Yes, Scheduled Staging Test | Rarely | Only if remembered | No |
+| Monitors for Failed Backup Logs | Yes, Daily Human Audit | No | Inconsistent | No |
+| Immediate Support if Site Breaks | Yes, Under 30 Mins | N/A (DIY) | Hourly availability | No |
+| Cost Structure | Predictable Monthly Flat Rate | Cheap, but you do work | Variable hourly fees | Free, but limited |
+| Best Suited For | Businesses that can't afford downtime | Hobby blogs & tech owners | One-off projects | Non-critical sites |
 
 #### The Honest Take on Backup Solutions
 
@@ -337,6 +460,10 @@ Getting started with managed **WordPress backup services** Here is our 5-step se
 
 Setup Complete in 24–48 Hours | Restores Completed in &lt;30 Minutes
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 Day 1
@@ -346,6 +473,10 @@ Day 1
 We check your current backup setup (or lack of one), your web host's limitations, and site size — no cost, no obligation.
 
 Zero Cost Diagnostic
+
+</div>
+
+<div class="card">
 
 02
 
@@ -357,6 +488,10 @@ We configure automated off-site cloud backups matched to your site's update freq
 
 Isolated Storage Ready
 
+</div>
+
+<div class="card">
+
 03
 
 Day 2–3
@@ -366,6 +501,10 @@ Day 2–3
 We run a real restore test in a staging environment to confirm it works before you ever need it in an emergency.
 
 Human Verified Restore
+
+</div>
+
+<div class="card">
 
 04
 
@@ -377,6 +516,10 @@ Daily and incremental backups run quietly in the background. Engineers check com
 
 Daily Monitored Logs
 
+</div>
+
+<div class="card">
+
 05
 
 Emergency
@@ -387,6 +530,10 @@ Use the 1-click dashboard yourself, or call/email us — most restores complete 
 
 &lt; 30-Minute Recovery
 
+</div>
+
+</div>
+
 [Start Your Free Backup Audit Today](/get-a-free-quote/)
 
 Proven Disaster Recovery
@@ -394,6 +541,10 @@ Proven Disaster Recovery
 ## Real Recoveries, Real Businesses
 
 When server crashes, malware attacks, or human errors happen, our managed backup system restores complete functionality in minutes — protecting revenue, reputation, and peace of mind.
+
+<div class="cards">
+
+<div class="card">
 
 E-Commerce Store ● 41-Min Recovery
 
@@ -403,6 +554,10 @@ A WooCommerce store was compromised through a vulnerable third-party plugin. Fil
 
 Total Order Loss: Effectively $0
 
+</div>
+
+<div class="card">
+
 Law Firm Site ● Same-Day Restore
 
 ### Host Server Hardware Crash
@@ -410,6 +565,10 @@ Law Firm Site ● Same-Day Restore
 The client's hosting provider had a hardware failure that corrupted their server-side backups entirely. Because our backups are stored off-site on separate cloud infrastructure, we restored their full site — including the contact form submission database — to a new host within the same day.
 
 Data Loss Status: Restored
+
+</div>
+
+<div class="card">
 
 Healthcare Practice ● Granular Rollback
 
@@ -419,6 +578,10 @@ A staff member accidentally deleted several service pages while updating patient
 
 Downtime Impact: Zero Site Outage
 
+</div>
+
+</div>
+
 (Client names withheld per NDA/privacy agreements — reference details available upon request.)
 
 PROVEN GLOBAL TRACK RECORD
@@ -427,19 +590,51 @@ PROVEN GLOBAL TRACK RECORD
 
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
+<div class="cards">
+
+<div class="card">
+
 Law Firms
+
+</div>
+
+<div class="card">
 
 Healthcare
 
+</div>
+
+<div class="card">
+
 eCommerce
+
+</div>
+
+<div class="card">
 
 SaaS & Tech
 
+</div>
+
+<div class="card">
+
 Agency Sites
+
+</div>
+
+<div class="card">
 
 Corporate
 
+</div>
+
+<div class="card">
+
 Local Services
+
+</div>
+
+</div>
 
 Tailored Industry Protocols
 
@@ -493,6 +688,10 @@ Clear & Transparent Rates
 
 Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed **wordpress backup service cost** plan that fits your budget.
 
+<div class="cards">
+
+<div class="card">
+
 Starter Tier
 
 ### Brochure Sites
@@ -510,6 +709,10 @@ $29 / month
 -   White-Label Client Reporting
 
 [Start Free Backup Audit](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 ★ Most Popular Choice
 
@@ -531,6 +734,10 @@ $59 / month
 
 [Get Business Care Plan](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Agency Tier
 
 ### Multi-Site Portfolios
@@ -549,6 +756,10 @@ $199 / month
 
 [Start Agency Backup Plan](/get-a-free-quote/)
 
+</div>
+
+</div>
+
 • No Credit Card Required for Audit • Cancel Anytime
 
 Looking for comprehensive website maintenance including speed and security? View our [full maintenance plans and packages](/monthly-website-maintenance-packages/).
@@ -557,9 +768,21 @@ Zero Risk Commitment
 
 If we ever fail to restore your site from a valid backup within our stated timeframe, **that month's service is free** — no argument, no fine print gymnastics. We are confident in this because we test restores in advance, before you ever need one, not after a disaster occurs.
 
+<div class="cards">
+
+<div class="card">
+
 Restore SLA Free month if we fail to recover your site in time.
 
+</div>
+
+<div class="card">
+
 30-Day Satisfaction Period Cancel in your first month and get a full refund.
+
+</div>
+
+</div>
 
 No Fine Print Gymnastics • Pre-Tested Restores • Instant Cancel Anytime
 
@@ -569,11 +792,19 @@ Industry Data Factors
 
 Industry security research highlights why unmonitored website setups leave business owners vulnerable to devastating outages:
 
+<div class="cards">
+
+<div class="card">
+
 43%
 
 Of all cyberattacks target small businesses, and most don't have a tested disaster recovery plan in place.
 
 Source: Cyber Security Research
+
+</div>
+
+<div class="card">
 
 $1,000+
 
@@ -581,11 +812,19 @@ Average hourly cost of website downtime for a business once lost sales and brand
 
 Source: Business Outage Metrics
 
+</div>
+
+<div class="card">
+
 Weekly
 
 WordPress core, plugin, and theme updates occur — each single update acting as a potential site break point.
 
 Source: WP Ecosystem Analytics
+
+</div>
+
+<div class="card">
 
 &lt;30m
 
@@ -593,31 +832,59 @@ Average recovery time with our tested backup system vs. hours or days of chaos i
 
 Source: Client Recovery Logs
 
+</div>
+
+</div>
+
 Comprehensive WordPress Care
 
 ## Explore Our Full-Service WordPress Protection
 
 Backups are just one part of site health. Combine your backup strategy with our other expert services:
 
+<div class="cards">
+
+<div class="card">
+
 ### [WordPress Security](/wordpress-malware-removal-service/)
 
 [Proactive malware scans, firewall hardening, & instant cleanup. Learn More →](/wordpress-malware-removal-service/)
+
+</div>
+
+<div class="card">
 
 ### [Speed Optimization](/website-speed-optimization-services/)
 
 [Core Web Vitals tuning, caching & database speedups. Learn More →](/website-speed-optimization-services/)
 
+</div>
+
+<div class="card">
+
 ### [Monthly Care Plans](/monthly-website-maintenance-packages/)
 
 [Full-service maintenance, backups, security, & edits. Learn More →](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
 
 ### [WordPress Updates](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
 
 [Safe, tested core, theme, & plugin update management. Learn More →](/wp-content/uploads/2026/06/wordpress-maintenance-services.webp)
 
+</div>
+
+<div class="card">
+
 ### [White-Label Services](/white-label-website-maintenance-services-for-agencies/)
 
 [Unbranded backup & care solutions for digital agencies. Learn More →](/white-label-website-maintenance-services-for-agencies/)
+
+</div>
+
+</div>
 
 Free PDF Checklist
 

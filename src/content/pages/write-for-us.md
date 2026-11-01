@@ -31,11 +31,19 @@ Topics We Accept
 
 We consider articles within the broader web maintenance, design, performance, security, and digital ecosystem:
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### Website Maintenance
 
 Routine care plans, server health, plugin updates, bug fixing, and continuous technical support.
+
+</div>
+
+<div class="card">
 
 02
 
@@ -43,11 +51,19 @@ Routine care plans, server health, plugin updates, bug fixing, and continuous te
 
 Core updates, Gutenberg workflows, conflict troubleshooting, hooks, filters, and theme standards.
 
+</div>
+
+<div class="card">
+
 03
 
 ### Website Security & Malware
 
 Vulnerability patching, backdoor elimination, Google blacklist removal, and WAF firewall setups.
+
+</div>
+
+<div class="card">
 
 04
 
@@ -55,11 +71,19 @@ Vulnerability patching, backdoor elimination, Google blacklist removal, and WAF 
 
 Host-to-host transfers, zero-downtime DNS cutovers, database export/import, and domain changes.
 
+</div>
+
+<div class="card">
+
 05
 
 ### Website Redesign Strategy
 
 Redesigning without losing SEO rankings, information architecture overhaul, and UI/UX modernization.
+
+</div>
+
+<div class="card">
 
 06
 
@@ -67,11 +91,19 @@ Redesigning without losing SEO rankings, information architecture overhaul, and 
 
 Mobile-first responsive design, wireframes, conversion funnel optimization, and WCAG accessibility.
 
+</div>
+
+<div class="card">
+
 07
 
 ### Speed & Core Web Vitals
 
 LCP, INP, and CLS tuning, caching configurations, WebP compression, and JavaScript deferral.
+
+</div>
+
+<div class="card">
 
 08
 
@@ -79,11 +111,19 @@ LCP, INP, and CLS tuning, caching configurations, WebP compression, and JavaScri
 
 eCommerce store maintenance, cart checkout performance, payment gateways, and SKU management.
 
+</div>
+
+<div class="card">
+
 09
 
 ### Technical SEO & Indexing
 
 Crawl budget optimization, XML sitemaps, 301 redirects, Schema markup, and Google Search Console.
+
+</div>
+
+<div class="card">
 
 10
 
@@ -91,17 +131,29 @@ Crawl budget optimization, XML sitemaps, 301 redirects, Schema markup, and Googl
 
 LiteSpeed, Nginx, Apache, PHP version upgrades, Redis object caching, and Cloudflare CDN edges.
 
+</div>
+
+<div class="card">
+
 11
 
 ### Backups & Disaster Recovery
 
 Automated offsite backups, incremental data copies, restore testing, and rollback safety nets.
 
+</div>
+
+<div class="card">
+
 12
 
 ### White Label Agency Retainers
 
 Client care operations, unbranded reporting, agency recurring revenue models, and client retention.
+
+</div>
+
+</div>
 
 Audience Focus
 
@@ -121,21 +173,57 @@ Contributors
 
 We welcome submissions from knowledgeable professionals and teams operating within the web design, development, and maintenance ecosystem:
 
+<div class="cards">
+
+<div class="card">
+
 Web Developers
+
+</div>
+
+<div class="card">
 
 WordPress Specialists
 
+</div>
+
+<div class="card">
+
 Agency Founders
+
+</div>
+
+<div class="card">
 
 UI/UX Designers
 
+</div>
+
+<div class="card">
+
 Security Researchers
+
+</div>
+
+<div class="card">
 
 Technical SEOs
 
+</div>
+
+<div class="card">
+
 eCommerce Managers
 
+</div>
+
+<div class="card">
+
 System Administrators
+
+</div>
+
+</div>
 
 <a id="guidelines"></a>
 
@@ -145,37 +233,73 @@ Editorial Guidelines
 
 Every draft must satisfy these strict quality standards before our editorial team schedules it for publishing:
 
+<div class="cards">
+
+<div class="card">
+
 #### 800 to 1,500 Words
 
 Articles must be concise yet thorough, ranging between 800 and 1,500 words of actionable technical content.
+
+</div>
+
+<div class="card">
 
 #### 1–2 Do-Follow Links
 
 You may include 1 to 2 permanent, contextual Do-Follow links within the article body to your relevant website.
 
+</div>
+
+<div class="card">
+
 #### AI Content Policy
 
 AI-assisted drafts are accepted only if deeply edited with genuine human effort, real screenshots, and verified examples. Raw AI garbage is rejected.
+
+</div>
+
+<div class="card">
 
 #### Relevant to Our Industry
 
 The article must directly relate to website maintenance, WordPress, web design, security, speed, or SEO.
 
+</div>
+
+<div class="card">
+
 #### Useful to Readers
 
 Articles should educate, explain, analyze, or provide practical tutorials rather than openly advertise a commercial service.
+
+</div>
+
+<div class="card">
 
 #### Reliable Sources & Citations
 
 Technical claims, statistics, and code references should be backed by credible citations (e.g., WordPress.org, W3C, Google).
 
+</div>
+
+<div class="card">
+
 #### No Keyword Stuffing
 
 Content written to manipulate search rankings, over-optimized anchor text, or unnatural phrasing will be edited or rejected.
 
+</div>
+
+<div class="card">
+
 #### Editorial Revisions
 
 We reserve the right to edit formatting, headings, grammar, and links when necessary to protect site quality.
+
+</div>
+
+</div>
 
 Editorial Review
 
@@ -183,11 +307,19 @@ Editorial Review
 
 Sending us an article does not guarantee publication. Every submission is analyzed internally before we decide whether it is suitable for our readers.
 
+<div class="cards">
+
+<div class="card">
+
 1
 
 #### Submit
 
 Send your article idea, outline, or completed Google Docs draft to our email address.
+
+</div>
+
+<div class="card">
 
 2
 
@@ -195,17 +327,29 @@ Send your article idea, outline, or completed Google Docs draft to our email add
 
 We review relevance, originality, technical depth, links, sources, and audience alignment.
 
+</div>
+
+<div class="card">
+
 3
 
 #### Editorial Review
 
 Our editorial team determines whether the article meets our standards or requires minor revisions.
 
+</div>
+
+<div class="card">
+
 4
 
 #### Publication
 
 If approved, we format, optimize, and publish the article permanently on our blog.
+
+</div>
+
+</div>
 
 1
 
@@ -221,17 +365,45 @@ Quality Standards
 
 Submissions containing the following are automatically rejected:
 
+<div class="cards">
+
+<div class="card">
+
 Purely promotional articles or advertisements disguised as educational content.
+
+</div>
+
+<div class="card">
 
 Low-quality, unedited AI garbage without human technical insight or effort.
 
+</div>
+
+<div class="card">
+
 Duplicate, copied, spun, or previously published articles from other blogs.
+
+</div>
+
+<div class="card">
 
 Thin or generic content (under 800 words) created primarily to obtain a backlink.
 
+</div>
+
+<div class="card">
+
 Articles with misleading claims, broken sources, or unverified technical data.
 
+</div>
+
+<div class="card">
+
 Links to prohibited niches: casino, gambling, betting, adult, loans, or crypto.
+
+</div>
+
+</div>
 
 <a id="submit-pitch"></a>
 

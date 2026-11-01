@@ -29,15 +29,39 @@ You bring the opportunity. We provide the maintenance service.
 
 #### Clients Regularly Request:
 
+<div class="cards">
+
+<div class="card">
+
 WordPress Core & Plugin Maintenance
+
+</div>
+
+<div class="card">
 
 Security Hardening & Malware Cleanup
 
+</div>
+
+<div class="card">
+
 Automated Cloud Backups & Testing
+
+</div>
+
+<div class="card">
 
 Speed Tuning & Core Web Vitals
 
+</div>
+
+<div class="card">
+
 Emergency Bug Fixes & Quick Edits
+
+</div>
+
+</div>
 
 Workflow
 
@@ -45,11 +69,19 @@ Workflow
 
 A streamlined, 5-step operational workflow from lead discovery to hands-off maintenance fulfillment.
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### Find an Opportunity
 
 You have a client, business contact, or project needing ongoing website support or fixes.
+
+</div>
+
+<div class="card">
 
 02
 
@@ -57,11 +89,19 @@ You have a client, business contact, or project needing ongoing website support 
 
 Tell us what your client needs. We help determine the exact matching package and scope.
 
+</div>
+
+<div class="card">
+
 03
 
 ### Set Your Client Price
 
 You receive a discounted Partner Price from WMS, and bill your client at your own chosen rate.
+
+</div>
+
+<div class="card">
 
 04
 
@@ -69,11 +109,19 @@ You receive a discounted Partner Price from WMS, and bill your client at your ow
 
 Your client pays you directly. You then pay WMS the wholesale partner fee and keep your margin.
 
+</div>
+
+<div class="card">
+
 05
 
 ### We Handle Service
 
 We perform daily updates, backups, monitoring, and fixes without you managing a technical team.
+
+</div>
+
+</div>
 
 <a id="partner-models"></a>
 
@@ -83,21 +131,41 @@ Flexible Business Model
 
 WMS is built to support agencies and solo professionals who want recurring revenue without building an in-house website maintenance department.
 
+<div class="cards">
+
+<div class="card">
+
 ### A Service Partner
 
 Add reliable, scheduled website care directly into your existing service offerings to retain clients long after the initial web build or design contract ends.
+
+</div>
+
+<div class="card">
 
 ### A Reseller Partner
 
 Purchase WMS plans at discounted wholesale partner pricing, bundle them into your client packages at your chosen markup, and collect monthly retainers.
 
+</div>
+
+<div class="card">
+
 ### A Technical Partner
 
 Offload complicated technical tasks, malware outbreaks, broken database migrations, and server-level speed optimizations that fall outside your in-house scope.
 
+</div>
+
+<div class="card">
+
 ### A White-Label Partner
 
 For eligible agency partners, deliver professional website maintenance under your brand name while our team quietly powers all technical backend fulfillment.
+
+</div>
+
+</div>
 
 Partner Profiles
 
@@ -105,29 +173,57 @@ Partner Profiles
 
 Designed specifically for digital creators, consultants, and companies who manage relationships with web-dependent businesses:
 
+<div class="cards">
+
+<div class="card">
+
 #### Freelancers
 
 You design graphics, build sites, or run ads, but don't want the stress of ongoing emergency maintenance.
+
+</div>
+
+<div class="card">
 
 #### Web Designers & Developers
 
 You launch new client projects and need a reliable support desk so you can focus on building new sites.
 
+</div>
+
+<div class="card">
+
 #### SEO Professionals
 
 Your clients need technical website support, Core Web Vitals fixes, and backups alongside search optimization.
+
+</div>
+
+<div class="card">
 
 #### Digital Marketing Agencies
 
 Add website maintenance to your services portfolio immediately without hiring full-time support engineers.
 
+</div>
+
+<div class="card">
+
 #### Business Consultants
 
 Recommend reliable technical care providers to your corporate clients and create a recurring margin.
 
+</div>
+
+<div class="card">
+
 #### IT & Hosting Providers
 
 Deliver application-level WordPress and CMS maintenance without burdening your server support team.
+
+</div>
+
+</div>
 
 Transparent Economics
 
@@ -135,11 +231,19 @@ Transparent Economics
 
 You control your retail client billing. Here is how a standard reseller relationship works in practice:
 
+<div class="cards">
+
+<div class="card">
+
 1\. You Charge Client
 
 $250/mo
 
 Client pays your invoice directly according to your package.
+
+</div>
+
+<div class="card">
 
 2\. You Pay WMS
 
@@ -147,11 +251,19 @@ $200/mo
 
 Discounted agreed wholesale partner rate paid to WMS.
 
+</div>
+
+<div class="card">
+
 Your Gross Margin
 
 +$50/mo
 
 Per client monthly profit with zero support work on your part.
+
+</div>
+
+</div>
 
 Multiply by 10 clients = **$500/month recurring gross margin** with zero technical headaches.
 
@@ -188,17 +300,33 @@ Governance & Trust
 
 ### Who Owns the Client?
 
+<div class="cards">
+
+<div class="card">
+
 #### Referral Model
 
 WMS works directly with your referred client under agreed referral terms.
+
+</div>
+
+<div class="card">
 
 #### Reseller Model
 
 You purchase the service and resell it directly to your client under your own agreements.
 
+</div>
+
+<div class="card">
+
 #### White-Label Model
 
 WMS provides the technical backbone while all client communication remains under your brand.
+
+</div>
+
+</div>
 
 <a id="partner-form"></a>
 

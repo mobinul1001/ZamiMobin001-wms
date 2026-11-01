@@ -9,15 +9,35 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"Does website speed affect SEO rankings?","a":"Yes, 100%. Google officially uses page speed and Core Web Vitals as a direct search ranking factor. Faster websites get indexed faster and rank higher in Page 1 search results."},{"q":"Does page speed impact conversion rates?","a":"Yes. Every 1-second delay in page load time reduces conversions by up to 7%. Cutting load times under 2 seconds significantly reduces mobile cart abandonment."},{"q":"Why is my WordPress website slow on mobile?","a":"Common causes include uncompressed JPEG/PNG images, render-blocking JavaScript and CSS files, lack of server caching, bloated page builders, and slow hosting TTFB."},{"q":"What is website speed optimization?","a":"Website speed optimization is the technical process of improving a website's page load time, server response time (TTFB), and Google Core Web Vitals metrics (LCP, INP, CLS) to pass PageSpeed benchmarks."},{"q":"What is a good page speed score?","a":"A Google PageSpeed Insights score of 90+ (Green) on both mobile and desktop, along with a total page load time under 2.0 seconds, is considered excellent for search rankings and conversions."},{"q":"What are Google Core Web Vitals?","a":"Core Web Vitals optimization is the process of improving Google’s three official page experience metrics: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). Passing all three thresholds in real-user Chrome UX Reports is mandatory for maintaining Page 1 search rankings."},{"q":"Why is my WordPress website slow?","a":"Common causes include uncompressed images, render-blocking JavaScript and CSS, lack of server caching, bloated page builders (Elementor/Divi), and slow hosting response times (TTFB)."},{"q":"How long does website speed optimization take?","a":"Most speed optimization projects are completed within 24 to 48 hours. Emergency same-day turnaround is available upon request."},{"q":"Does website speed affect SEO rankings?","a":"Yes, 100%. Google officially uses page speed and Core Web Vitals as a direct search ranking factor. Faster websites get indexed faster and rank higher in Page 1 search results."},{"q":"Does page speed impact conversion rates?","a":"Yes. Every 1-second delay in page load time reduces conversions by up to 7%. Cutting load times under 2 seconds significantly reduces mobile cart abandonment."},{"q":"What is the best way to speed up a WordPress site?","a":"The best way is a combination of WebP image compression, CSS/JS minification, critical CSS inlining, LiteSpeed/Cloudflare edge caching, and database table purging."},{"q":"Can you speed up a WooCommerce store without breaking functionality?","a":"Yes. We specialize in WooCommerce speed tuning, bypassing cache on dynamic cart/checkout pages and optimizing database queries so checkout remains functional."},{"q":"Is Elementor slow, and can it be optimized?","a":"Yes, Elementor adds DOM depth and extra scripts, but it can be optimized to pass Core Web Vitals by stripping unused widget CSS, deferring JS, and combining fonts."},{"q":"What causes render-blocking resources?","a":"Render-blocking resources are CSS and JavaScript files that prevent a browser from rendering above-the-fold content until they are fully downloaded. We defer or inline them."},{"q":"What is lazy loading and how does it help speed?","a":"Lazy loading defers the loading of below-the-fold images and videos until the user scrolls down, significantly reducing initial page load weight and LCP."},{"q":"Do you use LiteSpeed or Cloudflare for optimization?","a":"Yes! We configure server-level LiteSpeed Cache (LSCache) and Cloudflare APO edge caching to deliver global CDN speeds with sub-200ms TTFB."},{"q":"Will optimization affect my website's design or content?","a":"No. We perform visual regression testing across 15+ device sizes. Your site's visual design, fonts, images, and layout remain intact."},{"q":"Do I need a CDN for my website?","a":"If you have visitors from multiple geographic locations, a CDN (Content Delivery Network) like Cloudflare serves media from the closest edge server, drastically cutting load times."},{"q":"How do you optimize mobile page speed?","a":"Mobile optimization focuses on reducing CPU execution time, serving smaller WebP images for mobile viewports, inlining critical CSS, and eliminating unused JS."},{"q":"Is website speed optimization a one-time service or ongoing?","a":"We also offer monthly retainers to ensure future plugin or content updates don't slow down your site."},{"q":"How does speed optimization work with your maintenance & security plans?","a":"Speed, security, and maintenance work together. You can bundle speed tuning with our WordPress maintenance plans and website security services."},{"q":"What tools do you use to test and verify speed improvements?","a":"We use Google PageSpeed Insights, Google Lighthouse, Chrome UX Report (CrUX), and GTmetrix to benchmark and verify all performance improvements."}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Fix slow Google PageSpeed Insights scores, optimize Core Web Vitals (LCP, CLS, INP), and eliminate lost revenue from page abandonment. **site speed optimization** delivers lightning-fast web performance for businesses in the US, UK, Canada & Australia.
 
 Looking for complete site care? Pair your speed boost with our [ongoing website maintenance](/) or explore [custom website design](/website-design-services/).
 
 [Get a Free Speed Audit](/get-a-free-quote/) [See Pricing](#pricing)
 
+</div>
+
+<div class="card">
+
+<div class="cards">
+
+<div class="card">
+
 Before 42 / 100 3.8s LCP Failed Vitals
 
+</div>
+
+<div class="card">
+
 After 98 / 100 0.9s LCP Passed Vitals
+
+</div>
+
+</div>
 
 Largest Contentful Paint (LCP)
 
@@ -27,15 +47,39 @@ Interaction to Next Paint (INP)
 
 45ms Passed
 
+</div>
+
+</div>
+
 ## Trusted Speed Optimization Agency Across the US, UK, Canada & Australia
+
+<div class="cards">
+
+<div class="card">
 
 30+ websites built and maintained for businesses in Canada, the UK, the Caribbean and Bangladesh.
 
+</div>
+
+<div class="card">
+
 &lt; 2.0s Avg Load Time
+
+</div>
+
+<div class="card">
 
 90+ PageSpeed Score
 
+</div>
+
+<div class="card">
+
 Certified Speed Experts
+
+</div>
+
+</div>
 
 Google Partner Certified
 
@@ -49,6 +93,10 @@ The Revenue Impact of Speed
 
 Website speed is an official Google search algorithm ranking factor and the single most critical driver of online conversion rates. A slow website increases bounce rates, frustrates visitors, and directly destroys ad spend ROI. Strategic **website load time optimization** turns lost visitors into paying customers.
 
+<div class="cards">
+
+<div class="card">
+
 40%
 
 ### Page Abandonment
@@ -56,6 +104,10 @@ Website speed is an official Google search algorithm ranking factor and the sing
 Of website visitors immediately abandon a page that takes longer than 3 seconds to load on mobile or desktop devices.
 
 Source: Google / Web.dev Research
+
+</div>
+
+<div class="card">
 
 \-7%
 
@@ -65,6 +117,10 @@ Drop in conversion rates for every single 1-second delay in page loading speed a
 
 Source: Akamai Performance Study
 
+</div>
+
+<div class="card">
+
 2x Sales
 
 ### Sub-2s Conversion Lift
@@ -73,6 +129,10 @@ Mobile sites that load in under 2 seconds experience double the conversion rates
 
 Source: Deloitte Conversion Report
 
+</div>
+
+<div class="card">
+
 #1 Rank
 
 ### Core Web Vitals Signal
@@ -80,6 +140,10 @@ Source: Deloitte Conversion Report
 Google officially uses Core Web Vitals (LCP, CLS, INP) as a direct ranking factor to determine top Page 1 positions.
 
 Source: Google Search Central
+
+</div>
+
+</div>
 
 #### Speed Optimization Requires Continuous Monitoring
 
@@ -94,6 +158,10 @@ Google Search Ranking Factor
 ### What are Google Core Web Vitals?
 
 **Core Web Vitals optimization** is the process of improving Google’s three official page experience metrics: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). Passing all three thresholds in real-user Chrome UX Reports is mandatory for maintaining Page 1 search rankings.
+
+<div class="cards">
+
+<div class="card">
 
 Target: &lt; 2.5s
 
@@ -111,6 +179,10 @@ Server response time (TTFB) tuning
 
 Critical CSS & render-blocking removal
 
+</div>
+
+<div class="card">
+
 Target: &lt; 200ms
 
 ### INP — Responsiveness
@@ -126,6 +198,10 @@ Deferring heavy JavaScript execution
 Main-thread task splitting & optimization
 
 Eliminating unneeded background scripts
+
+</div>
+
+<div class="card">
 
 Target: &lt; 0.1
 
@@ -143,6 +219,10 @@ Font-display swap & preloading rules
 
 Reserving space for dynamic ads/widgets
 
+</div>
+
+</div>
+
 ### Real-User Chrome UX (CrUX) Field Data vs. Lab Data
 
 Google ranks your site based on real-user field data over a 28-day window. Learn how we analyze your current site scores in our [website speed audit](#speed-audit) section.
@@ -157,17 +237,37 @@ Lead Diagnostic Entry Point
 
 We use Google PageSpeed Insights, Lighthouse, and GTmetrix to diagnose hidden performance bottlenecks. Get a comprehensive, free **page speed audit** to discover what is holding your site back.
 
+<div class="cards">
+
+<div class="card">
+
 ### How We Boost Your Google PageSpeed Score
 
 Executing **google pagespeed insights optimization** requires fixing both lab data and real-user field data. Our **pagespeed optimizer** engineers resolve render-blocking JavaScript, unoptimized images, server response times (TTFB), and un-cached assets.
 
 Real Client Score Transformation
 
+<div class="cards">
+
+<div class="card">
+
 Before Audit 42 / 100 Failed Vitals
+
+</div>
+
+<div class="card">
 
 After Optimization 98 / 100 Passed Vitals
 
+</div>
+
+</div>
+
 Want to explore our transparent pricing? Check out our [website speed optimization plans](#pricing) or view the [speed tools we use](#tools-we-use).
+
+</div>
+
+<div class="card">
 
 Free Instant Audit
 
@@ -177,6 +277,10 @@ Receive a full PageSpeed & Core Web Vitals scorecard in 24 hours.
 
 <form data-placeholder-form="true"><div><label for="speed-audit-name">Full Name *</label> <input name="name" type="text" required="" placeholder="e.g. John Doe"></div><div><label for="speed-audit-email">Work Email Address *</label> <input name="email" type="email" required="" placeholder="e.g. john@company.com"></div><div><label for="speed-audit-website">Website URL *</label> <input name="website" type="url" required="" placeholder="https://yourwebsite.com"></div><button type="submit" disabled="disabled"><span>Get Free Speed Scorecard</span></button><p>100% Free. No credit card required.</p></form>
 
+</div>
+
+</div>
+
 Tested Speed Workflow
 
 ## Our 5-Step Website Performance Optimization Process
@@ -184,6 +288,10 @@ Tested Speed Workflow
 We follow a systematic, 5-stage **website performance optimization**
 
 Average Completion: 24–48 Hours | Safe Offsite Backup First
+
+<div class="cards">
+
+<div class="card">
 
 01
 
@@ -195,6 +303,10 @@ Crawling PageSpeed Insights, Lighthouse, and GTmetrix to benchmark mobile LCP, C
 
 Baseline Scores Logged
 
+</div>
+
+<div class="card">
+
 02
 
 Step 02
@@ -204,6 +316,10 @@ Step 02
 Identifying heavy uncompressed images, render-blocking CSS/JS scripts, database bloat, and server delays.
 
 Issues Isolated
+
+</div>
+
+<div class="card">
 
 03
 
@@ -215,6 +331,10 @@ Executing WebP image conversion, CSS minification, JS deferral, LiteSpeed/Cloudf
 
 Code & Assets Optimized
 
+</div>
+
+<div class="card">
+
 04
 
 Step 04
@@ -224,6 +344,10 @@ Step 04
 Re-testing PageSpeed scores and verifying LCP (&lt;2.5s), INP (&lt;200ms), and CLS (&lt;0.1) metrics across devices.
 
 90+ Score Passed
+
+</div>
+
+<div class="card">
 
 05
 
@@ -235,6 +359,10 @@ Delivering before/after scorecards, handover documentation, and setup for [24/7 
 
 Scorecard Delivered
 
+</div>
+
+</div>
+
 [Start Your Speed Optimization Today](/get-a-free-quote/)
 
 Full Technical Inclusions
@@ -242,6 +370,10 @@ Full Technical Inclusions
 ## Technical Speed Optimization Capabilities
 
 We don't just install a basic caching plugin.
+
+<div class="cards">
+
+<div class="card">
 
 Tech 01
 
@@ -251,6 +383,10 @@ Executing **image optimization for website speed** via WebP/AVIF conversion, los
 
 WebP & AVIF Conversion
 
+</div>
+
+<div class="card">
+
 Tech 02
 
 ### CSS Optimization
@@ -258,6 +394,10 @@ Tech 02
 Advanced **css optimization**: minifying CSS stylesheets, combining files, and eliminating unused CSS code bloat.
 
 Unused CSS Removed
+
+</div>
+
+<div class="card">
 
 Tech 03
 
@@ -267,6 +407,10 @@ Strategic **javascript optimization**: deferring non-critical scripts, async loa
 
 Render-Blocking JS Deferred
 
+</div>
+
+<div class="card">
+
 Tech 04
 
 ### Critical CSS Inlining
@@ -274,6 +418,10 @@ Tech 04
 Precision **critical css optimization** to render above-the-fold content instantly for LCP acceleration.
 
 Instant Viewport Render
+
+</div>
+
+<div class="card">
 
 Tech 05
 
@@ -283,6 +431,10 @@ Configuring **lazy loading images wordpress** rules for below-the-fold media, vi
 
 Native Media Deferral
 
+</div>
+
+<div class="card">
+
 Tech 06
 
 ### Browser Caching
@@ -290,6 +442,10 @@ Tech 06
 Configuring **browser caching optimization** rules, expiry headers, and Gzip/Brotli compression policies.
 
 Gzip & Brotli Active
+
+</div>
+
+<div class="card">
 
 Tech 07
 
@@ -299,6 +455,10 @@ Server-level **litespeed optimization**: ESI fragment caching, object caching, a
 
 LSCache Server Tuning
 
+</div>
+
+<div class="card">
+
 Tech 08
 
 ### Cloudflare CDN
@@ -306,6 +466,10 @@ Tech 08
 Global **cloudflare speed optimization**: APO edge caching paired with [firewall & security hardening](/wordpress-malware-removal-service/).
 
 APO Edge Delivery
+
+</div>
+
+<div class="card">
 
 Tech 09
 
@@ -315,6 +479,10 @@ Deep **database optimization**: purging post revisions, transients, and spam. Ba
 
 MySQL Table Indexing
 
+</div>
+
+<div class="card">
+
 Tech 10
 
 ### Server & TTFB Tuning
@@ -322,6 +490,10 @@ Tech 10
 PHP 8+ memory tuning and TTFB reduction. Need server migration? Explore our [hosting migration service](/website-migration-services/).
 
 Sub-200ms TTFB
+
+</div>
+
+</div>
 
 [Request Full Technical Speed Audit](/get-a-free-quote/)
 
@@ -331,6 +503,10 @@ CMS-Specific Performance Tuning
 
 Every platform has unique speed bottlenecks. We specialize in deep **wordpress speed optimization**, stripping away plugin bloat, heavy page builder CSS, and database lag without breaking your site design or cart checkout funnels.
 
+<div class="cards">
+
+<div class="card">
+
 WordPress Core
 
 ### WordPress Speed Tuning
@@ -338,6 +514,10 @@ WordPress Core
 Eliminating WP heartbeat bloat, database revision buildup, and plugin conflicts. Combine with [WordPress maintenance plans](/wordpress-website-maintenance-packages/).
 
 Heartbeat & DB Bloat Purged
+
+</div>
+
+<div class="card">
 
 eCommerce
 
@@ -347,6 +527,10 @@ Expert tactics to **speed up woocommerce**: disabling \`get\_refreshed\_fragment
 
 Fast Cart & Checkout UX
 
+</div>
+
+<div class="card">
+
 Elementor
 
 ### Elementor Speed Optimization
@@ -354,6 +538,10 @@ Elementor
 Deep **elementor speed optimization**: stripping nested DOM depth, Google Fonts bloat, and unneeded icon scripts. Need a design overhaul? Explore [Elementor website design](/website-design-services/).
 
 DOM Depth & CSS Reduced
+
+</div>
+
+<div class="card">
 
 Hosting & PHP
 
@@ -363,6 +551,10 @@ Optimizing SiteGround, WP Engine, or Kinsta server settings, PHP 8.2+ upgrades, 
 
 PHP 8.2 & Redis Object Cache
 
+</div>
+
+</div>
+
 [Speed Up My WordPress Site](/get-a-free-quote/)
 
 SEO & Revenue Connection
@@ -370,6 +562,10 @@ SEO & Revenue Connection
 ## Technical SEO Benefits: Website Speed vs. SEO & Conversions
 
 Page speed isn't just about user convenience — it directly dictates how Google ranks your website and how many visitors convert into paying customers. Here is the technical evidence connecting speed to search engine visibility and revenue growth.
+
+<div class="cards">
+
+<div class="card">
 
 Search Ranking Signal
 
@@ -379,6 +575,10 @@ Google officially uses **page speed and seo** metrics (Core Web Vitals) as an al
 
 Official Google Algorithm Metric
 
+</div>
+
+<div class="card">
+
 Highest CRO ROI
 
 ### Website Speed & Conversions
@@ -386,6 +586,10 @@ Highest CRO ROI
 The connection between **website speed conversion rate** is direct. Every 1-second improvement in page load speed yields up to a 7% increase in conversion rates, reducing bounce rates and maximizing ad ROI.
 
 Up to +7% Conversion Lift Per Second
+
+</div>
+
+<div class="card">
 
 Crawl Budget Boost
 
@@ -395,6 +599,10 @@ Slow server response times (TTFB) waste Googlebot's limited crawl budget. Optimi
 
 Faster Indexation for New Content
 
+</div>
+
+<div class="card">
+
 Diagnostic Fixes
 
 ### Common Speed Problems We Fix
@@ -402,6 +610,10 @@ Diagnostic Fixes
 Wondering **why is my wordpress site slow**? We fix uncompressed media, render-blocking JS, lack of edge caching, and Elementor page builder bloat. Request a free [website speed audit](#speed-audit) to diagnose your site.
 
 Root-Cause Resolution
+
+</div>
+
+</div>
 
 Proven CRO Benchmark
 
@@ -421,17 +633,49 @@ We use industry-standard diagnostic tools to measure performance down to the mil
 
 Industry-Standard Diagnostic & Performance Tool Stack
 
+<div class="cards">
+
+<div class="card">
+
 PageSpeed Insights Google Benchmark
+
+</div>
+
+<div class="card">
 
 Google Lighthouse Lab Data Audit
 
+</div>
+
+<div class="card">
+
 GTmetrix Waterfall Analysis
+
+</div>
+
+<div class="card">
 
 LiteSpeed Cache LSCache Server
 
+</div>
+
+<div class="card">
+
 Cloudflare CDN APO Edge Caching
 
+</div>
+
+<div class="card">
+
 WP Rocket Asset Minification
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 eCommerce
 
@@ -441,6 +685,10 @@ Accelerating product catalog loading, cart AJAX fragments, and checkout speeds t
 
 Fast Checkout & Cart UX
 
+</div>
+
+<div class="card">
+
 SaaS & Tech
 
 ### SaaS & B2B Tech Portals
@@ -448,6 +696,10 @@ SaaS & Tech
 Sub-second page load times for software feature tours, demo signup funnels, and pricing tables to maximize demo conversions.
 
 Demo Funnel LCP &lt; 1.0s
+
+</div>
+
+<div class="card">
 
 Healthcare
 
@@ -457,6 +709,10 @@ Fast LCP load speeds for HIPAA-compliant clinic portals, doctor directories, and
 
 Fast Patient Appointment UX
 
+</div>
+
+<div class="card">
+
 Legal
 
 ### Law Firms & Legal Services
@@ -464,6 +720,10 @@ Legal
 Fast-loading attorney bio pages, practice area silos, and instant consultation lead capture forms for high-value cases.
 
 Practice Area Silo Speed
+
+</div>
+
+<div class="card">
 
 Real Estate
 
@@ -473,6 +733,10 @@ Optimizing high-resolution property image galleries, map listings, and search fi
 
 Heavy Gallery WebP Speed
 
+</div>
+
+<div class="card">
+
 Local Trades
 
 ### Local Service & Contractors
@@ -480,6 +744,10 @@ Local Trades
 Mobile-first speed tuning for local contractors (Roofing, HVAC, Plumbing) capturing emergency phone call leads.
 
 Mobile First Call Funnel
+
+</div>
+
+</div>
 
 Want to see proof of our speed results first? [See our real client speed case studies](#case-studies).
 
@@ -507,6 +775,10 @@ Fixed Transparent Pricing
 
 Wondering about the **average cost of wordpress speed optimization service** ?
 
+<div class="cards">
+
+<div class="card">
+
 Diagnostic Audit
 
 ### Starter Audit
@@ -521,6 +793,10 @@ $99 / one-time fee
 -   24-Hour Express Audit Delivery
 
 [Choose Starter Audit](/get-a-free-quote/#speed-audit)
+
+</div>
+
+<div class="card">
 
 Most Popular
 
@@ -539,6 +815,10 @@ $199 / one-time fee
 
 [Get Standard Optimization](/get-a-free-quote/#standard-speed)
 
+</div>
+
+<div class="card">
+
 eCommerce Stores
 
 ### WooCommerce Speed
@@ -554,6 +834,10 @@ $349 / one-time fee
 
 [Choose WooCommerce Plan](/get-a-free-quote/#woocommerce-speed)
 
+</div>
+
+<div class="card">
+
 Agencies & Fleets
 
 ### Enterprise Ongoing
@@ -568,6 +852,10 @@ Custom Quote Starting from $499/mo
 -   Dedicated Speed Engineer & SLA
 
 [Request Enterprise Quote](/contact/)
+
+</div>
+
+</div>
 
 #### What affects your total website speed optimization cost?
 

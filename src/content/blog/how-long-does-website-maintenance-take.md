@@ -33,21 +33,41 @@ Whether you do it yourself or hire a team, here is exactly how long website main
 
 [Get a Free Quote](/get-a-free-quote/)
 
+<div class="cards">
+
+<div class="card">
+
 1–3 hrs
 
 routine upkeep / month
+
+</div>
+
+<div class="card">
 
 15–30 min
 
 to run updates
 
+</div>
+
+<div class="card">
+
 &lt; 1 hr
 
 typical downtime window
 
+</div>
+
+<div class="card">
+
 0
 
 your time, if managed
+
+</div>
+
+</div>
 
 <img src="/wp-content/uploads/2026/10/website-maintenance-tasks-time-estimates.webp" alt="Website maintenance tasks including software updates, security scans, backups, speed optimization, and broken link checks" width="1672" height="941" loading="lazy">  
 
@@ -119,43 +139,87 @@ When a site shows a "scheduled maintenance" message, it usually means the team i
 
 Most maintenance happens with little or no downtime. Here is what to expect.
 
+<div class="cards">
+
+<div class="card">
+
 ### Routine updates
 
 Near-zero downtime. Tested on staging, then pushed live in seconds.
+
+</div>
+
+<div class="card">
 
 ### Scheduled changes
 
 Typically a few minutes to under an hour, usually during off-peak times.
 
+</div>
+
+<div class="card">
+
 ### Major work / fixes
 
 Larger rebuilds or recovery can take 1–4 hours, but are planned in advance.
 
+</div>
+
+</div>
+
 ## What Affects How Long Maintenance Takes
+
+<div class="cards">
+
+<div class="card">
 
 ### Plugins & complexity
 
 More plugins, custom code, and integrations mean more to test and update.
 
+</div>
+
+<div class="card">
+
 ### Site type
 
 Stores and membership sites need checkout and feature testing, adding time.
+
+</div>
+
+<div class="card">
 
 ### How often you maintain
 
 Frequent, small sessions are far faster than rare, catch-up overhauls.
 
+</div>
+
+<div class="card">
+
 ### Automation & tools
 
 Automated backups, monitoring, and staging cut hands-on time dramatically.
+
+</div>
+
+<div class="card">
 
 ### Skill & experience
 
 Experts finish in minutes what can take a beginner hours of troubleshooting.
 
+</div>
+
+<div class="card">
+
 ### Current site health
 
 A neglected site needs more upfront cleanup before routine upkeep is quick.
+
+</div>
+
+</div>
 
 <img src="/wp-content/uploads/2026/10/diy-vs-professional-website-maintenance.webp" alt="DIY vs professional website maintenance comparison showing self-managed website tasks versus professional maintenance services by WMS." width="1672" height="941" loading="lazy">  
 
@@ -171,7 +235,21 @@ The same maintenance takes very different amounts of *your* time depending on wh
 
 The fastest option for you is a managed plan — we absorb all the hours so you get the result without the time cost. See [how our process works](/website-maintenance-process/) or the full [maintenance checklist](/website-maintenance-checklist/).
 
-[View All Plans, Packages & Costs](/monthly-website-maintenance-packages/) [Monthly Maintenance Packages](/monthly-website-maintenance-packages/)
+<div class="cards">
+
+<div class="card">
+
+[View All Plans, Packages & Costs](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Monthly Maintenance Packages](/monthly-website-maintenance-packages/)
+
+</div>
+
+</div>
 
 ## Want to skip the hours entirely?
 
@@ -193,7 +271,45 @@ Common questions about how long website maintenance takes.
 
 ## Related Guides & Packages
 
-[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/) [Website Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/) [Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/) [WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/) [Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/) [Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+<div class="cards">
+
+<div class="card">
+
+[Website Maintenance Cost2026 pricing guide](/how-much-does-website-maintenance-cost/)
+
+</div>
+
+<div class="card">
+
+[Website Maintenance ChecklistEvery task, step by step](/website-maintenance-checklist/)
+
+</div>
+
+<div class="card">
+
+[Our Maintenance ProcessHow we keep sites running](/website-maintenance-process/)
+
+</div>
+
+<div class="card">
+
+[WordPress Maintenance PackagesPlans & pricing](/wordpress-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Website Management PackagesFully managed plans](/monthly-website-maintenance-packages/)
+
+</div>
+
+<div class="card">
+
+[Best Maintenance CompaniesCompare top providers](/best-website-maintenance-companies/)
+
+</div>
+
+</div>
 
 ## Get Your Time Back — We'll Handle Maintenance
 

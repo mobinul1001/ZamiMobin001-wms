@@ -14,61 +14,121 @@ Website Maintenance Services for Canada
 Whether you operate an eCommerce store, professional service website, SaaS platform, or local business, your website represents your brand across Canada.  
 We ensure your site stays optimized, protected, and error-free.
 
+<div class="cards">
+
+<div class="card">
+
 #### Security Risks
 
 Canadian websites must manage cyber threats. We protect your site from security breaches and hacking attempts.
+
+</div>
+
+<div class="card">
 
 #### Slow Loading Speed
 
 Speed affects SEO and user experience. We optimize performance to ensure fast loading across all provinces.
 
+</div>
+
+<div class="card">
+
 #### Broken Pages or Errors
 
 Broken links and errors drive customers away. We fix layout and design issues immediately.
+
+</div>
+
+<div class="card">
 
 #### Lower Conversion Rates
 
 A poorly maintained site loses leads. We ensure your site is always ready to convert visitors into customers.
 
+</div>
+
+<div class="card">
+
 #### Sudden Downtime
 
 Our maintenance service ensures your site stays fast, secure, error-free, and fully optimized year-round to prevent downtime.
+
+</div>
+
+</div>
 
 ## Our Website Maintenance Services for Canada
 
 Comprehensive care for small businesses, enterprises, and agencies.
 
+<div class="cards">
+
+<div class="card">
+
 #### 1\. Security Protection
 
 Real-time scans, malware removal, firewall setup, and hack prevention.
+
+</div>
+
+<div class="card">
 
 #### 2\. Website Updates
 
 CMS core updates, plugins & themes, and compatibility testing.
 
+</div>
+
+<div class="card">
+
 #### 3\. Performance & Speed
 
 Caching setup, image compression, database cleanup, and CDN integration.
+
+</div>
+
+<div class="card">
 
 #### 4\. eCommerce Testing
 
 Checkout testing, payment gateway checks, inventory, and order workflow fixes.
 
+</div>
+
+<div class="card">
+
 #### 5\. Technical Support
 
 Content changes, bug fixes, adding new pages, and troubleshooting.
+
+</div>
+
+<div class="card">
 
 #### 6\. Backup & Restore
 
 Automated backup schedule, full backup & instant restore, cloud storage options.
 
+</div>
+
+<div class="card">
+
 #### 7\. Monthly Reports
 
 Security status, speed analysis, issue resolution report, and improvement recommendations.
 
+</div>
+
+</div>
+
 ### Website Maintenance Packages & Pricing (Canada)
 
 Professional 3-tier plans tailored for small businesses, growing companies, and enterprise-level websites.
+
+<div class="cards">
+
+<div class="card">
 
 #### Basic
 
@@ -86,6 +146,10 @@ CAD 49/mo
 -   Browser/Mobile Checks
 -   Email Support
 -   Monthly Maintenance Report
+
+</div>
+
+<div class="card">
 
 POPULAR
 
@@ -107,6 +171,10 @@ CAD 99/mo
 -   SEO Performance Audit
 -   Priority Support
 
+</div>
+
+<div class="card">
+
 #### Premium
 
 Best for eCommerce, large businesses & high-traffic platforms.
@@ -125,31 +193,91 @@ CAD 199/mo
 -   Conversion Optimization Insights
 -   Dedicated Canadian Manager
 
+</div>
+
+</div>
+
 ### Industries We Serve Across Canada
+
+<div class="cards">
+
+<div class="card">
 
 Retail & eCommerce
 
+</div>
+
+<div class="card">
+
 Healthcare
+
+</div>
+
+<div class="card">
 
 Legal Firms
 
+</div>
+
+<div class="card">
+
 Finance
+
+</div>
+
+<div class="card">
 
 Construction
 
+</div>
+
+<div class="card">
+
 Education
+
+</div>
+
+<div class="card">
 
 Wellness
 
+</div>
+
+<div class="card">
+
 Creative Agencies
+
+</div>
+
+<div class="card">
 
 Automotive
 
+</div>
+
+<div class="card">
+
 Government
+
+</div>
+
+<div class="card">
 
 Hospitality
 
+</div>
+
+<div class="card">
+
 Non-Profit
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### Provinces & Territories
 
@@ -157,11 +285,19 @@ Non-Profit
 
 **Territories:** Yukon, Northwest Territories, Nunavut.
 
+</div>
+
+<div class="card">
+
 #### Major Canadian Cities
 
 Toronto, Vancouver, Montreal, Calgary, Edmonton, Ottawa, Winnipeg, Quebec City, Halifax, Victoria, Hamilton, Surrey, Mississauga, Brampton, London, Saskatoon, Regina, St. John’s, Kitchener–Waterloo, Windsor — and hundreds more.
 
 [Request a Free Website Health Audit](/free-website-maintenance-audit/)
+
+</div>
+
+</div>
 
 ## 🛎 Ready to Maintain & Protect Your Website?
 

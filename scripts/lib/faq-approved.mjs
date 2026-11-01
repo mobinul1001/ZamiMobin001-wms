@@ -60,6 +60,10 @@ const BODY_LINKS = {
 const PLANS_EN = 'Our plans start at $79/month (Essential), $149/month (Growth), and $299/month (Business), or $790, $1,490 and $2,990 per year (2 months free).';
 const PLANS_OLD = 'Our plans start at $95/month (Essential), $195/month (Advanced), and $395/month (Elevate), with 20% off annual billing.';
 const PRICE_CHANGES = {
+  '/monthly-website-maintenance-packages/': [
+    ['Our plans start at $95 per month for basic maintenance and go up to $395 per month for advanced, mission-critical website care.', 'Our plans start at $79 per month for basic maintenance and go up to $299 per month for advanced, mission-critical website care.'],
+    ['benefit from advanced or elevate plans', 'benefit from Growth or Business plans'],
+  ],
   '/best-website-maintenance-companies/': [['from $95/month. WP Buffs', 'from $79/month. WP Buffs']],
   '/best-website-maintenance-for-small-business/': [
     ['from $95/month, no lock-in', 'from $79/month, no lock-in'],

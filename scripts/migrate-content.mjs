@@ -126,6 +126,22 @@ service.use(gfm);
 service.keep(['form', 'details', 'iframe', 'video', 'audio', 'img']);
 const baseEscape = service.escape.bind(service);
 service.escape = (text) => baseEscape(text).replace(/</g, '&lt;');
+service.addRule('cardGrid', {
+  filter: (n) => n.nodeName === 'DIV' && n.getAttribute('data-cards') !== null,
+  replacement: (content) => (content.trim() ? `\n\n<div class="cards">\n\n${content.trim()}\n\n</div>\n\n` : ''),
+});
+service.addRule('card', {
+  filter: (n) => n.getAttribute('data-card') !== null,
+  replacement: (content) => (content.trim() ? `\n\n<div class="card">\n\n${content.trim()}\n\n</div>\n\n` : ''),
+});
+service.addRule('oneLineCell', {
+  filter: ['th', 'td'],
+  replacement: (content, n) => {
+    const cells = Array.prototype.indexOf.call(n.parentNode.childNodes, n);
+    const text = content.replace(/\s*\n+\s*/g, ' ').replace(/\|/g, '\\|').trim();
+    return `${cells === 0 ? '| ' : ' '}${text} |`;
+  },
+});
 service.addRule('rawImage', {
   filter: 'img',
   replacement: (_, n) => {
@@ -282,7 +298,25 @@ async function convert(path, record) {
     form.attr('data-placeholder-form', 'true');
   });
 
-  const keepAttr = new Set(['href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
+  // Mobile-only copies of table labels would print twice.
+  $('td [class*="md:hidden"], td [class*="sm:hidden"], td [class*="lg:hidden"]').remove();
+  // Card grids stay as cards.
+  $('[class*="grid-cols"]').each((_, e) => {
+    const grid = $(e);
+    if (grid.closest('table, form, details').length) return;
+    const kids = grid.children().toArray().filter((c) => c.name !== 'a' || $(c).text().trim());
+    if (kids.length < 2) return;
+    // Page layout grids hold whole sections; those stay as normal page flow.
+    if (grid.find('h1, h2').length) return;
+    if (kids.some((c) => $(c).text().trim().split(/\s+/).length > 120)) return;
+    grid.attr('data-cards', '');
+    kids.forEach((c) => {
+      if (c.name === 'div' || c.name === 'article' || c.name === 'li') $(c).attr('data-card', '');
+      else if (c.name === 'a') $(c).wrap('<div data-card=""></div>');
+    });
+  });
+
+  const keepAttr = new Set(['data-cards', 'data-card', 'href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
   $('body *').each((_, e) => {
     for (const attr of Object.keys(e.attribs ?? {})) {
       if (!keepAttr.has(attr)) delete e.attribs[attr];

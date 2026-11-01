@@ -89,41 +89,81 @@ If your business relies on its website to generate leads, process sales, or buil
 
 We work with:
 
+<div class="cards">
+
+<div class="card">
+
 ### Small Businesses
 
 No in-house tech team; need reliable help without full-time developer costs. Focus on your business while we handle the tech.
+
+</div>
+
+<div class="card">
 
 ### Agencies
 
 Manage multiple client sites and need scalable, white-label support to keep client retainers profitable and stress-free.
 
+</div>
+
+<div class="card">
+
 ### Ecommerce Stores
 
 Checkout downtime or broken product pages directly kills revenue. You need reliable [ecommerce website support](/ecommerce-website-maintenance-packages/) to keep sales flowing.
+
+</div>
+
+<div class="card">
 
 ### Healthcare Practices
 
 Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.
 
+</div>
+
+<div class="card">
+
 ### Law Firms
 
 Client trust depends on a professional, always-available online presence. A broken site damages firm credibility instantly.
+
+</div>
+
+<div class="card">
 
 ### Consultants
 
 Lead generation depends on a site that looks current and loads fast. Don't lose high-ticket clients to poor site performance.
 
+</div>
+
+<div class="card">
+
 ### SaaS Companies
 
 Product credibility starts with the marketing site; it can't afford to falter or look outdated to potential enterprise buyers.
+
+</div>
+
+<div class="card">
 
 ### Enterprise Businesses
 
 Complex sites with custom code, integrations, and high traffic need specialist-level ongoing support and monitoring.
 
+</div>
+
+<div class="card">
+
 ### Local Businesses
 
 Competing on Google Maps and local search requires a consistently healthy, fast, and mobile-optimized site.
+
+</div>
+
+</div>
 
 No matter your industry, your site is working for you around the clock. It should have a team doing the same.
 
@@ -135,6 +175,10 @@ Service Scope
 
 Our web support services cover every layer of your website — from the server environment to the content your visitors see. Every plan is structured around four pillars: reliability, security, speed, and responsive communication.
 
+<div class="cards">
+
+<div class="card">
+
 ### Maintenance
 
 -   WordPress core, plugin, and theme updates (tested before deployment)
@@ -142,6 +186,10 @@ Our web support services cover every layer of your website — from the server e
 -   Broken link detection and repair
 -   Redirect management (301 setups)
 -   Visual compatibility testing after major updates
+
+</div>
+
+<div class="card">
 
 ### Security
 
@@ -153,6 +201,10 @@ Our web support services cover every layer of your website — from the server e
 
 [Read more about our website security services](/wordpress-malware-removal-service/)
 
+</div>
+
+<div class="card">
+
 ### Performance
 
 -   Monthly page speed audits (Google PageSpeed Insights + Core Web Vitals)
@@ -162,6 +214,10 @@ Our web support services cover every layer of your website — from the server e
 
 [Explore our website speed optimization service](/website-speed-optimization-services/)
 
+</div>
+
+<div class="card">
+
 ### Support & Communication
 
 -   Ticket-based support system with defined response SLAs
@@ -170,6 +226,10 @@ Our web support services cover every layer of your website — from the server e
 -   Backup verification and restoration testing
 
 See our [website backup services](/wordpress-backup-services/) and [website monitoring](/monthly-website-maintenance-packages/) for full details.
+
+</div>
+
+</div>
 
 #### Need emergency help right now?
 
@@ -235,6 +295,10 @@ Monthly
 
 Annually Save 20%
 
+<div class="cards">
+
+<div class="card">
+
 ### WS Starter
 
 Best for: Small business websites
@@ -248,6 +312,10 @@ $ 199 /mo
 -   Monthly Website Health Report
 
 [Get Started](/contact/#starter)
+
+</div>
+
+<div class="card">
 
 ⭐ Recommended
 
@@ -265,6 +333,10 @@ $ 399 /mo
 
 [Get Started](/contact/#growth)
 
+</div>
+
+<div class="card">
+
 ### WS Premium 🔥
 
 Best for: Business-critical websites
@@ -278,6 +350,10 @@ $ 699 /mo
 -   **Same-Day Emergency Response**
 
 [Get Started](/contact/#premium)
+
+</div>
+
+</div>
 
 | Compare All Features | WS Starter | WS Growth ⭐ | WS Premium 🔥 |
 | --- | --- | --- | --- |
@@ -334,21 +410,41 @@ Our 24/7 website support service provides real, human-staffed emergency response
 
 ### Critical Issues We Handle:
 
+<div class="cards">
+
+<div class="card">
+
 #### Complete Site Outages
 
 We rapidly diagnose server errors, DNS issues, and fatal crashes to restore your uptime fast.
+
+</div>
+
+<div class="card">
 
 #### Malware & Hack Recovery
 
 Immediate isolation of compromised files, malware cleanup, and post-hack security hardening.
 
+</div>
+
+<div class="card">
+
 #### Broken Checkout
 
 Revenue loss per hour makes this a Priority 1. We fix broken carts and payment gateway failures instantly.
 
+</div>
+
+<div class="card">
+
 #### Database Corruption
 
 Failed updates causing white screens? We rollback and repair, or restore from verified backups.
+
+</div>
+
+</div>
 
 #### Site down right now? Don't wait.
 
@@ -362,29 +458,57 @@ Trust & Reliability
 
 There are dozens of providers offering "website maintenance." Here's what makes our website support service different—in specific, verifiable terms.
 
+<div class="cards">
+
+<div class="card">
+
 ### Dedicated account manager, not a ticket lottery
 
 You work with the same person every month. They know your site, your business, and your preferences. No re-explaining your setup every time.
+
+</div>
+
+<div class="card">
 
 ### Documented SLAs - not vague promises
 
 Every plan comes with written response time commitments. You'll know exactly when to expect a response, not hope for one.
 
+</div>
+
+<div class="card">
+
 ### No long-term contracts
 
 Month-to-month on every plan. We earn your business every month by delivering results, not by locking you into a long-term agreement.
+
+</div>
+
+<div class="card">
 
 ### Platform expertise across the stack
 
 We work with WordPress, WooCommerce, Shopify, Webflow, custom PHP, and more. Our team doesn't just click "update" — we test, verify, and document.
 
+</div>
+
+<div class="card">
+
 ### Transparent reporting
 
 No mystery. Every month you'll see exactly what happened, what was fixed, what updates were applied, and what we recommend next.
 
+</div>
+
+<div class="card">
+
 ### International coverage
 
 Based teams serving clients in the US, UK, Canada, and Australia — with support hours that match your timezone and an emergency line that doesn't sleep.
+
+</div>
+
+</div>
 
 #### Certified, Experienced, Trusted.
 

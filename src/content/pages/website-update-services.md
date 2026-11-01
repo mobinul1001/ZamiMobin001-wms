@@ -9,11 +9,19 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: [{"q":"What Is a Website Update Service?","a":"Quick Answer / Definition:"},{"q":"What happens when a WordPress update breaks your site?","a":"When an update breaks a WordPress site—causing a White Screen of Death, checkout failure, or theme customization loss—a professional update service immediately restores the site from a pre-update cloud backup, investigates the plugin/theme conflict in a staging environment, and resolves the issue before re-applying the update safely."},{"q":"What Is a Website Update Service?","a":"Quick Answer / Definition:"},{"q":"How often should a website be updated?","a":"WordPress plugins release updates continuously, often several times per week. Security patches should be applied within 24-48 hours of release. WordPress core minor updates can be applied as they are released; major versions benefit from a few days of community testing first. With a monthly maintenance plan, all of this is handled automatically."},{"q":"How much do website updates cost?","a":"Professional website update services typically range from $49 to $299 per month depending on site complexity and the level of testing required. Our plans start at $49/month for simple sites and go up to $299/month for eCommerce and high-traffic sites. One-time update services are also available for sites that only need occasional attention."},{"q":"Can a website update break my site?","a":"Yes — particularly major WordPress core updates and certain plugin updates that affect database structure or template compatibility. This is why professional maintenance includes a pre-update backup and, on higher plans, staging environment testing. If an update causes a problem, we restore your site and investigate the root cause before reattempting."},{"q":"Do you work with all types of websites or just WordPress?","a":"Our primary specialization is WordPress websites, which power over 40% of all websites on the internet. WordPress sites have specific, recurring update needs that our process is built around. If you have a non-WordPress site, contact us — we work with other CMS platforms on a case-by-case basis."},{"q":"How long does a website update take?","a":"For most websites, a standard monthly update cycle — including backup, all software updates, and post-update testing — takes 1-3 hours of professional time. You do not see any of this. For sites requiring staging environment testing, the cycle may take up to one business day. Updates are typically completed during off-peak hours."},{"q":"What happens if an update breaks something?","a":"We restore your site from the pre-update backup immediately. Your site will be back online in the same state it was in before the update. We then investigate the root cause — usually a plugin conflict or compatibility issue — resolve it, and reattempt the update in a safe sequence."},{"q":"Do I need to be available when updates are happening?","a":"No. Updates happen in the background on a schedule. You will receive a report afterward showing what was done. If we find anything that requires your input — for example, a plugin that needs to be replaced — we will email you with a specific, clear recommendation."},{"q":"What is included in the monthly maintenance report?","a":"Your monthly report includes: a list of all software updated, before/after version numbers, any issues found and how they were resolved, your site's current performance score, security scan results, and backup confirmation. It is written in plain English — no technical jargon."},{"q":"Do you update websites outside of WordPress?","a":"Our core service is built around WordPress. For Wix, Squarespace, Shopify, or custom-built sites, the update requirements differ significantly. Contact us to discuss your specific situation and we will advise honestly on whether we can help."},{"q":"Is there a contract or can I cancel anytime?","a":"All of our monthly plans are month-to-month with no long-term contract. You can cancel anytime with 30 days notice. We do not believe in locking clients into contracts — we prefer to earn your business month after month."},{"q":"What is the difference between website maintenance and website hosting?","a":"Hosting provides the server infrastructure your website runs on — disk space, bandwidth, and computing resources. Maintenance is the ongoing care of your website's software, security, content, and performance. Most hosting providers offer automated backups but do not handle plugin or theme updates, security patching, or QA testing."},{"q":"Should I hire a freelancer or a maintenance agency for website updates?","a":"Both can work. A freelancer is a person — availability depends on their schedule, and if they are sick or on vacation, your site may go unserviced. A maintenance agency has processes, redundancy, and documented procedures. We combine the personal attention of a freelancer with the reliability of an agency operation."},{"q":"How do you handle security if my site gets hacked?","a":"Security incident response is available as an add-on service. If your site is already compromised, contact us for an emergency cleanup quote. Prevention — through regular updates and security scanning — is far more cost-effective than remediation after the fact."},{"q":"Do you work with WooCommerce websites?","a":"Yes. WooCommerce websites have additional update complexity because payment gateway plugins, WooCommerce extensions, and the WooCommerce core itself all update independently. Our Agency plan is specifically designed for WooCommerce stores and includes checkout testing after every update."},{"q":"What is a staging environment and do I need one?","a":"A staging environment is a private copy of your live website where updates are tested before being applied to the real site. It is essential for eCommerce sites, membership sites, and any website where downtime or broken functionality would have immediate financial consequences. Staging testing is included in our Professional and Agency plans."},{"q":"How do website updates affect my SEO?","a":"Done correctly, regular updates improve SEO by maintaining site speed, security (HTTPS), and technical health — all of which are factors in Google's ranking systems. Poorly handled updates can temporarily affect rankings if they cause downtime or break important site structure. Our process minimizes this risk."},{"q":"What if I use a page builder like Elementor or Divi?","a":"Page builders like Elementor add an additional layer of update complexity because they have their own update cycles and compatibility requirements with plugins and themes. We have significant experience with Elementor specifically and include page builder compatibility checks in our update process."},{"q":"Can you update my website if I do not know my login credentials?","a":"We can help you recover access. During onboarding, we will need WordPress admin access and for some tasks, hosting control panel access. We will guide you through the process of providing secure access and can assist with credential recovery if needed."},{"q":"Do you offer white-label maintenance for web agencies?","a":"Yes. Our agency plan supports white-label delivery — we handle the technical maintenance and reporting, and you deliver it to your clients under your own brand. This is how many web design agencies offer professional maintenance without building an internal operations team. Contact us for agency volume pricing."},{"q":"What makes your service different from a cheap $19/month maintenance plugin?","a":"Automated maintenance tools can apply updates — but they cannot test what breaks afterward, restore a site when something goes wrong, or make judgments about update sequencing. A human expert reviews changelogs, identifies risk, tests functionality, and makes the call. Tools do not catch that a plugin update conflicts with your specific theme configuration. People do."},{"q":"Do you offer one-time website updates instead of monthly plans?","a":"Yes. If your site has not been updated in a long time and you need a comprehensive catch-up, we offer a one-time update audit service. We will update everything, test functionality, and provide a full report. However, we always recommend transitioning to a monthly plan — because updates do not stop. Comprehensive WordPress Care"}]
 ---
 
+<div class="cards">
+
+<div class="card">
+
 Keep Your Website Fast, Secure, and Always Running Smoothly
 
 Your website works hardest when no one is watching — processing updates, serving visitors, and representing your business 24 hours a day. But websites do not maintain themselves. Outdated plugins crash pages. Old PHP versions open security gaps. Unoptimized content drives visitors away before they even read your headline. Our **website update service** handles all of it for you. Every month, we keep your WordPress site fully updated, tested, backed up, and performing at its best — so you can run your business without worrying about what is happening under the hood.
 
 [Get a Free Website Health Check](/get-a-free-quote/) [View Our Maintenance Plans](#pricing)
+
+</div>
+
+<div class="card">
 
 managed-update-engine.v4
 
@@ -31,11 +39,31 @@ Staging Environment Testing Functionality & QA Checked
 
 Passed QA
 
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
 Same-Day Turnaround
+
+</div>
+
+<div class="card">
 
 Pre-Update Backup
 
+</div>
+
+<div class="card">
+
 Serving USA, UK, CA & AU
+
+</div>
+
+</div>
 
 Verified Research Data
 
@@ -43,11 +71,19 @@ Verified Research Data
 
 Most website problems do not announce themselves — they build quietly until they become expensive.
 
+<div class="cards">
+
+<div class="card">
+
 52%
 
 Of WordPress websites have at least one vulnerable plugin installed that is exposed to public security exploits.
 
 Source: WPScan Research
+
+</div>
+
+<div class="card">
 
 39%
 
@@ -55,17 +91,29 @@ Of hacked WordPress sites were running outdated core software at the time the se
 
 Source: Sucuri Threat Reports
 
+</div>
+
+<div class="card">
+
 1 in 25
 
 Websites experiences unmanaged downtime or broken form functionality every single month due to unmonitored software conflicts.
 
 Source: Hosting Industry Data
 
+</div>
+
+<div class="card">
+
 $5,600
 
 Average cost of one hour of website downtime for a small business when lost sales, leads, and brand trust are factored in.
 
 Source: Gartner Estimates
+
+</div>
+
+</div>
 
 ### Key Takeaway for Website Owners
 
@@ -89,37 +137,73 @@ Learn more about our related care services:
 
 Managed
 
+<div class="cards">
+
+<div class="card">
+
 #### WordPress Core, Plugin & Theme Updates
 
 Applied systematically
+
+</div>
+
+<div class="card">
 
 #### Full Pre-Update Cloud Backups
 
 Before any changes touch live
 
+</div>
+
+<div class="card">
+
 #### Staging Environment Testing
 
 Tested on critical sites
+
+</div>
+
+<div class="card">
 
 #### Security Patching & Malware Scan
 
 Priority-one vulnerability fixes
 
+</div>
+
+<div class="card">
+
 #### PHP Version Compatibility Checks
 
 Zero server fatal errors
+
+</div>
+
+<div class="card">
 
 #### Post-Update QA Testing
 
 Form & checkout verification
 
+</div>
+
+<div class="card">
+
 #### Performance & Speed Audit
 
 Image compression & cleanup
 
+</div>
+
+<div class="card">
+
 #### Monthly Plain-English PDF Report
 
 Delivered straight to inbox
+
+</div>
+
+</div>
 
 Informational Guide & Definition
 
@@ -143,6 +227,10 @@ Compounding Website Risks
 
 Skipping website updates feels harmless in the short term. But the risks compound quietly, and when they surface, they are expensive.
 
+<div class="cards">
+
+<div class="card">
+
 01
 
 ### 1\. Security Is the Biggest Risk
@@ -150,6 +238,10 @@ Skipping website updates feels harmless in the short term. But the risks compoun
 The majority of WordPress vulnerabilities are discovered in plugins and themes, not the core software itself. When a vulnerability is publicly disclosed, attackers scan millions of sites within hours looking for unpatched installations. An outdated plugin is not just a minor inconvenience — it is an open door.
 
 ✓ Proactive Patching & Vulnerability Scans
+
+</div>
+
+<div class="card">
 
 02
 
@@ -159,6 +251,10 @@ Google's ranking systems evaluate page experience, Core Web Vitals, and HTTPS se
 
 ✓ Page Experience & Speed Protection
 
+</div>
+
+<div class="card">
+
 03
 
 ### 3\. Broken Functionality Costs You Customers
@@ -166,6 +262,10 @@ Google's ranking systems evaluate page experience, Core Web Vitals, and HTTPS se
 Payment forms, booking systems, email signup forms, live chat widgets — all of these rely on third-party integrations that update independently of your site. An outdated plugin can silently break your checkout process. A visitor who cannot complete a purchase does not email you about it — they just leave.
 
 ✓ Post-Update QA & Checkout Testing
+
+</div>
+
+<div class="card">
 
 04
 
@@ -175,17 +275,29 @@ WordPress requires an actively supported version of PHP. Older PHP versions rece
 
 ✓ PHP Compatibility Monitoring
 
+</div>
+
+<div class="card">
+
 05
 
 ### 5\. Your Reputation Is on the Line
 
 A website flagged as "Not Secure" by Chrome, a site covered in spam links from a malware injection, or a contact page that has been broken for three months — each of these damages your brand in ways that are hard to recover from. Professional website updates prevent these scenarios before they happen.
 
+</div>
+
+</div>
+
 Real Challenges We Prevent
 
 ## The Update Problems We Solve Every Day
 
 Many website owners have been burned by updates before. A plugin update turned their homepage blank. A theme update wiped custom settings. A PHP upgrade brought down their entire site. These are real, common problems — and they are preventable.
+
+<div class="cards">
+
+<div class="card">
 
 Dashboard Lockout
 
@@ -195,6 +307,10 @@ One incompatible plugin update can render your entire WordPress dashboard inacce
 
 **Our Fix:** Pre-update backups & staging environment testing.
 
+</div>
+
+<div class="card">
+
 Revenue Loss
 
 ### Checkout or Form Failure After Core Update
@@ -202,6 +318,10 @@ Revenue Loss
 Major WordPress releases can break compatibility with older plugins. A WooCommerce checkout that worked perfectly may stop processing payments after an unplanned core update.
 
 **Our Fix:** Post-update QA testing for checkout & form submissions.
+
+</div>
+
+<div class="card">
 
 Code Conflict
 
@@ -211,6 +331,10 @@ Plugins update on independent schedules. One plugin updating its database schema
 
 **Our Fix:** Changlog review & sequenced update execution.
 
+</div>
+
+<div class="card">
+
 Server Error
 
 ### PHP Version Incompatibility
@@ -218,6 +342,10 @@ Server Error
 When a host migrates a server to a newer PHP version, older plugins may throw fatal errors. We monitor PHP compatibility across all installed plugins and flag issues in advance.
 
 **Our Fix:** Server PHP compatibility audits before host migrations.
+
+</div>
+
+<div class="card">
 
 Layout Loss
 
@@ -227,6 +355,10 @@ If custom CSS or template modifications were made directly inside a theme rather
 
 **Our Fix:** Child theme audits & visual integrity QA.
 
+</div>
+
+<div class="card">
+
 Hack Exposure
 
 ### Security Vulnerability Exploitation Window
@@ -234,6 +366,10 @@ Hack Exposure
 The average time between a public vulnerability disclosure and the first exploit attempt is less than 24 hours. Our process prioritizes critical security patches as priority-one updates.
 
 **Our Fix:** Priority-one same-day security patch application.
+
+</div>
+
+</div>
 
 Structured Technical Taxonomy
 
@@ -245,7 +381,15 @@ Select Update Category:
 
 1\. WordPress Core Updates 2\. Plugin Updates & Changelogs 3\. Theme Updates & Child Theme QA 4\. Security Patch Updates 5\. PHP Version Migration & Audits 6\. Website Content Updates 7\. Image & Media Compression 8\. Performance Tuning & Speed 9\. Automated & Manual QA Testing
 
+<div class="cards">
+
 1\. Core Updates 2\. Plugin Updates 3\. Theme Updates 4\. Security Patches 5\. PHP Version 6\. Content Edits 7\. Image Media 8\. Performance 9\. QA Testing
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 1 • Systemic Maintenance
 
@@ -257,16 +401,57 @@ We review each core release before applying it, check compatibility with your in
 
 What We Test After Every Core Update:
 
--   Dashboard Functionality
--   Frontend Layout Display
--   Contact Form Submissions
--   WooCommerce Checkout Flow
--   Media Uploads & Library
--   User Authentication & Logins
+<div class="card">
+
+Dashboard Functionality
+
+</div>
+
+<div class="card">
+
+Frontend Layout Display
+
+</div>
+
+<div class="card">
+
+Contact Form Submissions
+
+</div>
+
+<div class="card">
+
+WooCommerce Checkout Flow
+
+</div>
+
+<div class="card">
+
+Media Uploads & Library
+
+</div>
+
+<div class="card">
+
+User Authentication & Logins
+
+</div>
+
+</div>
+
+<div class="card">
 
 Major core updates are audited on a staging copy before touches live servers.
 
 ✓ Pre-Update Cloud Snapshot
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 2 • Vulnerability & Conflict Management
 
@@ -278,16 +463,47 @@ We update all active plugins systematically, review changelogs for breaking chan
 
 What We Audit & Verify:
 
--   Changelogs for Breaking Changes
--   Active Plugin Conflict Checks
--   Server PHP Compatibility
--   Database Schema Alterations
+<div class="card">
+
+Changelogs for Breaking Changes
+
+</div>
+
+<div class="card">
+
+Active Plugin Conflict Checks
+
+</div>
+
+<div class="card">
+
+Server PHP Compatibility
+
+</div>
+
+<div class="card">
+
+Database Schema Alterations
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### Abandoned Plugin Replacement
 
 Plugins lacking developer updates for 12+ months are flagged with modern alternatives.
 
 ✓ Sequenced Update Sequence
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 3 • Visual & Child Theme Integrity
 
@@ -299,16 +515,47 @@ We review theme update changelogs before applying, verify child theme structure 
 
 Page Templates We Visually Inspect:
 
--   Header & Footer Layouts
--   Homepage & Landing Pages
--   Product & Service Pages
--   Blog Posts & Contact Form
+<div class="card">
+
+Header & Footer Layouts
+
+</div>
+
+<div class="card">
+
+Homepage & Landing Pages
+
+</div>
+
+<div class="card">
+
+Product & Service Pages
+
+</div>
+
+<div class="card">
+
+Blog Posts & Contact Form
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### Child Theme Audit
 
 Prevents loss of custom CSS and template modifications during theme updates.
 
 ✓ Mobile Responsive Inspection
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 4 • Priority-One Defense
 
@@ -320,16 +567,47 @@ We treat security patches as priority-one updates, applied as quickly as possibl
 
 Security Verification Protocol:
 
--   Sucuri & Wordfence Scan Audits
--   Core File Integrity Review
--   Admin User & Privilege Audit
--   Suspicious Login Activity Review
+<div class="card">
+
+Sucuri & Wordfence Scan Audits
+
+</div>
+
+<div class="card">
+
+Core File Integrity Review
+
+</div>
+
+<div class="card">
+
+Admin User & Privilege Audit
+
+</div>
+
+<div class="card">
+
+Suspicious Login Activity Review
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### Same-Day Rapid Patching
 
 Patches applied within 24 hours of zero-day public vulnerability disclosures.
 
 ✓ Priority-One SLA
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 5 • Server Engine Optimization
 
@@ -341,16 +619,47 @@ We monitor your server's PHP version, test plugin compatibility with the current
 
 PHP Migration Checks:
 
--   PHP Compatibility Scanner Results
--   Plugin & Theme PHP Requirements
--   Hosting Control Panel Configuration
--   Zero Fatal Syntax Error Verification
+<div class="card">
+
+PHP Compatibility Scanner Results
+
+</div>
+
+<div class="card">
+
+Plugin & Theme PHP Requirements
+
+</div>
+
+<div class="card">
+
+Hosting Control Panel Configuration
+
+</div>
+
+<div class="card">
+
+Zero Fatal Syntax Error Verification
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### PHP 8.2+ Compatibility
 
 Keeps your site running on modern, lightning-fast PHP releases without host forced-migration downtime.
 
 ✓ Host Coordinated Migration
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 6 • On-Demand Site Edits
 
@@ -362,18 +671,59 @@ Content updates are included in our mid and premium maintenance plans. Submit ch
 
 What Content Edits We Handle:
 
--   Text & Copy Revisions
--   Image Swaps & New Photos
--   New Page Additions
--   Blog Post Publishing
--   Menu Navigation Changes
--   Contact Details & Portfolio Updates
+<div class="card">
+
+Text & Copy Revisions
+
+</div>
+
+<div class="card">
+
+Image Swaps & New Photos
+
+</div>
+
+<div class="card">
+
+New Page Additions
+
+</div>
+
+<div class="card">
+
+Blog Post Publishing
+
+</div>
+
+<div class="card">
+
+Menu Navigation Changes
+
+</div>
+
+<div class="card">
+
+Contact Details & Portfolio Updates
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### 1-2 Business Day SLA
 
 Submit your text, image, or page requests through our simple dashboard.
 
 ✓ Included on Mid/Pro Plans
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 7 • Asset Optimization
 
@@ -385,16 +735,47 @@ During our performance maintenance cycle, we audit images for compression opport
 
 Media Optimization Tasks:
 
--   File Size Compression Audits
--   Conversion to Next-Gen WebP
--   Alt Text & Accessibility Coverage
--   Lazy Loading Implementation
+<div class="card">
+
+File Size Compression Audits
+
+</div>
+
+<div class="card">
+
+Conversion to Next-Gen WebP
+
+</div>
+
+<div class="card">
+
+Alt Text & Accessibility Coverage
+
+</div>
+
+<div class="card">
+
+Lazy Loading Implementation
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### WebP Next-Gen Format
 
 Reduces image payload by up to 70% without sacrificing visual quality.
 
 ✓ Core Web Vitals Optimization
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 8 • Speed Maintenance
 
@@ -406,16 +787,47 @@ We optimize database tables, clear post revisions, purge transients, refine cach
 
 Performance Optimization Tasks:
 
--   Database Table Cleanup & Defrag
--   Post Revisions & Spam Purge
--   Caching & CDN Asset Delivery
--   CSS/JS Minification & Redirect Audits
+<div class="card">
+
+Database Table Cleanup & Defrag
+
+</div>
+
+<div class="card">
+
+Post Revisions & Spam Purge
+
+</div>
+
+<div class="card">
+
+Caching & CDN Asset Delivery
+
+</div>
+
+<div class="card">
+
+CSS/JS Minification & Redirect Audits
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### Prevent Performance Drift
 
 Keeps Google PageSpeed and Core Web Vitals scores consistently high month after month.
 
 ✓ Database & Caching Optimized
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Tab 9 • Quality Assurance
 
@@ -427,10 +839,33 @@ We use a combination of automated testing tools and manual QA to verify that you
 
 Core Features We Test Every Time:
 
--   Contact Forms & Lead Capture
--   WooCommerce Checkout Flow
--   Booking & Appointment Systems
--   Membership Portals & Analytics
+<div class="card">
+
+Contact Forms & Lead Capture
+
+</div>
+
+<div class="card">
+
+WooCommerce Checkout Flow
+
+</div>
+
+<div class="card">
+
+Booking & Appointment Systems
+
+</div>
+
+<div class="card">
+
+Membership Portals & Analytics
+
+</div>
+
+</div>
+
+<div class="card">
 
 #### Human & Automated Testing
 
@@ -438,11 +873,19 @@ Catches broken functionality before your customers or clients ever encounter it.
 
 ✓ Manual QA Post-Update Check
 
+</div>
+
+</div>
+
 Documented Step-By-Step System
 
 ## How Our Website Update Service Works
 
 We follow the same documented process on every site, every month — no improvising, no cutting corners.
+
+<div class="cards">
+
+<div class="card">
 
 1
 
@@ -454,6 +897,10 @@ Before anything changes on your site, we create a complete backup — files and 
 
 ✓ Off-Site Snapshot Secured
 
+</div>
+
+<div class="card">
+
 2
 
 Pro & Agency Plans
@@ -463,6 +910,10 @@ Pro & Agency Plans
 For business-critical websites, we apply updates to a staging copy of your site first. We test functionality, check for visual issues, and confirm compatibility before touching the live site. Only after the staging site passes QA do we proceed.
 
 ✓ Zero Live Site Disruption
+
+</div>
+
+<div class="card">
 
 3
 
@@ -474,6 +925,10 @@ We update WordPress in a specific sequence: PHP compatibility check, then core u
 
 ✓ Order-Sequenced Updates
 
+</div>
+
+<div class="card">
+
 4
 
 Functionality Verification
@@ -483,6 +938,10 @@ Functionality Verification
 After updates are applied, we manually test your site's essential functions: homepage display, navigation, contact forms, any WooCommerce or booking functionality, and mobile responsiveness. Broken functionality caught here gets fixed before you ever notice it.
 
 ✓ Manual & Form Check QA
+
+</div>
+
+<div class="card">
 
 5
 
@@ -494,6 +953,10 @@ We run a malware scan and review file integrity after every update cycle. Any an
 
 ✓ Post-Update Malware Scan
 
+</div>
+
+<div class="card">
+
 6
 
 Full Transparency
@@ -503,6 +966,10 @@ Full Transparency
 You receive a clear, plain-English report showing exactly what was updated, what was tested, any issues found and resolved, and your site's current performance metrics. No technical jargon. Just transparency.
 
 ✓ Plain-English PDF Summary
+
+</div>
+
+</div>
 
 Data-Driven Value Comparison
 
@@ -570,23 +1037,51 @@ Non-Negotiable Safety Standard
 
 This is non-negotiable. No update — no matter how minor — happens without a complete off-site backup in place first.
 
+<div class="cards">
+
+<div class="card">
+
 ### Our 4-Pillar Backup Protocol:
+
+<div class="cards">
+
+<div class="card">
 
 #### Full File System Backup
 
 Captures every active theme, plugin, media upload, and core configuration file.
 
+</div>
+
+<div class="card">
+
 #### Database Snapshot
 
 Backs up all posts, pages, settings, WooCommerce customer orders, and user data.
+
+</div>
+
+<div class="card">
 
 #### Off-Site Cloud Storage
 
 Stored separately from hosting accounts so a server failure does not affect your backup.
 
+</div>
+
+<div class="card">
+
 #### Versioned History
 
 Retains rolling backups, allowing instant restores to any date within your retention window.
+
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
 
 What This Means For You:
 
@@ -594,11 +1089,19 @@ If an update creates a problem — even one we did not anticipate — your site 
 
 "Most one-time update services skip this step entirely. It is the single most important thing that separates professional maintenance from risky button-clicking."
 
+</div>
+
+</div>
+
 Key Agency Differentiator
 
 ## We Test on a Staging Copy Before Touching Your Live Site
 
 A staging environment is a private, exact copy of your live website where we apply and test every update before it goes anywhere near your real visitors.
+
+<div class="cards">
+
+<div class="card">
 
 ### Think of It as a Professional Dress Rehearsal
 
@@ -615,6 +1118,10 @@ Staging Testing Is Critical For:
 
 "Most basic maintenance services skip this step entirely. We do not."
 
+</div>
+
+<div class="card">
+
 #### 1\. Private Staging Environment
 
 staging.yourdomain.com
@@ -630,11 +1137,19 @@ Passes QA • Safe to Deploy
 -   Clean updates synced during off-peak hours
 -   Zero visitor disruptions or broken forms
 
+</div>
+
+</div>
+
 Post-Update Quality Assurance
 
 ## Every Update Gets Tested. Every Time.
 
 Applying updates takes five minutes. Checking that everything still works takes the experience to know what to look for.
+
+<div class="cards">
+
+<div class="card">
 
 5 Audits
 
@@ -650,6 +1165,10 @@ Essential Site Features
 
 ✓ Standard on All Update Cycles
 
+</div>
+
+<div class="card">
+
 5 Audits
 
 ### eCommerce QA
@@ -664,6 +1183,10 @@ Checkout & Cart Verification
 
 ✓ Standard for WooCommerce Stores
 
+</div>
+
+<div class="card">
+
 3 Audits
 
 ### User Account Features
@@ -675,6 +1198,10 @@ Logins & Member Portals
 -   Membership access controls remain intact
 
 ✓ Portal & Authentication Tested
+
+</div>
+
+<div class="card">
 
 3 Audits
 
@@ -688,6 +1215,10 @@ Speed & JS Console Audit
 
 ✓ Core Web Vitals Stability Verified
 
+</div>
+
+</div>
+
 Free Entry Point Audit
 
 ## Free Website Health Check — Know Where You Stand
@@ -696,17 +1227,45 @@ Before choosing a maintenance plan, we will review your site for free and give y
 
 Your Free Health Check Includes 6 Audits:
 
+<div class="cards">
+
+<div class="card">
+
 WordPress Version Status (Outdated/Vulnerable)
+
+</div>
+
+<div class="card">
 
 Plugin & Theme Compatibility Audit
 
+</div>
+
+<div class="card">
+
 PHP Server Version Security Check
+
+</div>
+
+<div class="card">
 
 Basic Security & Malware Vulnerability Scan
 
+</div>
+
+<div class="card">
+
 Speed Score & Core Web Vitals Snapshot
 
+</div>
+
+<div class="card">
+
 Off-Site Cloud Backup Verification
+
+</div>
+
+</div>
 
 [Request Free Website Health Check](/get-a-free-quote/)
 
@@ -719,6 +1278,10 @@ Predictable Monthly Care
 ## Monthly Website Update Plans
 
 Choose a plan that fits your site's complexity and your business needs. All plans include backup before every update and a monthly status report.
+
+<div class="cards">
+
+<div class="card">
 
 Starter Plan
 
@@ -738,6 +1301,10 @@ $49 / month
 -   Standard Email Support
 
 [Get Started with Starter](/get-a-free-quote/)
+
+</div>
+
+<div class="card">
 
 ★ Most Popular Choice
 
@@ -761,6 +1328,10 @@ $99 / month
 
 [Get Started with Professional](/get-a-free-quote/)
 
+</div>
+
+<div class="card">
+
 Agency / eCommerce
 
 ### High-Traffic Sites
@@ -781,6 +1352,10 @@ $299 / month
 
 [Get Started with Agency Plan](/get-a-free-quote/)
 
+</div>
+
+</div>
+
 Custom plans available for agencies managing 10+ sites. Contact us for volume pricing and [white-label website maintenance programs](/white-label-website-maintenance-services-for-agencies/).
 
 Audience Qualification
@@ -788,6 +1363,10 @@ Audience Qualification
 ## Every Website Needs Maintenance. Here Is Why It Matters for Yours.
 
 Different organization types face different technical risks when updates are skipped. See how our managed update service protects your specific site model:
+
+<div class="cards">
+
+<div class="card">
 
 Digital Storefront
 
@@ -797,6 +1376,10 @@ Your website is your digital storefront. An outdated, slow, or insecure site sen
 
 ✓ Storefront Credibility Protection
 
+</div>
+
+<div class="card">
+
 Revenue Stream
 
 ### eCommerce Stores
@@ -804,6 +1387,10 @@ Revenue Stream
 A WooCommerce update that breaks your checkout can cost thousands in lost orders before you notice. We test every update against your purchase flow in staging before it goes live — so your store stays open and generating revenue.
 
 ✓ Tested Checkout & Order Flows
+
+</div>
+
+<div class="card">
 
 Multi-Site White-Label
 
@@ -813,6 +1400,10 @@ Managing multiple client sites manually is unsustainable. Our [white-label maint
 
 ✓ Scalable Client Recurring Revenue
 
+</div>
+
+<div class="card">
+
 Patient Trust
 
 ### Healthcare Practices
@@ -820,6 +1411,10 @@ Patient Trust
 Patient trust starts with a professional, fast, and secure web presence. Healthcare sites face heightened scrutiny around security and patient form reliability. We keep medical and practice sites current, encrypted, and secure.
 
 ✓ Heightened Security & Form Protection
+
+</div>
+
+<div class="card">
 
 Reputation Management
 
@@ -829,6 +1424,10 @@ Attorneys invest heavily in their online reputation. A hacked law firm website o
 
 ✓ Reliable Consultation Lead Capture
 
+</div>
+
+<div class="card">
+
 Sales Funnel
 
 ### SaaS Companies
@@ -836,6 +1435,10 @@ Sales Funnel
 Your marketing site is a critical part of your sales funnel. Plugin conflicts or slow load times at the top of your funnel compound into significant lost Monthly Recurring Revenue (MRR). We keep your WordPress marketing site technically sound.
 
 ✓ Funnel Speed & MRR Protection
+
+</div>
+
+<div class="card">
 
 Enterprise Rigor
 
@@ -845,6 +1448,10 @@ Enterprise WordPress sites with multiple editors, complex permissions, and custo
 
 ✓ Structured Change Control
 
+</div>
+
+<div class="card">
+
 Mission Driven
 
 ### Nonprofit Organizations
@@ -852,6 +1459,10 @@ Mission Driven
 Nonprofits often have small or zero technical staff. We offer discounted maintenance programs for registered nonprofits — so mission-focused organizations can focus on their important work, not their website.
 
 ✓ Non-Profit Special Rates
+
+</div>
+
+<div class="card">
 
 Safety Net
 
@@ -861,11 +1472,19 @@ If you manage your own website and know enough to be dangerous, our Starter plan
 
 ✓ Professional Technical Safety Net
 
+</div>
+
+</div>
+
 Core Deliverable Value
 
 ## What You Actually Get From Professional Website Updates
 
 Beyond just software version numbers, managed website care transforms how your business operates online:
+
+<div class="cards">
+
+<div class="card">
 
 Benefit 01 • Hands-Free Management
 
@@ -873,11 +1492,23 @@ Benefit 01 • Hands-Free Management
 
 When you are running a business, the last thing you should be thinking about is whether your website's plugins are current. With a managed maintenance plan, you know it is handled — by someone who does this every day, for hundreds of sites.
 
+</div>
+
+<div class="card">
+
 #### 24/7 Hands-Free Monitoring Active
 
 Zero technical stress or late-night site panic for your team.
 
 ✓ Fully Managed Coverage
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### Speed Drift Prevention
 
@@ -885,11 +1516,23 @@ Catches database bloat and plugin slowdowns before visitors notice.
 
 ✓ Core Web Vitals Optimized
 
+</div>
+
+<div class="card">
+
 Benefit 02 • Core Web Vitals
 
 ### Faster Website Performance
 
 Performance does not stay static. It drifts as plugin overhead accumulates, databases grow, and new code conflicts with old. Our monthly optimization cycle catches and corrects these drift patterns before they affect your visitors' experience.
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Benefit 03 • Threat Hardening
 
@@ -897,11 +1540,23 @@ Benefit 03 • Threat Hardening
 
 Most website compromises are not sophisticated hacks — they are automated bots exploiting known vulnerabilities in outdated software. Staying current with updates closes the vast majority of these attack vectors. Combined with our monthly security scans, your site is significantly less exposed than the average unmaintained site.
 
+</div>
+
+<div class="card">
+
 #### Automated Bot Exploits Closed
 
 Eliminates open doors before automated vulnerability scanners find them.
 
 ✓ Same-Day Security Patching
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### Google Technical Signals Healthy
 
@@ -909,11 +1564,23 @@ Maintains site speed, HTTPS security, and mobile usability ranking factors.
 
 ✓ Rank Degradation Prevented
 
+</div>
+
+<div class="card">
+
 Benefit 04 • SEO Authority
 
 ### Better Google Search Rankings
 
 Site speed, security (HTTPS), and technical health are direct factors in Google's ranking algorithm. A consistently maintained site stays technically healthy. A neglected site accumulates issues that quietly drag search rankings down over time.
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 Benefit 05 • Audit Trail
 
@@ -921,11 +1588,23 @@ Benefit 05 • Audit Trail
 
 Every month, you receive a written PDF report showing exactly what was updated on your site. This is valuable for insurance compliance, for handoff when you eventually sell or transfer your site, and for your own business records.
 
+</div>
+
+<div class="card">
+
 #### Monthly Status Report Delivered
 
 Complete changelogs, backup verifications, and performance benchmarks.
 
 ✓ Plain-English PDF Records
+
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 #### Institutional Knowledge Retained
 
@@ -933,11 +1612,19 @@ Dedicated engineers familiar with your site's custom theme & plugin history.
 
 ✓ Dedicated Account Engineers
 
+</div>
+
+<div class="card">
+
 Benefit 06 • Dedicated Expertise
 
 ### A Dedicated Team That Knows Your Site
 
 A maintenance team that has worked on your site for six months knows its quirks. They know which plugin has historically caused issues. They know that your theme was customized in a specific way. That institutional knowledge is worth real money when something unusual happens.
+
+</div>
+
+</div>
 
 Proven Impact & Results
 
@@ -946,6 +1633,10 @@ Proven Impact & Results
 See how our post-update QA testing, staging environments, and PHP compatibility audits solved critical issues for businesses worldwide:
 
 Swipe left/right to view all stories
+
+<div class="cards">
+
+<div class="card">
 
 Legal Industry Plan: Professional
 
@@ -959,6 +1650,10 @@ After onboarding, our post-update QA caught the form submission failure in the f
 
 Result: Submission Reliability Restored
 
+</div>
+
+<div class="card">
+
 eCommerce Industry Plan: Agency
 
 ### eCommerce Store — Beauty Brand, UK
@@ -971,6 +1666,10 @@ After switching to our Agency plan with staging environment testing, their WooCo
 
 Result: 14 Months Zero Checkout Downtime
 
+</div>
+
+<div class="card">
+
 Healthcare Industry Plan: Professional
 
 ### Healthcare Clinic — Toronto, Canada
@@ -980,6 +1679,10 @@ Challenge: Outdated PHP 7.2 Deprecation Notice
 A multi-location physiotherapy clinic had been running PHP 7.2 — two full versions behind the current supported release — without knowing it. Their hosting provider sent a deprecation notice giving them 60 days to migrate.
 
 We audited their plugin stack for PHP 8.x compatibility, coordinated with their host, resolved two incompatible plugins by finding modern alternatives, and completed the migration without a single hour of downtime.
+
+</div>
+
+</div>
 
 Pre-Purchase Due Diligence
 
@@ -1085,21 +1788,41 @@ When an update breaks a WordPress site—causing a White Screen of Death, checko
 
 Explore our full ecosystem of specialized website maintenance, speed, security, and backup services:
 
+<div class="cards">
+
+<div class="card">
+
 ### [WordPress Security Service](/wordpress-malware-removal-service/)
 
 [Proactive malware scanning, firewall management, login hardening, and incident response for WordPress websites. Learn More →](/wordpress-malware-removal-service/)
+
+</div>
+
+<div class="card">
 
 ### [Website Speed Optimization](/website-speed-optimization-services/)
 
 [Core Web Vitals improvement, image compression, caching setup, and performance auditing for faster-loading websites. Learn More →](/website-speed-optimization-services/)
 
+</div>
+
+<div class="card">
+
 ### [WordPress Care Plans](/monthly-website-maintenance-packages/)
 
 [Comprehensive managed WordPress services combining maintenance, hosting support, content edits, and strategic guidance. Learn More →](/monthly-website-maintenance-packages/)
 
+</div>
+
+<div class="card">
+
 ### [Website Backup Service](/wordpress-backup-services/)
 
 [Automated daily backups with offsite cloud storage, 30-day retention, and one-click restore capability for WordPress sites. Learn More →](/wordpress-backup-services/)
+
+</div>
+
+</div>
 
 Protect Your Website Today
 

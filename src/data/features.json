@@ -1,0 +1,25 @@
+{
+  "explain": {
+    "Weekly updates": "We update WordPress, plugins and themes every week.",
+    "Weekly backups": "A full copy of your site is saved every week.",
+    "Security scan": "We check your site for malware and known weak spots.",
+    "Uptime monitoring": "We are alerted when your site goes down.",
+    "1 hour edits/month": "One hour of small text, image or layout changes each month.",
+    "Daily backups": "A full copy of your site is saved every day.",
+    "3 hours edits/month": "Three hours of small changes each month.",
+    "Malware removal": "If your site is infected, we clean it as part of the plan.",
+    "Speed optimization": "We tune images, caching and code so pages load faster.",
+    "Monthly report": "A plain summary of what we did on your site that month.",
+    "WooCommerce support": "Updates and fixes that cover your online store.",
+    "6 hours edits/month": "Six hours of small changes each month.",
+    "Staging-tested updates": "Updates are tried on a private copy before your live site.",
+    "24/7 emergency fixes": "If your site breaks, you can reach us at any hour.",
+    "Priority support": "Your requests go to the front of the queue."
+  },
+  "groups": [
+    { "name": "Care", "rows": [["Weekly updates", "Essential"], ["Staging-tested updates", "Business"], ["Security scan", "Essential"], ["Malware removal", "Growth"], ["Uptime monitoring", "Essential"], ["Speed optimization", "Growth"], ["WooCommerce support", "Growth"]] },
+    { "name": "Backups", "rows": [["Weekly backups", "Essential"], ["Daily backups", "Growth"]] },
+    { "name": "Edits and support", "rows": [["1 hour edits/month", "Essential"], ["3 hours edits/month", "Growth"], ["6 hours edits/month", "Business"], ["Monthly report", "Growth"], ["24/7 emergency fixes", "Business"], ["Priority support", "Business"]] }
+  ],
+  "addons": ["Hosting management", "Custom development hours", "Monthly SEO optimization", "Speed boost package", "Website redesign", "Cloudflare security setup"]
+}
