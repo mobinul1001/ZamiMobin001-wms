@@ -16,6 +16,9 @@ const MALWARE = {
 
 export const SERVICE_CHANGES = {
   '/wordpress-malware-removal-service/': [
+    ['a HIPAA-sensitive medical portal', 'a medical portal'],
+    ['HIPAA considerations and patient privacy requirements make immediate', 'Patient privacy requirements make immediate'],
+    [/^HIPAA Confidentiality$/m, 'Patient Confidentiality'],
     ['## WordPress Malware Removal Pricing', '<a id="pricing"></a>\n\n## WordPress Malware Removal Pricing'],
     ['### Standard Cleanup', '### Cleanup'], ['### Complete Recovery', '### Cleanup + Protect'], ['### Priority Emergency', '### Priority'],
     [/^Standard Tier$/m, 'Cleanup'],
@@ -27,6 +30,7 @@ export const SERVICE_CHANGES = {
     [/Our service includes a full file and database scan[^\n]*/, 'Every tier includes a full file and database scan, malware removal, backdoor removal, a patch for the vulnerability that let the hack in, and a short written report. Cleanup + Protect adds blacklist removal and hardening. Priority adds a 4-hour start and 3 months of monitoring.'],
   ],
   '/website-speed-optimization-services/': [
+    ['for HIPAA-compliant clinic portals', 'for clinic portals'],
     ['### Starter Audit', '### Speed Boost'], ['### Standard Speed', '### Core Web Vitals'], ['### WooCommerce Speed', '### WooCommerce / Large Site'],
     [/^Diagnostic Audit$/m, 'Smaller Sites'], [/^WordPress Sites$/m, 'Business Sites'], [/^eCommerce Stores$/m, 'Stores & Large Sites'],
     ['Full PageSpeed & Core Web Vitals diagnostic scorecard with actionable fixes.', 'Caching and image work for smaller sites.'],
@@ -39,6 +43,7 @@ export const SERVICE_CHANGES = {
     ['### How much does website speed optimization cost?\n\n', '### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n'],
   ],
   '/website-migration-services/': [
+    ['### 30-Day Post Support Window\n', '### 30-Day Post Support Window\n\nFree fix within 30 days if something we moved breaks.\n'],
     ['If anything breaks, fails, or experiences unexpected downtime within 30 days of migration, our engineers will fix it immediately or provide a full redo free of charge.', 'Free fix within 30 days if something we moved breaks.'],
     ['Yes. If any error or broken link occurs post-launch, we fix it immediately free of charge.', 'Yes. If something we moved breaks within 30 days, we fix it free.'],
     ['### Basic Migration', '### Host-to-Host Move'], ['### Standard Migration', '### Full Migration'], ['### Enterprise / Custom', '### Platform Change'],
@@ -52,7 +57,19 @@ export const SERVICE_CHANGES = {
     ['Our website migration service pricing starts at a flat $99 for basic sites and $199 for standard WordPress websites up to 5GB. Enterprise, multisite, or large eCommerce stores receive custom fixed-rate quotes with zero hidden fees', `A host-to-host move is $149 (${FREE.toLowerCase()}), a full migration is $399, and a platform change starts at $999, with zero hidden fees`],
     ['## Website Migration Service Pricing & Packages', `## Website Migration Service Pricing & Packages\n\n**${FREE}.**`],
   ],
+  '/website-hacked-recovery-services/': [
+    ['From maintaining HIPAA compliance to minimizing', 'From protecting patient data to minimizing'],
+    ['Recovery handled with a strict awareness of HIPAA compliance and sensitive patient data protection.', 'Recovery handled with care for sensitive patient data.'],
+  ],
+  '/website-redesign-services/': [
+    ['while ensuring strict HIPAA security compliance and zero appointment form disruption.', 'while protecting appointment forms.'],
+    ['Local Citation & HIPAA Safeguards', 'Local Citation Safeguards'],
+  ],
   '/website-design-services/': [
+    ['HIPAA-aware **healthcare website design**', '**Healthcare website design**'],
+    ['HIPAA Compliant & Patient Friendly', 'Patient Friendly'],
+    ['requiring HIPAA-aware patient booking funnels', 'requiring patient booking funnels'],
+    ['Result: HIPAA Compliant Patient UI', 'Result: Patient-Friendly UI'],
     ['## Custom Website Design Packages & Pricing', '<a id="pricing"></a>\n\n## Custom Website Design Packages & Pricing'],
     ['### Starter Package', '### Starter'], ['### Growth Package', '### Business'], ['### Premium / Enterprise', '### Store'],
     [/^Corporate & Agency$/m, 'Online Stores'],
@@ -76,6 +93,8 @@ export const SERVICE_CHANGES = {
     ['<option value="$5,500+">$5,500+ (Corporate / Custom Enterprise)</option>', '<option value="Store $2,499">$2,499 (Store)</option>'],
   ],
   '/website-seo-services/': [
+    ['following YMYL and HIPAA guidelines', 'following YMYL guidelines'],
+    ['adhering strictly to HIPAA and bar association guidelines', 'following YMYL guidance'],
     ['### Starter SEO', '### Local SEO Starter'], ['### Growth SEO', '### SEO Growth'], ['### Enterprise SEO', '### SEO Pro'],
     ['$499 / month (Starting at)\n\n[Choose Starter Plan](/get-a-free-quote/#starter-seo)', `$299 / month\n\n${list(['Google Business Profile optimization', 'On-page SEO for 5 pages', 'Monthly report'])}\n\n[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)`],
     ['$999 / month (Starting at)\n\n[Get Growth SEO Plan](/get-a-free-quote/#growth-seo)', `$599 / month\n\n${list(['Everything in Local SEO Starter', '2 articles/month', 'Local citations'])}\n\n[Choose SEO Growth](/get-a-free-quote/#growth-seo)`],
@@ -94,11 +113,21 @@ export const SERVICE_CHANGES = {
   ],
   '/website-repair-services/': [
     ['No fix, no fee on diagnostics • ', ''],
+    ['Avg response: under 60 mins •', 'Repair work usually starts the same business day.'],
+    [/Average response time under 60 minutes for emergency site-down requests, and 24-hour average turnaround[^.\n]*\./, 'Repair work usually starts the same business day. Most issues are fixed within 24 hours.'],
+    ['✓ &lt;60 Min Emergency Response', '✓ Same-Business-Day Start'],
+    ['| Response time | Under 60 minutes |', '| Response time | Usually the same business day |'],
+    ['Standard repairs average 24 hours; emergencies are typically responded to within 60 minutes.', 'Most issues are fixed within 24 hours. Repair work usually starts the same business day.'],
+    ['Yes, with an average response time under 60 minutes for site-down and checkout-down situations.', 'Yes. Repair work usually starts the same business day.'],
+    ['Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations.', 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.'],
+    ['Under 60-min emergency response • Serving', 'Repair work usually starts the same business day. • Serving'],
     [/^If it.s related to the original issue, we fix it again at no charge\.\n+/m, ''],
   ],
   '/wms-partner-program/': [['and guarantee technical stability.', 'and look after technical stability.']],
   '/agreement/': [['Guaranteed support and turnaround times mean', 'Clear support and turnaround times mean']],
   '/white-label-website-maintenance-services-for-agencies/': [
+    ['HIPAA-compliant site security and maintenance for', 'Site security and maintenance for'],
+    [/^(?:HIPAA Compliant Protocol|Every Single Update Is Tested On Staging First)\n+/gm, ''],
     ['Deliver SLA-backed **white label wordpress support**', 'Deliver **white label wordpress support**'],
     ['with 24/7 security monitoring, offsite backups,', 'with security monitoring, offsite backups,'],
     ['our technical team executes 24/7 security scans,', 'our technical team executes security scans,'],
@@ -157,6 +186,8 @@ export const SERVICE_CHANGES = {
     ['Plans include core, theme, and plugin updates, 24/7 security WAF firewalls, daily offsite backups, PageSpeed tuning, unlimited small edits, and unbranded monthly client reports.', 'Every tier includes core, theme, and plugin updates, security scans, weekly backups, uptime monitoring, 1 hour of edits a month per site, and unbranded client reports.'],
   ],
   '/wordpress-backup-services/': [
+    ['HIPAA-adjacent concerns mean patient-facing', 'Patient-facing'],
+    ['HIPAA-adjacent patient data protection', 'Patient data protection'],
     ['We leave nothing to chance. Every managed plan includes 9 granular technical deliverables to keep', 'We leave nothing to chance. Every managed plan includes these technical deliverables to keep'],
     ['Retention that matches how businesses actually work.', 'Backups are kept 30 days on Essential, 60 days on Growth and 90 days on Business. Retention that matches how businesses actually work.'],
     ['Typically 30, 60, or 90 days depending on plan, giving you options', '30 days on Essential, 60 days on Growth, and 90 days on Business, giving you options'],

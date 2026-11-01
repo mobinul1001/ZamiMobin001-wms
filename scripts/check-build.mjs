@@ -157,6 +157,8 @@ for (const file of htmlFiles) {
   }
   // Owner rule: backup and update services are in every plan, so their old monthly tiers must not return.
   if (['/wordpress-backup-services/', '/website-update-services/'].includes(path) && /\$\d+ \/ month/.test($('main').text())) fail('service-price', `${path}: old monthly tier price on the page.`);
+  if (/HIPAA[- ]compl/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
+  if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
   // Owner rule: no guarantees beyond the hacked-site line, the malware re-clean and the migration fix.
   const promise = /no fix,? no fee|full refund|full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());
   if (promise) fail('promises', `${path}: "${promise[0]}" is not an approved promise.`);

@@ -349,9 +349,9 @@ Healthcare
 
 ### Healthcare & Medical
 
-Executing specialized **healthcare website redesign**. We preserve local SEO maps, doctor profiles, and patient portals while ensuring strict HIPAA security compliance and zero appointment form disruption.
+Executing specialized **healthcare website redesign**. We preserve local SEO maps, doctor profiles, and patient portals while protecting appointment forms.
 
-Local Citation & HIPAA Safeguards
+Local Citation Safeguards
 
 </div>
 

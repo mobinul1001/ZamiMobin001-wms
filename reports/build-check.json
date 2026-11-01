@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01T12:57:13.603Z",
+  "checkedAt": "2026-11-01T13:38:10.228Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
@@ -12,7 +12,9 @@
   "manifestSource": "url-map.csv",
   "failures": [
     "[country-price] /website-maintenance-services-for-uk/: £590 is missing.",
-    "[country-price] /website-maintenance-services-for-uk/: shows a dollar price: $79"
+    "[country-price] /website-maintenance-services-for-uk/: shows a dollar price: $79",
+    "[promises] /website-repair-services/: old 60-minute response claim.",
+    "[faq-schema] /website-repair-services/: schema answer differs from the page: How fast is emergency website repair vs scheduled repair?"
   ],
   "warningCounts": {
     "missing-urls": 1,

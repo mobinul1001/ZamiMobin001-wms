@@ -419,9 +419,9 @@ Healthcare
 
 ### Healthcare & Medical Clinics
 
-HIPAA-aware **healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.
+**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.
 
-HIPAA Compliant & Patient Friendly
+Patient Friendly
 
 </div>
 
@@ -657,7 +657,7 @@ Medical & Dermatology Case #01
 
 dermatologywebsitedesign.com
 
-**Challenge:** Complex medical procedure pages requiring HIPAA-aware patient booking funnels and ultra-fast mobile PageSpeed load times.
+**Challenge:** Complex medical procedure pages requiring patient booking funnels and ultra-fast mobile PageSpeed load times.
 
 <div class="cards">
 
@@ -675,7 +675,7 @@ dermatologywebsitedesign.com
 
 </div>
 
-Result: HIPAA Compliant Patient UI
+Result: Patient-Friendly UI
 
 </div>
 

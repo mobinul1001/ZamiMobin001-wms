@@ -145,3 +145,9 @@
 - SEO tiers set; dedicated strategist, weekly call and SLA removed; "11 deliverables" wording changed.
 - Malware tiers: vulnerability patch and short written report on all three.
 - Metric-matched fallback font and a fixed logo width, to stop text reflow when the web font loads.
+
+## HIPAA, response times, migration line (2026-11-01)
+- HIPAA compliance claims removed from design, hacked recovery, redesign, SEO, speed, white-label, backup and malware pages. Build fails if one returns.
+- Repair: 60-minute response claims replaced with "Repair work usually starts the same business day."
+- White-label: "Every Single Update Is Tested On Staging First" removed.
+- Migration: free-fix line under "30-Day Post Support Window".

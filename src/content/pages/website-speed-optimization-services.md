@@ -705,7 +705,7 @@ Healthcare
 
 ### Healthcare Clinics & Medical
 
-Fast LCP load speeds for HIPAA-compliant clinic portals, doctor directories, and patient online appointment booking forms.
+Fast LCP load speeds for clinic portals, doctor directories, and patient online appointment booking forms.
 
 Fast Patient Appointment UX
 

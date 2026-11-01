@@ -376,8 +376,6 @@ Operational Rigor
 
 We treat every agency client website with extreme technical care. Every plugin, theme, and core update in our **white label wordpress maintenance** routine goes through isolated staging testing before touching live servers.
 
-Every Single Update Is Tested On Staging First
-
 <div class="cards">
 
 <div class="card">
@@ -624,9 +622,7 @@ Healthcare
 
 ### Healthcare Marketing Partners
 
-HIPAA-compliant site security and maintenance for clinic portals, doctor sites, medical booking forms, and health blogs.
-
-HIPAA Compliant Protocol
+Site security and maintenance for clinic portals, doctor sites, medical booking forms, and health blogs.
 
 </div>
 

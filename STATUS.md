@@ -101,7 +101,8 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- White-label service page: the process section still says every update is tested on staging first, a "HIPAA-compliant" line remains, and the free-audit and NDA steps keep their old text. Check against Essential level.
+- White-label service page: the "Our Rigorous Website Maintenance Process" section still describes a staging clone for every update. Essential has no staging.
+- Repair: "Most issues are fixed within 24 hours" stays unless the owner says it is not true. "No fix, no fee" is not restored until the owner confirms it is true.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps

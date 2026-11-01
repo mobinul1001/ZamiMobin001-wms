@@ -332,7 +332,7 @@ Who We Help
 
 ## Recovery Services for Every Industry
 
-Different industries face different risks. From maintaining HIPAA compliance to minimizing checkout downtime, we handle your recovery with your specific business needs in mind.
+Different industries face different risks. From protecting patient data to minimizing checkout downtime, we handle your recovery with your specific business needs in mind.
 
 <div class="cards">
 
@@ -364,7 +364,7 @@ White-label emergency recovery you can offer your own clients, complete with rea
 
 ### Healthcare Practices
 
-Recovery handled with a strict awareness of HIPAA compliance and sensitive patient data protection.
+Recovery handled with care for sensitive patient data.
 
 </div>
 

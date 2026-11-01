@@ -2507,6 +2507,30 @@
     {
       "path": "/website-design-services/",
       "change": "price",
+      "from": "HIPAA-aware **healthcare website design**",
+      "to": "**Healthcare website design**"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "HIPAA Compliant & Patient Friendly",
+      "to": "Patient Friendly"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "requiring HIPAA-aware patient booking funnels",
+      "to": "requiring patient booking funnels"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
+      "from": "Result: HIPAA Compliant Patient UI",
+      "to": "Result: Patient-Friendly UI"
+    },
+    {
+      "path": "/website-design-services/",
+      "change": "price",
       "from": "## Custom Website Design Packages & Pricing",
       "to": "<a id=\"pricing\"></a>\n\n## Custom Website Design Packages & Pricing"
     },
@@ -2741,6 +2765,18 @@
       "path": "/website-design-services/",
       "change": "schema synced",
       "question": "What if I need urgent changes or support after launch?"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "price",
+      "from": "From maintaining HIPAA compliance to minimizing",
+      "to": "From protecting patient data to minimizing"
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "price",
+      "from": "Recovery handled with a strict awareness of HIPAA compliance and sensitive patient data protection.",
+      "to": "Recovery handled with care for sensitive patient data."
     },
     {
       "path": "/website-hacked-recovery-services/",
@@ -3511,6 +3547,12 @@
     {
       "path": "/website-migration-services/",
       "change": "price",
+      "from": "### 30-Day Post Support Window\n",
+      "to": "### 30-Day Post Support Window\n\nFree fix within 30 days if something we moved breaks.\n"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
       "from": "If anything breaks, fails, or experiences unexpected downtime within 30 days of migration, our engineers will fix it immediately or provide a full redo free of charge.",
       "to": "Free fix within 30 days if something we moved breaks."
     },
@@ -3751,6 +3793,18 @@
     },
     {
       "path": "/website-redesign-services/",
+      "change": "price",
+      "from": "while ensuring strict HIPAA security compliance and zero appointment form disruption.",
+      "to": "while protecting appointment forms."
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "price",
+      "from": "Local Citation & HIPAA Safeguards",
+      "to": "Local Citation Safeguards"
+    },
+    {
+      "path": "/website-redesign-services/",
       "change": "schema aligned",
       "question": "What's the difference between a redesign and a refresh?"
     },
@@ -3864,6 +3918,54 @@
       "change": "price",
       "from": "No fix, no fee on diagnostics • ",
       "to": ""
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Avg response: under 60 mins •",
+      "to": "Repair work usually starts the same business day."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/Average response time under 60 minutes for emergency site-down requests, and 24-hour average turnaround[^.\\n]*\\./",
+      "to": "Repair work usually starts the same business day. Most issues are fixed within 24 hours."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "✓ &lt;60 Min Emergency Response",
+      "to": "✓ Same-Business-Day Start"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "| Response time | Under 60 minutes |",
+      "to": "| Response time | Usually the same business day |"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Standard repairs average 24 hours; emergencies are typically responded to within 60 minutes.",
+      "to": "Most issues are fixed within 24 hours. Repair work usually starts the same business day."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Yes, with an average response time under 60 minutes for site-down and checkout-down situations.",
+      "to": "Yes. Repair work usually starts the same business day."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price text gone",
+      "from": "Emergency website repair offers an average response time under 60 minutes for site-down or checkout-failing situations.",
+      "to": "Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Under 60-min emergency response • Serving",
+      "to": "Repair work usually starts the same business day. • Serving"
     },
     {
       "path": "/website-repair-services/",
@@ -4034,7 +4136,7 @@
     },
     {
       "path": "/website-repair-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How fast can you fix my website?"
     },
     {
@@ -4084,7 +4186,7 @@
     },
     {
       "path": "/website-repair-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer emergency website repair?"
     },
     {
@@ -4136,6 +4238,18 @@
       "path": "/website-repair-services/",
       "change": "schema synced",
       "question": "Is my industry supported (healthcare, legal, nonprofit, etc.)?"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "following YMYL and HIPAA guidelines",
+      "to": "following YMYL guidelines"
+    },
+    {
+      "path": "/website-seo-services/",
+      "change": "price",
+      "from": "adhering strictly to HIPAA and bar association guidelines",
+      "to": "following YMYL guidance"
     },
     {
       "path": "/website-seo-services/",
@@ -4291,7 +4405,7 @@
     },
     {
       "path": "/website-seo-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer SEO for law firms and healthcare providers?"
     },
     {
@@ -4338,6 +4452,12 @@
       "path": "/website-seo-services/",
       "change": "schema synced",
       "question": "Do I need a contract, or can I cancel my SEO plan anytime?"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "for HIPAA-compliant clinic portals",
+      "to": "for clinic portals"
     },
     {
       "path": "/website-speed-optimization-services/",
@@ -4850,6 +4970,18 @@
       "path": "/what-does-website-maintenance-include/",
       "change": "schema same",
       "question": "What does a WordPress maintenance plan include?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "HIPAA-compliant site security and maintenance for",
+      "to": "Site security and maintenance for"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^(?:HIPAA Compliant Protocol|Every Single Update Is Tested On Staging First)\\n+/gm",
+      "to": ""
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -5578,6 +5710,18 @@
     {
       "path": "/wordpress-backup-services/",
       "change": "price",
+      "from": "HIPAA-adjacent concerns mean patient-facing",
+      "to": "Patient-facing"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price text gone",
+      "from": "HIPAA-adjacent patient data protection",
+      "to": "Patient data protection"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
       "from": "We leave nothing to chance. Every managed plan includes 9 granular technical deliverables to keep",
       "to": "We leave nothing to chance. Every managed plan includes these technical deliverables to keep"
     },
@@ -5726,6 +5870,24 @@
       "path": "/wordpress-backup-services/",
       "change": "schema same",
       "question": "How do I get started?"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "a HIPAA-sensitive medical portal",
+      "to": "a medical portal"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "HIPAA considerations and patient privacy requirements make immediate",
+      "to": "Patient privacy requirements make immediate"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "/^HIPAA Confidentiality$/m",
+      "to": "Patient Confidentiality"
     },
     {
       "path": "/wordpress-malware-removal-service/",

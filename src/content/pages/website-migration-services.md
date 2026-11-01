@@ -553,6 +553,8 @@ Verifying PHP version compatibility across all active site plugins.
 
 ### 30-Day Post Support Window
 
+Free fix within 30 days if something we moved breaks.
+
 </div>
 
 </div>
