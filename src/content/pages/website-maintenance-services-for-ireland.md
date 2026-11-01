@@ -270,6 +270,8 @@ Receive detailed monthly reports and ongoing expert technical support.
 
 ### Industries We Serve
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 eCommerce & Retail Healthcare Law Firms Finance Construction Education Wellness Creative Agencies Automotive Hospitality Corporate Non-profit
 
 <div class="cards">

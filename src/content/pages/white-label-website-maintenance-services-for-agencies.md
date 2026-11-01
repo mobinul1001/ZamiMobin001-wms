@@ -360,9 +360,9 @@ Your request goes to your backend engineer.
 
 3
 
-#### Execution & Staging QA
+#### Execution & QA
 
-Task executed, tested on an isolated staging server, and verified for quality backed by our [ongoing website support](/contact/) standards.
+Task executed and verified for quality backed by our [ongoing website support](/contact/) standards.
 
 4
 
@@ -374,7 +374,7 @@ Operational Rigor
 
 ## Our Rigorous Website Maintenance Process
 
-We treat every agency client website with extreme technical care. Every plugin, theme, and core update in our **white label wordpress maintenance** routine goes through isolated staging testing before touching live servers.
+We treat every agency client website with extreme technical care. Updates in our **white label wordpress maintenance** routine follow a careful order: snapshot first, then the update, then checks.
 
 <div class="cards">
 
@@ -382,11 +382,11 @@ We treat every agency client website with extreme technical care. Every plugin, 
 
 Phase 01
 
-### Isolated Staging Clone
+### Pre-Update Snapshot
 
-We clone your client's live website onto an isolated **staging environment** first, ensuring 0% risk of live downtime or plugin conflicts during testing.
+We take a snapshot of your client's website before any update, so a change can be rolled back.
 
-Zero Live Server Risk
+Rollback Ready
 
 </div>
 
@@ -394,11 +394,11 @@ Zero Live Server Risk
 
 Phase 02
 
-### Visual Regression QA
+### Safe Live Deployment
 
-Automated and manual **QA testing** verifying font rendering, button layouts, checkout forms, and mobile responsive alignment post-update.
+Updates are applied to the live site during off-peak hours, with a rollback snapshot ready.
 
-Desktop & Mobile Verified
+Off-Peak Updates
 
 </div>
 
@@ -406,11 +406,11 @@ Desktop & Mobile Verified
 
 Phase 03
 
-### Safe Live Deployment
+### Post-Update Checks
 
-Once verified on staging, updates are deployed to the live production server during off-peak hours with an instant rollback snapshot.
+Automated and manual **QA testing** checks font rendering, button layouts, checkout forms, and mobile responsive alignment after the update.
 
-Off-Peak Offsite Snapshot
+Desktop & Mobile Verified
 
 </div>
 
@@ -623,6 +623,8 @@ Healthcare
 ### Healthcare Marketing Partners
 
 Site security and maintenance for clinic portals, doctor sites, medical booking forms, and health blogs.
+
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
 
 </div>
 

@@ -583,6 +583,8 @@ amzhospitalbd.com
 
 **Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 <div class="cards">
 
 <div class="card">

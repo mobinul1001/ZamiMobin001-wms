@@ -421,6 +421,8 @@ Healthcare
 
 **Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 Patient Friendly
 
 </div>

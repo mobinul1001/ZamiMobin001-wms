@@ -35,7 +35,7 @@ Pre-Update Cloud Backup Off-Site Encrypted Storage
 
 Verified Safe
 
-Staging Environment Testing Functionality & QA Checked
+Staging-tested updates on the Business plan Functionality & QA Checked
 
 Passed QA
 
@@ -157,9 +157,9 @@ Before any changes touch live
 
 <div class="card">
 
-#### Staging Environment Testing
+#### Staging-Tested Updates on the Business Plan
 
-Tested on critical sites
+Business plan
 
 </div>
 
@@ -305,7 +305,7 @@ Dashboard Lockout
 
 One incompatible plugin update can render your entire WordPress dashboard inaccessible. Without a pre-update backup and a restore process, recovering manually can take hours.
 
-**Our Fix:** Pre-update backups & staging environment testing.
+**Our Fix:** Pre-update backups. Staging-tested updates on the Business plan.
 
 </div>
 
@@ -441,7 +441,7 @@ User Authentication & Logins
 
 <div class="card">
 
-Major core updates are audited on a staging copy before touches live servers.
+Staging-tested updates on the Business plan.
 
 ✓ Pre-Update Cloud Snapshot
 
@@ -905,9 +905,9 @@ Before anything changes on your site, we create a complete backup — files and 
 
 Business plan
 
-### Step 2: Staging Environment Testing
+### Step 2: Staging-Tested Updates on the Business Plan
 
-For business-critical websites, we apply updates to a staging copy of your site first. We test functionality, check for visual issues, and confirm compatibility before touching the live site. Only after the staging site passes QA do we proceed.
+On the Business plan, we apply updates to a staging copy of your site first. We test functionality, check for visual issues, and confirm compatibility before touching the live site. Only after the staging site passes QA do we proceed.
 
 ✓ Zero Live Site Disruption
 
@@ -1095,9 +1095,9 @@ If an update creates a problem — even one we did not anticipate — your site 
 
 Key Agency Differentiator
 
-## We Test on a Staging Copy Before Touching Your Live Site
+## Staging-Tested Updates on the Business Plan
 
-A staging environment is a private, exact copy of your live website where we apply and test every update before it goes anywhere near your real visitors.
+A staging environment is a private, exact copy of your live website where updates are tested before they reach your real visitors. Staging-tested updates on the Business plan.
 
 <div class="cards">
 
@@ -1334,6 +1334,8 @@ Patient Trust
 ### Healthcare Practices
 
 Patient trust starts with a professional, fast, and secure web presence. Healthcare sites face heightened scrutiny around security and patient form reliability. We keep medical and practice sites current, encrypted, and secure.
+
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
 
 ✓ Heightened Security & Form Protection
 

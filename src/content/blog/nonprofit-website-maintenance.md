@@ -59,7 +59,7 @@ A proper nonprofit maintenance plan covers the standard technical upkeep plus th
 
 **Donation form and payment testing.** The highest-stakes task for any nonprofit. Your donation form, payment gateway (Stripe, PayPal, Classy, Give Lively), post-donation email, and CRM sync all need to be tested end-to-end — not just assumed to work. A plugin or theme update can silently break a donation flow, so testing after every major change is essential.
 
-**Software, plugin, and theme updates.** Applied promptly and tested on a staging copy first, so an update never breaks your live donation form in front of a ready donor. Priority treatment for security patches, since attackers exploit known vulnerabilities within hours of disclosure.
+**Software, plugin, and theme updates.** Applied promptly, with staging-tested updates on the Business plan, to protect your donation form. Priority treatment for security patches, since attackers exploit known vulnerabilities within hours of disclosure.
 
 **Security monitoring and malware scanning.** Regular scans, firewall management, and SSL certificate maintenance. A browser security warning on a site hosting a donation form kills conversions instantly, so SSL monitoring is a basic requirement.
 
@@ -89,7 +89,7 @@ Backups, security checks, and donation-form testing. During active campaigns or 
 
 Monthly
 
-Software and plugin updates (tested on staging), broken-link checks, speed reviews, and an analytics look.
+Software and plugin updates, broken-link checks, speed reviews, and an analytics look.
 
 Quarterly
 

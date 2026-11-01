@@ -151,3 +151,8 @@
 - Repair: 60-minute response claims replaced with "Repair work usually starts the same business day."
 - White-label: "Every Single Update Is Tested On Staging First" removed.
 - Migration: free-fix line under "30-Day Post Support Window".
+
+## Healthcare note, staging wording, repair times, No fix no fee (2026-11-01)
+- Healthcare note added once on each page that offers healthcare or medical sites. Hacked recovery risk lines kept.
+- Staging claims about our plans changed to "Staging-tested updates on the Business plan." White-label process rewritten without staging. Migration, redesign, repair and backup keep their own staging steps; store plans keep theirs.
+- Repair time: one wording. "No fix, no fee" restored on the repair page with the owner's exclusions.

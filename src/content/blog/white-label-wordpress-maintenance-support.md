@@ -91,7 +91,7 @@ See exactly [how our maintenance process works](/website-maintenance-process/) â
 
 Our white label WordPress maintenance plans cover every task your clients need to keep their sites secure, fast, and online â€” all done by our team, branded as yours:
 
--   WordPress core, plugin & theme updates (safely tested on staging)
+-   WordPress core, plugin & theme updates
 -   Automated secure backups with rapid restore
 -   24/7 security scanning & malware protection
 -   Uptime, SSL & broken link monitoring

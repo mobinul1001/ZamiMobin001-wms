@@ -1,6 +1,7 @@
 // Build checks from CMS-REQUIREMENTS.md and SEO-GUARDRAILS.md. Runs on dist/ after astro build.
 // Any failure stops the deploy; the message says what to change. Warnings do not stop it.
 // Usage: node scripts/check-build.mjs
+import { HEALTH_NOTE as healthNote, HEALTH_PAGES as healthPages, REPAIR_TIME as repairTime, NO_FIX as noFix } from './lib/health-staging.mjs';
 import { existsSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import * as cheerio from 'cheerio';
@@ -160,7 +161,13 @@ for (const file of htmlFiles) {
   if (/HIPAA[- ]compl/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
   if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
   // Owner rule: no guarantees beyond the hacked-site line, the malware re-clean and the migration fix.
-  const promise = /no fix,? no fee|full refund|full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());
+  const promise = (path === '/website-repair-services/' ? /full refund/i : /no fix,? no fee|full refund/i).exec($('main').text()) ?? /full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());
+  if (healthPages.includes(path) && !$('main').text().includes(healthNote)) fail('healthcare', `${path}: healthcare note is missing.`);
+  if (/On managed plans, updates are tested|Isolated Staging Clone|goes through isolated staging|apply and test every update/i.test($('main').text())) fail('staging', `${path}: staging claim outside the Business plan.`);
+  if (path === '/website-repair-services/') {
+    const repairText = $('main').text().replace(/\u2019/g, "'");
+    if (/Most issues are fixed within 24 hours/i.test(repairText) || !repairText.includes(repairTime) || !repairText.includes(noFix)) fail('repair', `${path}: repair time or No fix, no fee wording is wrong.`);
+  }
   if (promise) fail('promises', `${path}: "${promise[0]}" is not an approved promise.`);
   if (path === '/white-label-website-maintenance-services-for-agencies/') {
     const claim = /99\.\d+%|24\/7 (agency )?sla|3\.8 hours|slack|agency dashboard|\bWAF\b/i.exec($('main').text());

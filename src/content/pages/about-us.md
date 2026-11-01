@@ -158,6 +158,8 @@ We maintain websites for any business that needs a reliable maintenance partner.
 
 Small & Local Businesses Service Businesses E-commerce Stores Agencies Professionals (Doctors, Lawyers) Contractors & Trades Real Estate & Rentals Travel & Hospitality Blog & Content Websites Consultants
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 </div>
 
 ## Our Promise

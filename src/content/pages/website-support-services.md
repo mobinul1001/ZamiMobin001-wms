@@ -121,6 +121,8 @@ Checkout downtime or broken product pages directly kills revenue. You need relia
 
 Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 </div>
 
 <div class="card">

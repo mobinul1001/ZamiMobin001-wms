@@ -334,7 +334,7 @@ We review your site's health, security, and speed, then recommend the right plan
 
 ### Setup & Secure
 
-We configure backups, security scanning, staging, and monitoring for your site.
+We configure backups, security scanning and monitoring for your site.
 
 </div>
 

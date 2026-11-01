@@ -210,6 +210,18 @@
   "faqChanges": [
     {
       "path": "/",
+      "change": "price",
+      "from": "WordPress core, themes, and plugins are updated safely on a staging copy first, so new versions never break your live site or its design.",
+      "to": "WordPress core, themes, and plugins are updated safely. Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/",
+      "change": "price",
+      "from": "/No\\. Updates and tests are performed on a staging copy first, then deployed to your live site[^\\n]*/",
+      "to": "Normally, no. Work is planned to avoid disruption for your visitors. Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/",
       "change": "schema same",
       "question": "What is website maintenance?"
     },
@@ -267,6 +279,11 @@
       "path": "/",
       "change": "schema same",
       "question": "Can I request additional updates or changes?"
+    },
+    {
+      "path": "/about-us/",
+      "change": "price",
+      "from": "/^Small & Local Businesses Service Businesses[^\\n]*$/m"
     },
     {
       "path": "/agreement/",
@@ -771,6 +788,18 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "law firms and medical practices, startups and coaches.",
+      "to": "law firms and medical practices, startups and coaches.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "We configure backups, security scanning, staging, and monitoring for your site.",
+      "to": "We configure backups, security scanning and monitoring for your site."
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
       "change": "schema aligned",
       "question": "Can you recommend a reliable WordPress website maintenance company?"
     },
@@ -1231,6 +1260,18 @@
       "path": "/how-long-does-it-take-to-redesign-a-website/",
       "change": "schema same",
       "question": "What's the best time of year to launch a website redesign?"
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "price",
+      "from": "Near-zero downtime. Tested on staging, then pushed live in seconds.",
+      "to": "Near-zero downtime. Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/how-long-does-website-maintenance-take/",
+      "change": "price",
+      "from": "Most routine maintenance causes no visible downtime because updates are tested on a staging copy first.",
+      "to": "Most routine maintenance causes no visible downtime. Staging-tested updates on the Business plan."
     },
     {
       "path": "/how-long-does-website-maintenance-take/",
@@ -1936,6 +1977,12 @@
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "On managed plans, updates are tested on staging first so they never break your live site.",
+      "to": "Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "schema aligned",
       "question": "What's the difference between a maintenance plan and managed hosting?"
     },
@@ -2116,6 +2163,24 @@
       "path": "/monthly-website-maintenance-packages/",
       "change": "price",
       "from": "/### 10\\\\\\. How do I choose[^\\n]*\\n\\n[^\\n]*\\n?/"
+    },
+    {
+      "path": "/monthly-website-maintenance-packages/",
+      "change": "price",
+      "from": "Backups, security tools, monitoring, and staging environments are configured.",
+      "to": "Backups, security tools and monitoring are configured."
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "price",
+      "from": "Applied promptly and tested on a staging copy first, so an update never breaks your live donation form in front of a ready donor.",
+      "to": "Applied promptly, with staging-tested updates on the Business plan, to protect your donation form."
+    },
+    {
+      "path": "/nonprofit-website-maintenance/",
+      "change": "price",
+      "from": "Software and plugin updates (tested on staging)",
+      "to": "Software and plugin updates"
     },
     {
       "path": "/nonprofit-website-maintenance/",
@@ -2476,6 +2541,24 @@
     },
     {
       "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "that want the same hosting-included, staging-tested, fully managed care",
+      "to": "that want the same hosting-included, fully managed care"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "The same hosting-included, staging-tested, fully managed care as SiteCare",
+      "to": "The same hosting-included, fully managed care as SiteCare"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "both do the fundamentals well — staging-tested updates, daily backups, security monitoring, and performance work.",
+      "to": "both do the fundamentals well — backups, security monitoring, and performance work, with staging-tested updates on our Business plan."
+    },
+    {
+      "path": "/sitecare-alternative/",
       "change": "schema synced",
       "question": "Is SiteCare a good WordPress maintenance service?"
     },
@@ -2668,6 +2751,12 @@
     },
     {
       "path": "/website-design-services/",
+      "change": "price",
+      "from": "**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.",
+      "to": "**Healthcare website design** and **medical website design**. We build patient trust, doctor directories, and secure online appointment booking.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+    },
+    {
+      "path": "/website-design-services/",
       "change": "schema synced",
       "question": "How much does professional website design cost?"
     },
@@ -2777,6 +2866,12 @@
       "change": "price",
       "from": "Recovery handled with a strict awareness of HIPAA compliance and sensitive patient data protection.",
       "to": "Recovery handled with care for sensitive patient data."
+    },
+    {
+      "path": "/website-hacked-recovery-services/",
+      "change": "price",
+      "from": "Recovery handled with care for sensitive patient data.",
+      "to": "Recovery handled with care for sensitive patient data.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
     },
     {
       "path": "/website-hacked-recovery-services/",
@@ -2909,6 +3004,11 @@
       "question": "Do I need a website hosting and maintenance contract?"
     },
     {
+      "path": "/website-maintenance-case-study/",
+      "change": "price",
+      "from": "/^We help clinics, therapists[^\\n]*$/m"
+    },
+    {
       "path": "/website-maintenance-checklist/",
       "change": "schema same",
       "question": "What should a website maintenance checklist include?"
@@ -3018,6 +3118,11 @@
       "to": "for our Growth and Business plan clients"
     },
     {
+      "path": "/website-maintenance-services-for-australia/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
+    },
+    {
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 249/mês\n\n[Escolher Plano](/get-a-free-quote/)",
@@ -3060,6 +3165,11 @@
       "to": "Escolha entre Essential, Growth ou Business."
     },
     {
+      "path": "/website-maintenance-services-for-brazil/",
+      "change": "price",
+      "from": "/^### Indústrias que Atendemos$/m"
+    },
+    {
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 49/mo\n\n[Choose Plan](/get-a-free-quote/)",
@@ -3096,6 +3206,11 @@
       "to": "### Business\n"
     },
     {
+      "path": "/website-maintenance-services-for-canada/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
+    },
+    {
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
@@ -3138,6 +3253,11 @@
       "to": "Pick Essential, Growth, or Business based on your needs."
     },
     {
+      "path": "/website-maintenance-services-for-france/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
+    },
+    {
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
@@ -3178,6 +3298,11 @@
       "change": "price",
       "from": "Pick Basic, Standard, or Premium based on your needs.",
       "to": "Pick Essential, Growth, or Business based on your needs."
+    },
+    {
+      "path": "/website-maintenance-services-for-ireland/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -3509,6 +3634,11 @@
       "to": "### Business\n"
     },
     {
+      "path": "/website-maintenance-services-for-uk/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
+    },
+    {
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$49/mo\n\n[Get Started](/get-a-free-quote/)",
@@ -3543,6 +3673,11 @@
       "change": "price",
       "from": "### Premium\n",
       "to": "### Business\n"
+    },
+    {
+      "path": "/website-maintenance-services-for-usa/",
+      "change": "price",
+      "from": "/^### Industries We Serve[^\\n]*$/m"
     },
     {
       "path": "/website-migration-services/",
@@ -3645,6 +3780,12 @@
       "change": "price",
       "from": "## Website Migration Service Pricing & Packages",
       "to": "## Website Migration Service Pricing & Packages\n\n**Free migration with any annual plan.**"
+    },
+    {
+      "path": "/website-migration-services/",
+      "change": "price",
+      "from": "**Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.",
+      "to": "**Challenge:** Large patient booking database and heavy media assets needing migration from slow shared hosting to a high-speed VPS without patient service interruption.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
     },
     {
       "path": "/website-migration-services/",
@@ -3802,6 +3943,11 @@
       "change": "price",
       "from": "Local Citation & HIPAA Safeguards",
       "to": "Local Citation Safeguards"
+    },
+    {
+      "path": "/website-redesign-services/",
+      "change": "price",
+      "from": "/^Executing specialized \\*\\*healthcare website redesign\\*\\*[^\\n]*$/m"
     },
     {
       "path": "/website-redesign-services/",
@@ -4008,6 +4154,52 @@
       "change": "price text gone",
       "from": "Transparent website repair pricing ranges for small sites ($99-$249), WordPress sites ($149-$499), business sites ($250-$699), and emergency site-down repairs ($299-$899).",
       "to": "Small fixes are $49, most repairs are $99–$299, complex work is quoted, and hacked site cleanup is $149."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Technical repair work that respects compliance, patient form security, and data sensitivity.",
+      "to": "Technical repair work that respects compliance, patient form security, and data sensitivity.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Most issues are fixed within 24 hours.",
+      "to": "Small fixes are usually done within 24 hours; bigger repairs within 24–48 hours."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/^24-Hour Avg Turnaround$/m",
+      "to": "Small fixes usually within 24 hours"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/^24 hrs$/m",
+      "to": "24–48 hrs"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Average turnaround for standard repairs",
+      "to": "Small fixes are usually done within 24 hours; bigger repairs within 24–48 hours."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "| Urgency | Same-day to 48-hour repair |",
+      "to": "| Urgency | Small fixes within 24 hours; bigger repairs within 24–48 hours |"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/^Repair work usually starts the same business day\\.$/m"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "/^Repair work usually starts the same business day\\. • Serving[^\\n]*$/m"
     },
     {
       "path": "/website-repair-services/",
@@ -4355,6 +4547,11 @@
     },
     {
       "path": "/website-seo-services/",
+      "change": "price",
+      "from": "/^Executing specialized \\*\\*healthcare seo\\*\\*[^\\n]*$/m"
+    },
+    {
+      "path": "/website-seo-services/",
       "change": "schema synced",
       "question": "What does a website SEO service include?"
     },
@@ -4551,6 +4748,11 @@
     },
     {
       "path": "/website-speed-optimization-services/",
+      "change": "price",
+      "from": "/^Fast LCP load speeds for clinic portals[^\\n]*$/m"
+    },
+    {
+      "path": "/website-speed-optimization-services/",
       "change": "shown",
       "question": "Why is my WordPress website slow on mobile?"
     },
@@ -4709,6 +4911,12 @@
       "to": "Annually: 2 months free"
     },
     {
+      "path": "/website-support-services/",
+      "change": "price",
+      "from": "Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.",
+      "to": "Patient portals, form submissions, and booking systems require consistent uptime and strict security measures.\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
+    },
+    {
       "path": "/website-update-services/",
       "change": "price",
       "from": "Choose a plan that fits your site's complexity and your business needs. All plans include backup before every update and a monthly status report.",
@@ -4815,6 +5023,65 @@
       "change": "price",
       "from": "we offer a one-time update audit service.",
       "to": "we offer a one-time catch-up update, from $99."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "/^Patient trust starts with[^\\n]*$/m"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Staging Environment Testing Functionality & QA Checked",
+      "to": "Staging-tested updates on the Business plan Functionality & QA Checked"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "#### Staging Environment Testing",
+      "to": "#### Staging-Tested Updates on the Business Plan"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "/^Tested on critical sites$/m",
+      "to": "Business plan"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "**Our Fix:** Pre-update backups & staging environment testing.",
+      "to": "**Our Fix:** Pre-update backups. Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Major core updates are audited on a staging copy before touches live servers.",
+      "to": "Staging-tested updates on the Business plan."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "### Step 2: Staging Environment Testing",
+      "to": "### Step 2: Staging-Tested Updates on the Business Plan"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "For business-critical websites, we apply updates to a staging copy",
+      "to": "On the Business plan, we apply updates to a staging copy"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "## We Test on a Staging Copy Before Touching Your Live Site",
+      "to": "## Staging-Tested Updates on the Business Plan"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "where we apply and test every update before it goes anywhere near your real visitors.",
+      "to": "where updates are tested before they reach your real visitors. Staging-tested updates on the Business plan."
     },
     {
       "path": "/website-update-services/",
@@ -4940,6 +5207,18 @@
       "path": "/website-update-services/",
       "change": "schema synced",
       "question": "Do you offer one-time website updates instead of monthly plans?"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "price",
+      "from": "Software, plugin, and theme updates (tested on staging first)",
+      "to": "Software, plugin, and theme updates"
+    },
+    {
+      "path": "/what-does-website-maintenance-include/",
+      "change": "price",
+      "from": "We handle the whole stack — updates tested on staging, security monitoring",
+      "to": "We handle the whole stack — updates, with staging-tested updates on the Business plan, security monitoring"
     },
     {
       "path": "/what-does-website-maintenance-include/",
@@ -5374,6 +5653,83 @@
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^(?:HIPAA-compliant site|Site) security and maintenance for clinic portals[^\\n]*$/m"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "#### Execution & Staging QA",
+      "to": "#### Execution & QA"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Task executed, tested on an isolated staging server, and verified for quality",
+      "to": "Task executed and verified for quality"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Every plugin, theme, and core update in our **white label wordpress maintenance** routine goes through isolated staging testing before touching live servers.",
+      "to": "Updates in our **white label wordpress maintenance** routine follow a careful order: snapshot first, then the update, then checks."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Isolated Staging Clone",
+      "to": "### Pre-Update Snapshot"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/We clone your client's live website onto an isolated \\*\\*staging environment\\*\\* first[^\\n]*/",
+      "to": "We take a snapshot of your client's website before any update, so a change can be rolled back."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Zero Live Server Risk$/m",
+      "to": "Rollback Ready"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Visual Regression QA",
+      "to": "### Safe Live Deployment"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Automated and manual \\*\\*QA testing\\*\\* verifying[^\\n]*$/m",
+      "to": "Updates are applied to the live site during off-peak hours, with a rollback snapshot ready."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Desktop & Mobile Verified$/m",
+      "to": "Off-Peak Updates"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^### Safe Live Deployment(?=\\n\\nOnce verified on staging)/m",
+      "to": "### Post-Update Checks"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Once verified on staging, updates are deployed[^\\n]*$/m",
+      "to": "Automated and manual **QA testing** checks font rendering, button layouts, checkout forms, and mobile responsive alignment after the update."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "/^Off-Peak Offsite Snapshot$/m",
+      "to": "Desktop & Mobile Verified"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "link",
       "to": "### Do you offer [white label WordPress maintenance](/white-label-wordpress-maintenance-support/) specifically?"
     },
@@ -5658,6 +6014,12 @@
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "-   WordPress core, plugin & theme updates (safely tested on staging)",
+      "to": "-   WordPress core, plugin & theme updates"
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
       "change": "schema same",
       "question": "What is white label WordPress maintenance?"
     },
@@ -5760,6 +6122,11 @@
       "change": "price",
       "from": "Yes — agency plans include white-label reporting",
       "to": "Yes — our white-label program includes white-label reporting"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "/^Patient-facing appointment forms and medical content[^\\n]*$/m"
     },
     {
       "path": "/wordpress-backup-services/",
@@ -5957,6 +6324,11 @@
     },
     {
       "path": "/wordpress-malware-removal-service/",
+      "change": "price",
+      "from": "/^Patient privacy requirements make immediate[^\\n]*$/m"
+    },
+    {
+      "path": "/wordpress-malware-removal-service/",
       "change": "schema synced",
       "question": "How long does WordPress malware removal take?"
     },
@@ -6060,6 +6432,12 @@
       "path": "/wordpress-malware-removal/",
       "change": "schema synced",
       "question": "How much does professional WordPress malware removal cost?"
+    },
+    {
+      "path": "/wordpress-security-checklist/",
+      "change": "price",
+      "from": "for you: updates tested on staging, continuous security monitoring",
+      "to": "for you: updates, with staging-tested updates on the Business plan, continuous security monitoring"
     },
     {
       "path": "/wordpress-security-checklist/",
@@ -6352,6 +6730,12 @@
     },
     {
       "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "We configure backups, security scanning, staging, and monitoring for your site.",
+      "to": "We configure backups, security scanning and monitoring for your site."
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
       "change": "schema synced",
       "question": "What are WordPress website maintenance packages?"
     },
@@ -6384,6 +6768,12 @@
       "path": "/wordpress-website-maintenance-packages/",
       "change": "schema synced",
       "question": "Can I cancel or change my WordPress maintenance plan?"
+    },
+    {
+      "path": "/works/",
+      "change": "price",
+      "from": "#### Healthcare & Medical",
+      "to": "#### Healthcare & Medical\n\nHealthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice."
     }
   ]
 }

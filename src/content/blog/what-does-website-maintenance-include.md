@@ -85,7 +85,7 @@ Uptime and error-log checks, and confirming nothing has broken since the last ro
 
 Monthly
 
-Software, plugin, and theme updates (tested on staging first), broken-link checks, performance reviews, and an analytics review to catch any odd trends in traffic or behavior.
+Software, plugin, and theme updates, broken-link checks, performance reviews, and an analytics review to catch any odd trends in traffic or behavior.
 
 Quarterly
 
@@ -153,7 +153,7 @@ If you're choosing a provider, make sure the plan includes a clear scope and SLA
 
 Website maintenance isn't a luxury or an optional line item — it's the ongoing care that protects your rankings, your revenue, and your customers' trust. The question isn't really *whether* to maintain your site, but whether you want to do it yourself or leave it to people who do it every day.
 
-We handle the whole stack — updates tested on staging, security monitoring, off-site backups, performance and SEO upkeep, and transparent reporting — so your site stays secure and fast while you focus on your business.
+We handle the whole stack — updates, with staging-tested updates on the Business plan, security monitoring, off-site backups, performance and SEO upkeep, and transparent reporting — so your site stays secure and fast while you focus on your business.
 
 Get a free website audit and we'll show you exactly what your site needs to stay healthy, with a clear plan and pricing. No jargon, no surprises.
 
@@ -169,7 +169,7 @@ Get a free website audit and we'll show you exactly what your site needs to stay
 
 ## Keep Your Site Secure, Fast & Working
 
-We handle the whole stack — updates tested on staging, security monitoring, off-site backups, performance and SEO upkeep, and transparent reporting — so your site stays secure and fast while you focus on your business.
+We handle the whole stack — updates, with staging-tested updates on the Business plan, security monitoring, off-site backups, performance and SEO upkeep, and transparent reporting — so your site stays secure and fast while you focus on your business.
 
 [Get a Free Website Audit →](/free-website-maintenance-audit/) [See Maintenance Plans](/monthly-website-maintenance-packages/)
 

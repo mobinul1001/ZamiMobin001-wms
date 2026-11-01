@@ -253,7 +253,7 @@ We review your site's health, security, and speed, then recommend the right plan
 
 ### Setup & Secure
 
-We configure backups, security scanning, staging, and monitoring for your site.
+We configure backups, security scanning and monitoring for your site.
 
 3
 
@@ -379,6 +379,8 @@ Website maintenance helps you:
 ## Who We Support
 
 We maintain websites for a wide range of small businesses: service businesses such as plumbers and electricians, local businesses and stores, online stores, real estate agents, law firms and medical practices, startups and coaches.
+
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
 
 ## Benefits for Small Business Owners
 

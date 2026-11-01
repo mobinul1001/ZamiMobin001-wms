@@ -271,6 +271,8 @@ Relatório mensal detalhado e suporte contínuo.
 
 ### Indústrias que Atendemos
 
+Sites de saúde: mantemos as informações de pacientes fora do site. Formulários que coletam dados de saúde passam por um provedor de formulários elegível à HIPAA que assina um BAA com sua clínica.
+
 Lojas e eCommerce Saúde e Clínicas Advocacia Finanças e Contabilidade Construção e Serviços Educação e Ensino Fitness e Bem-Estar Agências Criativas Automotivo Restaurantes e Turismo Corporações ONGs e Governo
 
 <div class="cards">

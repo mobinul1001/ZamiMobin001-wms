@@ -55,7 +55,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Removal of the /blogs/ hidden list and the quote-form coupon box: confirmed by the owner.
 - Repair: small fix $49, most repairs $99–$299, complex work quoted, hacked cleanup $149. Backup and updates are in every plan; emergency restore and catch-up update from $99 without a plan.
 - White-label wholesale per site/month: 1–5 sites $59, 6–20 $49, 21+ $39. Hosting after year one: $19/month or $190/year. Guarantee wording approved: "If we can't clean your hacked site, you don't pay."
-- Promises allowed: "If we can't clean your hacked site, you don't pay."; malware free re-clean if reinfected within 30 days; migration free fix within 30 days if something we moved breaks. No others; the build fails on the removed wording.
+- Promises allowed: repair "No fix, no fee" in the owner's wording with its exclusions; "If we can't clean your hacked site, you don't pay."; malware free re-clean if reinfected within 30 days; migration free fix within 30 days if something we moved breaks. No others; the build fails on the removed wording.
 - SEO tiers: Local SEO Starter $299 (Google Business Profile, on-page SEO for 5 pages, monthly report); SEO Growth $599 (+2 articles/month, local citations); SEO Pro $999 (+4 articles/month, link outreach, 1 call/month).
 - Service prices set: see `reports/service-package-prices.md`. Free migration (host-to-host) with any annual plan. White-label tiers have the same Essential-level features; only the rate changes. Backup retention 30/60/90 days.
 - /plan-packages-and-costs/, /website-management-packages/ and /website-maintenance-services-for-small-business/: unique content moved, 301s kept.
@@ -101,8 +101,7 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
 - White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
 - /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
-- White-label service page: the "Our Rigorous Website Maintenance Process" section still describes a staging clone for every update. Essential has no staging.
-- Repair: "Most issues are fixed within 24 hours" stays unless the owner says it is not true. "No fix, no fee" is not restored until the owner confirms it is true.
+- Healthcare note is on these pages, but some still describe patient portals, booking forms and a "large patient booking database" case. Confirm these fit "we keep patient information off the website". BAA and HIPAA are US terms and now appear on the UK, Canada, Australia, France, Ireland and Brazil pages too.
 - Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps

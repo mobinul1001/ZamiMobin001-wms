@@ -368,4 +368,6 @@ Bug Fixes
 
 We help clinics, therapists, counselors, doctors, and medical practices keep their websites updated, secure, and patient-friendly. Let us provide the same peace of mind for your practice.
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 [Contact Us to Start Your Plan](#)

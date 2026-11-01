@@ -1,4 +1,5 @@
 import { SERVICE_CHANGES } from './service-prices.mjs';
+import { EXTRA_CHANGES, REPAIR_TIME } from './health-staging.mjs';
 import { compareTable } from './compare-table.mjs';
 import { SUPPORT_SECTIONS, SUPPORT_FAQS } from './merged-support.mjs';
 import { readFileSync } from 'node:fs';
@@ -303,6 +304,8 @@ export const ARTICLE_CHANGES = {
 
 for (const [path, pairs] of Object.entries(SERVICE_CHANGES)) ARTICLE_CHANGES[path] = [...pairs, ...(ARTICLE_CHANGES[path] ?? [])];
 
+for (const [path, pairs] of Object.entries(EXTRA_CHANGES)) ARTICLE_CHANGES[path] = [...(ARTICLE_CHANGES[path] ?? []), ...pairs];
+
 export const articlePairs = (path) => ARTICLE_CHANGES[path] ?? [];
 
 // These pages' lines with a price, percentage or old plan name may change; other old lines must still be on the page.
@@ -315,7 +318,7 @@ const coveredByPair = (line, path) => {
     return f.includes(s) || (f.length >= 20 && s.includes(f));
   });
 };
-export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full|related to the original issue|No fix, no fee|SLA|Slack|HIPAA|60 min|Staging First/.test(line));
+export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full|related to the original issue|No fix, no fee|SLA|Slack|HIPAA|60 min|Staging First|[Ss]taging|24 hrs|24-Hour|Patient|Average turnaround|Most issues|Automated and manual/.test(line));
 
 // Schema offers on these pages follow the same prices. White-label tiers without a confirmed price lose their offer.
 const OFFER_NAMES = {
@@ -336,7 +339,7 @@ function fixOfferNode(node, path) {
   for (const [k, v] of Object.entries(node)) {
     // This repair FAQ is built from its schema answer, after the page's text pairs have run.
     if (path === '/website-repair-services/' && k === 'text' && typeof v === 'string' && /under 60 minutes/.test(v)) {
-      out[k] = v.replace(/Emergency website repair offers an average response time under 60 minutes[^.]*\./, 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.');
+      out[k] = v.replace(/Emergency website repair offers an average response time under 60 minutes[^.]*\./, 'Emergency website repair is for site-down or checkout-failing situations. Repair work usually starts the same business day.').replace('Scheduled standard repairs average 24 to 48 hours.', REPAIR_TIME);
       continue;
     }
     out[k] = k === 'name' && typeof v === 'string' ? planName(v) : fixOfferNode(v, path);

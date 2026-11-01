@@ -168,7 +168,7 @@ We assess security risks, performance issues, and improvement opportunities.
 
 #### Onboarding & Setup
 
-Backups, security tools, monitoring, and staging environments are configured.
+Backups, security tools and monitoring are configured.
 
 3
 

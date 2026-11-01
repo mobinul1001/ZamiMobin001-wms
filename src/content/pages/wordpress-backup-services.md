@@ -648,6 +648,8 @@ Patient Data Security
 
 Patient-facing appointment forms and medical content need clean, verifiable rollback points — not just "a backup exists somewhere." Our **wordpress backup for healthcare**
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 Clean, Verifiable Rollback Points & SSL Encryption
 
 Firm Reputation Protection

@@ -140,7 +140,7 @@ The critical final step everyone skips: after cleaning, change **all** passwords
 
 Working through this checklist once puts your site ahead of the vast majority of WordPress installations on the web. But the reason WordPress security is hard isn't any single step — it's that it never stops. New plugin vulnerabilities appear weekly, updates need testing, backups need verifying, and someone has to be watching. Miss a few weeks and the doors quietly reopen.
 
-That's exactly what a managed maintenance and security service handles for you: updates tested on staging, continuous security monitoring, malware scanning, off-site backups, and fast response if something goes wrong — so the whole checklist runs in the background without you thinking about it.
+That's exactly what a managed maintenance and security service handles for you: updates, with staging-tested updates on the Business plan, continuous security monitoring, malware scanning, off-site backups, and fast response if something goes wrong — so the whole checklist runs in the background without you thinking about it.
 
 Get a free website security audit and we'll show you exactly where your site is exposed and how to close the gaps — whether you harden it yourself or have us keep it locked down for you.
 

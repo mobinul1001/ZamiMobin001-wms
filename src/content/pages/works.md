@@ -207,6 +207,8 @@ Active Partnerships
 
 #### Healthcare & Medical
 
+Healthcare websites: we keep patient information off the website. Forms that collect health details go through a HIPAA-eligible form provider that signs a BAA with your practice.
+
 <div class="cards">
 
 <div class="card">
