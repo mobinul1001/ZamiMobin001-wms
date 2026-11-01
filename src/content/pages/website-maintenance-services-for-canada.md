@@ -176,7 +176,6 @@ or CA$2,090/yr, 2 months free
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 </div>
 

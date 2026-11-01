@@ -306,6 +306,42 @@
     {
       "path": "/best-fixrunner-alternatives/",
       "change": "price",
+      "from": "| Support model | Metered (~90 min entry) | ✓ Included fixes + 24/7 care |",
+      "to": "| Support model | Metered (~90 min entry) | ✓ Included edit hours; 24/7 emergency fixes on Business |"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "| Staging-tested updates | ✓ Yes | ✓ Yes |",
+      "to": "| Staging-tested updates | ✓ Yes | ✓ On Business |"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "| 24/7 emergency support | ✓ Yes | ✓ Yes, incl. WhatsApp |",
+      "to": "| 24/7 emergency support | ✓ Yes | ✓ 24/7 emergency fixes on Business, WhatsApp support |"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "24/7Monitoring & emergency support",
+      "to": "24/7Emergency fixes on Business"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "You get the same core protection as FixRunner — staging-safe updates, backups, security, and 24/7 emergency support — plus",
+      "to": "You get core protection — updates, backups and security, with staging-tested updates and 24/7 emergency fixes on Business — plus"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
+      "from": "real 24/7 support including WhatsApp emergencies",
+      "to": "real support including WhatsApp emergencies, with 24/7 emergency fixes on Business"
+    },
+    {
+      "path": "/best-fixrunner-alternatives/",
+      "change": "price",
       "from": "$95/mo, hosting included (1yr free)",
       "to": "$79/mo, hosting included (1yr free)"
     },
@@ -719,6 +755,11 @@
     },
     {
       "path": "/best-website-maintenance-for-small-business/",
+      "change": "price",
+      "from": "/^\\| Feature \\| Essential[^\\n]*\\n(?:\\|[^\\n]*\\n?)*/m"
+    },
+    {
+      "path": "/best-website-maintenance-for-small-business/",
       "change": "schema aligned",
       "question": "Can you recommend a reliable WordPress website maintenance company?"
     },
@@ -770,6 +811,42 @@
     {
       "path": "/best-wp-buffs-alternatives/",
       "change": "price",
+      "from": "full access, 24/7 WhatsApp emergency support, and no lock-in",
+      "to": "full access, WhatsApp emergency support (24/7 emergency fixes on Business), and no lock-in"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "| Staging-tested updates | Higher tiers only | ✓ Included |",
+      "to": "| Staging-tested updates | Higher tiers only | ✓ On Business |"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "| 24/7 emergency support | ✓ Yes | ✓ Yes, incl. WhatsApp |",
+      "to": "| 24/7 emergency support | ✓ Yes | ✓ 24/7 emergency fixes on Business, WhatsApp support |"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "24/7Monitoring & emergency support",
+      "to": "24/7Emergency fixes on Business"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "You get the same core protection as WP Buffs — staging-safe updates, backups, security, and 24/7 emergency support — plus",
+      "to": "You get core protection — updates, backups and security, with staging-tested updates and 24/7 emergency fixes on Business — plus"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
+      "from": "Staging-safe updates, hosting handled, honest pricing with no hidden charges, real 24/7 support including WhatsApp emergencies",
+      "to": "Hosting handled, honest pricing with no hidden charges, real support including WhatsApp emergencies, staging-tested updates and 24/7 emergency fixes on Business"
+    },
+    {
+      "path": "/best-wp-buffs-alternatives/",
+      "change": "price",
       "from": "$95/mo, hosting included (1yr free)",
       "to": "$79/mo, hosting included (1yr free)"
     },
@@ -797,7 +874,7 @@
     },
     {
       "path": "/best-wp-buffs-alternatives/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What is the best-value WP Buffs alternative?"
     },
     {
@@ -974,7 +1051,7 @@
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
-      "change": "price",
+      "change": "price text gone",
       "from": "| Annual billing (per month) | $116 | $236 | $476 |",
       "to": "| Annual billing (per year) | $1,990, 2 months free | $3,490, 2 months free | $5,990, 2 months free |"
     },
@@ -1043,6 +1120,11 @@
       "change": "price",
       "from": "$595+",
       "to": "$599+"
+    },
+    {
+      "path": "/ecommerce-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^\\| Feature \\| (?:Store|Shopify) Starter[^\\n]*\\n(?:\\|[^\\n]*\\n?)*/m"
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
@@ -1838,6 +1920,11 @@
     },
     {
       "path": "/how-much-does-wordpress-website-maintenance-cost/",
+      "change": "price",
+      "from": "/^\\| Feature \\| Essential[^\\n]*\\n(?:\\|[^\\n]*\\n?)*/m"
+    },
+    {
+      "path": "/how-much-does-wordpress-website-maintenance-cost/",
       "change": "schema aligned",
       "question": "What's the difference between a maintenance plan and managed hosting?"
     },
@@ -2208,7 +2295,7 @@
     },
     {
       "path": "/shopify-website-maintenance-packages/",
-      "change": "price",
+      "change": "price text gone",
       "from": "| Annual billing (per month) | $100 | $196 | $396 |",
       "to": "| Annual billing (per year) | $1,490, 2 months free | $2,990, 2 months free | $4,990, 2 months free |"
     },
@@ -2256,6 +2343,11 @@
     },
     {
       "path": "/shopify-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^\\| Feature \\| (?:Store|Shopify) Starter[^\\n]*\\n(?:\\|[^\\n]*\\n?)*/m"
+    },
+    {
+      "path": "/shopify-website-maintenance-packages/",
       "change": "schema synced",
       "question": "How much does Shopify website maintenance cost?"
     },
@@ -2299,6 +2391,30 @@
       "change": "price",
       "from": "starts at $95/month with a year",
       "to": "starts at $79/month with a year"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "| Staging-tested updates | ✓ Yes | ✓ Yes |",
+      "to": "| Staging-tested updates | ✓ Yes | ✓ On Business |"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "| WhatsApp emergency support | ✗ Ticket / standard | ✓ Direct WhatsApp, 24/7 |",
+      "to": "| WhatsApp emergency support | ✗ Ticket / standard | ✓ Direct WhatsApp; 24/7 emergency fixes on Business |"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "adds direct **WhatsApp emergency support, 24/7 including weekends**",
+      "to": "adds direct **WhatsApp emergency support**, with 24/7 emergency fixes on Business"
+    },
+    {
+      "path": "/sitecare-alternative/",
+      "change": "price",
+      "from": "/^WhatsApp 24\\/7$/m",
+      "to": "WhatsApp; 24/7 on Business"
     },
     {
       "path": "/sitecare-alternative/",
@@ -2667,7 +2783,7 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 199/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$209/mo\n\nFirst month free\n\nor A$2,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth-aud)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "A$209/mo\n\nFirst month free\n\nor A$2,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth-aud)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -2697,7 +2813,7 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Premium plan.",
-      "to": "Yes, we specialize in WooCommerce and Shopify maintenance. WooCommerce support is included from our Growth plan."
+      "to": "Yes, we specialize in WooCommerce and Shopify maintenance. See our [WooCommerce store plans](/ecommerce-website-maintenance-packages/) and [Shopify plans](/shopify-website-maintenance-packages/)."
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -2721,7 +2837,7 @@
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 499/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$809/mês\n\nPrimeiro mês grátis\n\nou R$8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth-brl)\n\n-   Tudo do Essential\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Backups diários\n-   3 horas de edições/mês\n-   Remoção de malware\n-   Otimização de velocidade\n-   Relatório mensal\n-   Suporte WooCommerce"
+      "to": "R$809/mês\n\nPrimeiro mês grátis\n\nou R$8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth-brl)\n\n-   Tudo do Essential\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Backups diários\n-   3 horas de edições/mês\n-   Remoção de malware\n-   Otimização de velocidade\n-   Relatório mensal"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
@@ -2763,7 +2879,7 @@
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$209/mo\n\nFirst month free\n\nor CA$2,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-cad)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "CA$209/mo\n\nFirst month free\n\nor CA$2,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-cad)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
@@ -2799,7 +2915,7 @@
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-france/",
@@ -2841,7 +2957,7 @@
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
@@ -2889,7 +3005,7 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -2985,7 +3101,7 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "€129/mo\n\nFirst month free\n\nor €1,290/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -3086,7 +3202,7 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 119/mo\n\nFirst month free\n\nor CHF 1,190/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-chf)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "CHF 119/mo\n\nFirst month free\n\nor CHF 1,190/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-chf)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -3176,7 +3292,7 @@
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£89/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£109/mo\n\nFirst month free\n\nor £1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-gbp)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "£109/mo\n\nFirst month free\n\nor £1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-gbp)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
@@ -3212,7 +3328,7 @@
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$149/mo\n\nFirst month free\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report\n-   WooCommerce support"
+      "to": "$149/mo\n\nFirst month free\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
@@ -3489,6 +3605,42 @@
     },
     {
       "path": "/website-repair-services/",
+      "change": "price",
+      "from": "$99 – $249",
+      "to": "$49"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "$149 – $499",
+      "to": "$99 – $299"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "$250 – $699",
+      "to": "$99 – $299"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "$299 – $899",
+      "to": "Hacked site cleanup $149; other emergencies quoted"
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price",
+      "from": "Most repairs range from $99–$899 depending on complexity, with a free diagnostic before any charge is confirmed.",
+      "to": "Small fixes are $49, most repairs are $99–$299, complex work is quoted, and hacked site cleanup is $149. We give a free diagnostic before any charge is confirmed."
+    },
+    {
+      "path": "/website-repair-services/",
+      "change": "price text gone",
+      "from": "Transparent website repair pricing ranges for small sites ($99-$249), WordPress sites ($149-$499), business sites ($250-$699), and emergency site-down repairs ($299-$899).",
+      "to": "Small fixes are $49, most repairs are $99–$299, complex work is quoted, and hacked site cleanup is $149."
+    },
+    {
+      "path": "/website-repair-services/",
       "change": "shown",
       "question": "How to fix a broken website?"
     },
@@ -3609,7 +3761,7 @@
     },
     {
       "path": "/website-repair-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does website repair cost?"
     },
     {
@@ -3955,6 +4107,18 @@
     {
       "path": "/website-support-services/",
       "change": "price",
+      "from": "## Frequently Asked Questions",
+      "to": "## The 3 Pillars of Website Support: Protect, Maintain, Grow\n\nMost articles hand you a long, confusing list of \"services.\" We group everything into three simple pillars, so you can see exactly what you're paying for — and what your website actually needs.\n\n<div class=\"cards\">\n\n<div class=\"card\">\n\n### 1. Protect\n\nSecurity monitoring & malware removal, off-site backups with fast recovery, and uptime monitoring with emergency support — keeping your site safe and online.\n\n</div>\n\n<div class=\"card\">\n\n### 2. Maintain\n\nSoftware, plugin & CMS updates, speed and Core Web Vitals optimization, and bug fixes for broken links, forms, and layouts.\n\n</div>\n\n<div class=\"card\">\n\n### 3. Grow\n\nContent updates and changes on request, ongoing SEO support to protect rankings, and clear monthly reports with recommendations.\n\n</div>\n\n</div>\n\nA complete website support plan blends all three. Cheaper plans focus on Protect + Maintain; higher tiers add the Grow pillar.\n\nThink of it like servicing a car. You don't wait for the engine to fail; you change the oil and catch small problems early. Website support works the same way: small, regular tasks prevent expensive emergencies later.\n\n## Website Support vs Maintenance vs Management\n\nThese terms overlap, which causes confusion. Here's the simple distinction:\n\n| Term | What It Means | Best Described As |\n| --- | --- | --- |\n| Website maintenance | Scheduled, proactive upkeep (updates, backups, security, speed) | Prevention |\n| Website support | On-demand help when you have a problem or request a change | Response |\n| Website management | Full hands-off package: maintenance + support + strategy | Done-for-you |\n\nThe best providers combine support and maintenance into one service, so your site is both well cared for and backed by a team you can reach.\n\n## Should You DIY or Hire a Website Support Service?\n\nYou can maintain a website yourself — but most business owners shouldn't, for the same reason they don't service their own car. Here's an honest comparison:\n\n| | Doing It Yourself | Hiring a Support Service |\n| --- | --- | --- |\n| Time | Hours every month | Almost none — handled |\n| Security | Easy to miss a critical patch | Monitored by specialists |\n| When it breaks | You're on your own | A team fixes it fast |\n| Cost | \"Free\" until an emergency | Predictable monthly fee |\n\nIf your website earns you customers or revenue, professional support almost always pays for itself by preventing one costly outage or hack.\n\n## How Much Do Website Support Services Cost?\n\nWebsite support services typically cost between $49 and $600+ per month, depending on your site's size, platform, traffic, and how much hands-on help you need. Small businesses typically pay $75–$200/month.\n\n| Website Type | Typical Monthly Cost | Best For |\n| --- | --- | --- |\n| Small site / blog | $49 – $99 / mo | Core security, updates & backups |\n| Business / WordPress site | $149 – $299 / mo | Sites that can't afford downtime |\n| eCommerce / high-traffic | $300 – $600+ / mo | Online stores & critical sites |\n\nPrice is driven by the number of pages or products, your platform, monthly traffic, how often backups and updates run, and how fast you need support to respond. See transparent options on our [plans and pricing page](/monthly-website-maintenance-packages/).\n\n## How to Choose the Right Website Support Provider\n\nNot all support is equal. Use this checklist when comparing providers:\n\n-   Clear scope — you know exactly what's included at each plan level\n-   Proactive, not reactive — they prevent problems, not just react\n-   Fast response times, especially for downtime and urgent issues\n-   Staging-first updates — changes tested before they hit your live site\n-   Transparent pricing — no hidden fees, no long-term lock-in\n-   Real monthly reporting — proof of what was done\n-   Platform expertise with your CMS (WordPress, Shopify, etc.)\n\nRed flags to avoid: vague \"we'll take care of it\" promises, long contracts with exit penalties, backups stored only on the same server, and no reporting at all.\n\n## Signs Your Website Needs Support Right Now\n\n<div class=\"cards\">\n\n<div class=\"card\">\n\n### It's Slow\n\nPages take more than 3 seconds to load or feel laggy on mobile.\n\n</div>\n\n<div class=\"card\">\n\n### Security Warnings\n\nBrowser warnings, expired SSL, or you've been hacked before.\n\n</div>\n\n<div class=\"card\">\n\n### Things Break\n\nUpdates break your layout, or you see broken links and form errors.\n\n</div>\n\n<div class=\"card\">\n\n### It Goes Down\n\nYour site has gone offline unexpectedly, costing you visitors.\n\n</div>\n\n<div class=\"card\">\n\n### No Time\n\nYou don't have the time or skill to keep it maintained yourself.\n\n</div>\n\n<div class=\"card\">\n\n### Rankings Slip\n\nSearch traffic is dropping with no obvious explanation.\n\n</div>\n\n</div>\n\n## Frequently Asked Questions"
+    },
+    {
+      "path": "/website-support-services/",
+      "change": "price",
+      "from": "## Ready to Stop Worrying About Your Website?",
+      "to": "### How much do website support services cost?\n\nWebsite support services usually cost between $49 and $600+ per month. Small sites sit at the lower end, while business and eCommerce sites pay more for faster response, daily backups, and hands-on support.\n\n### Do small businesses need website support?\n\nYes. Small business sites are among the most common hacking targets because they're often left unmaintained. Affordable support plans give small businesses professional protection without a big budget.\n\n### Can you support a website you didn't build?\n\nYes. A professional team can maintain and improve almost any existing website, regardless of who built it, as long as they have access to the files, hosting, and admin login.\n\n### Will my website go offline during support work?\n\nNormally, no. Work is planned to avoid disruption for your visitors. On our Business plan, updates are tested on a staging copy first, then deployed to your live site.\n\n### Do website support services include 24/7 help?\n\nMany do. On our plans, 24/7 emergency fixes for critical issues like downtime or a hacked site are on Business.\n\n### How often should a website be maintained?\n\nMost websites should be maintained weekly or monthly depending on size and complexity. Business and eCommerce sites benefit from weekly checks to stay secure, fast, and reliable.\n\n## Ready to Stop Worrying About Your Website?"
+    },
+    {
+      "path": "/website-support-services/",
+      "change": "price",
       "from": "Save 20% on all plans when you choose annual billing.",
       "to": "Get 2 months free on all plans when you choose annual billing."
     },
@@ -3963,6 +4127,114 @@
       "change": "price",
       "from": "Annually Save 20%",
       "to": "Annually: 2 months free"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Choose a plan that fits your site's complexity and your business needs. All plans include backup before every update and a monthly status report.",
+      "to": "Website updates are included in every plan, from $79/month. Has your site gone a long time without updates? A one-time catch-up update starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request a catch-up update](/get-a-free-quote/#catch-up-update)"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price text gone",
+      "from": "Plans from $49/month",
+      "to": "Included in every plan from $79/month"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Content updates are included in our mid and premium maintenance plans.",
+      "to": "Content updates are included in every plan as edit hours."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "✓ Included on Mid/Pro Plans",
+      "to": "✓ Included as edit hours"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "/^Pro & Agency Plans$/m",
+      "to": "Business plan"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "| Staging environment | Typically not available | Included on Pro & Agency plans |",
+      "to": "| Staging environment | Typically not available | Included on Business |"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "| Content update requests | ✗ No | ✓ Yes on Mid/Pro plans |",
+      "to": "| Content update requests | ✗ No | ✓ Yes, as edit hours |"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Staging testing is included in our **Professional and Agency plans**.",
+      "to": "Staging testing is included in our **Business plan**."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "our Starter plan gives you",
+      "to": "our Essential plan gives you"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Plan: Professional",
+      "to": "Plan: Growth"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Plan: Agency",
+      "to": "Plan: Business"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "After switching to our Agency plan with staging",
+      "to": "After switching to our Business plan with staging"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Professional website update services typically range from $49 to $299 per month depending on site complexity and the level of testing required. Our plans start at $49/month for simple sites and go up to $299/month for eCommerce and high-traffic sites. One-time update services are also available for sites that only need occasional attention.",
+      "to": "Website updates are included in every plan, from $79/month to $299/month. A one-time catch-up update for long-outdated sites starts at $99."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "You can cancel anytime with 30 days notice.",
+      "to": "You can cancel anytime."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Our Agency plan is specifically designed for WooCommerce stores and includes checkout testing after every update.",
+      "to": "Our [Store plans](/ecommerce-website-maintenance-packages/) are designed for WooCommerce stores and include a weekly checkout test."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Staging testing is included in our Professional and Agency plans.",
+      "to": "Staging testing is included in our Business plan."
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "Our agency plan supports white-label delivery",
+      "to": "Our white-label program supports white-label delivery"
+    },
+    {
+      "path": "/website-update-services/",
+      "change": "price",
+      "from": "we offer a one-time update audit service.",
+      "to": "we offer a one-time catch-up update, from $99."
     },
     {
       "path": "/website-update-services/",
@@ -3991,7 +4263,7 @@
     },
     {
       "path": "/website-update-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much do website updates cost?"
     },
     {
@@ -4031,7 +4303,7 @@
     },
     {
       "path": "/website-update-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Is there a contract or can I cancel anytime?"
     },
     {
@@ -4051,12 +4323,12 @@
     },
     {
       "path": "/website-update-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you work with WooCommerce websites?"
     },
     {
       "path": "/website-update-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "What is a staging environment and do I need one?"
     },
     {
@@ -4076,7 +4348,7 @@
     },
     {
       "path": "/website-update-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do you offer white-label maintenance for web agencies?"
     },
     {
@@ -4118,6 +4390,102 @@
       "path": "/what-does-website-maintenance-include/",
       "change": "schema same",
       "question": "What does a WordPress maintenance plan include?"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "## White Label Website Maintenance Pricing",
+      "to": "## White Label Website Maintenance Pricing\n\n**Wholesale for agencies.** These per-site rates are for agencies and studios managing client websites under their own brand. Running your own site? See our [Essential, Growth and Business plans](/monthly-website-maintenance-packages/)."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Starter Plan",
+      "to": "### Agency Starter"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Growth Plan",
+      "to": "### Agency Growth"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "### Agency+ Custom",
+      "to": "### Agency Scale"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "[Start Starter Plan]",
+      "to": "[Start Agency Starter]"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "[Start Growth Plan]",
+      "to": "[Start Agency Growth]"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "$39 / site / month",
+      "to": "$49 / site / month"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Custom Quote Volume Discounts Available",
+      "to": "$39 / site / month"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "managing 20+ client websites or custom stacks.",
+      "to": "managing 21+ client websites or custom stacks."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "-   20+ Client Sites / Custom Fleet Size",
+      "to": "-   21+ Client Sites"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites.",
+      "to": "Wholesale for agencies, per site per month: $59 for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites."
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "Agencies on our Growth and Agency+ plans",
+      "to": "Agencies on our Agency Growth and Agency Scale plans"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "1 – 5 Client Sites (Starter Tier)",
+      "to": "1 – 5 Client Sites (Agency Starter)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "6 – 20 Client Sites (Growth Tier)",
+      "to": "6 – 20 Client Sites (Agency Growth)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "20 – 50 Client Sites (Agency+ Tier)",
+      "to": "21 – 50 Client Sites (Agency Scale)"
+    },
+    {
+      "path": "/white-label-website-maintenance-services-for-agencies/",
+      "change": "price",
+      "from": "50+ Client Sites (Enterprise Fleet)",
+      "to": "50+ Client Sites (Agency Scale)"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -4232,26 +4600,38 @@
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "$49/site/mo\n\nor $39/site/mo billed annually",
-      "to": "$59/site/mo"
+      "from": "Essential\n\n$49/site/mo\n\nor $39/site/mo billed annually",
+      "to": "1–5 sites\n\n$59/site/mo"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "Advanced\n\n$99/site/mo\n\nor $79/site/mo billed annually",
-      "to": "Growth\n\nAsk for your rate"
+      "from": "Most Popular\n\nAdvanced\n\n$99/site/mo\n\nor $79/site/mo billed annually",
+      "to": "6–20 sites\n\n$49/site/mo"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Elevate\n\n$179/site/mo\n\nor $143/site/mo billed annually",
-      "to": "Business\n\nAsk for your rate"
+      "to": "21+ sites\n\n$39/site/mo"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "Everything in Advanced",
-      "to": "Everything in Growth"
+      "from": "Starter care for client blogs, brochure & small sites.",
+      "to": "Wholesale for agencies managing client sites."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Active care for client business & lead-gen sites.",
+      "to": "The same wholesale care at a lower per-site rate."
+    },
+    {
+      "path": "/white-label-wordpress-maintenance-support/",
+      "change": "price",
+      "from": "Premium care for client stores & high-traffic sites.",
+      "to": "The same wholesale care at our lowest per-site rate."
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4262,32 +4642,14 @@
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "| Client Sites | Your Discount | Essential | Advanced | Elevate |",
-      "to": "| Client Sites | Your Discount | Essential | Growth | Business |"
+      "from": "| Client Sites | Your Discount | Essential | Advanced | Elevate |\n| --- | --- | --- | --- | --- |\n| 1 – 4 sites | Standard rate | $49 | $99 | $179 |\n| 5 – 9 sites | 10% off | $44 | $89 | $161 |\n| 10 – 24 sites | 20% off | $39 | $79 | $143 |\n| 25+ sites | Custom volume | Let's talk | Let's talk | Let's talk |",
+      "to": "| Client Sites | Wholesale price per site/month |\n| --- | --- |\n| 1 – 5 sites | $59 |\n| 6 – 20 sites | $49 |\n| 21+ sites | $39 |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "| 1 – 4 sites | Standard rate | $49 | $99 | $179 |",
-      "to": "| 1 – 4 sites | Standard rate | $59 | Let's talk | Let's talk |"
-    },
-    {
-      "path": "/white-label-wordpress-maintenance-support/",
-      "change": "price",
-      "from": "| 5 – 9 sites | 10% off | $44 | $89 | $161 |",
-      "to": "| 5 – 9 sites | Let's talk | Let's talk | Let's talk | Let's talk |"
-    },
-    {
-      "path": "/white-label-wordpress-maintenance-support/",
-      "change": "price",
-      "from": "| 10 – 24 sites | 20% off | $39 | $79 | $143 |",
-      "to": "| 10 – 24 sites | Let's talk | Let's talk | Let's talk | Let's talk |"
-    },
-    {
-      "path": "/white-label-wordpress-maintenance-support/",
-      "change": "price",
-      "from": "Annual billing applies an additional discount on top.",
-      "to": "Annual billing gives 2 months free."
+      "from": "Prices are per site per month. Annual billing applies an additional discount on top.",
+      "to": "Wholesale for agencies. Prices are per site per month. Annual billing gives 2 months free."
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4299,49 +4661,43 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "### Example: 15 client sites on Advanced",
-      "to": "### Example: 15 client sites"
+      "to": "### Example: 5 client sites"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "You pay us **$79/site/mo** (10+ sites rate) and resell to your clients at a typical **$195/site/mo**. That's a margin of **$116/site/mo**.",
-      "to": "You pay us **$59/site/mo** and resell to your clients at **$149/site/mo**. That's a margin of **$90/site/mo**."
+      "to": "You pay us **$59/site/mo** (1–5 sites rate) and resell to your clients at **$149/site/mo**. That's a margin of **$90/site/mo**."
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "$1,740 / month profit",
-      "to": "$1,350 / month profit"
+      "to": "$450 / month profit"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
-      "from": "**$20,880/year**",
-      "to": "**$16,200/year**"
-    },
-    {
-      "path": "/white-label-wordpress-maintenance-support/",
-      "change": "price",
-      "from": "| Entry price /site/mo | From $39 |",
-      "to": "| Entry price /site/mo | From $59 |"
+      "from": "Across 15 sites that's **$20,880/year**",
+      "to": "Across 5 sites that's **$5,400/year**"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Speed optimization | Advanced+ |",
-      "to": "| Speed optimization | Growth+ |"
+      "to": "| Speed optimization | Ask us |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| WooCommerce care | Elevate |",
-      "to": "| WooCommerce care | Growth+ |"
+      "to": "| WooCommerce care | Ask us |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Content edits included | Advanced+ |",
-      "to": "| Content edits included | Essential+ |"
+      "to": "| Content edits included | Ask us |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4353,43 +4709,43 @@
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Volume discounts | 5 / 10 / 25+ sites |",
-      "to": "| Volume discounts | Let's talk |"
+      "to": "| Volume discounts | 6+ and 21+ sites |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "| Dedicated account manager | Elevate |",
-      "to": "| Dedicated account manager | Business |"
+      "to": "| Dedicated account manager | Ask us |"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Wholesale per-site pricing starts at $49/month for Essential, $99/month for Advanced, and $179/month for Elevate. Volume discounts bring this down to $39, $79, and $143 per site at 10+ sites, with extra savings on annual billing. You set",
-      "to": "Wholesale pricing is $59 per site per month. Ask us for a rate on more client sites. You set"
+      "to": "Wholesale for agencies: $59 per site per month for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites. You set"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Pricing drops as you add sites: standard rate for 1-4 sites, 10% off for 5-9 sites, 20% off for 10-24 sites, and custom volume pricing for 25+ sites. Annual billing applies a further discount on top.",
-      "to": "Wholesale pricing is $59 per site per month. Ask us for a rate on more client sites. Annual billing gives 2 months free."
+      "to": "Pricing drops as you add sites: $59 per site for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites. Annual billing gives 2 months free."
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "For example, buying Advanced at $79/site and reselling at $195/site earns $116/site/month. Across 15 client sites that's $1,740/month, or about $20,880/year",
-      "to": "For example, buying at $59/site and reselling at $149/site earns $90/site/month. Across 15 client sites that's $1,350/month, or about $16,200/year"
+      "to": "For example, buying at $59/site and reselling at $149/site earns $90/site/month. Across 5 client sites that's $450/month, or about $5,400/year"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "annual and volume discounts, and a dedicated account manager on Elevate",
-      "to": "annual billing with 2 months free, and a dedicated account manager on Business"
+      "to": "annual billing with 2 months free, and lower rates at 6+ and 21+ sites"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
       "change": "price",
       "from": "Volume discounts: 10% off at 5+ sites, 20% off at 10+ sites, custom at 25+",
-      "to": "Wholesale price: $59/site/month; ask for a rate on more client sites"
+      "to": "Wholesale for agencies: $59/site at 1–5 sites, $49 at 6–20, $39 at 21+"
     },
     {
       "path": "/white-label-wordpress-maintenance-support/",
@@ -4444,6 +4800,30 @@
     },
     {
       "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \\*\\*wordpress backup service cost\\*\\* plan that fits your budget\\.?[^\\n]*/",
+      "to": "Backups are included in every plan: weekly on Essential, daily on Growth and Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "### White-Label Client Reporting (Agency Plans)",
+      "to": "### White-Label Client Reporting"
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "Plans typically range from $29–$199+/month depending on site count, retention length, and support level — see pricing above.",
+      "to": "Backups are included in every plan, from $79/month. Emergency restore without a plan starts at $99."
+    },
+    {
+      "path": "/wordpress-backup-services/",
+      "change": "price",
+      "from": "Yes — agency plans include white-label reporting",
+      "to": "Yes — our white-label program includes white-label reporting"
+    },
+    {
+      "path": "/wordpress-backup-services/",
       "change": "schema same",
       "question": "What is a WordPress backup service?"
     },
@@ -4489,7 +4869,7 @@
     },
     {
       "path": "/wordpress-backup-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "How much does a WordPress backup service cost?"
     },
     {
@@ -4529,7 +4909,7 @@
     },
     {
       "path": "/wordpress-backup-services/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Can agencies white-label this service for their clients?"
     },
     {
@@ -4849,7 +5229,7 @@
     },
     {
       "path": "/wordpress-website-maintenance-packages/",
-      "change": "price",
+      "change": "price text gone",
       "from": "| Annual Billing (per month) | $76 | $156 | $316 |",
       "to": "| Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |"
     },
@@ -4934,7 +5314,18 @@
     {
       "path": "/wordpress-website-maintenance-packages/",
       "change": "price",
+      "from": "## Monthly vs Annual Pricing: How Much You Save",
+      "to": "Running an online store? See [Store plans from $199](/ecommerce-website-maintenance-packages/).\n\n## Monthly vs Annual Pricing: How Much You Save"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
       "from": "/[\\s\\S]+/"
+    },
+    {
+      "path": "/wordpress-website-maintenance-packages/",
+      "change": "price",
+      "from": "/^\\| Feature \\| Essential[^\\n]*\\n(?:\\|[^\\n]*\\n?)*/m"
     },
     {
       "path": "/wordpress-website-maintenance-packages/",

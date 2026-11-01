@@ -131,30 +131,6 @@ App update monitoring
 
 <div class="card">
 
-24/7 security review
-
-</div>
-
-<div class="card">
-
-Secure backups
-
-</div>
-
-<div class="card">
-
-Uptime & SSL monitoring
-
-</div>
-
-<div class="card">
-
-Product page QA checks
-
-</div>
-
-<div class="card">
-
 Broken link monitoring
 
 </div>
@@ -267,46 +243,19 @@ Shopify maintenance covers theme/app upkeep, optimization, and support — Shopi
 
 Every feature, side by side, so you can match a plan to your store.
 
-| Feature | Shopify Starter $149 | Shopify Growth $299 | Shopify Pro $499 |
+| Feature | Shopify Starter $149/mo | Shopify Growth $299/mo | Shopify Pro $499/mo |
 | --- | --- | --- | --- |
-| Pricing & Frequency |
 | Annual billing (per year) | $1,490, 2 months free | $2,990, 2 months free | $4,990, 2 months free |
-| Maintenance frequency | Monthly | Weekly | Daily |
-| Theme, Apps & Backups |
-| Theme maintenance | Monthly | Weekly | Daily monitoring |
-| App monitoring | Monthly | Weekly | Daily |
-| Secure backups | Weekly | Daily | Daily + verification |
-| Security & Monitoring |
-| Store security review |  |  | Advanced |
-| Uptime monitoring |  |  |  |
-| SSL monitoring |  |  |  |
-| Broken link monitoring |  |  |  |
-| Spam & bot protection |  |  |  |
-| Revenue alert monitoring |  |  |  |
-| App conflict resolution |  |  |  |
-| Store & Checkout |
-| Product page QA check | Monthly | Weekly | Weekly |
-| Checkout testing |  | Weekly | Daily |
-| Cart function monitoring |  |  |  |
-| Product import monitoring |  |  |  |
-| Performance & SEO |
-| Speed optimization |  | Basic | Advanced |
-| Core Web Vitals monitoring |  |  |  |
-| Google Search Console monitoring |  |  |  |
-| Google Analytics review |  |  |  |
-| Conversion tracking review |  |  |  |
-| Conversion tracking verification |  |  |  |
-| Reporting & Content |
-| Website health report | Monthly | Monthly | Monthly |
-| Monthly video report |  |  |  |
-| Content updates |  | 2 hrs/mo | Unlimited small |
-| Support & Emergency |
-| Priority support |  |  |  |
-| Emergency store recovery |  |  | Included |
-| Emergency website rescue |  |  | Included |
-| Same-day emergency response |  |  |  |
-| Quarterly strategy call |  |  |  |
-| Dedicated account manager |  |  |  |
+| Theme and app checks | Included | Included | Included |
+| Monthly store health check (speed, broken links, app conflicts) | Included | Included | Included |
+| Backup app setup | Included | Included | Included |
+| 3 hours edits/month | Included | — | — |
+| 6 hours edits/month | — | Included | — |
+| Speed and SEO maintenance | — | Included | Included |
+| Priority support | — | Included | Included |
+| 12 hours edits/month | — | — | Included |
+| 24/7 emergency fixes | — | — | Included |
+| 4-hour response | — | — | Included |
 
 ## Shopify Maintenance Checklist & Best Practices
 

@@ -20,7 +20,7 @@ const TABLE = {
 
 const prices = JSON.parse(readFileSync(FILE, 'utf8'));
 for (const plan of prices.plans) {
-  const own = plan.includes.filter((f) => !OFFERS.includes(f));
+  const own = plan.includes.filter((f) => !OFFERS.includes(f) && f !== 'WooCommerce support');
   const at = own[0].startsWith('Everything') ? 1 : 0;
   plan.includes = [...own.slice(0, at), ...OFFERS, ...own.slice(at)];
 }

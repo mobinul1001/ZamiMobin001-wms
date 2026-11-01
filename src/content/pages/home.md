@@ -589,25 +589,7 @@ Daily/Weekly Backups
 
 <div class="card">
 
-Performance Optimization
-
-</div>
-
-<div class="card">
-
 Uptime Monitoring
-
-</div>
-
-<div class="card">
-
-Broken Link Fixing
-
-</div>
-
-<div class="card">
-
-Malware Scan & Removal
 
 </div>
 

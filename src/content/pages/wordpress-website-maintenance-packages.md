@@ -147,18 +147,6 @@ Uptime & SSL Monitoring
 
 <div class="card">
 
-Broken Link Monitoring
-
-</div>
-
-<div class="card">
-
-Monthly Health Report
-
-</div>
-
-<div class="card">
-
 Expert Human Support
 
 </div>
@@ -227,7 +215,6 @@ or $1,490/yr, 2 months free
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 </div>
 
@@ -257,6 +244,8 @@ or $2,990/yr, 2 months free
 
 </div>
 
+Running an online store? See [Store plans from $199](/ecommerce-website-maintenance-packages/).
+
 ## Monthly vs Annual Pricing: How Much You Save
 
 Pay annually and get 2 months free on every WordPress maintenance plan.
@@ -275,48 +264,23 @@ Every feature, side by side, so you can choose the right plan with confidence.
 
 | Feature | Essential $79/mo | Growth $149/mo | Business $299/mo |
 | --- | --- | --- | --- |
-| Pricing & Frequency |
 | Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |
-| Maintenance Frequency | Monthly | Weekly | Daily |
-| Updates & Backups |
-| WordPress Core Updates | Monthly | Weekly | Daily Monitoring |
-| Plugin Updates | Monthly | Weekly | Daily Monitoring |
-| Theme Updates | Monthly | Weekly | Weekly |
-| Secure Backups | Weekly | Daily | Daily + Verification |
-| Security & Monitoring |
-| 24/7 Security Scanning |  |  |  |
-| Uptime Monitoring |  |  |  |
-| SSL Monitoring |  |  |  |
-| Broken Link Monitoring |  |  |  |
-| Form Monitoring |  |  |  |
-| Spam & Bot Protection |  |  |  |
-| WordPress Vulnerability Monitoring |  |  |  |
-| Malware Removal |  |  | Included |
-| Performance & SEO |
-| Database Optimization |  |  |  |
-| Staging Update Testing |  |  |  |
-| Basic Speed Optimization |  |  |  |
-| Advanced Performance Optimization |  |  |  |
-| Core Web Vitals Monitoring |  |  |  |
-| SEO Health Check |  | Monthly | Monthly |
-| Analytics & Reporting |
-| Website Health Report | Monthly | Monthly | Monthly |
-| Google Search Console Monitoring |  |  |  |
-| Google Analytics Review |  |  |  |
-| Google Business Profile Monitoring |  |  |  |
-| TripAdvisor Review Monitoring |  |  |  |
-| Conversion Tracking Verification |  |  |  |
-| Monthly Video Report |  |  |  |
-| Content & Support |
-| Content Edits |  | 2 Hours/mo | Unlimited Small Updates |
-| WooCommerce Monitoring |  |  |  |
-| Priority Support |  |  |  |
-| Quarterly Strategy Call |  |  |  |
-| Dedicated Account Manager |  |  |  |
-| Emergency Care |
-| Emergency Website Rescue |  |  | Included |
-| Emergency Recovery |  |  | Included |
-| Same-Day Emergency Response |  |  |  |
+| Free hosting for the first year | Included | Included | Included |
+| 2 free webmail accounts | Included | Included | Included |
+| Weekly updates | Included | Included | Included |
+| Weekly backups | Included | — | — |
+| Security scan | Included | Included | Included |
+| Uptime monitoring | Included | Included | Included |
+| 1 hour edits/month | Included | — | — |
+| Daily backups | — | Included | Included |
+| 3 hours edits/month | — | Included | — |
+| Malware removal | — | Included | Included |
+| Speed optimization | — | Included | Included |
+| Monthly report | — | Included | Included |
+| 6 hours edits/month | — | — | Included |
+| Staging-tested updates | — | — | Included |
+| 24/7 emergency fixes | — | — | Included |
+| Priority support | — | — | Included |
 
 ## How to Choose the Right WordPress Maintenance Plan
 

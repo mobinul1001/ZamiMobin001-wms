@@ -54,6 +54,9 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 - Every plan includes free hosting for the first year and 2 free webmail accounts. First month free applies to monthly billing only.
 - Store plans in `prices.json`: WooCommerce Store Starter $199, Store Growth $349, Store Pro $599 (free hosting and 2 webmail); Shopify Starter $149, Growth $299, Pro $499 (no hosting offer). Annual is 10 times monthly; first month free on monthly.
 - Removal of the /blogs/ hidden list and the quote-form coupon box: confirmed by the owner.
+- Repair: small fix $49, most repairs $99–$299, complex work quoted, hacked cleanup $149. Backup and updates are in every plan; emergency restore and catch-up update from $99 without a plan.
+- White-label wholesale per site/month: 1–5 sites $59, 6–20 $49, 21+ $39. Hosting after year one: $19/month or $190/year. Guarantee wording approved: "If we can't clean your hacked site, you don't pay."
+- 48 blog posts confirmed against the owner's list. /website-support/ is a 301 to /website-support-services/, its unique content moved there.
 - Market ranges in articles: $49–$99 entry, $149–$299 mid, $300–$600+ premium; small businesses typically $75–$200/month.
 - Annual prices always say "2 months free" (Spanish "2 meses gratis"); the build enforces it.
 - Write "Included", not tick icons. "No contract. Cancel anytime."
@@ -83,22 +86,20 @@ Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREM
 3. **"30+" line:** the list includes US and Iraq sites that the line does not name. Check it after ticking.
 4. **Mockup gaps:** response time, add-on prices (6), what counts as an edit hour, what happens on cancel.
 5. **Real author:** name, role, photo and bio; also team photos and the founding year.
-6. **Wording to confirm:** "If we can't clean your hacked site, you don't pay."
 7. **Removed guarantees:** say if any were real terms (30-day warranties, 14-day satisfaction, money-back, 4-hour SLA).
 8. **Items outside section A** (`reports/claims-open-items.md`): result figures, repair stats, agency case cards, certifications, platform badges, free hosting and free month offers, people and claims inside images.
 9. **Case study:** keep after confirming the facts, or rewrite or noindex.
-11. **Other price sets** (`reports/faq-schema-sync.md`, `reports/old-price-lines.md`): update services, white-label post, repair $99–$899, backup, and the plan prices inside 9 blog posts. Also plan features that no longer match Growth and Business, and the WP Starter, WP Growth and WP Premium names on the WordPress page, which now carry master prices.
-12. **Service package prices:** confirm each in `reports/service-package-prices.md`, including the migration and design conflicts and the four white-label points.
+11. **Service package prices:** design, migration, SEO and speed. The owner is researching them (`reports/service-package-prices.md`).
 13. **Semrush "wordpress maintenance" seed export:** optional, could change the WordPress primary.
 14. **Git identity:** commits use the name "WMS" and the owner's email. Change before pushing if wanted.
 15. **Bing and Organization schema:** Bing Webmaster Tools verification, the IndexNow key in Netlify, and real profile URLs for `sameAs`.
 
 **TODO for the owner (added 2026-11-01):**
-- Hosting price after the first year: no number is shown anywhere. Decide it, then update the pricing FAQ.
-- Pricing FAQ drafts to confirm: "before that year ends, we tell you the hosting price" and "we go through the setup with you on your call". Mailbox size and limits are not stated.
-- White-label: the post now shows a flat $59/site. /white-label-website-maintenance-services-for-agencies/ still says $39/site for 6-20 sites. Confirm whether the volume rate is real.
-- Comparison tables on the WordPress, ecommerce, Shopify and article pages still carry old feature rows, and their tick icons were lost in the migration, so many cells are blank.
-- Master Growth lists "WooCommerce support" while stores now have their own plans. Confirm whether it stays on Growth.
+- Pricing FAQ drafts to confirm: "we go through the setup with you on your call". Mailbox size and limits are not stated.
+- White-label: tier names Agency Starter, Agency Growth and Agency Scale are drafts. The service page's tiers still list different features, including unlimited edits at $49/site. The post's comparison says "Ask us" for 4 features.
+- /wordpress-malware-removal-service/ shows $149, $249 and $349 per single site. $149 matches hacked cleanup; the other two are unconfirmed.
+- Backup page: "9 deliverables" in every plan and "30, 60, or 90 days" retention came from the old tiers. Confirm them.
+- Update page case studies and the FAQ keep their old claims; plan names changed to the master names.
 
 ## 4. Next steps
 

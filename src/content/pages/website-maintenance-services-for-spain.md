@@ -187,7 +187,6 @@ or €1,290/yr, 2 meses gratis
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 </div>
 

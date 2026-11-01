@@ -30,17 +30,45 @@ const removeLeaf = ($, text) => {
   if (!leaf.length) throw new Error(`"${text}" not found`);
   leaf.parent().remove();
 };
+// Owner, 2026-11-01: comparison tables are rebuilt from the price file, so the old rows go.
+const removeCompareRows = ($) => {
+  $('table').filter((_, t) => /^\s*Feature/.test($(t).find('tr').first().text()) && /Essential|WP Starter|Ecommerce Starter|Shopify Starter/.test($(t).find('tr').first().text())).find('tr').slice(1).remove();
+};
+// Owner, 2026-11-01: "every plan" lists name only what really is in all plans.
+const removeFromList = ($, headRe, items) => {
+  const head = $('h2, h3, h4').filter((_, e) => headRe.test($(e).text().trim())).first();
+  if (!head.length) throw new Error(`list heading ${headRe} not found`);
+  for (const item of items) {
+    let scope = head.parent();
+    const find = () => scope.find('*').filter((_, x) => $(x).text().trim() === item && !$(x).children().toArray().some((c) => $(c).text().trim() === item));
+    while (!find().length && !scope.is('body')) scope = scope.parent();
+    const leaf = find().first();
+    if (!leaf.length) throw new Error(`"${item}" not found`);
+    const box = leaf.parent().text().trim() === item && !leaf.parent().is(scope) ? leaf.parent() : leaf;
+    box.remove();
+  }
+};
+const removeTierCards = ($, firstLabel) => {
+  const leaf = $('body *').filter((_, x) => $(x).children().length === 0 && $(x).text().trim() === firstLabel).first();
+  if (!leaf.length) throw new Error(`"${firstLabel}" not found`);
+  leaf.parent().parent().remove();
+};
 const ARTICLE_HEADS = ['Essential', 'Advanced', 'Elevate'];
 const STORE_REMOVALS = {
   '/wordpress-website-maintenance-packages/': ($) => {
     removeCardFeatures($, '/wordpress-website-maintenance-packages/', ['WP Starter', 'WP Growth', 'WP Premium']);
     removeLeaf($, 'Hosting Management ($20/mo)');
+    removeCompareRows($);
+    removeFromList($, /^What's Included in Every Plan\?$/, ['Broken Link Monitoring', 'Monthly Health Report']);
   },
-  '/best-website-maintenance-for-small-business/': ($) => removeCardFeatures($, 'small business', ARTICLE_HEADS),
+  '/wordpress-backup-services/': ($) => removeTierCards($, 'Starter Tier'),
+  '/website-update-services/': ($) => removeTierCards($, 'Starter Plan'),
+  '/white-label-wordpress-maintenance-support/': ($) => removeCardFeatures($, 'white-label post', ['Advanced', 'Elevate']),
+  '/best-website-maintenance-for-small-business/': ($) => { removeCardFeatures($, 'small business', ARTICLE_HEADS); removeCompareRows($); },
   '/how-much-does-website-maintenance-cost/': ($) => removeCardFeatures($, 'cost', ARTICLE_HEADS),
-  '/how-much-does-wordpress-website-maintenance-cost/': ($) => removeCardFeatures($, 'WordPress cost', ARTICLE_HEADS),
-  '/ecommerce-website-maintenance-packages/': ($) => removeCardFeatures($, 'ecommerce', ['Ecommerce Starter', 'Ecommerce Growth', 'Ecommerce Premium']),
-  '/shopify-website-maintenance-packages/': ($) => removeCardFeatures($, 'Shopify', ['Shopify Starter', 'Shopify Growth', 'Shopify Premium']),
+  '/how-much-does-wordpress-website-maintenance-cost/': ($) => { removeCardFeatures($, 'WordPress cost', ARTICLE_HEADS); removeCompareRows($); },
+  '/ecommerce-website-maintenance-packages/': ($) => { removeCardFeatures($, 'ecommerce', ['Ecommerce Starter', 'Ecommerce Growth', 'Ecommerce Premium']); removeCompareRows($); },
+  '/shopify-website-maintenance-packages/': ($) => { removeCardFeatures($, 'Shopify', ['Shopify Starter', 'Shopify Growth', 'Shopify Premium']); removeCompareRows($); removeFromList($, /^What's Included in Every Shopify Plan$/, ['24/7 security review', 'Secure backups', 'Uptime & SSL monitoring', 'Product page QA checks']); },
 };
 const countryRemovals = Object.fromEntries(localPaths().map((path) => [path, ($) => removeCardList($, path)]));
 
@@ -49,11 +77,13 @@ const REMOVALS = {
   ...STORE_REMOVALS,
   // Owner, 2026-11-01: the master price list replaces the old plan cards.
   '/': ($) => {
+    removeFromList($, /^What.s Included in Every Plan$/, ['Performance Optimization', 'Broken Link Fixing', 'Malware Scan & Removal']);
     const section = $('a').filter((_, e) => /Choose Essential/.test($(e).text())).first().closest('section.pricing-container');
     if (!/Choose Advanced/.test(section.text()) || !/Choose Elevate/.test(section.text())) throw new Error('/: old plan section not found');
     section.remove();
   },
   '/monthly-website-maintenance-packages/': ($) => {
+    removeFromList($, /^Complete Website Care/, ['Performance optimization', 'Broken link monitoring', 'Technical error fixing']);
     const head = $('h3').filter((_, e) => /^Our Monthly Website Maintenance Packages$/.test($(e).text().trim())).first().parent();
     const cards = head.next();
     if (!/Essential Website Maintenance Package/.test(cards.text()) || /What You Get With Our Monthly/.test(cards.text())) throw new Error('/monthly-website-maintenance-packages/: old plan section not found');
@@ -98,7 +128,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 220])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
+const MAX_WORDS = { ...Object.fromEntries(Object.keys(STORE_REMOVALS).map((path) => [path, 560])), ...Object.fromEntries(localPaths().map((path) => [path, 150])), '/get-a-free-quote/': 60, '/blogs/': 40, '/': 185, '/monthly-website-maintenance-packages/': 255, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

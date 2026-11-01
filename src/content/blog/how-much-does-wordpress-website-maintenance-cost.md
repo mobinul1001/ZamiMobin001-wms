@@ -101,7 +101,6 @@ Our most popular plan for growing businesses needing active maintenance.
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 Business
 
@@ -137,26 +136,25 @@ Most small business websites are perfectly served by **Growth ($149/mo)** — it
 
 Here's a complete, side-by-side feature comparison so you can see exactly what changes as the price goes up:
 
-| Feature | Essential $79 | Growth $149 | Business $299 |
+| Feature | Essential $79/mo | Growth $149/mo | Business $299/mo |
 | --- | --- | --- | --- |
-| Website check-up | ✓ | ✓ | ✓ |
-| Security monitoring | ✓ | ✓ | ✓ |
-| Backups | Monthly | Weekly | Daily |
-| Plugin & theme updates | ✓ | ✓ | ✓ |
-| Fixes & adjustments | 1 hr/mo | 3 hrs/mo | 6 hrs/mo |
-| Content/media updates | ✓ | ✓ | ✓ |
-| Speed optimization | ✕ | ✓ | ✓ |
-| Malware scan & removal | ✕ | ✓ | ✓ |
-| Content updates | ✕ | Up to 10 posts | Unlimited\* |
-| Uptime monitoring | ✕ | ✓ | ✓ |
-| Monthly performance report | ✕ | ✓ | ✓ |
-| Layout modifications | ✕ | ✓ | ✓ |
-| Advanced security firewall | ✕ | ✕ | ✓ |
-| Database optimization | ✕ | ✕ | ✓ |
-| Broken link fixing | ✕ | ✕ | ✓ |
-| New page creation | ✕ | ✕ | ✓ |
-| Priority support | ✕ | ✕ | ✓ |
-| Emergency fix (24/7) | ✕ | ✕ | ✓ |
+| Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |
+| Free hosting for the first year | Included | Included | Included |
+| 2 free webmail accounts | Included | Included | Included |
+| Weekly updates | Included | Included | Included |
+| Weekly backups | Included | — | — |
+| Security scan | Included | Included | Included |
+| Uptime monitoring | Included | Included | Included |
+| 1 hour edits/month | Included | — | — |
+| Daily backups | — | Included | Included |
+| 3 hours edits/month | — | Included | — |
+| Malware removal | — | Included | Included |
+| Speed optimization | — | Included | Included |
+| Monthly report | — | Included | Included |
+| 6 hours edits/month | — | — | Included |
+| Staging-tested updates | — | — | Included |
+| 24/7 emergency fixes | — | — | Included |
+| Priority support | — | — | Included |
 
 <a id="s4"></a>
 

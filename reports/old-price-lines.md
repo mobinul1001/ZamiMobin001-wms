@@ -1,7 +1,7 @@
 # Old plan prices still in page bodies
 
-0 lines on 0 pages.
+1 lines on 1 pages.
 
 | Page | Line | Text |
 |---|---|---|
-
+| wordpress-malware-removal-service | 623 | $249 / single site |

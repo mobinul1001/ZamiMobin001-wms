@@ -44,7 +44,7 @@ const PT = {
 const SENTENCES = {
   australia: [
     ['Depending on your plan, we perform updates monthly (Basic), bi-weekly (Standard), or weekly (Premium).', 'We perform updates weekly on every plan.'],
-    ['Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Premium plan.', 'Yes, we specialize in WooCommerce and Shopify maintenance. WooCommerce support is included from our Growth plan.'],
+    ['Yes, we specialize in WooCommerce and Shopify maintenance, specifically included in our Premium plan.', 'Yes, we specialize in WooCommerce and Shopify maintenance. See our [WooCommerce store plans](/ecommerce-website-maintenance-packages/) and [Shopify plans](/shopify-website-maintenance-packages/).'],
     ['for our Standard and Premium plan clients', 'for our Growth and Business plan clients'],
   ],
   france: [['Pick Basic, Standard, or Premium based on your needs.', 'Pick Essential, Growth, or Business based on your needs.']],

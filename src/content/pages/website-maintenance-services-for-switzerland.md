@@ -193,7 +193,6 @@ or CHF 1,190/yr, 2 months free
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 </div>
 

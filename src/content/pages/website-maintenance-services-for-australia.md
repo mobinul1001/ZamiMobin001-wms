@@ -188,7 +188,6 @@ or A$2,090/yr, 2 months free
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 </div>
 
@@ -316,7 +315,7 @@ We perform updates weekly on every plan.
 
 #### 2\. Do you handle eCommerce websites?
 
-Yes, we specialize in WooCommerce and Shopify maintenance. WooCommerce support is included from our Growth plan.
+Yes, we specialize in WooCommerce and Shopify maintenance. See our [WooCommerce store plans](/ecommerce-website-maintenance-packages/) and [Shopify plans](/shopify-website-maintenance-packages/).
 
 #### 3\. What if my website gets hacked?
 

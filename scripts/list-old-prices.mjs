@@ -2,7 +2,7 @@
 // Writes reports/old-price-lines.md so the owner can see what still shows an old price.
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 
-const OLD = /[£€](39|89|179|49|99|199)\/mo|\$\s?(95|195|395|76|156|316|912|1,?140|1,?872|2,?340|3,?792|4,?740)\b|\bSave \$228\b|\b(Advanced|Elevate)\b(?= (plan|package|tier|website maintenance|at|\(|\$))|\$(145|295|595|125|245|495)\b|\bHosting Management \(|\bWP (Starter|Growth|Premium)\b|\bElevate\b|\bAdvanced (plan|tier)\b|\b20% (off|saved)|save[sd]? (around |roughly )?~?20%/;
+const OLD = /[£€](39|89|179|49|99|199)\/mo|\$\s?(95|195|395|76|156|316|912|1,?140|1,?872|2,?340|3,?792|4,?740)\b|\bSave \$228\b|\b(Advanced|Elevate)\b(?= (plan|package|tier|website maintenance|at|\(|\$))|\$(145|295|595|125|245|495|249|699|899)\b|\bHosting Management \(|\bWP (Starter|Growth|Premium)\b|\bElevate\b|\bAdvanced (plan|tier)\b|\b20% (off|saved)|save[sd]? (around |roughly )?~?20%/;
 const rows = [];
 for (const dir of ['src/content/pages', 'src/content/blog']) {
   for (const f of readdirSync(dir)) {

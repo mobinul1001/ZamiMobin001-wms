@@ -9,7 +9,7 @@ const { entry } = Astro.props;
 const money = (n: number) => `$${n.toLocaleString('en-US')}`;
 const explain = features.explain as Record<string, string>;
 const rank: Record<string, number> = { Essential: 0, Growth: 1, Business: 2 };
-const has = (from: string, plan: string) => rank[plan] >= rank[from];
+const has = (from: string, plan: string, only?: string) => (only ? rank[plan] === rank[from] : rank[plan] >= rank[from]);
 const allRows = features.groups.flatMap((g) => g.rows);
 const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
 const faq = take(sections, /^Frequently Asked Questions/);
@@ -38,8 +38,8 @@ const leadParts = lead ? splitBy(dropHeading(lead.html), 3) : { intro: '', secti
       {features.groups.map((g) => (
         <>
           <tr class="group"><td colspan="4">{g.name}</td></tr>
-          {g.rows.map(([name, from]) => (
-            <tr><td><details><summary>{name}</summary><p>{explain[name]}</p></details></td>{prices.plans.map((p) => <td>{has(from, p.name) ? <span class="inc">Included</span> : <span class="dash">—</span>}</td>)}</tr>
+          {g.rows.map(([name, from, only]) => (
+            <tr><td><details><summary>{name}</summary><p>{explain[name]}</p></details></td>{prices.plans.map((p) => <td>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash">—</span>}</td>)}</tr>
           ))}
         </>
       ))}
@@ -50,7 +50,7 @@ const leadParts = lead ? splitBy(dropHeading(lead.html), 3) : { intro: '', secti
   </table></div>
   <div class="compare-cards">
     {prices.plans.map((p) => (
-      <div class="tile"><h3>{p.name} · {money(p.monthly)}/mo</h3><ul>{allRows.map(([name, from]) => <li><span>{name}</span>{has(from, p.name) ? <span class="inc">Included</span> : <span class="dash">—</span>}</li>)}</ul><a class="btn" href={`/get-a-free-quote/#${p.name.toLowerCase()}`} style="margin-top:12px">Start {p.name}</a></div>
+      <div class="tile"><h3>{p.name} · {money(p.monthly)}/mo</h3><ul>{allRows.map(([name, from, only]) => <li><span>{name}</span>{has(from, p.name, only) ? <span class="inc">Included</span> : <span class="dash">—</span>}</li>)}</ul><a class="btn" href={`/get-a-free-quote/#${p.name.toLowerCase()}`} style="margin-top:12px">Start {p.name}</a></div>
     ))}
     <div class="tile"><h3>Add-ons, on any plan</h3><ul>{features.addons.map((a) => <li><span>{a}</span><a href="/get-a-free-quote/">Ask for a price</a></li>)}</ul></div>
   </div>
@@ -61,7 +61,7 @@ const leadParts = lead ? splitBy(dropHeading(lead.html), 3) : { intro: '', secti
   <div class="faq">
     <details open><summary>How does billing work?</summary><p>Pay monthly, or pay yearly and get {prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.</p></details>
     <details><summary>Is there a contract?</summary><p>No contract. Cancel anytime.</p></details>
-    <details><summary>What happens after the first year of free hosting?</summary><p>Hosting is free for your first year on every plan. Before that year ends, we tell you the hosting price for your site, and you decide whether to keep hosting with us or move it. There is no contract.</p></details>
+    <details><summary>What happens after the first year of free hosting?</summary><p>Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.</p></details>
     <details><summary>How does the free month work?</summary><p>On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has {prices.annualNote.en}.</p></details>
     <details><summary>What do the webmail accounts include?</summary><p>Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.</p></details>
   </div>

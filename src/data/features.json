@@ -12,7 +12,6 @@
     "Malware removal": "If your site is infected, we clean it as part of the plan.",
     "Speed optimization": "We tune images, caching and code so pages load faster.",
     "Monthly report": "A plain summary of what we did on your site that month.",
-    "WooCommerce support": "Updates and fixes that cover your online store.",
     "6 hours edits/month": "Six hours of small changes each month.",
     "Staging-tested updates": "Updates are tried on a private copy before your live site.",
     "24/7 emergency fixes": "If your site breaks, you can reach us at any hour.",
@@ -58,10 +57,6 @@
         [
           "Speed optimization",
           "Growth"
-        ],
-        [
-          "WooCommerce support",
-          "Growth"
         ]
       ]
     },
@@ -70,7 +65,8 @@
       "rows": [
         [
           "Weekly backups",
-          "Essential"
+          "Essential",
+          "only"
         ],
         [
           "Daily backups",
@@ -83,11 +79,13 @@
       "rows": [
         [
           "1 hour edits/month",
-          "Essential"
+          "Essential",
+          "only"
         ],
         [
           "3 hours edits/month",
-          "Growth"
+          "Growth",
+          "only"
         ],
         [
           "6 hours edits/month",

@@ -55,7 +55,8 @@ if (local) {
   if (essential < 0 || section < 0 || business < 0 || !closing) throw new Error(`${path}: plan cards not found`);
   const end = business + closing.index + closing[0].length;
   const extras = lang === 'pt-BR' ? `Correção avulsa a partir de ${local.fix} · Limpeza de site invadido ${local.cleanup}` : `One-time fix from ${local.fix} · Hacked site cleanup ${local.cleanup}`;
-  body = `${body.slice(0, section)}<div id="plans"></div>${body.slice(section, end)}<p class="plan-extras">${extras}</p>${body.slice(end)}`;
+  const storeLine = path.endsWith('-for-usa/') ? '<p class="plan-extras" style="margin-top:6px">Running an online store? See <a href="/ecommerce-website-maintenance-packages/">Store plans from $199</a>.</p>' : '';
+  body = `${body.slice(0, section)}<div id="plans"></div>${body.slice(section, end)}<p class="plan-extras">${extras}</p>${storeLine}${body.slice(end)}`;
   body = body.replace(/<a href="\/monthly-website-maintenance-packages\/">((?:Choose|Get|Let us|Escolha)[^<]*)<\/a>/g, '<a href="#plans">$1</a>');
 }
 

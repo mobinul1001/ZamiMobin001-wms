@@ -325,49 +325,25 @@ Most online stores land in the **$199–$349/month** range for full-service care
 
 Every feature, side by side, so you can match a package to your store.
 
-| Feature | Store Starter $199 | Store Growth $349 | Store Pro $599 |
+| Feature | Store Starter $199/mo | Store Growth $349/mo | Store Pro $599/mo |
 | --- | --- | --- | --- |
-| Pricing & Frequency |
 | Annual billing (per year) | $1,990, 2 months free | $3,490, 2 months free | $5,990, 2 months free |
-| Maintenance frequency | Monthly | Weekly | Daily |
-| Updates & Backups |
-| Platform updates | Monthly | Weekly | Daily monitoring |
-| Secure backups | Weekly | Daily | Daily + verification |
-| Security & Monitoring |
-| 24/7 security scanning |  |  | Advanced |
-| Uptime monitoring |  |  |  |
-| SSL monitoring |  |  |  |
-| Broken link monitoring |  |  |  |
-| Spam & bot protection |  |  |  |
-| Malware removal |  |  | Included |
-| Store & Checkout |
-| Product catalog review | Monthly | Weekly | Weekly |
-| Checkout testing | Monthly | Weekly | Daily |
-| Cart function monitoring |  |  |  |
-| Inventory sync checks |  |  |  |
-| Product import monitoring |  |  |  |
-| Order flow monitoring |  |  |  |
-| Revenue protection monitoring |  |  |  |
-| Checkout failure monitoring |  |  |  |
-| Performance & SEO |
-| Speed optimization |  | Basic | Advanced |
-| Database cleanup |  |  |  |
-| Core Web Vitals monitoring |  |  |  |
-| SEO health check |  | Monthly | Monthly |
-| Search Console monitoring |  |  |  |
-| Google Analytics review |  |  |  |
-| Conversion tracking verification |  |  |  |
-| Reporting & Content |
-| Website health report | Monthly | Monthly | Monthly |
-| Monthly video report |  |  |  |
-| Content updates |  | 2 hrs/mo | Unlimited small |
-| Support & Emergency |
-| Priority support |  |  |  |
-| Emergency website rescue |  |  | Included |
-| Emergency recovery |  |  | Included |
-| Same-day emergency response |  |  |  |
-| Quarterly strategy call |  |  |  |
-| Dedicated account manager |  |  |  |
+| Everything in the Growth plan | Included | Included | Included |
+| Free hosting for the first year | Included | Included | Included |
+| 2 free webmail accounts | Included | Included | Included |
+| Staging-tested WooCommerce and payment plugin updates | Included | Included | Included |
+| Daily backups including orders | Included | — | — |
+| Weekly checkout test | Included | Included | Included |
+| 3 hours edits/month | Included | — | — |
+| 6 hours edits/month | — | Included | — |
+| Backups twice daily | — | Included | Included |
+| Speed and Core Web Vitals work | — | Included | Included |
+| Checkout and conversion fixes | — | Included | Included |
+| 8-hour response | — | Included | — |
+| 12 hours edits/month | — | — | Included |
+| 24/7 emergency fixes | — | — | Included |
+| 4-hour response | — | — | Included |
+| Monthly strategy call | — | — | Included |
 
 ## Our Ecommerce Maintenance Checklist
 

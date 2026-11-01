@@ -55,12 +55,12 @@ The complete head-to-head. Both are full-service, hosting-included providers —
 | --- | --- | --- |
 | Entry price (reported) | ~$99–$299/mo | $79/mo ($149 / $299 tiers) |
 | Hosting included | ✓ Yes | ✓ Yes — 1 year free |
-| Staging-tested updates | ✓ Yes | ✓ Yes |
+| Staging-tested updates | ✓ Yes | ✓ On Business |
 | Daily backups & security | ✓ Yes | ✓ Yes |
 | Free business webmail | ✗ Not included | ✓ 2 free webmails |
 | Free first month of maintenance | ✗ No | ✓ 1 month free |
 | Cancel-anytime flexibility | Annual plans emphasised | ✓ No long-term contract |
-| WhatsApp emergency support | ✗ Ticket / standard | ✓ Direct WhatsApp, 24/7 |
+| WhatsApp emergency support | ✗ Ticket / standard | ✓ Direct WhatsApp; 24/7 emergency fixes on Business |
 | SOC 2 compliance | ✓ Yes | Enterprise on request |
 | All-in-one (hosting, SEO, content) | ✓ Yes | ✓ Yes |
 | No forced maintenance after a build | — | ✓ Never forced |
@@ -93,7 +93,7 @@ SiteCare leans toward annual plans. Website Maintenance Services offers no long-
 
 Round 5 — Emergency SupportWebsite Maint. Services
 
-Both offer support, but Website Maintenance Services adds direct **WhatsApp emergency support, 24/7 including weekends** — a real person, no ticket queue, when your site goes down at the worst moment.
+Both offer support, but Website Maintenance Services adds direct **WhatsApp emergency support**, with 24/7 emergency fixes on Business — a real person, no ticket queue, when your site goes down at the worst moment.
 
 Round 6 — Verified TrustWebsite Maint. Services
 
@@ -205,7 +205,7 @@ Emergency support access
 
 WMS
 
-WhatsApp 24/7
+WhatsApp; 24/7 on Business
 
 SiteCare
 

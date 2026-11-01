@@ -96,7 +96,6 @@ Our most popular plan for growing businesses requiring active maintenance.
 -   Malware removal
 -   Speed optimization
 -   Monthly report
--   WooCommerce support
 
 Business
 
@@ -164,16 +163,25 @@ Not sure what to look for? Use our free [website maintenance checklist](/website
 
 Here is exactly what you get at each tier, side by side, so you can match a plan to your site:
 
-| Feature | Essential ($79) | Growth ($149) | Business ($299) |
+| Feature | Essential $79/mo | Growth $149/mo | Business $299/mo |
 | --- | --- | --- | --- |
-| Updates | Monthly | Weekly | Weekly + tested |
-| Secure backups | Weekly | Daily | Daily + verified |
-| Security scanning | 24/7 | 24/7 | 24/7 + removal |
-| Speed optimization | — | Yes | Advanced |
-| Staging / testing | — | Yes | Yes |
-| Content edit hours | — | 2 hrs/mo | Unlimited small |
-| WooCommerce support | — | — | Yes |
-| Support level | Standard | Priority | Dedicated mgr |
+| Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |
+| Free hosting for the first year | Included | Included | Included |
+| 2 free webmail accounts | Included | Included | Included |
+| Weekly updates | Included | Included | Included |
+| Weekly backups | Included | — | — |
+| Security scan | Included | Included | Included |
+| Uptime monitoring | Included | Included | Included |
+| 1 hour edits/month | Included | — | — |
+| Daily backups | — | Included | Included |
+| 3 hours edits/month | — | Included | — |
+| Malware removal | — | Included | Included |
+| Speed optimization | — | Included | Included |
+| Monthly report | — | Included | Included |
+| 6 hours edits/month | — | — | Included |
+| Staging-tested updates | — | — | Included |
+| 24/7 emergency fixes | — | — | Included |
+| Priority support | — | — | Included |
 
 <a id="factors"></a>
 

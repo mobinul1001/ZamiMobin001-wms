@@ -184,7 +184,6 @@ ou R$8.090/ano, 2 meses grátis
 -   Remoção de malware
 -   Otimização de velocidade
 -   Relatório mensal
--   Suporte WooCommerce
 
 </div>
 

@@ -107,10 +107,7 @@ Every plan includes essential website maintenance tasks such as:
 
 -   CMS, theme & plugin updates
 -   24/7 security monitoring
--   Performance optimization
 -   Secure backups
--   Broken link monitoring
--   Technical error fixing
 
 ### Monthly Maintenance Reports
 

@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-01T11:59:01.008Z",
+  "checkedAt": "2026-11-01T12:13:47.027Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6275,
+  "links": 6285,
   "images": 305,
   "faqs": 492,
   "sitemapUrls": 90,
@@ -16,7 +16,7 @@
   ],
   "warningCounts": {
     "missing-urls": 1,
-    "seo-length": 53,
+    "seo-length": 54,
     "image-size": 1,
     "anchors": 9
   },
@@ -63,6 +63,7 @@
     "[seo-length] /website-seo-services/: title is 66 characters (aim for 60).",
     "[seo-length] /website-speed-optimization-services/: title is 64 characters (aim for 60).",
     "[seo-length] /website-support-services/: description is 218 characters (aim for 155).",
+    "[seo-length] /website-update-services/: description is 166 characters (aim for 155).",
     "[seo-length] /what-does-website-maintenance-include/: description is 159 characters (aim for 155).",
     "[seo-length] /white-label-wordpress-maintenance-support/: title is 62 characters (aim for 60).",
     "[seo-length] /white-label-wordpress-maintenance-support/: description is 159 characters (aim for 155).",

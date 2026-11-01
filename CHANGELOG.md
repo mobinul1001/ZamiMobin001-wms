@@ -124,3 +124,11 @@
 - WordPress page and article plan cards list the master features exactly. Plan names Essential, Growth, Business.
 - Removed the "Hosting Management" add-on from the WordPress page and the pricing page.
 - WordPress cost post: 24/7 emergency fixes on Business only. WooCommerce recommendations in articles now point to the Store plans.
+
+## Owner's answers, comparison tables and service prices (2026-11-01)
+- All 49 URLs in the owner's list checked: 48 posts on the same URL and on /blogs/, /website-support/ a 301. Its unique content moved to /website-support-services/.
+- Comparison tables on WordPress, ecommerce, Shopify and 2 articles rebuilt from prices.json: "Included" or "—". A bigger allowance replaces a smaller one, also on the pricing page.
+- "Every plan" lists trimmed on home, pricing, WordPress and Shopify.
+- WooCommerce support removed from Growth and from Australia's FAQ. Store plans line added under the plans.
+- FixRunner, WP Buffs and SiteCare: 24/7 emergency fixes and staging on Business.
+- Repair, backup, update and white-label prices set. Hosting after year one in the pricing FAQ.
