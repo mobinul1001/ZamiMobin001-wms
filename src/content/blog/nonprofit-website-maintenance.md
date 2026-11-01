@@ -23,7 +23,9 @@ That's what makes website maintenance different, and more important, for nonprof
 
 <a id="different"></a>
 
-## Higher StakesWhy Nonprofit Website Maintenance Is Different
+<p class="eyebrow">Higher Stakes</p>
+
+## Why Nonprofit Website Maintenance Is Different
 
 Every website needs maintenance, but nonprofit sites carry unique pressures that raise the stakes.
 
@@ -49,7 +51,9 @@ Donors, volunteers, program participants, grant funders, and the public all judg
 
 <a id="includes"></a>
 
-## ScopeWhat Nonprofit Website Maintenance Includes
+<p class="eyebrow">Scope</p>
+
+## What Nonprofit Website Maintenance Includes
 
 A proper nonprofit maintenance plan covers the standard technical upkeep plus the mission-specific work that keeps your site donation-ready.
 
@@ -73,7 +77,9 @@ A proper nonprofit maintenance plan covers the standard technical upkeep plus th
 
 <a id="often"></a>
 
-## CadenceHow Often Should a Nonprofit Maintain Its Website?
+<p class="eyebrow">Cadence</p>
+
+## How Often Should a Nonprofit Maintain Its Website?
 
 Maintenance works best with a rhythm, because nonprofit sites rarely break all at once — they drift. Here's a realistic cadence.
 
@@ -93,7 +99,9 @@ Weekly attention is the right baseline for most active nonprofit sites. It doesn
 
 <a id="cost"></a>
 
-## PricingHow Much Does Nonprofit Website Maintenance Cost?
+<p class="eyebrow">Pricing</p>
+
+## How Much Does Nonprofit Website Maintenance Cost?
 
 Costs vary by site size and complexity, but here are realistic 2026 ranges.
 
@@ -107,7 +115,9 @@ Two money-saving notes for nonprofits: bundling maintenance with hosting often e
 
 <a id="prevent"></a>
 
-## The Real QuestionThe Real Question: What Does Maintenance Prevent?
+<p class="eyebrow">The Real Question</p>
+
+## The Real Question: What Does Maintenance Prevent?
 
 For a budget-conscious nonprofit, the tempting question is "what does maintenance cost per month?" The better question is "what does it cost to prevent?"
 
@@ -117,7 +127,9 @@ The most dangerous part is that these problems are invisible until they cost you
 
 <a id="board"></a>
 
-## Buy-InHow to Make the Case to Your Board
+<p class="eyebrow">Buy-In</p>
+
+## How to Make the Case to Your Board
 
 If your board hesitates at the maintenance line item, reframe it. This isn't asking for money because the site is old — it's a recurring operating cost because the site now supports donor actions, event registrations, and public trust. It's an operational need, not a one-time project.
 
@@ -125,13 +137,17 @@ If they still hesitate, ask one blunt question: *what would it cost us, in dolla
 
 <a id="partner"></a>
 
-## ChoosingChoosing a Nonprofit Website Maintenance Partner
+<p class="eyebrow">Choosing</p>
+
+## Choosing a Nonprofit Website Maintenance Partner
 
 Look for a provider who understands that a nonprofit site carries operational pressure — donations, registrations, grant credibility, and staff handoffs. The right partner will explain things without jargon, test donation flows (not just content), have experience with nonprofit CRMs and payment integrations, and provide a clear scope, transparent pricing, and real reporting. Crucially, ask about their process for urgent situations: a form breaking during year-end giving is a crisis, not a routine ticket.
 
 <a id="mission"></a>
 
-## Stay ReadyKeep Your Mission Online, Secure, and Donation-Ready
+<p class="eyebrow">Stay Ready</p>
+
+## Keep Your Mission Online, Secure, and Donation-Ready
 
 Your nonprofit's website works hardest at the exact moments that matter most — a year-end campaign, a viral moment, a supporter ready to give. Regular maintenance is what makes sure the site is ready when they are, instead of failing at the worst possible time.
 
@@ -141,7 +157,9 @@ We provide ongoing website maintenance built for nonprofits, with a focus on kee
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What does nonprofit website maintenance include?</summary><div>It includes donation form and payment testing, software and plugin updates, security monitoring and malware scans, off-site backups, performance optimization, content currency (impact numbers, events, staff pages), CRM and integration health, accessibility compliance, uptime monitoring, and transparent reporting. Donation-form reliability is the highest priority.</div></details><details><summary>How much does website maintenance cost for a nonprofit?</summary><div>Basic support runs about $50–$200 per month, more complete support $200–$500 per month, and a standalone security subscription $200–$300 per year. Self-managing costs $500–$1,500 annually for hosting, backups, and licenses. Many providers offer nonprofit discounts, so always ask.</div></details><details><summary>Why is website maintenance important for nonprofits?</summary><div>Because your website is a live fundraising tool. A broken donation form, expired SSL, or slow page directly costs donations and erodes donor trust — and nonprofit giving spikes at year-end, when downtime is most costly. Maintenance protects revenue, security, and credibility.</div></details><details><summary>How often should a nonprofit update its website?</summary><div>Weekly for backups, security checks, and donation-form testing (plus event and volunteer pages during active periods); monthly for software updates and performance reviews; and quarterly for SEO, content, accessibility, and backup-restore testing. Staff and leadership pages should be updated immediately when changes happen.</div></details><details><summary>Can a nonprofit maintain its website itself?</summary><div>Simple content updates and basic checks can be handled in-house if you have the time and comfort, and volunteer tech programs can help. But security, staging-tested updates, and donation-flow testing are best left to professionals, since a single missed issue can cost real donations. A hybrid approach often works well.</div></details><details><summary>What's the most important nonprofit website maintenance task?</summary><div>Testing your donation form and payment flow end-to-end. A broken donation form is direct revenue loss from supporters who were ready to give, so it should be verified regularly and after every significant update to the site.</div></details>
 

@@ -31,7 +31,9 @@ The good news: this error has a well-defined set of causes, and most of them can
 
 <a id="meaning"></a>
 
-## MeaningWhat Does "Error Establishing a Database Connection" Mean?
+<p class="eyebrow">Meaning</p>
+
+## What Does "Error Establishing a Database Connection" Mean?
 
 WordPress is not a static website. Every time someone visits a page, WordPress runs PHP code that connects to a MySQL database, retrieves your content, and builds the page dynamically. The database is where everything lives — posts, pages, settings, users, plugin configurations, everything.
 
@@ -51,7 +53,9 @@ Each of these has a different fix. The steps below address them in order of most
 
 <a id="step1"></a>
 
-## Step 1Check If It's a Temporary Server Issue
+<p class="eyebrow">Step 1</p>
+
+## Check If It's a Temporary Server Issue
 
 Before doing anything else, determine whether the error is consistent or intermittent.
 
@@ -67,7 +71,9 @@ Also check whether your **WordPress admin dashboard** (`yoursite.com/wp-admin`) 
 
 <a id="step2"></a>
 
-## Step 2Verify Your Database Credentials in wp-config.php
+<p class="eyebrow">Step 2</p>
+
+## Verify Your Database Credentials in wp-config.php
 
 The most common cause of this error is incorrect database credentials — usually after a migration, a hosting change, or a manual edit that introduced a typo.
 
@@ -112,7 +118,9 @@ After correcting any errors, save the file and reload your site.
 
 <a id="step3"></a>
 
-## Step 3Verify the Database Exists and the User Has Access
+<p class="eyebrow">Step 3</p>
+
+## Verify the Database Exists and the User Has Access
 
 Even if your credentials are correct in wp-config.php, the database connection will fail if:
 
@@ -141,7 +149,9 @@ This is a more serious situation. If your database has been accidentally deleted
 
 <a id="step4"></a>
 
-## Step 4Check If Your MySQL Server Is Running
+<p class="eyebrow">Step 4</p>
+
+## Check If Your MySQL Server Is Running
 
 Sometimes the MySQL database server itself goes down — due to server maintenance, a crash, or resource exhaustion. This is a hosting-level issue you can't fix yourself, but you can confirm it.
 
@@ -161,7 +171,9 @@ If phpMyAdmin fails to load or shows a connection error, MySQL is likely down. C
 
 <a id="step5"></a>
 
-## Step 5Repair Your WordPress Database
+<p class="eyebrow">Step 5</p>
+
+## Repair Your WordPress Database
 
 Database corruption can cause the "Error Establishing a Database Connection" message — particularly on the frontend while the admin may still partially work, or vice versa.
 
@@ -189,7 +201,9 @@ If the repair tool fixes the error, great. If it doesn't connect at all (showing
 
 <a id="step6"></a>
 
-## Step 6Repair Database Tables via phpMyAdmin
+<p class="eyebrow">Step 6</p>
+
+## Repair Database Tables via phpMyAdmin
 
 For more serious database corruption, you can repair individual tables directly via phpMyAdmin:
 
@@ -212,7 +226,9 @@ REPAIR TABLE wp_commentmeta, wp_comments, wp_links, wp_options, wp_postmeta, wp_
 
 <a id="step7"></a>
 
-## Step 7Check If Your Hosting Account Has Been Suspended
+<p class="eyebrow">Step 7</p>
+
+## Check If Your Hosting Account Has Been Suspended
 
 If your hosting account has been suspended — for non-payment, exceeding resource limits, or a Terms of Service violation — all sites on that account will show errors, including database connection errors.
 
@@ -226,7 +242,9 @@ If your account is suspended, contact your hosting provider directly to resolve 
 
 <a id="step8"></a>
 
-## Step 8Check Your Database Connection Limit
+<p class="eyebrow">Step 8</p>
+
+## Check Your Database Connection Limit
 
 Many shared hosting plans limit the number of simultaneous MySQL connections. During traffic spikes — or if a plugin is opening and not closing database connections properly — you can exceed this limit, causing the connection error for new visitors.
 
@@ -245,7 +263,9 @@ Signs this is the cause:
 
 <a id="step9"></a>
 
-## Step 9Check for Incorrect DB\_HOST Value
+<p class="eyebrow">Step 9</p>
+
+## Check for Incorrect DB\_HOST Value
 
 While `localhost` works for most hosting setups, some configurations require a different value for DB\_HOST.
 
@@ -264,7 +284,9 @@ While `localhost` works for most hosting setups, some configurations require a d
 
 <a id="step10"></a>
 
-## Step 10Check File Permissions on wp-config.php
+<p class="eyebrow">Step 10</p>
+
+## Check File Permissions on wp-config.php
 
 Incorrect file permissions can prevent WordPress from reading `wp-config.php`, causing a database connection failure.
 
@@ -280,7 +302,9 @@ If permissions are set to something unusual like 777 or 000, that's likely the c
 
 <a id="step11"></a>
 
-## Step 11Restore From a Backup
+<p class="eyebrow">Step 11</p>
+
+## Restore From a Backup
 
 If you've worked through all the above steps and the error persists — or if your database has been deleted or severely corrupted — restoring from a backup is the most reliable solution.
 
@@ -301,7 +325,9 @@ This situation — losing a site because there was no backup — is exactly what
 
 <a id="migration"></a>
 
-## Special CaseError Establishing a Database Connection: After a Migration
+<p class="eyebrow">Special Case</p>
+
+## Error Establishing a Database Connection: After a Migration
 
 This error is extremely common immediately after migrating a WordPress site to a new host or domain. During migration, the database is moved to a new server with different credentials. If the wp-config.php credentials aren't updated to match the new database, the connection fails immediately.
 
@@ -317,7 +343,9 @@ Additionally, after migration you may need to update the site URL in the databas
 
 <a id="frontend"></a>
 
-## VariationError Establishing a Database Connection: Frontend vs Admin
+<p class="eyebrow">Variation</p>
+
+## Error Establishing a Database Connection: Frontend vs Admin
 
 An interesting variation of this error: sometimes the **frontend** of your WordPress site shows "Error Establishing a Database Connection" but you can still access **wp-admin** — or vice versa.
 
@@ -335,7 +363,9 @@ Full database connection failure — work through Steps 1–11 above.
 
 <a id="prevent"></a>
 
-## PreventionHow to Prevent "Error Establishing a Database Connection" in the Future
+<p class="eyebrow">Prevention</p>
+
+## How to Prevent "Error Establishing a Database Connection" in the Future
 
 Most occurrences of this error are preventable:
 
@@ -369,7 +399,9 @@ Keep a secure record of your database name, username, password, and host somewhe
 
 <a id="reference"></a>
 
-## Quick ReferenceQuick Reference: Error Establishing a Database Connection Fixes
+<p class="eyebrow">Quick Reference</p>
+
+## Quick Reference: Error Establishing a Database Connection Fixes
 
 | Cause | Fix |
 | --- | --- |
@@ -386,7 +418,9 @@ Keep a secure record of your database name, username, password, and host somewhe
 
 <a id="pro"></a>
 
-## Get HelpWhen to Call a Professional
+<p class="eyebrow">Get Help</p>
+
+## When to Call a Professional
 
 The "Error Establishing a Database Connection" error is fixable by most website owners by working through the steps above. However, consider calling a professional if:
 

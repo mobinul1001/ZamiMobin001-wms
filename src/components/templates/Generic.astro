@@ -2,6 +2,7 @@
 const { entry } = Astro.props;
 ---
 <div class="prose-page">
-  <div class="page-head"><h1>{entry.data.h1}</h1></div>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
+  <div class="page-head" style="padding-top:14px"><h1>{entry.data.h1}</h1></div>
   <div class="prose" set:html={entry.rendered?.html} />
 </div>

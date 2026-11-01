@@ -23,7 +23,9 @@ categories: ["Industry"]
 
 <a id="who"></a>
 
-## Who It's ForEvery Kind of Caribbean Transport Business
+<p class="eyebrow">Who It's For</p>
+
+## Every Kind of Caribbean Transport Business
 
 Whether your customers land at the airport, step off a cruise ship, or want to travel between islands and beaches by boat, this guide applies to you. The core principles are the same across the whole industry:
 
@@ -53,7 +55,9 @@ Weddings, honeymoons, and premium service where a polished site justifies premiu
 
 <a id="why"></a>
 
-## The StakesYour Website Decides the Booking — Before You Meet the Customer
+<p class="eyebrow">The Stakes</p>
+
+## Your Website Decides the Booking — Before You Meet the Customer
 
 Caribbean transport is fundamentally different from a mainland cab company. Most of your customers are tourists who have never been to your island, don't know the local operators, and are planning from their phone days or weeks before they arrive. They don't ask a neighbor for a recommendation — they search Google, tap the first result that looks trustworthy, and book.
 
@@ -65,7 +69,9 @@ A tourist deciding who to trust with their airport pickup judges your credibilit
 
 <a id="features"></a>
 
-## The EssentialsWhat Your Transport Website Must Have
+<p class="eyebrow">The Essentials</p>
+
+## What Your Transport Website Must Have
 
 A transport website has one job: turn a searching tourist into a confirmed ride. These are the elements that actually do that — the non-negotiables for any serious operator.
 
@@ -89,7 +95,9 @@ A transport website has one job: turn a searching tourist into a confirmed ride.
 
 <a id="booking"></a>
 
-## Take the BookingBooking Tools & Software Worth Knowing
+<p class="eyebrow">Take the Booking</p>
+
+## Booking Tools & Software Worth Knowing
 
 "How do I actually take bookings online?" is the question every operator asks. The good news: you don't need to build a booking system from scratch. There are proven tools that plug into your website, take payments, manage availability, and send confirmations automatically. The right one depends on your size and how you sell.
 
@@ -123,7 +131,9 @@ Third-party platforms are great for reach, but many take a **commission on every
 
 <a id="seo"></a>
 
-## Get FoundWhy SEO Isn't Optional for Transport Businesses
+<p class="eyebrow">Get Found</p>
+
+## Why SEO Isn't Optional for Transport Businesses
 
 You can have the most beautiful, booking-ready website on the island — but if it doesn't appear when a tourist searches "\[your island\] airport taxi" or "water taxi \[your island\]," it may as well not exist. That's what SEO (search engine optimization) solves: it's the work that makes Google show your site to the exact people already looking for a ride.
 
@@ -133,7 +143,9 @@ SEO isn't a one-time task, either — it compounds. Every month your site stays 
 
 <a id="maintenance"></a>
 
-## Keep It RunningWhy Website Maintenance Is Non-Negotiable
+<p class="eyebrow">Keep It Running</p>
+
+## Why Website Maintenance Is Non-Negotiable
 
 Here's the part most operators discover the hard way: a website isn't a "build it once and forget it" purchase. It's more like a boat or a vehicle — it needs regular upkeep, or it breaks down exactly when you need it most, in the middle of high season.
 
@@ -147,7 +159,9 @@ If a broken booking form during high season costs you even a handful of transfer
 
 <a id="hostage"></a>
 
-## Buyer BewareHow Typical Agencies Hold Transport Businesses Hostage
+<p class="eyebrow">Buyer Beware</p>
+
+## How Typical Agencies Hold Transport Businesses Hostage
 
 This is the part of the industry nobody tells you about — and it's why so many transport operators feel trapped with a website they're not happy with. Many web companies quietly build their business model around locking you in, so that leaving becomes painful or impossible. Watch for these tactics:
 
@@ -167,7 +181,9 @@ None of this is necessary, and none of it is in your interest. A fair provider b
 
 <a id="own"></a>
 
-## Protect YourselfWhat You Should Always Own and Control
+<p class="eyebrow">Protect Yourself</p>
+
+## What You Should Always Own and Control
 
 Before you hire anyone — us or anyone else — make sure any website deal gives you these. If a provider won't, that's your warning sign:
 
@@ -182,7 +198,9 @@ We build every site on this principle: you own it, you control it, and we keep y
 
 <a id="included"></a>
 
-## Our PromiseWe Take the Fear Out of It — Here's What's Included Free
+<p class="eyebrow">Our Promise</p>
+
+## We Take the Fear Out of It — Here's What's Included Free
 
 We know exactly why transport operators hesitate to build or move a website: worries about security, about who holds the access, about being stuck with a hosting bill or a company that disappears when you need it. So we do the opposite of the lock-in agencies — we remove every one of those fears up front, and we back it with real support, not promises. Here's what you get with us, included:
 
@@ -192,7 +210,9 @@ Notice the pattern: **free hosting, free webmail, full access in your hands, fre
 
 <a id="example"></a>
 
-## In PracticeWhat a Real Caribbean Transport Site Looks Like
+<p class="eyebrow">In Practice</p>
+
+## What a Real Caribbean Transport Site Looks Like
 
 The best way to understand all of this is to see it in action. A well-built Caribbean taxi-and-tours site brings these pieces together: it loads fast on a phone, makes its routes and tours clear, builds trust with real photos and reviews, and gives visitors an easy way to book or inquire — all while being found on Google for the island's transport searches.
 
@@ -200,7 +220,9 @@ For example, [St. Lucian Taxi and Tours](http://stluciantaxiandtours.com/) serve
 
 Whatever island you operate on and however your customers reach you, the formula is the same: get found, earn trust, take the booking, and keep it all running. You can see examples of [our own work](/works/) to get a feel for what that looks like done right.
 
-## Next StepTurn Your Website Into Your Best Driver
+<p class="eyebrow">Next Step</p>
+
+## Turn Your Website Into Your Best Driver
 
 Right now, tourists are searching for a ride on your island — and booking with whoever has the website that earns their trust fastest, loads quickest, and makes booking easiest. This guide is the blueprint; putting it into practice is where the bookings come from.
 
@@ -210,7 +232,9 @@ Whether you need a brand-new site, a refresh of what you have, better SEO, or re
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What should a taxi or transport website include?</summary><div>At minimum: a mobile-first design, an obvious way to book or request a ride, clear routes and rates, WhatsApp and one-tap contact, trust signals like reviews and photos, fast loading, local SEO, HTTPS security, and an easy way to update seasonal rates and schedules. Together these turn a searching tourist into a confirmed booking.</div></details><details><summary>How do I take bookings online for my transport business?</summary><div>You can start simply with an inquiry form plus WhatsApp, or use a dedicated booking platform like FareHarbor, Bokun, Rezdy, Checkfront, or Peek Pro. If your site runs on WordPress, a bookings plugin lets you take reservations directly with no per-booking commission. The right choice depends on your size and whether you want to sell through channels like Viator and Tripadvisor as well.</div></details><details><summary>Do I really need SEO if I already have a website?</summary><div>Yes. A website without SEO is like a taxi with no sign — it exists, but no one finds it. SEO, especially local SEO and a Google Business Profile, is what makes your site appear when tourists search your island plus "airport taxi," "water taxi," or "cruise transfer." It's how you capture customers who are already looking for a ride.</div></details><details><summary>Why do I need ongoing website maintenance?</summary><div>Because websites decay without it. Outdated software gets hacked, broken updates take your booking form offline, and slow pages lose rankings — often during high season when it costs the most. Maintenance (updates, security, backups, speed checks) keeps your site online, secure, and selling, and protects the SEO you worked for. It's insurance on your bookings.</div></details><details><summary>How do web agencies lock businesses in, and how do I avoid it?</summary><div>Common traps include registering your domain in their name, building on a closed platform only they can edit, withholding your logins and hosting, charging for every small change, and making the site disappear if you cancel. Avoid it by insisting you own your domain, have full admin access, use a standard portable platform like WordPress, and keep your content and data — all in writing.</div></details><details><summary>Should I build a new site or improve my existing one?</summary><div>If your current site is fundamentally sound but looks dated or loads slowly, a refresh may be enough and costs far less. If it's failing on mobile, speed, booking, or security, a redesign or rebuild is the better investment. The honest answer depends on your specific site — a quick professional audit will tell you which one you actually need.</div></details><details><summary>What's included when you build my transport website?</summary><div>We include a full year of free hosting, two free business webmail addresses on your own domain, full hosting and site access that stays in your hands, and one month of free maintenance after launch. You also get our 24-hour support system, seven days a week including weekends, plus emergency support on WhatsApp — so if anything urgent ever breaks, you reach a real person right away, not a ticket queue.</div></details>
 

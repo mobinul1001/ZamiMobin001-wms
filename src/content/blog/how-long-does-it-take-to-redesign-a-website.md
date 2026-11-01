@@ -27,7 +27,9 @@ Below is the realistic breakdown by site size, what happens in each phase, and t
 
 <a id="bysize"></a>
 
-## By SizeWebsite Redesign Timeline by Site Size
+<p class="eyebrow">By Size</p>
+
+## Website Redesign Timeline by Site Size
 
 Not all redesigns are the same scope, and the timeline reflects that. Here's what to expect.
 
@@ -65,7 +67,9 @@ A crucial warning that every experienced designer will echo: if someone offers t
 
 <a id="phases"></a>
 
-## BreakdownThe Phases of a Website Redesign (and How Long Each Takes)
+<p class="eyebrow">Breakdown</p>
+
+## The Phases of a Website Redesign (and How Long Each Takes)
 
 Understanding where the time goes helps you see why the total is what it is. Here's a typical breakdown for a small-to-mid business redesign.
 
@@ -121,7 +125,9 @@ Note that some phases overlap — content migration often runs during developmen
 
 <a id="late"></a>
 
-## DelaysWhy Redesigns Run Late (It's Usually Not the Designer)
+<p class="eyebrow">Delays</p>
+
+## Why Redesigns Run Late (It's Usually Not the Designer)
 
 Here's the part most agencies won't say plainly: the vast majority of timeline overruns are caused by the client side, not the web team. Knowing these in advance is the best way to keep your project on schedule.
 
@@ -139,7 +145,9 @@ The pattern is clear: an engaged client with content ready and one decision-make
 
 <a id="speed"></a>
 
-## Go FasterHow to Speed Up Your Website Redesign
+<p class="eyebrow">Go Faster</p>
+
+## How to Speed Up Your Website Redesign
 
 You have more control over the timeline than you might think. To launch faster without sacrificing quality:
 
@@ -157,7 +165,9 @@ What you should *not* do is compress a real redesign into a rushed two-week spri
 
 <a id="tradeoff"></a>
 
-## Trade-OffTimeline vs Quality: The Trade-Off Worth Understanding
+<p class="eyebrow">Trade-Off</p>
+
+## Timeline vs Quality: The Trade-Off Worth Understanding
 
 A redesign is a bit like building a house. A shed goes up in a weekend; a custom home takes months. Same builders, same tools — the difference is planning, craftsmanship, and problem-solving. The more strategic value the new site needs to deliver, the more time the process takes, and that time is what separates a website that makes money from an expensive digital business card.
 
@@ -165,7 +175,9 @@ The good news is that a well-run redesign is predictable. With a clear scope, re
 
 <a id="realistic"></a>
 
-## Your SitePlanning a Redesign? Get a Realistic Timeline for Your Site
+<p class="eyebrow">Your Site</p>
+
+## Planning a Redesign? Get a Realistic Timeline for Your Site
 
 Every site is different, and the honest timeline for yours depends on your page count, features, content readiness, and how quickly decisions get made. A vague "it depends" doesn't help you plan around a launch date — a real estimate does.
 
@@ -175,7 +187,9 @@ Get a free website audit and we'll give you an honest timeline and scope for you
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How long does it take to redesign a website?</summary><div>Most website redesigns take 6 to 16 weeks from kickoff to launch. A small brochure site can be done in 4–6 weeks, a typical small-to-mid business site takes 8–12 weeks, and large or enterprise sites with complex integrations take 4–6 months or more.</div></details><details><summary>How long does a small business website redesign take?</summary><div>A small business redesign typically takes 6–12 weeks. A simple 5–10 page site can launch in 4–6 weeks, while a more established site with multiple service pages, a blog, and forms usually takes around 8 weeks, assuming content and feedback are provided promptly.</div></details><details><summary>Why do website redesigns take so long?</summary><div>Most delays come from the client side, not the web team — mainly content that isn't ready, slow feedback, too many stakeholders, and adding features mid-project. A redesign also includes strategy, UX, development, testing, and SEO preservation, each of which takes real time.</div></details><details><summary>Can a website redesign be done faster?</summary><div>Yes. Preparing content before design starts, giving consolidated feedback within a few days, assigning one decision-maker, and locking the scope early can cut the timeline by 25–40%. What you shouldn't do is skip strategy or SEO to rush — that usually doubles post-launch fixes.</div></details><details><summary>Is a redesign faster than building a new website?</summary><div>Not necessarily. A redesign can move faster in some phases because you have existing content and know what works, but it also adds work that new builds don't have — auditing the current site, migrating content, and preserving SEO with proper redirects. Timelines are usually similar.</div></details><details><summary>What's the best time of year to launch a website redesign?</summary><div>February–May and September–October are ideal launch windows. Avoid launching in late December, when support is thin during the holidays, and avoid starting projects in late October, since they tend to collide with the holiday slowdown.</div></details>
 

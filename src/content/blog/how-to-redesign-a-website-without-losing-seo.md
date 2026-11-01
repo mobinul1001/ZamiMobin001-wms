@@ -27,7 +27,9 @@ Let's walk through exactly how.
 
 <a id="why"></a>
 
-## The MechanismWhy a Redesign Puts Your SEO at Risk
+<p class="eyebrow">The Mechanism</p>
+
+## Why a Redesign Puts Your SEO at Risk
 
 To protect your rankings, you first need to understand what actually causes the damage — because once you know the mechanism, every step below makes sense.
 
@@ -39,7 +41,9 @@ The critical lesson that follows from this: SEO has to be involved from the very
 
 <a id="step1"></a>
 
-## Step 1Audit and Benchmark Your Current Site (Before You Touch Anything)
+<p class="eyebrow">Step 1</p>
+
+## Audit and Benchmark Your Current Site (Before You Touch Anything)
 
 You cannot protect what you haven't measured. Before a single wireframe is drawn, document exactly what you have. This is the step people skip and regret.
 
@@ -53,7 +57,9 @@ Document all of this in a spreadsheet. This single step prevents the majority of
 
 <a id="step2"></a>
 
-## Step 2Create a Complete 301 Redirect Map
+<p class="eyebrow">Step 2</p>
+
+## Create a Complete 301 Redirect Map
 
 This is the most important technical step of the entire redesign. If your new site changes any URLs — and most redesigns do — you need a one-to-one redirect map planned and agreed on *before* development begins, not bolted on afterward.
 
@@ -73,7 +79,9 @@ Redirect errors are, by a wide margin, the most common technical failure in rede
 
 <a id="step3"></a>
 
-## Step 3Preserve Your Content and On-Page SEO
+<p class="eyebrow">Step 3</p>
+
+## Preserve Your Content and On-Page SEO
 
 Two things quietly die in redesigns, and both are avoidable.
 
@@ -87,7 +95,9 @@ Finally, rebuild your internal linking. Update internal links to point directly 
 
 <a id="step4"></a>
 
-## Step 4Build and Test on a Staging Site (Blocked From Google)
+<p class="eyebrow">Step 4</p>
+
+## Build and Test on a Staging Site (Blocked From Google)
 
 Build and test the new site on a staging environment — a private copy where you develop before going live — and block that staging site from being indexed with a noindex tag or password protection. If Google crawls your staging site, it can create duplicate versions of your pages in search and cause real problems.
 
@@ -105,7 +115,9 @@ This is your last chance to catch problems before they reach real users and real
 
 <a id="step5"></a>
 
-## Step 5Launch and Submit a Fresh Sitemap
+<p class="eyebrow">Step 5</p>
+
+## Launch and Submit a Fresh Sitemap
 
 On launch day, once the new site is live and the staging noindex is removed, generate a new XML sitemap and submit it to Google Search Console immediately. This tells Google to come crawl and re-index your new structure.
 
@@ -113,7 +125,9 @@ Verify both the old and new versions of your site in Search Console if the domai
 
 <a id="step6"></a>
 
-## Step 6Monitor Search Console Closely for the First 30–60 Days
+<p class="eyebrow">Step 6</p>
+
+## Monitor Search Console Closely for the First 30–60 Days
 
 Even a flawless migration causes a temporary re-crawl and re-evaluation period. Expect a modest, short-term dip in impressions in the first week or two as Google re-processes your site — that's normal, and recovery to baseline typically happens within four to six weeks.
 
@@ -129,7 +143,9 @@ One more thing: **keep your 301 redirects for at least a year.** Google needs to
 
 <a id="checklist"></a>
 
-## Quick ReferenceThe Redesign SEO Checklist
+<p class="eyebrow">Quick Reference</p>
+
+## The Redesign SEO Checklist
 
 Working through a redesign? Here's the whole process at a glance:
 
@@ -149,13 +165,17 @@ Working through a redesign? Here's the whole process at a glance:
 
 <a id="improve"></a>
 
-## The UpsideA Redesign Can Actually Improve Your SEO
+<p class="eyebrow">The Upside</p>
+
+## A Redesign Can Actually Improve Your SEO
 
 It's worth ending on the upside. Done right, a redesign isn't just about avoiding losses — it's a genuine opportunity to *improve* your rankings. A redesign lets you fix long-standing technical issues, speed up your Core Web Vitals, restructure content more logically, and clean up thin or cannibalizing pages. Many well-executed redesigns perform better in search within a few months of launch than the old site ever did.
 
 The difference between a redesign that tanks your traffic and one that lifts it comes down entirely to process — not luck, and not the design itself.
 
-## Done For YouGet Your Redesign Done Without the SEO Risk
+<p class="eyebrow">Done For You</p>
+
+## Get Your Redesign Done Without the SEO Risk
 
 Protecting your rankings through a redesign is a procedural job, and the businesses that lose traffic are almost always the ones that skipped a step — usually because SEO wasn't in the room when the URLs were decided.
 
@@ -165,7 +185,9 @@ If you'd rather not gamble years of ranking progress on getting every step right
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>Will a website redesign hurt my SEO?</summary><div>It can, but the loss is preventable. Redesigns almost always cause some short-term volatility, but significant traffic loss comes from avoidable mistakes — mainly changing URLs without 301 redirects, losing metadata in the transfer, or breaking internal links. With proper planning, most sites keep 80–90% of their rankings and recover fully within weeks.</div></details><details><summary>What is the most important step to protect SEO during a redesign?</summary><div>Creating a complete one-to-one 301 redirect map before development begins. Changing URLs without redirects is the single most common cause of catastrophic post-launch ranking drops, so getting the redirect map right matters more than any other technical step.</div></details><details><summary>How long does it take to recover rankings after a redesign?</summary><div>With a well-executed migration, expect a small dip in the first week or two as Google re-crawls, with recovery to baseline typically by week four to six. Improvements above baseline often appear by month three to four. If you're still well below baseline at week eight, something needs fixing.</div></details><details><summary>Should I keep my old URLs when redesigning?</summary><div>Yes, wherever possible. The safest redirect is the one you don't have to create. Keeping existing URLs preserves ranking signals directly. Only change URLs when there's a real reason, and redirect any that must change with clean one-to-one 301s.</div></details><details><summary>How long should I keep 301 redirects after a redesign?</summary><div>At least one year. Google needs to see a redirect multiple times before it fully transfers the ranking signals, and many SEOs keep important redirects permanently, since removing them can bring back old 404 errors and lose the equity again.</div></details><details><summary>When should SEO be involved in a website redesign?</summary><div>From the very first planning meeting. SEO should help decide the URL structure, review content and metadata before launch, and monitor performance afterward. Bringing SEO in only after the site is built is too late to prevent the most common and damaging issues.</div></details>
 

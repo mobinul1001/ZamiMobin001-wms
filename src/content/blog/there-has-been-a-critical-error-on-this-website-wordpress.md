@@ -29,7 +29,9 @@ This error is one of the most common and most alarming WordPress errors. The goo
 
 <a id="meaning"></a>
 
-## MeaningWhat Does "There Has Been a Critical Error on This Website" Mean?
+<p class="eyebrow">Meaning</p>
+
+## What Does "There Has Been a Critical Error on This Website" Mean?
 
 This message is WordPress's way of telling you that a fatal PHP error has occurred — one serious enough to prevent WordPress from loading at all. Rather than showing a raw PHP error (which could expose sensitive information about your server), WordPress displays this friendly but vague message instead.
 
@@ -46,7 +48,9 @@ The error message itself tells you to check your email — WordPress sends the a
 
 <a id="debug"></a>
 
-## Step 0Before You Start: Enable WordPress Debug Mode
+<p class="eyebrow">Step 0</p>
+
+## Before You Start: Enable WordPress Debug Mode
 
 If you didn't receive an error email, or the email doesn't give you enough information, enable WordPress debug mode to see the actual error on screen.
 
@@ -64,7 +68,9 @@ Save the file, then reload your site. The actual error message will now appear o
 
 <a id="method1"></a>
 
-## Method 1Deactivate All Plugins (Most Common Fix)
+<p class="eyebrow">Method 1</p>
+
+## Deactivate All Plugins (Most Common Fix)
 
 A broken, incompatible, or recently updated plugin is the most common cause of the WordPress critical error. Deactivating all plugins instantly eliminates this as a cause.
 
@@ -98,7 +104,9 @@ If deactivating all plugins doesn't fix the error, move to the next method.
 
 <a id="method2"></a>
 
-## Method 2Switch to a Default WordPress Theme
+<p class="eyebrow">Method 2</p>
+
+## Switch to a Default WordPress Theme
 
 If deactivating plugins didn't fix the error, a broken or incompatible theme may be the cause. Switching to a default WordPress theme (like Twenty Twenty-Four) will confirm this.
 
@@ -121,7 +129,9 @@ If your site loads after switching themes, the problem is with your theme. Conta
 
 <a id="method3"></a>
 
-## Method 3Increase the PHP Memory Limit
+<p class="eyebrow">Method 3</p>
+
+## Increase the PHP Memory Limit
 
 WordPress and its plugins require PHP memory to run. If your site hits the memory limit, WordPress crashes with a critical error. This is especially common after installing memory-intensive plugins or after your site grows larger.
 
@@ -155,7 +165,9 @@ After increasing the memory limit, reload your site to see if the error is resol
 
 <a id="method4"></a>
 
-## Method 4Re-Upload WordPress Core Files
+<p class="eyebrow">Method 4</p>
+
+## Re-Upload WordPress Core Files
 
 If a WordPress core file has been corrupted — by a failed update, a hack, or a server error — replacing it with a fresh copy will fix the problem.
 
@@ -168,7 +180,9 @@ This replaces all core WordPress files with clean versions while leaving your co
 
 <a id="method5"></a>
 
-## Method 5Check and Restore wp-config.php
+<p class="eyebrow">Method 5</p>
+
+## Check and Restore wp-config.php
 
 The `wp-config.php` file contains your database credentials and core WordPress settings. If this file has been accidentally corrupted — for example, by a failed edit or a malicious code injection — WordPress will throw a critical error.
 
@@ -190,7 +204,9 @@ If you find injected code you didn't add — your site may have been hacked. See
 
 <a id="method6"></a>
 
-## Method 6Check the WordPress Debug Log
+<p class="eyebrow">Method 6</p>
+
+## Check the WordPress Debug Log
 
 If you've enabled debug mode (Method 0 above) but the error isn't showing on screen, it may be written to a log file instead.
 
@@ -203,7 +219,9 @@ Use this information to identify the specific plugin, theme file, or core file c
 
 <a id="method7"></a>
 
-## Method 7Restore From a Backup
+<p class="eyebrow">Method 7</p>
+
+## Restore From a Backup
 
 If none of the above methods work, or if you can't identify what caused the error, restoring your site from a recent clean backup is the most reliable solution.
 
@@ -222,7 +240,9 @@ If you have a backup plugin like UpdraftPlus, All-in-One WP Migration, or BlogVa
 
 <a id="method8"></a>
 
-## Method 8Check for PHP Version Incompatibility
+<p class="eyebrow">Method 8</p>
+
+## Check for PHP Version Incompatibility
 
 Sometimes a WordPress update, plugin update, or theme update introduces code that's incompatible with your current PHP version. This is increasingly common as developers write code for newer PHP versions.
 
@@ -238,7 +258,9 @@ Alternatively, if you recently upgraded PHP and the error appeared immediately a
 
 <a id="method9"></a>
 
-## Method 9Fix a Syntax Error in a PHP File
+<p class="eyebrow">Method 9</p>
+
+## Fix a Syntax Error in a PHP File
 
 If you or a developer recently manually edited a PHP file — a theme's functions.php, a plugin file, or wp-config.php — and introduced a syntax error (a missing semicolon, an unclosed bracket, a misplaced character), WordPress will throw a critical error.
 
@@ -255,7 +277,9 @@ If you're not comfortable editing PHP directly, restore the file from a backup o
 
 <a id="method10"></a>
 
-## Method 10Contact Your Hosting Provider
+<p class="eyebrow">Method 10</p>
+
+## Contact Your Hosting Provider
 
 If you've worked through all the above steps and the error persists, contact your hosting provider's support team. Provide them with:
 
@@ -268,7 +292,9 @@ Hosting support teams have server-level access that can reveal issues not visibl
 
 <a id="common"></a>
 
-## ReferenceCommon WordPress Errors and What They Mean
+<p class="eyebrow">Reference</p>
+
+## Common WordPress Errors and What They Mean
 
 Beyond the critical error, WordPress has several other common error messages. Here's a quick reference:
 
@@ -289,7 +315,9 @@ Beyond the critical error, WordPress has several other common error messages. He
 
 <a id="prevent"></a>
 
-## PreventionHow to Prevent WordPress Critical Errors in the Future
+<p class="eyebrow">Prevention</p>
+
+## How to Prevent WordPress Critical Errors in the Future
 
 The vast majority of WordPress critical errors are preventable. Here's how to protect your site:
 
@@ -323,7 +351,9 @@ Some critical errors are caused by malware or hacking attempts. A good security 
 
 <a id="keepsback"></a>
 
-## RecurringWhy Does the WordPress Critical Error Keep Coming Back?
+<p class="eyebrow">Recurring</p>
+
+## Why Does the WordPress Critical Error Keep Coming Back?
 
 If you fix the critical error but it keeps returning, there are a few likely reasons:
 
@@ -337,7 +367,9 @@ If you fix the critical error but it keeps returning, there are a few likely rea
 
 <a id="pro"></a>
 
-## Get HelpWhen to Call a Professional
+<p class="eyebrow">Get Help</p>
+
+## When to Call a Professional
 
 Troubleshooting a WordPress critical error yourself is viable if you're comfortable with FTP, file editing, and basic PHP concepts. But there are situations where calling in a professional WordPress maintenance team makes more sense:
 
@@ -354,7 +386,9 @@ At Website Maintenance Services, our team handles WordPress critical errors as p
 
 <a id="checklist"></a>
 
-## ChecklistWordPress Critical Error: Step-by-Step Checklist
+<p class="eyebrow">Checklist</p>
+
+## WordPress Critical Error: Step-by-Step Checklist
 
 Work through these steps in order until your site is restored:
 

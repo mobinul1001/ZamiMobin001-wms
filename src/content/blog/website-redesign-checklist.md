@@ -131,13 +131,17 @@ The work isn't done at launch. The first month determines whether your rankings 
 
 <a id="industry"></a>
 
-## Industry NoteYour Checklist May Need Extra Steps
+<p class="eyebrow">Industry Note</p>
+
+## Your Checklist May Need Extra Steps
 
 The phases above apply to every redesign, but some industries have added requirements worth flagging: ecommerce sites need product-catalog migration, payment-gateway testing, and checkout optimization; healthcare and legal sites need compliance and privacy checks; nonprofits often need donation-flow and integration testing; and contractors, real estate, and local businesses should double down on local SEO and mobile, since most of their traffic is on-the-go and location-based. Whatever your industry, the seven phases stay the same — you're just adding the checks specific to your site's functionality.
 
 <a id="download"></a>
 
-## Use ItDownload and Use This Checklist
+<p class="eyebrow">Use It</p>
+
+## Download and Use This Checklist
 
 A redesign lives or dies on the details, and the difference between a smooth launch and a traffic disaster is almost always a step that got skipped — usually a redirect, lost metadata, or a page nobody realized was driving traffic. Working from a checklist is how you avoid being that cautionary tale.
 
@@ -147,7 +151,9 @@ If you'd rather have experts run the whole process for you — audit, redirect m
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What should a website redesign checklist include?</summary><div>A complete website redesign checklist covers seven phases: planning and discovery, pre-redesign SEO audit, design and UX, development and content, pre-launch QA, launch day, and post-launch monitoring. The most critical items are benchmarking your current site, building a 301 redirect map, and preserving content and metadata.</div></details><details><summary>What is the most important step in a website redesign?</summary><div>Creating a complete one-to-one 301 redirect map before development begins. Changing URLs without redirects is the single most common cause of lost rankings after a redesign, so this step protects your traffic more than any other.</div></details><details><summary>How do I prepare for a website redesign?</summary><div>Start by defining clear goals, benchmarking your current traffic and conversions, auditing your existing content and URLs, gathering all your content and brand assets, and assigning one decision-maker. Preparing content before design begins is the biggest time-saver of all.</div></details><details><summary>What is a website redesign SEO checklist?</summary><div>An SEO checklist for a redesign covers crawling and documenting your current URLs, benchmarking rankings and traffic, building a 301 redirect map, preserving titles, metadata and ranking content, keeping the staging site out of Google, submitting a fresh sitemap at launch, and monitoring Search Console afterward.</div></details><details><summary>What should I check after launching a redesigned website?</summary><div>Monitor Google Search Console daily for 30 days for 404s and crawl errors, compare rankings and traffic to your benchmark, fix broken links and redirect gaps immediately, keep 301 redirects for at least a year, and set up ongoing maintenance to keep the new site healthy.</div></details><details><summary>How long does a website redesign take using this checklist?</summary><div>Most small-to-mid business redesigns take 8–12 weeks when working through these phases, though small sites can finish in 4–6 weeks and large or enterprise sites take several months. Content readiness and feedback speed affect the timeline more than the design work itself.</div></details>
 

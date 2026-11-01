@@ -23,7 +23,9 @@ categories: ["Industry"]
 
 <a id="scorecard"></a>
 
-## The ResultThe Scorecard at a Glance
+<p class="eyebrow">The Result</p>
+
+## The Scorecard at a Glance
 
 We compared both providers across eight categories that decide real-world value. Here's the final tally — SiteCare takes the enterprise-compliance round, and the essentials tie, but Website Maintenance Services wins the majority:
 
@@ -43,7 +45,9 @@ Below we break down every round with the evidence, plus the full feature table, 
 
 <a id="table"></a>
 
-## Side by SideFull Feature Comparison
+<p class="eyebrow">Side by Side</p>
+
+## Full Feature Comparison
 
 The complete head-to-head. Both are full-service, hosting-included providers — so this comes down to price, flexibility, extras, and proof.
 
@@ -65,7 +69,9 @@ SiteCare figures reflect publicly reported 2026 pricing and features and may cha
 
 <a id="rounds"></a>
 
-## Round by RoundThe Head-to-Head Breakdown
+<p class="eyebrow">Round by Round</p>
+
+## The Head-to-Head Breakdown
 
 Eight rounds, one winner each. Here's who takes each — and why.
 
@@ -103,7 +109,9 @@ Fair is fair: SiteCare holds SOC 2 compliance, which matters for large or regula
 
 <a id="price"></a>
 
-## The NumbersPrice & Value, Visualised
+<p class="eyebrow">The Numbers</p>
+
+## Price & Value, Visualised
 
 Both include hosting, so this is an apples-to-apples price comparison — and Website Maintenance Services comes in lower at the entry tier while offering a year of hosting free on top:
 
@@ -153,7 +161,9 @@ Tiers aren't identically scoped between providers; compare inclusions alongside 
 
 <a id="categories"></a>
 
-## Category ScoresWho Wins Each Category
+<p class="eyebrow">Category Scores</p>
+
+## Who Wins Each Category
 
 A visual scorecard across the six categories that matter most. Longer bar = stronger in that category (our assessment based on reported features):
 
@@ -225,7 +235,9 @@ The picture is clear: for value, flexibility, extras, and support access, Websit
 
 <a id="trust"></a>
 
-## The ProofVerified Trust & Real Results
+<p class="eyebrow">The Proof</p>
+
+## Verified Trust & Real Results
 
 <img src="/wp-content/uploads/2026/07/wms-brand-avatar-logo.webp" alt="Website Maintenance Services logo" width="64" height="64" loading="lazy">
 
@@ -255,7 +267,9 @@ That's a **60% faster site** with near-zero downtime and a working booking form.
 
 <a id="extras"></a>
 
-## The DifferenceThe Free Extras That Tip the Balance
+<p class="eyebrow">The Difference</p>
+
+## The Free Extras That Tip the Balance
 
 When two full-service providers are this close on the core, the extras decide it. Here's what comes included with Website Maintenance Services that SiteCare doesn't match:
 
@@ -265,7 +279,9 @@ Like SiteCare, Website Maintenance Services bundles hosting, security, SEO, cont
 
 <a id="verdict"></a>
 
-## The VerdictWhich Should You Choose?
+<p class="eyebrow">The Verdict</p>
+
+## Which Should You Choose?
 
 Both are strong, full-service, hosting-included WordPress care providers — this isn't a case of good vs bad. It comes down to fit:
 
@@ -277,7 +293,9 @@ See exactly what's included and compare line-by-line on our [plans and pricing](
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>Is SiteCare a good WordPress maintenance service?</summary><div>Yes — SiteCare is a respected, premium full-service provider that bundles hosting, maintenance, and support with staging-tested updates, daily backups, and SOC 2 compliance. It's an excellent choice, especially for larger or compliance-heavy organisations. It's just not the most affordable option, which is why many businesses compare it against alternatives.</div></details><details><summary>What's the best SiteCare alternative?</summary><div>For most small and mid-size businesses, Website Maintenance Services is the best-value SiteCare alternative.</div></details><details><summary>Is Website Maintenance Services cheaper than SiteCare?</summary><div>At the entry tier, yes — Website Maintenance Services starts at $79/month with a year of hosting included free, while SiteCare's reported plans run roughly $99–$299/month. Both bundle hosting, so it's a fair comparison, and Website Maintenance Services keeps its mid and premium tiers more accessible too.</div></details><details><summary>Do both include hosting?</summary><div>Yes. Unlike maintenance-only services that leave hosting to you, both SiteCare and Website Maintenance Services bundle hosting into their care plans, giving you one point of contact for everything. Website Maintenance Services goes further by including a full year of hosting free.</div></details><details><summary>Does SiteCare require a long-term contract?</summary><div>SiteCare offers monthly and annual plans and emphasises annual billing with various discounts. Website Maintenance Services offers no long-term contract — you can cancel anytime — so you're never locked in. Always confirm current terms directly with each provider before signing.</div></details><details><summary>Which is better for a small business?</summary><div>For most small and mid-size businesses, Website Maintenance Services offers better value: the same full-service, hosting-included care at a lower entry price, plus free hosting for a year, free webmails, a free first month, and cancel-anytime flexibility. SiteCare is better suited to large or regulated organisations needing formal SOC 2 compliance.</div></details>
 

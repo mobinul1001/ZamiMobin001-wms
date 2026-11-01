@@ -1,0 +1,43 @@
+---
+// Blog and article pages, CLAIMS-AND-DESIGN.md B4. The old body stays whole; only its first lines get new styling.
+import { getCollection } from 'astro:content';
+import hubs from '../../data/blog-hubs.json';
+
+const { entry } = Astro.props;
+const isPost = entry.collection === 'blog';
+const slug = entry.data.path.replace(/^\/|\/$/g, '');
+const headings = entry.rendered?.metadata?.headings ?? [];
+const toc = headings.filter((h: { depth: number }) => h.depth === 2);
+const body = (entry.rendered?.html ?? '')
+  .replace(/^\s*<ul>(?=\s*<li>Updated)/, '<ul class="post-meta-list">')
+  .replace(/<p><strong>Quick answer:<\/strong>\s*(.*?)<\/p>/s, '<div class="answer"><b>Quick answer</b><p>$1</p></div>');
+
+const topic = hubs.find((t) => t.posts.includes(slug));
+if (isPost && !topic) throw new Error(`${slug}: add this post to src/data/blog-hubs.json`);
+const posts = await getCollection('blog');
+const titleOf = (s: string) => posts.find((p) => p.data.path === `/${s}/`)?.data.h1 ?? s;
+const related = topic ? [1, 2, 3, 4].map((n) => topic.posts[(topic.posts.indexOf(slug) + n) % topic.posts.length]).filter((s, i, a) => s !== slug && a.indexOf(s) === i) : [];
+---
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {isPost && <><a href="/blogs/">Blog</a> / </>}{entry.data.h1}</nav>
+  <div class="post-grid">
+    <article>
+      <h1 style="margin-top:14px">{entry.data.h1}</h1>
+      {toc.length >= 3 && <details class="toc-m"><summary>On this page</summary>{toc.map((h: { slug: string; text: string }) => <a href={`#${h.slug}`}>{h.text}</a>)}</details>}
+      <div class="prose" set:html={body} />
+      {isPost && (
+        <div class="author-box" style="grid-template-columns:1fr">
+          <div><b>Written by the WMS team</b><p class="small muted"><a href="/about-us/">About us</a></p></div>
+        </div>
+      )}
+      {topic && (
+        <section class="related">
+          <h2>Related articles</h2>
+          <ul>{related.map((s) => <li><a href={`/${s}/`}>{titleOf(s)}</a></li>)}</ul>
+          <p><a href={topic.hub}>{topic.hubLabel}</a> · <a href="/blogs/">All articles</a></p>
+        </section>
+      )}
+    </article>
+    {toc.length >= 3 && <aside class="toc-wrap"><div class="toc"><h2>On this page</h2><ol>{toc.map((h: { slug: string; text: string }) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></div></aside>}
+  </div>
+</div>

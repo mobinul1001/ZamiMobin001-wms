@@ -126,6 +126,10 @@ service.use(gfm);
 service.keep(['form', 'details', 'iframe', 'video', 'audio', 'img']);
 const baseEscape = service.escape.bind(service);
 service.escape = (text) => baseEscape(text).replace(/</g, '&lt;');
+service.addRule('eyebrow', {
+  filter: (n) => n.getAttribute('data-eyebrow') !== null,
+  replacement: (content) => `\n\n<p class="eyebrow">${content.trim()}</p>\n\n`,
+});
 service.addRule('cardGrid', {
   filter: (n) => n.nodeName === 'DIV' && n.getAttribute('data-cards') !== null,
   replacement: (content) => (content.trim() ? `\n\n<div class="cards">\n\n${content.trim()}\n\n</div>\n\n` : ''),
@@ -298,6 +302,12 @@ async function convert(path, record) {
     form.attr('data-placeholder-form', 'true');
   });
 
+  // Small labels above article headings were inside the heading tag and ran into its text.
+  $('h1 > .eb, h2 > .eb, h3 > .eb, h4 > .eb').each((_, e) => {
+    const label = $(e);
+    label.parent().before(`<p data-eyebrow="">${label.html()}</p>`);
+    label.remove();
+  });
   // Mobile-only copies of table labels would print twice.
   $('td [class*="md:hidden"], td [class*="sm:hidden"], td [class*="lg:hidden"]').remove();
   // Card grids stay as cards.
@@ -316,7 +326,7 @@ async function convert(path, record) {
     });
   });
 
-  const keepAttr = new Set(['data-cards', 'data-card', 'href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
+  const keepAttr = new Set(['data-eyebrow', 'data-cards', 'data-card', 'href', 'src', 'alt', 'width', 'height', 'loading', 'id', 'rel', 'target', 'colspan', 'rowspan', 'type', 'name', 'placeholder', 'value', 'for', 'disabled', 'open', 'data-placeholder-form', 'title', 'allowfullscreen', 'selected', 'required', 'rows']);
   $('body *').each((_, e) => {
     for (const attr of Object.keys(e.attribs ?? {})) {
       if (!keepAttr.has(attr)) delete e.attribs[attr];

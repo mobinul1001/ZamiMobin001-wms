@@ -23,7 +23,9 @@ This guide covers everything you need before you start: what a rebuild actually 
 
 <a id="what"></a>
 
-## DefinitionWhat Is a Website Rebuild?
+<p class="eyebrow">Definition</p>
+
+## What Is a Website Rebuild?
 
 A website rebuild means recreating your site from the ground up — new code, new structure, and often a new platform — rather than simply changing how it looks. You keep your brand and (ideally) your content, but the foundation underneath is replaced.
 
@@ -33,7 +35,9 @@ People search for this in a lot of ways — rebuild my website, rebuild a websit
 
 <a id="signs"></a>
 
-## DiagnosisSigns It's Time to Rebuild Your Website
+<p class="eyebrow">Diagnosis</p>
+
+## Signs It's Time to Rebuild Your Website
 
 Not every problem needs a rebuild. Many can be solved with maintenance, a redesign, or a single fix. But if several of the signs below apply to you, a rebuild is likely the right call.
 
@@ -55,7 +59,9 @@ If only one of these is true, get a professional opinion before committing — y
 
 <a id="vs"></a>
 
-## The Big DecisionWebsite Rebuild vs Redesign: What's the Difference?
+<p class="eyebrow">The Big Decision</p>
+
+## Website Rebuild vs Redesign: What's the Difference?
 
 This is the single most important decision in the whole process, and the one most searched: *website rebuild vs redesign*, *redesign vs rebuild*, *website refresh vs rebuild*. Choosing wrong wastes money or leaves the real problem unsolved.
 
@@ -77,7 +83,9 @@ If you're not sure which camp you're in, that uncertainty itself is worth a conv
 
 <a id="cost"></a>
 
-## PricingHow Much Does It Cost to Rebuild a Website?
+<p class="eyebrow">Pricing</p>
+
+## How Much Does It Cost to Rebuild a Website?
 
 Cost is the top question — *how much does it cost to rebuild a website*, *website rebuild cost*, *average website rebuild cost* — and the honest answer is that it depends on scope. Here are realistic 2026 ranges based on what actually drives the price.
 
@@ -114,7 +122,9 @@ A word of warning that applies to the whole industry: quotes most often leave ou
 
 <a id="timeline"></a>
 
-## TimelineHow Long Does It Take to Rebuild a Website?
+<p class="eyebrow">Timeline</p>
+
+## How Long Does It Take to Rebuild a Website?
 
 Timeline is the next big question — *website rebuild timeline*, *how long does it take to rebuild a website*. Like cost, it scales with scope, but here are realistic expectations.
 
@@ -136,7 +146,9 @@ What actually eats the timeline is rarely the design — it's content, approvals
 
 <a id="checklist"></a>
 
-## ChecklistThe Website Rebuild Checklist
+<p class="eyebrow">Checklist</p>
+
+## The Website Rebuild Checklist
 
 A rebuild has a predictable shape. Use this as your *website rebuild checklist* and project plan so nothing critical gets missed.
 
@@ -172,7 +184,9 @@ That last point matters more than people expect. A rebuild is a reset, not a per
 
 <a id="seo"></a>
 
-## Protect RankingsHow to Rebuild a Website Without Losing Your SEO
+<p class="eyebrow">Protect Rankings</p>
+
+## How to Rebuild a Website Without Losing Your SEO
 
 This is the fear behind searches like *website rebuilds for seo*, *do i lose seo juice when i rebuild website*, and *website migration seo what to migrate vs rebuild from scratch* — and it's a justified fear. A careless rebuild can wipe out years of rankings overnight.
 
@@ -184,7 +198,9 @@ If your site gets meaningful organic traffic, do not attempt the migration blind
 
 <a id="often"></a>
 
-## FrequencyHow Often Should You Rebuild Your Website?
+<p class="eyebrow">Frequency</p>
+
+## How Often Should You Rebuild Your Website?
 
 A common question — *how often should you rebuild your website* — with a simple answer: most sites need a significant rebuild every 3–5 years, but the right interval depends on your platform, industry, and how well the site is maintained.
 
@@ -192,7 +208,9 @@ The real lever is maintenance. A well-maintained site — kept updated, secure, 
 
 <a id="wordpress"></a>
 
-## WordPressShould You Rebuild Your WordPress Website?
+<p class="eyebrow">WordPress</p>
+
+## Should You Rebuild Your WordPress Website?
 
 WordPress powers a huge share of the web, so *how to rebuild a wordpress website*, *rebuild website in wordpress*, and *wordpress website rebuild* are common searches. The good news: WordPress rarely needs a rebuild just because it's WordPress.
 
@@ -202,7 +220,9 @@ Before committing to a full WordPress rebuild, get a professional to check wheth
 
 <a id="answer"></a>
 
-## Get ClarityRebuild, Redesign, or Maintain? Get a Clear Answer
+<p class="eyebrow">Get Clarity</p>
+
+## Rebuild, Redesign, or Maintain? Get a Clear Answer
 
 The most expensive mistake in this whole process is choosing the wrong path — rebuilding when you needed maintenance, or patching when you needed a rebuild.
 
@@ -214,7 +234,9 @@ Not sure which one you need? Get a free website audit and we'll tell you honestl
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How much does it cost to rebuild a website?</summary><div>A website rebuild costs roughly $1,000–$3,000 for a small business site, $5,000–$8,000 for a mid-size rebuild on a new platform, and $10,000+ for large or ecommerce sites. The main cost drivers are page count, functionality, content migration, and SEO preservation.</div></details><details><summary>How long does it take to rebuild a website?</summary><div>A small site takes about 3–6 weeks, a mid-size site 6–12 weeks, and a large or ecommerce rebuild 3–6 months or more. Content, approvals, and testing usually affect the timeline more than the design itself.</div></details><details><summary>What's the difference between a website rebuild and a redesign?</summary><div>A redesign changes how the site looks while keeping the existing platform and code. A rebuild replaces the underlying structure and often the platform. Choose a redesign for a dated look, and a rebuild for structural problems like security, speed, or an outdated platform.</div></details><details><summary>Will I lose my SEO when I rebuild my website?</summary><div>You can, but it's preventable. The main risk is changing URLs without 301 redirects. Map every old URL to a new one, preserve on-page SEO for ranking pages, and monitor Search Console after launch to protect your traffic.</div></details><details><summary>How often should you rebuild your website?</summary><div>Most sites need a significant rebuild every 3–5 years, but a well-maintained site lasts much longer. Ongoing maintenance is the cheapest way to delay a full rebuild.</div></details><details><summary>Do I need to rebuild my WordPress website?</summary><div>Usually not. Most WordPress issues are solved by maintenance or a redesign. A rebuild is warranted mainly when the site runs on abandoned code, has been repeatedly hacked, or is migrating onto WordPress from another platform.</div></details>
 

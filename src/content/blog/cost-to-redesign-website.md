@@ -27,7 +27,9 @@ Below, we break down exactly what you get at each price level, the seven factors
 
 <a id="bysize"></a>
 
-## By SizeWebsite Redesign Cost by Site Size (2026)
+<p class="eyebrow">By Size</p>
+
+## Website Redesign Cost by Site Size (2026)
 
 The single biggest factor in what a redesign costs is how big and complex your site is. Here are realistic 2026 ranges based on agency pricing.
 
@@ -59,7 +61,9 @@ The pattern is simple: more pages, more custom design, and more functionality al
 
 <a id="factors"></a>
 
-## Cost DriversThe 7 Factors That Determine Your Redesign Cost
+<p class="eyebrow">Cost Drivers</p>
+
+## The 7 Factors That Determine Your Redesign Cost
 
 Two businesses can both ask for "a redesign" and get quotes that differ by $30,000. These seven factors are why.
 
@@ -79,7 +83,9 @@ Two businesses can both ask for "a redesign" and get quotes that differ by $30,0
 
 <a id="vs"></a>
 
-## Right-Size ItRedesign vs Refresh: Which Do You Actually Need?
+<p class="eyebrow">Right-Size It</p>
+
+## Redesign vs Refresh: Which Do You Actually Need?
 
 Here's where a lot of money gets wasted — paying for a full redesign when a refresh would have solved the problem. There are really four levels:
 
@@ -92,7 +98,9 @@ If your site works but looks tired, you may only need a refresh — and save tho
 
 <a id="hidden"></a>
 
-## Watch OutHidden Costs That Catch Businesses Off Guard
+<p class="eyebrow">Watch Out</p>
+
+## Hidden Costs That Catch Businesses Off Guard
 
 The headline redesign price is rarely the whole story. Budget for these so a $12,000 project doesn't quietly become $16,000:
 
@@ -107,7 +115,9 @@ That last one matters most for your long-term budget. A redesign is not a one-ti
 
 <a id="roi"></a>
 
-## ROIIs a Website Redesign Worth It? How to Think About ROI
+<p class="eyebrow">ROI</p>
+
+## Is a Website Redesign Worth It? How to Think About ROI
 
 The cost only makes sense next to the return. The right way to frame a redesign is as an investment with measurable outcomes, not an expense.
 
@@ -117,7 +127,9 @@ The flip side is the cost of **inaction**. An outdated, slow, or non-mobile site
 
 <a id="budget"></a>
 
-## Smart SpendingHow to Budget for Your Redesign (and Not Overpay)
+<p class="eyebrow">Smart Spending</p>
+
+## How to Budget for Your Redesign (and Not Overpay)
 
 A few practical rules to land on the right number:
 
@@ -131,7 +143,9 @@ Don't over-buy. Paying for custom functionality you'll never use is as wasteful 
 
 <a id="honest"></a>
 
-## Get ClarityGet an Honest Number for Your Site
+<p class="eyebrow">Get Clarity</p>
+
+## Get an Honest Number for Your Site
 
 The truth about redesign pricing is that the same budget can deliver wildly different outcomes depending on scope and execution — and the businesses that overpay are usually the ones that never got a clear diagnosis of what they actually needed.
 
@@ -141,7 +155,9 @@ Not sure whether your site needs a full redesign, a simple refresh, or just bett
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How much does it cost to redesign a website in 2026?</summary><div>A website redesign costs between $1,000 and $20,000+ in 2026. Small business sites typically run $1,000–$3,000, mid-size sites $3,000–$6,000, and large or enterprise redesigns $8,000–$12,000+. The final price depends most on site size, functionality, and whether you hire a freelancer or an agency.</div></details><details><summary>Why do website redesign quotes vary so much?</summary><div>Quotes vary because "redesign" can mean anything from a cosmetic refresh to a full custom rebuild. The biggest cost drivers are the number of pages, how custom the design is, the functionality required, content and SEO migration, and whether a freelancer, agency, or in-house team does the work.</div></details><details><summary>How long does a website redesign take?</summary><div>Most standard business redesigns take about 12–16 weeks, while simple projects can be faster and complex builds with heavy integrations take longer. Content readiness and approvals affect the timeline more than the design itself.</div></details><details><summary>What's the difference between a website redesign and a refresh?</summary><div>A refresh updates the surface — layout, colors, typography — while keeping the existing platform, and costs far less. A redesign rebuilds the structure, templates, and UX, often with a new platform. Choose a refresh for a dated look and a redesign for deeper performance or structural problems.</div></details><details><summary>Is a website redesign tax-deductible?</summary><div>Website redesigns are generally treated as a business expense, but the treatment varies — some costs are immediately deductible while larger ones may be capitalized and amortized. Maintenance and minor updates are usually fully deductible in the year incurred. Consult your accountant for your specific situation.</div></details><details><summary>What ongoing costs come after a redesign?</summary><div>Plan for ongoing maintenance of roughly 15–20% of the build cost per year, plus hosting, domain renewal, and any premium plugin or tool subscriptions. Maintenance keeps the new site secure, fast, and current, and delays the need for the next redesign.</div></details>
 

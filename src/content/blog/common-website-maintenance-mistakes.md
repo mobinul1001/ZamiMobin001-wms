@@ -25,7 +25,9 @@ In addition to the above advantages of website maintenance, there are others for
 
 <a id="ownership"></a>
 
-## Mistake 1No clear maintenance ownership
+<p class="eyebrow">Mistake 1</p>
+
+## No clear maintenance ownership
 
 The process of providing support to the website usually includes several departments, such as marketing handling content, IT managing infrastructure, and third-party suppliers helping with hosting and integrations.
 
@@ -35,7 +37,9 @@ There must be one person or department who takes care of the updates, backup, ho
 
 <a id="updates"></a>
 
-## Mistake 2Updates without proper testing
+<p class="eyebrow">Mistake 2</p>
+
+## Updates without proper testing
 
 Late updates may leave vulnerabilities exploited, whereas fast installation may cause problems for some functionality of the website.
 
@@ -45,7 +49,9 @@ The Canadian Centre for Cyber Security also suggests a formal patch management p
 
 <a id="backups"></a>
 
-## Mistake 3Backups without recovery checks
+<p class="eyebrow">Mistake 3</p>
+
+## Backups without recovery checks
 
 The existence of a backup is no assurance of quick recovery.
 
@@ -55,7 +61,9 @@ They should therefore check from time to time whether the recovery mechanism wor
 
 <a id="customer-journeys"></a>
 
-## Mistake 4Technical checks that ignore customer journeys
+<p class="eyebrow">Mistake 4</p>
+
+## Technical checks that ignore customer journeys
 
 The site can remain active despite critical business processes being down.
 
@@ -65,7 +73,9 @@ Performing maintenance should involve checking entire user journeys and not just
 
 <a id="performance"></a>
 
-## Mistake 5Gradual website performance loss
+<p class="eyebrow">Mistake 5</p>
+
+## Gradual website performance loss
 
 Performance problems for websites normally develop gradually from several minor issues instead of one large one.
 
@@ -75,7 +85,9 @@ The following things need to be monitored: page performance, server response, nu
 
 <a id="integrations"></a>
 
-## Mistake 6Forgotten third-party integrations
+<p class="eyebrow">Mistake 6</p>
+
+## Forgotten third-party integrations
 
 Contemporary websites may rely on various third-party solutions, including payment processors, CRMs, analytics platforms, maps, authorization tools, mail servers, and many others.
 
@@ -85,7 +97,9 @@ It would be wise for the business to maintain an inventory of such important int
 
 <a id="access"></a>
 
-## Mistake 7Excessive administrator access
+<p class="eyebrow">Mistake 7</p>
+
+## Excessive administrator access
 
 Access rights have a tendency to grow as employees, organizations, and contractors change.
 
@@ -95,7 +109,9 @@ Organizations must disable those accounts which are no longer needed and restric
 
 <a id="outdated-technology"></a>
 
-## Mistake 8Too many fixes on outdated technology
+<p class="eyebrow">Mistake 8</p>
+
+## Too many fixes on outdated technology
 
 There is a limit to which maintenance can be done.
 
@@ -105,7 +121,9 @@ A technical evaluation should be made comparing the costs and benefits of doing 
 
 <a id="priorities"></a>
 
-## Mistake 9Maintenance without business priorities
+<p class="eyebrow">Mistake 9</p>
+
+## Maintenance without business priorities
 
 Not all website problems are created equal.
 
@@ -115,7 +133,9 @@ However, small issues with appearance can wait until scheduled maintenance. Prio
 
 <a id="maintenance-routine"></a>
 
-## Maintenance ChecklistWhat should a website maintenance routine include?
+<p class="eyebrow">Maintenance Checklist</p>
+
+## What should a website maintenance routine include?
 
 Maintenance does not have to be complicated, yet it should be consistent.
 
@@ -125,13 +145,17 @@ It all depends on the particular website, and for corporate websites that have m
 
 <a id="final-thoughts"></a>
 
-## ConclusionFinal thoughts
+<p class="eyebrow">Conclusion</p>
+
+## Final thoughts
 
 Web site management is most effective when the business considers the site to be an integrated system rather than just a set of pages and plug-ins. Effective ownership, backup tests, security of access, integration tests, and technical evaluations will allow your team to spot any issues sooner.
 
 <a id="author"></a>
 
-## ContributorAuthor’s bio
+<p class="eyebrow">Contributor</p>
+
+## Author’s bio
 
 Yuliya Melnik is a technical writer at [Cleveroad](https://cleveroad.com/), a web and mobile application development company. She is passionate about innovative technologies that make the world a better place and loves creating content that evokes vivid emotions.
 

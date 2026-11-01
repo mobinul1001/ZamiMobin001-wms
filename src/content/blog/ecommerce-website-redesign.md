@@ -23,7 +23,9 @@ Done right, an ecommerce redesign lifts conversions, speeds up your store, and g
 
 <a id="signs"></a>
 
-## DiagnosisSigns Your Ecommerce Website Needs a Redesign
+<p class="eyebrow">Diagnosis</p>
+
+## Signs Your Ecommerce Website Needs a Redesign
 
 Not every store needs a full redesign — sometimes targeted fixes are enough. But if several of these signs apply, a redesign is likely justified.
 
@@ -45,7 +47,9 @@ If one of these is true, a targeted fix may solve it. If several fire at once, i
 
 <a id="worth"></a>
 
-## The PayoffWhy Redesigning Your Ecommerce Site Is Worth It
+<p class="eyebrow">The Payoff</p>
+
+## Why Redesigning Your Ecommerce Site Is Worth It
 
 A well-executed redesign isn't a cost — it's an investment that compounds. Because ecommerce ties directly to revenue, even small improvements pay off fast.
 
@@ -55,7 +59,9 @@ The math is simple: **if a redesign lifts your conversion rate by even a point o
 
 <a id="how"></a>
 
-## Do It SafelyHow to Redesign an Ecommerce Website Without Losing Sales or SEO
+<p class="eyebrow">Do It Safely</p>
+
+## How to Redesign an Ecommerce Website Without Losing Sales or SEO
 
 This is where ecommerce redesigns get dangerous. Stores have more moving parts than any other site — product catalogs, payment gateways, inventory systems, thousands of URLs — and each is a chance to lose sales or rankings. Here's how to do it safely.
 
@@ -75,7 +81,9 @@ This is where ecommerce redesigns get dangerous. Stores have more moving parts t
 
 <a id="cost"></a>
 
-## PricingHow Much Does an Ecommerce Website Redesign Cost?
+<p class="eyebrow">Pricing</p>
+
+## How Much Does an Ecommerce Website Redesign Cost?
 
 Ecommerce redesigns are their own pricing category because of the extra complexity. In 2026, most store redesigns run **$5,000 to $50,000+**, depending on scope.
 
@@ -89,13 +97,17 @@ One line worth budgeting separately: SEO and catalog migration. Moving thousands
 
 <a id="platform"></a>
 
-## PlatformsPlatform Notes: WooCommerce, Shopify, and Beyond
+<p class="eyebrow">Platforms</p>
+
+## Platform Notes: WooCommerce, Shopify, and Beyond
 
 The right approach depends on your platform. **WooCommerce** stores (on WordPress) rely on many plugins for payments, shipping, and subscriptions, so a redesign means testing every plugin interaction and hardening security. **Shopify** handles hosting for you, but themes, apps, and SEO still need careful migration. **Magento and BigCommerce** stores are typically larger and need more attention to catalog migration, performance, and integrations. Whatever the platform, the safe-redesign principles are the same — protect your URLs, your checkout, and your rankings.
 
 <a id="maintenance"></a>
 
-## After LaunchDon't Forget: A Store Needs Maintenance After the Redesign
+<p class="eyebrow">After Launch</p>
+
+## Don't Forget: A Store Needs Maintenance After the Redesign
 
 A redesign resets your store, but it doesn't keep it healthy. Online stores decay faster than any other site — plugins update, security threats evolve, a payment gateway breaks after an update, catalogs grow messy. Without ongoing maintenance, the same slow decline that forced this redesign starts again, and a broken checkout or slow page quietly costs you sales.
 
@@ -103,7 +115,9 @@ Ongoing maintenance — updates tested on staging, security monitoring, checkout
 
 <a id="expert"></a>
 
-## Get HelpPlanning an Ecommerce Redesign? Get an Expert Eye First
+<p class="eyebrow">Get Help</p>
+
+## Planning an Ecommerce Redesign? Get an Expert Eye First
 
 An ecommerce redesign is one of the highest-return projects a store can invest in — and one of the easiest to get wrong, because a single broken checkout step or missing redirect costs real revenue. The stores that redesign successfully are the ones that plan the SEO and the buying flow before the design, not after.
 
@@ -113,7 +127,9 @@ Get a free store audit and we'll show you honestly whether your ecommerce site n
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How much does an ecommerce website redesign cost?</summary><div>Most ecommerce redesigns cost $5,000 to $50,000+ in 2026. A smaller WooCommerce or Shopify store lands at the lower end, while large catalogs, custom features like subscriptions or multi-currency, and platform migrations push toward the higher end. Product count, checkout complexity, and SEO migration are the main cost drivers.</div></details><details><summary>What are the signs my ecommerce website needs a redesign?</summary><div>The main signs are dropping conversion rates, high cart abandonment, slow load times, a poor mobile experience, a dated or untrustworthy look, an inability to support how you sell now, and an outdated or insecure platform. Several of these together mean it's time.</div></details><details><summary>How do I redesign my ecommerce site without losing sales or rankings?</summary><div>Audit and benchmark your store first, preserve product and category URLs with 301 redirects for any that change, migrate your catalog and metadata carefully, and test the checkout and integrations obsessively on staging before launch. Then monitor Search Console daily for the first month.</div></details><details><summary>Will an ecommerce redesign hurt my SEO?</summary><div>It can if handled carelessly — mainly through changing product URLs without redirects or thinning ranking content. Done with SEO planned from the start, a redesign usually preserves rankings and often improves them thanks to better speed and structure.</div></details><details><summary>How long does an ecommerce website redesign take?</summary><div>Most ecommerce redesigns take 8–16 weeks. A simpler store on WooCommerce or Shopify can hit the shorter end, while a large catalog migration or heavily customized store takes 14–16 weeks or more, largely due to catalog migration and checkout testing.</div></details><details><summary>Is it better to redesign or rebuild my ecommerce store?</summary><div>Redesign when your platform is sound but the look, speed, or checkout need work. Rebuild or migrate platforms when your current system is outdated, insecure, or can't support how you sell. An audit is the fastest way to know which one your store actually needs.</div></details>
 

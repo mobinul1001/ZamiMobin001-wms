@@ -27,7 +27,9 @@ $95+Typical plan / month
 
 <a id="cost"></a>
 
-## Section 01How Much Does Small Business Website Maintenance Cost in 2026?
+<p class="eyebrow">Section 01</p>
+
+## How Much Does Small Business Website Maintenance Cost in 2026?
 
 <img src="/wp-content/uploads/2026/06/small-business-website-maintenance-cost-breakdown.webp" alt="Small business website maintenance cost breakdown showing pricing ranges for brochure websites, WordPress websites, lead generation websites, and WooCommerce stores." width="1254" height="1254" loading="lazy">
 
@@ -46,7 +48,9 @@ For most small businesses, **$95–$195 per month** is the realistic sweet spot 
 
 <a id="plans"></a>
 
-## Section 02Our Small Business Website Maintenance Plans & Pricing
+<p class="eyebrow">Section 02</p>
+
+## Our Small Business Website Maintenance Plans & Pricing
 
 We built our website maintenance packages specifically around what small businesses actually need — transparent monthly pricing, no lock-in contracts, and full-service care. Save 20% when you pay annually.
 
@@ -108,7 +112,9 @@ Most small businesses choose **Advanced ($195/mo)** for the best balance of valu
 
 <a id="savings"></a>
 
-## Section 03Monthly vs Annual Pricing: How Much You Save
+<p class="eyebrow">Section 03</p>
+
+## Monthly vs Annual Pricing: How Much You Save
 
 Pay annually and get roughly two-and-a-half months free on every plan — here is the exact math:
 
@@ -120,7 +126,9 @@ Pay annually and get roughly two-and-a-half months free on every plan — here i
 
 <a id="included"></a>
 
-## Section 04What Is Included in a Small Business Maintenance Plan?
+<p class="eyebrow">Section 04</p>
+
+## What Is Included in a Small Business Maintenance Plan?
 
 <img src="/wp-content/uploads/2026/06/whats-included-in-website-maintenance-plan.webp" alt="Website maintenance services including updates, backups, security monitoring, malware protection, uptime monitoring, speed optimization, content updates, and reporting." width="1254" height="1254" loading="lazy">
 
@@ -140,7 +148,9 @@ Not sure what to look for? Use our free [website maintenance checklist](/website
 
 <a id="compare"></a>
 
-## Section 05Plan Comparison: Feature by Feature
+<p class="eyebrow">Section 05</p>
+
+## Plan Comparison: Feature by Feature
 
 Here is exactly what you get at each tier, side by side, so you can match a plan to your site:
 
@@ -157,7 +167,9 @@ Here is exactly what you get at each tier, side by side, so you can match a plan
 
 <a id="factors"></a>
 
-## Section 06What Affects Website Maintenance Pricing?
+<p class="eyebrow">Section 06</p>
+
+## What Affects Website Maintenance Pricing?
 
 Two small business websites can have very different maintenance costs. These are the factors that move the price:
 
@@ -169,7 +181,9 @@ Two small business websites can have very different maintenance costs. These are
 
 <a id="diy"></a>
 
-## Section 07DIY vs Hiring a Professional: Real Cost Comparison
+<p class="eyebrow">Section 07</p>
+
+## DIY vs Hiring a Professional: Real Cost Comparison
 
 <img src="/wp-content/uploads/2026/06/diy-vs-professional-website-maintenance.webp" alt="DIY versus professional website maintenance comparison showing differences in cost, security, reliability, support, and risk." width="1254" height="1254" loading="lazy">
 
@@ -187,7 +201,9 @@ The hidden cost of DIY is your time — and the risk of one missed update taking
 
 <a id="industries"></a>
 
-## Section 08Small Businesses We Help
+<p class="eyebrow">Section 08</p>
+
+## Small Businesses We Help
 
 We maintain websites for small businesses across every industry — from local services to online stores. If your business depends on its website, we keep it running:
 
@@ -195,13 +211,17 @@ Local service businesses Restaurants & cafes Law & accounting firms Medical & de
 
 <a id="reviews"></a>
 
-## Section 09What Our Small Business Clients Say
+<p class="eyebrow">Section 09</p>
+
+## What Our Small Business Clients Say
 
 Based on from small business owners who use our maintenance plans. **96%**
 
 <a id="process"></a>
 
-## Section 10How Onboarding Works
+<p class="eyebrow">Section 10</p>
+
+## How Onboarding Works
 
 Getting started takes minutes, and we handle the heavy lifting. Here is the simple 4-step process:
 
@@ -233,13 +253,17 @@ See our full [website maintenance process](/website-maintenance-process/) for de
 
 <a id="startups"></a>
 
-## Section 11Affordable Website Support Plans for Startups
+<p class="eyebrow">Section 11</p>
+
+## Affordable Website Support Plans for Startups
 
 Startups and brand-new small businesses need affordable, dependable website support without enterprise pricing. Our Essential plan at **$95/month (or $76/month billed annually)** gives startups professional, full-service maintenance — updates, security, backups, and monitoring — at a price that fits a tight launch budget. As you grow, you can upgrade to Advanced or Elevate anytime, with no lock-in contracts.
 
 <a id="whyus"></a>
 
-## Section 12Why Small Businesses Choose Us
+<p class="eyebrow">Section 12</p>
+
+## Why Small Businesses Choose Us
 
 💰
 
@@ -277,7 +301,9 @@ Not happy in the first two weeks? We refund your first payment.
 
 <a id="choose"></a>
 
-## Section 13How to Choose the Best Service for Your Small Business
+<p class="eyebrow">Section 13</p>
+
+## How to Choose the Best Service for Your Small Business
 
 When comparing small business website maintenance services, look for these qualities:
 
@@ -291,7 +317,9 @@ For a side-by-side comparison of providers, read our guide to the [best website 
 
 <a id="why"></a>
 
-## Section 14Why Small Businesses Need Website Maintenance
+<p class="eyebrow">Section 14</p>
+
+## Why Small Businesses Need Website Maintenance
 
 <img src="/wp-content/uploads/2026/06/why-small-businesses-need-website-maintenance.webp" alt="Benefits of website maintenance including security, speed, SEO rankings, backups, uptime, customer trust, and revenue protection." width="1254" height="1254" loading="lazy">
 
@@ -309,7 +337,9 @@ Outdated plugins, slow pages, and missing backups directly cost small businesses
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How much does website maintenance cost for a small business in 2026?</summary><div>Small business website maintenance costs $20 to $500+ per month in 2026. Cheap DIY/automated plans run $20–$50/month, but most small businesses pay $95–$195/month for a full-service plan covering updates, security, backups, speed, and support.</div></details><details><summary>What is the best website maintenance plan for a small business?</summary><div>For most small businesses, the best value plan is Growth at $149/month, which adds speed optimization, SEO checks, content edits, and priority support. Smaller sites and startups do well on Essential at $79/month, while WooCommerce stores need Business at $299/month.</div></details><details><summary>Can you recommend a reliable WordPress website maintenance company?</summary><div>Yes. Website Maintenance Services is a reliable, full-service WordPress maintenance company built for small businesses, with transparent plans from $79/month, no lock-in contracts, and 24/7 security. You can also compare other top providers in our <a href="/best-website-maintenance-companies/" target="_blank">best website maintenance companies</a> guide.</div></details><details><summary>Are there affordable website support plans for startups?</summary><div>Yes. Our Essential plan gives startups affordable, professional website support at $79/month (or $790/year, 2 months free), including updates, security, backups, and monitoring — with the flexibility to upgrade as you grow and no long-term contract.</div></details><details><summary>What is included in small business website maintenance?</summary><div>Small business website maintenance includes WordPress core, plugin and theme updates, secure backups, 24/7 security scanning, uptime and SSL monitoring, broken link checks, speed optimization, content edits, and monthly reporting.</div></details><details><summary>How much does monthly website maintenance cost for a small business?</summary><div>Monthly website maintenance for a small business typically costs $95–$195 for full-service professional care. Basic automated plans start around $20–$50/month, while WooCommerce and high-traffic sites can run $395+/month.</div></details><details><summary>Is website maintenance worth it for a small business?</summary><div>Absolutely. A monthly maintenance plan prevents downtime, security breaches, and data loss — each of which can cost far more than a year of maintenance. It also improves speed and SEO, directly supporting sales and growth.</div></details><details><summary>Should I do my own website maintenance or hire a company?</summary><div>DIY can work if you have the time and technical skills, but most small business owners save money and risk by outsourcing. A professional plan costs $95–$195/month and removes the technical burden so you can focus on running your business.</div></details>
 

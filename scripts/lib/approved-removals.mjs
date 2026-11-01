@@ -14,6 +14,13 @@ const REMOVALS = {
     head.remove();
     cards.remove();
   },
+  // The old JavaScript post list: a filter row and hidden placeholders ("Loading Title..."). Never visible as content.
+  // BlogIndex.astro lists every article in plain links instead.
+  '/blogs/': ($) => {
+    const list = $('#localReadModal').closest('.grid-local-wrapper');
+    if (!list.find('#noPostsFoundBox').length) throw new Error('/blogs/: old post list not found');
+    list.remove();
+  },
   // Owner, 2026-11-01: placeholder "John Doe" testimonial and the unconfirmed "500+" claim.
   '/contact/': ($) => {
     const heading = $('h4').filter((_, e) => /Trusted by 500\+ Businesses/.test($(e).text())).first();
@@ -26,7 +33,7 @@ const REMOVALS = {
 export const hasApprovedRemoval = (path) => path in REMOVALS;
 
 // A removal may only take the block the owner approved. Anything bigger stops the run.
-const MAX_WORDS = { '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
+const MAX_WORDS = { '/blogs/': 40, '/': 170, '/monthly-website-maintenance-packages/': 240, '/contact/': 150 };
 const countWords = ($) => $('body').text().trim().split(/\s+/).length;
 
 export function applyApprovedRemovals($, path) {

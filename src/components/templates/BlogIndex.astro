@@ -1,0 +1,27 @@
+---
+// Blog index. The old page filled its list with JavaScript; this one lists every article in plain links.
+import { getCollection } from 'astro:content';
+import hubs from '../../data/blog-hubs.json';
+import { splitBy } from '../../lib/html-sections';
+
+const { entry } = Astro.props;
+const posts = await getCollection('blog');
+const find = (s: string) => posts.find((p) => p.data.path === `/${s}/`);
+const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
+---
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
+  <div class="page-head"><h1>{entry.data.h1}</h1></div>
+  <div class="prose" style="max-width:70ch" set:html={intro} />
+  {hubs.map((t) => (
+    <section class="post-topic">
+      <h2>{t.name}</h2>
+      <div class="post-list">
+        {t.posts.map((s) => (
+          <a class="post-link" href={`/${s}/`}><b>{find(s)?.data.h1}</b>{find(s)?.data.updatedAt && <span class="small muted">Updated {new Date(find(s)!.data.updatedAt!).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>}</a>
+        ))}
+      </div>
+    </section>
+  ))}
+  {sections.map((s) => <div class="prose" style="margin-block:48px;max-width:70ch" set:html={s.html} />)}
+</div>

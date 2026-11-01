@@ -23,7 +23,9 @@ categories: ["Industry"]
 
 <a id="what"></a>
 
-## The BaselineWhat FixRunner Offers
+<p class="eyebrow">The Baseline</p>
+
+## What FixRunner Offers
 
 Let's give credit first: FixRunner earned its reputation. It's a WordPress maintenance and support service with more than a decade in the business, a widely cited one-hour response commitment, and a publicly displayed satisfaction rate near 99% across 150,000+ resolved tickets. Its reported 2026 plans start around **$59/month** (annual, with about 90 minutes of support time), rising through **Rocket** (~$89/month), **Advanced** (~$149/month), and enterprise tiers above that. All plans include core, theme, and plugin updates, malware removal, daily backups, uptime monitoring, security scans, and even speed optimization on the cheapest plan — plus a support-ticket system for on-demand fixes.
 
@@ -31,7 +33,9 @@ For owners who mainly want fast, ad-hoc technical help, that's a genuinely good 
 
 <a id="why"></a>
 
-## The GapsWhy People Look for a FixRunner Alternative
+<p class="eyebrow">The Gaps</p>
+
+## Why People Look for a FixRunner Alternative
 
 These aren't attacks on FixRunner — they're the practical reasons real site owners shop around. If any of these matter to you, an alternative may fit better:
 
@@ -49,7 +53,9 @@ These aren't attacks on FixRunner — they're the practical reasons real site ow
 
 <a id="lookfor"></a>
 
-## ChecklistWhat to Look For in a FixRunner Alternative
+<p class="eyebrow">Checklist</p>
+
+## What to Look For in a FixRunner Alternative
 
 Whatever provider you choose, judge it on these criteria — they separate a real maintenance partner from a metered support line:
 
@@ -69,7 +75,9 @@ Whatever provider you choose, judge it on these criteria — they separate a rea
 
 <a id="compare"></a>
 
-## Side by SideFixRunner vs Website Maintenance Services
+<p class="eyebrow">Side by Side</p>
+
+## FixRunner vs Website Maintenance Services
 
 Here's how FixRunner's entry plan compares with [Website Maintenance Services](/) on the things that actually decide value. FixRunner is cheaper on the sticker — but watch what happens once hosting, contracts, and inclusions enter the picture.
 
@@ -92,7 +100,9 @@ FixRunner figures reflect publicly reported 2026 pricing and features and may ch
 
 <a id="pricing"></a>
 
-## The NumbersPricing — and the True Cost Most People Miss
+<p class="eyebrow">The Numbers</p>
+
+## Pricing — and the True Cost Most People Miss
 
 Sticker price is the first thing everyone compares — and the most misleading, because the cheapest fee usually leaves hosting out. Here's the reported entry-tier monthly pricing across well-known providers in 2026:
 
@@ -146,7 +156,9 @@ Once hosting is in the equation, the "premium" $95 becomes the *lower* real cost
 
 <a id="us"></a>
 
-## Our Top PickThe Best-Value FixRunner Alternative: Website Maintenance Services
+<p class="eyebrow">Our Top Pick</p>
+
+## The Best-Value FixRunner Alternative: Website Maintenance Services
 
 <img src="/wp-content/uploads/2026/07/wms-brand-avatar-logo.webp" alt="Website Maintenance Services logo" width="64" height="64" loading="lazy">
 
@@ -226,7 +238,9 @@ Instead of a maintenance plan here, a hosting bill there, and separate SEO and c
 
 <a id="choose"></a>
 
-## DecideHow to Choose the Right One for You
+<p class="eyebrow">Decide</p>
+
+## How to Choose the Right One for You
 
 There's no single "best" WordPress service for everyone — only the best fit for your site, budget, and how you like to work. Match it to your situation:
 
@@ -240,7 +254,9 @@ Whatever you pick, insist on the checklist above — hosting handled, flexible t
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>Is FixRunner a good WordPress maintenance service?</summary><div>Yes — FixRunner is a credible, established provider known for fast one-hour response times, a large volume of resolved support tickets, and a high self-reported satisfaction rate. It's especially strong for on-demand emergency fixes. It's a solid choice, but not automatically the best fit for every budget or need, which is why many owners compare it against alternatives first.</div></details><details><summary>Why would I choose a FixRunner alternative?</summary> </details> <details><summary>What is the best-value FixRunner alternative?</summary><div>On overall value, Website Maintenance Services is our top pick. You get the same core protection as FixRunner — staging-safe updates, backups, security, and 24/7 emergency support — plus 1 year of free hosting, 2 free business webmails, a free month of maintenance, cancel-anytime terms, WhatsApp emergency support, and no hidden charges. Because FixRunner charges separately for hosting, the real first-year value difference is significant.</div></details><details><summary>How much does FixRunner cost in 2026?</summary><div>FixRunner's reported plans start around $59/month (annual) with about 90 minutes of support time, rising through roughly $89/month and $149/month tiers to enterprise pricing above that. Hosting is an optional extra, and plans reportedly carry a three-month minimum — so the true monthly cost, including hosting, is higher than the entry sticker suggests.</div></details><details><summary>Does FixRunner include hosting?</summary><div>No. FixRunner maintains your WordPress site but hosting is an optional add-on, provided through third parties like WP Engine or SiteGround, which typically adds $30–$100/month. Providers that bundle hosting — or include it free for an initial period, as Website Maintenance Services does — reduce your true total cost.</div></details><details><summary>Can I switch maintenance providers without losing my site?</summary><div>Yes, as long as you own your domain, hosting, and site with full access. A good provider never locks you in — you can move to another service and take everything with you. Before signing with anyone, confirm in writing that you retain ownership and full access to your domain, hosting, content, and data.</div></details>
 

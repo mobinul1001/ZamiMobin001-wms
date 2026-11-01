@@ -25,7 +25,9 @@ In plain terms: **hosting** is the service that stores your website's files on a
 
 <a id="what"></a>
 
-## The BasicsWhat Is Website Hosting and Maintenance?
+<p class="eyebrow">The Basics</p>
+
+## What Is Website Hosting and Maintenance?
 
 In plain terms: **hosting** is the service that stores your website's files on a server and makes them available on the internet, so anyone who types your address can load your site. **Maintenance** is the ongoing work that keeps that site secure, updated, fast, and functioning properly once it's live.
 
@@ -35,7 +37,9 @@ You need both, and they work together. Hosting without maintenance leaves you wi
 
 <a id="difference"></a>
 
-## Hosting vs MaintenanceThe Difference Between Website Hosting and Website Maintenance
+<p class="eyebrow">Hosting vs Maintenance</p>
+
+## The Difference Between Website Hosting and Website Maintenance
 
 Because the two are so often bundled, people mix them up. Here's the clear line.
 
@@ -60,7 +64,9 @@ The simplest distinction: hosting keeps your site *online*; maintenance keeps it
 
 <a id="included"></a>
 
-## What You GetWhat's Included in a Website Hosting and Maintenance Package
+<p class="eyebrow">What You Get</p>
+
+## What's Included in a Website Hosting and Maintenance Package
 
 Many providers bundle hosting and maintenance into a single managed package — and for most businesses, that's the simplest route. A typical combined package includes:
 
@@ -79,7 +85,9 @@ The big advantage of a bundled managed package is accountability. When hosting a
 
 <a id="cost"></a>
 
-## PricingHow Much Does Website Hosting and Maintenance Cost?
+<p class="eyebrow">Pricing</p>
+
+## How Much Does Website Hosting and Maintenance Cost?
 
 Costs depend on your site's size and how much support you need, but here's a realistic 2026 picture.
 
@@ -93,7 +101,9 @@ The factors that move the price: your site's size and traffic, how often content
 
 <a id="managed"></a>
 
-## How It WorksHow Does Managed Hosting and Maintenance Work?
+<p class="eyebrow">How It Works</p>
+
+## How Does Managed Hosting and Maintenance Work?
 
 A managed hosting and maintenance arrangement is designed so you don't have to think about the technical side at all. In practice: your provider hosts the site on reliable infrastructure, keeps the server secure and running, applies and tests updates on a staging copy before they touch your live site, monitors security and uptime around the clock, backs everything up off-site, fixes issues as they arise, and sends you a regular report.
 
@@ -101,7 +111,9 @@ You get one point of contact for anything related to your site being online and 
 
 <a id="contract"></a>
 
-## AgreementsDo You Need a Hosting and Maintenance Agreement or Contract?
+<p class="eyebrow">Agreements</p>
+
+## Do You Need a Hosting and Maintenance Agreement or Contract?
 
 If you're working with a provider, a clear agreement protects both sides. A good hosting and maintenance contract or service agreement should spell out exactly what's included (hosting specs, which maintenance tasks, how often), the response times for different types of issues (an SLA), what happens in an emergency, backup and security responsibilities, and how domain and data ownership work if you ever move providers.
 
@@ -109,7 +121,9 @@ The key is specificity. Vague agreements lead to disputes about what should and 
 
 <a id="bundle"></a>
 
-## DecisionShould You Bundle Hosting and Maintenance, or Keep Them Separate?
+<p class="eyebrow">Decision</p>
+
+## Should You Bundle Hosting and Maintenance, or Keep Them Separate?
 
 You can run hosting and maintenance separately — a hosting company for the server and a different provider for the upkeep — and some businesses prefer that. But for most small and mid-size businesses, a bundled managed package wins on three fronts: it's usually cheaper than buying both separately, it's simpler (one bill, one point of contact), and it removes the blame game when an issue crosses the line between "server problem" and "website problem."
 
@@ -117,7 +131,9 @@ The exception is if you're on a fully managed platform like a SaaS website build
 
 <a id="allinone"></a>
 
-## One PlaceKeep Your Site Online, Secure, and Looked After — All in One Place
+<p class="eyebrow">One Place</p>
+
+## Keep Your Site Online, Secure, and Looked After — All in One Place
 
 Hosting and maintenance aren't optional extras; they're the two things that keep your website both available and working. Trying to manage them separately, or ignoring maintenance because the site "seems fine," is how businesses end up with slow, insecure, or offline sites at the worst possible moment.
 
@@ -129,7 +145,9 @@ Get a free website audit and we'll show you exactly what your site needs, with c
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What is website hosting and maintenance?</summary><div>Website hosting is the service that stores your site's files on a server and makes it accessible on the internet. Website maintenance is the ongoing work — updates, security, backups, performance, and fixes — that keeps the live site secure and working well. You need both: hosting keeps your site online, maintenance keeps it working.</div></details><details><summary>What's the difference between website hosting and website maintenance?</summary><div>Hosting provides the server space, connection, and bandwidth that make your site available online. Maintenance is the upkeep of the actual website — software updates, security, backups, speed, and bug fixes. Your host keeps the server running; your maintenance provider keeps the website itself healthy.</div></details><details><summary>How much does website hosting and maintenance cost?</summary><div>Hosting alone ranges from a few dollars to $100+ per month, and maintenance alone runs $50–$500+ per month depending on scope. Bundled hosting and maintenance packages commonly cost $50–$300+ per month for small-to-mid business sites, and bundling is usually cheaper than buying the two separately.</div></details><details><summary>Should I bundle hosting and maintenance together?</summary><div>For most businesses, yes. A bundled managed package is usually cheaper, simpler (one bill and one point of contact), and eliminates finger-pointing when an issue falls between the server and the website. Keeping them separate can make sense for larger sites with dedicated technical teams.</div></details><details><summary>What's included in a hosting and maintenance package?</summary><div>A typical package includes reliable hosting, SSL, software and plugin updates, security monitoring and malware scanning, off-site backups, performance optimization, uptime monitoring, bug fixes, small content updates, support, and monthly reporting — all managed by one provider.</div></details><details><summary>Do I need a website hosting and maintenance contract?</summary><div>A clear agreement is strongly recommended. It should specify exactly what's included, response times for issues (an SLA), emergency procedures, backup and security responsibilities, and how domain and data ownership work if you switch providers. Specificity prevents disputes over what's covered.</div></details>
 

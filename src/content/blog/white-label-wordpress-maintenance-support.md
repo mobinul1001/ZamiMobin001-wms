@@ -33,7 +33,9 @@ $39+Per site / month at volume
 
 <a id="what"></a>
 
-## Section 01What Is White Label WordPress Maintenance?
+<p class="eyebrow">Section 01</p>
+
+## What Is White Label WordPress Maintenance?
 
 White label WordPress maintenance (also called white label WP maintenance, white-label WP care, or reseller WordPress support) is a service where a specialist provider performs all WordPress maintenance work for your clients, delivered entirely under *your* brand. Your clients see your logo, your plan names, and your reports — never the provider's.
 
@@ -43,7 +45,9 @@ For context on what maintenance involves and typical retail rates, see our guide
 
 <a id="how"></a>
 
-## Section 02How White Label WordPress Support Works
+<p class="eyebrow">Section 02</p>
+
+## How White Label WordPress Support Works
 
 The white-label model is simple and fully behind the scenes. Here is the 4-step workflow:
 
@@ -81,7 +85,9 @@ See exactly [how our maintenance process works](/website-maintenance-process/) �
 
 <a id="included"></a>
 
-## Section 03What's Included in White Label WordPress Care Plans
+<p class="eyebrow">Section 03</p>
+
+## What's Included in White Label WordPress Care Plans
 
 Our white label WordPress maintenance plans cover every task your clients need to keep their sites secure, fast, and online — all done by our team, branded as yours:
 
@@ -98,7 +104,9 @@ Compare these tasks against our full [website maintenance checklist](/website-ma
 
 <a id="plans"></a>
 
-## Section 04White Label Plans & Per-Site Pricing
+<p class="eyebrow">Section 04</p>
+
+## White Label Plans & Per-Site Pricing
 
 Three white-label tiers at wholesale per-site rates — you mark them up and resell as your own. Prices below are **what you pay us per client site**; you set the retail price your client pays. Save with annual billing.
 
@@ -157,7 +165,9 @@ Annual billing saves roughly 20% (about 2.4 months free) on every tier. Browse t
 
 <a id="volume"></a>
 
-## Section 05Volume Pricing: How Many Client Sites, What Price
+<p class="eyebrow">Section 05</p>
+
+## Volume Pricing: How Many Client Sites, What Price
 
 The more client sites you bring, the lower your per-site rate. Discounts stack automatically — here is exactly what you pay per site per month based on how many sites you manage with us:
 
@@ -172,7 +182,9 @@ Prices are per site per month. Annual billing applies an additional discount on 
 
 <a id="earn"></a>
 
-## Section 06How Much Can You Earn? (Margin Example)
+<p class="eyebrow">Section 06</p>
+
+## How Much Can You Earn? (Margin Example)
 
 White-label is profitable because you buy wholesale and sell retail. Here is a realistic example using our most popular Advanced tier:
 
@@ -188,7 +200,9 @@ Most agencies price their white label WordPress care plans at 2-3x the wholesale
 
 <a id="vs"></a>
 
-## Section 07White Label WordPress Maintenance vs GoWP & WP Buffs
+<p class="eyebrow">Section 07</p>
+
+## White Label WordPress Maintenance vs GoWP & WP Buffs
 
 How does our white-label program compare to other popular providers? Here is an honest 2026 comparison (competitor pricing as published; confirm current rates with each provider):
 
@@ -208,7 +222,9 @@ GoWP wins on the lowest entry price; WP Buffs is a strong established brand. Our
 
 <a id="who"></a>
 
-## Section 08Who White Label WordPress Maintenance Is For
+<p class="eyebrow">Section 08</p>
+
+## Who White Label WordPress Maintenance Is For
 
 If you serve clients with WordPress sites but do not want to run maintenance yourself, white-label is for you:
 
@@ -216,7 +232,9 @@ Web design agencies Freelance designers WordPress developers Digital marketing a
 
 <a id="benefits"></a>
 
-## Section 09Benefits of White Label WordPress Support for Your Agency
+<p class="eyebrow">Section 09</p>
+
+## Benefits of White Label WordPress Support for Your Agency
 
 💰
 
@@ -260,7 +278,9 @@ White label WordPress support helps agencies increase recurring revenue, improve
 
 <a id="compare"></a>
 
-## Section 10White Label vs In-House vs Hiring
+<p class="eyebrow">Section 10</p>
+
+## White Label vs In-House vs Hiring
 
 Why partner instead of building maintenance yourself? Here is the honest comparison:
 
@@ -273,7 +293,9 @@ Why partner instead of building maintenance yourself? Here is the honest compari
 
 <a id="start"></a>
 
-## Section 11How to Start Offering White Label WordPress Care
+<p class="eyebrow">Section 11</p>
+
+## How to Start Offering White Label WordPress Care
 
 1
 
@@ -309,11 +331,15 @@ Questions before you apply? [Contact our partner team](/contact/) and we will wa
 
 <a id="reviews"></a>
 
-## Section 12What Our Agency Partners Say
+<p class="eyebrow">Section 12</p>
+
+## What Our Agency Partners Say
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What is white label WordPress maintenance?</summary><div>White label WordPress maintenance is a service where a specialist provider performs all WordPress maintenance — updates, security, backups, speed, and support — for your clients, delivered entirely under your brand. Your clients only ever see your logo and reports.</div></details><details><summary>How much does white label WordPress maintenance cost?</summary><div>Wholesale per-site pricing starts at $49/month for Essential, $99/month for Advanced, and $179/month for Elevate. Volume discounts bring this down to $39, $79, and $143 per site at 10+ sites, with extra savings on annual billing. You set your own retail price and keep the margin.</div></details><details><summary>How is your pricing different for more client sites?</summary><div>Pricing drops as you add sites: standard rate for 1-4 sites, 10% off for 5-9 sites, 20% off for 10-24 sites, and custom volume pricing for 25+ sites. Annual billing applies a further discount on top.</div></details><details><summary>How does white label WordPress support work?</summary><div>You sell a branded care plan to your client at your price, we do the maintenance work unbranded behind the scenes, reports go out under your logo, and you keep the margin between your retail price and our wholesale reseller rate.</div></details><details><summary>How much can I earn reselling white label WordPress care?</summary><div>Most partners mark up 2-3x. For example, buying Advanced at $79/site and reselling at $195/site earns $116/site/month. Across 15 client sites that's $1,740/month, or about $20,880/year in recurring profit.</div></details><details><summary>How does it compare to GoWP and WP Buffs?</summary><div>GoWP starts cheaper (around $29/site) but bills speed and content as add-ons; WP Buffs starts around $71/site at partner rates. Our plans sit in between with more included at each tier, annual and volume discounts, and a dedicated account manager on Elevate.</div></details><details><summary>Is the service really white label?</summary><div>Yes. Everything your clients see — reports, update summaries, and support — carries your brand only. There are no links, logos, or mentions of us anywhere client-facing.</div></details><details><summary>Do you offer white label WordPress security services for client websites?</summary><div>Yes. Every plan includes 24/7 security scanning, malware protection, and secure backups, with malware removal and emergency recovery on higher tiers — all delivered under your brand.</div></details><details><summary>How do I become a white label WordPress maintenance partner?</summary><div>Request your reseller rate card, we onboard your branding and reports, you add your client sites, and you start selling your own branded care plans. The whole setup takes just a few days.</div></details>
 

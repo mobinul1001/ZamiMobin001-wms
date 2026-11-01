@@ -23,7 +23,9 @@ Here's the better answer, backed by real data: you should redesign your website 
 
 <a id="data"></a>
 
-## The DataThe Short Answer: What the Data Actually Says
+<p class="eyebrow">The Data</p>
+
+## The Short Answer: What the Data Actually Says
 
 If you want a benchmark, the research is fairly consistent. Studies of real websites put the average lifespan between roughly two and three years before a significant redesign — one widely cited study found about 2 years and 7 months, another around 2 years and 4 months. Surveys of marketers echo this: most report redesigning every one to three years.
 
@@ -39,7 +41,9 @@ So treat "every 2–3 years" as a loose average, not a deadline. The real trigge
 
 <a id="misleading"></a>
 
-## Myth-BustingWhy the "Every 2–3 Years" Rule Is Misleading
+<p class="eyebrow">Myth-Busting</p>
+
+## Why the "Every 2–3 Years" Rule Is Misleading
 
 The calendar rule fails because it ignores the two things that actually determine a website's lifespan: how well it was built, and how well it's maintained.
 
@@ -49,7 +53,9 @@ That's the part the timeline advice misses. Redesigning on a fixed schedule can 
 
 <a id="signs"></a>
 
-## SignalsThe Real Signs It's Time to Redesign Your Website
+<p class="eyebrow">Signals</p>
+
+## The Real Signs It's Time to Redesign Your Website
 
 Forget how old your site is. These are the signals that actually mean a redesign is due. One of them alone usually calls for a targeted fix; several at once mean it's time for a redesign.
 
@@ -75,7 +81,9 @@ The pattern to watch for: one signal is a fix, several signals firing together i
 
 <a id="refresh"></a>
 
-## Lighter OptionRedesign vs Refresh: You May Not Need a Full Rebuild
+<p class="eyebrow">Lighter Option</p>
+
+## Redesign vs Refresh: You May Not Need a Full Rebuild
 
 Before you budget for a full redesign, it's worth knowing that many sites don't need one. There's a lighter option that solves a lot of problems for a fraction of the cost.
 
@@ -91,7 +99,9 @@ The choice comes down to the diagnosis: if your site is fundamentally sound but 
 
 <a id="maintenance"></a>
 
-## The Real LeverHow Maintenance Extends Your Website's Lifespan
+<p class="eyebrow">The Real Lever</p>
+
+## How Maintenance Extends Your Website's Lifespan
 
 Here's the point most redesign articles skip: the single biggest factor in how often you'll need to redesign is how well you maintain the site in between.
 
@@ -101,7 +111,9 @@ A neglected site hits the "time to redesign" wall in about two years. A maintain
 
 <a id="framework"></a>
 
-## DecideHow to Decide: A Simple Framework
+<p class="eyebrow">Decide</p>
+
+## How to Decide: A Simple Framework
 
 Instead of asking "has it been three years?", ask these questions:
 
@@ -114,7 +126,9 @@ If your metrics are healthy, the site works on mobile, and it still fits your br
 
 <a id="seo"></a>
 
-## Protect RankingsProtect Your SEO Whenever You Redesign
+<p class="eyebrow">Protect Rankings</p>
+
+## Protect Your SEO Whenever You Redesign
 
 Whenever you do redesign, one warning matters above all others: a careless redesign can wipe out the search rankings you've spent years building. The most common cause is changing URLs without redirecting them.
 
@@ -122,7 +136,9 @@ Before launch, map every old URL to its new equivalent with 301 redirects, prese
 
 <a id="bottomline"></a>
 
-## Bottom LineThe Bottom Line
+<p class="eyebrow">Bottom Line</p>
+
+## The Bottom Line
 
 So, how often should you redesign your website? On average, businesses redesign every two to three years — but the average isn't your answer. Redesign when your data tells you to: when conversions slip, mobile fails, the platform ages out, or your brand and business outgrow the site.
 
@@ -134,7 +150,9 @@ Not sure whether your site needs a redesign, a refresh, or just better maintenan
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>How often should you redesign your website?</summary><div>On average, businesses redesign their website every two to three years, but the right timing depends on performance rather than the calendar. Redesign when conversions drop, the site fails on mobile, the platform becomes outdated, or your branding and business have outgrown the current site.</div></details><details><summary>What is the average lifespan of a website?</summary><div>Research on real websites puts the average lifespan at roughly two to three years before a significant redesign, though it varies widely by industry and by how well the site is built and maintained. Well-maintained sites often last five years or more.</div></details><details><summary>What's the difference between a website redesign and a refresh?</summary><div>A refresh updates the surface — layout, colors, typography, navigation — while keeping the existing platform. A redesign rebuilds the structure and often the platform itself. Choose a refresh for a dated look and a redesign for deeper performance, platform, or structural problems.</div></details><details><summary>What are the signs my website needs a redesign?</summary><div>The main signs are falling conversion rates, poor mobile experience, slow loading that optimization can't fix, rising bounce rates, a brand mismatch, outgrowing the site's structure, a dated look, difficulty editing content, and recurring security problems. Several signals at once mean it's time.</div></details><details><summary>Can maintenance help me avoid a redesign?</summary><div>Yes. Regular maintenance — updates, security, speed optimization, and content freshening — slows the decay that forces redesigns and can extend a healthy site's life to five years or more, making redesigns less frequent and less costly.</div></details><details><summary>Will I lose my SEO when I redesign my website?</summary><div>You can if it's done carelessly. The biggest risk is changing URLs without 301 redirects. Map old URLs to new ones, preserve on-page SEO for ranking pages, and monitor Search Console after launch to protect your traffic.</div></details>
 

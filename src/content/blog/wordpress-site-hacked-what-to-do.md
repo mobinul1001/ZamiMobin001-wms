@@ -33,7 +33,9 @@ $95/moPrevention via maintenance
 
 <a id="know"></a>
 
-## DetectHow Do I Know If My WordPress Site Has Been Hacked?
+<p class="eyebrow">Detect</p>
+
+## How Do I Know If My WordPress Site Has Been Hacked?
 
 Before you panic, it helps to confirm the hack. Here are the most common signs that your WordPress site has been compromised:
 
@@ -64,7 +66,9 @@ If you're seeing any of these signs — your site has almost certainly been hack
 
 <a id="step1"></a>
 
-## First 10 MinutesStep 1: Don't Panic — But Act Immediately
+<p class="eyebrow">First 10 Minutes</p>
+
+## Step 1: Don't Panic — But Act Immediately
 
 Time matters when your WordPress site is hacked. Every hour your site stays compromised:
 
@@ -81,7 +85,9 @@ Here is what to do in the first 10 minutes:
 
 <a id="step2"></a>
 
-## DiagnoseStep 2: Identify How Your WordPress Site Was Hacked
+<p class="eyebrow">Diagnose</p>
+
+## Step 2: Identify How Your WordPress Site Was Hacked
 
 Understanding how the hacker got in is essential to making sure they can't get back in. The most common entry points are:
 
@@ -111,7 +117,9 @@ Shared hosting environments with poor server isolation can allow a compromise on
 
 <a id="step3"></a>
 
-## PreserveStep 3: Back Up Your Hacked Site
+<p class="eyebrow">Preserve</p>
+
+## Step 3: Back Up Your Hacked Site
 
 This might feel counterintuitive — why would you back up a hacked site? Because:
 
@@ -123,7 +131,9 @@ Ask your hosting provider for all available backup snapshots, and note the dates
 
 <a id="step4"></a>
 
-## CleanStep 4: Clean Your Hacked WordPress Site
+<p class="eyebrow">Clean</p>
+
+## Step 4: Clean Your Hacked WordPress Site
 
 There are two approaches to cleaning a hacked WordPress site:
 
@@ -177,7 +187,9 @@ Log in to WordPress → Users → All Users and delete any accounts you don't re
 
 <a id="step5"></a>
 
-## SecureStep 5: Harden Your WordPress Site After a Hack
+<p class="eyebrow">Secure</p>
+
+## Step 5: Harden Your WordPress Site After a Hack
 
 Cleaning the infection is only half the job. If you don't fix the vulnerability that let the hacker in, they will be back within days.
 
@@ -241,7 +253,9 @@ A WAF like Cloudflare filters malicious traffic before it ever reaches your serv
 
 <a id="step6"></a>
 
-## Recover TrustStep 6: Remove the Google Blacklist Warning
+<p class="eyebrow">Recover Trust</p>
+
+## Step 6: Remove the Google Blacklist Warning
 
 If Google has flagged your site as dangerous, you need to request a review after cleaning. Here's how:
 
@@ -257,7 +271,9 @@ Also check **Bing Webmaster Tools** for a similar security flag, as Bing has its
 
 <a id="step7"></a>
 
-## ReindexStep 7: Request Removal of Spam URLs From Google's Index
+<p class="eyebrow">Reindex</p>
+
+## Step 7: Request Removal of Spam URLs From Google's Index
 
 If the hacker injected hundreds of spam pages into your site (as often happens with .htm injection attacks), those URLs may still be in Google's index even after you clean them.
 
@@ -267,7 +283,9 @@ You can also use the URL inspection tool to confirm that specific pages are no l
 
 <a id="time"></a>
 
-## TimelineHow Long Does WordPress Hack Recovery Take?
+<p class="eyebrow">Timeline</p>
+
+## How Long Does WordPress Hack Recovery Take?
 
 Recovery time depends on the severity of the hack:
 
@@ -282,7 +300,9 @@ Recovery time depends on the severity of the hack:
 
 <a id="repeat"></a>
 
-## Repeat HacksWhy Does My WordPress Site Keep Getting Hacked?
+<p class="eyebrow">Repeat Hacks</p>
+
+## Why Does My WordPress Site Keep Getting Hacked?
 
 If your site gets hacked repeatedly, the most common reasons are:
 
@@ -298,7 +318,9 @@ If your site gets hacked repeatedly, the most common reasons are:
 
 <a id="cost"></a>
 
-## True CostThe Real Cost of a Hacked WordPress Site
+<p class="eyebrow">True Cost</p>
+
+## The Real Cost of a Hacked WordPress Site
 
 Many people underestimate the full cost of a WordPress hack:
 
@@ -312,7 +334,9 @@ A professional website maintenance plan costs a fraction of a single hack cleanu
 
 <a id="prevent"></a>
 
-## PreventionHow Professional Website Maintenance Prevents WordPress Hacks
+<p class="eyebrow">Prevention</p>
+
+## How Professional Website Maintenance Prevents WordPress Hacks
 
 The vast majority of WordPress hacks are entirely preventable with proper maintenance. A professional website maintenance service:
 
@@ -350,7 +374,9 @@ At Website Maintenance Services, our security monitoring and maintenance plans h
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions About Hacked WordPress Sites
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions About Hacked WordPress Sites
 
 <details><summary>Can a hacked WordPress site be fully recovered?</summary><div>Yes, in the vast majority of cases. Even heavily infected sites can be cleaned and restored, especially if a clean backup exists from before the hack.</div></details><details><summary>Will Google remove my site from search results if it's hacked?</summary><div>Google may add a "This site may be hacked" warning to your search listings, and in severe cases may reduce your rankings. However, once you clean your site and request a review, these penalties are removed.</div></details><details><summary>How do hackers get into WordPress sites?</summary><div>The most common methods are: exploiting unpatched plugin or theme vulnerabilities, brute-forcing weak passwords, stealing FTP credentials, and exploiting vulnerabilities in poorly coded plugins or nulled themes.</div></details><details><summary>How long does it take for Google to remove the hacked site warning?</summary><div>Once you've cleaned your site and submitted a review request in Google Search Console, the warning is typically removed within 1–3 business days.</div></details><details><summary>Should I rebuild my WordPress site after a hack?</summary><div>Usually not necessary. A clean backup restore or thorough manual cleanup is faster and more reliable than rebuilding from scratch. However, if the site was very old and had many outdated components, a rebuild may be the better long-term investment.</div></details><details><summary>How much does it cost to fix a hacked WordPress site?</summary><div>DIY cleanup is free but time-consuming and risky if you miss backdoors. Professional hack cleanup services typically charge $200–$500 for a one-time cleanup. A monthly maintenance plan that prevents hacks entirely costs from $79/month.</div></details>
 

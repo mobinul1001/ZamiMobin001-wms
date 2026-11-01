@@ -25,7 +25,9 @@ Below is exactly what's covered, how often each task should happen, and why skip
 
 <a id="core"></a>
 
-## The CoreWhat Website Maintenance Includes: The Core Services
+<p class="eyebrow">The Core</p>
+
+## What Website Maintenance Includes: The Core Services
 
 A thorough maintenance service is proactive and systematic — not just "fixing things when they break." Here's what a complete plan covers.
 
@@ -67,7 +69,9 @@ Transparent monthly reports showing what was updated, what was backed up, securi
 
 <a id="frequency"></a>
 
-## CadenceHow Often Each Maintenance Task Should Happen
+<p class="eyebrow">Cadence</p>
+
+## How Often Each Maintenance Task Should Happen
 
 Website maintenance isn't one job on one schedule — different tasks run at different intervals. Here's a realistic rhythm.
 
@@ -91,7 +95,9 @@ The general rule: the more your website contributes to revenue, the more often i
 
 <a id="vs"></a>
 
-## ClarificationWebsite Maintenance vs Website Management: What's the Difference?
+<p class="eyebrow">Clarification</p>
+
+## Website Maintenance vs Website Management: What's the Difference?
 
 People use these terms interchangeably, but they're not the same — and knowing the difference saves you from paying for the wrong service.
 
@@ -107,7 +113,9 @@ The simplest way to think about it: maintenance keeps your site *alive*; managem
 
 <a id="why"></a>
 
-## Why It MattersWhy Website Maintenance Matters (and What Happens Without It)
+<p class="eyebrow">Why It Matters</p>
+
+## Why Website Maintenance Matters (and What Happens Without It)
 
 Think of your website like a car. Buy a high-performance vehicle and never change the oil, and eventually it breaks down — usually at the worst possible moment, right when a valuable lead is about to click "Contact Us."
 
@@ -117,7 +125,9 @@ And the math favors maintenance heavily. Calculate what a single hour of downtim
 
 <a id="diy"></a>
 
-## DIY vs ProShould You Do Website Maintenance Yourself or Hire a Professional?
+<p class="eyebrow">DIY vs Pro</p>
+
+## Should You Do Website Maintenance Yourself or Hire a Professional?
 
 You have two options, and the right one depends on your skills, time, and how much your site matters to your business.
 
@@ -129,13 +139,17 @@ A hybrid model — handling simple content updates in-house while outsourcing th
 
 <a id="look"></a>
 
-## ChecklistWhat to Look For in a Maintenance Plan
+<p class="eyebrow">Checklist</p>
+
+## What to Look For in a Maintenance Plan
 
 If you're choosing a provider, make sure the plan includes a clear scope and SLA (exactly what's covered, how often, and response times), staging-environment testing for updates, off-site backup storage, and transparent monthly reporting. Vague agreements lead to disputes about what should and shouldn't be covered, so insist on specifics.
 
 <a id="keep"></a>
 
-## No GuessworkKeep Your Site Secure, Fast, and Working — Without the Guesswork
+<p class="eyebrow">No Guesswork</p>
+
+## Keep Your Site Secure, Fast, and Working — Without the Guesswork
 
 Website maintenance isn't a luxury or an optional line item — it's the ongoing care that protects your rankings, your revenue, and your customers' trust. The question isn't really *whether* to maintain your site, but whether you want to do it yourself or leave it to people who do it every day.
 
@@ -147,7 +161,9 @@ Get a free website audit and we'll show you exactly what your site needs to stay
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What does website maintenance include?</summary><div>Website maintenance includes software, plugin, and theme updates; security monitoring and malware scanning; regular off-site backups; performance optimization; uptime monitoring; bug fixes; content updates; and SEO upkeep. Comprehensive plans also provide transparent monthly reporting on everything that was done.</div></details><details><summary>How often should website maintenance be done?</summary><div>Maintenance runs on different schedules: security monitoring and backups daily, uptime and error checks weekly, software updates and performance reviews monthly, and deeper SEO, content, and backup-restore reviews quarterly. The more your site drives revenue, the more frequent the attention it needs.</div></details><details><summary>What's the difference between website maintenance and website management?</summary><div>Maintenance is the technical upkeep — updates, security, backups, and bug fixes — that keeps your site running. Management is broader, adding strategic work like SEO, content, and conversion optimization to actively grow the site. Maintenance keeps your site alive; management makes it work harder.</div></details><details><summary>Do I really need website maintenance?</summary><div>Yes, if your website matters to your business. Without it, performance degrades, security risks build up, and rankings slip. Since a single hour of downtime or one security breach can cost more than months of maintenance, ongoing care almost always pays for itself.</div></details><details><summary>Can I do website maintenance myself?</summary><div>You can handle basic tasks like content updates and backups if you have the time and technical comfort, especially on a simple site. But complex issues, security, and staging-tested updates are hard to manage alone. Many businesses use a hybrid approach or hire a professional for the technical work.</div></details><details><summary>What does a WordPress maintenance plan include?</summary><div>A WordPress maintenance plan typically includes core, theme, and plugin updates tested on staging; security scanning and malware protection; off-site backups; performance and database optimization; uptime monitoring; broken-link and SEO checks; and monthly reporting. WordPress needs regular updates because its plugins and themes are frequent targets for attackers.</div></details>
 

@@ -25,7 +25,9 @@ The difference comes down entirely to how SEO is handled during the redesign. Th
 
 <a id="affect"></a>
 
-## The ImpactDoes a Website Redesign Affect SEO?
+<p class="eyebrow">The Impact</p>
+
+## Does a Website Redesign Affect SEO?
 
 Yes. A website redesign almost always affects SEO, and usually there's some short-term volatility even when everything is done correctly. The question isn't *whether* it affects SEO — it's whether that effect is a temporary dip you recover from in weeks, or a permanent loss that takes months or never fully heals.
 
@@ -40,7 +42,9 @@ When these change without a plan, Google effectively has to re-evaluate large pa
 
 <a id="dayone"></a>
 
-## Day OneWhy SEO Must Be Part of the Redesign From Day One
+<p class="eyebrow">Day One</p>
+
+## Why SEO Must Be Part of the Redesign From Day One
 
 The single most expensive mistake businesses make is bringing SEO in *after* the new site is designed and built. By then the damage is often already baked in.
 
@@ -50,7 +54,9 @@ For a redesign to protect your SEO, search has to have a seat at the table from 
 
 <a id="mistakes"></a>
 
-## Avoid TheseThe Most Common SEO Mistakes That Destroy Rankings During a Redesign
+<p class="eyebrow">Avoid These</p>
+
+## The Most Common SEO Mistakes That Destroy Rankings During a Redesign
 
 Most redesign traffic loss is self-inflicted, not Google's doing. These are the mistakes that cause it — and every one is preventable.
 
@@ -70,7 +76,9 @@ Most redesign traffic loss is self-inflicted, not Google's doing. These are the 
 
 <a id="checklist"></a>
 
-## ChecklistThe Website Redesign SEO Checklist
+<p class="eyebrow">Checklist</p>
+
+## The Website Redesign SEO Checklist
 
 Working through a redesign? Here's the full checklist to protect your rankings, organized by phase.
 
@@ -109,7 +117,9 @@ Working through a redesign? Here's the full checklist to protect your rankings, 
 
 <a id="expect"></a>
 
-## After LaunchWhat to Expect After Launch (the Normal Dip vs a Real Problem)
+<p class="eyebrow">After Launch</p>
+
+## What to Expect After Launch (the Normal Dip vs a Real Problem)
 
 Even a flawless redesign causes a short re-crawl period, so don't panic at the first wobble. A modest 10–20% dip in impressions in the first week or two is normal as Google re-processes your site. Recovery to baseline typically happens by week four to six, and improvements above baseline — from faster speed, cleaner structure, and better schema — often show up by month three to four.
 
@@ -117,7 +127,9 @@ Here's the line that separates normal from a real problem: **if you're still sit
 
 <a id="recover"></a>
 
-## RecoveryHow to Recover SEO Rankings After a Redesign
+<p class="eyebrow">Recovery</p>
+
+## How to Recover SEO Rankings After a Redesign
 
 If you're reading this because your traffic already dropped after a redesign, don't panic — most redesign losses are recoverable, and the causes are usually mechanical.
 
@@ -137,7 +149,9 @@ If you didn't run a pre-redesign audit, recovery is harder because you have no m
 
 <a id="improve"></a>
 
-## The UpsideA Redesign Is a Chance to Improve Your SEO, Not Just Protect It
+<p class="eyebrow">The Upside</p>
+
+## A Redesign Is a Chance to Improve Your SEO, Not Just Protect It
 
 It's worth ending on the upside, because fear of losing rankings makes people forget the opportunity. Handled with SEO at the center, a redesign is a genuine chance to *improve* your search performance.
 
@@ -145,7 +159,9 @@ A redesign lets you fix long-standing technical issues, speed up Core Web Vitals
 
 <a id="dontgamble"></a>
 
-## Get HelpRedesigning Your Site? Don't Gamble Your Rankings
+<p class="eyebrow">Get Help</p>
+
+## Redesigning Your Site? Don't Gamble Your Rankings
 
 Protecting SEO through a redesign is procedural work, and the businesses that lose traffic are almost always the ones who treated SEO as a final review instead of a starting requirement. One missed redirect, one lost batch of metadata, one deleted ranking page — that's all it takes.
 
@@ -155,7 +171,9 @@ We build SEO into every redesign from day one: full pre-launch audit, complete r
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>Does a website redesign affect SEO?</summary><div>Yes. A redesign almost always affects SEO and usually causes some short-term volatility. Whether that's a brief dip you recover from or a lasting loss depends entirely on how SEO is handled — mainly whether URLs, redirects, content, and metadata are preserved.</div></details><details><summary>Why did my rankings drop after a website redesign?</summary><div>The most common cause is URL changes without proper 301 redirects, followed by lost metadata, deleted or thinned ranking pages, broken internal links, and indexing issues. These are mechanical problems, not Google penalizing your new design, and most are fixable.</div></details><details><summary>What is the most important part of website redesign SEO?</summary><div>A complete one-to-one 301 redirect map, planned before development starts. Changing URLs without redirects is the single biggest cause of post-redesign traffic loss, so getting redirects right matters more than any other technical step.</div></details><details><summary>When should SEO be involved in a redesign?</summary><div>From the very first planning meeting. SEO should help decide the URL structure, sign off on which pages stay, review content and metadata before launch, and monitor performance after. Bringing SEO in after the build is too late to prevent the most damaging issues.</div></details><details><summary>How do I recover SEO rankings after a redesign?</summary><div>Work through the causes in order: check that every old URL 301-redirects correctly, confirm your metadata and ranking content survived the migration, verify nothing is accidentally noindexed, and repair broken internal links and speed issues. Missing redirects are the most common fix.</div></details><details><summary>Can a website redesign improve SEO?</summary><div>Yes, when SEO is planned from the start. A redesign is an opportunity to fix technical issues, improve page speed, restructure content, and consolidate thin pages — improvements that often lift rankings within a few months of launch.</div></details><details><summary>How long does it take for SEO to recover after a redesign?</summary><div>With a well-executed redesign, a short dip in the first week or two typically recovers to baseline by week four to six, with improvements appearing by month three to four. If you're still 30% or more below baseline at week eight, there's a technical problem to fix.</div></details>
 

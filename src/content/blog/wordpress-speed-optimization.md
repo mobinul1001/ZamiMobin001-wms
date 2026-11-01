@@ -25,7 +25,9 @@ We'll cover every major cause of a slow WordPress site, every meaningful fix you
 
 <a id="why"></a>
 
-## DiagnoseWhy Is My WordPress Site So Slow?
+<p class="eyebrow">Diagnose</p>
+
+## Why Is My WordPress Site So Slow?
 
 Before fixing a slow WordPress site, you need to understand what's causing it. Most slow WordPress sites suffer from a combination of several issues simultaneously. Here are the most common causes:
 
@@ -81,7 +83,9 @@ WordPress saves a revision every time you edit a post. A post you've edited 50 t
 
 <a id="test"></a>
 
-## MeasureHow to Test Your WordPress Site Speed
+<p class="eyebrow">Measure</p>
+
+## How to Test Your WordPress Site Speed
 
 Before optimizing, you need a baseline measurement. These tools will tell you your current speed and what's causing slowness:
 
@@ -99,7 +103,9 @@ Run your site through Google PageSpeed Insights first. Note your scores for both
 
 <a id="speedup"></a>
 
-## Step-by-StepHow to Speed Up Your WordPress Site: Step-by-Step
+<p class="eyebrow">Step-by-Step</p>
+
+## How to Speed Up Your WordPress Site: Step-by-Step
 
 Here is a complete, prioritized guide to WordPress speed optimization. Work through these steps in order — the earlier items tend to have the biggest impact.
 
@@ -281,7 +287,9 @@ Use the Heartbeat Control plugin to increase the interval or disable it on pages
 
 <a id="admin"></a>
 
-## Admin SpeedWhy Is My WordPress Admin Dashboard Slow?
+<p class="eyebrow">Admin Speed</p>
+
+## Why Is My WordPress Admin Dashboard Slow?
 
 A slow WordPress admin is a slightly different problem from a slow frontend. Common causes include:
 
@@ -299,7 +307,9 @@ A slow WordPress admin is a slightly different problem from a slow frontend. Com
 
 <a id="plugins"></a>
 
-## ToolsBest WordPress Speed Optimization Plugins in 2026
+<p class="eyebrow">Tools</p>
+
+## Best WordPress Speed Optimization Plugins in 2026
 
 Here's a comprehensive comparison of the most effective WordPress speed plugins:
 
@@ -322,7 +332,9 @@ Here's a comprehensive comparison of the most effective WordPress speed plugins:
 
 <a id="score"></a>
 
-## TargetsWordPress Speed Optimization: What Score Should You Aim For?
+<p class="eyebrow">Targets</p>
+
+## WordPress Speed Optimization: What Score Should You Aim For?
 
 | Score | Rating | What It Means |
 | --- | --- | --- |
@@ -341,7 +353,9 @@ These three metrics directly affect your Google rankings. Sites that pass Core W
 
 <a id="mobile"></a>
 
-## Mobile-FirstMobile Speed Optimization for WordPress
+<p class="eyebrow">Mobile-First</p>
+
+## Mobile Speed Optimization for WordPress
 
 Google now uses mobile-first indexing — meaning it primarily uses your site's mobile version for ranking decisions. A site that's fast on desktop but slow on mobile will underperform in search regardless of desktop scores.
 
@@ -357,7 +371,9 @@ Google PageSpeed Insights gives separate scores for mobile and desktop. Always p
 
 <a id="time"></a>
 
-## TimelineHow Long Does WordPress Speed Optimization Take?
+<p class="eyebrow">Timeline</p>
+
+## How Long Does WordPress Speed Optimization Take?
 
 | Work Involved | Estimated Time |
 | --- | --- |
@@ -374,7 +390,9 @@ For most WordPress sites, installing a good caching plugin, optimizing images, a
 
 <a id="service"></a>
 
-## Get HelpProfessional WordPress Speed Optimization Service
+<p class="eyebrow">Get Help</p>
+
+## Professional WordPress Speed Optimization Service
 
 Some performance improvements require technical expertise that goes beyond installing plugins. If you're dealing with:
 
@@ -404,13 +422,17 @@ At Website Maintenance Services, our speed optimization service is included in o
 
 <a id="faq"></a>
 
-## FAQWordPress Speed Optimization FAQs
+<p class="eyebrow">FAQ</p>
+
+## WordPress Speed Optimization FAQs
 
 <details><summary>Why is my WordPress site so slow even with caching?</summary><div>Caching helps with page generation speed, but other factors still affect load time: unoptimized images, no CDN, render-blocking JavaScript, slow hosting, or too many external requests. Run a GTmetrix or PageSpeed Insights test to identify what's still causing slowness after caching is enabled.</div></details><details><summary>Why is my WordPress dashboard slow?</summary><div>The admin dashboard can't be cached the same way as the frontend. Common causes: too many plugins, the WordPress Heartbeat API running too frequently, slow hosting, or a large, poorly optimized database. The Query Monitor plugin can help identify which plugins are adding overhead.</div></details><details><summary>How do I check my WordPress site speed?</summary><div>Use Google PageSpeed Insights (pagespeed.web.dev) for your Core Web Vitals scores and actionable recommendations. Use GTmetrix for a detailed breakdown of every file loading on your page.</div></details><details><summary>What is a good WordPress page speed score?</summary><div>Aim for 90+ on Google PageSpeed Insights for both mobile and desktop. For Core Web Vitals: LCP under 2.5 seconds, INP under 200ms, CLS under 0.1.</div></details><details><summary>Does the number of WordPress plugins affect speed?</summary><div>Yes, significantly. Each plugin adds code that runs on every page load. Aim to keep your plugin count lean — use only what you actually need, and always choose well-coded, lightweight plugins over bloated alternatives.</div></details><details><summary>Does WordPress hosting affect site speed?</summary><div>Absolutely. Cheap shared hosting with overcrowded servers is a fundamental performance bottleneck that no plugin can fully overcome. Quality managed WordPress hosting or a VPS makes a substantial difference.</div></details><details><summary>What is the fastest WordPress caching plugin?</summary><div>WP Rocket consistently produces the best results for ease of use and performance impact. LiteSpeed Cache is equally powerful on LiteSpeed servers and is completely free. For free options on any server, WP Super Cache and W3 Total Cache are reliable choices.</div></details><details><summary>How do I speed up WordPress without plugins?</summary><div>You can improve speed by upgrading to faster hosting, updating to PHP 8.x, enabling server-level GZIP compression, adding browser caching via .htaccess, optimizing images before uploading, using a CDN, and writing efficient code in your theme. However, plugins make most of these optimizations much easier to implement correctly.</div></details><details><summary>Can a slow WordPress site hurt my SEO?</summary><div>Yes. Page speed is a direct Google ranking factor, and Core Web Vitals scores affect your search rankings. A slow site also leads to higher bounce rates and lower user engagement, which are indirect negative SEO signals.</div></details>
 
 <a id="checklist"></a>
 
-## ChecklistWordPress Speed Optimization Checklist
+<p class="eyebrow">Checklist</p>
+
+## WordPress Speed Optimization Checklist
 
 Use this checklist to systematically improve your WordPress site's speed:
 

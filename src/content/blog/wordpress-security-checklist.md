@@ -124,7 +124,9 @@ Security isn't a one-time setup — it's an ongoing habit. The sites that stay s
 
 <a id="hacked"></a>
 
-## EmergencyWhat to Do If Your WordPress Site Is Already Hacked
+<p class="eyebrow">Emergency</p>
+
+## What to Do If Your WordPress Site Is Already Hacked
 
 If you're reading this because your site is already compromised, work through this in order: put the site into maintenance mode or take it offline to protect visitors, contact your host (many have a security response process), and restore from a clean pre-infection backup if you have one. If you don't, scan with a security plugin or use a professional [malware removal](/wordpress-malware-removal-service/) service to clean the site.
 
@@ -132,7 +134,9 @@ The critical final step everyone skips: after cleaning, change **all** passwords
 
 <a id="ongoing"></a>
 
-## The Real ChallengeSecurity Is Ongoing — You Don't Have to Do It Alone
+<p class="eyebrow">The Real Challenge</p>
+
+## Security Is Ongoing — You Don't Have to Do It Alone
 
 Working through this checklist once puts your site ahead of the vast majority of WordPress installations on the web. But the reason WordPress security is hard isn't any single step — it's that it never stops. New plugin vulnerabilities appear weekly, updates need testing, backups need verifying, and someone has to be watching. Miss a few weeks and the doors quietly reopen.
 
@@ -144,7 +148,9 @@ Get a free website security audit and we'll show you exactly where your site is 
 
 <a id="faq"></a>
 
-## FAQFrequently Asked Questions
+<p class="eyebrow">FAQ</p>
+
+## Frequently Asked Questions
 
 <details><summary>What is the most important WordPress security step?</summary><div>Keeping WordPress core, plugins, and themes updated is the single most impactful measure, since outdated software causes most hacks. Right behind it is enabling two-factor authentication and strong passwords, which together make credential-based attacks — about 40% of all attempts — effectively useless.</div></details><details><summary>Can a security plugin make my WordPress site completely secure?</summary><div>No single plugin makes a site completely secure. A security plugin is one important layer — it monitors, scans, and blocks many attacks — but it works best alongside hardening, updates, strong logins, and backups. Think of the plugin as an alarm system and hardening as reinforcing the actual doors and walls.</div></details><details><summary>Why do WordPress sites get hacked so often?</summary><div>WordPress powers over 43% of the web, making it a prime target, but the risk comes mostly from the ecosystem around it — around 96% of vulnerabilities are in third-party plugins and themes, not WordPress core. Weak passwords, outdated software, and poor hosting choices account for most successful attacks.</div></details><details><summary>How often should I check my WordPress security?</summary><div>Update plugins and themes weekly, and run a full security review monthly using a checklist. Continuous monitoring for file changes and unauthorized logins should run in the background at all times, so infections are caught within hours rather than weeks.</div></details><details><summary>Do I need to disable XML-RPC on WordPress?</summary><div>In most cases, yes. XML-RPC is a common target for brute-force and DDoS attacks and is only needed for specific tools like Jetpack, some mobile apps, or certain publishing integrations. If you don't use those, disabling it removes a common attack vector.</div></details><details><summary>What should I do first if my WordPress site is hacked?</summary><div>Take the site offline or into maintenance mode to protect visitors, contact your host, and restore from a clean backup if you have one — otherwise use a professional malware removal service. Afterward, change all passwords, audit user accounts, and harden the site fully before going live, or it may be reinfected within days.</div></details>
 

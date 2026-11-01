@@ -33,7 +33,9 @@ In this guide, we explain everything you need to know about domain names, includ
 
 <a id="what-is-a-domain-name-simple-definition"></a>
 
-## DOMAIN GUIDEWhat Is a Domain Name? Simple Definition
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## What Is a Domain Name? Simple Definition
 
 A **domain name is a unique, human-readable name used to identify a location or namespace on the internet.** It allows people to access websites and other online services without memorizing numerical IP addresses.
 
@@ -70,7 +72,9 @@ All three can use the same registered domain. However, the domain itself is not 
 
 <a id="domain-name-examples-understanding-real-website-addresses"></a>
 
-## DOMAIN GUIDEDomain Name Examples: Understanding Real Website Addresses
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Name Examples: Understanding Real Website Addresses
 
 The easiest way to understand domain names is to examine familiar examples.
 
@@ -113,7 +117,9 @@ A Canadian business might register `brightoak.ca`. The `.ca` extension is a coun
 
 <a id="what-are-the-parts-of-a-domain-name"></a>
 
-## DOMAIN GUIDEWhat Are the Parts of a Domain Name?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## What Are the Parts of a Domain Name?
 
 A domain name is organized into a hierarchy, with labels separated by periods. Understanding its components makes it easier to distinguish domain names, subdomains, and extensions.
 
@@ -161,7 +167,9 @@ Technically, the DNS root is a separate concept at the top of the entire DNS hie
 
 <a id="how-does-a-domain-name-work"></a>
 
-## DOMAIN GUIDEHow Does a Domain Name Work?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## How Does a Domain Name Work?
 
 A domain name works through the Domain Name System, commonly known as DNS. DNS is a distributed naming system that helps computers locate internet services using human-readable names.
 
@@ -210,7 +218,9 @@ No. DNS caching is an essential part of how the system operates efficiently. A r
 
 <a id="what-is-dns-domain-name-system-explained"></a>
 
-## DOMAIN GUIDEWhat Is DNS? Domain Name System Explained
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## What Is DNS? Domain Name System Explained
 
 DNS stands for **Domain Name System**. It is the distributed system used to organize domain names and retrieve information associated with them.
 
@@ -249,7 +259,9 @@ For example, if a business uses Cloudflare DNS, Cloudflare may operate the autho
 
 <a id="domain-vs-url-what-is-the-difference"></a>
 
-## DOMAIN GUIDEDomain vs. URL: What Is the Difference?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain vs. URL: What Is the Difference?
 
 One of the most common questions about domain names is whether a domain and a URL are the same thing. They are related, but they serve different purposes.
 
@@ -301,7 +313,9 @@ No. `https://` identifies the HTTPS URL scheme. It indicates that the browser sh
 
 <a id="domain-name-vs-ip-address-what-is-the-difference"></a>
 
-## DOMAIN GUIDEDomain Name vs. IP Address: What Is the Difference?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Name vs. IP Address: What Is the Difference?
 
 Everyday internet users usually interact with domain names rather than IP addresses. An IP address is a numerical address used for communication over an IP network. A domain name is a human-readable name that can be associated with IP addresses or other DNS information.
 
@@ -335,7 +349,9 @@ Yes. A domain may resolve to multiple addresses for load balancing, redundancy, 
 
 <a id="types-of-domain-names-explained"></a>
 
-## DOMAIN GUIDETypes of Domain Names Explained
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Types of Domain Names Explained
 
 Domain names are categorized in several ways, including by their top-level domain.
 
@@ -383,7 +399,9 @@ Choose an extension that fits your intended audience, brand identity, registrati
 
 <a id="domain-name-vs-web-hosting-do-you-need-both"></a>
 
-## DOMAIN GUIDEDomain Name vs. Web Hosting: Do You Need Both?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Name vs. Web Hosting: Do You Need Both?
 
 A domain name and web hosting are different components of a website. A domain gives users a recognizable name through which to reach your online services. Hosting provides the infrastructure that runs or serves those services.
 
@@ -413,7 +431,9 @@ Not inherently. Some companies bundle domain registration and website hosting in
 
 <a id="how-to-register-a-domain-name-step-by-step-guide"></a>
 
-## DOMAIN GUIDEHow to Register a Domain Name: Step-by-Step Guide
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## How to Register a Domain Name: Step-by-Step Guide
 
 Registering a domain name is generally straightforward, but choosing and managing it responsibly requires planning.
 
@@ -473,7 +493,9 @@ Check that the intended website opens, redirects behave correctly, and any busin
 
 <a id="how-much-does-a-domain-name-cost"></a>
 
-## DOMAIN GUIDEHow Much Does a Domain Name Cost?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## How Much Does a Domain Name Cost?
 
 Domain registration prices vary depending on the extension, registrar, promotional offers, and whether the domain is considered premium. Some common extensions have relatively affordable standard registrations, while certain premium or highly desirable names can be much more expensive.
 
@@ -504,7 +526,9 @@ Many domain extensions allow multiyear registration, although maximum terms and 
 
 <a id="how-to-choose-a-good-domain-name-for-your-website"></a>
 
-## DOMAIN GUIDEHow to Choose a Good Domain Name for Your Website
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## How to Choose a Good Domain Name for Your Website
 
 A domain name often becomes part of a business's long-term identity. Changing it later may require website redirects, email changes, branding updates, and modifications to marketing materials. For that reason, choosing the right name at the beginning is valuable.
 
@@ -538,7 +562,9 @@ Before committing to a domain, research potentially conflicting brands and trade
 
 <a id="what-is-a-business-domain-name"></a>
 
-## DOMAIN GUIDEWhat Is a Business Domain Name?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## What Is a Business Domain Name?
 
 A business domain name is a domain registered and used for a company's online presence. It may support a website, online store, email addresses, client portal, or other services.
 
@@ -563,7 +589,9 @@ No. A business can operate successfully using many different top-level domains. 
 
 <a id="domain-names-and-professional-business-email"></a>
 
-## DOMAIN GUIDEDomain Names and Professional Business Email
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Names and Professional Business Email
 
 A registered domain can be used to create branded email addresses.
 
@@ -587,7 +615,9 @@ Yes. A business can generally migrate mail services by setting up the new provid
 
 <a id="domain-name-security-how-to-protect-your-domain"></a>
 
-## DOMAIN GUIDEDomain Name Security: How to Protect Your Domain
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Name Security: How to Protect Your Domain
 
 A domain name may be a critical business asset. If an unauthorized person gains control of the domain or its DNS settings, the consequences can include website disruption, email interception risks, and loss of customer trust.
 
@@ -621,7 +651,9 @@ For a company domain, the organization should retain control of the registration
 
 <a id="common-domain-name-problems-and-how-to-fix-them"></a>
 
-## DOMAIN GUIDECommon Domain Name Problems and How to Fix Them
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Common Domain Name Problems and How to Fix Them
 
 ### 1\. Domain name is not resolving
 
@@ -667,7 +699,9 @@ For a company domain, the organization should retain control of the registration
 
 <a id="what-happens-when-a-domain-name-expires"></a>
 
-## DOMAIN GUIDEWhat Happens When a Domain Name Expires?
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## What Happens When a Domain Name Expires?
 
 Domain expiration is an important issue for businesses because the domain may support multiple services.
 
@@ -685,7 +719,9 @@ For business-critical domains, consider maintaining multiple internal reminders 
 
 <a id="domain-name-glossary-important-terms-explained"></a>
 
-## DOMAIN GUIDEDomain Name Glossary: Important Terms Explained
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Domain Name Glossary: Important Terms Explained
 
 | Term | Meaning |
 | --- | --- |
@@ -714,13 +750,17 @@ For business-critical domains, consider maintaining multiple internal reminders 
 
 <a id="frequently-asked-questions-about-domain-names"></a>
 
-## DOMAIN GUIDEFrequently Asked Questions About Domain Names
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Frequently Asked Questions About Domain Names
 
 <details><summary>1. What is a domain name?</summary><div><p>A domain name is a human-readable name used to identify resources on the internet. For example, <code>google.com</code> is a domain name. DNS helps devices locate services associated with domain names.</p></div></details><details><summary>2. What is a website domain?</summary><div><p>A website domain is the domain name associated with a website, such as <code>example.com</code>. It is usually the recognizable part of the website's address.</p></div></details><details><summary>3. What is a domain name example?</summary><div><p>Examples include <code>google.com</code>, <code>wikipedia.org</code>, <code>amazon.com</code>, and <code>microsoft.com</code>.</p></div></details><details><summary>4. What does domain mean in a website?</summary><div><p>In website terminology, a domain is the human-readable name used to identify or reach the website. It is distinct from the web hosting infrastructure and the website content.</p></div></details><details><summary>5. What is the domain name in a URL?</summary><div><p>In <code>https://www.example.com/about</code>, the registered domain is <code>example.com</code>. The other parts identify the protocol, hostname, and resource path.</p></div></details><details><summary>6. What is the difference between a domain and a URL?</summary><div><p>A domain is a name, while a URL is an address for a resource. URLs often contain domain names along with a scheme, path, and optional additional components.</p></div></details><details><summary>7. What is the difference between domain names and IP addresses?</summary><div><p>An IP address identifies a network interface or location for IP communication, while a domain name provides a human-readable name that may resolve to IP addresses or other DNS information.</p></div></details><details><summary>8. What is the purpose of a domain name?</summary><div><p>A domain name makes internet resources easier to identify and remember. It also supports branding, website access, email addressing, and organization of online services.</p></div></details><details><summary>9. What is a second-level domain?</summary><div><p>A second-level domain is the label immediately to the left of the top-level domain. In <code>example.com</code>, the second-level domain is <code>example</code>.</p></div></details><details><summary>10. What is a top-level domain?</summary><div><p>A top-level domain is the rightmost label in a domain name, such as <code>.com</code>, <code>.org</code>, or <code>.ca</code>.</p></div></details><details><summary>11. What is a subdomain?</summary><div><p>A subdomain is a name created beneath a parent domain. For example, <code>blog.example.com</code> is a subdomain of <code>example.com</code>.</p></div></details><details><summary>12. Is www part of a domain name?</summary><div><p><code>www</code> is commonly used as a hostname label beneath a registered domain. It is not normally part of the registrable second-level domain.</p></div></details><details><summary>13. Can I get a domain name for free?</summary><div><p>Some services offer free subdomains or promotional domain registration. A free subdomain is not the same as holding an independent registered domain. Promotional registrations may also have renewal fees.</p></div></details><details><summary>14. Can I buy a domain name permanently?</summary><div><p>Ordinary domain registration typically grants rights for a fixed registration term, subject to renewal and applicable policies. It is not generally a permanent one-time purchase.</p></div></details><details><summary>15. Can two websites have the same domain name?</summary><div><p>The same registered domain can direct visitors to multiple resources, services, or websites through paths, hostnames, and routing configurations. However, two unrelated parties cannot normally hold the same registration for the same name in the same TLD simultaneously.</p></div></details><details><summary>16. Do I need hosting if I have a domain?</summary><div><p>You need a service capable of providing your website content if you want a functioning website. A domain registration alone does not include that infrastructure unless it is bundled separately.</p></div></details><details><summary>17. Can one domain point to multiple servers?</summary><div><p>Yes. DNS records, load balancers, CDNs, and other infrastructure can support multiple servers behind a single domain or hostname.</p></div></details><details><summary>18. Can I change my domain name later?</summary><div><p>Yes, you can register a new domain and migrate your website and services. However, the process may require redirects, DNS changes, email configuration, and branding updates.</p></div></details><details><summary>19. Does a domain name affect SEO?</summary><div><p>Domain names can influence branding, user recognition, and geographical associations. However, choosing an exact-match keyword domain does not guarantee search engine rankings.</p></div></details><details><summary>20. What is the best domain extension for a business?</summary><div><p><code>.com</code> is a widely recognized option. Country-code domains and other extensions may be better suited to particular locations, industries, or branding strategies.</p></div></details><details><summary>21. What is a domain registrar?</summary><div><p>A domain registrar is a company that provides registration services for domain names under the relevant registry and accreditation arrangements.</p></div></details><details><summary>22. What is the difference between a registrar and a registry?</summary><div><p>A registrar handles domain registrations for customers, while a registry operates the registration database and supporting infrastructure for a top-level domain.</p></div></details><details><summary>23. What is DNS propagation?</summary><div><p>DNS propagation is an informal term describing the period during which updated DNS information becomes visible across different resolvers and caches. It is not a single synchronized event.</p></div></details><details><summary>24. What is a domain transfer?</summary><div><p>A domain transfer generally means moving the management of a domain registration from one registrar to another. Changing DNS or website hosting does not necessarily require transferring the registration.</p></div></details><details><summary>25. What is the difference between a business domain and a personal domain?</summary><div><p>Technically, both use the same underlying DNS principles. The distinction is primarily how the domain is used and who controls its registration.</p></div></details>
 
 <a id="final-thoughts-understanding-domain-names"></a>
 
-## DOMAIN GUIDEFinal Thoughts: Understanding Domain Names
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## Final Thoughts: Understanding Domain Names
 
 A domain name is one of the foundational components of the internet. It provides a recognizable, human-readable name that can be used to reach websites, email services, applications, and other online resources.
 
@@ -734,7 +774,9 @@ For an existing website, maintain access to your registrar, monitor expiration d
 
 **A good domain name makes your website easier to find, remember, and manage.** Protecting it and configuring it correctly are essential steps toward maintaining a reliable online presence.
 
-## DOMAIN GUIDEReferences
+<p class="eyebrow">DOMAIN GUIDE</p>
+
+## References
 
 For further technical reading and verification, consult [ICANN: About Domain Names](https://www.icann.org/resources/pages/about-domain-names-2018-08-30-en), [ICANN: Domain Name Registration Process](https://www.icann.org/resources/pages/domain-name-registration-process-2023-11-02-en), [Cloudflare: DNS Concepts](https://developers.cloudflare.com/dns/concepts/), and [Cloudflare: What Is a Domain Name?](https://www.cloudflare.com/learning/dns/glossary/what-is-a-domain-name/).
 

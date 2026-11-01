@@ -75,3 +75,10 @@
 - A2: added "for over a decade" to the claim rules.
 - Guard added: an approved removal over its word limit stops the run, and parity fails any page under 75% of the old page's words. Reason: a removal bug took 85% of the homepage while parity still passed, because parity compared against the same removal. Found from the word ratio before any commit.
 - Added scripts/screenshot-pages.mjs, scripts/link-report.mjs and the lighthouse dev dependency.
+
+## Templates, Batch 2 (2026-11-01)
+- Article template for 48 posts and 4 article pages: breadcrumbs, updated line, quick-answer box, table of contents, author line, related articles, link to the matching service.
+- Blog index lists every post in plain links, grouped by topic (src/data/blog-hubs.json). The old list was filled by JavaScript, so 42 pages had no crawlable link. Now 0 unreachable, every page within 2 clicks.
+- Removed the old JavaScript post list from /blogs/: filter row and hidden placeholders ("Loading Title...", "Kono result paowa jayni!"). Flagged to the owner.
+- Article heading labels (class "eb") moved out of the heading tag, so "DecideHow to Choose" reads properly.
+- Footer links added: partner program, write for us, malware scanner.
