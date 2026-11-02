@@ -3,7 +3,7 @@
 import prices from '../../data/prices.json';
 import features from '../../data/features.json';
 import { plansHtml } from '../../lib/plans';
-import { polish, hlLast } from '../../lib/polish';
+import { factCard, polish, hlLast } from '../../lib/polish';
 import { icon } from '../../lib/icons';
 import { splitBy, take } from '../../lib/html-sections';
 
@@ -15,12 +15,24 @@ const has = (from: string, plan: string, only?: string) => (only ? rank[plan] ==
 const allRows = features.groups.flatMap((g) => g.rows);
 const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
 const faq = take(sections, /^Frequently Asked Questions/);
-const rest = polish([intro, ...sections.map((s) => s.html)].join(''), { start: 1 });
+const rest = polish([intro, ...sections.map((s) => s.html)].join(''), { start: 3 });
+// The billing questions come first in the page's one FAQ section.
+const billing = [
+  ['How does billing work?', `Pay monthly, or pay yearly and get ${prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.`],
+  ['Is there a contract?', 'No contract. Cancel anytime.'],
+  ['What happens after the first year of free hosting?', 'Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.'],
+  ['How does the free month work?', `On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has ${prices.annualNote.en}.`],
+  ['What do the webmail accounts include?', 'Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.'],
+].map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('');
+const faqHtml = faq ? polish(faq.html.replace(/(<\/h2>)/, `$1${billing}`), { start: 2 }) : '';
 ---
-<section class="page-hero"><div class="wrap">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
-  <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
-  <p class="sub">Three plans. Every price is here. No contract, and you can cancel anytime.</p>
+<section class="page-hero"><div class="wrap hero-split">
+  <div>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
+    <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
+    <p class="sub">Three plans. Every price is here. No contract, and you can cancel anytime.</p>
+  </div>
+  <div class="hero-side" set:html={factCard(`Plans from ${money(prices.plans[0].monthly)}/mo`, ['First month free', 'Free hosting for the first year', '2 free webmail accounts', 'No contract'])} />
 </div></section>
 <section class="sec"><div class="wrap">
   <h2 class="sr-only">Plans</h2>
@@ -55,15 +67,5 @@ const rest = polish([intro, ...sections.map((s) => s.html)].join(''), { start: 1
   <div class="btn-row row-end">{prices.plans.map((p) => <a class:list={['btn', p.popular ? 'primary' : 'ghost']} href={`/get-a-free-quote/#${p.name.toLowerCase()}`}>Start {p.name}<Fragment set:html={icon('arrow')} /></a>)}</div>
 </div></section>
 
-<section class="sec"><div class="wrap">
-  <div class="head"><p class="eyebrow">Billing</p><h2>Billing and contract questions</h2><p class="intro">How payment, hosting and the free month work.</p></div>
-  <div class="faq">
-    <details open><summary><span>How does billing work?</span><Fragment set:html={icon('plus')} /></summary><p>Pay monthly, or pay yearly and get {prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.</p></details>
-    <details><summary><span>Is there a contract?</span><Fragment set:html={icon('plus')} /></summary><p>No contract. Cancel anytime.</p></details>
-    <details><summary><span>What happens after the first year of free hosting?</span><Fragment set:html={icon('plus')} /></summary><p>Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.</p></details>
-    <details><summary><span>How does the free month work?</span><Fragment set:html={icon('plus')} /></summary><p>On monthly billing, your first month is free and you start paying from the second month. It does not apply to annual billing, which already has {prices.annualNote.en}.</p></details>
-    <details><summary><span>What do the webmail accounts include?</span><Fragment set:html={icon('plus')} /></summary><p>Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.</p></details>
-  </div>
-  {faq && <div class="prose gap-top" set:html={polish(faq.html, { sections: false })} />}
-</div></section>
+<Fragment set:html={faqHtml} />
 <Fragment set:html={rest} />

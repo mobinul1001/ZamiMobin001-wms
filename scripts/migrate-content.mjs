@@ -145,8 +145,8 @@ service.addRule('pair', {
 service.addRule('statusPanel', {
   filter: (n) => n.getAttribute('data-status-panel') !== null,
   replacement: (_, n) => {
-    const { head, rows, notes } = JSON.parse(n.getAttribute('data-status-panel'));
-    return `\n\n<div class="status-panel"><p class="status-head"><span>${safe(head)}</span><span class="tag">Example</span></p>${rows.map(([t, d, s]) => `<p class="status-row"><strong>${safe(t)}</strong> ${d ? `<span>${safe(d)}</span> ` : ''}<em>${safe(s)}</em></p>`).join('')}${notes.map((x) => `<p class="status-note">${safe(x)}</p>`).join('')}</div>\n\n`;
+    const { head, rows, notes, label } = JSON.parse(n.getAttribute('data-status-panel'));
+    return `\n\n<div class="status-panel"><p class="status-head"><span>${safe(head)}</span><span class="tag">${label}</span></p>${rows.map(([t, d, s]) => `<p class="status-row"><strong>${safe(t)}</strong> ${d ? `<span>${safe(d)}</span> ` : ''}<em>${safe(s)}</em></p>`).join('')}${notes.map((x) => `<p class="status-note">${safe(x)}</p>`).join('')}</div>\n\n`;
   },
 });
 service.addRule('cardGrid', {
@@ -356,7 +356,7 @@ async function convert(path, record) {
     };
     walk(panel[0]);
     if (rows.length + notes.length < 2 || notes.join(' ').split(' ').length > 40) throw new Error(`${path}: panel rows changed`);
-    panel.replaceWith($('<div>x</div>').attr('data-status-panel', JSON.stringify({ head, rows, notes })));
+    panel.replaceWith($('<div>x</div>').attr('data-status-panel', JSON.stringify({ head, rows, notes, label: ['/website-seo-services/', '/website-design-services/'].includes(path) ? 'Client result' : 'Example' })));
   }
   // Two short text pieces with no space between them ran together ("10Countries served"): number or title, then its label.
   $('div, span').each((_, e) => {

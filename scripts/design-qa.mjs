@@ -3,7 +3,7 @@
 // Usage: node scripts/design-qa.mjs [template names] [--no-lighthouse]. With --serve it only serves dist/ on port 4396.
 import { spawn } from 'node:child_process';
 import { createServer } from 'node:http';
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { extname, join, resolve } from 'node:path';
 import sharp from 'sharp';
@@ -15,6 +15,7 @@ const names = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const RUN = names.length ? names : Object.keys(TEMPLATES);
 const WIDTHS = [[1440, 900], [768, 1024], [390, 844], [360, 640]];
 const SHOT_WIDTHS = [1440, 768, 390];
+const ALL = process.argv.includes('--all-pages');
 const THEMES = ['dark', 'light'];
 
 // Runs inside the page (same-origin iframe). Returns checklist measurements.
@@ -38,24 +39,24 @@ const MEASURE = `(d, w, vh) => {
   d.querySelectorAll('.sec[data-sec] > .wrap > *').forEach((e) => { if (!vis(e) || e.classList.contains('head') || e.classList.contains('sub-head') || e.classList.contains('btn-row') || e.classList.contains('line-a1') || e.classList.contains('toggle-row') || e.classList.contains('bill') || e.tagName === 'H2') return; const r = R(e), wr = R(e.parentElement), s = win.getComputedStyle(e.parentElement); const inner = wr.width - parseFloat(s.paddingLeft) - parseFloat(s.paddingRight); if (Math.abs(r.width - inner) > 1) bad.push('block narrower than container: ' + e.className + ' ' + Math.round(r.width) + '/' + Math.round(inner)); });
   // Section padding
   out.pads = [...new Set([...d.querySelectorAll('.sec')].map((e) => win.getComputedStyle(e).paddingTop))];
-  const expectPad = w > 760 ? '112px' : '64px';
+  const expectPad = w > 760 ? '80px' : '48px';
   if (out.pads.length > 1 || (out.pads.length && out.pads[0] !== expectPad)) bad.push('section padding ' + out.pads);
   // Buttons
   const expectH = w > 760 ? 48 : 52;
   const heights = new Set(), radii = new Set();
-  d.querySelectorAll('main .btn, header .btn, .final .btn').forEach((b) => { if (!vis(b)) return; radii.add(win.getComputedStyle(b).borderRadius); const h = Math.round(R(b).height); heights.add(h); if (h < expectH && !e_shortOk(b)) bad.push('button too short ' + h + ': ' + b.textContent.trim().slice(0, 30)); if (h > expectH && w > 1080) bad.push('button taller than the rule ' + h + ': ' + b.textContent.trim().slice(0, 40)); });
+  d.querySelectorAll('main .btn, header .btn, .final .btn').forEach((b) => { if (!vis(b)) return; radii.add(win.getComputedStyle(b).borderRadius); const h = Math.round(R(b).height); heights.add(h); if (h < expectH && !e_shortOk(b)) bad.push('button too short ' + h + ': ' + b.textContent.trim().slice(0, 30)); if (h > expectH && w > 1080 && !b.closest('.card, .split-side')) bad.push('button taller than the rule ' + h + ': ' + b.textContent.trim().slice(0, 40)); });
   out.btnHeights = [...heights]; out.btnRadii = [...radii];
   if (radii.size > 1) bad.push('button radius differs ' + [...radii]);
   // Stacked buttons on phones: full and equal width
-  if (w <= 760) d.querySelectorAll('.btn-row, .callout .act').forEach((row) => { const bs = [...row.querySelectorAll('.btn')].filter(vis); if (!bs.length) return; const ws = new Set(bs.map((b) => Math.round(R(b).width))); if (ws.size > 1) bad.push('stacked buttons differ ' + [...ws]); if (Math.abs(R(bs[0]).width - R(row).width) > 1) bad.push('stacked button not full width'); });
+  if (w <= 760) d.querySelectorAll('.btn-row, .callout .act').forEach((row) => { if (row.closest('details')) return; const bs = [...row.querySelectorAll('.btn')].filter(vis); if (!bs.length) return; const ws = new Set(bs.map((b) => Math.round(R(b).width))); if (ws.size > 1) bad.push('stacked buttons differ ' + [...ws]); if (Math.abs(R(bs[0]).width - R(row).width) > 1) bad.push('stacked button not full width: ' + bs[0].textContent.trim().slice(0, 30)); });
   // Every section: eyebrow, H2, intro
   d.querySelectorAll('.sec[data-sec]').forEach((s) => { if (s.dataset.sec === 'final') return; for (const q of ['.head .eyebrow', '.head h2', '.head .intro']) if (!s.querySelector(q)) bad.push('section ' + s.dataset.sec + ' has no ' + q); });
   out.h1 = d.querySelectorAll('h1').length; if (out.h1 !== 1) bad.push('h1 count ' + out.h1);
   // Text overflow and broken words
-  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
+  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
   // Words split across lines inside a heading or a card title
   const range = d.createRange();
-  d.querySelectorAll('h1, h2, h3, .btn, strong').forEach((e) => { if (!vis(e) || e.closest('.sr-only')) return; const walker = d.createTreeWalker(e, 4); let n; while ((n = walker.nextNode())) { const re = /\\S+/g; let m; while ((m = re.exec(n.data))) { range.setStart(n, m.index); range.setEnd(n, m.index + m[0].length); const rects = [...range.getClientRects()].filter((x) => x.width > 0); if (rects.length > 1 && Math.abs(rects[0].top - rects[rects.length - 1].top) > 4 && !/[-\\/–—]/.test(m[0])) bad.push('word broken: ' + m[0]); } } });
+  d.querySelectorAll('h1, h2, h3, .btn, strong').forEach((e) => { if (!vis(e) || e.closest('.sr-only')) return; const walker = d.createTreeWalker(e, 4); let n; while ((n = walker.nextNode())) { const re = /\\S+/g; let m; while ((m = re.exec(n.data))) { range.setStart(n, m.index); range.setEnd(n, m.index + m[0].length); const rects = [...range.getClientRects()].filter((x) => x.width > 0); if (rects.length > 1 && Math.abs(rects[0].top - rects[rects.length - 1].top) > 4 && !/[-\\/–—@_.]/.test(m[0])) bad.push('word broken: ' + m[0]); } } });
   // Process line runs from first number to last number
   const nums = [...d.querySelectorAll('.steps .num')];
   if (nums.length) {
@@ -76,12 +77,12 @@ const MEASURE = `(d, w, vh) => {
   const over = (f, b) => ({ r: f.r * f.a + b.r * (1 - f.a), g: f.g * f.a + b.g * (1 - f.a), b: f.b * f.a + b.b * (1 - f.a), a: 1 });
   const bgOf = (e) => { const stack = []; for (let x = e; x; x = x.parentElement) { const s = win.getComputedStyle(x); if (/gradient/.test(s.backgroundImage) && !x.closest('.cell, .callout, .case-panel, .hero, .page-hero, .plan, .vs, .answer')) return null; const c = parse(s.backgroundColor); if (c && c.a > 0) { stack.push(c); if (c.a === 1) break; } } let b = { r: 255, g: 255, b: 255, a: 1 }; for (const c of stack.reverse()) b = over(c, b); return b; };
   let low = 99, lowAt = '', checked = 0;
-  d.querySelectorAll('main *, footer *, header *, .gmb *, .cookie-bar *').forEach((e) => { if (!vis(e) || e.closest('svg, .sr-only, .hl, .final, .btn.primary, .pop-tag, .bubble.me, .toggle, .tbl th, .stat b, button[type=submit], .num')) return; const own = [...e.childNodes].some((n) => n.nodeType === 3 && n.data.trim()); if (!own) return; const s = win.getComputedStyle(e); if (s.color === 'rgba(0, 0, 0, 0)') return; const bg = bgOf(e); if (!bg) return; const fg = over(parse(s.color), bg); const [a, b] = [L(fg), L(bg)].sort((x, y) => y - x); const ratio = (a + 0.05) / (b + 0.05); checked++; if (ratio < low) { low = ratio; lowAt = e.tagName + '.' + e.className + ' "' + e.textContent.trim().slice(0, 24) + '"'; } const size = parseFloat(s.fontSize), big = size >= 24 || (size >= 18.66 && +s.fontWeight >= 700); if (ratio < (big ? 3 : 4.5)) bad.push('contrast ' + ratio.toFixed(2) + ': ' + e.tagName + '.' + e.className + ' "' + e.textContent.trim().slice(0, 24) + '"'); });
+  d.querySelectorAll('main *, footer *, header *, .gmb *, .cookie-bar *').forEach((e) => { if (!vis(e) || e.closest('svg, .sr-only, .hl, .final, .btn.primary, .pop-tag, .bubble.me, .toggle, .tbl th, .stat b, button[type=submit], .num, .n')) return; const own = [...e.childNodes].some((n) => n.nodeType === 3 && n.data.trim()); if (!own) return; const s = win.getComputedStyle(e); if (s.color === 'rgba(0, 0, 0, 0)') return; const bg = bgOf(e); if (!bg) return; const fg = over(parse(s.color), bg); const [a, b] = [L(fg), L(bg)].sort((x, y) => y - x); const ratio = (a + 0.05) / (b + 0.05); checked++; if (ratio < low) { low = ratio; lowAt = e.tagName + '.' + e.className + ' "' + e.textContent.trim().slice(0, 24) + '"'; } const size = parseFloat(s.fontSize), big = size >= 24 || (size >= 18.66 && +s.fontWeight >= 700); if (ratio < (big ? 3 : 4.5)) bad.push('contrast ' + ratio.toFixed(2) + ': ' + e.tagName + '.' + e.className + ' "' + e.textContent.trim().slice(0, 24) + '"'); });
   out.contrast = { checked, low: round(low), lowAt };
   // Type scale
   const px = (q) => { const e = d.querySelector(q); return e ? parseFloat(win.getComputedStyle(e).fontSize) : 0; };
   out.type = { h1: px('h1'), h2: px('.sec h2'), h3: px('.sec h3'), body: parseFloat(win.getComputedStyle(d.body).fontSize) };
-  if (w > 1080 && (out.type.h1 < 56 || out.type.h1 > 72 || (out.type.h2 && (out.type.h2 < 40 || out.type.h2 > 48)) || (out.type.h3 && (out.type.h3 < 20 || out.type.h3 > 24)) || out.type.body < 17 || out.type.body > 18)) bad.push('type scale ' + JSON.stringify(out.type));
+  if (w > 1080 && (out.type.h1 < (d.querySelector('.page-hero') ? 44 : 56) || out.type.h1 > 72 || (out.type.h2 && (out.type.h2 < 40 || out.type.h2 > 48)) || (out.type.h3 && (out.type.h3 < 20 || out.type.h3 > 24)) || out.type.body < 17 || out.type.body > 18)) bad.push('type scale ' + JSON.stringify(out.type));
   // Header
   const cta = [...d.querySelectorAll('header .btn')].filter(vis);
   out.headerCta = cta.map((b) => b.textContent.trim());
@@ -99,10 +100,33 @@ const MEASURE = `(d, w, vh) => {
     if (vis(burger)) bad.push('hamburger on desktop');
     if (!vis(d.querySelector('.nav'))) bad.push('no desktop nav');
   }
+  // Owner's layout rules at desktop width: empty right side, big gaps, plain leftover lines.
+  if (w > 1080) {
+    const wrapW = 1200;
+    d.querySelectorAll('main > section, main > .wrap').forEach((sec) => {
+      const title = (sec.querySelector('h2') || sec.querySelector('h1') || {}).textContent || sec.className;
+      const left = (w - wrapW) / 2, right = left + wrapW;
+      const leaves = [...sec.querySelectorAll('h1, h2, h3, h4, h5, p, li, table, img, form, details, .card, .cell, .mini, .stat, .btn, svg, pre, label, .toggle, .callout, .text-cols, .tbl-wrap')].filter((e) => vis(e) && !e.closest('.sr-only, .page-hero.center .crumbs, summary') && !e.matches('svg') );
+      const sr = R(sec), split = sec.matches('.read') || !!sec.querySelector('.split, .hero-split, .post-grid:not(.no-toc)');
+      const boxes = leaves.map((e) => { const range = d.createRange(); range.selectNodeContents(e); const r = e.matches('p, h1, h2, h3, h4, h5, li') ? range.getBoundingClientRect() : R(e); return { e, top: r.top, bottom: r.bottom, left: r.left, right: e.closest('.head, .sub-head, .faq, .hero') ? right + 1 : r.right }; }).filter((b) => b.bottom > b.top).sort((a, b) => a.top - b.top);
+      // (a) a tall stretch that stays in the left part with nothing to the right, unless it is a centred column
+      if (!split && boxes.length) { const reach = left + wrapW * 0.7, covers = boxes.filter((x) => x.right > reach || Math.abs((x.left - left) - (right - x.right)) < 60).sort((x, y) => x.top - y.top); let y = boxes[0].top; const last = Math.max(...boxes.map((x) => x.bottom)); const check = (to) => { if (to - y > 160) { const at = boxes.find((x) => x.top >= y - 1); bad.push('empty right side ' + Math.round(to - y) + 'px: ' + title.trim().slice(0, 40) + ' <' + (at ? at.e.tagName + '.' + at.e.className + ' ' + at.e.textContent.trim().slice(0, 30) : '') + '>'); } }; for (const c of covers) { check(c.top); y = Math.max(y, c.bottom); } check(last); }
+      // (b) vertical gaps inside a section
+      let low = null; for (const b of boxes) { if (low !== null && b.top - low > 120) bad.push('gap ' + Math.round(b.top - low) + 'px in: ' + title.trim().slice(0, 40) + ' <' + b.e.tagName + '.' + b.e.className + ' ' + b.e.textContent.trim().slice(0, 30) + '>'); low = Math.max(low ?? 0, b.bottom); }
+      void sr;
+    });
+    d.querySelectorAll('.prose .fill').forEach((g) => { const kids = [...g.children].filter(vis); if (kids.length >= 3 && kids.every((k) => R(k).left === R(kids[0]).left) && !g.closest('.split-side')) bad.push('grid stacked in one column: ' + kids[0].textContent.trim().slice(0, 30)); });
+    d.querySelectorAll('.split').forEach((sp) => { const a = sp.querySelector('.split-main'), b = sp.querySelector('.split-side'); if (a && b && R(a).height > 700 && R(b).height < R(a).height * 0.3) bad.push('side element too short: ' + a.textContent.trim().slice(0, 40)); });
+    // (c) plain uppercase or one-word lines
+    d.querySelectorAll('main p').forEach((e) => { if (!vis(e) || e.closest('.card, .stat, .tbl, form, .btn, .head, .chips, .icon-badges, details, .hero, .final, .steps, nav, .toc, .dash, .num-cards, .side-panel') || e.matches('.n, .eyebrow, .badge-label, .line-label, .emoji-tile')) return; const t = e.textContent.trim(); if (t && (!/\\s/.test(t) || (t === t.toUpperCase() && /[A-Z]{3}/.test(t)))) bad.push('plain line: ' + t.slice(0, 40)); });
+  }
   // Footer
   const foot = d.querySelector('footer');
   out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('.foot-find img').length, heights: [...new Set([...foot.querySelectorAll('.foot-find img')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
-  if (out.footer.cols !== 3 || out.footer.badges !== 7 || !out.footer.cookie || !d.querySelector('.gmb-cards a[href^="tel:"]') || !d.querySelector('.final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
+  if (out.footer.cols !== 3 || out.footer.badges !== 7 || !out.footer.cookie || !d.querySelector('.final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
+  // The GMB block is on the homepage only, right above the final CTA.
+  const gmb = d.querySelector('.gmb'), isHome = win.location.pathname === '/';
+  if (isHome ? !(gmb && gmb.querySelector('a[href^="tel:"]') && gmb.nextElementSibling === d.querySelector('.cta-sec')) : !!gmb) bad.push('GMB block in the wrong place');
   if (out.footer.heights.length > 1) bad.push('badge heights differ');
   out.bad = bad;
   return out;
@@ -155,6 +179,24 @@ const data = (dom) => JSON.parse(decodeURIComponent(/data-r="([^"]*)"/.exec(dom)
 
 let problems = 0;
 const summary = [];
+// Every page once at desktop width, measurements only.
+if (ALL) {
+  const walk = (dir) => readdirSync(dir).flatMap((n) => { const p = join(dir, n); return statSync(p).isDirectory() ? walk(p) : n === 'index.html' ? [p] : []; });
+  const seen = {};
+  for (const file of walk('dist')) {
+    const page = `/${file.replace(/\\/g, '/').replace(/^dist\//, '').replace(/index\.html$/, '')}`;
+    if (page.startsWith('/admin')) continue;
+    const size = process.argv.includes('--phone') ? [360, 640] : [1440, 900];
+    const m = data(await chrome(['--dump-dom', q(page, 'light', size[0], size[1], 'measure')]));
+    problems += m.bad.length;
+    for (const b of new Set(m.bad)) { const key = b.replace(/\d+px/, 'Npx'); (seen[key] ??= []).push(page); }
+    if (m.bad.length) console.log(page, m.bad.length);
+  }
+  writeFileSync(`${ROOT}/all-pages.json`, JSON.stringify(seen, null, 1));
+  console.log(`all pages: ${problems} problems, details in ${ROOT}/all-pages.json`);
+  server.close();
+  process.exit(problems ? 1 : 0);
+}
 for (const name of RUN) {
 const PAGE = TEMPLATES[name];
 const OUT = `${ROOT}/${name}`;

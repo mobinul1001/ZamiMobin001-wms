@@ -10,7 +10,7 @@ const posts = await getCollection('blog');
 const find = (s: string) => posts.find((p) => p.data.path === `/${s}/`);
 const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
 ---
-<section class="page-hero"><div class="wrap">
+<section class="page-hero center"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
   <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
   {intro && <div class="prose hero-intro" set:html={polish(intro, { sections: false })} />}

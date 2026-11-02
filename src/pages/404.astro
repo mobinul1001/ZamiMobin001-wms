@@ -4,7 +4,7 @@ import Base from '../layouts/Base.astro';
 const isProduction = process.env.CONTEXT === 'production' && process.env.URL === Astro.site?.origin;
 ---
 <Base title="Page Not Found | WMS" robots="noindex, follow">
-  <section class="page-hero"><div class="wrap"><h1>Page not <span class="hl">found</span></h1><p class="sub">This page does not exist. These may help:</p>
+  <section class="page-hero center"><div class="wrap"><h1>Page not <span class="hl">found</span></h1><p class="sub">This page does not exist. These may help:</p>
     <div class="btn-row cta-row"><a class="btn primary" href="/">Home</a><a class="btn ghost" href="/monthly-website-maintenance-packages/">Pricing</a><a class="btn ghost" href="/blogs/">Blog</a><a class="btn ghost" href="/contact/">Contact</a></div>
   </div></section>
   {isProduction && (

@@ -3,7 +3,8 @@
 import { getCollection } from 'astro:content';
 import hubs from '../../data/blog-hubs.json';
 import prices from '../../data/prices.json';
-import { polish, hlLast } from '../../lib/polish';
+import site from '../../data/site.json';
+import { factCard, polish, hlLast } from '../../lib/polish';
 import { icon } from '../../lib/icons';
 
 const { entry } = Astro.props;
@@ -51,6 +52,14 @@ const paragraph = /<p>((?:(?!<\/p>|<img|<a ).){60,420})<\/p>/s;
 const html = entry.rendered?.html ?? '';
 const sub = paragraph.exec(html)?.[1];
 let body = sub ? html.replace(paragraph, '') : html;
+// The hero stays short: a longer first paragraph stays in the page, whole.
+const subShort = sub && sub.length <= 200 ? sub : undefined;
+if (!subShort) body = html;
+// A status panel near the top of the old page moves to the right of the hero.
+const beforeH2 = body.indexOf('<h2');
+const panel = /<div class="status-panel">[\s\S]*?<\/div>/.exec(body);
+const heroPanel = panel && (beforeH2 < 0 || panel.index < beforeH2) ? panel[0] : '';
+if (heroPanel) body = body.replace(heroPanel, '').replace(/<div class="card">\s*<\/div>/, '');
 
 if (storeSet) {
   const first = body.search(new RegExp(`<h[34][^>]*>${storeSet.plans[0].name}</h[34]>`));
@@ -74,14 +83,20 @@ if (local) {
 
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
-const polished = polish(body);
+const isEn = (lang ?? 'en').startsWith('en');
+const [factTitle, ...factItems] = priceLine.split(' · ');
+const heroSide = heroPanel || (priceLine ? factCard(factTitle, factItems) : isEn ? `<div class="card fact-card"><div class="stats-row">${site.stats.slice(0, 1).concat(site.stats.slice(4)).map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('')}</div></div>` : '');
+const fallback = isEn ? { html: `<div class="card side-card"><div class="stats-row">${site.stats.slice(0, 2).map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('')}</div><p>${site.statsLine}</p><div class="btn-row"><a class="btn ghost" href="/works/">See our work</a></div></div>` } : undefined;
+const polished = polish(body, { layout: { fallback } });
 ---
-<section class="page-hero"><div class="wrap service-hero">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{text.home}</a> / {h1}</nav>
-  <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
-  {sub && <p class="sub" set:html={sub} />}
-  {priceLine && <p class="price-line">{priceLine}</p>}
-  <div class="btn-row cta-row"><a class="btn primary" href={primary.href}>{primary.label}<Fragment set:html={icon('arrow')} /></a><a class="btn ghost" href={check}>{text.check}</a></div>
+<section class="page-hero"><div class="wrap hero-split">
+  <div class="service-hero">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{text.home}</a> / {h1}</nav>
+    <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
+    {subShort && <p class="sub" set:html={subShort} />}
+    <div class="btn-row cta-row"><a class="btn primary" href={primary.href}>{primary.label}<Fragment set:html={icon('arrow')} /></a><a class="btn ghost" href={check}>{text.check}</a></div>
+  </div>
+  {heroSide && <div class="hero-side" set:html={heroSide} />}
 </div></section>
 <Fragment set:html={polished} />
 {guides.length > 0 && (

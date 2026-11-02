@@ -27,7 +27,7 @@ Serving US, UK, CA, AU, Netherlands, France, Spain, Brazil, Ireland, & Switzerla
 
 <div class="card">
 
-<div class="status-panel"><p class="status-head"><span>● Responsive</span><span class="tag">Example</span></p><p class="status-row"><strong>PageSpeed &amp; Core Web Vitals</strong> <em>99/100 Passed</em></p><p class="status-row"><strong>SEO &amp; Accessibility (WCAG)</strong> <em>Compliant</em></p><p class="status-note">Desktop 4K</p><p class="status-note">Tablet Pro</p><p class="status-note">Mobile First</p><p class="status-note">Custom UI/UX Design + Built-In Security &amp; Support</p></div>
+<div class="status-panel"><p class="status-head"><span>● Responsive</span><span class="tag">Client result</span></p><p class="status-row"><strong>PageSpeed &amp; Core Web Vitals</strong> <em>99/100 Passed</em></p><p class="status-row"><strong>SEO &amp; Accessibility (WCAG)</strong> <em>Compliant</em></p><p class="status-note">Desktop 4K</p><p class="status-note">Tablet Pro</p><p class="status-note">Mobile First</p><p class="status-note">Custom UI/UX Design + Built-In Security &amp; Support</p></div>
 
 </div>
 

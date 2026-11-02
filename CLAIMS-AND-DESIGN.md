@@ -11,7 +11,7 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 - Owner, 2026-11-02, replaces all old versions. Stat block: **650+ websites maintained · 120+ built · 190+ redesigns · 70+ migrations · 12+ years.**
 - Short line: **"650+ websites maintained in 12+ years."**
 - Under the stat block and on About: **"650+ websites maintained in 12+ years — most of them built by other agencies or freelancers, and 120+ built by us."**
-- Reach, short spots: **"for businesses in the USA, Canada, the UK, Australia and Europe"**. Full list, only on About and "Countries we serve": the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Switzerland and the Caribbean.
+- Reach, short spots: **"for businesses in the USA, Canada, the UK, Australia and Europe"**. Full list, only on About and "Countries we serve": the USA, Canada, the UK, Australia, the Netherlands, Ireland, France, Spain, Brazil, Switzerland and the Caribbean.
 
 ### A2. Years of experience
 - Owner, 2026-11-02: **12+ years**. No founding year and no "since" dates for this website.

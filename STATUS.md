@@ -192,7 +192,8 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - How WMS relates to Chrein (owner to explain).
 - A possible "Big-agency experience, small-team care" section (owner to confirm which promises are true).
 - Real team photos. The stock team photo from the old homepage is left out.
-- Update the review profiles: they still show a Dhaka address, and Clutch shows "Founded 2025".
+- Review profiles: the owner updates them (New York address, correct founding year). They still show a Dhaka address, and Clutch shows "Founded 2025".
+- New logo: the owner sends it later; no logo change until then.
 
 **After the owner pushes (not blocking current work):**
 - Formspree form ID (`src/data/forms.json`, `default`).

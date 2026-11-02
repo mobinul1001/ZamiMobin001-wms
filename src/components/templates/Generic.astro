@@ -7,7 +7,7 @@ const { entry } = Astro.props;
 const isAbout = entry.data.path === '/about-us/';
 const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 });
 ---
-<section class="page-hero"><div class="wrap">
+<section class="page-hero center"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
   <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
 </div></section>

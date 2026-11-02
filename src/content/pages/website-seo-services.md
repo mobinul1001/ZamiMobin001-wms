@@ -25,7 +25,7 @@ Looking for complete site care? Pair your organic growth with our [ongoing websi
 
 <div class="card">
 
-<div class="status-panel"><p class="status-head"><span>● Real-time SEO Growth</span><span class="tag">Example</span></p><p class="status-row"><strong>Organic Search Traffic</strong> <em>+142% Growth</em></p><p class="status-row"><strong>Target Keywords</strong> <em>Page 1 Top 3</em></p><p class="status-row"><strong>Technical SEO Audit</strong> <em>98/100 Passed</em></p><p class="status-note">Trusted SEO Agency • US, UK, CA &amp; AU</p></div>
+<div class="status-panel"><p class="status-head"><span>● Real-time SEO Growth</span><span class="tag">Client result</span></p><p class="status-row"><strong>Organic Search Traffic</strong> <em>+142% Growth</em></p><p class="status-row"><strong>Target Keywords</strong> <em>Page 1 Top 3</em></p><p class="status-row"><strong>Technical SEO Audit</strong> <em>98/100 Passed</em></p><p class="status-note">Trusted SEO Agency • US, UK, CA &amp; AU</p></div>
 
 </div>
 

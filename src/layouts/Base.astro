@@ -102,7 +102,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
     <main>
       <slot />
     </main>
-    <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
+    {Astro.url.pathname === '/' && <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
       <div>
         <p class="eyebrow">{site.gbp.eyebrow}</p>
         <p class="gmb-title">{site.gbp.name}</p>
@@ -113,7 +113,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('phone')}</span>`} /><div><small>PHONE</small><a href={site.phoneHref}>{site.phone}</a></div></div>
         <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('globe')}</span>`} /><div><small>WEBSITE</small><a href="/">{site.website}</a></div></div>
       </div>
-    </div></section>
+    </div></section>}
     <section class="cta-sec" data-sec="final"><div class="wrap"><div class="final">
       <div>
         {cta ? <h2 id={cta.id} set:html={finalCta.title} /> : <p class="final-title">{finalCta.title}</p>}

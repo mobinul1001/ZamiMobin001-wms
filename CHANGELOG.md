@@ -209,3 +209,13 @@
 - Design moved from the mockup into the site: src/styles/site.css, Base.astro, all templates, src/lib/home.ts, polish.ts, plans.ts, icons.ts. mockups/v2 and build-mockups-v2.mjs removed.
 - Every page ends with the GMB block, final CTA box and new footer. A short call to action at the end of a page moves into the CTA box.
 - scripts/design-qa.mjs runs on dist/ for 11 templates.
+
+## 2026-11-02: owner's layout rules on all templates
+- Status panels on the SEO and design pages now say "Client result"; the other panels and the homepage visuals keep "Example".
+- Brazil added to the full country list. The GMB block is on the homepage only.
+- polish.ts places every section: text + side card, centred reading column, or two text columns above a wide block.
+- Leftover lines become chips, icon badges, check lists, numbered cards, stat cards and small labels. Short lists become icon-card grids.
+- FAQs are one 2-column accordion per page; pricing merges its billing questions into it.
+- Quote, contact and audit forms: fields side by side, sticky "What happens next" panel.
+- Section padding 80/48, heading gap 24, shorter inner-page heroes with a side card or centred.
+- design-qa.mjs: new checks at 1440 (empty right side, gaps, plain lines, stacked grids), --all-pages and --phone, Lighthouse on all 11 templates.
