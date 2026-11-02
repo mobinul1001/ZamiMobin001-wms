@@ -77,7 +77,7 @@ The industry is guessed from the site name, so check each site before publishing
 ### A7. Guarantee
 - Replace "100% Malware Removal & Blacklist Reversal Guarantee" with: **"If we can't clean your hacked site, you don't pay."** (Owner to confirm. This is a promise the business can always keep.)
 - Sitewide plan promise: **"No contract. Cancel anytime."**
-- **99.9% uptime guarantee** (owner confirmed 2026-11-02): back on the homepage and the 3 comparison posts. The white-label page keeps its old removal of SLA claims.
+- **99.9% uptime guarantee** (owner confirmed 2026-11-02): back on the homepage and the 3 comparison posts. The white-label page keeps its old removal of SLA claims. Wording stays "guarantee" (owner, 2026-11-03); the owner adds the terms to `/terms-conditions/`, which has none yet.
 - No other guarantees (ranking, "100%") anywhere.
 
 ### A8. Case study

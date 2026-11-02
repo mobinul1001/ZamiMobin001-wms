@@ -38,7 +38,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 ## Owner decisions (2026-11-02)
 - Restored, confirmed true: "+142% Growth", "Page 1 Top 3", "98/100 Passed", "99/100 Passed", "Expert Developers: Certified, experienced team", the Altitude Care numbers, H2 "Real Maintenance Results, Backed by Numbers", "99.9% uptime guarantee". Build checks that blocked them are gone. "Certified, Experienced, Trusted." and "Google Partner" stay.
 - Company facts, contact details and reach: `CLAIMS-AND-DESIGN.md` section A; values in `src/data/site.json`. No Dhaka, Bangladesh or +880 about the company.
-- Every page ends: GMB block → final CTA box → footer.
+- GMB block only on the homepage, directly above the final CTA box. Other pages end: content → final CTA box → footer.
 - Service cards: no "5-Star Service" line (already gone).
 - General mentions of Bangladesh stay in 5 blog posts (CDN regions, .bd domains, Shopify pricing) and one portfolio link, since they are not about the company. The owner can ask to remove them.
 
@@ -194,6 +194,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Real team photos. The stock team photo from the old homepage is left out.
 - Review profiles: the owner updates them (New York address, correct founding year). They still show a Dhaka address, and Clutch shows "Founded 2025".
 - New logo: the owner sends it later; no logo change until then.
+- **Uptime guarantee terms: the owner adds them to the Terms page before launch.** The owner chose to keep "99.9% uptime guarantee" (2026-11-03) and will supply the terms.
 
 **After the owner pushes (not blocking current work):**
 - Formspree form ID (`src/data/forms.json`, `default`).

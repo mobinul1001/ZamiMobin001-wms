@@ -219,3 +219,7 @@
 - Quote, contact and audit forms: fields side by side, sticky "What happens next" panel.
 - Section padding 80/48, heading gap 24, shorter inner-page heroes with a side card or centred.
 - design-qa.mjs: new checks at 1440 (empty right side, gaps, plain lines, stacked grids), --all-pages and --phone, Lighthouse on all 11 templates.
+
+## 2026-11-03: uptime wording
+- Owner keeps "99.9% uptime guarantee". No site text changed. Terms for the Terms page added to the owner's later list in STATUS.md.
+- STATUS.md: GMB line corrected to homepage only.
