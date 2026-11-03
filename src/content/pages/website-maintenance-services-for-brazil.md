@@ -144,8 +144,6 @@ Perfeito para pequenos sites e negócios locais.
 
 R$429/mês
 
-Primeiro mês grátis
-
 ou R$4.290/ano, 2 meses grátis
 
 [Escolher Plano](/get-a-free-quote/#essential-brl)
@@ -170,8 +168,6 @@ Ideal para empresas em crescimento e sites de serviços.
 
 R$809/mês
 
-Primeiro mês grátis
-
 ou R$8.090/ano, 2 meses grátis
 
 [Escolher Plano](/get-a-free-quote/#growth-brl)
@@ -194,8 +190,6 @@ ou R$8.090/ano, 2 meses grátis
 Para sites de eCommerce, tráfego alto e sites críticos.
 
 R$1.629/mês
-
-Primeiro mês grátis
 
 ou R$16.290/ano, 2 meses grátis
 

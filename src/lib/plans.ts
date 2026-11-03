@@ -13,7 +13,7 @@ export function plansHtml(fade = '') {
       ${popular ? '<span class="pop-tag">Most popular</span>' : ''}
       <h3>${p.name}</h3>
       <div class="price"><span class="m"><b>${money(p.monthly)}</b><small>/mo</small></span><span class="y"><b>${money(p.annual)}</b><small>/yr</small></span></div>
-      <p class="note"><span class="m">${prices.firstMonthNote.en}</span><span class="y">${prices.annualNote.en}</span></p>
+      <p class="note"><span class="y">${prices.annualNote.en}</span></p>
       <p class="annual m">or ${money(p.annual)}/yr, <b>${prices.annualNote.en}</b></p>
       <a class="btn ${popular ? 'primary' : 'ghost'}" href="/get-a-free-quote/#${p.name.toLowerCase()}">Start ${p.name}${icon('arrow')}</a>
       <ul class="feat">${p.includes.map((f) => (explain[f] ? `<li>${tick}<details><summary>${f}</summary><p>${explain[f]}</p></details></li>` : `<li>${tick}<span>${f}</span></li>`)).join('')}</ul>

@@ -146,8 +146,6 @@ Essential updates & security for small sites.
 
 A$109/mo
 
-First month free
-
 or A$1,090/yr, 2 months free
 
 [Select Plan](/get-a-free-quote/#essential-aud)
@@ -174,8 +172,6 @@ Ideal for growing businesses & service websites.
 
 A$209/mo
 
-First month free
-
 or A$2,090/yr, 2 months free
 
 [Select Plan](/get-a-free-quote/#growth-aud)
@@ -200,8 +196,6 @@ GOLD
 For high-traffic, eCommerce & mission-critical sites.
 
 A$429/mo
-
-First month free
 
 or A$4,290/yr, 2 months free
 

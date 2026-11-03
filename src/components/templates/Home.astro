@@ -1,9 +1,9 @@
 ---
-// Homepage, DESIGN-QA.md. Every old section stays in the HTML, regrouped; src/lib/home.ts builds the sections.
+// Homepage: the owner's design on top, the old page text below (src/lib/home.ts). Every old line stays in the HTML.
+import '../../styles/home.css';
 import { renderHome } from '../../lib/home';
-import woo from '../../data/woo-logo.json';
 
 const { entry } = Astro.props;
-const html = renderHome(entry.rendered?.html ?? '', entry.data.faqs ?? [], woo.svg);
+const html = renderHome(entry.rendered?.html ?? '', entry.data.faqs ?? []);
 ---
 <Fragment set:html={html} />

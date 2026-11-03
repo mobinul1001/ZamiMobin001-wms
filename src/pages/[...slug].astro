@@ -38,7 +38,7 @@ if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, p
 // A short call to action at the end of a page becomes its final CTA box.
 const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
 if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
-const hasForm = Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
+const hasForm = path === '/' || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>
   {hasForm && <script is:inline defer src="/forms.js" slot="head"></script>}

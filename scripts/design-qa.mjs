@@ -53,7 +53,7 @@ const MEASURE = `(d, w, vh) => {
   d.querySelectorAll('.sec[data-sec]').forEach((s) => { if (s.dataset.sec === 'final') return; for (const q of ['.head .eyebrow', '.head h2', '.head .intro']) if (!s.querySelector(q)) bad.push('section ' + s.dataset.sec + ' has no ' + q); });
   out.h1 = d.querySelectorAll('h1').length; if (out.h1 !== 1) bad.push('h1 count ' + out.h1);
   // Text overflow and broken words
-  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
+  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap, .hp-mq ul, .hp-mini') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && !e.matches('.hp-mq') && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
   // Words split across lines inside a heading or a card title
   const range = d.createRange();
   d.querySelectorAll('h1, h2, h3, .btn, strong').forEach((e) => { if (!vis(e) || e.closest('.sr-only')) return; const walker = d.createTreeWalker(e, 4); let n; while ((n = walker.nextNode())) { const re = /\\S+/g; let m; while ((m = re.exec(n.data))) { range.setStart(n, m.index); range.setEnd(n, m.index + m[0].length); const rects = [...range.getClientRects()].filter((x) => x.width > 0); if (rects.length > 1 && Math.abs(rects[0].top - rects[rects.length - 1].top) > 4 && !/[-\\/–—@_.]/.test(m[0])) bad.push('word broken: ' + m[0]); } } });
@@ -106,7 +106,7 @@ const MEASURE = `(d, w, vh) => {
     d.querySelectorAll('main > section, main > .wrap').forEach((sec) => {
       const title = (sec.querySelector('h2') || sec.querySelector('h1') || {}).textContent || sec.className;
       const left = (w - wrapW) / 2, right = left + wrapW;
-      const leaves = [...sec.querySelectorAll('h1, h2, h3, h4, h5, p, li, table, img, form, details, .card, .cell, .mini, .stat, .btn, svg, pre, label, .toggle, .callout, .text-cols, .tbl-wrap')].filter((e) => vis(e) && !e.closest('.sr-only, .page-hero.center .crumbs, summary') && !e.matches('svg') );
+      const leaves = [...sec.querySelectorAll('h1, h2, h3, h4, h5, p, li, table, img, form, details, .card, .cell, .mini, .stat, .btn, .hp-bc, .hp-step, .hp-case, .hp-tq, .hp-stat, .hp-plat, .qf, svg, pre, label, .toggle, .callout, .text-cols, .tbl-wrap')].filter((e) => vis(e) && !e.closest('.sr-only, .page-hero.center .crumbs, summary') && !e.matches('svg') );
       const sr = R(sec), split = sec.matches('.read') || !!sec.querySelector('.split, .hero-split, .post-grid:not(.no-toc)');
       const boxes = leaves.map((e) => { const range = d.createRange(); range.selectNodeContents(e); const r = e.matches('p, h1, h2, h3, h4, h5, li') ? range.getBoundingClientRect() : R(e); return { e, top: r.top, bottom: r.bottom, left: r.left, right: e.closest('.head, .sub-head, .faq, .hero') ? right + 1 : r.right }; }).filter((b) => b.bottom > b.top).sort((a, b) => a.top - b.top);
       // (a) a tall stretch that stays in the left part with nothing to the right, unless it is a centred column
@@ -122,11 +122,12 @@ const MEASURE = `(d, w, vh) => {
   }
   // Footer
   const foot = d.querySelector('footer');
-  out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('.foot-find img').length, heights: [...new Set([...foot.querySelectorAll('.foot-find img')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
-  if (out.footer.cols !== 3 || out.footer.badges !== 7 || !out.footer.cookie || !d.querySelector('.final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
+  out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) img')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
+  const home = !!d.querySelector('.hp-hero');
+  if (out.footer.cols !== 3 || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
   // The GMB block is on the homepage only, right above the final CTA.
   const gmb = d.querySelector('.gmb'), isHome = win.location.pathname === '/';
-  if (isHome ? !(gmb && gmb.querySelector('a[href^="tel:"]') && gmb.nextElementSibling === d.querySelector('.cta-sec')) : !!gmb) bad.push('GMB block in the wrong place');
+  if (isHome ? !(gmb && gmb.querySelector('a[href^="tel:"]') && gmb.nextElementSibling === d.querySelector('.cta-sec, .hp-final-sec')) : !!gmb) bad.push('GMB block in the wrong place');
   if (out.footer.heights.length > 1) bad.push('badge heights differ');
   out.bad = bad;
   return out;

@@ -79,8 +79,6 @@ Essential
 
 $79/mo
 
-First month free
-
 or $790/yr, 2 months free
 
 Starter plan for blogs & brochure sites needing core security & updates.
@@ -101,8 +99,6 @@ Growth
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 Our most popular plan for growing businesses needing active maintenance.
@@ -121,8 +117,6 @@ Our most popular plan for growing businesses needing active maintenance.
 Business
 
 $299/mo
-
-First month free
 
 or $2,990/yr, 2 months free
 

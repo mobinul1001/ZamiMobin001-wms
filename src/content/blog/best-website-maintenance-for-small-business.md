@@ -74,8 +74,6 @@ Essential
 
 $79/mo
 
-First month free
-
 or $790/yr, 2 months free
 
 One of our starter plans for basic security & updates.
@@ -96,8 +94,6 @@ Growth
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 Our most popular plan for growing businesses requiring active maintenance.
@@ -116,8 +112,6 @@ Our most popular plan for growing businesses requiring active maintenance.
 Business
 
 $299/mo
-
-First month free
 
 or $2,990/yr, 2 months free
 

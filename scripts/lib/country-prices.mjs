@@ -68,12 +68,11 @@ export function countryPairs(path) {
   const local = prices.local[path];
   if (!card || !local) return [];
   const note = prices.annualNote[card.note ?? 'en'];
-  const first = prices.firstMonthNote[card.lang ?? 'en'];
   const hash = (i) => `${HASH[i]}${local.currency === 'USD' ? '' : `-${local.currency.toLowerCase()}`}`;
   const pairs = [];
   card.old.forEach((old, i) => {
     const from = `${old}\n\n${card.annualLine ? `${OLD_ANNUAL[i]}\n\n` : ''}[${card.button}](/get-a-free-quote/)`;
-    const to = `${local.monthly[i]}/${card.month ?? 'mo'}\n\n${first}\n\n${card.or ?? 'or'} ${local.annual[i]}/${card.year ?? 'yr'}, ${note}\n\n[${card.button}](/get-a-free-quote/#${hash(i)})\n\n${featureList(i, card.lang)}`;
+    const to = `${local.monthly[i]}/${card.month ?? 'mo'}\n\n${card.or ?? 'or'} ${local.annual[i]}/${card.year ?? 'yr'}, ${note}\n\n[${card.button}](/get-a-free-quote/#${hash(i)})\n\n${featureList(i, card.lang)}`;
     pairs.push([from, to]);
     pairs.push([`### ${card.heads[i]}\n`, `### ${(card.names ?? NAMES)[i]}\n`]);
   });

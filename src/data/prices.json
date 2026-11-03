@@ -204,10 +204,6 @@
       "cleanup": "R$809"
     }
   },
-  "firstMonthNote": {
-    "en": "First month free",
-    "pt": "Primeiro mês grátis"
-  },
   "storePlans": {
     "woocommerce": {
       "path": "/ecommerce-website-maintenance-packages/",

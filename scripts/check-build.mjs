@@ -132,7 +132,11 @@ for (const file of htmlFiles) {
   if (!isLive && !/noindex/.test(robots)) fail('noindex', `${path}: preview build must be noindex.`);
 
   // Owner rules from CLAIMS-AND-DESIGN.md section A: banned claims stay off the page, meta and schema.
-  const claimTexts = [$('main').text().replace(/[ \t]+/g, ' '), title, desc, ...$('meta[property^="og:"], meta[name^="twitter:"]').toArray().map((m) => $(m).attr('content') ?? '').filter((v) => !/^https?:/.test(v))];
+  // Owner, 2026-11-03: the homepage shows "5.0 on Clutch" and placeholder review cards (marked data-claim-ok).
+  const $claimMain = $('main').clone();
+  $claimMain.find('[data-claim-ok]').remove();
+  if ($('main').text().includes('[Real client quote')) warn('placeholders', `${path}: the review cards are placeholders; replace them with real reviews before launch.`);
+  const claimTexts = [$claimMain.text().replace(/[ \t]+/g, ' '), title, desc, ...$('meta[property^="og:"], meta[name^="twitter:"]').toArray().map((m) => $(m).attr('content') ?? '').filter((v) => !/^https?:/.test(v))];
   for (const text of claimTexts) for (const line of findBanned(text, path).slice(0, 3)) fail('claims', `${path}: banned claim: ${line.slice(0, 110)}`);
   if (/\bJohn Doe\b|\bParaphrased\b/.test($('main').text())) fail('claims', `${path}: placeholder testimonial text.`);
   // A placeholder must never go live, and every form must reach Formspree.
@@ -150,11 +154,14 @@ for (const file of htmlFiles) {
     if ($(form).find('input:not([type="button"]), select, textarea').toArray().some((c) => !$(c).attr('name'))) fail('forms', `${path}: a form field has no name, so its value would not be sent.`);
   });
   // Owner rule: country pages show the master plans in local currency, and no dollar price unless the page is the USA one.
+  // Owner, 2026-11-03: no free first month anywhere.
+  const freeMonth = /first month (is )?free|free (first )?month|1 month free|primer mes gratis|primeiro m[eê]s gr[aá]tis/i.exec($('body').text());
+  if (freeMonth) fail('claims', `${path}: "${freeMonth[0]}" is shown; the owner removed the free first month.`);
   const localPrice = masterPrices.local[path];
   if (localPrice) {
     const mainText = $('main').text();
     if (!$('#plans').length) fail('country-price', `${path}: #plans anchor is missing.`);
-    for (const f of ['Free hosting for the first year', '2 free webmail accounts', 'First month free'].filter(() => localPrice.currency !== 'BRL')) if (!mainText.includes(f)) fail('country-price', `${path}: "${f}" is missing.`);
+    for (const f of ['Free hosting for the first year', '2 free webmail accounts'].filter(() => localPrice.currency !== 'BRL')) if (!mainText.includes(f)) fail('country-price', `${path}: "${f}" is missing.`);
     for (const p of [...localPrice.monthly, ...localPrice.annual, localPrice.fix, localPrice.cleanup]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
     if (localPrice.currency !== 'USD' && /(?<![A-Z])\$\s?\d/.test(mainText)) fail('country-price', `${path}: shows a dollar price: ${/(?<![A-Z])\$\s?\d[^ ]*/.exec(mainText)[0]}`);
     $('main p, main li').each((_, e) => {

@@ -1,12 +1,12 @@
 // Store plans on the WooCommerce (ecommerce) and Shopify pages (owner, 2026-11-01). Prices live in src/data/prices.json.
 import { readFileSync } from 'node:fs';
 
-const { storePlans, annualNote, firstMonthNote } = JSON.parse(readFileSync('src/data/prices.json', 'utf8'));
+const { storePlans, annualNote } = JSON.parse(readFileSync('src/data/prices.json', 'utf8'));
 const money = (n) => `$${n.toLocaleString('en-US')}`;
 
 const cardPair = (plan, oldPrice, oldAnnual, oldButton, label) => [
   `${oldPrice}/mo\n\nor ${oldAnnual}/mo billed annually\n\n[${oldButton}](/get-a-free-quote/)`,
-  `${money(plan.monthly)}/mo\n\n${firstMonthNote.en}\n\nor ${money(plan.annual)}/yr, ${annualNote.en}\n\n[${label}](/get-a-free-quote/#${plan.hash})\n\n${plan.includes.map((f) => `-   ${f}`).join('\n')}`,
+  `${money(plan.monthly)}/mo\n\nor ${money(plan.annual)}/yr, ${annualNote.en}\n\n[${label}](/get-a-free-quote/#${plan.hash})\n\n${plan.includes.map((f) => `-   ${f}`).join('\n')}`,
 ];
 
 const [starter, growth, pro] = storePlans.woocommerce.plans;

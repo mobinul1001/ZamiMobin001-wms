@@ -18,9 +18,9 @@ const check = '/free-website-maintenance-audit/';
 // Starting prices come only from the master list. Pages with an unanswered price set show none.
 const FROM_LOW = ['/wordpress-website-maintenance-packages/', ...Object.keys(prices.local)];
 const text = {
-  en: { home: 'Home', from: `Plans from ${low}/mo · First month free · Free hosting for 1 year · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
-  es: { home: 'Inicio', from: `Planes desde ${low}/mes · Primer mes gratis · Alojamiento gratis por 1 año · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
-  pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Primeiro mês grátis · Hospedagem grátis por 1 ano · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
+  en: { home: 'Home', from: `Plans from ${low}/mo · Free hosting for 1 year · No contract`, plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' },
+  es: { home: 'Inicio', from: `Planes desde ${low}/mes · Alojamiento gratis por 1 año · Sin contrato`, plans: 'Ver planes y precios', check: 'Revisión gratuita del sitio', guides: 'Guías' },
+  pt: { home: 'Início', from: `Planos a partir de ${low}/mês · Hospedagem grátis por 1 ano · Sem contrato`, plans: 'Ver planos e preços', check: 'Verificação gratuita do site', guides: 'Guias' },
 }[(lang ?? 'en').slice(0, 2)] ?? { home: 'Home', from: '', plans: 'See plans & pricing', check: 'Get a free website check', guides: 'Guides' };
 
 const storeSet = Object.values(prices.storePlans).find((s) => s.path === path);
@@ -32,7 +32,7 @@ const SERVICE_LINES: Record<string, string> = {
   '/website-seo-services/': 'Monthly SEO from $299 · One-time SEO audit $199',
 };
 let priceLine = FROM_LOW.includes(path) ? text.from : '';
-if (storeSet) priceLine = storeSet === prices.storePlans.shopify ? `Shopify plans from $${storeSet.plans[0].monthly}/mo · First month free · No contract` : `Store plans from $${storeSet.plans[0].monthly}/mo · First month free · Free hosting for 1 year · No contract`;
+if (storeSet) priceLine = storeSet === prices.storePlans.shopify ? `Shopify plans from $${storeSet.plans[0].monthly}/mo · No contract` : `Store plans from $${storeSet.plans[0].monthly}/mo · Free hosting for 1 year · No contract`;
 let primary = { label: text.plans, href: local || storeSet ? '#plans' : plans };
 if (path === '/website-repair-services/') {
   priceLine = `One-time fix from $${prices.oneTimeFixFrom} · No contract`;

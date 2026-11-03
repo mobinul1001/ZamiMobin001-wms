@@ -175,8 +175,6 @@ Best for small websites, blogs, and personal sites.
 
 $79/mo
 
-First month free
-
 or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
@@ -201,8 +199,6 @@ Best for businesses & service websites reliant on leads.
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
@@ -225,8 +221,6 @@ or $1,490/yr, 2 months free
 For Ecommerce, SaaS, and high-traffic sites.
 
 $299/mo
-
-First month free
 
 or $2,990/yr, 2 months free
 

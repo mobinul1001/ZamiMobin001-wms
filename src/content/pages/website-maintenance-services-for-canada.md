@@ -134,8 +134,6 @@ Perfect for small businesses, startups & personal websites.
 
 CA$109/mo
 
-First month free
-
 or CA$1,090/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#essential-cad)
@@ -160,8 +158,6 @@ Great for growing service businesses and content-heavy websites.
 
 CA$209/mo
 
-First month free
-
 or CA$2,090/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#growth-cad)
@@ -184,8 +180,6 @@ or CA$2,090/yr, 2 months free
 Best for eCommerce, large businesses & high-traffic platforms.
 
 CA$419/mo
-
-First month free
 
 or CA$4,190/yr, 2 months free
 

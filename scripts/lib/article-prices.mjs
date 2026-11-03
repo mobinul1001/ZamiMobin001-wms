@@ -12,7 +12,7 @@ const prices = JSON.parse(readFileSync('src/data/prices.json', 'utf8'));
 const PLAN_OF = { $79: 0, $149: 1, $299: 2 };
 const HASH = ['essential', 'growth', 'business'];
 
-// Plan cards in articles and on the WordPress page: first-month note, plan hash on the button, master features under it.
+// Plan cards in articles and on the WordPress page: plan hash on the button, master features under it.
 function addFeaturesToCards(md) {
   const out = [];
   let plan = -1;
@@ -20,7 +20,7 @@ function addFeaturesToCards(md) {
     const price = /^(\$(?:79|149|299))\/mo$/.exec(line);
     if (price) {
       plan = PLAN_OF[price[1]];
-      out.push(line, '', prices.firstMonthNote.en);
+      out.push(line);
       continue;
     }
     if (plan >= 0 && /^\[[^\]]+\]\(\/get-a-free-quote\/(?:#[\w-]+)?\)$/.test(line)) {

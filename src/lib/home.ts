@@ -1,21 +1,49 @@
-// Homepage, per DESIGN-QA.md. Old text comes from the page content; short labels are in LABELS for owner review.
+// Homepage: the owner's design file (wms-homepage-design.html, 2026-11-03) on top, the old page text below it.
+// Every old line stays in the HTML. Short labels are in LABELS for owner review.
 import * as cheerio from 'cheerio';
 import prices from '../data/prices.json';
 import site from '../data/site.json';
+import design from '../data/home-design.json';
 import { badge, icon, nope, tick } from './icons';
 import { plansHtml } from './plans';
-import { describeLinks } from './html-sections';
+import { describeLinks, formOpen } from './html-sections';
 import { sectionsOf } from './polish';
 
-const LABELS = { track: 'Track record', trackH2: '12+ years of keeping websites running', included: "What's included", pricing: 'Pricing', how: 'How it works', report: 'Monthly report', compare: 'Compare', ours: 'Our services', us: 'Why us', where: 'Where we work', faq: 'FAQ', compareIntro: 'What you get from each option, side by side.', faqIntro: 'Answers to the questions we hear most.' };
+const LABELS = { included: "What's included", report: 'Monthly report', compare: 'Compare', ours: 'Our services', us: 'Why us', where: 'Where we work', faq: 'FAQ', compareIntro: 'What you get from each option, side by side.', faqIntro: 'Answers to the questions we hear most.' };
 const EXPERT_DRAFT = 'A team of WordPress developers who work US & UK business hours and explain every change in plain words.';
-const PLATFORM_LOGOS: [string, string, string][] = [
-  ['WordPress', '0 0 24 24', 'M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0'],
-  ['WooCommerce', '', ''],
-  ['Shopify', '1.4 0 21.1 24', 'M15.337 23.979l7.216-1.561s-2.604-17.613-2.625-17.73c-.018-.116-.114-.192-.211-.192s-1.929-.136-1.929-.136-1.275-1.274-1.439-1.411c-.045-.037-.075-.057-.121-.074l-.914 21.104h.023zM11.71 11.305s-.81-.424-1.774-.424c-1.447 0-1.504.906-1.504 1.141 0 1.232 3.24 1.715 3.24 4.629 0 2.295-1.44 3.76-3.406 3.76-2.354 0-3.54-1.465-3.54-1.465l.646-2.086s1.245 1.066 2.28 1.066c.675 0 .975-.545.975-.932 0-1.619-2.654-1.694-2.654-4.359-.034-2.237 1.571-4.416 4.827-4.416 1.257 0 1.875.361 1.875.361l-.945 2.715-.02.01zM11.17.83c.136 0 .271.038.405.135-.984.465-2.064 1.639-2.508 3.992-.656.213-1.293.405-1.889.578C7.697 3.75 8.951.84 11.17.84V.83zm1.235 2.949v.135c-.754.232-1.583.484-2.394.736.466-1.777 1.333-2.645 2.085-2.971.193.501.309 1.176.309 2.1zm.539-2.234c.694.074 1.141.867 1.429 1.755-.349.114-.735.231-1.158.366v-.252c0-.752-.096-1.371-.271-1.871v.002zm2.992 1.289c-.02 0-.06.021-.078.021s-.289.075-.714.21c-.423-1.233-1.176-2.37-2.508-2.37h-.115C12.135.209 11.669 0 11.265 0 8.159 0 6.675 3.877 6.21 5.846c-1.194.365-2.063.636-2.16.674-.675.213-.694.232-.772.87-.075.462-1.83 14.063-1.83 14.063L15.009 24l.927-21.166z'],
-];
+const money = (v: number) => `$${v.toLocaleString('en-US')}`;
+const [low, , high] = prices.plans.map((p) => p.monthly);
+const NEEDS = ['Monthly maintenance plan', 'Fix something on my site', 'Speed optimization', 'Hacked site / malware', 'Migration or redesign', 'Something else'];
 
-export function renderHome(html: string, faqs: { q: string; a: string }[], wooSvg: string) {
+// The owner's quick-quote form, used in the hero and in the final call to action.
+function quickForm(id: string, title: string, text: string) {
+  const f = (name: string) => `${id}-${name}`;
+  return `${formOpen(`home-${id}`, 'qf')}
+    <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>
+    <div class="qf-two"><div><label for="${f('name')}">Full name</label><input id="${f('name')}" type="text" name="name" placeholder="Your name" autocomplete="name"></div>
+    <div><label for="${f('phone')}">Phone / WhatsApp <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>
+    <div class="qf-two"><div><label for="${f('email')}">Email <em>*</em></label><input id="${f('email')}" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
+    <div><label for="${f('website')}">Website URL</label><input id="${f('website')}" type="url" name="website" placeholder="https://yourwebsite.com" autocomplete="url"></div></div>
+    <div><label for="${f('need')}">What do you need? <em>*</em></label><select id="${f('need')}" name="need" required><option value="">Select one</option>${NEEDS.map((n) => `<option>${n}</option>`).join('')}</select></div>
+    <div><label for="${f('message')}">Tell us a little about it <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="What’s happening with your site, and what would you like us to do?" required></textarea></div>
+    <button class="btn primary" type="submit">Get my free quote${icon('arrow')}</button>
+    <p class="qf-foot">${icon('clock')}Reply within 24 hours · No spam · No contract</p>
+  </form>`;
+}
+
+// Final call to action with the form; Base.astro shows it on the homepage only. The old closing heading, text and links stay.
+type Cta = { id?: string; title: string; text: string; links: { href: string; label: string }[] };
+export const homeFinalHtml = (cta?: Cta) => `<section class="hp-final-sec" data-sec="final"><div class="wrap"><div class="hp-final">
+  <div><h2${cta?.id ? ` id="${cta.id}"` : ''}>${cta?.title ?? 'Let’s keep your website secure &amp; online'}</h2><p>Send your site. You’ll get a free check and a clear price within 24 hours.</p>${cta ? `<p>${cta.text}</p>` : ''}
+    <ul class="hp-ticks">${['Free hosting for the first year', 'No contract, cancel anytime', 'If we can’t clean your hacked site, you don’t pay'].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
+    ${cta?.links.length ? `<div class="btn-row hp-final-links">${cta.links.map((l) => `<a class="btn ghost" href="${l.href}">${l.label}</a>`).join('')}</div>` : ''}</div>
+  ${quickForm('final', 'Get your free website check', 'Takes 30 seconds.')}
+</div></div></section>`;
+
+// A row that scrolls on its own. The copy is hidden from screen readers and keyboards.
+const marquee = (items: string[], cls = '') => `<div class="hp-mq${cls}"><ul>${items.join('')}${items.map((i) => i.replace('<li', '<li aria-hidden="true"').replace(/<a /g, '<a tabindex="-1" ')).join('')}</ul></div>`;
+
+export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const [introHtml, ...sections] = sectionsOf(describeLinks(html));
   const $ = cheerio.load(`<div class="b" id="intro-b">${introHtml}</div>${sections.map((s) => `<div class="b">${s}</div>`).join('')}`, null, false);
   const inner = (e: Parameters<typeof $>[0]) => ($(e).html() ?? '').trim();
@@ -36,7 +64,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[], wooSv
   const hl = (text: string, word: string) => (word && text.includes(word) ? text.replace(word, `<span class="hl">${word}</span>`) : text);
   const head = (eyebrow: string, h2: string, intro: string | string[] = [], word = '') => `<div class="head fade"><p class="eyebrow">${eyebrow}</p><h2>${hl(h2, word)}</h2>${[intro].flat().filter(Boolean).map((p) => `<p class="intro">${p}</p>`).join('')}</div>`;
   let n = 0;
-  const sec = (id: string, body: string) => `<section class="sec${n++ % 2 ? ' alt' : ''}" data-sec="${id}"><div class="wrap">${body}</div></section>`;
+  const sec = (id: string, body: string, extra = '') => `<section class="sec${n++ % 2 ? ' alt' : ''}" data-sec="${id}"${extra}><div class="wrap">${body}</div></section>`;
 
   const introEl = $('#intro-b');
   const alwaysOnEl = introEl.children('.pair').first();
@@ -59,100 +87,129 @@ export function renderHome(html: string, faqs: { q: string; a: string }[], wooSv
   const countries = block(/^Countries We Serve/);
   const faqBlock = block(/^FAQs? About Website Maintenance/);
 
-  // Example visuals. Not real client data; each one carries the Example label.
-  const uptimeBars = Array.from({ length: 30 }, (_, i) => `<rect x="${i * 14}" y="0" width="10" height="48" rx="3" fill="${i === 17 ? 'var(--line-strong)' : 'var(--ok)'}"/>`).join('');
-  const dashboard = `<div class="dash-wrap">
-    <div class="dash" role="img" aria-label="Example maintenance dashboard. Not real client data.">
-      <div class="dash-top"><span class="dots"><i></i><i></i><i></i></span><span>yourwebsite.com</span><span class="tag">Example</span></div>
-      <div class="dash-body">
-        <div class="panel"><b><i class="pulse"></i>Site is up</b><svg class="uptime" viewBox="0 0 416 48" aria-hidden="true">${uptimeBars}</svg><div class="uptime-scale"><span>Uptime, last 30 days</span><span>Today</span></div></div>
-        <div class="tiles"><div class="tile-s">${icon('refresh')}<span>Updates</span><b>14 applied</b></div><div class="tile-s">${icon('db')}<span>Last backup</span><b>Finished</b></div><div class="tile-s">${icon('shield')}<span>Security scan</span><b>Clean</b></div></div>
-        <div class="panel"><ul class="log"><li>${tick}<span>Plugins and theme updated</span><span>Today</span></li><li>${tick}<span>Backup finished</span><span>Today</span></li><li>${tick}<span>Malware scan: clean</span><span>Yesterday</span></li></ul></div>
+  // 1. Hero: the owner's design.
+  const clutch = site.badges.find(([href]) => String(href).includes('clutch.co'));
+  const heroHtml = `<section class="hp-hero" data-sec="hero"><div class="wrap hp-hero-g">
+    <div>
+      <p class="eyebrow">${icon('globe')}${inner(introP[0])}</p>
+      <h1>Website Maintenance Services <span class="hl">&amp; Support</span></h1>
+      <p class="hp-lead">We keep your website secure, fast and up to date every month, so you never lose a customer to a broken or hacked site.</p>
+      <ul class="hp-ticks">${['Weekly updates, backups and security scans', 'Real engineers make your edits: 1–6 hours a month, by plan', `Plans from ${money(low)}/mo · Free hosting for 1 year · No contract`].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
+      <div class="btn-row cta-row hp-cta"><a class="btn primary" href="#pricing">See plans &amp; pricing${icon('arrow')}</a><a class="btn ghost" href="#quote">Get a free quote</a></div>
+      <div class="hp-proof">
+        <span class="hp-rate" data-claim-ok="owner 2026-11-03"><span class="hp-g3" role="img" aria-label="Google, Google Maps and Google Business Profile">${design.googleIcons.map((s) => `<i>${s.replace('<svg ', '<svg aria-hidden="true" ')}</i>`).join('')}</span><span><span class="hp-stars" aria-hidden="true">★★★★★</span><a href="${clutch?.[0]}" rel="noopener">5.0 on Clutch</a></span></span>
+        <span class="hp-gp">${design.partnerIcon}<span><b>Google Partner</b><small>Certified</small></span></span>
+        <span class="hp-hstats">${[['650+', 'websites maintained'], ['12+', 'years experience'], ['120+', 'websites built']].map(([v, l]) => `<span><b>${v}</b><small>${l}</small></span>`).join('')}</span>
       </div>
     </div>
-    <div class="float f1" aria-hidden="true">${icon('check')}Backup finished</div>
-    <div class="float f2" aria-hidden="true">${icon('shield')}Malware scan: clean</div>
-    <div class="float f3" aria-hidden="true">${icon('refresh')}Plugins updated</div>
-  </div>`;
+    <div class="hp-hero-r" id="quote">
+      <div class="hp-float f1" aria-hidden="true"><span class="fi">${icon('pulse')}</span><span>Uptime 99.9%<small>Last 30 days</small></span></div>
+      ${quickForm('hero', 'Get a free website check', 'Tell us about your site. We reply within 24 hours with a free check and your exact price.')}
+      <div class="hp-float f2" aria-hidden="true"><span class="fi">${icon('db')}</span><span>Backup complete<small>Today, 03:00</small></span></div>
+    </div>
+  </div></section>`;
 
-  // Track record
-  const statsHtml = head(LABELS.track, LABELS.trackH2, site.domainLine, '12+ years')
-    + `<div class="stats fade">${site.stats.map(([v, l]) => `<div class="stat"><b>${v}</b><span>${l}</span></div>`).join('')}</div>
-    <div class="callout fade"><div><p><strong>${site.statsLine}</strong></p></div><div class="act"><a class="btn primary" href="/works/">See our work${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>`;
+  // 2. Find us on: the real badge images, scrolling.
+  const badgeItems = site.badges.map(([href, src, alt, w, h]) => `<li><a href="${href}" rel="noopener"><img src="${src}" alt="${alt}" width="${w}" height="${h}" loading="lazy"></a></li>`);
+  const trustHtml = `<section class="hp-trust" data-sec="find-us" aria-label="Find us on"><div class="wrap hp-trust-g"><p class="hp-trust-t"><b>Find us on</b>Verified agency profiles</p>${marquee(badgeItems)}</div></section>`;
 
-  // What's included: the old 6 cards with a mini visual each, then the short list.
+  // 3. Platforms and stats.
+  const plat = (p: (typeof design.platforms)[number]) => `<li class="hp-plat"><span class="hp-plat-ic${p.dark ? ' dk' : ''}" style="--bc:${p.color}"><svg viewBox="${p.box}" aria-hidden="true">${p.svg}</svg></span>${p.name}</li>`;
+  const STAT_LABEL: Record<string, string> = { built: 'websites built' };
+  const platsHtml = `<div class="head fade center"><p class="eyebrow">Every platform</p><h2>We maintain the platform <span class="hl">you already use</span></h2><p class="intro">WordPress, Shopify, Magento, Wix, Drupal and 25+ more. If it runs a website, we can look after it.</p></div>
+    </div>${marquee(design.platforms.filter((p) => p.row === 0).map(plat))}${marquee(design.platforms.filter((p) => p.row === 1).map(plat), ' rev')}<div class="wrap">
+    <div class="hp-stats fade">${site.stats.map(([v, l]) => `<div class="hp-stat"><b>${v}</b><span>${STAT_LABEL[l] ?? l}</span></div>`).join('')}</div>
+    <div class="hp-story">
+      <div class="card fade"><p class="big">${inner(introP[1])}</p><ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul><div class="btn-row">${linkBtns(introP[3])}</div></div>
+      <div class="card fade"><p>${site.domainLine}</p><p><strong>${site.statsLine}</strong></p><div class="btn-row"><a class="btn primary" href="/works/">See our work${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>
+    </div>`;
+
+  // 4. What's included: one bento. The old "take care of", "every plan" and "one place" lists sit inside the cards they belong to.
   const proCards = pro.find('.card').toArray().map((c) => ({ h: inner($(c).find('h3')), p: inner($(c).find('p')) }));
   if (proCards.length !== 6) throw new Error('home included cards changed');
-  const MINI = [
-    `<div class="scan">${icon('shield')}<div><b>Clean</b>Malware scan</div></div>`,
-    '<ul class="rows"><li>WordPress core<em>Updated</em></li><li>Contact form plugin<em>Updated</em></li><li>Theme<em>Updated</em></li></ul>',
-    `<div class="cal">${'<i></i>'.repeat(30)}</div>`,
-    '<svg class="gauge" viewBox="0 0 120 68"><path d="M10 60a50 50 0 0 1 100 0" fill="none" stroke="var(--line)" stroke-width="12" stroke-linecap="round"/><path d="M10 60a50 50 0 0 1 84-36" fill="none" stroke="var(--c)" stroke-width="12" stroke-linecap="round"/><path d="m60 60 22-24" stroke="var(--head)" stroke-width="4" stroke-linecap="round"/><circle cx="60" cy="60" r="5" fill="var(--head)"/></svg>',
-    `<div class="bars">${[62, 74, 58, 80, 68, 88, 72, 92, 66, 84, 76, 95].map((h) => `<i style="height:${h}%"></i>`).join('')}</div>`,
-    '<div class="bubble">Can you change the opening hours on the contact page?</div><div class="bubble me">Done. Please take a look.</div>',
+  const careItems = care.find('.card').toArray().map((c) => ({ s: inner($(c).find('strong')), span: inner($(c).find('.pair span')) }));
+  const careLines = care.children('p').toArray().map((p) => txt(p));
+  const careStats = careLines.slice(1, 9).reduce<string[][]>((all, line, i, list) => (i % 2 ? all : [...all, [line, list[i + 1]]]), []);
+  if (careStats.length !== 4 || !/^12\+$/.test(careLines[1]) || careItems.length !== 6) throw new Error('home care block changed');
+  const everyItems = faqBlock.children('.card').toArray().map((c) => txt(c));
+  const placeItems = [...new Set(oneplace.find('li').toArray().map((l) => txt(l)))];
+  if (everyItems.length !== 5 || placeItems.length !== 6) throw new Error(`home lists changed: ${everyItems.length} ${placeItems.length}`);
+  const used = new Set<string>();
+  const pick = (list: string[], re: RegExp) => list.filter((t) => re.test(t) && !used.has(t) && used.add(t));
+  const careLi = (re: RegExp) => careItems.filter((c) => re.test(c.s) && !used.has(c.s) && used.add(c.s)).map((c) => `<li>${tick}<span><b>${c.s}</b> ${c.span}</span></li>`);
+  const plain = (items: string[]) => items.map((t) => `<li>${tick}<span>${t}</span></li>`);
+  const list = (items: string[]) => (items.length ? `<ul class="hp-list">${items.join('')}</ul>` : '');
+  const MINI: Record<string, string> = {
+    scan: '<div class="hp-mini scan"><i></i></div>',
+    bars: `<div class="hp-mini bars">${[40, 55, 48, 62, 58, 70, 92].map((h, i) => `<i style="height:${h}%"${i === 6 ? ' class="now"' : ''}></i>`).join('')}</div>`,
+    spark: '<svg class="hp-mini spark" viewBox="0 0 200 36" preserveAspectRatio="none"><path d="M0 26 L20 22 L40 24 L60 14 L80 18 L100 10 L120 14 L140 8 L160 12 L180 6 L200 9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>',
+  };
+  const cell = (ic: string, h: string, p: string, items: string[], mini = '') => `<article class="hp-bc fade"><span class="hp-bc-ic">${icon(ic)}</span><h3>${h}</h3><p>${p}</p>${list(items)}${mini ? `<div aria-hidden="true">${MINI[mini]}</div>` : ''}</article>`;
+  const [sec1, upd, bak, spd, upt, cnt] = proCards;
+  const cells = [
+    cell('refresh', upd.h, upd.p, [...careLi(/Updates/), ...plain(pick(everyItems, /CMS/)), ...plain(pick(placeItems, /^(Website Updates|WordPress)$/))]),
+    cell('shield', sec1.h, sec1.p, [...careLi(/Security/), ...plain(pick(everyItems, /Security/))], 'scan'),
+    cell('db', bak.h, bak.p, [...careLi(/Backup/), ...plain(pick(everyItems, /Backup/)), ...plain(pick(placeItems, /Backup/))], 'bars'),
+    cell('pulse', upt.h, upt.p, [...careLi(/Monitoring/), ...plain(pick(everyItems, /Uptime/))], 'spark'),
+    cell('gauge', spd.h, spd.p, careLi(/Speed/)),
+    cell('chat', cnt.h, cnt.p, [...plain(pick(everyItems, /Content/)), ...plain(pick(placeItems, /Content/)), `<li>${tick}<span>${careLines[0].replace(/\s*See full checklist.*/, '')}</span></li>`]),
+    cell('search', careItems[4].s, careItems[4].span, plain(pick(placeItems, /^SEO$/))),
+    cell('server', pick(placeItems, /Hosting/)[0], 'Every plan includes free hosting for the first year.', plain(['2 free webmail accounts'])),
   ];
-  const BENTO = ['shield', 'refresh', 'db', 'gauge', 'pulse', 'chat'];
-  const SIZES = ['w6', 'w6', 'w4', 'w4', 'w4', 'w12'];
-  const bento = `<div class="bento">${proCards.map((c, i) => {
-    const text = `<div class="badge">${icon(BENTO[i])}</div><h3>${c.h}</h3><p class="card-text">${c.p}</p>`;
-    return `<article class="card cell ${SIZES[i]} c${i + 1} fade">${SIZES[i] === 'w12' ? `<div>${text}</div>` : text}<div class="mini" aria-hidden="true">${MINI[i]}</div></article>`;
-  }).join('')}</div>`;
+  used.add(careItems[4].s);
+  const left = [...careItems.map((c) => c.s), ...everyItems, ...placeItems].filter((t) => !used.has(t));
+  if (left.length) throw new Error(`home included items not placed: ${left.join(', ')}`);
+  const big = `<article class="hp-bc big fade"><span class="hp-bc-ic">${icon('check')}</span><h3>${inner(oneplace.find('h2'))}</h3><p>${inner(oneplace.children('p').first())}</p>
+    <div class="hp-big-art" aria-hidden="true">${['server', 'pen', 'search', 'refresh', 'db', 'layout'].map((n) => `<i>${icon(n)}</i>`).join('')}</div><p class="hp-big-label">${txt(care.find('h2').first())}</p><div class="hp-big-stats">${careStats.map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join('')}</div></article>`;
   const proPs = pro.children('p').toArray();
   const proLink = proPs.find((p) => $(p).find('a').length && txt($(p).find('a')) === txt(p));
-  const careLines = care.children('p').toArray().map((p) => txt(p));
-  const CARE = ['shield', 'refresh', 'db', 'gauge', 'search', 'pulse'];
-  // The old stat tiles: a number, then its label.
-  const careStats = careLines.slice(1, 9).reduce<string[]>((all, line, i, list) => (i % 2 ? all : [...all, `<div class="stat"><b>${line}</b><span>${list[i + 1]}</span></div>`]), []);
-  if (careStats.length !== 4 || !/^12\+$/.test(careLines[1])) throw new Error('home care stats changed');
-  const includedHtml = head(LABELS.included, txt(pro.find('h2').first()), inner(proPs[0]), 'Professional')
-    + bento
-    + `<div class="callout fade"><div><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p></div><div class="act"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a></div></div>`
-    + `<div class="sub-head fade"><h3>${txt(care.find('h2').first())}</h3></div>
-    <div class="stats four fade">${careStats.join('')}</div>
-    <div class="grid g3 gap-top">${care.find('.card').toArray().map((c, i) => `<div class="card tile fade">${badge(CARE[i], i + 1)}<div><strong>${inner($(c).find('strong'))}</strong><span>${inner($(c).find('.pair span'))}</span></div></div>`).join('')}</div>
-    <div class="callout fade"><div><p><strong>${careLines[0].replace(/\s*See full checklist.*/, '')}</strong></p></div><div class="act"><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div></div>`;
+  const includedHtml = head(inner(faqBlock.find('h3').first()), txt(pro.find('h2').first()), inner(proPs[0]), 'Professional')
+    + `<div class="hp-bento">${big}${cells.join('')}</div>
+    <div class="callout fade"><div><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p></div><div class="act"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div></div>`;
 
-  // Pricing
-  const everyItems = faqBlock.children('.card').toArray().map((c) => txt(c));
-  const EVERY = ['shield', 'refresh', 'db', 'pulse', 'pen'];
-  const pricingHtml = head(LABELS.pricing, 'Plans and pricing', 'Every price is on this page.', 'pricing')
+  // 5. Pricing.
+  const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Every plan includes free hosting for the first year and 2 webmail accounts. Pay yearly and get ${prices.annualNote.en}.</p></div>`
     + plansHtml(' fade')
-    + `<div class="sub-head fade"><h3>${inner(faqBlock.find('h3').first())}</h3></div>
-    <div class="every">${everyItems.map((t, i) => `<div class="card tile fade">${badge(EVERY[i], i + 1)}<strong>${t}</strong></div>`).join('')}</div>
-    <div class="callout fade"><div><p><strong>No contract. Cancel anytime.</strong></p></div><div class="act"><a class="btn ghost" href="/monthly-website-maintenance-packages/">Compare all features</a><a class="btn ghost" href="/ecommerce-website-maintenance-packages/">Running an online store? Store plans from $199</a></div></div>`;
+    + `<div class="callout fade"><div><p><strong>No contract. Cancel anytime.</strong></p></div><div class="act"><a class="btn ghost" href="/monthly-website-maintenance-packages/">Compare all features</a><a class="btn ghost" href="/ecommerce-website-maintenance-packages/">Running an online store? Store plans from $199</a></div></div>`;
 
-  // Process
+  // 6. Process: the owner's 5-step design with the old step text.
   const STEP = ['tag', 'chat', 'file', 'key', 'search'];
+  const CHIP = ['2 minutes', '15-minute call', 'Same day', '5 minutes', 'Day 1–2'];
   const stepCards = started.find('.card').toArray().filter((c) => $(c).find('h3').length);
   if (stepCards.length !== 5) throw new Error('home steps changed');
-  const processHtml = head(LABELS.how, txt(started.find('h2').first()), inner(started.children('p').first()), 'Get Started')
-    + `<ol class="steps">${stepCards.map((c, i) => `<li class="fade"><div class="num" aria-hidden="true">${txt($(c).find('p').first())}</div><article class="card">${badge(STEP[i], i + 1)}<h3 class="step-h">${inner($(c).find('h3'))}</h3><p class="card-text">${inner($(c).find('p').last())}</p></article></li>`).join('')}</ol>
-    <div class="btn-row row-end">${linkBtns(started.children('p').last())}</div>`;
+  const processHtml = head('How it works', txt(started.find('h2').first()), inner(started.children('p').first()), 'Get Started')
+    + `<ol class="hp-steps">${stepCards.map((c, i) => `<li class="hp-step fade"><div class="hp-step-top"><span class="hp-step-n">${txt($(c).find('p').first())}</span><span class="hp-step-ic">${icon(STEP[i])}</span></div><div><h3>${inner($(c).find('h3'))}</h3><p>${inner($(c).find('p').last())}</p><span class="hp-chip">${icon('clock')}${CHIP[i]}</span></div></li>`).join('')}</ol>
+    <div class="btn-row center">${linkBtns(started.children('p').last())}</div>`;
 
+  // 7. Monthly report.
   const reportHtml = head(LABELS.report, 'What a monthly report looks like', 'An example of the numbers you would see. It is not real client data.', 'monthly report')
     + `<div class="card report fade">
       <div class="report-top"><span>Monthly report, yourwebsite.com</span><span class="tag">Example</span></div>
       <div class="grid g4 metrics"><div class="metric"><span>Updates applied</span><b>14</b></div><div class="metric"><span>Backups completed</span><b>30</b></div><div class="metric"><span>Malware found</span><b>0</b></div><div class="metric"><span>Edit time used</span><b>1h 40m</b></div></div>
     </div>`;
 
-  const money = (v: number) => `$${v.toLocaleString('en-US')}`;
-  const [low, , high] = prices.plans.map((p) => p.monthly);
-  const compareHtml = head(LABELS.compare, 'How we compare', LABELS.compareIntro, 'compare')
-    + `<div class="grid g3">
-      <article class="card vs us fade"><h3>WMS</h3><dl><div><dt>Price per month</dt><dd>${money(low)}–${money(high)}</dd></div><div><dt>Contract</dt><dd>None. Cancel anytime.</dd></div><div><dt>Monthly report</dt><dd>Growth and Business</dd></div></dl><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a></article>
-      <article class="card vs fade"><h3>Freelancer</h3><dl><div><dt>Price per month</dt><dd>$50–$150</dd></div><div><dt>Contract</dt><dd>Varies</dd></div><div><dt>Monthly report</dt><dd>Varies</dd></div></dl></article>
-      <article class="card vs fade"><h3>Typical agency</h3><dl><div><dt>Price per month</dt><dd>$149–$600+</dd></div><div><dt>Contract</dt><dd>Varies</dd></div><div><dt>Monthly report</dt><dd>Varies</dd></div></dl></article>
-    </div>`;
+  // 8. Case study: the old 4 numbers with the owner's speed bars, then the owner's review cards (placeholders).
+  const caseTags = ['Healthcare', 'WordPress', 'USA', 'Monthly Maintenance'];
+  if (txt(pOf(results, /^Healthcare WordPress USA/)) !== caseTags.join(' ')) throw new Error('home case study tags changed');
+  const metrics = results.find('.card').toArray().map((c) => ({ label: inner($(c).find('p').first()), before: inner($(c).find('.pair strong')), after: inner($(c).find('.pair span')) }));
+  const speed = metrics.find((m) => /Speed/.test(m.label));
+  const seconds = (v?: string) => parseFloat(v ?? '');
+  if (!speed || !(seconds(speed.before) > seconds(speed.after))) throw new Error('home case study speed changed');
+  const pct = Math.round((seconds(speed.after) / seconds(speed.before)) * 100);
+  const reviews = [1, 2, 3].map((i) => `<figure class="hp-tq fade"><div class="hp-stars" aria-hidden="true">★★★★★</div><blockquote>“[Real client quote ${i} goes here — 2 or 3 sentences about the problem we solved and the result.]”</blockquote><figcaption><span class="hp-av">${['AB', 'CD', 'EF'][i - 1]}</span><span><b>[Client name]</b><small>[Role, Company · Country]</small></span><span class="hp-src">via Clutch</span></figcaption></figure>`).join('');
+  const resultsHtml = head(txt(pOf(oneplace, /^Real Results$/)), inner(results.find('h2')), inner(results.children('p').first()), 'Results')
+    + `<article class="hp-case fade">
+      <div class="hp-case-l"><p class="eyebrow">${txt(pOf(results, /^Case Study$/))} · Healthcare</p><h3>${inner(results.find('h3').first())}</h3><ul class="chips">${caseTags.map((t) => `<li>${t}</li>`).join('')}</ul><p>${inner(pOf(results, /^This mental-health/))}</p><div class="btn-row">${linkBtns(pOf(results, /^Read the Full Case Study/))}</div></div>
+      <div class="hp-case-r"><div class="hp-big-num">${speed.before} → ${speed.after}<small>page load time</small></div>
+        <div class="hp-bar-row"><div class="hp-bar-label"><span>Before</span><span>${speed.before}</span></div><div class="hp-bar" aria-hidden="true"><i class="b1"></i></div></div>
+        <div class="hp-bar-row"><div class="hp-bar-label"><span>After</span><span>${speed.after}</span></div><div class="hp-bar" aria-hidden="true"><i class="b2" style="width:${pct}%"></i></div></div>
+        <div class="hp-metrics">${metrics.map((m) => `<div><strong>${m.label}</strong><div class="hp-metric-v"><s>${m.before}</s>${icon('arrow')}<span>${m.after}</span></div></div>`).join('')}</div>
+      </div>
+    </article>
+    <div class="hp-tqs" data-claim-ok="owner 2026-11-03, placeholders">${reviews}</div>
+    <p class="hp-ph-note">Design placeholder: replace with 3 real client reviews (name, company, country, written OK) before launch.</p>`;
 
-  const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };
-  const exploreHtml = head(txt(pOf(care, /^Complete Website Support$/)), inner(explore.find('h2')), inner(explore.children('p').first()), 'Website Services')
-    + `<div class="grid g2">${explore.find('.card').toArray().map((c, i) => {
-      const title = txt($(c).find('h3'));
-      const body = txt($(c).find('p')).replace(/\s*Explore service$/, '');
-      return `<a class="card svc fade" href="${$(c).find('a').attr('href')}">${badge(SVC[title] ?? 'wrench', (i % 6) + 1)}<div><h3>${title}</h3><p>${body}</p><span class="go">Explore service ${icon('arrow')}</span></div></a>`;
-    }).join('')}</div>
-    <div class="callout fade"><div><p>${inner(pOf(explore, /^Not sure/))}</p></div></div>`;
-
+  // 9. Why it matters, explore, our services.
   const whyHead = why.find('thead th').toArray().map((h) => inner(h));
   const whyRows = why.find('tbody tr').toArray().map((r) => {
     const c = $(r).find('td').toArray().map((d) => inner(d));
@@ -166,35 +223,47 @@ export function renderHome(html: string, faqs: { q: string; a: string }[], wooSv
     <div class="callout fade"><div><p>${inner(pOf(why, /^Bottom line/))}</p><p>${txt(pOf(why, /^See exactly/))}</p></div><div class="act"><a class="btn primary" href="${hrefOf(pOf(why, /^Get the Free/))}">${txt(pOf(why, /^Get the Free/))}${icon('arrow')}</a></div></div>
     <div class="grid g2 gap-top"><div class="card fade"><h3>${inner($(before).find('h3'))}</h3><ul class="ba-list">${listOf(before, nope)}</ul></div><div class="card fade"><h3>${inner($(after).find('h3'))}</h3><ul class="ba-list">${listOf(after, tick)}</ul></div></div>`;
 
-  const partnerHtml = head(txt(pOf(why, /^Who We Are$/)), inner(partner.find('h2')), inner(partner.children('p').first()), 'Partner')
-    + `<div class="grid g2">${partner.find('li').toArray().map((l, i) => `<div class="card tile fade">${badge(['shield', 'db', 'gauge', 'file'][i], i + 1)}<strong>${inner(l)}</strong></div>`).join('')}</div>
-    <div class="callout fade"><div><p><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong></p><p>${txt(pOf(why, /^Always Available$/))}</p></div><div class="act">${linkBtns(partner.children('p').last())}</div></div>`;
+  const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };
+  const exploreHtml = head(txt(pOf(care, /^Complete Website Support$/)), inner(explore.find('h2')), inner(explore.children('p').first()), 'Website Services')
+    + `<div class="grid g2">${explore.find('.card').toArray().map((c, i) => {
+      const title = txt($(c).find('h3'));
+      const body = txt($(c).find('p')).replace(/\s*Explore service$/, '');
+      return `<a class="card svc fade" href="${$(c).find('a').attr('href')}">${badge(SVC[title] ?? 'wrench', (i % 6) + 1)}<div><h3>${title}</h3><p>${body}</p><span class="go">Explore service ${icon('arrow')}</span></div></a>`;
+    }).join('')}</div>
+    <div class="callout fade"><div><p>${inner(pOf(explore, /^Not sure/))}</p></div></div>`;
 
-  const placeItems = [...new Set(oneplace.find('li').toArray().map((l) => txt(l)))];
-  const PLACE: Record<string, string> = { 'Hosting Services': 'server', 'Content Creation': 'pen', SEO: 'search', 'Website Updates': 'refresh', 'Backup Services': 'db', WordPress: 'layout' };
   const imageCards = ours.find('.card').toArray().filter((c) => $(c).find('img').length);
   const oursHtml = head(LABELS.ours, inner(ours.find('h2')), inner(ours.children('p').first()), 'Services')
     + `<div class="grid g4">${imageCards.map((c) => {
       const img = $(c).find('img');
       const ps = $(c).find('p').toArray();
       return `<article class="card svc-img fade"><img src="${img.attr('src')}" alt="${img.attr('alt')}" width="${img.attr('width')}" height="${img.attr('height')}" loading="lazy"><div><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[0])}</p><div class="btn-wrap"><a class="btn ghost" href="${hrefOf(ps[1])}">${inner($(ps[1]).find('a'))}${icon('arrow')}</a></div></div></article>`;
-    }).join('')}</div>
-    <div class="sub-head fade"><h3>${inner(oneplace.find('h2'))}</h3><p>${inner(oneplace.children('p').first())}</p></div>
-    <div class="grid g3 two-m">${placeItems.map((t, i) => `<div class="card tile fade">${badge(PLACE[t] ?? 'check', i + 1)}<strong>${t}</strong></div>`).join('')}</div>`;
+    }).join('')}</div>`;
 
-  // Case study: numbers prominent.
-  const caseTags = ['Healthcare', 'WordPress', 'USA', 'Monthly Maintenance'];
-  if (txt(pOf(results, /^Healthcare WordPress USA/)) !== caseTags.join(' ')) throw new Error('home case study tags changed');
-  const caseRows = results.find('.card').toArray().map((c) => `<div class="case-row"><strong>${inner($(c).find('p').first())}</strong><div><s>${inner($(c).find('.pair strong'))}</s>${icon('arrow')}<span>${inner($(c).find('.pair span'))}</span></div></div>`).join('');
-  const resultsHtml = head(txt(pOf(oneplace, /^Real Results$/)), inner(results.find('h2')), inner(results.children('p').first()), 'Results')
-    + `<article class="card case fade"><div><span class="tag case-tag">${txt(pOf(results, /^Case Study$/))}</span><h3>${inner(results.find('h3').first())}</h3><ul class="chips">${caseTags.map((t) => `<li>${t}</li>`).join('')}</ul><p class="body">${inner(pOf(results, /^This mental-health/))}</p><div class="btn-row">${linkBtns(pOf(results, /^Read the Full Case Study/))}</div></div><div class="case-panel">${caseRows}</div></article>`;
+  // 10. Compare: the owner's table. Response and report rows follow the approved plan facts.
+  const compareRows = [
+    ['Monthly cost', `${money(low)}–${money(high)}, fixed`, '$50–$150, varies', '$150–$500+'],
+    ['Contract', 'None, cancel anytime', 'Usually none', 'Often 3–12 months'],
+    ['Response', '4 hours to 2 business days, by plan', 'When available', '1–3 days'],
+    ['Backups &amp; security', 'Included', 'Extra', 'Included'],
+    ['Free hosting &amp; email', 'First year', 'No', 'No'],
+    ['Monthly report', 'Growth and Business', 'Rarely', 'Yes'],
+  ];
+  const compareHtml = head(LABELS.compare, 'How we compare', LABELS.compareIntro, 'compare')
+    + `<div class="fade hp-cmp-wrap"><table class="hp-cmp"><thead><tr><td></td><th scope="col" class="us">WMS</th><th scope="col">Freelancer</th><th scope="col">Typical agency</th></tr></thead><tbody>${compareRows.map(([h, us, fr, ag]) => `<tr><th scope="row">${h}</th><td class="us" data-label="WMS">${us}</td><td data-label="Freelancer">${fr}</td><td data-label="Typical agency">${ag}</td></tr>`).join('')}</tbody></table></div>
+    <div class="btn-row center"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a></div>`;
 
+  // 11. Guides, partner, why choose us, countries.
   const guidesHtml = head(txt(pOf(results, /^Guides & Resources$/)), inner(guides.find('h2')), inner(guides.children('p').first()), 'Guides')
     + `<div class="grid g3">${guides.find('.card').toArray().map((c) => {
       const ps = $(c).find('p').toArray();
       return `<article class="card guide fade"><p class="tag">${inner(ps[0])}</p><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[1])}</p><a class="btn ghost" href="${hrefOf(ps[2])}">${inner($(ps[2]).find('a'))}</a></article>`;
     }).join('')}</div>
     <div class="btn-row row-end">${linkBtns(guides.children('p').last(), ['primary'])}</div>`;
+
+  const partnerHtml = head(txt(pOf(why, /^Who We Are$/)), inner(partner.find('h2')), inner(partner.children('p').first()), 'Partner')
+    + `<div class="grid g2">${partner.find('li').toArray().map((l, i) => `<div class="card tile fade">${badge(['shield', 'db', 'gauge', 'file'][i], i + 1)}<strong>${inner(l)}</strong></div>`).join('')}</div>
+    <div class="callout fade"><div><p><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong></p><p>${txt(pOf(why, /^Always Available$/))}</p></div><div class="act">${linkBtns(partner.children('p').last())}</div></div>`;
 
   const VALUE = ['file', 'pulse', 'tag', 'users'];
   const valueEls = $('.pair').toArray().filter((p) => /^(No Long-Term Contracts|Fast Response Times|Transparent Pricing|Expert Developers)/.test(txt($(p).find('strong'))));
@@ -212,41 +281,25 @@ export function renderHome(html: string, faqs: { q: string; a: string }[], wooSv
   const countriesHtml = head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')
     + `<div class="grid g5">${countries.find('a').toArray().map((a, i) => `<a class="card country fade" href="${$(a).attr('href')}"><span class="badge c${(i % 6) + 1}">${icon('pin')}</span>${inner(a)}</a>`).join('')}</div>`;
 
+  // 12. FAQ: all 12, two columns, all closed.
   const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const faqHtml = head(LABELS.faq, txt(faqBlock.find('h2').first()), LABELS.faqIntro, 'FAQs')
     + `<div class="faq fade">${faqs.map((f) => `<details><summary><span>${esc(f.q)}</span>${icon('plus')}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>`;
 
-  const logos = PLATFORM_LOGOS.map(([name, box, d]) => (name === 'WooCommerce' ? `<li>${wooSvg}<span class="sr-only">${name}</span></li>` : `<li><svg viewBox="${box}" aria-hidden="true"><path d="${d}"/></svg>${name}</li>`)).join('');
-
-  return `<section class="hero" data-sec="hero"><div class="wrap">
-    <h1>Website <span class="hl">Maintenance</span> Services &amp; Support</h1>
-    <div class="hero-grid">
-      <div>
-        <p class="sub">Your site kept fast, secure and up to date, by engineers who show you what they did.</p>
-        <ul class="chips offer"><li>Plans from ${money(low)}/mo</li><li>First month free</li><li>Free hosting for 1 year</li><li>No contract</li></ul>
-        <div class="btn-row cta-row"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a><a class="btn ghost" href="/free-website-maintenance-audit/">Get a free website check</a></div>
-        <ul class="facts"><li>${tick}99.9% uptime guarantee</li><li>${tick}650+ websites maintained</li><li>${tick}12+ years of experience</li><li>${tick}${site.hours}</li></ul>
-      </div>
-      <div>${dashboard}<p class="dash-note">Example dashboard. It is not real client data.</p></div>
-    </div>
-  </div></section>
-  <section class="strip platforms" data-sec="platforms" aria-label="Platforms we support"><div class="wrap"><p>Platforms we support</p><ul>${logos}</ul></div></section>
-  <section class="strip lead" data-sec="lead"><div class="wrap">
-    <div class="fade"><p class="eyebrow">${inner(introP[0])}</p><p class="big">${inner(introP[1])}</p></div>
-    <div class="fade"><ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul><div class="btn-row">${linkBtns(introP[3])}</div></div>
-  </div></section>
-  ${sec('stats', statsHtml)}
+  return `${heroHtml}
+  ${trustHtml}
+  ${sec('platforms', platsHtml, ' aria-label="Platforms we support"')}
   ${sec('included', includedHtml)}
-  ${sec('pricing', pricingHtml)}
+  ${sec('pricing', pricingHtml, ' id="pricing"')}
   ${sec('process', processHtml)}
   ${sec('report', reportHtml)}
-  ${sec('compare', compareHtml)}
-  ${sec('explore', exploreHtml)}
-  ${sec('why', whyHtml)}
-  ${sec('partner', partnerHtml)}
-  ${sec('services', oursHtml)}
   ${sec('results', resultsHtml)}
+  ${sec('why', whyHtml)}
+  ${sec('explore', exploreHtml)}
+  ${sec('services', oursHtml)}
+  ${sec('compare', compareHtml)}
   ${sec('guides', guidesHtml)}
+  ${sec('partner', partnerHtml)}
   ${sec('choose', chooseHtml)}
   ${sec('countries', countriesHtml)}
   ${sec('faq', faqHtml)}`;

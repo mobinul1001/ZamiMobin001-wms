@@ -240,7 +240,7 @@ Whether you need a brand-new site, a refresh of what you have, better SEO, or re
 
 ## Get More Island Visitors Booking With You
 
-A fast, mobile-first, booking-ready website that you fully own is the difference between a tourist choosing you or scrolling to the next result. And with us it comes with 1 year free hosting, 2 free webmails, full access, a free month of maintenance, and 24/7 support — weekends and WhatsApp included. Get a free quote and we'll show you exactly how to win more of those bookings — no lock-in, no pressure, no guesswork.
+A fast, mobile-first, booking-ready website that you fully own is the difference between a tourist choosing you or scrolling to the next result. And with us it comes with 1 year free hosting, 2 free webmails, full access, and 24/7 support — weekends and WhatsApp included. Get a free quote and we'll show you exactly how to win more of those bookings — no lock-in, no pressure, no guesswork.
 
 [Get a Free Website Quote →](/contact/) [See Plans & Pricing](/monthly-website-maintenance-packages/)
 

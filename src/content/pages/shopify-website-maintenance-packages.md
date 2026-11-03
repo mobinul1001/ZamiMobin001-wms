@@ -157,8 +157,6 @@ Best for small stores, startups & low-volume Shopify businesses.
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 [Choose Starter](/get-a-free-quote/#shopify-starter)
@@ -180,8 +178,6 @@ Best for growing Shopify stores & brand-focused businesses.
 
 $299/mo
 
-First month free
-
 or $2,990/yr, 2 months free
 
 [Choose Growth](/get-a-free-quote/#shopify-growth)
@@ -200,8 +196,6 @@ or $2,990/yr, 2 months free
 Best for high-volume stores, Shopify Plus & ecommerce brands.
 
 $499/mo
-
-First month free
 
 or $4,990/yr, 2 months free
 

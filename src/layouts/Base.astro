@@ -2,6 +2,7 @@
 import '../styles/site.css';
 import site from '../data/site.json';
 import { icon } from '../lib/icons';
+import { homeFinalHtml } from '../lib/home';
 
 interface Props {
   title: string;
@@ -53,6 +54,11 @@ const footerCols = [
   ['Resources', [['Blog', '/blogs/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Free website check', '/free-website-maintenance-audit/'], ['Malware scanner', '/website-malware-scanner/'], ['Agreement', '/agreement/'], ['Refund policy', '/refund-cancellation-policy/'], ['Cookie policy', '/cookie-policy/']]],
 ] as [string, string[][]][];
 const SOCIAL_ICON: Record<string, string> = { Facebook: 'facebook', LinkedIn: 'linkedin', Instagram: 'instagram' };
+const isHome = Astro.url.pathname === '/';
+const TOPBAR: Record<string, string> = {
+  en: '<b>Free hosting for 1 year</b> on every plan · Free website check · No contract',
+  pt: '<b>Hospedagem grátis por 1 ano</b> em todos os planos · Revisão gratuita do site · Sem contrato',
+};
 const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button" aria-label="Switch between light and dark theme">${icon('sun', 'sun')}${icon('moon', 'moon')}</button>`;
 ---
 <!doctype html>
@@ -82,6 +88,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
     <script is:inline defer src="/consent.js"></script>
   </head>
   <body>
+    <p class="topbar" set:html={TOPBAR[code] ?? TOPBAR.en} />
     <header class="top site-head"><div class="wrap">
       <a class="logo" href="/" aria-label="Home"><img src={logo} alt="WMS logo" width="325" height="108" /></a>
       <nav class="nav" aria-label="Main">
@@ -102,7 +109,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
     <main>
       <slot />
     </main>
-    {Astro.url.pathname === '/' && <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
+    {isHome && <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
       <div>
         <p class="eyebrow">{site.gbp.eyebrow}</p>
         <p class="gmb-title">{site.gbp.name}</p>
@@ -114,26 +121,24 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('globe')}</span>`} /><div><small>WEBSITE</small><a href="/">{site.website}</a></div></div>
       </div>
     </div></section>}
-    <section class="cta-sec" data-sec="final"><div class="wrap"><div class="final">
+    {isHome ? <Fragment set:html={homeFinalHtml(cta)} /> : <section class="cta-sec" data-sec="final"><div class="wrap"><div class="final">
       <div>
         {cta ? <h2 id={cta.id} set:html={finalCta.title} /> : <p class="final-title">{finalCta.title}</p>}
         <p set:html={finalCta.text} />
       </div>
       <div class="act">{finalCta.links.map((l, i) => <a class:list={['btn', i === 0 ? 'white' : 'ghost']} href={l.href}>{l.label}</a>)}</div>
-    </div></div></section>
+    </div></div></section>}
     <footer class="foot" data-sec="footer"><div class="wrap">
       <div class="foot-top">
         <div class="foot-brand">
           <img src={logo} alt="WMS logo" width="325" height="108" loading="lazy" />
           <p>{site.brand} keeps your website fast, secure and up to date. Plain monthly reports show you what we did.</p>
           <ul class="foot-lines">
-            <li><Fragment set:html={icon('globe')} />Remote — serving USA, Canada, UK, Australia &amp; Europe</li>
+            <li><Fragment set:html={icon('mail')} /><a href={`mailto:${site.email}`}>{site.email}</a></li>
             <li><Fragment set:html={icon('clock')} />{site.hours}</li>
-            <li><Fragment set:html={icon('check')} />No contract • Cancel anytime</li>
           </ul>
           <div class="foot-social">
             {site.social.map(([name, href]) => <a href={href} rel="noopener" aria-label={name} set:html={icon(SOCIAL_ICON[name])} />)}
-            <a href={`mailto:${site.email}`} aria-label="Email" set:html={icon('mail')} />
           </div>
         </div>
         <div class="foot-cols">
@@ -142,16 +147,16 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
           ))}
         </div>
       </div>
-      <div class="foot-find"><h2>Find us on</h2><ul>{site.badges.map(([href, src, alt, w, h]) => <li><a href={String(href)} rel="noopener"><img src={String(src)} alt={String(alt)} width={Number(w)} height={Number(h)} loading="lazy" /></a></li>)}</ul></div>
       <div class="foot-bottom">
         <span>© 2026 {site.brandShort}. All rights reserved.</span>
-        <span class="foot-legal"><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a> · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button> · <a href={`mailto:${site.email}`}>{site.email}</a></span>
+        <span class="foot-legal"><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a> · <a href="/refund-cancellation-policy/">Refund policy</a> · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></span>
       </div>
     </div></footer>
     <div id="cookie-bar" class="cookie-bar" role="region" aria-label={cookieText.settings} hidden>
       <p>{cookieText.message} <a href="/privacy-policy/">{cookieText.policy}</a></p>
       <div class="cookie-actions"><button type="button" id="cookie-accept">{cookieText.accept}</button><button type="button" id="cookie-reject">{cookieText.reject}</button></div>
     </div>
+    {isHome && <div class="mbar"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a></div>}
     <script is:inline>
       (function () {
         var d = document, r = d.documentElement;
@@ -159,7 +164,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         d.getElementById('theme').addEventListener('click', flip);
         d.getElementById('theme-m').addEventListener('click', flip);
         var b = d.getElementById('burger'), m = d.getElementById('mnav');
-        function menu(on) { m.classList.toggle('on', on); b.setAttribute('aria-expanded', on); d.body.classList.toggle('menu-open', on); if (on) { var f = m.querySelector('summary'); if (f) f.focus(); } }
+        function menu(on) { if (on) m.style.top = Math.max(0, b.closest('header').getBoundingClientRect().bottom) + 'px'; m.classList.toggle('on', on); b.setAttribute('aria-expanded', on); d.body.classList.toggle('menu-open', on); if (on) { var f = m.querySelector('summary'); if (f) f.focus(); } }
         b.addEventListener('click', function () { menu(b.getAttribute('aria-expanded') !== 'true'); });
         d.addEventListener('keydown', function (e) {
           if (e.key === 'Escape') { if (m.classList.contains('on')) { menu(false); b.focus(); } d.querySelectorAll('.drop[open]').forEach(function (x) { x.open = false; }); }

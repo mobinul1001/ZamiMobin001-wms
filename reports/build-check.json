@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-02T18:59:47.365Z",
+  "checkedAt": "2026-11-03T16:43:30.624Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6652,
-  "images": 961,
+  "links": 6743,
+  "images": 324,
   "faqs": 488,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -14,8 +14,9 @@
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 54,
-    "forms": 12,
+    "forms": 13,
     "image-size": 1,
+    "placeholders": 1,
     "anchors": 8
   },
   "warnings": [
@@ -44,6 +45,8 @@
     "[seo-length] /how-often-should-you-redesign-your-website/: description is 162 characters (aim for 155).",
     "[seo-length] /how-to-redesign-a-website-without-losing-seo/: description is 161 characters (aim for 155).",
     "[seo-length] /importance-of-website-maintenance/: description is 161 characters (aim for 155).",
+    "[placeholders] /: the review cards are placeholders; replace them with real reviews before launch.",
+    "[forms] /: no Formspree ID yet.",
     "[seo-length] /nonprofit-website-maintenance/: description is 165 characters (aim for 155).",
     "[seo-length] /sitecare-alternative/: description is 169 characters (aim for 155).",
     "[seo-length] /there-has-been-a-critical-error-on-this-website-wordpress/: title is 71 characters (aim for 60).",

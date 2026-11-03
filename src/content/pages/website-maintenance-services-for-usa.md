@@ -136,8 +136,6 @@ Perfect for small websites & local businesses.
 
 $79/mo
 
-First month free
-
 or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
@@ -162,8 +160,6 @@ Ideal for actively growing service-based businesses.
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
@@ -186,8 +182,6 @@ or $1,490/yr, 2 months free
 Best for eCommerce, enterprise, & high-traffic sites.
 
 $299/mo
-
-First month free
 
 or $2,990/yr, 2 months free
 

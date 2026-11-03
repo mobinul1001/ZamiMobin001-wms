@@ -35,6 +35,9 @@ const FORM_IDS = formIds as Record<string, string>;
 const HEALTH_FORM_LINE = '<p class="small muted form-note">Please don\'t send patient or health information through this form.</p>';
 const HEALTH_FORM_PAGES = ['/website-design-services/', '/website-redesign-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/white-label-website-maintenance-services-for-agencies/', '/wordpress-backup-services/', '/wordpress-malware-removal-service/'];
 const FORM_NAMES: Record<string, string> = { '/contact/': 'contact', '/get-a-free-quote/': 'quote', '/free-website-maintenance-audit/': 'audit' };
+// Opening tag and hidden fields of a Formspree form, for forms a template builds itself.
+export const formOpen = (name: string, cls = '') => `<form class="${cls}" data-form="${name}" method="POST" action="https://formspree.io/f/${FORM_IDS[name] || FORM_IDS.default || `MISSING-${name}`}"><input type="hidden" name="form_name" value="${name}"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">`;
+
 export function wireForms(html: string, path: string) {
   const base = FORM_NAMES[path] ?? path.replace(/^\/|\/$/g, '');
   let count = 0;

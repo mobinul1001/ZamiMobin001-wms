@@ -134,8 +134,6 @@ Perfect for small UK businesses, bloggers, and startups.
 
 £59/mo
 
-First month free
-
 or £590/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#essential-gbp)
@@ -160,8 +158,6 @@ Ideal for service businesses, agencies & high-content websites.
 
 £109/mo
 
-First month free
-
 or £1,090/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#growth-gbp)
@@ -184,8 +180,6 @@ or £1,090/yr, 2 months free
 Best for eCommerce, large organisations & high-traffic sites.
 
 £219/mo
-
-First month free
 
 or £2,190/yr, 2 months free
 

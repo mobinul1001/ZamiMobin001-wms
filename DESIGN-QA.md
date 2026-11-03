@@ -33,7 +33,7 @@ The owner should NOT have to point out design problems one by one. Act as a seni
 - [ ] Header nav: Services (dropdown), Pricing, Blog, About, Contact. The primary header CTA is **"Get a free quote"** (to /get-a-free-quote/); "See plans" is not the header CTA.
 - [ ] Page end: content → final CTA box → footer. The **homepage only** has the GMB block directly above the final CTA box.
 - [ ] GMB block (homepage): eyebrow, business name, one line; address, phone and website cards in one bordered row. Stacks on mobile.
-- [ ] Footer: logo, short description, three icon lines, social icon buttons; 3 link columns (Services, Company, Resources); "Find us on" badges; bottom bar with copyright left, Privacy · Terms · Cookie settings · email right. Styled for both themes, with a visual separation from the page.
+- [ ] Footer: logo, short description, three icon lines, social icon buttons; 3 link columns (Services, Company, Resources); no badges (they are in the homepage "Find us on" strip since 2026-11-03); dark in both themes; bottom bar with copyright left, Privacy · Terms · Cookie settings · email right. Styled for both themes, with a visual separation from the page.
 - [ ] No empty half-width areas; every block aligned to the container edges.
 - [ ] All buttons follow the button rules; equal widths when stacked on mobile.
 - [ ] Every section has an eyebrow label + H2 + intro in the same style.

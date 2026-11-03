@@ -355,8 +355,6 @@ For small sites, blogs & brochure websites.
 
 $79/mo
 
-First month free
-
 or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
@@ -381,8 +379,6 @@ For growing businesses & service websites.
 
 $149/mo
 
-First month free
-
 or $1,490/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth)
@@ -405,8 +401,6 @@ or $1,490/yr, 2 months free
 For ecommerce & high-traffic websites.
 
 $299/mo
-
-First month free
 
 or $2,990/yr, 2 months free
 

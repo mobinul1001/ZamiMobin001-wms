@@ -76,6 +76,10 @@ const SUBSTITUTIONS = [
   [/,? and independently verified on 8 review platforms/g, ''],
   [/\bour top-rated website maintenance company\b/g, 'our top pick for website maintenance'],
   [/ with a guarantee against reinfection/g, ''],
+  // Owner, 2026-11-03: no free first month anywhere.
+  [/, a free (?:first )?month(?: of maintenance| to start)?(?=[,.;)\s])/g, ''],
+  [/,? the free first month of maintenance,/g, ','],
+  [/ and a free first month of maintenance/g, ''],
   [/\band removal guarantees\b/g, 'and malware removal'],
 ];
 
@@ -143,6 +147,8 @@ export function applyClaims($, path, log = []) {
   // Comparison rows and FAQ entries go as a whole.
   $('tr').each((_, tr) => {
     const t = norm($(tr).text());
+    // Owner, 2026-11-03: no free first month anywhere.
+    if (/1 month free/i.test(t)) { record('free month', t); $(tr).remove(); return; }
     const rule = /Track record/i.test(t) && YEARS.test(t) ? 'A2 years' : bannedIn(t, own);
     if (rule && !/^(?:\d|#)/.test(t.slice(0, 1))) {
       $(tr).remove();

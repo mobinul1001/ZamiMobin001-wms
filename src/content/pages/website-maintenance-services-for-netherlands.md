@@ -147,8 +147,6 @@ For small sites, blogs & brochure websites.
 
 €69/mo
 
-First month free
-
 or €690/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential-eur)
@@ -173,8 +171,6 @@ For growing businesses & webshops.
 
 €129/mo
 
-First month free
-
 or €1,290/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth-eur)
@@ -197,8 +193,6 @@ or €1,290/yr, 2 months free
 For high-traffic sites & large webshops.
 
 €269/mo
-
-First month free
 
 or €2,690/yr, 2 months free
 

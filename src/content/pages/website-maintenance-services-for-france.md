@@ -141,8 +141,6 @@ Perfect for small websites and local businesses.
 
 €69/mo
 
-First month free
-
 or €690/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#essential-eur)
@@ -167,8 +165,6 @@ Ideal for growing businesses & service websites.
 
 €129/mo
 
-First month free
-
 or €1,290/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#growth-eur)
@@ -191,8 +187,6 @@ or €1,290/yr, 2 months free
 For eCommerce, high-traffic & mission-critical sites.
 
 €269/mo
-
-First month free
 
 or €2,690/yr, 2 months free
 

@@ -50,7 +50,8 @@ prices.storePlans = {
   },
 };
 prices.annualNote.pt = '2 meses grátis';
-prices.firstMonthNote = { en: 'First month free', pt: 'Primeiro mês grátis' };
+// Owner, 2026-11-03: no first month free anywhere; yearly billing stays 2 months free.
+delete prices.firstMonthNote;
 delete prices.localRatesDate;
 prices.local = local;
 writeFileSync(FILE, `${JSON.stringify(prices, null, 2)}\n`);

@@ -229,8 +229,6 @@ Best for small or new online stores with low order volume.
 
 $199/mo
 
-First month free
-
 or $1,990/yr, 2 months free
 
 [Choose Starter](/get-a-free-quote/#store-starter)
@@ -255,8 +253,6 @@ Best for growing stores that depend on daily online sales.
 
 $349/mo
 
-First month free
-
 or $3,490/yr, 2 months free
 
 [Choose Growth](/get-a-free-quote/#store-growth)
@@ -279,8 +275,6 @@ or $3,490/yr, 2 months free
 Best for high-traffic stores, marketplaces & enterprise.
 
 $599/mo
-
-First month free
 
 or $5,990/yr, 2 months free
 

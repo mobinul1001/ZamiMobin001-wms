@@ -223,3 +223,12 @@
 ## 2026-11-03: uptime wording
 - Owner keeps "99.9% uptime guarantee". No site text changed. Terms for the Terms page added to the owner's later list in STATUS.md.
 - STATUS.md: GMB line corrected to homepage only.
+
+## 2026-11-03: homepage merge
+- Homepage top is the owner's design (hero with quick-quote form, Google icons, "5.0 on Clutch", Google Partner; "Find us on" strip; 29-platform rows; 5 stats; bento; 5-step process; case study with speed bars; review placeholders; compare table; final CTA with form; phone sticky bar). The old homepage text fills it; parity still passes with no lines missing.
+- One bento holds "What's Included in Professional Website Maintenance", "Everything We Take Care Of", "What's Included in Every Plan" and "Everything Your Website Needs in One Place"; each list item sits in the card it belongs to, once.
+- Quick-quote forms post to Formspree like the other forms (`home-hero`, `home-final`), with honeypot and form_name.
+- Wording changed from the design file so it matches approved facts: hero tick "Real engineers make your edits, same business day" is now "1–6 hours a month, by plan" (response times are 4 hours to 2 business days); compare row "Response" says "4 hours to 2 business days, by plan" and "Monthly report" says "Growth and Business"; compare heading is "How we compare" because the design's "Big-agency experience, small-team care" line is still unconfirmed; "Verified on Google" dropped (no Google rating given). The design's "Need something fixed today?" and 6-question FAQ are not used: the owner's order uses the old services sections and the 12 old FAQs.
+- "First month free" removed sitewide (claims.mjs rules, price generators, prices.json, templates); check-build fails on it.
+- Footer: owner's dark design on all pages, email and hours lines, square social buttons (Facebook, LinkedIn, Instagram), Refund policy link; badges removed. Top bar added on all pages.
+- design-qa.mjs: badges expected in the homepage strip, not the footer; scrolling rows are exempt from the off-screen check.

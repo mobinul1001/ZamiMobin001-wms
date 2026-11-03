@@ -18,7 +18,7 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 - About page and one short line on the homepage near the stats: **"Our team has been building and maintaining websites for 12+ years. We launched websitemaintenanceservices.org to focus only on what we do best: website maintenance and support."**
 
 ### A3. Ratings and review counts
-- Remove every star rating and review count (4.9, 213, 165, 120, 4,800, 150, 180) from visible text. Schema is already removed.
+- Remove every star rating and review count (4.9, 213, 165, 120, 4,800, 150, 180) from visible text. Schema is already removed. Exception (owner, 2026-11-03): the homepage hero shows "5.0 on Clutch" with five stars, linked to the Clutch profile, and the homepage review cards (placeholders until the owner sends real reviews).
 - Add nothing in their place now. Later, when real reviews exist on Google Business Profile or Clutch, link to that profile and show the real count from there.
 
 ### A4. Testimonials
@@ -110,7 +110,7 @@ Both themes pass contrast checks and keep CLS 0. Also in both:
 - **Imagery:** real team photos when the owner supplies them; no stock people.
 
 ### B2. Homepage structure
-1. **First screen:** H1 "Website Maintenance Services & Support", subline, offer line "Plans from $79/mo · First month free · Free hosting for 1 year · No contract", real buttons on the left; large dashboard visual, labelled "Example", on the right. Then the row "Dhaka-based team · US & UK hours · 30+ websites maintained".
+1. **First screen:** H1 "Website Maintenance Services & Support", subline, offer line "Plans from $79/mo · Free hosting for 1 year · No contract" (no free first month since 2026-11-03), real buttons on the left; large dashboard visual, labelled "Example", on the right. Then the row "Dhaka-based team · US & UK hours · 30+ websites maintained".
 2. **Platforms we support:** WordPress, WooCommerce, Shopify, all logos the same height.
 3. **What's included:** bento grid with icons and mini visuals.
 4. **Pricing:** master plan cards with a monthly/annual toggle ("2 months free"). Growth highlighted by a gradient border and glow.

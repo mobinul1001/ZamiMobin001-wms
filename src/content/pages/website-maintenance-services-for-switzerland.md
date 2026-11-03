@@ -153,8 +153,6 @@ For small sites, blogs & brochure websites.
 
 CHF 69/mo
 
-First month free
-
 or CHF 690/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential-chf)
@@ -179,8 +177,6 @@ For growing businesses & online shops.
 
 CHF 119/mo
 
-First month free
-
 or CHF 1,190/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#growth-chf)
@@ -203,8 +199,6 @@ or CHF 1,190/yr, 2 months free
 For high-traffic sites & large online shops.
 
 CHF 249/mo
-
-First month free
 
 or CHF 2,490/yr, 2 months free
 

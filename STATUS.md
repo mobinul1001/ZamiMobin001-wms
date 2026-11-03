@@ -110,7 +110,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 **Prices and buying**
 - Essential $79/mo or $790/yr, Growth $149/mo or $1,490/yr (most popular), Business $299/mo or $2,990/yr. One-time fix from $49. Hacked site cleanup $149. `src/data/prices.json`.
 - Country pages use the owner's rounded table (`scripts/build-country-prices.mjs`); annual is 10 times the local monthly. Quote links carry the currency (`#growth-gbp`) and the form pre-fills Currency.
-- Every plan includes free hosting for the first year and 2 free webmail accounts. First month free applies to monthly billing only.
+- Every plan includes free hosting for the first year and 2 free webmail accounts. No free first month (owner, 2026-11-03); yearly billing is 2 months free.
 - **Store plans** (`prices.json`). WooCommerce: Store Starter $199, Store Growth $349 (most popular), Store Pro $599, all with free hosting for the first year and 2 webmail. Shopify: Shopify Starter $149, Shopify Growth $299 (most popular), Shopify Pro $499, no hosting offer. Annual is 10 times monthly; first month free on monthly.
 - **Malware removal:** Cleanup $149; Cleanup + Protect $249 (adds blacklist removal and hardening); Priority $349 (adds 4-hour start and 3 months of monitoring). All three: patch the vulnerability that let the hack in, and a short written report.
 - **Speed (one-time):** Speed Boost $149 (caching, images, up to 10 pages); Core Web Vitals $299; WooCommerce / Large Site $499. Growth and Business include speed optimization.
@@ -180,6 +180,14 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - White-label process text still has some old lines to check against Essential level. Update page case studies keep their old claims, with master plan names.
 - Some articles still describe staging in general advice, which is not a claim about our plans.
 
+
+## Homepage merge (owner, 2026-11-03)
+- Top of the homepage is the owner's design file (`wms-homepage-design.html`); below it, the old homepage text. Order: top bar, header, hero with quick-quote form, "Find us on" strip, platforms + 5 stats, one bento for what's included, pricing, process, monthly report, case study + review cards, why it matters, explore services, our services, compare, guides, dedicated partner, why choose us, countries, 12 FAQs, GMB, final CTA with form, footer, phone sticky bar.
+- "Find us on" badges moved from the footer (all pages) to a scrolling strip under the homepage hero.
+- Footer is the owner's dark design on every page; the top bar is on every page.
+- "First month free" removed everywhere: plans, country, store and WordPress cards, articles, comparison rows, pricing FAQ. The build fails if it comes back.
+- "5.0 on Clutch" with stars in the hero, and the review cards (placeholders), are allowed on the homepage only (`data-claim-ok`). The build warns until the placeholders are replaced.
+- **Waiting on the owner:** 3 real reviews; X and YouTube profile URLs if the footer should show them (only Facebook, LinkedIn and Instagram are real now); my wording changes to the design (see CHANGELOG 2026-11-03).
 
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
