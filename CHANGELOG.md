@@ -232,3 +232,16 @@
 - "First month free" removed sitewide (claims.mjs rules, price generators, prices.json, templates); check-build fails on it.
 - Footer: owner's dark design on all pages, email and hours lines, square social buttons (Facebook, LinkedIn, Instagram), Refund policy link; badges removed. Top bar added on all pages.
 - design-qa.mjs: badges expected in the homepage strip, not the footer; scrolling rows are exempt from the off-screen check.
+
+## 2026-11-03: shorter homepage
+- 22 parts down to 11 sections in main, plus GMB and the final CTA. Order: hero+form, find us on, platforms+stats, what's included, pricing, how it works, results, services, comparison, FAQ, guides+countries.
+- One bento holds the included work, "Everything We Take Care Of", "Your Dedicated Website Maintenance Partner" and "Why Choose Us?".
+- One services section: 4 illustrated cards, then the other 10 services as a compact link grid.
+- One comparison section with two tabs (radio buttons, no script): "With vs without maintenance" and "WMS vs freelancer vs agency". Tables on wide screens, accordions on phones.
+- Results section: case study with the monthly report example beside it, then the review cards.
+- The two text cards under the stats are gone: the opening paragraph and chips are the bento intro (the longer definition is under "Read more"); the 12+ years and 650+ lines are already on the About page.
+- FAQ shows 6 of 12 and guides 3 of 6; "Show all" reveals the rest. Everything stays in the HTML; parity has 0 lines missing.
+- Phones: bento and service cards are swipe carousels (CSS scroll-snap).
+- Fixed: hidden "Explore service" text inside carousel cards widened the page on phones.
+- Page height: desktop 1440 18,670 to 14,886 px; phone 390 36,586 to 22,111 px.
+- New owner rule: responsive on every device. Width sweep 320 to 1920 (14 widths) on 11 templates, 154 checks, 0 problems.

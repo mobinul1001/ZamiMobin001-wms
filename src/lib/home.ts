@@ -118,13 +118,14 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const STAT_LABEL: Record<string, string> = { built: 'websites built' };
   const platsHtml = `<div class="head fade center"><p class="eyebrow">Every platform</p><h2>We maintain the platform <span class="hl">you already use</span></h2><p class="intro">WordPress, Shopify, Magento, Wix, Drupal and 25+ more. If it runs a website, we can look after it.</p></div>
     </div>${marquee(design.platforms.filter((p) => p.row === 0).map(plat))}${marquee(design.platforms.filter((p) => p.row === 1).map(plat), ' rev')}<div class="wrap">
-    <div class="hp-stats fade">${site.stats.map(([v, l]) => `<div class="hp-stat"><b>${v}</b><span>${STAT_LABEL[l] ?? l}</span></div>`).join('')}</div>
-    <div class="hp-story">
-      <div class="card fade"><p class="big">${inner(introP[1])}</p><ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul><div class="btn-row">${linkBtns(introP[3])}</div></div>
-      <div class="card fade"><p>${site.domainLine}</p><p><strong>${site.statsLine}</strong></p><div class="btn-row"><a class="btn primary" href="/works/">See our work${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>
-    </div>`;
+    <div class="hp-stats fade">${site.stats.map(([v, l]) => `<div class="hp-stat"><b>${v}</b><span>${STAT_LABEL[l] ?? l}</span></div>`).join('')}</div>`;
 
-  // 4. What's included: one bento. The old "take care of", "every plan" and "one place" lists sit inside the cards they belong to.
+  // A row of cards that becomes a swipe carousel on phones (CSS scroll-snap, no script).
+  const swipe = (cls: string, label: string, items: string) => `<div class="${cls} hp-swipe" role="region" aria-label="${label}" tabindex="0">${items}</div>`;
+  // Extra items stay in the HTML; a checkbox shows them (no script).
+  const more = (id: string, show: string, hide: string) => `<input class="hp-more-in sr-only" type="checkbox" id="${id}"><label class="btn ghost hp-more-btn" for="${id}"><span class="a">${show}</span><span class="b">${hide}</span>${icon('down')}</label>`;
+
+  // 4. What's included: one bento for the included work, the care lists, the dedicated partner and why choose us.
   const proCards = pro.find('.card').toArray().map((c) => ({ h: inner($(c).find('h3')), p: inner($(c).find('p')) }));
   if (proCards.length !== 6) throw new Error('home included cards changed');
   const careItems = care.find('.card').toArray().map((c) => ({ s: inner($(c).find('strong')), span: inner($(c).find('.pair span')) }));
@@ -144,7 +145,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     bars: `<div class="hp-mini bars">${[40, 55, 48, 62, 58, 70, 92].map((h, i) => `<i style="height:${h}%"${i === 6 ? ' class="now"' : ''}></i>`).join('')}</div>`,
     spark: '<svg class="hp-mini spark" viewBox="0 0 200 36" preserveAspectRatio="none"><path d="M0 26 L20 22 L40 24 L60 14 L80 18 L100 10 L120 14 L140 8 L160 12 L180 6 L200 9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>',
   };
-  const cell = (ic: string, h: string, p: string, items: string[], mini = '') => `<article class="hp-bc fade"><span class="hp-bc-ic">${icon(ic)}</span><h3>${h}</h3><p>${p}</p>${list(items)}${mini ? `<div aria-hidden="true">${MINI[mini]}</div>` : ''}</article>`;
+  const cell = (ic: string, h: string, p: string, items: string[], mini = '', cls = '') => `<article class="hp-bc${cls}"><span class="hp-bc-ic">${icon(ic)}</span>${h ? `<h3>${h}</h3>` : ''}${p ? `<p>${p}</p>` : ''}${list(items)}${mini ? `<div aria-hidden="true">${MINI[mini]}</div>` : ''}</article>`;
   const [sec1, upd, bak, spd, upt, cnt] = proCards;
   const cells = [
     cell('refresh', upd.h, upd.p, [...careLi(/Updates/), ...plain(pick(everyItems, /CMS/)), ...plain(pick(placeItems, /^(Website Updates|WordPress)$/))]),
@@ -159,13 +160,28 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   used.add(careItems[4].s);
   const left = [...careItems.map((c) => c.s), ...everyItems, ...placeItems].filter((t) => !used.has(t));
   if (left.length) throw new Error(`home included items not placed: ${left.join(', ')}`);
-  const big = `<article class="hp-bc big fade"><span class="hp-bc-ic">${icon('check')}</span><h3>${inner(oneplace.find('h2'))}</h3><p>${inner(oneplace.children('p').first())}</p>
+  const big = `<article class="hp-bc big"><span class="hp-bc-ic">${icon('check')}</span><h3>${inner(oneplace.find('h2'))}</h3><p>${inner(oneplace.children('p').first())}</p>
     <div class="hp-big-art" aria-hidden="true">${['server', 'pen', 'search', 'refresh', 'db', 'layout'].map((n) => `<i>${icon(n)}</i>`).join('')}</div><p class="hp-big-label">${txt(care.find('h2').first())}</p><div class="hp-big-stats">${careStats.map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join('')}</div></article>`;
+  // Dedicated partner and why choose us, as cards in the same bento.
+  const partnerCell = `<article class="hp-bc wide"><p class="hp-label">${txt(pOf(why, /^Who We Are$/))}</p><h3>${inner(partner.find('h2'))}</h3><p>${inner(partner.children('p').first())}</p>
+    <ul class="hp-list two">${partner.find('li').toArray().map((l) => `<li>${tick}<span>${inner(l)}</span></li>`).join('')}</ul>
+    <p class="hp-note"><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong> · ${txt(pOf(why, /^Always Available$/))}</p><div class="btn-row">${linkBtns(partner.children('p').last())}</div></article>`;
+  const CHOOSE = ['users', 'shield', 'file'];
+  const chooseCells = choose.find('h3').toArray().map((h, i) => {
+    const next = $(h).next('p');
+    return cell(CHOOSE[i], inner(h), next.length ? inner(next) : EXPERT_DRAFT, [], '', i === 2 ? ' wide' : '');
+  });
+  const valueEls = $('.pair').toArray().filter((p) => /^(No Long-Term Contracts|Fast Response Times|Transparent Pricing|Expert Developers)/.test(txt($(p).find('strong'))));
+  if (valueEls.length !== 4) throw new Error(`home value lines: ${valueEls.length}`);
+  const chooseCell = `<article class="hp-bc wide tint"><p class="hp-label">${LABELS.us}</p><h3>${inner(choose.find('h2'))}</h3><p>${inner(choose.children('p').first())}</p>
+    <ul class="hp-list two">${valueEls.map((p) => `<li>${tick}<span><b>${inner($(p).find('strong'))}</b> ${inner($(p).find('span'))}</span></li>`).join('')}</ul><div class="btn-row">${linkBtns(choose.children('p').last(), ['primary'])}</div></article>`;
   const proPs = pro.children('p').toArray();
   const proLink = proPs.find((p) => $(p).find('a').length && txt($(p).find('a')) === txt(p));
-  const includedHtml = head(inner(faqBlock.find('h3').first()), txt(pro.find('h2').first()), inner(proPs[0]), 'Professional')
-    + `<div class="hp-bento">${big}${cells.join('')}</div>
-    <div class="callout fade"><div><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p></div><div class="act"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div></div>`;
+  const includedHtml = `<div class="head fade"><p class="eyebrow">${inner(faqBlock.find('h3').first())}</p><h2>${hl(txt(pro.find('h2').first()), 'Professional')}</h2><p class="intro">${inner(introP[1])}</p>
+      <ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul>
+      <details class="hp-read"><summary>Read more${icon('down')}</summary><p>${inner(proPs[0])}</p><div class="btn-row">${linkBtns(introP[3])}</div></details></div>`
+    + swipe('hp-bento', "What's included", [big, ...cells, partnerCell, chooseCell, ...chooseCells].join(''))
+    + `<div class="callout fade"><div><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p></div><div class="act"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div></div>`;
 
   // 5. Pricing.
   const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Every plan includes free hosting for the first year and 2 webmail accounts. Pay yearly and get ${prices.annualNote.en}.</p></div>`
@@ -181,14 +197,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     + `<ol class="hp-steps">${stepCards.map((c, i) => `<li class="hp-step fade"><div class="hp-step-top"><span class="hp-step-n">${txt($(c).find('p').first())}</span><span class="hp-step-ic">${icon(STEP[i])}</span></div><div><h3>${inner($(c).find('h3'))}</h3><p>${inner($(c).find('p').last())}</p><span class="hp-chip">${icon('clock')}${CHIP[i]}</span></div></li>`).join('')}</ol>
     <div class="btn-row center">${linkBtns(started.children('p').last())}</div>`;
 
-  // 7. Monthly report.
-  const reportHtml = head(LABELS.report, 'What a monthly report looks like', 'An example of the numbers you would see. It is not real client data.', 'monthly report')
-    + `<div class="card report fade">
-      <div class="report-top"><span>Monthly report, yourwebsite.com</span><span class="tag">Example</span></div>
-      <div class="grid g4 metrics"><div class="metric"><span>Updates applied</span><b>14</b></div><div class="metric"><span>Backups completed</span><b>30</b></div><div class="metric"><span>Malware found</span><b>0</b></div><div class="metric"><span>Edit time used</span><b>1h 40m</b></div></div>
-    </div>`;
-
-  // 8. Case study: the old 4 numbers with the owner's speed bars, then the owner's review cards (placeholders).
+  // 7. Results: case study, the monthly report example beside it, then the review cards (placeholders).
   const caseTags = ['Healthcare', 'WordPress', 'USA', 'Monthly Maintenance'];
   if (txt(pOf(results, /^Healthcare WordPress USA/)) !== caseTags.join(' ')) throw new Error('home case study tags changed');
   const metrics = results.find('.card').toArray().map((c) => ({ label: inner($(c).find('p').first()), before: inner($(c).find('.pair strong')), after: inner($(c).find('.pair span')) }));
@@ -197,50 +206,47 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   if (!speed || !(seconds(speed.before) > seconds(speed.after))) throw new Error('home case study speed changed');
   const pct = Math.round((seconds(speed.after) / seconds(speed.before)) * 100);
   const reviews = [1, 2, 3].map((i) => `<figure class="hp-tq fade"><div class="hp-stars" aria-hidden="true">★★★★★</div><blockquote>“[Real client quote ${i} goes here — 2 or 3 sentences about the problem we solved and the result.]”</blockquote><figcaption><span class="hp-av">${['AB', 'CD', 'EF'][i - 1]}</span><span><b>[Client name]</b><small>[Role, Company · Country]</small></span><span class="hp-src">via Clutch</span></figcaption></figure>`).join('');
+  const report = `<aside class="hp-report fade" aria-label="Example monthly report"><div class="hp-report-top"><h3>What a monthly report looks like</h3><span class="tag">Example</span></div><p>An example of the numbers you would see. It is not real client data.</p>
+    <p class="hp-report-site">Monthly report, yourwebsite.com</p>
+    <div class="hp-report-g">${[['Updates applied', '14'], ['Backups completed', '30'], ['Malware found', '0'], ['Edit time used', '1h 40m']].map(([l, v]) => `<div><span>${l}</span><b>${v}</b></div>`).join('')}</div></aside>`;
   const resultsHtml = head(txt(pOf(oneplace, /^Real Results$/)), inner(results.find('h2')), inner(results.children('p').first()), 'Results')
-    + `<article class="hp-case fade">
+    + `<div class="hp-results"><article class="hp-case fade">
       <div class="hp-case-l"><p class="eyebrow">${txt(pOf(results, /^Case Study$/))} · Healthcare</p><h3>${inner(results.find('h3').first())}</h3><ul class="chips">${caseTags.map((t) => `<li>${t}</li>`).join('')}</ul><p>${inner(pOf(results, /^This mental-health/))}</p><div class="btn-row">${linkBtns(pOf(results, /^Read the Full Case Study/))}</div></div>
       <div class="hp-case-r"><div class="hp-big-num">${speed.before} → ${speed.after}<small>page load time</small></div>
         <div class="hp-bar-row"><div class="hp-bar-label"><span>Before</span><span>${speed.before}</span></div><div class="hp-bar" aria-hidden="true"><i class="b1"></i></div></div>
         <div class="hp-bar-row"><div class="hp-bar-label"><span>After</span><span>${speed.after}</span></div><div class="hp-bar" aria-hidden="true"><i class="b2" style="width:${pct}%"></i></div></div>
         <div class="hp-metrics">${metrics.map((m) => `<div><strong>${m.label}</strong><div class="hp-metric-v"><s>${m.before}</s>${icon('arrow')}<span>${m.after}</span></div></div>`).join('')}</div>
       </div>
-    </article>
+    </article>${report}</div>
     <div class="hp-tqs" data-claim-ok="owner 2026-11-03, placeholders">${reviews}</div>
     <p class="hp-ph-note">Design placeholder: replace with 3 real client reviews (name, company, country, written OK) before launch.</p>`;
 
-  // 9. Why it matters, explore, our services.
-  const whyHead = why.find('thead th').toArray().map((h) => inner(h));
-  const whyRows = why.find('tbody tr').toArray().map((r) => {
-    const c = $(r).find('td').toArray().map((d) => inner(d));
-    return `<tr><td>${c[0]}</td><td data-label="${whyHead[1]}">${nope}${c[1]}</td><td class="td-good" data-label="${whyHead[2]}">${tick}${c[2]}</td></tr>`;
+  // 8. Services: the 4 illustrated cards on top, the other 10 services as a compact link grid.
+  const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };
+  const imageCards = ours.find('.card').toArray().filter((c) => $(c).find('img').length);
+  const svcCards = imageCards.map((c) => {
+    const img = $(c).find('img');
+    const ps = $(c).find('p').toArray();
+    return `<article class="card svc-img"><img src="${img.attr('src')}" alt="${img.attr('alt')}" width="${img.attr('width')}" height="${img.attr('height')}" loading="lazy"><div><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[0])}</p><div class="btn-wrap"><a class="btn ghost" href="${hrefOf(ps[1])}">${inner($(ps[1]).find('a'))}${icon('arrow')}</a></div></div></article>`;
   }).join('');
+  const svcLinks = explore.find('.card').toArray().map((c, i) => {
+    const title = txt($(c).find('h3'));
+    const body = txt($(c).find('p')).replace(/\s*Explore service$/, '');
+    return `<a class="hp-svc-link" href="${$(c).find('a').attr('href')}">${badge(SVC[title] ?? 'wrench', (i % 6) + 1)}<span class="t">${title}${icon('arrow')}</span><span class="d">${body}</span><span class="sr-only">Explore service</span></a>`;
+  }).join('');
+  const servicesHtml = head(txt(pOf(care, /^Complete Website Support$/)), inner(ours.find('h2')), inner(ours.children('p').first()), 'Services')
+    + swipe('grid g4 hp-svc-cards', 'Our website maintenance services', svcCards)
+    + `<div class="sub-head fade"><h3>${inner(explore.find('h2'))}</h3><p>${inner(explore.children('p').first())}</p></div>`
+    + swipe('hp-svc-links', 'More website services', svcLinks)
+    + `<p class="hp-not-sure">${inner(pOf(explore, /^Not sure/))}</p>`;
+
+  // 9. Comparison: two tabs (no script). Tables on wide screens, accordions on phones.
+  const whyHead = why.find('thead th').toArray().map((h) => inner(h));
+  const whyData = why.find('tbody tr').toArray().map((r) => $(r).find('td').toArray().map((d) => inner(d)));
+  const whyRows = whyData.map((c) => `<tr><td>${c[0]}</td><td>${nope}${c[1]}</td><td class="td-good">${tick}${c[2]}</td></tr>`).join('');
+  const whyAcc = whyData.map((c) => `<details><summary>${c[0]}${icon('plus')}</summary><dl><div><dt>${whyHead[1]}</dt><dd>${nope}${c[1]}</dd></div><div><dt>${whyHead[2]}</dt><dd>${tick}${c[2]}</dd></div></dl></details>`).join('');
   const [before, after] = faqBlock.find('.cards .card').toArray();
   const listOf = (c: Parameters<typeof $>[0], mark: string) => $(c).find('li').toArray().map((l) => `<li>${mark}<span>${inner(l)}</span></li>`).join('');
-  const whyHtml = head(txt(pOf(explore, /^Website Maintenance Explained/)), inner(why.find('h2')), inner(why.children('p').first()), 'Matters')
-    + `<div class="sub-head fade first"><h3>${inner(why.find('h3').first())}</h3></div>
-    <div class="fade tbl-wrap"><table class="tbl"><thead><tr><th scope="col">${whyHead[0]}</th><th scope="col">${whyHead[1]}</th><th scope="col" class="th-good">${whyHead[2]}</th></tr></thead><tbody>${whyRows}</tbody></table></div>
-    <div class="callout fade"><div><p>${inner(pOf(why, /^Bottom line/))}</p><p>${txt(pOf(why, /^See exactly/))}</p></div><div class="act"><a class="btn primary" href="${hrefOf(pOf(why, /^Get the Free/))}">${txt(pOf(why, /^Get the Free/))}${icon('arrow')}</a></div></div>
-    <div class="grid g2 gap-top"><div class="card fade"><h3>${inner($(before).find('h3'))}</h3><ul class="ba-list">${listOf(before, nope)}</ul></div><div class="card fade"><h3>${inner($(after).find('h3'))}</h3><ul class="ba-list">${listOf(after, tick)}</ul></div></div>`;
-
-  const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };
-  const exploreHtml = head(txt(pOf(care, /^Complete Website Support$/)), inner(explore.find('h2')), inner(explore.children('p').first()), 'Website Services')
-    + `<div class="grid g2">${explore.find('.card').toArray().map((c, i) => {
-      const title = txt($(c).find('h3'));
-      const body = txt($(c).find('p')).replace(/\s*Explore service$/, '');
-      return `<a class="card svc fade" href="${$(c).find('a').attr('href')}">${badge(SVC[title] ?? 'wrench', (i % 6) + 1)}<div><h3>${title}</h3><p>${body}</p><span class="go">Explore service ${icon('arrow')}</span></div></a>`;
-    }).join('')}</div>
-    <div class="callout fade"><div><p>${inner(pOf(explore, /^Not sure/))}</p></div></div>`;
-
-  const imageCards = ours.find('.card').toArray().filter((c) => $(c).find('img').length);
-  const oursHtml = head(LABELS.ours, inner(ours.find('h2')), inner(ours.children('p').first()), 'Services')
-    + `<div class="grid g4">${imageCards.map((c) => {
-      const img = $(c).find('img');
-      const ps = $(c).find('p').toArray();
-      return `<article class="card svc-img fade"><img src="${img.attr('src')}" alt="${img.attr('alt')}" width="${img.attr('width')}" height="${img.attr('height')}" loading="lazy"><div><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[0])}</p><div class="btn-wrap"><a class="btn ghost" href="${hrefOf(ps[1])}">${inner($(ps[1]).find('a'))}${icon('arrow')}</a></div></div></article>`;
-    }).join('')}</div>`;
-
-  // 10. Compare: the owner's table. Response and report rows follow the approved plan facts.
   const compareRows = [
     ['Monthly cost', `${money(low)}–${money(high)}, fixed`, '$50–$150, varies', '$150–$500+'],
     ['Contract', 'None, cancel anytime', 'Usually none', 'Often 3–12 months'],
@@ -249,42 +255,42 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     ['Free hosting &amp; email', 'First year', 'No', 'No'],
     ['Monthly report', 'Growth and Business', 'Rarely', 'Yes'],
   ];
-  const compareHtml = head(LABELS.compare, 'How we compare', LABELS.compareIntro, 'compare')
-    + `<div class="fade hp-cmp-wrap"><table class="hp-cmp"><thead><tr><td></td><th scope="col" class="us">WMS</th><th scope="col">Freelancer</th><th scope="col">Typical agency</th></tr></thead><tbody>${compareRows.map(([h, us, fr, ag]) => `<tr><th scope="row">${h}</th><td class="us" data-label="WMS">${us}</td><td data-label="Freelancer">${fr}</td><td data-label="Typical agency">${ag}</td></tr>`).join('')}</tbody></table></div>
-    <div class="btn-row center"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a></div>`;
+  const WHO = ['WMS', 'Freelancer', 'Typical agency'];
+  const cmpAcc = compareRows.map(([h, ...v]) => `<details><summary>${h}${icon('plus')}</summary><dl>${v.map((x, i) => `<div${i === 0 ? ' class="us"' : ''}><dt>${WHO[i]}</dt><dd>${x}</dd></div>`).join('')}</dl></details>`).join('');
+  const compareHtml = head(txt(pOf(explore, /^Website Maintenance Explained/)), inner(why.find('h2')), inner(why.children('p').first()), 'Matters')
+    + `<div class="hp-tabs fade">
+      <input class="hp-tab-in sr-only" type="radio" name="cmp-tab" id="cmp-1" checked><label class="hp-tab" for="cmp-1">With vs without maintenance</label>
+      <input class="hp-tab-in sr-only" type="radio" name="cmp-tab" id="cmp-2"><label class="hp-tab" for="cmp-2">WMS vs freelancer vs agency</label>
+      <div class="hp-panel p1">
+        <h3>${inner(why.find('h3').first())}</h3>
+        <div class="tbl-wrap hp-desk"><table class="tbl"><thead><tr><th scope="col">${whyHead[0]}</th><th scope="col">${whyHead[1]}</th><th scope="col" class="th-good">${whyHead[2]}</th></tr></thead><tbody>${whyRows}</tbody></table></div>
+        <div class="hp-acc hp-mob">${whyAcc}</div>
+        <div class="grid g2 hp-ba"><div class="card"><h3>${inner($(before).find('h3'))}</h3><ul class="ba-list">${listOf(before, nope)}</ul></div><div class="card"><h3>${inner($(after).find('h3'))}</h3><ul class="ba-list">${listOf(after, tick)}</ul></div></div>
+        <div class="callout"><div><p>${inner(pOf(why, /^Bottom line/))}</p><p>${txt(pOf(why, /^See exactly/))}</p></div><div class="act"><a class="btn primary" href="${hrefOf(pOf(why, /^Get the Free/))}">${txt(pOf(why, /^Get the Free/))}${icon('arrow')}</a></div></div>
+      </div>
+      <div class="hp-panel p2">
+        <h3>How we compare</h3><p class="hp-panel-intro">${LABELS.compareIntro}</p>
+        <div class="hp-cmp-wrap hp-desk"><table class="hp-cmp"><thead><tr><td></td>${WHO.map((w, i) => `<th scope="col"${i === 0 ? ' class="us"' : ''}>${w}</th>`).join('')}</tr></thead><tbody>${compareRows.map(([h, us, fr, ag]) => `<tr><th scope="row">${h}</th><td class="us">${us}</td><td>${fr}</td><td>${ag}</td></tr>`).join('')}</tbody></table></div>
+        <div class="hp-acc hp-mob">${cmpAcc}</div>
+        <div class="btn-row center"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a></div>
+      </div>
+    </div>`;
 
-  // 11. Guides, partner, why choose us, countries.
-  const guidesHtml = head(txt(pOf(results, /^Guides & Resources$/)), inner(guides.find('h2')), inner(guides.children('p').first()), 'Guides')
-    + `<div class="grid g3">${guides.find('.card').toArray().map((c) => {
-      const ps = $(c).find('p').toArray();
-      return `<article class="card guide fade"><p class="tag">${inner(ps[0])}</p><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[1])}</p><a class="btn ghost" href="${hrefOf(ps[2])}">${inner($(ps[2]).find('a'))}</a></article>`;
-    }).join('')}</div>
-    <div class="btn-row row-end">${linkBtns(guides.children('p').last(), ['primary'])}</div>`;
-
-  const partnerHtml = head(txt(pOf(why, /^Who We Are$/)), inner(partner.find('h2')), inner(partner.children('p').first()), 'Partner')
-    + `<div class="grid g2">${partner.find('li').toArray().map((l, i) => `<div class="card tile fade">${badge(['shield', 'db', 'gauge', 'file'][i], i + 1)}<strong>${inner(l)}</strong></div>`).join('')}</div>
-    <div class="callout fade"><div><p><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong></p><p>${txt(pOf(why, /^Always Available$/))}</p></div><div class="act">${linkBtns(partner.children('p').last())}</div></div>`;
-
-  const VALUE = ['file', 'pulse', 'tag', 'users'];
-  const valueEls = $('.pair').toArray().filter((p) => /^(No Long-Term Contracts|Fast Response Times|Transparent Pricing|Expert Developers)/.test(txt($(p).find('strong'))));
-  if (valueEls.length !== 4) throw new Error(`home value lines: ${valueEls.length}`);
-  const values = valueEls.map((p, i) => `<div class="card tile fade">${badge(VALUE[i], i + 1)}<div><strong>${inner($(p).find('strong'))}</strong><span>${inner($(p).find('span'))}</span></div></div>`).join('');
-  const CHOOSE = ['users', 'shield', 'file'];
-  const chooseHtml = head(LABELS.us, inner(choose.find('h2')), inner(choose.children('p').first()), 'Choose Us')
-    + `<div class="grid g3">${choose.find('h3').toArray().map((h, i) => {
-      const next = $(h).next('p');
-      return `<article class="card c${i + 1} fade"><div class="badge">${icon(CHOOSE[i])}</div><h3>${inner(h)}</h3><p>${next.length ? inner(next) : EXPERT_DRAFT}</p></article>`;
-    }).join('')}</div>
-    <div class="grid g4 gap-top">${values}</div>
-    <div class="btn-row row-end">${linkBtns(choose.children('p').last(), ['primary'])}</div>`;
-
-  const countriesHtml = head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')
-    + `<div class="grid g5">${countries.find('a').toArray().map((a, i) => `<a class="card country fade" href="${$(a).attr('href')}"><span class="badge c${(i % 6) + 1}">${icon('pin')}</span>${inner(a)}</a>`).join('')}</div>`;
-
-  // 12. FAQ: all 12, two columns, all closed.
+  // 10. FAQ: 6 shown, all 12 in the HTML.
   const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const faqHtml = head(LABELS.faq, txt(faqBlock.find('h2').first()), LABELS.faqIntro, 'FAQs')
-    + `<div class="faq fade">${faqs.map((f) => `<details><summary><span>${esc(f.q)}</span>${icon('plus')}</summary><p>${esc(f.a)}</p></details>`).join('')}</div>`;
+    + `<div class="hp-more-wrap">${more('faq-all', 'Show all questions', 'Show fewer questions')}<div class="faq fade">${faqs.map((f, i) => `<details${i >= 6 ? ' class="x"' : ''}><summary><span>${esc(f.q)}</span>${icon('plus')}</summary><p>${esc(f.a)}</p></details>`).join('')}</div></div>`;
+
+  // 11. Guides (3 shown, all in the HTML) and countries.
+  const guideCards = guides.find('.card').toArray().map((c, i) => {
+    const ps = $(c).find('p').toArray();
+    return `<article class="card guide${i >= 3 ? ' x' : ''}"><p class="tag">${inner(ps[0])}</p><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[1])}</p><a class="btn ghost" href="${hrefOf(ps[2])}">${inner($(ps[2]).find('a'))}</a></article>`;
+  }).join('');
+  const guidesHtml = head(txt(pOf(results, /^Guides & Resources$/)), inner(guides.find('h2')), inner(guides.children('p').first()), 'Guides')
+    + `<div class="hp-more-wrap">${more('guides-all', 'Show more guides', 'Show fewer guides')}<div class="grid g3 hp-guides">${guideCards}</div></div>
+    <div class="btn-row center">${linkBtns(guides.children('p').last(), ['primary'])}</div>
+    <div class="hp-countries">${head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')}
+    <div class="grid g5">${countries.find('a').toArray().map((a, i) => `<a class="card country" href="${$(a).attr('href')}"><span class="badge c${(i % 6) + 1}">${icon('pin')}</span>${inner(a)}</a>`).join('')}</div></div>`;
 
   return `${heroHtml}
   ${trustHtml}
@@ -292,15 +298,9 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   ${sec('included', includedHtml)}
   ${sec('pricing', pricingHtml, ' id="pricing"')}
   ${sec('process', processHtml)}
-  ${sec('report', reportHtml)}
   ${sec('results', resultsHtml)}
-  ${sec('why', whyHtml)}
-  ${sec('explore', exploreHtml)}
-  ${sec('services', oursHtml)}
+  ${sec('services', servicesHtml)}
   ${sec('compare', compareHtml)}
-  ${sec('guides', guidesHtml)}
-  ${sec('partner', partnerHtml)}
-  ${sec('choose', chooseHtml)}
-  ${sec('countries', countriesHtml)}
-  ${sec('faq', faqHtml)}`;
+  ${sec('faq', faqHtml)}
+  ${sec('guides', guidesHtml)}`;
 }

@@ -189,6 +189,10 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - "5.0 on Clutch" with stars in the hero, and the review cards (placeholders), are allowed on the homepage only (`data-claim-ok`). The build warns until the placeholders are replaced.
 - **Waiting on the owner:** 3 real reviews; X and YouTube profile URLs if the footer should show them (only Facebook, LinkedIn and Instagram are real now); my wording changes to the design (see CHANGELOG 2026-11-03).
 
+## Shorter homepage (owner, 2026-11-03)
+- 11 sections in main plus GMB and the final CTA, with tabs, "Read more" and "Show all" so no text is lost (parity 0 lines missing). Details in CHANGELOG.
+- Owner rule: every page responsive on all desktop, tablet and phone sizes; see DESIGN-QA.md section 0.
+
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
 - Testimonials.

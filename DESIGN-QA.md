@@ -4,6 +4,9 @@ The owner should NOT have to point out design problems one by one. Act as a seni
 
 ---
 
+## 0. Every device (owner, 2026-11-03)
+The site must be 100% responsive on every desktop, tablet and phone. Besides the 4 QA widths, sweep 320, 360, 375, 390, 414, 600, 768, 820, 1024, 1180, 1280, 1366, 1440 and 1920 on one page of every template: no sideways scroll, nothing outside the screen, no broken grid. Load pages fresh (no cache) when sweeping.
+
 ## 1. Self-review loop (required before every report)
 1. Screenshot every section of the page at **1440px, 768px and 390px**, in **both dark and light** themes (6 screenshots per section).
 2. Check each screenshot against section 3 (checklist) and section 4 (known issues).
