@@ -42,6 +42,8 @@ const queryRules = new Map(redirectLines.filter((p) => p.length === 4).map((p) =
 const norm = (s) => String(s ?? '').replace(/\s+/g, ' ').trim();
 const LOOSE = (s) => norm(s).replace(/[“”"’']/g, '').toLowerCase();
 
+const MOVE_TO = ['/about-us/', '/monthly-website-maintenance-packages/'];
+const movedFromHome = [];
 function wordsOf(html) {
   const $ = cheerio.load(html);
   $('script, style, noscript, template, svg, iframe').remove();
@@ -167,7 +169,13 @@ for (const row of map) {
       const newText = squeeze(wordsOf(html).text);
       $old('iframe').remove();
       const oldLines = $old('body').text().split(/\s*\n\s*/).map((l) => l.trim()).filter((l) => squeeze(l).length >= 3);
-      const missingLines = oldLines.filter((l) => !newText.includes(squeeze(l)) && !isApprovedOldLine(l, u.pathname));
+      let missingLines = oldLines.filter((l) => !newText.includes(squeeze(l)) && !isApprovedOldLine(l, u.pathname));
+      // Owner, 2026-11-04: homepage text may move to the About page or the pricing page. A moved line must be found there.
+      if (u.pathname === '/') {
+        const dest = MOVE_TO.map((p) => [p, squeeze(wordsOf(readFileSync(join('dist', p, 'index.html'), 'utf8')).text)]);
+        for (const l of missingLines) { const to = dest.find(([, t]) => t.includes(squeeze(l))); if (to) movedFromHome.push({ line: l.slice(0, 110), to: to[0] }); }
+        missingLines = missingLines.filter((l) => !dest.some(([, t]) => t.includes(squeeze(l))));
+      }
       out.oldLines = oldLines.length;
       out.missingLines = missingLines.length;
       totalLines.old += oldLines.length;
@@ -197,4 +205,4 @@ const pct = pages.map((r) => r.wordPct).sort((a, b) => a - b);
 const highs = pages.filter((p) => p.wordPct > 103).sort((a, b) => b.wordPct - a.wordPct).map((p) => `${p.url} ${p.oldWords}->${p.newWords} (${p.wordPct}%)`);
 const lows = pages.filter((p) => p.wordPct < 99).sort((a, b) => a.wordPct - b.wordPct).map((p) => `${p.url} ${p.oldWords}->${p.newWords} (${p.wordPct}%)`);
 writeFileSync('reports/parity-missing-text.json', JSON.stringify(allMissing, null, 2));
-console.log(JSON.stringify({ rows: results.length, counts, changedFromOld: changed, images: totalImages, textLines: totalLines, missingSample: allMissing.slice(0, 12), wordsOver103: highs, wordsUnder99: lows, pagesCompared: pages.length, oldWords: pages.reduce((a, r) => a + r.oldWords, 0), newWords: pages.reduce((a, r) => a + r.newWords, 0), wordPctMin: pct[0], wordPctMedian: pct[Math.floor(pct.length / 2)], wordPctMax: pct[pct.length - 1], fails: fails.slice(0, 40).map((f) => `${f.url}: ${f.notes.join(' | ')}`) }, null, 1));
+console.log(JSON.stringify({ rows: results.length, counts, changedFromOld: changed, images: totalImages, textLines: totalLines, missingSample: allMissing.slice(0, 12), movedFromHome, wordsOver103: highs, wordsUnder99: lows, pagesCompared: pages.length, oldWords: pages.reduce((a, r) => a + r.oldWords, 0), newWords: pages.reduce((a, r) => a + r.newWords, 0), wordPctMin: pct[0], wordPctMedian: pct[Math.floor(pct.length / 2)], wordPctMax: pct[pct.length - 1], fails: fails.slice(0, 40).map((f) => `${f.url}: ${f.notes.join(' | ')}`) }, null, 1));

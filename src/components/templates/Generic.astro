@@ -2,10 +2,15 @@
 import site from '../../data/site.json';
 import { polish, hlLast } from '../../lib/polish';
 import { icon } from '../../lib/icons';
+import { getEntry } from 'astro:content';
+import { homeAboutHtml } from '../../lib/home';
 
 const { entry } = Astro.props;
 const isAbout = entry.data.path === '/about-us/';
 const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 });
+// Owner, 2026-11-04: the homepage's "dedicated partner" and "why choose us" text now lives here.
+const home = isAbout ? await getEntry('pages', 'home') : undefined;
+const moved = home ? homeAboutHtml(home.rendered?.html ?? '') : '';
 ---
 <section class="page-hero center"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
@@ -19,3 +24,4 @@ const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 });
   </div></section>
 )}
 <Fragment set:html={html} />
+{moved && <Fragment set:html={moved} />}

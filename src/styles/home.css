@@ -344,3 +344,61 @@
 /* Hidden helper text stays inside its card, so a carousel never widens the page. */
 .hp-swipe > *, .hp-svc-link { position: relative; }
 @media (max-width: 760px) { .hp-big-stats b { font-size: 1.25rem; } .hp-big-stats div { padding: 12px 10px; } }
+
+/* What's included in one screen (owner, 2026-11-04): big card + 8 short cards, detail behind "Read more" */
+.hp-head-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--s3) var(--s6); align-items: end; }
+.hp-head-split h2 { max-width: none; font-size: 2.5rem; }
+.hp-head-split .intro { margin-top: 0; }
+.hp-bento { grid-template-columns: minmax(0, 1.5fr) repeat(4, minmax(0, 1fr)); }
+.hp-bento .hp-bc.big { grid-column: 1; grid-row: span 2; }
+.hp-bento .hp-bc { padding: 20px; }
+.hp-bento .hp-bc h3 { margin-top: 12px; font-size: 1.0625rem; }
+.hp-bento .hp-bc > p { font-size: .875rem; line-height: 1.5; }
+.hp-bento .hp-bc.big h3 { font-size: 1.375rem; }
+.hp-bento .hp-bc.big > p { font-size: .9375rem; }
+.hp-bento .hp-bc-ic { width: 40px; height: 40px; border-radius: 12px; }
+.hp-bento .hp-bc-ic .ic { width: 20px; height: 20px; }
+.hp-card-more { margin-top: auto; padding-top: 10px; font-size: .875rem; }
+.hp-card-more summary { display: inline-flex; align-items: center; gap: 4px; min-height: 32px; font-weight: 650; color: var(--link); cursor: pointer; list-style: none; }
+.hp-card-more summary::-webkit-details-marker { display: none; }
+.hp-card-more summary .ic { width: 14px; height: 14px; transition: transform .2s ease; }
+.hp-card-more[open] summary .ic { transform: rotate(180deg); }
+.hp-card-more p { margin-top: 6px; color: var(--ink); }
+.hp-card-more p strong { color: var(--head); }
+.hp-card-more .hp-list { margin-top: 10px; font-size: .8125rem; }
+.hp-read .chips { margin-top: var(--s2); }
+.hp-read p + p { margin-top: var(--s1); }
+[data-sec="included"] .btn-row.center { margin-top: var(--s3); }
+
+/* Trust strip under the results */
+.hp-trustbar { padding-block: 28px; background: var(--bg); border-block: 1px solid var(--line); }
+.hp-trustbar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--s2) var(--s3); }
+.hp-trustbar ul { display: flex; flex-wrap: wrap; gap: 10px var(--s3); }
+.hp-trustbar li { display: flex; align-items: center; gap: 10px; font-weight: 650; color: var(--head); }
+.hp-tb-ic { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; background: var(--eyebrow-bg); color: var(--eyebrow); }
+.hp-tb-ic .ic { width: 18px; height: 18px; }
+
+@media (max-width: 1080px) {
+  .hp-head-split { grid-template-columns: minmax(0, 1fr); }
+  .hp-bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hp-bento .hp-bc.big { grid-column: span 2; grid-row: auto; }
+  .hp-trustbar ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; }
+}
+@media (max-width: 760px) {
+  .hp-head-split h2 { font-size: 2rem; }
+  .hp-trustbar ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hp-trustbar .btn { width: 100%; }
+  .hp-swipe > .hp-bc.big { grid-column: auto; }
+}
+.hp-bento .hp-big-stats b { font-size: 1.625rem; }
+.hp-bento .hp-big-stats div { padding: 12px; }
+/* Phones: compact country links, no taller than a button row */
+@media (max-width: 760px) {
+  .hp-countries .grid.g5 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .hp-countries .country.card { flex-direction: row; align-items: center; gap: 10px; padding: 10px 12px; font-size: .9375rem; }
+  .hp-countries .country .badge { width: 28px; height: 28px; margin: 0; }
+}
+.hp-trustbar ul { gap: 10px 20px; }
+.hp-tb-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; font-weight: 700; color: var(--link); text-decoration: none; white-space: nowrap; }
+.hp-tb-link:hover { text-decoration: underline; }
+.hp-tb-link .ic { width: 16px; height: 16px; }

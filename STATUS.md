@@ -193,6 +193,9 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - 11 sections in main plus GMB and the final CTA, with tabs, "Read more" and "Show all" so no text is lost (parity 0 lines missing). Details in CHANGELOG.
 - Owner rule: every page responsive on all desktop, tablet and phone sizes; see DESIGN-QA.md section 0.
 
+## Homepage, 2026-11-04
+- "What's included" fits one screen; "Who We Are" and "Why Choose Us" text moved to /about-us/; trust strip under the results; new section order. Details in CHANGELOG.
+
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
 - Testimonials.

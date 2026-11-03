@@ -245,3 +245,13 @@
 - Fixed: hidden "Explore service" text inside carousel cards widened the page on phones.
 - Page height: desktop 1440 18,670 to 14,886 px; phone 390 36,586 to 22,111 px.
 - New owner rule: responsive on every device. Width sweep 320 to 1920 (14 widths) on 11 templates, 154 checks, 0 problems.
+
+## 2026-11-04: "What's included" on one screen, trust strip, new order
+- What's included: the big card with the 4 stats and 8 short cards (Updates, Security, Backups, Uptime, Speed, Edits by real people, Free hosting + 2 webmail, Monthly report), each with an icon, a title and one line. The old card text and the care lists are behind "Read more" in each card; the longer intro is behind "Read more" under the heading. About 970 px tall at 1440, so it fits one screen.
+- One-liners come from the owner's design file; "Monthly report" says "on Growth and Business" because Essential has no report.
+- "Your Dedicated Website Maintenance Partner" and "Why Choose Us?" moved from the homepage to /about-us/ (new section at the end of the page, built from the homepage text, so there is one source). Parity checks each moved line is on /about-us/ (21 lines).
+- Trust strip under the results: No contract, Fast response, Transparent pricing, Expert developers, 24/7 on Business, and "Learn More About Us".
+- Order: hero+form, find us on, platforms+stats, what's included, results + trust strip, pricing, comparison, how it works, services, FAQ, guides+countries, GMB, final CTA.
+- Phones: reviews and guides are swipe carousels too; country links are compact.
+- design-qa.mjs ignores text inside closed "Read more" panels.
+- Page height (QA screenshots): 1440 14,832 to 13,159 px; 390 22,132 to 20,301 px.

@@ -43,7 +43,8 @@ export const homeFinalHtml = (cta?: Cta) => `<section class="hp-final-sec" data-
 // A row that scrolls on its own. The copy is hidden from screen readers and keyboards.
 const marquee = (items: string[], cls = '') => `<div class="hp-mq${cls}"><ul>${items.join('')}${items.map((i) => i.replace('<li', '<li aria-hidden="true"').replace(/<a /g, '<a tabindex="-1" ')).join('')}</ul></div>`;
 
-export function renderHome(html: string, faqs: { q: string; a: string }[]) {
+// The old homepage, split into its old sections.
+function loadHome(html: string) {
   const [introHtml, ...sections] = sectionsOf(describeLinks(html));
   const $ = cheerio.load(`<div class="b" id="intro-b">${introHtml}</div>${sections.map((s) => `<div class="b">${s}</div>`).join('')}`, null, false);
   const inner = (e: Parameters<typeof $>[0]) => ($(e).html() ?? '').trim();
@@ -62,7 +63,36 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const hrefOf = (p: Parameters<typeof $>[0]) => $(p).find('a').attr('href');
   const linkBtns = (p: Parameters<typeof $>[0], cls = ['primary', 'ghost']) => $(p).find('a').toArray().map((a, i) => `<a class="btn ${cls[i] ?? 'ghost'}" href="${$(a).attr('href')}">${inner(a)}${i === 0 ? icon('arrow') : ''}</a>`).join('');
   const hl = (text: string, word: string) => (word && text.includes(word) ? text.replace(word, `<span class="hl">${word}</span>`) : text);
-  const head = (eyebrow: string, h2: string, intro: string | string[] = [], word = '') => `<div class="head fade"><p class="eyebrow">${eyebrow}</p><h2>${hl(h2, word)}</h2>${[intro].flat().filter(Boolean).map((p) => `<p class="intro">${p}</p>`).join('')}</div>`;
+  return { $, inner, txt, block, pOf, hrefOf, linkBtns, hl };
+}
+
+// Owner, 2026-11-04: the old "Your Dedicated Website Maintenance Partner" and "Why Choose Us?" text moved from the homepage to /about-us/.
+export function homeAboutHtml(html: string) {
+  const { $, inner, txt, block, pOf, linkBtns } = loadHome(html);
+  const why = block(/^Why Website Maintenance Matters/);
+  const partner = block(/^Your Dedicated/);
+  const choose = block(/^Why Choose Us/);
+  const CHOOSE = ['users', 'shield', 'file'];
+  const VALUE = ['file', 'pulse', 'tag', 'users'];
+  const values = $('.pair').toArray().filter((p) => /^(No Long-Term Contracts|Fast Response Times|Transparent Pricing|Expert Developers)/.test(txt($(p).find('strong'))));
+  if (values.length !== 4) throw new Error(`about: home value lines ${values.length}`);
+  return `<section class="sec alt" data-sec="partner"><div class="wrap">
+    <div class="head"><p class="eyebrow">${txt(pOf(why, /^Who We Are$/))}</p><h2>${inner(partner.find('h2'))}</h2><p class="intro">${inner(partner.children('p').first())}</p></div>
+    <div class="grid g2">${partner.find('li').toArray().map((l, i) => `<div class="card tile">${badge(['shield', 'db', 'gauge', 'file'][i], i + 1)}<strong>${inner(l)}</strong></div>`).join('')}</div>
+    <div class="callout"><div><p><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong></p><p>${txt(pOf(why, /^Always Available$/))}</p></div><div class="act">${linkBtns(partner.children('p').last())}</div></div>
+    <div class="sub-head"><h3>${inner(choose.find('h2'))}</h3><p>${inner(choose.children('p').first())}</p></div>
+    <div class="grid g3">${choose.find('h3').toArray().map((h, i) => {
+      const next = $(h).next('p');
+      return `<article class="card c${i + 1}"><div class="badge">${icon(CHOOSE[i])}</div><h3>${inner(h)}</h3><p>${next.length ? inner(next) : EXPERT_DRAFT}</p></article>`;
+    }).join('')}</div>
+    <div class="grid g4 gap-top">${values.map((p, i) => `<div class="card tile">${badge(VALUE[i], i + 1)}<div><strong>${inner($(p).find('strong'))}</strong><span>${inner($(p).find('span'))}</span></div></div>`).join('')}</div>
+    <div class="btn-row row-end">${linkBtns(choose.children('p').last(), ['primary'])}</div>
+  </div></section>`;
+}
+
+export function renderHome(html: string, faqs: { q: string; a: string }[]) {
+  const { $, inner, txt, block, pOf, hrefOf, linkBtns, hl } = loadHome(html);
+  const head =(eyebrow: string, h2: string, intro: string | string[] = [], word = '') => `<div class="head fade"><p class="eyebrow">${eyebrow}</p><h2>${hl(h2, word)}</h2>${[intro].flat().filter(Boolean).map((p) => `<p class="intro">${p}</p>`).join('')}</div>`;
   let n = 0;
   const sec = (id: string, body: string, extra = '') => `<section class="sec${n++ % 2 ? ' alt' : ''}" data-sec="${id}"${extra}><div class="wrap">${body}</div></section>`;
 
@@ -78,12 +108,10 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const started = block(/^How Do I Get Started/);
   const explore = block(/^Explore Our/);
   const why = block(/^Why Website Maintenance Matters/);
-  const partner = block(/^Your Dedicated/);
   const ours = block(/^Our Website Maintenance Services/);
   const oneplace = block(/^Everything Your Website Needs/);
   const results = block(/^Real Maintenance Results/);
   const guides = block(/^Website Maintenance Guides/);
-  const choose = block(/^Why Choose Us/);
   const countries = block(/^Countries We Serve/);
   const faqBlock = block(/^FAQs? About Website Maintenance/);
 
@@ -125,7 +153,8 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   // Extra items stay in the HTML; a checkbox shows them (no script).
   const more = (id: string, show: string, hide: string) => `<input class="hp-more-in sr-only" type="checkbox" id="${id}"><label class="btn ghost hp-more-btn" for="${id}"><span class="a">${show}</span><span class="b">${hide}</span>${icon('down')}</label>`;
 
-  // 4. What's included: one bento for the included work, the care lists, the dedicated partner and why choose us.
+  // 4. What's included (owner, 2026-11-04): the big card with the 4 stats and 8 short cards, one line each.
+  // The old card text and the care lists stay in the HTML behind "Read more".
   const proCards = pro.find('.card').toArray().map((c) => ({ h: inner($(c).find('h3')), p: inner($(c).find('p')) }));
   if (proCards.length !== 6) throw new Error('home included cards changed');
   const careItems = care.find('.card').toArray().map((c) => ({ s: inner($(c).find('strong')), span: inner($(c).find('.pair span')) }));
@@ -140,48 +169,39 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const careLi = (re: RegExp) => careItems.filter((c) => re.test(c.s) && !used.has(c.s) && used.add(c.s)).map((c) => `<li>${tick}<span><b>${c.s}</b> ${c.span}</span></li>`);
   const plain = (items: string[]) => items.map((t) => `<li>${tick}<span>${t}</span></li>`);
   const list = (items: string[]) => (items.length ? `<ul class="hp-list">${items.join('')}</ul>` : '');
-  const MINI: Record<string, string> = {
-    scan: '<div class="hp-mini scan"><i></i></div>',
-    bars: `<div class="hp-mini bars">${[40, 55, 48, 62, 58, 70, 92].map((h, i) => `<i style="height:${h}%"${i === 6 ? ' class="now"' : ''}></i>`).join('')}</div>`,
-    spark: '<svg class="hp-mini spark" viewBox="0 0 200 36" preserveAspectRatio="none"><path d="M0 26 L20 22 L40 24 L60 14 L80 18 L100 10 L120 14 L140 8 L160 12 L180 6 L200 9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>',
-  };
-  const cell = (ic: string, h: string, p: string, items: string[], mini = '', cls = '') => `<article class="hp-bc${cls}"><span class="hp-bc-ic">${icon(ic)}</span>${h ? `<h3>${h}</h3>` : ''}${p ? `<p>${p}</p>` : ''}${list(items)}${mini ? `<div aria-hidden="true">${MINI[mini]}</div>` : ''}</article>`;
+  const detail = (parts: string[], items: string[]) => `<details class="hp-card-more"><summary>Read more${icon('down')}</summary>${parts.map((p) => `<p>${p}</p>`).join('')}${list(items)}</details>`;
+  const cell = (ic: string, h: string, line: string, more: string) => `<article class="hp-bc"><span class="hp-bc-ic">${icon(ic)}</span><h3>${h}</h3><p>${line}</p>${more}</article>`;
   const [sec1, upd, bak, spd, upt, cnt] = proCards;
+  const oldCard = (c: { h: string; p: string }) => `<strong>${c.h}</strong> ${c.p}`;
+  // Titles are the owner's; the one-liners come from the owner's design file, adjusted to the approved plan facts.
   const cells = [
-    cell('refresh', upd.h, upd.p, [...careLi(/Updates/), ...plain(pick(everyItems, /CMS/)), ...plain(pick(placeItems, /^(Website Updates|WordPress)$/))]),
-    cell('shield', sec1.h, sec1.p, [...careLi(/Security/), ...plain(pick(everyItems, /Security/))], 'scan'),
-    cell('db', bak.h, bak.p, [...careLi(/Backup/), ...plain(pick(everyItems, /Backup/)), ...plain(pick(placeItems, /Backup/))], 'bars'),
-    cell('pulse', upt.h, upt.p, [...careLi(/Monitoring/), ...plain(pick(everyItems, /Uptime/))], 'spark'),
-    cell('gauge', spd.h, spd.p, careLi(/Speed/)),
-    cell('chat', cnt.h, cnt.p, [...plain(pick(everyItems, /Content/)), ...plain(pick(placeItems, /Content/)), `<li>${tick}<span>${careLines[0].replace(/\s*See full checklist.*/, '')}</span></li>`]),
-    cell('search', careItems[4].s, careItems[4].span, plain(pick(placeItems, /^SEO$/))),
-    cell('server', pick(placeItems, /Hosting/)[0], 'Every plan includes free hosting for the first year.', plain(['2 free webmail accounts'])),
+    cell('refresh', 'Updates', 'Core, theme and plugin updates, checked on your live site after every run.', detail([oldCard(upd)], [...careLi(/Updates/), ...plain(pick(everyItems, /CMS/)), ...plain(pick(placeItems, /^(Website Updates|WordPress)$/))])),
+    cell('shield', 'Security', 'Malware and vulnerability scans, firewall rules and login hardening.', detail([oldCard(sec1)], [...careLi(/Security/), ...plain(pick(everyItems, /Security/))])),
+    cell('db', 'Backups', 'Weekly or daily off-site backups, kept 30–90 days.', detail([oldCard(bak)], [...careLi(/Backup/), ...plain(pick(everyItems, /Backup/)), ...plain(pick(placeItems, /Backup/))])),
+    cell('pulse', 'Uptime', 'We get an alert within minutes if your site goes down.', detail([oldCard(upt)], [...careLi(/Monitoring/), ...plain(pick(everyItems, /Uptime/))])),
+    cell('gauge', 'Speed', 'Caching, image and database tune-ups to keep pages fast.', detail([oldCard(spd), `<strong>${careItems[4].s}</strong> ${careItems[4].span}`], [...careLi(/Speed/), ...plain(pick(placeItems, /^SEO$/))])),
+    cell('chat', 'Edits by real people', '1–6 hours a month of text, image and layout changes. Just email us.', detail([oldCard(cnt)], [...plain(pick(everyItems, /Content/)), ...plain(pick(placeItems, /Content/))])),
+    cell('server', 'Free hosting + 2 webmail', 'Managed hosting free for the first year, plus 2 webmail accounts on your domain.', detail([`<strong>${pick(placeItems, /Hosting/)[0]}</strong> Every plan includes free hosting for the first year and 2 free webmail accounts.`], [])),
+    cell('file', 'Monthly report', 'A plain-English report of everything we did, on Growth and Business.', detail([careLines[0].replace(/\s*See full checklist.*/, '')], [])),
   ];
   used.add(careItems[4].s);
   const left = [...careItems.map((c) => c.s), ...everyItems, ...placeItems].filter((t) => !used.has(t));
   if (left.length) throw new Error(`home included items not placed: ${left.join(', ')}`);
   const big = `<article class="hp-bc big"><span class="hp-bc-ic">${icon('check')}</span><h3>${inner(oneplace.find('h2'))}</h3><p>${inner(oneplace.children('p').first())}</p>
-    <div class="hp-big-art" aria-hidden="true">${['server', 'pen', 'search', 'refresh', 'db', 'layout'].map((n) => `<i>${icon(n)}</i>`).join('')}</div><p class="hp-big-label">${txt(care.find('h2').first())}</p><div class="hp-big-stats">${careStats.map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join('')}</div></article>`;
-  // Dedicated partner and why choose us, as cards in the same bento.
-  const partnerCell = `<article class="hp-bc wide"><p class="hp-label">${txt(pOf(why, /^Who We Are$/))}</p><h3>${inner(partner.find('h2'))}</h3><p>${inner(partner.children('p').first())}</p>
-    <ul class="hp-list two">${partner.find('li').toArray().map((l) => `<li>${tick}<span>${inner(l)}</span></li>`).join('')}</ul>
-    <p class="hp-note"><strong>${txt(pOf(why, /^24\/7 Support$/))}</strong> · ${txt(pOf(why, /^Always Available$/))}</p><div class="btn-row">${linkBtns(partner.children('p').last())}</div></article>`;
-  const CHOOSE = ['users', 'shield', 'file'];
-  const chooseCells = choose.find('h3').toArray().map((h, i) => {
-    const next = $(h).next('p');
-    return cell(CHOOSE[i], inner(h), next.length ? inner(next) : EXPERT_DRAFT, [], '', i === 2 ? ' wide' : '');
-  });
-  const valueEls = $('.pair').toArray().filter((p) => /^(No Long-Term Contracts|Fast Response Times|Transparent Pricing|Expert Developers)/.test(txt($(p).find('strong'))));
-  if (valueEls.length !== 4) throw new Error(`home value lines: ${valueEls.length}`);
-  const chooseCell = `<article class="hp-bc wide tint"><p class="hp-label">${LABELS.us}</p><h3>${inner(choose.find('h2'))}</h3><p>${inner(choose.children('p').first())}</p>
-    <ul class="hp-list two">${valueEls.map((p) => `<li>${tick}<span><b>${inner($(p).find('strong'))}</b> ${inner($(p).find('span'))}</span></li>`).join('')}</ul><div class="btn-row">${linkBtns(choose.children('p').last(), ['primary'])}</div></article>`;
+    <p class="hp-big-label">${txt(care.find('h2').first())}</p><div class="hp-big-stats">${careStats.map(([v, l]) => `<div><b>${v}</b><span>${l}</span></div>`).join('')}</div></article>`;
   const proPs = pro.children('p').toArray();
   const proLink = proPs.find((p) => $(p).find('a').length && txt($(p).find('a')) === txt(p));
-  const includedHtml = `<div class="head fade"><p class="eyebrow">${inner(faqBlock.find('h3').first())}</p><h2>${hl(txt(pro.find('h2').first()), 'Professional')}</h2><p class="intro">${inner(introP[1])}</p>
-      <ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul>
-      <details class="hp-read"><summary>Read more${icon('down')}</summary><p>${inner(proPs[0])}</p><div class="btn-row">${linkBtns(introP[3])}</div></details></div>`
-    + swipe('hp-bento', "What's included", [big, ...cells, partnerCell, chooseCell, ...chooseCells].join(''))
-    + `<div class="callout fade"><div><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p></div><div class="act"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div></div>`;
+  const includedHtml = `<div class="head hp-head-split fade"><div><p class="eyebrow">${inner(faqBlock.find('h3').first())}</p><h2>${hl(txt(pro.find('h2').first()), 'Professional')}</h2></div>
+      <div><p class="intro">${inner(introP[1])}</p>
+      <details class="hp-read"><summary>Read more${icon('down')}</summary><p>${inner(proPs[0])}</p><ul class="chips"><li>${alwaysOn}</li><li>Security &amp; Backups</li><li>Updates &amp; Fixes</li><li>24/7 Support</li></ul><p>${inner(proPs[1])}</p><p>${txt(proPs[3])}</p><div class="btn-row">${linkBtns(introP[3])}</div></details></div></div>`
+    + swipe('hp-bento', "What's included", [big, ...cells].join(''))
+    + `<div class="btn-row center"><a class="btn primary" href="${hrefOf(proLink!)}">${txt(proLink!)}${icon('arrow')}</a><a class="btn ghost" href="/website-maintenance-checklist/">See full checklist →</a></div>`;
+
+  // Trust strip under the results (owner, 2026-11-04). The long "who we are" and "why choose us" text is on /about-us/.
+  const trustBar = `<section class="hp-trustbar" data-sec="trust" aria-label="Why clients choose us"><div class="wrap">
+    <ul>${[['file', 'No contract'], ['pulse', 'Fast response'], ['tag', 'Transparent pricing'], ['users', 'Expert developers'], ['clock', '24/7 on Business']].map(([ic, t]) => `<li><span class="hp-tb-ic">${icon(ic)}</span>${t}</li>`).join('')}</ul>
+    <a class="hp-tb-link" href="/about-us/">Learn More About Us${icon('arrow')}</a>
+  </div></section>`;
 
   // 5. Pricing.
   const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Every plan includes free hosting for the first year and 2 webmail accounts. Pay yearly and get ${prices.annualNote.en}.</p></div>`
@@ -218,7 +238,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
         <div class="hp-metrics">${metrics.map((m) => `<div><strong>${m.label}</strong><div class="hp-metric-v"><s>${m.before}</s>${icon('arrow')}<span>${m.after}</span></div></div>`).join('')}</div>
       </div>
     </article>${report}</div>
-    <div class="hp-tqs" data-claim-ok="owner 2026-11-03, placeholders">${reviews}</div>
+    <div class="hp-tqs hp-swipe" role="region" aria-label="Client reviews" tabindex="0" data-claim-ok="owner 2026-11-03, placeholders">${reviews}</div>
     <p class="hp-ph-note">Design placeholder: replace with 3 real client reviews (name, company, country, written OK) before launch.</p>`;
 
   // 8. Services: the 4 illustrated cards on top, the other 10 services as a compact link grid.
@@ -287,7 +307,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     return `<article class="card guide${i >= 3 ? ' x' : ''}"><p class="tag">${inner(ps[0])}</p><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[1])}</p><a class="btn ghost" href="${hrefOf(ps[2])}">${inner($(ps[2]).find('a'))}</a></article>`;
   }).join('');
   const guidesHtml = head(txt(pOf(results, /^Guides & Resources$/)), inner(guides.find('h2')), inner(guides.children('p').first()), 'Guides')
-    + `<div class="hp-more-wrap">${more('guides-all', 'Show more guides', 'Show fewer guides')}<div class="grid g3 hp-guides">${guideCards}</div></div>
+    + `<div class="hp-more-wrap">${more('guides-all', 'Show more guides', 'Show fewer guides')}<div class="grid g3 hp-guides hp-swipe" role="region" aria-label="Guides" tabindex="0">${guideCards}</div></div>
     <div class="btn-row center">${linkBtns(guides.children('p').last(), ['primary'])}</div>
     <div class="hp-countries">${head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')}
     <div class="grid g5">${countries.find('a').toArray().map((a, i) => `<a class="card country" href="${$(a).attr('href')}"><span class="badge c${(i % 6) + 1}">${icon('pin')}</span>${inner(a)}</a>`).join('')}</div></div>`;
@@ -296,11 +316,12 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   ${trustHtml}
   ${sec('platforms', platsHtml, ' aria-label="Platforms we support"')}
   ${sec('included', includedHtml)}
-  ${sec('pricing', pricingHtml, ' id="pricing"')}
-  ${sec('process', processHtml)}
   ${sec('results', resultsHtml)}
-  ${sec('services', servicesHtml)}
+  ${trustBar}
+  ${sec('pricing', pricingHtml, ' id="pricing"')}
   ${sec('compare', compareHtml)}
+  ${sec('process', processHtml)}
+  ${sec('services', servicesHtml)}
   ${sec('faq', faqHtml)}
   ${sec('guides', guidesHtml)}`;
 }
