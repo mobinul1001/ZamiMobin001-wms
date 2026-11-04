@@ -1,0 +1,16 @@
+---
+// The page's own FAQ (answers keep their links). 4 shown, the rest behind "Show N more questions".
+import { icon } from '../../lib/icons';
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+const q = (f: { q: string; a: string }) => `<details><summary><span>${f.q}</span>${icon('down')}</summary><div class="a"><p>${f.a}</p></div></details>`;
+const shown = d.faq.items.slice(0, 4), rest = d.faq.items.slice(4);
+---
+<p class="sx-lead" set:html={d.faq.lead} />
+<div class="pp-faq">
+  <Fragment set:html={shown.map(q).join('')} />
+  {rest.length > 0 && (
+    <details class="pp-rm pp-faq-more"><summary>Show {rest.length} more questions<Fragment set:html={icon('down')} /></summary><div class="pp-faq" set:html={rest.map(q).join('')} /></details>
+  )}
+</div>

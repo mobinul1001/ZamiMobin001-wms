@@ -1,0 +1,11 @@
+---
+// The page's own 4 stat cards (number and label), each with an icon.
+import { icon } from '../../lib/icons';
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { stats: WpPlans['hero']['stats'] }
+const { stats } = Astro.props;
+const ICONS = ['layout', 'shield', 'tag', 'key'];
+---
+<section class="pp-proof" aria-label="Plan facts"><div class="wrap"><ul>{stats.map((s, i) => (
+  <li><span class="pp-tile" style={`--ic:var(--c${i + 1})`}><Fragment set:html={icon(ICONS[i])} /></span><span><b>{s.v}</b>{s.l}</span></li>
+))}</ul></div></section>

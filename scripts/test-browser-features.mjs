@@ -55,7 +55,7 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
     await new Promise((r) => setTimeout(r, 120));
     const d = f.contentDocument;
     const bar = d.getElementById('cookie-bar').getBoundingClientRect();
-    const cta = d.querySelector('.cta-row .btn').getBoundingClientRect();
+    const cta = d.querySelector('.cta-row .btn, .pp-cta .btn').getBoundingClientRect();
     out.mobile.push({ w, h, p, barTop: Math.round(bar.top), barH: Math.round(bar.height), ctaTop: Math.round(cta.top), ctaBottom: Math.round(cta.bottom), covered: cta.top < h && cta.bottom > bar.top });
     f.remove();
   }

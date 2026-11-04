@@ -1,0 +1,6 @@
+---
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+---
+<ul class="pp-chips big">{d.addons.items.map((t) => <li>{t}</li>)}</ul>

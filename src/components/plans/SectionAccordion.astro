@@ -1,0 +1,19 @@
+---
+// One page section. On phones it is a <details> whose summary holds the eyebrow and the real H2;
+// from 760px up it is always open and not clickable (plans-page.css). The text is in the HTML either way.
+import { icon } from '../../lib/icons';
+interface Props { eyebrow?: string; h2: string; open?: boolean; alt?: boolean; id?: string; eyebrowHeading?: boolean }
+const { eyebrow, h2, open = false, alt = false, id, eyebrowHeading = false } = Astro.props;
+---
+<section class:list={['pp-sec', { alt }]} id={id}>
+  <div class="wrap">
+    <details class="sx" open={open}>
+      <summary>
+        {eyebrow && (eyebrowHeading ? <p class="eyebrow" set:html={eyebrow} /> : <span class="eyebrow" set:html={eyebrow} />)}
+        <h2 set:html={h2} />
+        <Fragment set:html={icon('down', 'sx-ic')} />
+      </summary>
+      <div class="sxb"><slot /></div>
+    </details>
+  </div>
+</section>

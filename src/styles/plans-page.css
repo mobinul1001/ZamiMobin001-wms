@@ -1,0 +1,347 @@
+/* WordPress plans page (owner's design, 2026-11-04). Scoped to .plans-pg; site tokens, so both themes work.
+   Breakpoints follow the mockup: tablet up to 1079px, phone up to 759px, small phone up to 389px. No script. */
+.plans-pg { --pp-r: 24px; }
+.plans-pg h1 { font-size: 52px; line-height: 1.05; letter-spacing: -.04em; margin: 16px 0; }
+.plans-pg h2 { font-size: 44px; line-height: 1.12; letter-spacing: -.03em; max-width: 22ch; }
+.plans-pg h3 { font-size: 22px; line-height: 1.3; }
+.plans-pg .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin: 0; padding: 6px 14px; border-radius: 999px; background: var(--eyebrow-bg); color: var(--eyebrow); font-size: 13px; line-height: 1.4; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; max-width: none; }
+.plans-pg .eyebrow .ic { width: 16px; height: 16px; }
+.plans-pg .card { border-radius: var(--pp-r); }
+.plans-pg .tick { width: 24px; height: 24px; border-radius: 8px; }
+
+/* Hero */
+.pp-hero { padding-block: 40px 24px; background: var(--hero-art), var(--bg); }
+.pp-hero .wrap { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: 48px; align-items: center; }
+.pp-hero .crumbs { margin-bottom: 20px; font-size: 15px; color: var(--muted); }
+.pp-hero .crumbs a { color: var(--muted); }
+.pp-sub { max-width: 60ch; font-size: 19px; color: var(--ink); }
+.pp-cta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.pp-help { display: grid; gap: 16px; padding: 24px; border-radius: var(--pp-r); background: var(--card); border: 1px solid var(--card-line); box-shadow: var(--pop-shadow); }
+.pp-help p { font-size: 15.5px; color: var(--ink); }
+
+/* Plans */
+.pp-plans { padding-block: 24px 64px; background: var(--bg); }
+.pp-plans-head { display: grid; gap: 8px; margin-bottom: 20px; }
+.pp-plans-head h2 { font-size: 30px; max-width: none; }
+.pp-plans-head p { color: var(--muted); }
+.pp-toggle { display: inline-flex; padding: 4px; margin-bottom: 24px; border-radius: 16px; background: var(--mini); border: 1px solid var(--card-line); }
+.pp-toggle label { position: relative; display: flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 20px; border-radius: 12px; font-weight: 700; color: var(--head); cursor: pointer; }
+.pp-toggle input { position: absolute; inset: 0; margin: 0; opacity: 0; cursor: pointer; }
+.pp-toggle label:has(input:checked) { background: var(--btn); color: #fff; }
+.pp-toggle label:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+.pp-toggle .save { padding: 2px 8px; border-radius: 999px; font-size: 12px; white-space: nowrap; background: color-mix(in srgb, var(--ok) 18%, transparent); color: var(--ok-ink, var(--ok)); }
+.pp-toggle label:has(input:checked) .save { background: rgba(255,255,255,.22); color: #fff; }
+.pbox:has(.pp-toggle label:nth-child(2) input:checked) .pp-m, .pbox:has(.pp-toggle label:nth-child(1) input:checked) .pp-y { display: none; }
+.pp-grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.pp-grid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.pp-grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.pp-plan { position: relative; display: grid; grid-template-rows: auto auto auto auto 1fr auto; gap: 12px; }
+.pp-plan.pop { background: var(--pop-bg); border: 2px solid var(--accent); box-shadow: var(--pop-shadow); }
+.pp-tag { position: absolute; top: -14px; left: 24px; padding: 4px 12px; border-radius: 999px; background: var(--btn); color: #fff; font-size: 13px; font-weight: 700; }
+.pp-price { font-size: 36px; line-height: 1.1; font-weight: 800; letter-spacing: -.03em; color: var(--head); }
+.pp-price small { margin-left: 2px; font-size: 16px; font-weight: 600; letter-spacing: 0; color: var(--muted); }
+.pp-yr { font-size: 14.5px; font-weight: 700; color: var(--ok-ink, var(--ok)); }
+.pp-for { font-size: 15.5px; color: var(--muted); }
+.pp-list { display: grid; gap: 10px; align-content: start; font-size: 15.5px; }
+.pp-list li { display: flex; gap: 10px; align-items: flex-start; }
+.pp-plan .btn { width: 100%; }
+.pp-incl { display: grid; gap: 12px; margin-top: 24px; padding: 20px 24px; border-radius: var(--pp-r); background: var(--mini); border: 1px solid var(--card-line); }
+.pp-incl h2 { font-size: 18px; line-height: 1.3; letter-spacing: 0; max-width: none; }
+.pp-incl p { font-size: 15.5px; color: var(--muted); }
+.pp-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.pp-chips li { padding: 8px 16px; border-radius: 999px; background: var(--card); border: 1px solid var(--card-line); font-size: 15px; font-weight: 600; color: var(--head); }
+.pp-chips.big li { background: var(--mini); }
+.pp-store { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; margin-top: 24px; padding: 20px 24px; border-radius: var(--pp-r); border: 1px solid var(--card-line); border-left: 4px solid var(--accent); background: linear-gradient(90deg, var(--mini), var(--card)); font-size: 18px; font-weight: 700; color: var(--head); }
+.pp-store a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 16px; border: 2px solid var(--ghost-line); color: var(--ghost-ink); font-size: 16px; font-weight: 700; text-decoration: none; }
+.pp-store a:hover { transform: translateY(-2px); }
+
+/* Stat strip */
+.pp-proof { background: var(--alt); border-block: 1px solid var(--line); }
+.pp-proof ul { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; padding-block: 24px; }
+.pp-proof li { display: flex; align-items: center; gap: 12px; min-width: 0; font-size: 16px; color: var(--muted); }
+.pp-proof b { display: block; font-size: 24px; line-height: 1.1; font-weight: 800; color: var(--head); }
+.pp-tile { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 16px; color: var(--ic, var(--c1)); background: color-mix(in srgb, var(--ic, var(--c1)) 14%, transparent); }
+
+/* Sections: plain on tablet and desktop; on phones a card that opens and closes */
+.pp-sec { padding-block: 80px; background: var(--sec); }
+.pp-sec.alt { background: var(--alt); }
+.sx > summary { display: grid; grid-template-columns: minmax(0, 1fr) auto; justify-items: start; gap: 16px; margin-bottom: 32px; list-style: none; }
+.sx > summary::-webkit-details-marker { display: none; }
+.sx > summary .eyebrow, .sx > summary h2 { grid-column: 1; }
+.sx > summary .sx-ic { display: none; grid-column: 2; grid-row: 1 / span 2; align-self: center; width: 22px; height: 22px; color: var(--accent); transition: transform .2s; }
+.sx-lead { max-width: 65ch; margin-bottom: 24px; font-size: 18px; color: var(--muted); }
+.pp-after { margin-top: 24px; color: var(--ink); }
+.pp-prose { display: grid; gap: 16px; }
+.pp-inc { display: grid; gap: 12px; align-content: start; }
+.pp-inc h3 { font-size: 19px; }
+.pp-inc p { font-size: 15.5px; color: var(--muted); }
+@media (min-width: 760px) {
+  /* Always open and not clickable from 760px up, where the browser supports it. */
+  @supports selector(::details-content) {
+    .sx::details-content { content-visibility: visible; display: block; }
+    .sx > summary { pointer-events: none; cursor: default; }
+    .sx > summary:focus-visible { outline: none; }
+  }
+}
+
+/* Compare */
+.pp-swipe { display: none; margin-bottom: 12px; font-size: 14px; color: var(--muted); }
+.pp-tscroll { overflow-x: auto; border-radius: var(--pp-r); border: 1px solid var(--card-line); background: var(--card); -webkit-overflow-scrolling: touch; }
+.pp-tscroll:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.pp-t { width: 100%; min-width: 640px; border-collapse: separate; border-spacing: 0; }
+.pp-t th, .pp-t td { padding: 14px 20px; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--line); font-size: 16px; }
+.pp-t .c { text-align: center; }
+.pp-t thead th { background: var(--th); color: var(--th-ink); font-weight: 700; }
+.pp-t thead th.w { background: var(--accent); color: #fff; }
+.pp-t tbody th { position: sticky; left: 0; z-index: 1; width: 30%; background: var(--card); box-shadow: 1px 0 0 var(--line); font-weight: 700; color: var(--head); }
+.pp-t thead th:first-child { position: sticky; left: 0; z-index: 2; }
+.pp-t td.w { background: var(--with); }
+.pp-t tr:last-child > * { border-bottom: 0; }
+.pp-t .tick { display: inline-grid; vertical-align: middle; }
+.pp-save { display: grid; gap: 12px; margin-top: 32px; }
+.pp-save-h { font-size: 24px !important; line-height: 1.25 !important; letter-spacing: -.01em !important; max-width: none !important; }
+.pp-save > p { color: var(--muted); }
+.pp-save3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 4px; }
+.pp-save3 > div { display: grid; gap: 4px; padding: 20px; border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); }
+.pp-save3 b { font-size: 18px; color: var(--head); }
+.pp-save3 span { font-size: 15px; color: var(--muted); }
+.pp-save3 em { font-style: normal; font-weight: 700; color: var(--ok-ink, var(--ok)); }
+
+/* "Read more" and "Show more" */
+.pp-rm { margin-top: 16px; border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); }
+.pp-rm > summary { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 12px 18px; font-weight: 700; color: var(--link); cursor: pointer; list-style: none; }
+.pp-rm > summary::-webkit-details-marker { display: none; }
+.pp-rm > summary .ic { width: 18px; height: 18px; transition: transform .2s; }
+.pp-rm[open] > summary { border-bottom: 1px solid var(--line); }
+.pp-rm[open] > summary .ic { transform: rotate(180deg); }
+.pp-rm > div { padding: 16px; }
+
+/* Steps */
+.pp-steps { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.pp-step { position: relative; display: grid; gap: 12px; align-content: start; }
+.pp-step .n { position: relative; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sc); color: #fff; font-weight: 800; box-shadow: 0 0 0 6px var(--sec); }
+.pp-sec.alt .pp-step .n { box-shadow: 0 0 0 6px var(--alt); }
+.pp-step::after { content: ""; position: absolute; top: 19px; left: 46px; right: -18px; height: 3px; border-radius: 3px; background: var(--grad); }
+.pp-step:last-child::after { right: 0; }
+.pp-step h3 { font-size: 19px; }
+.pp-step p { font-size: 15.5px; color: var(--muted); }
+
+/* FAQ */
+.pp-faq { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.pp-faq details:not(.pp-rm) { border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); }
+.pp-faq details:not(.pp-rm) > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 18px 24px; font-size: 18px; font-weight: 700; color: var(--head); cursor: pointer; list-style: none; }
+.pp-faq details:not(.pp-rm) > summary::-webkit-details-marker { display: none; }
+.pp-faq details:not(.pp-rm) > summary .ic { width: 20px; height: 20px; flex: none; color: var(--accent); transition: transform .2s; }
+.pp-faq details[open]:not(.pp-rm) > summary .ic { transform: rotate(180deg); }
+.pp-faq .a { padding: 0 24px 22px; color: var(--ink); }
+.pp-faq > .pp-faq-more { grid-column: 1 / -1; margin-top: 0; border-style: dashed; }
+.pp-faq-more > .pp-faq { padding: 12px; }
+
+/* Related */
+.pp-rel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.pp-rel a { display: flex; align-items: center; min-height: 88px; padding: 20px; border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); color: var(--head); font-weight: 700; text-decoration: none; transition: transform .2s, box-shadow .2s; }
+.pp-rel a:hover { transform: translateY(-3px); box-shadow: var(--card-hover); }
+
+/* Phone "See plans" bar */
+.pp-stick { display: none; }
+
+/* Tablet */
+@media (max-width: 1079px) {
+  .plans-pg h1 { font-size: 44px; }
+  .plans-pg h2 { font-size: 36px; }
+  .pp-sec { padding-block: 64px; }
+  .pp-hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .pp-grid3 { grid-template-columns: minmax(0, 1fr); }
+  .pp-grid4, .pp-proof ul { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pp-save3 { grid-template-columns: minmax(0, 1fr); }
+  .pp-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pp-step::after { display: none; }
+  .pp-faq { grid-template-columns: minmax(0, 1fr); }
+  .pp-rel { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pp-plan { grid-template-rows: none; }
+}
+
+/* Phone */
+@media (max-width: 759px) {
+  .plans-pg h1 { font-size: 34px; }
+  .plans-pg h2 { font-size: 28px; }
+  .plans-pg h3 { font-size: 20px; }
+  .pp-hero { padding-block: 28px 16px; }
+  .pp-sub { font-size: 17px; }
+  .pp-cta { flex-direction: column; }
+  .pp-cta .btn, .pp-help .btn { width: 100%; min-height: 52px; }
+  .pp-plans { padding-block: 16px 40px; }
+  .pp-plans-head h2 { font-size: 24px; }
+  .pp-toggle { display: flex; }
+  .pp-toggle label { flex: 1; justify-content: center; gap: 6px; padding: 10px 8px; font-size: 15px; white-space: nowrap; }
+  .pp-toggle .save { padding: 2px 7px; font-size: 11px; }
+  .pp-grid4, .pp-grid2 { grid-template-columns: minmax(0, 1fr); }
+  .pp-store { flex-direction: column; align-items: stretch; font-size: 17px; }
+  .pp-store a { justify-content: center; }
+  /* Stat cards: equal height, 2 by 2, icon on top */
+  .pp-proof ul { gap: 12px; }
+  .pp-proof li { flex-direction: column; align-items: flex-start; gap: 10px; height: 100%; padding: 16px; border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); font-size: 14px; line-height: 1.35; }
+  .pp-proof b { font-size: 22px; }
+  /* Sections become cards that open and close; only Compare starts open */
+  .pp-sec { padding-block: 8px; }
+  .pp-sec.alt { background: var(--sec); }
+  .sx { border-radius: 20px; background: var(--card); border: 1px solid var(--card-line); box-shadow: var(--card-shadow); }
+  .sx > summary { gap: 8px; min-height: 72px; margin: 0; padding: 18px 20px; cursor: pointer; }
+  .sx > summary h2 { font-size: 22px; line-height: 1.2; max-width: none; }
+  .sx > summary .sx-ic { display: block; }
+  .sx[open] > summary { border-bottom: 1px solid var(--line); }
+  .sx[open] > summary .sx-ic { transform: rotate(180deg); }
+  .sxb { padding: 20px; }
+  .sx-lead { font-size: 16px; }
+  .pp-swipe { display: block; }
+  .pp-t th, .pp-t td { padding: 14px 16px; font-size: 15px; }
+  .pp-t tbody th { width: auto; min-width: 150px; }
+  .pp-steps { grid-template-columns: minmax(0, 1fr); }
+  .pp-steps::before { content: ""; position: absolute; top: 20px; bottom: 20px; left: 19px; width: 3px; border-radius: 3px; background: var(--grad); }
+  .pp-step { grid-template-columns: 40px minmax(0, 1fr); column-gap: 16px; row-gap: 6px; }
+  .pp-step .n { grid-row: 1 / span 2; box-shadow: 0 0 0 6px var(--card); }
+  .pp-sec.alt .pp-step .n { box-shadow: 0 0 0 6px var(--card); }
+  .pp-step > :not(.n) { grid-column: 2; }
+  .pp-faq details:not(.pp-rm) > summary { padding: 16px 18px; font-size: 17px; }
+  .pp-faq .a { padding: 0 18px 20px; }
+  .pp-rel { grid-template-columns: minmax(0, 1fr); }
+  .pp-stick { display: block; position: sticky; bottom: 0; z-index: 30; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); background: var(--top); backdrop-filter: blur(12px); border-top: 1px solid var(--line); }
+  .pp-stick .btn { width: 100%; min-height: 52px; }
+}
+@media (max-width: 389px) {
+  .plans-pg h1 { font-size: 32px; }
+  .pp-price { font-size: 32px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plans-pg * { transition: none !important; }
+  .plans-pg .card:hover, .pp-rel a:hover, .pp-store a:hover { transform: none; }
+}
+.pp-yn { display: block; margin-top: 6px; font-size: 14.5px; font-style: normal; font-weight: 700; letter-spacing: 0; color: var(--ok-ink, var(--ok)); }
+.pp-work { display: grid; gap: 12px; justify-items: start; }
+.pp-work-stats { display: flex; gap: 32px; }
+.pp-work-stats b { display: block; font-size: 28px; line-height: 1.1; font-weight: 800; color: var(--head); }
+.pp-work-stats span { font-size: 14px; color: var(--muted); }
+.pp-work > p { color: var(--ink); }
+/* Hidden "Included" text in table cells stays inside the scroll box, so the page never widens. */
+.pp-tscroll { position: relative; }
+@media (max-width: 759px) {
+  .pp-toggle { gap: 4px; }
+  .pp-toggle label { padding: 10px; }
+  .pp-toggle label:first-child { flex: 0 1 auto; }
+  .pp-toggle label:last-child { flex: 1 1 auto; }
+}
+
+/* Tighter spacing, measured against the owner's height targets (2026-11-04) */
+.pp-note { font-weight: 700; color: var(--ok-ink, var(--ok)); }
+.pp-sec { padding-block: 64px; }
+.sx > summary { margin-bottom: 24px; }
+.sx-lead { margin-bottom: 20px; }
+.pp-plans-head { margin-bottom: 16px; }
+.pp-plan { gap: 10px; }
+.pp-list { gap: 8px; }
+@media (max-width: 1079px) {
+  .pp-sec { padding-block: 48px; }
+}
+@media (max-width: 759px) {
+  .pp-sec { padding-block: 6px; }
+  .pp-hero .crumbs { margin-bottom: 12px; }
+  .pp-hero h1 { margin: 12px 0; }
+  .pp-cta { gap: 12px; margin-top: 20px; }
+  .pp-help { gap: 12px; padding: 20px; }
+  .pp-plans .card { padding: 20px; }
+  .pp-grid3 { gap: 20px; }
+  .pp-list { font-size: 15px; }
+  .pp-incl, .pp-store { padding: 16px; }
+  .pp-save3 > div { padding: 16px; }
+}
+/* Store line reads as one sentence; the link sits in it as a button. */
+.pp-store { display: block; line-height: 2.6; }
+.pp-store a { margin-left: 8px; line-height: 1.2; vertical-align: middle; }
+@media (max-width: 759px) { .pp-store { line-height: 1.5; } .pp-store a { display: flex; margin: 12px 0 0; } }
+.plans-pg .pp-incl h2 { font-size: 18px; line-height: 1.3; letter-spacing: 0; max-width: none; }
+/* Fixed dark purple behind the highlighted column, so white text passes contrast in both themes. */
+.pp-t thead th.w { background: #6d28d9; }
+/* Card and step headings at the site's smallest h3 size (DESIGN-QA type scale). */
+.plans-pg .pp-inc h3, .plans-pg .pp-step h3 { font-size: 20px; }
+
+/* Height pass 2 (owner targets 2026-11-04: phone ≤7,000px at 390, desktop ≤7,500px at 1440). No text removed. */
+/* "What's Included in Every Plan?" and "Monthly vs Annual Pricing": open from 760px up, closed on phones with their own heading as the switch. */
+.pp-fold > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; list-style: none; }
+.pp-fold > summary::-webkit-details-marker { display: none; }
+.pp-fold > summary .sx-ic { display: none; width: 20px; height: 20px; flex: none; color: var(--accent); transition: transform .2s; }
+.pp-fold[open] > summary .sx-ic { transform: rotate(180deg); }
+.pp-incl.pp-fold, .pp-save.pp-fold { display: block; }
+.pp-fold-b { display: grid; gap: 12px; margin-top: 12px; }
+@media (min-width: 760px) {
+  @supports selector(::details-content) {
+    .pp-fold::details-content { content-visibility: visible; display: block; }
+    .pp-fold > summary { pointer-events: none; cursor: default; }
+  }
+}
+@media (min-width: 1080px) {
+  .pp-sec { padding-block: 48px; }
+  .pp-plans { padding-bottom: 48px; }
+  .sx > summary { margin-bottom: 20px; }
+  .plans-pg .sx > summary h2 { max-width: none; font-size: 40px; }
+  .pp-t th, .pp-t td { padding-block: 11px; }
+}
+@media (max-width: 759px) {
+  .pp-sec { padding-block: 4px; }
+  .sx > summary { min-height: 56px; padding: 12px 16px; gap: 4px; }
+  .sx > summary .eyebrow { padding: 2px 10px; font-size: 11px; }
+  .plans-pg .sx > summary h2 { font-size: 19px; line-height: 1.25; }
+  .sxb { padding: 16px; }
+  .sx-lead { margin-bottom: 14px; }
+  .pp-t th, .pp-t td { padding: 10px 12px; font-size: 14px; }
+  .pp-t tbody th { min-width: 136px; }
+  .pp-fold > summary { min-height: 44px; cursor: pointer; }
+  .pp-fold > summary .sx-ic { display: block; }
+  .pp-save.pp-fold { margin-top: 16px; padding: 10px 16px; border-radius: 16px; background: var(--mini); border: 1px solid var(--card-line); }
+  .plans-pg .pp-save-h { font-size: 17px !important; }
+  .pp-incl.pp-fold { margin-top: 20px; padding: 10px 16px; }
+  .plans-pg .pp-incl h2 { font-size: 17px; }
+  .pp-chips li { padding: 6px 12px; font-size: 14px; }
+  .pp-hero { padding-block: 20px 12px; }
+  .pp-sub { font-size: 16px; }
+  .pp-help { padding: 16px; }
+  .pp-plans-head { gap: 6px; }
+  .pp-plans .card { padding: 18px; }
+  .pp-plan { gap: 8px; }
+  .pp-list { gap: 6px; font-size: 14.5px; line-height: 1.45; }
+  .pp-proof ul { padding-block: 14px; gap: 10px; }
+  .pp-proof li { padding: 12px; gap: 8px; }
+}
+@media (min-width: 1080px) {
+  .pp-sec { padding-block: 40px; }
+  .sx > summary { gap: 10px; }
+  .pp-t th, .pp-t td { padding-block: 9px; }
+  /* Sections whose whole text sits behind "Read more" stay short. */
+  .pp-sec:has(.sxb > .pp-rm:only-child) { padding-block: 28px; }
+  .pp-sec:has(.sxb > .pp-rm:only-child) .sx > summary { margin-bottom: 12px; }
+}
+@media (max-width: 759px) {
+  .pp-t th, .pp-t td { padding: 8px 12px; }
+  .pp-t tbody th { min-width: 184px; }
+  .pp-plans .tick { width: 20px; height: 20px; }
+  .pp-list li { gap: 8px; }
+}
+/* Phone: the store link sits in its sentence, so the closing period stays on the same line. */
+@media (max-width: 759px) { .pp-store a { display: inline-flex; margin: 8px 2px 0 4px; } }
+/* Small phones: the first button stays above the cookie bar on a 360×640 screen. */
+@media (max-width: 389px) {
+  .pp-hero { padding-top: 14px; }
+  .pp-hero .crumbs { margin-bottom: 8px; font-size: 14px; }
+  .plans-pg h1 { font-size: 29px; }
+  .pp-hero h1 { margin: 10px 0; }
+  .pp-sub { font-size: 15px; line-height: 1.5; }
+  .pp-cta { margin-top: 14px; }
+}
+@media (max-width: 389px) {
+  .plans-pg h1 { font-size: 27px; }
+  .pp-hero .eyebrow { padding: 4px 12px; font-size: 12px; }
+  .pp-hero { padding-top: 10px; }
+}
+@media (max-width: 389px) {
+  .pp-cta { margin-top: 10px; }
+  .pp-sub { line-height: 1.45; }
+}

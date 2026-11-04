@@ -10,6 +10,7 @@ import Article from '../components/templates/Article.astro';
 import BlogIndex from '../components/templates/BlogIndex.astro';
 import Service from '../components/templates/Service.astro';
 import Form from '../components/templates/Form.astro';
+import WpPlans from '../components/templates/WpPlans.astro';
 
 export async function getStaticPaths() {
   const entries = [...(await getCollection('pages')), ...(await getCollection('blog'))];
@@ -26,6 +27,7 @@ const SERVICE_PAGES = ['/wordpress-website-maintenance-packages/', '/ecommerce-w
 const FORM_PAGES = ['/contact/', '/get-a-free-quote/', '/free-website-maintenance-audit/', '/website-malware-scanner/'];
 const pick = () => {
   if (path === '/') return Home;
+  if (path === '/wordpress-website-maintenance-packages/') return WpPlans;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (FORM_PAGES.includes(path)) return Form;

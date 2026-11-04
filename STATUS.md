@@ -1,6 +1,6 @@
 # STATUS: websitemaintenanceservices.org rebuild
 
-Last updated: 2026-11-04. Project folder: `C:\Users\user\wms-rebuild`. All work is in local git commits. No remote is set and nothing is pushed or deployed. The live WordPress site, DNS and email are untouched.
+Last updated: 2026-11-05. Project folder: `C:\Users\user\wms-rebuild`. All work is in local git commits. No remote is set and nothing is pushed or deployed. The live WordPress site, DNS and email are untouched.
 
 Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREMENTS.md`, `CLAIMS-AND-DESIGN.md` and `PROMPTS.md`.
 
@@ -195,6 +195,9 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 
 ## Homepage, 2026-11-04
 - "What's included" fits one screen; "Who We Are" and "Why Choose Us" text moved to /about-us/; trust strip under the results; new section order. Details in CHANGELOG.
+
+## WordPress plans page, 2026-11-05
+- Built to the owner's design on branch `wp-plans-page`; not merged. Waiting for the owner: phone height (7,696 px with Compare open, target 7,000), wording questions (help card title, section labels, hero buttons, stat strip, removed hero card). Details in CHANGELOG.
 
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.

@@ -1,0 +1,27 @@
+---
+// Every row of the page's comparison table, as a real table in a sideways-scrolling box on phones,
+// then the yearly savings worked out from prices.json.
+import { icon, nope, tick } from '../../lib/icons';
+import { money, type WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+const cell = (v: string) => (v === 'Included' ? `${tick}<span class="sr-only">Included</span>` : /^[—–-]$/.test(v) ? `${nope}<span class="sr-only">Not included</span>` : v);
+const [, colMonthly, colAnnual, colSave] = d.savings.cols;
+---
+<p class="sx-lead" set:html={d.compare.lead} />
+<p class="pp-swipe" aria-hidden="true">Swipe sideways to compare plans</p>
+<div class="pp-tscroll" tabindex="0" role="region" aria-label="Plan comparison, scrolls sideways">
+  <table class="pp-t">
+    <thead><tr><th scope="col">{d.compare.head[0]}</th>{d.plans.map((p) => <th scope="col" class:list={['c', { w: p.popular }]}>{p.name} {money(p.monthly)}/mo</th>)}</tr></thead>
+    <tbody>{d.compare.rows.map(([label, ...vals]) => (
+      <tr><th scope="row">{label}</th>{vals.map((v, i) => <td class:list={['c', { w: d.plans[i]?.popular }]} set:html={cell(v)} />)}</tr>
+    ))}</tbody>
+  </table>
+</div>
+{/* Open from 760px up (plans-page.css); on phones it starts closed, with its own heading as the switch. */}
+<details class="pp-save pp-fold"><summary><h2 class="pp-save-h" set:html={d.savings.h2} /><Fragment set:html={icon('down', 'sx-ic')} /></summary><div class="pp-fold-b">
+  <p set:html={d.savings.lead} />
+  <div class="pp-save3">{d.plans.map((p) => (
+    <div><b>{p.name}</b><span>{colMonthly}: {money(p.monthly * 12)}</span><span>{colAnnual}: {money(p.annual)}, {d.annualNote}</span><span><em>{colSave}: {money(p.saving)}</em></span></div>
+  ))}</div>
+</div></details>
