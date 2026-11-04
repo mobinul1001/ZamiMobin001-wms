@@ -261,3 +261,7 @@
 - Countries we serve: real flags (flag-icons, MIT licence in public/flags/LICENSE.txt) instead of pin icons; compact on phones.
 - Monthly report: 4 design samples for the owner to choose from (reports/design-samples/). The site keeps the current card until the owner picks one.
 - design-qa.mjs compares the heights of the directory tiles instead of badge images.
+
+## 2026-11-04: real directory logos, report option A
+- "Find us on": each directory's real logo, taken from its own site (sources in public/logos/SOURCES.txt), in a same-size white tile (188 x 56 px, 168 x 52 px on phones), white in both themes so the brand colours stay readable. Trustpilot's site blocks automated requests, so its star comes from Simple Icons (CC0) with the name set as text. Each logo has a set height so they look the same size; all fit inside their tile at 14 widths.
+- Monthly report: option A "Dashboard" (owner's pick): uptime ring, then updates, backups, malware and edit time with progress bars. Example numbers, labelled Example.

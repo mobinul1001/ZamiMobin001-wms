@@ -140,16 +140,18 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     </div>
   </div></section>`;
 
-  // 2. Find us on (owner, 2026-11-04): same-size tiles drawn in code, from the owner's design file, linked to the real profiles.
-  // Mark colours are the design's, darkened where white text needs 4.5:1.
-  const DIRS: [RegExp, string, string, string][] = [
-    [/clutch\.co/, 'Clutch', '#d4321f', 'C'], [/goodfirms/, 'GoodFirms', '#1565c0', 'G'], [/sortlist/, 'Sortlist', '#111827', 'S'],
-    [/techreviewer/, 'Techreviewer', '#0369a1', 'T'], [/c2creview/, 'C2C Review', '#6d28d9', 'C2C'], [/trustpilot/, 'Trustpilot', '#047857', '★'], [/agencyspotter/, 'Agency Spotter', '#b45309', 'A'],
+  // 2. Find us on (owner, 2026-11-04): each directory's real logo (public/logos/SOURCES.txt) in a same-size white tile, linked to our profile.
+  // Heights are set per logo so they look the same size; width follows the logo's own shape.
+  const DIRS: [RegExp, string, string, number, number][] = [
+    [/clutch\.co/, 'Clutch', 'clutch', 26, 405.7 / 115], [/goodfirms/, 'GoodFirms', 'goodfirms', 28, 160 / 31], [/sortlist/, 'Sortlist', 'sortlist', 24, 283.5 / 72.3],
+    [/techreviewer/, 'Techreviewer', 'techreviewer', 19, 267.1 / 32.5], [/c2creview/, 'C2C Review', 'c2c-review', 34, 408 / 106], [/agencyspotter/, 'Agency Spotter', 'agency-spotter', 44, 446 / 228],
   ];
+  const TRUSTPILOT_STAR = '<svg class="tp-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.227 16.67l2.19 6.742-7.413-5.388 5.223-1.354zM24 9.31h-9.165L12.005.589l-2.84 8.723L0 9.3l7.422 5.397-2.84 8.714 7.422-5.388 4.583-3.326L24 9.311z"/></svg>';
   const badgeItems = site.badges.map(([href]) => {
+    if (/trustpilot/.test(String(href))) return `<li><a class="hp-dir" href="${href}" rel="noopener" aria-label="Trustpilot">${TRUSTPILOT_STAR}<span class="tp-name" aria-hidden="true">Trustpilot</span></a></li>`;
     const d = DIRS.find(([re]) => re.test(String(href)));
-    if (!d) throw new Error(`no directory tile for ${href}`);
-    return `<li><a class="hp-dir" href="${href}" rel="noopener"><span class="hp-dg${d[3].length > 1 ? ' sm' : ''}" style="--dg:${d[2]}" aria-hidden="true">${d[3]}</span><span><b>${d[1]}</b><small>Verified profile</small></span></a></li>`;
+    if (!d) throw new Error(`no directory logo for ${href}`);
+    return `<li><a class="hp-dir" href="${href}" rel="noopener"><img src="/logos/${d[2]}.svg" alt="${d[1]}" width="${Math.round(d[3] * d[4])}" height="${d[3]}" style="height:${d[3]}px" loading="lazy"></a></li>`;
   });
   const trustHtml = `<section class="hp-trust" data-sec="find-us" aria-label="Find us on"><div class="wrap hp-trust-g"><p class="hp-trust-t"><b>Find us on</b>Verified agency profiles</p>${marquee(badgeItems)}</div></section>`;
 
@@ -238,9 +240,13 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   if (!speed || !(seconds(speed.before) > seconds(speed.after))) throw new Error('home case study speed changed');
   const pct = Math.round((seconds(speed.after) / seconds(speed.before)) * 100);
   const reviews = [1, 2, 3].map((i) => `<figure class="hp-tq fade"><div class="hp-stars" aria-hidden="true">★★★★★</div><blockquote>“[Real client quote ${i} goes here — 2 or 3 sentences about the problem we solved and the result.]”</blockquote><figcaption><span class="hp-av">${['AB', 'CD', 'EF'][i - 1]}</span><span><b>[Client name]</b><small>[Role, Company · Country]</small></span><span class="hp-src">via Clutch</span></figcaption></figure>`).join('');
-  const report = `<aside class="hp-report fade" aria-label="Example monthly report"><div class="hp-report-top"><h3>What a monthly report looks like</h3><span class="tag">Example</span></div><p>An example of the numbers you would see. It is not real client data.</p>
-    <p class="hp-report-site">Monthly report, yourwebsite.com</p>
-    <div class="hp-report-g">${[['Updates applied', '14'], ['Backups completed', '30'], ['Malware found', '0'], ['Edit time used', '1h 40m']].map(([l, v]) => `<div><span>${l}</span><b>${v}</b></div>`).join('')}</div></aside>`;
+  // Monthly report, option A "Dashboard" (owner's pick, 2026-11-04). Example numbers, labelled as such.
+  const ROWS: [string, string, string, number, boolean?][] = [['refresh', 'Updates applied', '14', 100], ['db', 'Backups completed', '30 / 30', 100], ['shield', 'Malware found', '0 · Clean', 100, true], ['pen', 'Edit time used', '1h 40m / 3h', 56]];
+  const report = `<aside class="hp-report fade" aria-label="Example monthly report">
+    <div class="hp-report-top"><div><p class="hp-report-kicker">Monthly report</p><h3>yourwebsite.com</h3></div><span class="tag">Example</span></div>
+    <div class="hp-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" class="t"/><circle cx="60" cy="60" r="50" class="v" pathLength="100" stroke-dasharray="99.9 100"/></svg><p><b>99.9%</b><span>Uptime this month</span></p></div>
+    <ul class="hp-report-rows">${ROWS.map(([ic, l, v, p, ok]) => `<li${ok ? ' class="ok"' : ''}>${icon(ic)}<span>${l}</span><b>${v}</b><i style="--p:${p}%"></i></li>`).join('')}</ul>
+    <p class="hp-report-note">An example of the numbers you would see. It is not real client data.</p></aside>`;
   const resultsHtml = head(txt(pOf(oneplace, /^Real Results$/)), inner(results.find('h2')), inner(results.children('p').first()), 'Results')
     + `<div class="hp-results"><article class="hp-case fade">
       <div class="hp-case-l"><p class="eyebrow">${txt(pOf(results, /^Case Study$/))} · Healthcare</p><h3>${inner(results.find('h3').first())}</h3><ul class="chips">${caseTags.map((t) => `<li>${t}</li>`).join('')}</ul><p>${inner(pOf(results, /^This mental-health/))}</p><div class="btn-row">${linkBtns(pOf(results, /^Read the Full Case Study/))}</div></div>

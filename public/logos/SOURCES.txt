@@ -1,0 +1,8 @@
+Directory logos for the homepage "Find us on" strip (2026-11-04). Each is the directory's own logo, shown only to link to our profile there.
+clutch.svg         from clutch.co header (CSS background SVG)
+goodfirms.svg      from goodfirms.co header (inline SVG)
+sortlist.svg       from sortlist.com header (inline SVG)
+techreviewer.svg   from techreviewer.co header image
+c2c-review.svg     from c2creview.co header image
+agency-spotter.svg from agencyspotter.com header image
+Trustpilot star: Simple Icons (CC0), drawn inline in src/lib/home.ts with the name as text.
