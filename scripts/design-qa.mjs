@@ -122,7 +122,7 @@ const MEASURE = `(d, w, vh) => {
   }
   // Footer
   const foot = d.querySelector('footer');
-  out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) img')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
+  out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) .hp-dir')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
   const home = !!d.querySelector('.hp-hero');
   if (out.footer.cols !== 3 || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
   // The GMB block is on the homepage only, right above the final CTA.

@@ -40,6 +40,9 @@ export const homeFinalHtml = (cta?: Cta) => `<section class="hp-final-sec" data-
   ${quickForm('final', 'Get your free website check', 'Takes 30 seconds.')}
 </div></div></section>`;
 
+// Country flags (flag-icons, MIT), in public/flags/.
+const FLAG: Record<string, string> = { USA: 'us', Canada: 'ca', UK: 'gb', Australia: 'au', Netherlands: 'nl', France: 'fr', Spain: 'es', Brazil: 'br', Ireland: 'ie', Switzerland: 'ch' };
+
 // A row that scrolls on its own. The copy is hidden from screen readers and keyboards.
 const marquee = (items: string[], cls = '') => `<div class="hp-mq${cls}"><ul>${items.join('')}${items.map((i) => i.replace('<li', '<li aria-hidden="true"').replace(/<a /g, '<a tabindex="-1" ')).join('')}</ul></div>`;
 
@@ -137,8 +140,17 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     </div>
   </div></section>`;
 
-  // 2. Find us on: the real badge images, scrolling.
-  const badgeItems = site.badges.map(([href, src, alt, w, h]) => `<li><a href="${href}" rel="noopener"><img src="${src}" alt="${alt}" width="${w}" height="${h}" loading="lazy"></a></li>`);
+  // 2. Find us on (owner, 2026-11-04): same-size tiles drawn in code, from the owner's design file, linked to the real profiles.
+  // Mark colours are the design's, darkened where white text needs 4.5:1.
+  const DIRS: [RegExp, string, string, string][] = [
+    [/clutch\.co/, 'Clutch', '#d4321f', 'C'], [/goodfirms/, 'GoodFirms', '#1565c0', 'G'], [/sortlist/, 'Sortlist', '#111827', 'S'],
+    [/techreviewer/, 'Techreviewer', '#0369a1', 'T'], [/c2creview/, 'C2C Review', '#6d28d9', 'C2C'], [/trustpilot/, 'Trustpilot', '#047857', '★'], [/agencyspotter/, 'Agency Spotter', '#b45309', 'A'],
+  ];
+  const badgeItems = site.badges.map(([href]) => {
+    const d = DIRS.find(([re]) => re.test(String(href)));
+    if (!d) throw new Error(`no directory tile for ${href}`);
+    return `<li><a class="hp-dir" href="${href}" rel="noopener"><span class="hp-dg${d[3].length > 1 ? ' sm' : ''}" style="--dg:${d[2]}" aria-hidden="true">${d[3]}</span><span><b>${d[1]}</b><small>Verified profile</small></span></a></li>`;
+  });
   const trustHtml = `<section class="hp-trust" data-sec="find-us" aria-label="Find us on"><div class="wrap hp-trust-g"><p class="hp-trust-t"><b>Find us on</b>Verified agency profiles</p>${marquee(badgeItems)}</div></section>`;
 
   // 3. Platforms and stats.
@@ -310,7 +322,11 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     + `<div class="hp-more-wrap">${more('guides-all', 'Show more guides', 'Show fewer guides')}<div class="grid g3 hp-guides hp-swipe" role="region" aria-label="Guides" tabindex="0">${guideCards}</div></div>
     <div class="btn-row center">${linkBtns(guides.children('p').last(), ['primary'])}</div>
     <div class="hp-countries">${head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')}
-    <div class="grid g5">${countries.find('a').toArray().map((a, i) => `<a class="card country" href="${$(a).attr('href')}"><span class="badge c${(i % 6) + 1}">${icon('pin')}</span>${inner(a)}</a>`).join('')}</div></div>`;
+    <div class="grid g5">${countries.find('a').toArray().map((a) => {
+      const code = FLAG[txt(a)];
+      if (!code) throw new Error(`no flag for ${txt(a)}`);
+      return `<a class="card country" href="${$(a).attr('href')}"><img class="flag" src="/flags/${code}.svg" alt="${txt(a)} flag" width="40" height="30" loading="lazy">${inner(a)}</a>`;
+    }).join('')}</div></div>`;
 
   return `${heroHtml}
   ${trustHtml}

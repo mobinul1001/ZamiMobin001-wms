@@ -255,3 +255,9 @@
 - Phones: reviews and guides are swipe carousels too; country links are compact.
 - design-qa.mjs ignores text inside closed "Read more" panels.
 - Page height (QA screenshots): 1440 14,832 to 13,159 px; 390 22,132 to 20,301 px.
+
+## 2026-11-04: directory tiles, country flags, report samples
+- "Find us on": the uneven badge images are replaced by same-size tiles drawn in code (letter mark, name, "Verified profile"), from the owner's design file, linked to the same 7 profiles. Mark colours darkened where white text needs 4.5:1. 56 px tall (52 px on phones) at every width.
+- Countries we serve: real flags (flag-icons, MIT licence in public/flags/LICENSE.txt) instead of pin icons; compact on phones.
+- Monthly report: 4 design samples for the owner to choose from (reports/design-samples/). The site keeps the current card until the owner picks one.
+- design-qa.mjs compares the heights of the directory tiles instead of badge images.
