@@ -526,7 +526,8 @@ const dedupe = (links) => [...new Map(links.filter(Boolean).map((l) => [`${l.lab
 const nav = dedupe($home('header').last().find('a').toArray().map((a) => chromeLink($home(a))));
 const footerEl = $home('footer').first();
 footerEl.find('form').remove();
-const footerLinks = dedupe(footerEl.find('a').toArray().map((a) => chromeLink($home(a))));
+// Owner, 2026-11-04: no WhatsApp links (the +880 number must not appear anywhere).
+const footerLinks = dedupe(footerEl.find('a').toArray().map((a) => chromeLink($home(a)))).filter((l) => !/wa\.me\//.test(l.href));
 mkdirSync('src/data', { recursive: true });
 writeFileSync('src/data/site-chrome.json', JSON.stringify({ nav, footer: footerLinks, tagline: 'Professional website maintenance services that keep your website secure, updated, optimized, and running at peak performance.' }, null, 2));
 if (!existsSync('src/data/redirects.json')) writeFileSync('src/data/redirects.json', '[]\n');

@@ -124,7 +124,7 @@ const MEASURE = `(d, w, vh) => {
   const foot = d.querySelector('footer');
   out.footer = { cols: foot.querySelectorAll('.wf-col').length, nap: !!foot.querySelector('.wf-contact a[href^="tel:"]') && !!foot.querySelector('.wf-contact a[href^="mailto:"]'), badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) .hp-dir')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
   const home = !!d.querySelector('.hp-hero');
-  if (out.footer.cols !== 4 || !out.footer.nap || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
+  if (out.footer.cols !== 3 || !out.footer.nap || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
   // Owner, 2026-11-04: no GMB block on any page; the company details are in the footer.
   if (d.querySelector('.gmb')) bad.push('GMB block still on the page');
   if (out.footer.heights.length > 1) bad.push('badge heights differ');

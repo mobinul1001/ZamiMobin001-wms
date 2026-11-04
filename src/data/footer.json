@@ -1,5 +1,5 @@
 {
- "source": "Owner's final footer (wms-footer-final.zip, 2026-11-04). Dark in both themes.",
+ "source": "Owner's final footer (wms-footer-final.zip, latest, 2026-11-04). Dark in both themes.",
  "eyebrow": "WEBSITE MAINTENANCE SERVICES",
  "headline": "Your website, <em>looked after</em> — so you can run your business.",
  "brand": "Professional website maintenance services that keep your website secure, updated, optimized, and running at peak performance.",
@@ -28,20 +28,36 @@
      "/wordpress-website-maintenance-packages/"
     ],
     [
-     "Shopify Maintenance",
-     "/shopify-website-maintenance-packages/"
-    ],
-    [
      "Ecommerce Maintenance",
      "/ecommerce-website-maintenance-packages/"
     ],
     [
-     "Monthly Maintenance",
-     "/monthly-website-maintenance-packages/"
+     "Shopify Maintenance",
+     "/shopify-website-maintenance-packages/"
     ],
     [
-     "Small Business Maintenance",
-     "/best-website-maintenance-for-small-business/"
+     "Website Support",
+     "/website-support-services/"
+    ],
+    [
+     "Website Repair",
+     "/website-repair-services/"
+    ],
+    [
+     "Malware Removal",
+     "/wordpress-malware-removal-service/"
+    ],
+    [
+     "White Label for Agencies",
+     "/white-label-website-maintenance-services-for-agencies/"
+    ],
+    [
+     "Website Migration",
+     "/website-migration-services/"
+    ],
+    [
+     "Speed Optimization",
+     "/website-speed-optimization-services/"
     ]
    ]
   ],
@@ -57,8 +73,37 @@
      "/works/"
     ],
     [
+     "Plans",
+     "/monthly-website-maintenance-packages/"
+    ],
+    [
      "Process",
      "/website-maintenance-process/"
+    ],
+    [
+     "Contact",
+     "/contact/"
+    ],
+    [
+     "Get a Free Quote",
+     "/get-a-free-quote/"
+    ],
+    [
+     "Partner Program",
+     "/wms-partner-program/"
+    ],
+    [
+     "Write for Us",
+     "/write-for-us/"
+    ]
+   ]
+  ],
+  [
+   "Resources",
+   [
+    [
+     "Blogs",
+     "/blogs/"
     ],
     [
      "Checklist",
@@ -69,46 +114,16 @@
      "/website-maintenance-case-study/"
     ],
     [
-     "Blogs",
-     "/blogs/"
-    ]
-   ]
-  ],
-  [
-   "Get started",
-   [
-    [
-     "Get a Free Quote",
-     "/get-a-free-quote/"
-    ],
-    [
      "Free Website Audit",
      "/free-website-maintenance-audit/"
     ],
     [
-     "Our Plans",
-     "/monthly-website-maintenance-packages/"
+     "Malware Scanner",
+     "/website-malware-scanner/"
     ],
-    [
-     "Contact Us",
-     "/contact/"
-    ]
-   ]
-  ],
-  [
-   "Legal",
-   [
     [
      "Agreement",
      "/agreement/"
-    ],
-    [
-     "Privacy Policy",
-     "/privacy-policy/"
-    ],
-    [
-     "Terms of Service",
-     "/terms-conditions/"
     ],
     [
      "Refund Policy",
@@ -132,8 +147,8 @@
    "/terms-conditions/"
   ],
   [
-   "Cookies",
-   "/cookie-policy/"
+   "Refund policy",
+   "/refund-cancellation-policy/"
   ]
  ]
 }

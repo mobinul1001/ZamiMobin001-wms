@@ -1,4 +1,4 @@
-/* Footer: the owner's final design (wms-footer-final.zip, 2026-11-04). Dark in both themes; desktop panel, tablet tiles, phone accordion. */
+/* Footer: the owner's final design (wms-footer-final.zip, latest, 2026-11-04). Dark in both themes; desktop panel, tablet tiles, phone accordion. */
 .wmsf{--bg:#050719;--ink:#c9cde4;--mut:#a9afca;--line:rgba(255,255,255,.1);--tile:rgba(255,255,255,.05);--tl:rgba(167,139,250,.22);--h4:#a99be8;--g:linear-gradient(100deg,#c4b5fd,#f0abfc 60%,#a5b4fc);
  position:relative;isolation:isolate;overflow:hidden;margin-top:0;padding:64px 0 32px;background:var(--bg);color:var(--ink);font-size:1rem;line-height:1.55;border-top:4px solid;border-image:linear-gradient(115deg,#8b5cf6,#d946ef 55%,#6366f1) 1}
 .wmsf *,.wmsf *::before,.wmsf *::after{box-sizing:border-box}
@@ -22,11 +22,11 @@
 .wf-ic{flex:none;width:40px;height:40px;display:grid;place-items:center;border-radius:12px}.wf-ic svg{display:block}
 .wf-c1{background:rgba(167,139,250,.18);color:#b39dff}.wf-c2{background:rgba(125,211,252,.16);color:#7dd3fc}.wf-c3{background:rgba(249,168,212,.16);color:#f9a8d4}.wf-c4{background:rgba(110,231,183,.16);color:#6ee7b7}
 /* brand + links */
-.wf-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:40px;padding:48px 0 16px}
-.wf-logo{height:50px;width:auto;display:block;filter:brightness(0) invert(1)}
-.wf-brand p{color:var(--mut);margin:16px 0 24px;font-size:.9375rem;max-width:320px}
+.wf-grid{display:grid;grid-template-columns:1.6fr 1.2fr 1fr 1fr;gap:48px;padding:48px 0 16px}
+.wf-logo{height:60px;width:auto;display:block;filter:brightness(0) invert(1)}
+.wf-brand p{color:#c3c7df;margin:20px 0 28px;font-size:1.125rem;line-height:1.7;max-width:400px;text-align:justify;text-justify:inter-word;hyphens:manual}
 .wf-soc{display:flex;gap:10px;flex-wrap:wrap}
-.wf-sb{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#fff;transition:transform .2s,background .2s}
+.wf-sb{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:#fff;transition:transform .2s,background .2s}
 .wf-sb:hover{transform:translateY(-3px)}.wf-sb svg{display:block}
 .wf-sb-facebook:hover{background:#0866FF}.wf-sb-linkedin:hover{background:#0A66C2}.wf-sb-instagram:hover{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}.wf-sb-youtube:hover{background:#F00}
 .wf-col summary{list-style:none;pointer-events:none;cursor:default;font-size:.8125rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--h4);margin:0 0 16px}
@@ -50,9 +50,9 @@
  .wf-stats{grid-template-columns:repeat(5,1fr);gap:10px;justify-content:stretch;margin-bottom:8px}
  .wf-stats li,.wf-stats li:first-child{padding:24px 8px;border:1px solid var(--tl);border-radius:20px;background:linear-gradient(160deg,rgba(124,58,237,.3),rgba(255,255,255,.03))}
  .wf-stats b{font-size:1.75rem}.wf-stats span{white-space:normal;color:var(--mut);margin-top:8px}
- .wf-grid{grid-template-columns:repeat(4,1fr);padding-top:40px;border-top:1px solid var(--line);margin-top:24px}
+ .wf-grid{grid-template-columns:repeat(3,1fr);padding-top:40px;border-top:1px solid var(--line);margin-top:24px}
  .wf-brand{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;text-align:center;padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:8px}
- .wf-logo{height:68px}.wf-brand p{max-width:680px;text-wrap:balance;margin:16px auto 24px}.wf-soc{justify-content:center}
+ .wf-logo{height:68px}.wf-brand p{max-width:680px;text-wrap:balance;margin:16px auto 24px;font-size:1.0625rem;text-align:center;hyphens:manual}.wf-soc{justify-content:center}
  .wf-legal{justify-content:center;text-align:center}
 }
 /* MOBILE (B): stat cards 2x2 + wide, stacked contact, accordion links */
@@ -62,7 +62,7 @@
  .wf-head .wf-title{font-size:1.75rem}
  .wf-stats{grid-template-columns:1fr 1fr}
  .wf-stats li,.wf-stats li:first-child{padding:14px 10px}.wf-stats li:last-child{grid-column:1/-1}
- .wf-contact{grid-template-columns:1fr}.wf-ci,.wf-ci:nth-child(3),.wf-ci:nth-child(4){grid-column:auto}.wf-ci{padding:12px}.wf-ci a{font-size:.75rem;overflow-wrap:anywhere}
+ .wf-contact{grid-template-columns:1fr}.wf-ci,.wf-ci:nth-child(3),.wf-ci:nth-child(4){grid-column:1/-1}.wf-ci{padding:12px}.wf-ci a{font-size:.75rem;overflow-wrap:anywhere}
  .wf-grid{display:block;padding:32px 0 16px;margin-top:24px}
  .wf-brand{margin-bottom:24px}.wf-logo{height:60px}
  .wf-col{border-bottom:1px solid var(--line)}

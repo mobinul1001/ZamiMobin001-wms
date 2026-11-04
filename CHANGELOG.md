@@ -274,3 +274,11 @@
 - Fixed in the design's CSS: on phones the phone and email tiles kept a tablet column span. The phone accordion now re-checks the width on load and resize, so the link groups are always open on tablet and desktop.
 - WhatsApp and +880: not shown anywhere on the site. The two wa.me links exist only in src/data/site-chrome.json, the old site's link record used by the migration, not rendered.
 - design-qa.mjs: footer check expects 4 link groups and the phone/email in the footer; no GMB block on any page.
+
+## 2026-11-04: footer updated to the latest zip
+- Link columns are now 3 groups, from the latest wms-footer-final.zip: Services (9), Company (8), Resources (8). Small Business Maintenance and Monthly Maintenance left the footer (the pages stay, linked from elsewhere).
+- Links back in the footer on every page: Website Support, Website Repair, Malware Removal (/wordpress-malware-removal-service/, owner's choice over the blog post), White Label for Agencies, Website Migration, Speed Optimization, Partner Program, Write for Us, Malware Scanner, Plans. Partner program, Write for us and Malware scanner have no body links, so the footer is their only link; link report: 0 pages unreachable, all within 2 clicks of the homepage.
+- footer.css replaced with the latest: desktop grid 1.6fr 1.2fr 1fr 1fr; tagline 18px, justified on desktop (hyphens: manual), centred on tablet and phone; 60px logo, 46px social buttons; phone contact tiles full width (now in the owner's CSS).
+- Bottom bar: Privacy, Terms, Refund policy, Cookie settings. Cookie settings stays the button that reopens the cookie choice (consent requirement), not a link; Cookie Policy is in Resources.
+- WhatsApp: the two wa.me links are filtered out in migrate-content.mjs, so src/data/site-chrome.json no longer has them. No WhatsApp link or +880 number anywhere in the site. There is no floating WhatsApp button; the only sticky bar is the phone "Get a free quote" bar on the homepage.
+- Font: the site keeps Inter; the zip previews use Plus Jakarta Sans.
