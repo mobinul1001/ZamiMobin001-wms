@@ -132,7 +132,7 @@ for (const file of htmlFiles) {
   if (!isLive && !/noindex/.test(robots)) fail('noindex', `${path}: preview build must be noindex.`);
 
   // Owner rules from CLAIMS-AND-DESIGN.md section A: banned claims stay off the page, meta and schema.
-  // Owner, 2026-11-03: the homepage shows "5.0 on Clutch" and placeholder review cards (marked data-claim-ok).
+  // Owner, 2026-11-03: the homepage shows "5.0 rated by our clients" (linked to the Clutch profile) and placeholder review cards (marked data-claim-ok).
   const $claimMain = $('main').clone();
   $claimMain.find('[data-claim-ok]').remove();
   if ($('main').text().includes('[Real client quote')) warn('placeholders', `${path}: the review cards are placeholders; replace them with real reviews before launch.`);

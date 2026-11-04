@@ -18,7 +18,7 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 - About page and one short line on the homepage near the stats: **"Our team has been building and maintaining websites for 12+ years. We launched websitemaintenanceservices.org to focus only on what we do best: website maintenance and support."**
 
 ### A3. Ratings and review counts
-- Remove every star rating and review count (4.9, 213, 165, 120, 4,800, 150, 180) from visible text. Schema is already removed. Exception (owner, 2026-11-03): the homepage hero shows "5.0 on Clutch" with five stars, linked to the Clutch profile, and the homepage review cards (placeholders until the owner sends real reviews).
+- Remove every star rating and review count (4.9, 213, 165, 120, 4,800, 150, 180) from visible text. Schema is already removed. Exception (owner, 2026-11-03): the homepage hero shows "5.0 rated by our clients" (owner's wording, 2026-11-04; was "5.0 on Clutch") with five stars, linked to the Clutch profile, and the homepage review cards (placeholders until the owner sends real reviews).
 - Add nothing in their place now. Later, when real reviews exist on Google Business Profile or Clutch, link to that profile and show the real count from there.
 
 ### A4. Testimonials

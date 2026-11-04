@@ -186,7 +186,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - "Find us on" badges moved from the footer (all pages) to a scrolling strip under the homepage hero.
 - Footer is the owner's dark design on every page; the top bar is on every page.
 - "First month free" removed everywhere: plans, country, store and WordPress cards, articles, comparison rows, pricing FAQ. The build fails if it comes back.
-- "5.0 on Clutch" with stars in the hero, and the review cards (placeholders), are allowed on the homepage only (`data-claim-ok`). The build warns until the placeholders are replaced.
+- "5.0 rated by our clients" (linked to the Clutch profile) with stars in the hero, and the review cards (placeholders), are allowed on the homepage only (`data-claim-ok`). The build warns until the placeholders are replaced.
 - **Waiting on the owner:** 3 real reviews; X and YouTube profile URLs if the footer should show them (only Facebook, LinkedIn and Instagram are real now); my wording changes to the design (see CHANGELOG 2026-11-03).
 
 ## Shorter homepage (owner, 2026-11-03)

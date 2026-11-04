@@ -290,3 +290,6 @@
   - /common-website-maintenance-mistakes/: the "Contributor" label above the guest author's bio → /write-for-us/
 - Link report: 0 pages linked only from the header or footer, 0 unreachable.
 - Owner confirmed: the site keeps Inter, and Cookie settings stays the consent button.
+
+## 2026-11-04: hero rating wording
+- Homepage hero: "5.0 on Clutch" is now "5.0 rated by our clients" (owner's wording). It still links to the Clutch profile, so the rating can be checked.

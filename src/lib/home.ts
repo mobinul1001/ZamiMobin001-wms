@@ -128,7 +128,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
       <ul class="hp-ticks">${['Weekly updates, backups and security scans', 'Real engineers make your edits: 1–6 hours a month, by plan', `Plans from ${money(low)}/mo · Free hosting for 1 year · No contract`].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
       <div class="btn-row cta-row hp-cta"><a class="btn primary" href="#pricing">See plans &amp; pricing${icon('arrow')}</a><a class="btn ghost" href="#quote">Get a free quote</a></div>
       <div class="hp-proof">
-        <span class="hp-rate" data-claim-ok="owner 2026-11-03"><span class="hp-g3" role="img" aria-label="Google, Google Maps and Google Business Profile">${design.googleIcons.map((s) => `<i>${s.replace('<svg ', '<svg aria-hidden="true" ')}</i>`).join('')}</span><span><span class="hp-stars" aria-hidden="true">★★★★★</span><a href="${clutch?.[0]}" rel="noopener">5.0 on Clutch</a></span></span>
+        <span class="hp-rate" data-claim-ok="owner 2026-11-03, wording 2026-11-04"><span class="hp-g3" role="img" aria-label="Google, Google Maps and Google Business Profile">${design.googleIcons.map((s) => `<i>${s.replace('<svg ', '<svg aria-hidden="true" ')}</i>`).join('')}</span><span><span class="hp-stars" aria-hidden="true">★★★★★</span><a href="${clutch?.[0]}" rel="noopener">5.0 rated by our clients</a></span></span>
         <span class="hp-gp">${design.partnerIcon}<span><b>Google Partner</b><small>Certified</small></span></span>
         <span class="hp-hstats">${[['650+', 'websites maintained'], ['12+', 'years experience'], ['120+', 'websites built']].map(([v, l]) => `<span><b>${v}</b><small>${l}</small></span>`).join('')}</span>
       </div>
