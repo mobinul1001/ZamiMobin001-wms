@@ -2,10 +2,12 @@
 
 Pages: 92
 
-Click depth from the homepage: {"0":1,"1":48,"2":43}
+Click depth from the homepage: {"0":1,"1":45,"2":43,"unreachable":3}
 
-## Not reachable by any link (0)
-None
+## Not reachable by any link (3)
+- /website-malware-scanner/
+- /wms-partner-program/
+- /write-for-us/
 
 ## Deeper than 3 clicks (0)
 None

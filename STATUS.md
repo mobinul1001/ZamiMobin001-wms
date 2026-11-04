@@ -1,6 +1,6 @@
 # STATUS: websitemaintenanceservices.org rebuild
 
-Last updated: 2026-11-01. Project folder: `C:\Users\user\wms-rebuild`. All work is in local git commits. No remote is set and nothing is pushed or deployed. The live WordPress site, DNS and email are untouched.
+Last updated: 2026-11-04. Project folder: `C:\Users\user\wms-rebuild`. All work is in local git commits. No remote is set and nothing is pushed or deployed. The live WordPress site, DNS and email are untouched.
 
 Rules live in `CLAUDE.md` (wins on conflict), `SEO-GUARDRAILS.md`, `CMS-REQUIREMENTS.md`, `CLAIMS-AND-DESIGN.md` and `PROMPTS.md`.
 
@@ -38,7 +38,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 ## Owner decisions (2026-11-02)
 - Restored, confirmed true: "+142% Growth", "Page 1 Top 3", "98/100 Passed", "99/100 Passed", "Expert Developers: Certified, experienced team", the Altitude Care numbers, H2 "Real Maintenance Results, Backed by Numbers", "99.9% uptime guarantee". Build checks that blocked them are gone. "Certified, Experienced, Trusted." and "Google Partner" stay.
 - Company facts, contact details and reach: `CLAIMS-AND-DESIGN.md` section A; values in `src/data/site.json`. No Dhaka, Bangladesh or +880 about the company.
-- GMB block only on the homepage, directly above the final CTA box. Other pages end: content → final CTA box → footer.
+- No GMB block (owner, 2026-11-04): the company name, address, phone and email are in the footer on every page. Every page ends: content → final CTA box → footer.
 - Service cards: no "5-Star Service" line (already gone).
 - General mentions of Bangladesh stay in 5 blog posts (CDN regions, .bd domains, Shopify pricing) and one portfolio link, since they are not about the company. The owner can ask to remove them.
 

@@ -265,3 +265,12 @@
 ## 2026-11-04: real directory logos, report option A
 - "Find us on": each directory's real logo, taken from its own site (sources in public/logos/SOURCES.txt), in a same-size white tile (188 x 56 px, 168 x 52 px on phones), white in both themes so the brand colours stay readable. Trustpilot's site blocks automated requests, so its star comes from Simple Icons (CC0) with the name set as text. Each logo has a set height so they look the same size; all fit inside their tile at 14 widths.
 - Monthly report: option A "Dashboard" (owner's pick): uptime ring, then updates, backups, malware and edit time with progress bars. Example numbers, labelled Example.
+
+## 2026-11-04: final footer, GMB block removed
+- New footer on every page, from the owner's final design (wms-footer-final.zip): gradient panel with headline, the 5 stats and the company, address, phone and email; logo, short text and 4 social buttons (Facebook, LinkedIn, Instagram, YouTube); 4 link groups (Services, Company, Get started, Legal); legal row with Cookie settings kept for the consent bar. Dark in both themes. Phones: link groups become an accordion.
+- Copy and links in src/data/footer.json; stats, company details and social URLs from site.json (YouTube profile added). No hard-coded copy in the layout.
+- The GMB block is gone from the homepage; its details are in the footer on every page.
+- Footer links: each URL once. Links that were only in the old footer and are gone now: White label, Website migration, Speed optimization, Website support, Website repair, Malware removal, Partner program, Write for us, Malware scanner (the header still links support, repair and malware removal). /website-malware-scanner/, /wms-partner-program/ and /write-for-us/ now have no link from any page: owner to decide.
+- Fixed in the design's CSS: on phones the phone and email tiles kept a tablet column span. The phone accordion now re-checks the width on load and resize, so the link groups are always open on tablet and desktop.
+- WhatsApp and +880: not shown anywhere on the site. The two wa.me links exist only in src/data/site-chrome.json, the old site's link record used by the migration, not rendered.
+- design-qa.mjs: footer check expects 4 link groups and the phone/email in the footer; no GMB block on any page.

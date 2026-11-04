@@ -53,7 +53,7 @@ const MEASURE = `(d, w, vh) => {
   d.querySelectorAll('.sec[data-sec]').forEach((s) => { if (s.dataset.sec === 'final') return; for (const q of ['.head .eyebrow', '.head h2', '.head .intro']) if (!s.querySelector(q)) bad.push('section ' + s.dataset.sec + ' has no ' + q); });
   out.h1 = d.querySelectorAll('h1').length; if (out.h1 !== 1) bad.push('h1 count ' + out.h1);
   // Text overflow and broken words
-  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap, .hp-mq ul, .hp-mini, .hp-swipe > *') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && !e.matches('.hp-mq, .hp-swipe, .hp-more-wrap:has(> .hp-swipe)') && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
+  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap, .hp-mq ul, .hp-mini, .hp-swipe > *, .wf-mark') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && !e.matches('.hp-mq, .hp-swipe, .hp-more-wrap:has(> .hp-swipe)') && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
   // Words split across lines inside a heading or a card title
   const range = d.createRange();
   d.querySelectorAll('h1, h2, h3, .btn, strong').forEach((e) => { if (!vis(e) || e.closest('.sr-only')) return; const walker = d.createTreeWalker(e, 4); let n; while ((n = walker.nextNode())) { const re = /\\S+/g; let m; while ((m = re.exec(n.data))) { range.setStart(n, m.index); range.setEnd(n, m.index + m[0].length); const rects = [...range.getClientRects()].filter((x) => x.width > 0); if (rects.length > 1 && Math.abs(rects[0].top - rects[rects.length - 1].top) > 4 && !/[-\\/–—@_.]/.test(m[0])) bad.push('word broken: ' + m[0]); } } });
@@ -122,12 +122,11 @@ const MEASURE = `(d, w, vh) => {
   }
   // Footer
   const foot = d.querySelector('footer');
-  out.footer = { cols: foot.querySelectorAll('.foot-cols > div').length, badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) .hp-dir')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
+  out.footer = { cols: foot.querySelectorAll('.wf-col').length, nap: !!foot.querySelector('.wf-contact a[href^="tel:"]') && !!foot.querySelector('.wf-contact a[href^="mailto:"]'), badges: foot.querySelectorAll('img[src*="/2026/06/"]').length, strip: new Set([...d.querySelectorAll('.hp-trust a:not([tabindex])')].map((a) => a.href)).size, heights: [...new Set([...d.querySelectorAll('.hp-trust li:not([aria-hidden]) .hp-dir')].map((i) => Math.round(R(i).height)))], cookie: !!foot.querySelector('#cookie-settings') };
   const home = !!d.querySelector('.hp-hero');
-  if (out.footer.cols !== 3 || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
-  // The GMB block is on the homepage only, right above the final CTA.
-  const gmb = d.querySelector('.gmb'), isHome = win.location.pathname === '/';
-  if (isHome ? !(gmb && gmb.querySelector('a[href^="tel:"]') && gmb.nextElementSibling === d.querySelector('.cta-sec, .hp-final-sec')) : !!gmb) bad.push('GMB block in the wrong place');
+  if (out.footer.cols !== 4 || !out.footer.nap || out.footer.badges !== 0 || (home && (out.footer.strip !== 7 || out.footer.heights.length !== 1)) || !out.footer.cookie || !d.querySelector('.final .btn, .hp-final .btn')) bad.push('footer ' + JSON.stringify(out.footer));
+  // Owner, 2026-11-04: no GMB block on any page; the company details are in the footer.
+  if (d.querySelector('.gmb')) bad.push('GMB block still on the page');
   if (out.footer.heights.length > 1) bad.push('badge heights differ');
   out.bad = bad;
   return out;

@@ -1,5 +1,7 @@
 ---
 import '../styles/site.css';
+import '../styles/footer.css';
+import foot from '../data/footer.json';
 import site from '../data/site.json';
 import { icon } from '../lib/icons';
 import { homeFinalHtml } from '../lib/home';
@@ -48,12 +50,12 @@ const CTA_DEFAULT: Record<string, { title: string; text: string; links: { href: 
   pt: { title: 'Mantenha seu site rápido, seguro e atualizado.', text: 'Conte o que seu site precisa. Respondemos com um plano e um preço claros.', links: [{ href: quote, label: 'Pedir um orçamento grátis' }, { href: '/monthly-website-maintenance-packages/', label: 'Ver planos e preços' }] },
 };
 const finalCta = cta ?? CTA_DEFAULT[code] ?? CTA_DEFAULT.en;
-const footerCols = [
-  ['Services', [...services, ['White label for agencies', '/white-label-website-maintenance-services-for-agencies/'], ['Website migration', '/website-migration-services/'], ['Speed optimization', '/website-speed-optimization-services/']]],
-  ['Company', [['About us', '/about-us/'], ['Our work', '/works/'], ['Pricing', '/monthly-website-maintenance-packages/'], ['Process', '/website-maintenance-process/'], ['Contact', '/contact/'], ['Get a quote', quote], ['Partner program', '/wms-partner-program/'], ['Write for us', '/write-for-us/']]],
-  ['Resources', [['Blog', '/blogs/'], ['Checklist', '/website-maintenance-checklist/'], ['Case study', '/website-maintenance-case-study/'], ['Free website check', '/free-website-maintenance-audit/'], ['Malware scanner', '/website-malware-scanner/'], ['Agreement', '/agreement/'], ['Refund policy', '/refund-cancellation-policy/'], ['Cookie policy', '/cookie-policy/']]],
-] as [string, string[][]][];
-const SOCIAL_ICON: Record<string, string> = { Facebook: 'facebook', LinkedIn: 'linkedin', Instagram: 'instagram' };
+// Footer (owner's final design, 2026-11-04): copy and links in src/data/footer.json, company facts in site.json.
+const footStats = site.stats.map(([v, l]) => [v, (foot.statLabels as Record<string, string>)[l] ?? l]);
+const svg = (inner: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${inner}</svg>`;
+const brandSvg = (name: string) => `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="${(foot.socialIcons as Record<string, string>)[name]}"/></svg>`;
+const [icCompany, icPin, icPhone, icMail] = foot.contactIcons;
+const [mailUser, mailDomain] = site.email.split('@');
 const isHome = Astro.url.pathname === '/';
 const TOPBAR: Record<string, string> = {
   en: '<b>Free hosting for 1 year</b> on every plan · Free website check · No contract',
@@ -109,18 +111,6 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
     <main>
       <slot />
     </main>
-    {isHome && <section class="gmb" data-sec="gmb" aria-label="Business details"><div class="wrap">
-      <div>
-        <p class="eyebrow">{site.gbp.eyebrow}</p>
-        <p class="gmb-title">{site.gbp.name}</p>
-        <p class="gmb-line">{site.gbp.line}</p>
-      </div>
-      <div class="gmb-cards">
-        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('pin')}</span>`} /><div><small>ADDRESS</small><span>{site.address}</span></div></div>
-        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('phone')}</span>`} /><div><small>PHONE</small><a href={site.phoneHref}>{site.phone}</a></div></div>
-        <div class="gmb-card"><Fragment set:html={`<span class="badge">${icon('globe')}</span>`} /><div><small>WEBSITE</small><a href="/">{site.website}</a></div></div>
-      </div>
-    </div></section>}
     {isHome ? <Fragment set:html={homeFinalHtml(cta)} /> : <section class="cta-sec" data-sec="final"><div class="wrap"><div class="final">
       <div>
         {cta ? <h2 id={cta.id} set:html={finalCta.title} /> : <p class="final-title">{finalCta.title}</p>}
@@ -128,29 +118,28 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
       </div>
       <div class="act">{finalCta.links.map((l, i) => <a class:list={['btn', i === 0 ? 'white' : 'ghost']} href={l.href}>{l.label}</a>)}</div>
     </div></div></section>}
-    <footer class="foot" data-sec="footer"><div class="wrap">
-      <div class="foot-top">
-        <div class="foot-brand">
-          <img src={logo} alt="WMS logo" width="325" height="108" loading="lazy" />
-          <p>{site.brand} keeps your website fast, secure and up to date. Plain monthly reports show you what we did.</p>
-          <ul class="foot-lines">
-            <li><Fragment set:html={icon('mail')} /><a href={`mailto:${site.email}`}>{site.email}</a></li>
-            <li><Fragment set:html={icon('clock')} />{site.hours}</li>
-          </ul>
-          <div class="foot-social">
-            {site.social.map(([name, href]) => <a href={href} rel="noopener" aria-label={name} set:html={icon(SOCIAL_ICON[name])} />)}
-          </div>
-        </div>
-        <div class="foot-cols">
-          {footerCols.map(([heading, links]) => (
-            <div><h2>{heading}</h2><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></div>
-          ))}
-        </div>
+    <footer class="wmsf" data-sec="footer" aria-label="Site footer"><div class="wf-glow"></div><div class="wf-mark" aria-hidden="true">WMS</div><div class="wf-w">
+      <div class="wf-panel">
+        <div class="wf-head"><span class="wf-eb">{foot.eyebrow}</span><p class="wf-title" set:html={foot.headline} /></div>
+        <ul class="wf-stats">{footStats.map(([v, l]) => <li><b>{v}</b><span>{l}</span></li>)}</ul>
+        <ul class="wf-contact">
+          <li class="wf-ci"><span class="wf-ic wf-c1" set:html={svg(icCompany)} /><span>{site.gbp.name}</span></li>
+          <li class="wf-ci"><span class="wf-ic wf-c2" set:html={svg(icPin)} /><span>{site.address}</span></li>
+          <li class="wf-ci"><span class="wf-ic wf-c3" set:html={svg(icPhone)} /><a href={site.phoneHref}>{site.phone}</a></li>
+          <li class="wf-ci"><span class="wf-ic wf-c4" set:html={svg(icMail)} /><a href={`mailto:${site.email}`}>{mailUser}<wbr />@{mailDomain}</a></li>
+        </ul>
       </div>
-      <div class="foot-bottom">
-        <span>© 2026 {site.brandShort}. All rights reserved.</span>
-        <span class="foot-legal"><a href="/privacy-policy/">Privacy</a> · <a href="/terms-conditions/">Terms</a> · <a href="/refund-cancellation-policy/">Refund policy</a> · <button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></span>
+      <div class="wf-grid">
+        <div class="wf-brand">
+          <a href="/" aria-label={`${site.brand} home`}><img class="wf-logo" src={logo} alt={site.brand} width="325" height="108" loading="lazy" /></a>
+          <p>{foot.brand}</p>
+          <div class="wf-soc">{site.social.map(([name, href]) => <a class={`wf-sb wf-sb-${name.toLowerCase()}`} href={href} aria-label={name} rel="noopener" target="_blank" set:html={brandSvg(name)} />)}</div>
+        </div>
+        {(foot.cols as [string, string[][]][]).map(([heading, links]) => (
+          <details class="wf-col" open><summary>{heading}</summary><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
+        ))}
       </div>
+      <div class="wf-legal"><span>{foot.copyright}</span><span class="wf-ll">{(foot.legal as string[][]).map(([label, href]) => <a href={href}>{label}</a>)}<button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></span></div>
     </div></footer>
     <div id="cookie-bar" class="cookie-bar" role="region" aria-label={cookieText.settings} hidden>
       <p>{cookieText.message} <a href="/privacy-policy/">{cookieText.policy}</a></p>
@@ -172,6 +161,12 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         });
         d.addEventListener('click', function (e) { d.querySelectorAll('.drop[open]').forEach(function (x) { if (!x.contains(e.target)) x.open = false; }); });
         matchMedia('(min-width: 1081px)').addEventListener('change', function (e) { if (e.matches) menu(false); });
+        var fm = matchMedia('(max-width: 640px)'), cols = d.querySelectorAll('.wf-col');
+        // Re-checked on load and resize too: the first check can run before the final width is known.
+        var lastMob = null;
+        function footCols() { var mob = fm.matches; if (mob === lastMob) return; lastMob = mob; cols.forEach(function (c) { c.open = !mob; }); }
+        footCols(); fm.addEventListener('change', footCols); addEventListener('load', footCols); addEventListener('resize', footCols);
+        cols.forEach(function (c) { c.querySelector('summary').addEventListener('click', function (e) { if (!fm.matches) e.preventDefault(); }); });
         var all = d.querySelectorAll('.fade');
         if ('IntersectionObserver' in window) { var o = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' }); all.forEach(function (e) { o.observe(e); }); } else all.forEach(function (e) { e.classList.add('in'); });
       })();
