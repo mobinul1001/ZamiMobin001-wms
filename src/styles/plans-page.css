@@ -345,3 +345,14 @@
   .pp-cta { margin-top: 10px; }
   .pp-sub { line-height: 1.45; }
 }
+/* Tablet: plans 2 + 1 (Essential and Growth side by side, Business full width below with its list in 2 columns). */
+@media (min-width: 760px) and (max-width: 1079px) {
+  .pbox .pp-grid3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pbox .pp-plan:nth-child(3) { grid-column: 1 / -1; }
+  .pbox .pp-plan:nth-child(3) .pp-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+}
+@media (min-width: 760px) and (max-width: 1079px) {
+  .pbox .pp-plan { grid-template-rows: auto auto auto auto 1fr auto; }
+  .pbox .pp-plan:nth-child(3) .pp-list { display: block; columns: 2; column-gap: 24px; }
+  .pbox .pp-plan:nth-child(3) .pp-list li { break-inside: avoid; margin-bottom: 8px; }
+}
