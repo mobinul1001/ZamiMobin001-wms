@@ -14,6 +14,7 @@ import { readCsv } from './lib/csv.mjs';
 import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
 import { applyFaqChanges, masterPriceMeta } from './lib/faq-approved.mjs';
 import { articleMeta, fixSchemaOffers } from './lib/article-prices.mjs';
+import { addApprovedLinks } from './lib/added-links.mjs';
 
 const O = 'https://websitemaintenanceservices.org';
 // Titles and H1s from the keyword map the owner approved on 2026-11-01.
@@ -448,7 +449,7 @@ for (const [u, m] of pages) {
   const removed = [];
   const schema = (record.jsonLd ?? []).map((d) => stripSchema(d, removed)).filter(Boolean);
   fixSchemaOffers(path, schema);
-  const body = applyFaqChanges(path, converted.body, schema, log.faqChanges);
+  const body = addApprovedLinks(path, applyFaqChanges(path, converted.body, schema, log.faqChanges));
   // Claims rules also cover meta descriptions, social tags and every schema text.
   const own = OWN_CLAIM_PAGES.has(path);
   const cleanValue = (raw, where) => {

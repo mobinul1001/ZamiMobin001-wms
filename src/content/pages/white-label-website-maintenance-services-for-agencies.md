@@ -158,7 +158,7 @@ OUR TEAM (Invisible Backend)
 
 ## How Our White Label Partnership Works
 
-Our **white label partner program** makes handing off client sites smooth, secure, and stress-free. Here is our 4-step agency onboarding process to get your agency running in under 24 hours:
+Our **[white label partner program](/wms-partner-program/)** makes handing off client sites smooth, secure, and stress-free. Here is our 4-step agency onboarding process to get your agency running in under 24 hours:
 
 Mutual NDA Protection Included | No Long-Term Contracts Required
 

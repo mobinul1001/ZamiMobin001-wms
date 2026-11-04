@@ -282,3 +282,11 @@
 - Bottom bar: Privacy, Terms, Refund policy, Cookie settings. Cookie settings stays the button that reopens the cookie choice (consent requirement), not a link; Cookie Policy is in Resources.
 - WhatsApp: the two wa.me links are filtered out in migrate-content.mjs, so src/data/site-chrome.json no longer has them. No WhatsApp link or +880 number anywhere in the site. There is no floating WhatsApp button; the only sticky bar is the phone "Get a free quote" bar on the homepage.
 - Font: the site keeps Inter; the zip previews use Plus Jakarta Sans.
+
+## 2026-11-04: in-text links to footer-only pages
+- Owner approved three links on words already on the page (no other copy changed), set in scripts/lib/added-links.mjs and applied by migrate-content.mjs (a link fails the migration if its sentence is not found exactly once):
+  - /wordpress-malware-removal-service/: "wordpress malware scanner" → /website-malware-scanner/
+  - /white-label-website-maintenance-services-for-agencies/: "white label partner program" → /wms-partner-program/
+  - /common-website-maintenance-mistakes/: the "Contributor" label above the guest author's bio → /write-for-us/
+- Link report: 0 pages linked only from the header or footer, 0 unreachable.
+- Owner confirmed: the site keeps Inter, and Cookie settings stays the consent button.

@@ -153,7 +153,7 @@ Web site management is most effective when the business considers the site to be
 
 <a id="author"></a>
 
-<p class="eyebrow">Contributor</p>
+<p class="eyebrow"><a href="/write-for-us/">Contributor</a></p>
 
 ## Author’s bio
 
