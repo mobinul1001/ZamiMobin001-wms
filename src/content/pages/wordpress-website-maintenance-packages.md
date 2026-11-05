@@ -179,8 +179,6 @@ or $790/yr, 2 months free
 
 [Get Started](/get-a-free-quote/#essential)
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   Weekly updates
 -   Weekly backups
 -   Security scan
@@ -204,8 +202,6 @@ or $1,490/yr, 2 months free
 [Get Started](/get-a-free-quote/#growth)
 
 -   Everything in Essential
--   Free hosting for the first year
--   2 free webmail accounts
 -   Daily backups
 -   3 hours edits/month
 -   Malware removal
@@ -227,8 +223,6 @@ or $2,990/yr, 2 months free
 [Get Started](/get-a-free-quote/#business)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Staging-tested updates
 -   24/7 emergency fixes
@@ -293,8 +287,6 @@ Every feature, side by side, so you can choose the right plan with confidence.
 | Feature | Essential $79/mo | Growth $149/mo | Business $299/mo |
 | --- | --- | --- | --- |
 | Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |
-| Free hosting for the first year | Included | Included | Included |
-| 2 free webmail accounts | Included | Included | Included |
 | Weekly updates | Included | Included | Included |
 | Weekly backups | Included | — | — |
 | Security scan | Included | Included | Included |

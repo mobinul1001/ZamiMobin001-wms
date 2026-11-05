@@ -322,3 +322,9 @@
 - Height, by collapsing only: FAQ 6 shown + "Show all 29 questions"; Related services 4 + "Show more related services"; the issue hub's 4 tabs show at most 6 of the 22 issues at a time; the Find your fix, Pricing and One Team intros and the long text of each repair story behind "Read more". No text removed or shortened.
 - Schema change (owner, 2026-11-05): the HowTo schema's empty fifth step (position 5, no name or text, left from the removed "30-Day Warranty" step) is removed. The HowTo has the 4 visible steps, same names and order. Done in the migration (`fixHowTo` in `scripts/lib/text-edits.mjs`), which fails if the schema steps stop matching the page's "Step N: Name" headings. Checked: apart from the HowTo name (4-Step) and this step, the schema is unchanged.
 - Issue hub: the 4 tabs stay (owner, 2026-11-05). Heights within about 10% of the targets accepted.
+
+## 2026-11-05: Batch 1, Stage 1 — global cleanup (branch `global-cleanup`, not merged)
+- Top bar removed from every page. Cookie bar removed (markup, CSS, `public/consent.js`); GA4 and Clarity no longer load, so no analytics cookie is set; the footer's "Cookie settings" button stays (footer unchanged) and opens nothing until the owner decides on consent.
+- Free hosting and the 2 free email accounts removed everywhere except the redesign page (which has none today): plan lists (prices.json, features.json), homepage, pricing and service templates, country pages, the WordPress plans page, comparison posts, meta, schema and FAQ answers. Content rules in `scripts/lib/text-edits.mjs`.
+- Header "Services" menu lists all 16 service pages in 4 groups (desktop 3 columns, mobile accordion), with `aria-expanded` and Esc.
+- Checks: free-offer, menu-link, cookie-bar-back and top-bar-back rules; browser tests for the new state. Report: `reports/batch-1/stage-1.md`.

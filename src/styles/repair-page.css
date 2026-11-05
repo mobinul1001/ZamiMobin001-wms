@@ -290,3 +290,13 @@
 .rp-rm-p > div { display: grid; gap: 10px; }
 /* The pricing note's tick stays next to its text on narrow screens; the link wraps below. */
 .rp-note > span:not(.tick) { flex: 1 1 260px; min-width: 0; }
+/* Small phones: the hero button stays on the first 360x640 screen (the 34px phone H1 above must not override this). */
+@media (max-width: 389px) {
+  .repair-pg h1 { font-size: 27px; }
+}
+@media (max-width: 389px) {
+  .rp-hero .eyebrow { padding: 4px 10px; font-size: 11px; letter-spacing: .04em; }
+  .rp-sub { font-size: 15px; line-height: 1.5; }
+  .rp-priceline { margin-top: 14px; }
+  .rp-hero .cta-row { margin-top: 14px; }
+}

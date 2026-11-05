@@ -161,7 +161,6 @@ for (const file of htmlFiles) {
   if (localPrice) {
     const mainText = $('main').text();
     if (!$('#plans').length) fail('country-price', `${path}: #plans anchor is missing.`);
-    for (const f of ['Free hosting for the first year', '2 free webmail accounts'].filter(() => localPrice.currency !== 'BRL')) if (!mainText.includes(f)) fail('country-price', `${path}: "${f}" is missing.`);
     for (const p of [...localPrice.monthly, ...localPrice.annual, localPrice.fix, localPrice.cleanup]) if (!mainText.includes(p)) fail('country-price', `${path}: ${p} is missing.`);
     if (localPrice.currency !== 'USD' && /(?<![A-Z])\$\s?\d/.test(mainText)) fail('country-price', `${path}: shows a dollar price: ${/(?<![A-Z])\$\s?\d[^ ]*/.exec(mainText)[0]}`);
     $('main p, main li').each((_, e) => {
@@ -175,9 +174,20 @@ for (const file of htmlFiles) {
   if (/HIPAA[- ](?:compl|certif)|secure online appointment booking|patient online appointment booking|Large patient booking database/i.test($('main').text())) fail('promises', `${path}: HIPAA compliance claim.`);
   if (path === '/website-repair-services/' && /under 60|60[- ]min|within 60 minutes/i.test($('main').text())) fail('promises', `${path}: old 60-minute response claim.`);
   if (['/cookie-policy/', '/privacy-policy/'].includes(path) && /retargeting|targeted advertising|Google Ads|advertising providers/i.test($('main').text())) fail('consent', `${path}: describes advertising, but the site has no ad tags.`);
-  // Owner rule: analytics load only after Accept, and every page offers the choice.
+  // Owner rule: no analytics tag in the page itself. Owner, 2026-11-05: the cookie bar and the top bar are gone from every page.
   if ($('script[src*="googletagmanager"], script[src*="clarity.ms"]').length) fail('consent', `${path}: analytics tag loads before consent.`);
-  if (!$('#cookie-bar').length || !$('#cookie-accept').length || !$('#cookie-reject').length || !$('#cookie-settings').length || !$('script[src="/consent.js"]').length) fail('consent', `${path}: cookie bar is missing.`);
+  if ($('#cookie-bar, .cookie-bar, script[src="/consent.js"]').length || /We use analytics cookies/i.test($('body').text())) fail('cookie-bar', `${path}: the removed cookie bar is back.`);
+  if ($('.topbar').length) fail('topbar', `${path}: the removed top bar is back.`);
+  // Owner, 2026-11-05: free hosting and the 2 free email accounts come only with a website redesign.
+  if (path !== '/website-redesign-services/') {
+    const offer = /free hosting|hosting free|free (?:business )?webmails?|2 free webmail|free email accounts?|hospedagem grátis|webmail grátis|alojamiento gratis/i.exec(readFileSync(file, 'utf8').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' '));
+    if (offer) fail('free-offer', `${path}: "${offer[0]}" (free hosting and free email come only with a redesign).`);
+  }
+  // Every header and mobile menu link must have a page.
+  for (const a of $('header a[href^="/"], .mnav a[href^="/"]').toArray()) {
+    const href = ($(a).attr('href') ?? '').split('#')[0];
+    if (href && !existsSync(join('dist', href, 'index.html')) && !existsSync(join('dist', href))) fail('menu', `${path}: menu link ${href} has no page.`);
+  }
   if (isLive && !$('head script').toArray().some((x) => /'consent',\s*'default'/.test($(x).html() ?? ''))) fail('consent', `${path}: Consent Mode default is missing.`);
   // Owner rule: no guarantees beyond the hacked-site line, the malware re-clean and the migration fix.
   const promise = (path === '/website-repair-services/' ? /full refund/i : /no fix,? no fee|full refund/i).exec($('main').text()) ?? /full redo|free month if|zero risk|refund your first|that month's service is free/i.exec($('main').text());

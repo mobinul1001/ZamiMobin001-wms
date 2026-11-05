@@ -86,7 +86,8 @@ export function parseWpPlans(html: string) {
     head: $t('thead th').toArray().map((th) => txt($t, th)),
     rows: $t('tbody tr').toArray().map((tr) => $t(tr).children().toArray().map((td) => txt($t, td))),
   };
-  need(compare.rows.length >= 17 ? compare.rows : undefined, 'all 17 comparison rows');
+  // 15 rows since 2026-11-05: the free hosting and free webmail rows were removed (owner: those come only with a redesign).
+  need(compare.rows.length >= 15 ? compare.rows : undefined, 'all 15 comparison rows');
 
   // How to choose: 3 cards and the "Still unsure?" line.
   const $h = find(/^How to Choose the Right/);

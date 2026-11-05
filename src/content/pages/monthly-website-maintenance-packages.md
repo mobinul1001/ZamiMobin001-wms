@@ -358,7 +358,7 @@ For most businesses, Growth at $149/month offers the best value. Smaller sites d
 
 ### 14\. Do you offer website hosting and maintenance packages?
 
-Yes. Every plan includes free hosting for the first year. After that, hosting is $19/month or $190/year.
+Yes. Hosting is $19/month or $190/year.
 
 ### 15\. Can you manage my existing website?
 

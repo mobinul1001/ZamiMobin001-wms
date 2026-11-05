@@ -202,6 +202,10 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 ## Website repair page, 2026-11-05
 - Built to the owner's design on branch `repair-page` (based on `wp-plans-page`); not merged. Owner answers applied (No fix, no fee shown; 4-Step heading; repairRange in prices.json; hero button to #quote; real flags; heights within about 10% of the targets accepted). Still held until the owner confirms: 98.4%, 45 min, 0 sites with data loss. Merge order (owner): wp-plans-page first, then repair-page. HowTo schema matches the 4 visible steps. Next pages (hacked, malware, migration): wait until the owner says both branches are merged, then branch from main.
 
+## Batch 1 (owner, 2026-11-05)
+- 5 stacked branches: global-cleanup, responsive-fix, hacked-page, malware-page, migration-page. Nothing merged or pushed. Reports in `reports/batch-1/`.
+- Stage 1 done (global-cleanup): no top bar, no cookie bar (analytics off until the owner decides on consent), free hosting/email only with a redesign, full Services menu.
+
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
 - Testimonials.

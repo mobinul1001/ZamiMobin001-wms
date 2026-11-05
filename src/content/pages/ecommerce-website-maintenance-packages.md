@@ -234,8 +234,6 @@ or $1,990/yr, 2 months free
 [Choose Starter](/get-a-free-quote/#store-starter)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   Staging-tested WooCommerce and payment plugin updates
 -   Daily backups including orders
 -   Weekly checkout test
@@ -258,8 +256,6 @@ or $3,490/yr, 2 months free
 [Choose Growth](/get-a-free-quote/#store-growth)
 
 -   Everything in Store Starter
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Backups twice daily
 -   Speed and Core Web Vitals work
@@ -281,8 +277,6 @@ or $5,990/yr, 2 months free
 [Choose Pro](/get-a-free-quote/#store-pro)
 
 -   Everything in Store Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   12 hours edits/month
 -   24/7 emergency fixes
 -   4-hour response
@@ -323,8 +317,6 @@ Every feature, side by side, so you can match a package to your store.
 | --- | --- | --- | --- |
 | Annual billing (per year) | $1,990, 2 months free | $3,490, 2 months free | $5,990, 2 months free |
 | Everything in the Growth plan | Included | Included | Included |
-| Free hosting for the first year | Included | Included | Included |
-| 2 free webmail accounts | Included | Included | Included |
 | Staging-tested WooCommerce and payment plugin updates | Included | Included | Included |
 | Daily backups including orders | Included | — | — |
 | Weekly checkout test | Included | Included | Included |

@@ -3,7 +3,8 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 
 const FILE = 'src/data/prices.json';
-const OFFERS = ['Free hosting for the first year', '2 free webmail accounts'];
+// Owner, 2026-11-05: free hosting and the 2 free email accounts come only with a website redesign, not with plans.
+const OFFERS = [];
 const EUR = { currency: 'EUR', sign: '€', monthly: [69, 129, 269], fix: 39, cleanup: 129 };
 const TABLE = {
   usa: { currency: 'USD', sign: '$', monthly: [79, 149, 299], fix: 49, cleanup: 149 },

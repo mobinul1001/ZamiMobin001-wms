@@ -138,8 +138,6 @@ or CA$1,090/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#essential-cad)
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   Weekly updates
 -   Weekly backups
 -   Security scan
@@ -163,8 +161,6 @@ or CA$2,090/yr, 2 months free
 [Choose Plan](/get-a-free-quote/#growth-cad)
 
 -   Everything in Essential
--   Free hosting for the first year
--   2 free webmail accounts
 -   Daily backups
 -   3 hours edits/month
 -   Malware removal
@@ -186,8 +182,6 @@ or CA$4,190/yr, 2 months free
 [Choose Plan](/get-a-free-quote/#business-cad)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Staging-tested updates
 -   24/7 emergency fixes

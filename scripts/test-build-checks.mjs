@@ -32,7 +32,11 @@ const cases = [
   ['Form not posting to Formspree', () => replaceIn('dist/contact/index.html', /action="https:\/\/formspree\.io[^"]*"/, 'action="/somewhere/"'), /does not post to Formspree/],
   ['Disabled submit button', () => replaceIn('dist/contact/index.html', /<button type="submit"/, '<button disabled type="submit"'), /submit button is disabled/],
   ['Analytics before consent', () => replaceIn(PAGE, '</head>', '<script src="https://www.clarity.ms/tag/x"></script></head>'), /loads before consent/],
-  ['Cookie bar missing', () => replaceIn(PAGE, 'id="cookie-bar"', 'id="other"'), /cookie bar is missing/],
+  // Owner, 2026-11-05: the cookie bar and the top bar are removed; free hosting and free email only with a redesign; menu links must exist.
+  ['Cookie bar back', () => replaceIn(PAGE, /<main[^>]*>/, '<main><div id="cookie-bar"></div>'), /removed cookie bar is back/],
+  ['Top bar back', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p class="topbar">x</p>'), /removed top bar is back/],
+  ['Free hosting offer', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Free hosting for the first year</p>'), /free hosting and free email come only with a redesign/],
+  ['Broken menu link', () => replaceIn(PAGE, 'href="/website-update-services/"', 'href="/no-such-service/"'), /menu link \/no-such-service\/ has no page/],
   ['Annual price without the note', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Essential is $790 per year.</p>'), /annual price without/],
   ['FAQ schema not on the page', () => replaceIn(PAGE, '</head>', '<script type="application/ld+json">{"@type":"FAQPage","mainEntity":[{"name":"Not on page?","acceptedAnswer":{"text":"Nope"}}]}</script></head>'), /schema question not on the page/],
   ['Banned claim on a page', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Trusted by 500+ businesses.</p>'), /banned claim/],

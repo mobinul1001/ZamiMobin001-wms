@@ -35,7 +35,7 @@ export function quickForm(id: string, title: string, text: string, form = `home-
 type Cta = { id?: string; title: string; text: string; links: { href: string; label: string }[] };
 export const homeFinalHtml = (cta?: Cta) => `<section class="hp-final-sec" data-sec="final"><div class="wrap"><div class="hp-final">
   <div><h2${cta?.id ? ` id="${cta.id}"` : ''}>${cta?.title ?? 'Let’s keep your website secure &amp; online'}</h2><p>Send your site. You’ll get a free check and a clear price within 24 hours.</p>${cta ? `<p>${cta.text}</p>` : ''}
-    <ul class="hp-ticks">${['Free hosting for the first year', 'No contract, cancel anytime', 'If we can’t clean your hacked site, you don’t pay'].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
+    <ul class="hp-ticks">${['No contract, cancel anytime', 'If we can’t clean your hacked site, you don’t pay'].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
     ${cta?.links.length ? `<div class="btn-row hp-final-links">${cta.links.map((l) => `<a class="btn ghost" href="${l.href}">${l.label}</a>`).join('')}</div>` : ''}</div>
   ${quickForm('final', 'Get your free website check', 'Takes 30 seconds.')}
 </div></div></section>`;
@@ -125,7 +125,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
       <p class="eyebrow">${icon('globe')}${inner(introP[0])}</p>
       <h1>Website Maintenance Services <span class="hl">&amp; Support</span></h1>
       <p class="hp-lead">We keep your website secure, fast and up to date every month, so you never lose a customer to a broken or hacked site.</p>
-      <ul class="hp-ticks">${['Weekly updates, backups and security scans', 'Real engineers make your edits: 1–6 hours a month, by plan', `Plans from ${money(low)}/mo · Free hosting for 1 year · No contract`].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
+      <ul class="hp-ticks">${['Weekly updates, backups and security scans', 'Real engineers make your edits: 1–6 hours a month, by plan', `Plans from ${money(low)}/mo · No contract`].map((t) => `<li>${tick}${t}</li>`).join('')}</ul>
       <div class="btn-row cta-row hp-cta"><a class="btn primary" href="#pricing">See plans &amp; pricing${icon('arrow')}</a><a class="btn ghost" href="#quote">Get a free quote</a></div>
       <div class="hp-proof">
         <span class="hp-rate" data-claim-ok="owner 2026-11-03, wording 2026-11-04"><span class="hp-g3" role="img" aria-label="Google, Google Maps and Google Business Profile">${design.googleIcons.map((s) => `<i>${s.replace('<svg ', '<svg aria-hidden="true" ')}</i>`).join('')}</span><span><span class="hp-stars" aria-hidden="true">★★★★★</span><a href="${clutch?.[0]}" rel="noopener">5.0 rated by our clients</a></span></span>
@@ -192,10 +192,10 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     cell('refresh', 'Updates', 'Core, theme and plugin updates, checked on your live site after every run.', detail([oldCard(upd)], [...careLi(/Updates/), ...plain(pick(everyItems, /CMS/)), ...plain(pick(placeItems, /^(Website Updates|WordPress)$/))])),
     cell('shield', 'Security', 'Malware and vulnerability scans, firewall rules and login hardening.', detail([oldCard(sec1)], [...careLi(/Security/), ...plain(pick(everyItems, /Security/))])),
     cell('db', 'Backups', 'Weekly or daily off-site backups, kept 30–90 days.', detail([oldCard(bak)], [...careLi(/Backup/), ...plain(pick(everyItems, /Backup/)), ...plain(pick(placeItems, /Backup/))])),
-    cell('pulse', 'Uptime', 'We get an alert within minutes if your site goes down.', detail([oldCard(upt)], [...careLi(/Monitoring/), ...plain(pick(everyItems, /Uptime/))])),
+    cell('pulse', 'Uptime', 'We get an alert within minutes if your site goes down.', detail([oldCard(upt)], [...careLi(/Monitoring/), ...plain(pick(everyItems, /Uptime/)), ...plain(pick(placeItems, /Hosting/))])),
     cell('gauge', 'Speed', 'Caching, image and database tune-ups to keep pages fast.', detail([oldCard(spd), `<strong>${careItems[4].s}</strong> ${careItems[4].span}`], [...careLi(/Speed/), ...plain(pick(placeItems, /^SEO$/))])),
     cell('chat', 'Edits by real people', '1–6 hours a month of text, image and layout changes. Just email us.', detail([oldCard(cnt)], [...plain(pick(everyItems, /Content/)), ...plain(pick(placeItems, /Content/))])),
-    cell('server', 'Free hosting + 2 webmail', 'Managed hosting free for the first year, plus 2 webmail accounts on your domain.', detail([`<strong>${pick(placeItems, /Hosting/)[0]}</strong> Every plan includes free hosting for the first year and 2 free webmail accounts.`], [])),
+    // Owner, 2026-11-05: the "Free hosting + 2 webmail" card is gone (that offer comes only with a redesign).
     cell('file', 'Monthly report', 'A plain-English report of everything we did, on Growth and Business.', detail([careLines[0].replace(/\s*See full checklist.*/, '')], [])),
   ];
   used.add(careItems[4].s);
@@ -218,7 +218,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   </div></section>`;
 
   // 5. Pricing.
-  const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Every plan includes free hosting for the first year and 2 webmail accounts. Pay yearly and get ${prices.annualNote.en}.</p></div>`
+  const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Pay yearly and get ${prices.annualNote.en}.</p></div>`
     + plansHtml(' fade')
     + `<div class="callout fade"><div><p><strong>No contract. Cancel anytime.</strong></p></div><div class="act"><a class="btn ghost" href="/monthly-website-maintenance-packages/">Compare all features</a><a class="btn ghost" href="/ecommerce-website-maintenance-packages/">Running an online store? Store plans from $199</a></div></div>`;
 
@@ -290,7 +290,6 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     ['Contract', 'None, cancel anytime', 'Usually none', 'Often 3–12 months'],
     ['Response', '4 hours to 2 business days, by plan', 'When available', '1–3 days'],
     ['Backups &amp; security', 'Included', 'Extra', 'Included'],
-    ['Free hosting &amp; email', 'First year', 'No', 'No'],
     ['Monthly report', 'Growth and Business', 'Rarely', 'Yes'],
   ];
   const WHO = ['WMS', 'Freelancer', 'Typical agency'];

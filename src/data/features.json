@@ -1,7 +1,5 @@
 {
   "explain": {
-    "Free hosting for the first year": "We host your site free for your first year.",
-    "2 free webmail accounts": "Two business email accounts you can use in a browser.",
     "Weekly updates": "We update WordPress, plugins and themes every week.",
     "Weekly backups": "A full copy of your site is saved every week.",
     "Security scan": "We check your site for malware and known weak spots.",
@@ -18,19 +16,6 @@
     "Priority support": "Your requests go to the front of the queue."
   },
   "groups": [
-    {
-      "name": "Hosting and email",
-      "rows": [
-        [
-          "Free hosting for the first year",
-          "Essential"
-        ],
-        [
-          "2 free webmail accounts",
-          "Essential"
-        ]
-      ]
-    },
     {
       "name": "Care",
       "rows": [

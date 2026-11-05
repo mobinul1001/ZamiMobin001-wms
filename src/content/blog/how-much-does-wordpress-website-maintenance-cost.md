@@ -85,8 +85,6 @@ Starter plan for blogs & brochure sites needing core security & updates.
 
 [Get Started](/get-a-free-quote/#essential)
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   Weekly updates
 -   Weekly backups
 -   Security scan
@@ -106,8 +104,6 @@ Our most popular plan for growing businesses needing active maintenance.
 [Get Started](/get-a-free-quote/#growth)
 
 -   Everything in Essential
--   Free hosting for the first year
--   2 free webmail accounts
 -   Daily backups
 -   3 hours edits/month
 -   Malware removal
@@ -125,8 +121,6 @@ Premium, mission-critical care for high-traffic & revenue-driving sites.
 [Get Started](/get-a-free-quote/#business)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Staging-tested updates
 -   24/7 emergency fixes
@@ -149,8 +143,6 @@ Here's a complete, side-by-side feature comparison so you can see exactly what c
 | Feature | Essential $79/mo | Growth $149/mo | Business $299/mo |
 | --- | --- | --- | --- |
 | Annual billing (per year) | $790, 2 months free | $1,490, 2 months free | $2,990, 2 months free |
-| Free hosting for the first year | Included | Included | Included |
-| 2 free webmail accounts | Included | Included | Included |
 | Weekly updates | Included | Included | Included |
 | Weekly backups | Included | — | — |
 | Security scan | Included | Included | Included |

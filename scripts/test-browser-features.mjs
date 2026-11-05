@@ -18,48 +18,31 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   out.starterDesign = await plan('#starter-design');
   const quote = (await load('/get-a-free-quote/')).contentDocument.querySelector('main form');
   out.quoteForm = { action: quote.getAttribute('action'), disabled: quote.querySelectorAll('button[disabled]').length, honeypotHidden: quote.querySelector('input[name="_gotcha"]').style.display };
-  // Consent: stub the tag loader so a test never contacts Google or Microsoft.
-  const consentPage = async () => {
-    const f = await load('/about-us/');
-    await new Promise((r) => setTimeout(r, 150));
-    return f;
-  };
-  const stub = (f) => {
-    const list = [];
-    const head = f.contentDocument.head;
-    const real = head.appendChild.bind(head);
-    head.appendChild = (el) => { if (el.src && /googletag|clarity/.test(el.src)) { list.push(el.src); return el; } return real(el); };
-    return list;
-  };
+  // Owner, 2026-11-05: no cookie bar, no top bar, and no analytics tag loads (nothing sets an analytics cookie).
+  const plain = await load('/about-us/');
+  await new Promise((r) => setTimeout(r, 300));
+  const pd = plain.contentDocument;
+  out.noBars = { cookieBar: !!pd.getElementById('cookie-bar'), topbar: !!pd.querySelector('.topbar'), consentScript: !!pd.querySelector('script[src="/consent.js"]'), tags: pd.querySelectorAll('script[src*="googletag"], script[src*="clarity.ms"]').length, cookies: pd.cookie, headerTop: Math.round(pd.querySelector('header').getBoundingClientRect().top), defaultDenied: Array.from(plain.contentWindow.dataLayer || []).some((a) => a[0] === 'consent' && a[1] === 'default' && a[2].analytics_storage === 'denied') };
+  // Services menu: every group and link, aria-expanded follows the menu.
+  const mdrop = pd.querySelector('.drop');
+  const msum = mdrop.querySelector('summary');
+  const before = msum.getAttribute('aria-expanded');
+  mdrop.open = true;
+  await new Promise((r) => setTimeout(r, 50));
+  out.menu = { groups: [...pd.querySelectorAll('.drop-h')].map((h) => h.textContent), links: pd.querySelectorAll('.drop-menu a').length, mobileLinks: pd.querySelectorAll('.m-svc a').length, before, after: msum.getAttribute('aria-expanded') };
+  mdrop.open = false;
   localStorage.clear();
-  const c1 = await consentPage();
-  const c1list = stub(c1);
-  out.consentFirst = { visible: !c1.contentDocument.getElementById('cookie-bar').hidden, tags: c1.contentDocument.querySelectorAll('script[src*="googletag"], script[src*="clarity.ms"]').length, defaultDenied: Array.from(c1.contentWindow.dataLayer || []).some((a) => a[0] === 'consent' && a[1] === 'default' && a[2].analytics_storage === 'denied') };
-  c1.contentDocument.getElementById('cookie-accept').click();
-  out.consentAccept = { hidden: c1.contentDocument.getElementById('cookie-bar').hidden, tags: c1list.slice(), stored: localStorage.getItem('wms-analytics-consent'), granted: Array.from(c1.contentWindow.dataLayer).some((a) => a[0] === 'consent' && a[1] === 'update' && a[2].analytics_storage === 'granted'), clarity: JSON.stringify((c1.contentWindow.clarity.q || []).map((a) => Array.from(a))) };
-  localStorage.clear();
-  const c2 = await consentPage();
-  const c2list = stub(c2);
-  c2.contentDocument.getElementById('cookie-reject').click();
-  out.consentReject = { hidden: c2.contentDocument.getElementById('cookie-bar').hidden, tags: c2list.length, stored: localStorage.getItem('wms-analytics-consent') };
-  const c3 = await consentPage();
-  out.consentRemember = { hidden: c3.contentDocument.getElementById('cookie-bar').hidden };
-  c3.contentDocument.getElementById('cookie-settings').click();
-  out.consentSettings = { visible: !c3.contentDocument.getElementById('cookie-bar').hidden };
-  localStorage.clear();
-  // The bar must not cover the first-screen button on a phone.
+  // The first-screen button is on the first phone screen, and the header sits at the top.
   const sized = (src, w, h) => new Promise((done) => { const f = document.createElement('iframe'); f.style.cssText = 'width:' + w + 'px;height:' + h + 'px;border:0;position:fixed;left:0;top:0'; f.onload = () => done(f); f.src = src; document.body.appendChild(f); });
   out.mobile = [];
   for (const [w, h] of [[390, 844], [360, 640]]) for (const p of ["/","/wordpress-website-maintenance-packages/","/ecommerce-website-maintenance-packages/","/shopify-website-maintenance-packages/","/website-repair-services/","/website-hacked-recovery-services/","/wordpress-malware-removal-service/","/website-migration-services/","/website-redesign-services/","/website-design-services/","/website-seo-services/","/website-speed-optimization-services/","/website-support-services/","/website-update-services/","/wordpress-backup-services/","/white-label-website-maintenance-services-for-agencies/","/wms-partner-program/","/website-maintenance-services-for-usa/","/website-maintenance-services-for-uk/","/website-maintenance-services-for-canada/","/website-maintenance-services-for-australia/","/website-maintenance-services-for-france/","/website-maintenance-services-for-spain/","/website-maintenance-services-for-netherlands/","/website-maintenance-services-for-switzerland/","/website-maintenance-services-for-ireland/","/website-maintenance-services-for-brazil/"]) {
     const f = await sized(p, w, h);
     await new Promise((r) => setTimeout(r, 120));
     const d = f.contentDocument;
-    const bar = d.getElementById('cookie-bar').getBoundingClientRect();
     const cta = d.querySelector('.cta-row .btn, .pp-cta .btn').getBoundingClientRect();
-    out.mobile.push({ w, h, p, barTop: Math.round(bar.top), barH: Math.round(bar.height), ctaTop: Math.round(cta.top), ctaBottom: Math.round(cta.bottom), covered: cta.top < h && cta.bottom > bar.top });
+    out.mobile.push({ w, h, p, headerTop: Math.round(d.querySelector('header').getBoundingClientRect().top), ctaTop: Math.round(cta.top), ctaBottom: Math.round(cta.bottom), covered: cta.bottom > h });
     f.remove();
   }
-  localStorage.setItem('wms-analytics-consent', 'denied');
   const sendTest = async (status, body) => {
     const f = await load('/contact/');
     const win = f.contentWindow;
@@ -121,13 +104,13 @@ const checks = {
   'essential hash selects Essential': eq(r.essential, ['essential', 'essential', 'USD']),
   'business hash selects Business': eq(r.business, ['business', 'business', 'USD']),
   'service package hash is kept': eq(r.starterDesign, ['other', 'starter-design', 'USD']),
-  'bar shows on first visit with no tags': r.consentFirst.visible && r.consentFirst.tags === 0,
-  'consent default is denied': r.consentFirst.defaultDenied,
-  'accept loads both tags once': r.consentAccept.hidden && r.consentAccept.tags.length === 2 && r.consentAccept.stored === 'granted',
-  'accept updates GA and Clarity consent': r.consentAccept.granted && r.consentAccept.clarity.includes('consentv2') && r.consentAccept.clarity.includes('"analytics_Storage":"granted"'),
-  'reject loads nothing and is remembered': r.consentReject.hidden && r.consentReject.tags === 0 && r.consentReject.stored === 'denied' && r.consentRemember.hidden,
-  'cookie settings reopens the bar': r.consentSettings.visible,
-  'bar does not cover the mobile button': r.mobile.every((m) => !m.covered),
+  'no cookie bar and no consent script': !r.noBars.cookieBar && !r.noBars.consentScript,
+  'no top bar; header at the top of the page': !r.noBars.topbar && r.noBars.headerTop === 0,
+  'no analytics tag loads and no cookie is set': r.noBars.tags === 0 && r.noBars.cookies === '',
+  'consent default is denied': r.noBars.defaultDenied,
+  'Services menu: 4 groups, 16 links, mobile too': eq(r.menu.groups, ['Maintenance', 'Fix and security', 'Partners', 'Build and grow']) && r.menu.links === 16 && r.menu.mobileLinks === 16,
+  'Services menu sets aria-expanded': r.menu.before === 'false' && r.menu.after === 'true',
+  'first-screen button on the first phone screen': r.mobile.every((m) => !m.covered && m.headerTop === 0),
   'success opens /thank-you/': r.sendOk.path === '/thank-you/',
   'fetch asks for JSON and sends form_name': r.sendOk.sent.accept === 'application/json' && r.sendOk.sent.formName === 'contact',
   'validation error shows on the form': r.sendInvalid.message === 'email is invalid' && !r.sendInvalid.nativePost,

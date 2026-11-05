@@ -20,8 +20,6 @@ const rest = polish([intro, ...sections.map((s) => s.html)].join(''), { start: 3
 const billing = [
   ['How does billing work?', `Pay monthly, or pay yearly and get ${prices.annualNote.en}. There is no checkout on the site: pick a plan, we talk on a short call, and then we take payment.`],
   ['Is there a contract?', 'No contract. Cancel anytime.'],
-  ['What happens after the first year of free hosting?', 'Hosting is free for your first year on every plan. After that, hosting is $19/month or $190/year. You can keep hosting with us or move it. There is no contract.'],
-  ['What do the webmail accounts include?', 'Every plan comes with 2 free webmail accounts, so you can send and receive business email in a browser. We go through the setup with you on your call.'],
 ].map(([q, a]) => `<details><summary>${q}</summary><p>${a}</p></details>`).join('');
 const faqHtml = faq ? polish(faq.html.replace(/(<\/h2>)/, `$1${billing}`), { start: 2 }) : '';
 ---
@@ -31,7 +29,7 @@ const faqHtml = faq ? polish(faq.html.replace(/(<\/h2>)/, `$1${billing}`), { sta
     <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
     <p class="sub">Three plans. Every price is here. No contract, and you can cancel anytime.</p>
   </div>
-  <div class="hero-side" set:html={factCard(`Plans from ${money(prices.plans[0].monthly)}/mo`, [`Yearly billing: ${prices.annualNote.en}`, 'Free hosting for the first year', '2 free webmail accounts', 'No contract'])} />
+  <div class="hero-side" set:html={factCard(`Plans from ${money(prices.plans[0].monthly)}/mo`, [`Yearly billing: ${prices.annualNote.en}`, 'No contract'])} />
 </div></section>
 <section class="sec"><div class="wrap">
   <h2 class="sr-only">Plans</h2>

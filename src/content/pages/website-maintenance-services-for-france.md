@@ -145,8 +145,6 @@ or €690/yr, 2 months free
 
 [Choose Plan](/get-a-free-quote/#essential-eur)
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   Weekly updates
 -   Weekly backups
 -   Security scan
@@ -170,8 +168,6 @@ or €1,290/yr, 2 months free
 [Choose Plan](/get-a-free-quote/#growth-eur)
 
 -   Everything in Essential
--   Free hosting for the first year
--   2 free webmail accounts
 -   Daily backups
 -   3 hours edits/month
 -   Malware removal
@@ -193,8 +189,6 @@ or €2,690/yr, 2 months free
 [Choose Plan](/get-a-free-quote/#business-eur)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Staging-tested updates
 -   24/7 emergency fixes

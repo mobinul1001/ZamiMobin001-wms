@@ -10,8 +10,6 @@
       "monthly": 79,
       "annual": 790,
       "includes": [
-        "Free hosting for the first year",
-        "2 free webmail accounts",
         "Weekly updates",
         "Weekly backups",
         "Security scan",
@@ -26,8 +24,6 @@
       "annual": 1490,
       "includes": [
         "Everything in Essential",
-        "Free hosting for the first year",
-        "2 free webmail accounts",
         "Daily backups",
         "3 hours edits/month",
         "Malware removal",
@@ -41,8 +37,6 @@
       "annual": 2990,
       "includes": [
         "Everything in Growth",
-        "Free hosting for the first year",
-        "2 free webmail accounts",
         "6 hours edits/month",
         "Staging-tested updates",
         "24/7 emergency fixes",
@@ -219,8 +213,6 @@
           "annual": 1990,
           "includes": [
             "Everything in Growth",
-            "Free hosting for the first year",
-            "2 free webmail accounts",
             "Staging-tested WooCommerce and payment plugin updates",
             "Daily backups including orders",
             "Weekly checkout test",
@@ -235,8 +227,6 @@
           "popular": true,
           "includes": [
             "Everything in Store Starter",
-            "Free hosting for the first year",
-            "2 free webmail accounts",
             "6 hours edits/month",
             "Backups twice daily",
             "Speed and Core Web Vitals work",
@@ -251,8 +241,6 @@
           "annual": 5990,
           "includes": [
             "Everything in Store Growth",
-            "Free hosting for the first year",
-            "2 free webmail accounts",
             "12 hours edits/month",
             "24/7 emergency fixes",
             "4-hour response",

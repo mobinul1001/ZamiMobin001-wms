@@ -1,9 +1,9 @@
 {
-  "checkedAt": "2026-11-05T13:11:06.489Z",
+  "checkedAt": "2026-11-05T14:35:37.450Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6835,
+  "links": 8602,
   "images": 342,
   "faqs": 488,
   "sitemapUrls": 90,
@@ -13,7 +13,7 @@
   "failures": [],
   "warningCounts": {
     "missing-urls": 1,
-    "seo-length": 54,
+    "seo-length": 53,
     "forms": 14,
     "image-size": 1,
     "placeholders": 1,
@@ -48,7 +48,6 @@
     "[placeholders] /: the review cards are placeholders; replace them with real reviews before launch.",
     "[forms] /: no Formspree ID yet.",
     "[seo-length] /nonprofit-website-maintenance/: description is 165 characters (aim for 155).",
-    "[seo-length] /sitecare-alternative/: description is 169 characters (aim for 155).",
     "[seo-length] /there-has-been-a-critical-error-on-this-website-wordpress/: title is 71 characters (aim for 60).",
     "[seo-length] /there-has-been-a-critical-error-on-this-website-wordpress/: description is 165 characters (aim for 155).",
     "[seo-length] /web-design-jamaica/: description is 156 characters (aim for 155).",

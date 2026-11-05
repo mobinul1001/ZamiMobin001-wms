@@ -148,8 +148,6 @@ ou R$4.290/ano, 2 meses grátis
 
 [Escolher Plano](/get-a-free-quote/#essential-brl)
 
--   Hospedagem grátis no primeiro ano
--   2 contas de webmail grátis
 -   Atualizações semanais
 -   Backups semanais
 -   Verificação de segurança
@@ -173,8 +171,6 @@ ou R$8.090/ano, 2 meses grátis
 [Escolher Plano](/get-a-free-quote/#growth-brl)
 
 -   Tudo do Essential
--   Hospedagem grátis no primeiro ano
--   2 contas de webmail grátis
 -   Backups diários
 -   3 horas de edições/mês
 -   Remoção de malware
@@ -196,8 +192,6 @@ ou R$16.290/ano, 2 meses grátis
 [Escolher Plano](/get-a-free-quote/#business-brl)
 
 -   Tudo do Growth
--   Hospedagem grátis no primeiro ano
--   2 contas de webmail grátis
 -   6 horas de edições/mês
 -   Atualizações testadas em staging
 -   Correções de emergência 24/7

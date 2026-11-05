@@ -9,7 +9,7 @@ import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
-import { applyTextEdits, editString, fixHowTo } from './lib/text-edits.mjs';
+import { applyTextEdits, applyTextEditsMd, checkTextEditsUsed, editString, fixHowTo } from './lib/text-edits.mjs';
 import { fixContactText } from './lib/company-facts.mjs';
 import { readCsv } from './lib/csv.mjs';
 import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
@@ -451,7 +451,7 @@ for (const [u, m] of pages) {
   const removed = [];
   const schema = (record.jsonLd ?? []).map((d) => stripSchema(d, removed)).filter(Boolean);
   fixSchemaOffers(path, schema);
-  const body = addApprovedLinks(path, applyFaqChanges(path, converted.body, schema, log.faqChanges));
+  const body = applyTextEditsMd(path, addApprovedLinks(path, applyFaqChanges(path, converted.body, schema, log.faqChanges)));
   // Claims rules also cover meta descriptions, social tags and every schema text.
   const own = OWN_CLAIM_PAGES.has(path);
   const cleanValue = (raw, where) => {
@@ -468,8 +468,8 @@ for (const [u, m] of pages) {
   };
   schema.splice(0, schema.length, ...schema.map((d) => cleanSchema(d)));
   fixHowTo(path, schema, body);
-  record.metaDescription = cleanValue(record.metaDescription ?? '', 'meta description');
-  for (const [k, v] of Object.entries(record.socialTags ?? {})) if (typeof v === 'string' && !/^https?:/.test(v)) record.socialTags[k] = cleanValue(v, k);
+  record.metaDescription = editString(path, cleanValue(record.metaDescription ?? '', 'meta description'));
+  for (const [k, v] of Object.entries(record.socialTags ?? {})) if (typeof v === 'string' && !/^https?:/.test(v)) record.socialTags[k] = editString(path, cleanValue(v, k));
   if (removed.length) log.schemaRemoved.push({ path, removed: [...new Set(removed)] });
   const faqs = [];
   const walk = (n) => {
@@ -556,6 +556,7 @@ const report = {
 };
 writeFileSync('reports/migration-report.json', JSON.stringify(report, null, 2));
 const claimCell = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
+checkTextEditsUsed();
 writeFileSync('reports/claims-applied.csv', '﻿' + ['page,rule,before,after', ...log.claims.map((c) => [c.path, c.rule, c.before, c.after].map(claimCell).join(','))].join('\n') + '\n');
 const byRule = log.claims.reduce((m, c) => ((m[c.rule] = (m[c.rule] ?? 0) + 1), m), {});
 console.log('claims applied', JSON.stringify(byRule));

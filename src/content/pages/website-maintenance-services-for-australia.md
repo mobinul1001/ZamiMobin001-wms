@@ -150,8 +150,6 @@ or A$1,090/yr, 2 months free
 
 [Select Plan](/get-a-free-quote/#essential-aud)
 
--   Free hosting for the first year
--   2 free webmail accounts
 -   Weekly updates
 -   Weekly backups
 -   Security scan
@@ -177,8 +175,6 @@ or A$2,090/yr, 2 months free
 [Select Plan](/get-a-free-quote/#growth-aud)
 
 -   Everything in Essential
--   Free hosting for the first year
--   2 free webmail accounts
 -   Daily backups
 -   3 hours edits/month
 -   Malware removal
@@ -202,8 +198,6 @@ or A$4,290/yr, 2 months free
 [Select Plan](/get-a-free-quote/#business-aud)
 
 -   Everything in Growth
--   Free hosting for the first year
--   2 free webmail accounts
 -   6 hours edits/month
 -   Staging-tested updates
 -   24/7 emergency fixes
