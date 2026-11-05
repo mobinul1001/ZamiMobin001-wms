@@ -1057,19 +1057,19 @@
       "path": "/ecommerce-website-maintenance-packages/",
       "change": "price",
       "from": "$145/mo\n\nor $116/mo billed annually\n\n[Choose Starter](/get-a-free-quote/)",
-      "to": "$199/mo\n\nor $1,990/yr, 2 months free\n\n[Choose Starter](/get-a-free-quote/#store-starter)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Staging-tested WooCommerce and payment plugin updates\n-   Daily backups including orders\n-   Weekly checkout test\n-   3 hours edits/month"
+      "to": "$199/mo\n\nor $1,990/yr, 2 months free\n\n[Choose Starter](/get-a-free-quote/#store-starter)\n\n-   Everything in Growth\n-   Staging-tested WooCommerce and payment plugin updates\n-   Daily backups including orders\n-   Weekly checkout test\n-   3 hours edits/month"
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
       "change": "price",
       "from": "$295/mo\n\nor $236/mo billed annually\n\n[Choose Growth](/get-a-free-quote/)",
-      "to": "$349/mo\n\nor $3,490/yr, 2 months free\n\n[Choose Growth](/get-a-free-quote/#store-growth)\n\n-   Everything in Store Starter\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Backups twice daily\n-   Speed and Core Web Vitals work\n-   Checkout and conversion fixes\n-   8-hour response"
+      "to": "$349/mo\n\nor $3,490/yr, 2 months free\n\n[Choose Growth](/get-a-free-quote/#store-growth)\n\n-   Everything in Store Starter\n-   6 hours edits/month\n-   Backups twice daily\n-   Speed and Core Web Vitals work\n-   Checkout and conversion fixes\n-   8-hour response"
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
       "change": "price",
       "from": "$595/mo\n\nor $476/mo billed annually\n\n[Choose Premium](/get-a-free-quote/)",
-      "to": "$599/mo\n\nor $5,990/yr, 2 months free\n\n[Choose Pro](/get-a-free-quote/#store-pro)\n\n-   Everything in Store Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   12 hours edits/month\n-   24/7 emergency fixes\n-   4-hour response\n-   Monthly strategy call"
+      "to": "$599/mo\n\nor $5,990/yr, 2 months free\n\n[Choose Pro](/get-a-free-quote/#store-pro)\n\n-   Everything in Store Growth\n-   12 hours edits/month\n-   24/7 emergency fixes\n-   4-hour response\n-   Monthly strategy call"
     },
     {
       "path": "/ecommerce-website-maintenance-packages/",
@@ -2621,7 +2621,7 @@
     },
     {
       "path": "/sitecare-alternative/",
-      "change": "schema same",
+      "change": "schema synced",
       "question": "Do both include hosting?"
     },
     {
@@ -3126,7 +3126,7 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 99/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$109/mo\n\nor A$1,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#essential-aud)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "A$109/mo\n\nor A$1,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#essential-aud)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -3138,7 +3138,7 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 199/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$209/mo\n\nor A$2,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth-aud)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "A$209/mo\n\nor A$2,090/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#growth-aud)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -3150,7 +3150,7 @@
       "path": "/website-maintenance-services-for-australia/",
       "change": "price",
       "from": "AUD 399/mo\n\n[Select Plan](/get-a-free-quote/)",
-      "to": "A$429/mo\n\nor A$4,290/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#business-aud)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "A$429/mo\n\nor A$4,290/yr, 2 months free\n\n[Select Plan](/get-a-free-quote/#business-aud)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-australia/",
@@ -3185,7 +3185,7 @@
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 249/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$429/mês\n\nou R$4.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#essential-brl)\n\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Atualizações semanais\n-   Backups semanais\n-   Verificação de segurança\n-   Monitoramento de disponibilidade\n-   1 hora de edições/mês"
+      "to": "R$429/mês\n\nou R$4.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#essential-brl)\n\n-   Atualizações semanais\n-   Backups semanais\n-   Verificação de segurança\n-   Monitoramento de disponibilidade\n-   1 hora de edições/mês"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
@@ -3197,7 +3197,7 @@
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 499/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$809/mês\n\nou R$8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth-brl)\n\n-   Tudo do Essential\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   Backups diários\n-   3 horas de edições/mês\n-   Remoção de malware\n-   Otimização de velocidade\n-   Relatório mensal"
+      "to": "R$809/mês\n\nou R$8.090/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#growth-brl)\n\n-   Tudo do Essential\n-   Backups diários\n-   3 horas de edições/mês\n-   Remoção de malware\n-   Otimização de velocidade\n-   Relatório mensal"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
@@ -3209,7 +3209,7 @@
       "path": "/website-maintenance-services-for-brazil/",
       "change": "price",
       "from": "R$ 999/mês\n\n[Escolher Plano](/get-a-free-quote/)",
-      "to": "R$1.629/mês\n\nou R$16.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#business-brl)\n\n-   Tudo do Growth\n-   Hospedagem grátis no primeiro ano\n-   2 contas de webmail grátis\n-   6 horas de edições/mês\n-   Atualizações testadas em staging\n-   Correções de emergência 24/7\n-   Suporte prioritário"
+      "to": "R$1.629/mês\n\nou R$16.290/ano, 2 meses grátis\n\n[Escolher Plano](/get-a-free-quote/#business-brl)\n\n-   Tudo do Growth\n-   6 horas de edições/mês\n-   Atualizações testadas em staging\n-   Correções de emergência 24/7\n-   Suporte prioritário"
     },
     {
       "path": "/website-maintenance-services-for-brazil/",
@@ -3232,7 +3232,7 @@
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$109/mo\n\nor CA$1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-cad)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "CA$109/mo\n\nor CA$1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-cad)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
@@ -3244,7 +3244,7 @@
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$209/mo\n\nor CA$2,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-cad)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "CA$209/mo\n\nor CA$2,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-cad)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
@@ -3256,7 +3256,7 @@
       "path": "/website-maintenance-services-for-canada/",
       "change": "price",
       "from": "CAD 199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "CA$419/mo\n\nor CA$4,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-cad)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "CA$419/mo\n\nor CA$4,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-cad)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-canada/",
@@ -3273,7 +3273,7 @@
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-france/",
@@ -3285,7 +3285,7 @@
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-france/",
@@ -3297,7 +3297,7 @@
       "path": "/website-maintenance-services-for-france/",
       "change": "price",
       "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-france/",
@@ -3320,7 +3320,7 @@
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€49/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-eur)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
@@ -3332,7 +3332,7 @@
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€99/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
@@ -3344,7 +3344,7 @@
       "path": "/website-maintenance-services-for-ireland/",
       "change": "price",
       "from": "€199/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-ireland/",
@@ -3373,7 +3373,7 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "€69/mo\n\nor €690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -3385,7 +3385,7 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "€129/mo\n\nor €1,290/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -3397,7 +3397,7 @@
       "path": "/website-maintenance-services-for-netherlands/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "€269/mo\n\nor €2,690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-netherlands/",
@@ -3469,7 +3469,7 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€69/mo\n\nor €690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "€69/mo\n\nor €690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#essential-eur)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -3481,7 +3481,7 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€129/mo\n\nor €1,290/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "€129/mo\n\nor €1,290/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#growth-eur)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -3493,7 +3493,7 @@
       "path": "/website-maintenance-services-for-spain/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "€269/mo\n\nor €2,690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "€269/mo\n\nor €2,690/yr, 2 meses gratis\n\n[Get Started](/get-a-free-quote/#business-eur)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-spain/",
@@ -3570,7 +3570,7 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$95/mo\n\nor $76/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 69/mo\n\nor CHF 690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-chf)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "CHF 69/mo\n\nor CHF 690/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential-chf)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -3582,7 +3582,7 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$195/mo\n\nor $156/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 119/mo\n\nor CHF 1,190/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-chf)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "CHF 119/mo\n\nor CHF 1,190/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth-chf)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -3594,7 +3594,7 @@
       "path": "/website-maintenance-services-for-switzerland/",
       "change": "price",
       "from": "$395/mo\n\nor $316/mo billed annually\n\n[Get Started](/get-a-free-quote/)",
-      "to": "CHF 249/mo\n\nor CHF 2,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-chf)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "CHF 249/mo\n\nor CHF 2,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business-chf)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-switzerland/",
@@ -3660,7 +3660,7 @@
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£39/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£59/mo\n\nor £590/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-gbp)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "£59/mo\n\nor £590/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#essential-gbp)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
@@ -3672,7 +3672,7 @@
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£89/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£109/mo\n\nor £1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-gbp)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "£109/mo\n\nor £1,090/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#growth-gbp)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
@@ -3684,7 +3684,7 @@
       "path": "/website-maintenance-services-for-uk/",
       "change": "price",
       "from": "£179/mo\n\n[Choose Plan](/get-a-free-quote/)",
-      "to": "£219/mo\n\nor £2,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-gbp)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "£219/mo\n\nor £2,190/yr, 2 months free\n\n[Choose Plan](/get-a-free-quote/#business-gbp)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-uk/",
@@ -3701,7 +3701,7 @@
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$49/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$79/mo\n\nor $790/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)\n\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
+      "to": "$79/mo\n\nor $790/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#essential)\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
@@ -3713,7 +3713,7 @@
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$99/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$149/mo\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)\n\n-   Everything in Essential\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
+      "to": "$149/mo\n\nor $1,490/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#growth)\n\n-   Everything in Essential\n-   Daily backups\n-   3 hours edits/month\n-   Malware removal\n-   Speed optimization\n-   Monthly report"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
@@ -3725,7 +3725,7 @@
       "path": "/website-maintenance-services-for-usa/",
       "change": "price",
       "from": "$199/mo\n\n[Get Started](/get-a-free-quote/)",
-      "to": "$299/mo\n\nor $2,990/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)\n\n-   Everything in Growth\n-   Free hosting for the first year\n-   2 free webmail accounts\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
+      "to": "$299/mo\n\nor $2,990/yr, 2 months free\n\n[Get Started](/get-a-free-quote/#business)\n\n-   Everything in Growth\n-   6 hours edits/month\n-   Staging-tested updates\n-   24/7 emergency fixes\n-   Priority support"
     },
     {
       "path": "/website-maintenance-services-for-usa/",
