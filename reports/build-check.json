@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-04T20:29:23.856Z",
+  "checkedAt": "2026-11-05T11:22:04.858Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
@@ -14,7 +14,7 @@
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 54,
-    "forms": 13,
+    "forms": 14,
     "image-size": 1,
     "placeholders": 1,
     "anchors": 8
@@ -66,6 +66,7 @@
     "[seo-length] /website-redesign-seo/: description is 165 characters (aim for 155).",
     "[seo-length] /website-redesign-services/: title is 67 characters (aim for 60).",
     "[forms] /website-redesign-services/: no Formspree ID yet.",
+    "[forms] /website-repair-services/: no Formspree ID yet.",
     "[seo-length] /website-seo-services/: title is 66 characters (aim for 60).",
     "[forms] /website-seo-services/: no Formspree ID yet.",
     "[seo-length] /website-speed-optimization-services/: title is 64 characters (aim for 60).",

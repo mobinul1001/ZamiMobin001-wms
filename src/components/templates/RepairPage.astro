@@ -1,0 +1,72 @@
+---
+// Website repair page, owner's design (repair-page-for-claude-code.zip, 2026-11-05). All text is the page's own
+// (src/lib/repair.ts); prices from prices.json where it has them. Header, footer, cookie bar and final CTA come
+// from Base.astro. Reuses the plans page's sections, table scroll, steps and FAQ styles (plans-page.css).
+import { getCollection } from 'astro:content';
+import hubs from '../../data/blog-hubs.json';
+import { icon } from '../../lib/icons';
+import { parseRepair } from '../../lib/repair';
+import plansCss from '../../styles/plans-page.css?url';
+import repairCss from '../../styles/repair-page.css?url';
+import SectionAccordion from '../plans/SectionAccordion.astro';
+import Hero from '../service/Hero.astro';
+import TrustStrip from '../service/TrustStrip.astro';
+import Finder from '../service/Finder.astro';
+import IncludedGrid from '../service/IncludedGrid.astro';
+import PriceCards from '../service/PriceCards.astro';
+import CompareTabs from '../service/CompareTabs.astro';
+import Steps from '../service/Steps.astro';
+import Results from '../service/Results.astro';
+import WhyList from '../service/WhyList.astro';
+import LearnAccordion from '../service/LearnAccordion.astro';
+import Faq from '../service/Faq.astro';
+import Related from '../service/Related.astro';
+import Countries from '../service/Countries.astro';
+
+const { entry } = Astro.props;
+const { path, h1 } = entry.data;
+const d = parseRepair(entry.rendered?.html ?? '');
+const posts = await getCollection('blog');
+const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
+---
+<link rel="stylesheet" href={plansCss} />
+<link rel="stylesheet" href={repairCss} />
+<div class="plans-pg repair-pg">
+  <Hero h1={h1} d={d} />
+  <TrustStrip />
+  {/* Two short sections the old page had first; not in the design, so they follow the hero, closed on phones. */}
+  <SectionAccordion eyebrow={d.numbers.sec.eyebrow} h2={d.numbers.sec.h2} id={d.numbers.sec.id}>
+    <div class="rp-grid2 rp-numbers">{d.numbers.cards.map((c) => <div class="card">{c.v && <b>{c.v}</b>}<p set:html={c.l} /></div>)}</div>
+  </SectionAccordion>
+  <SectionAccordion eyebrow={d.oneTeam.sec.eyebrow} h2={d.oneTeam.sec.h2} id={d.oneTeam.sec.id} alt>
+    <p class="sx-lead" set:html={d.oneTeam.paras[0]} />
+    <details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-prose">
+      {d.oneTeam.paras.slice(1).map((p) => <p set:html={p} />)}
+      <div class="rp-grid3 rp-mini">{d.oneTeam.cards.map((c) => <div class="card"><h4 set:html={c.h} /><p set:html={c.p} /></div>)}</div>
+    </div></details>
+  </SectionAccordion>
+  <SectionAccordion eyebrow={d.finder.sec.eyebrow} h2={d.finder.sec.h2} id={d.finder.sec.id} open><Finder d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.included.sec.eyebrow} h2={d.included.sec.h2} id={d.included.sec.id} alt><IncludedGrid d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.pricing.sec.eyebrow} h2={d.pricing.sec.h2} id={d.pricing.sec.id} open><PriceCards d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.compare.sec.eyebrow} h2={d.compare.sec.h2} id={d.compare.sec.id} alt><CompareTabs d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.process.sec.eyebrow} h2={d.process.sec.h2} id={d.process.sec.id}><Steps d={d} /></SectionAccordion>
+  <div id="case-studies"></div>
+  <SectionAccordion eyebrow={d.results.sec.eyebrow} h2={d.results.sec.h2} id={d.results.sec.id} alt><Results d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.why.sec.eyebrow} h2={d.why.sec.h2} id={d.why.sec.id}><WhyList d={d} /></SectionAccordion>
+  <LearnAccordion items={[d.whatIs, d.signs, d.business, d.youGet]} />
+  <div id="testimonials"></div>
+  <SectionAccordion eyebrow={d.faq.sec.eyebrow} h2={d.faq.sec.h2} id={d.faq.sec.id}>
+    <p class="rp-faq-label">{d.results.testimonialsLabel}</p>
+    <Faq d={d} />
+  </SectionAccordion>
+  <SectionAccordion h2={d.related.sec.h2} id={d.related.sec.id} alt><Related d={d} /><Countries /></SectionAccordion>
+  {guides.length > 0 && (
+    <SectionAccordion h2="Guides"><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></SectionAccordion>
+  )}
+  {/* The page's closing section, as before; the Base.astro call to action follows it. */}
+  <section class="rp-close"><div class="wrap"><div class="rp-closein">
+    <div>{d.closing.sec.eyebrow && <p class="eyebrow">{d.closing.sec.eyebrow}</p>}<h2 id={d.closing.sec.id} set:html={d.closing.sec.h2} />{d.closing.text.map((t) => <p set:html={t} />)}</div>
+    <div class="rp-close-btns">{d.closing.links.map((l, i) => <a class:list={['btn', i === 0 ? 'primary' : 'ghost']} href={l.href}>{l.label}</a>)}</div>
+  </div></div></section>
+  <div class="pp-stick"><a class="btn primary" href="#quote">Get a free quote</a></div>
+</div>

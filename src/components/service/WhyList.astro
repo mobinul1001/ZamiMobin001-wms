@@ -1,0 +1,16 @@
+---
+// Why WMS: the page's titled reasons (4 shown, the rest behind a button) and the line after them.
+import { icon, tick } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const ICONS = ['search', 'db', 'chat', 'globe', 'refresh', 'clock'];
+const card = (c: Repair['why']['cards'][number], i: number) => `<article class="card rp-inc"><span class="pp-tile" style="--ic:var(--c${(i % 6) + 1})">${icon(ICONS[i % 6])}</span>${c.h ? `<h3>${c.h}</h3>` : ''}${c.p ? `<p>${c.p}</p>` : ''}${c.chk ? `<p class="rp-chk">${tick}${c.chk}</p>` : ''}</article>`;
+// Cards with a title first, in page order; the untitled one goes with the rest.
+const order = d.why.cards.map((c, i) => [c, i] as const);
+const shown = order.filter(([c]) => c.h && c.p).slice(0, 4), rest = order.filter((x) => !shown.includes(x));
+---
+<p class="sx-lead" set:html={d.why.lead} />
+<div class="rp-grid4" set:html={shown.map(([c, i]) => card(c, i)).join('')} />
+<details class="pp-rm"><summary>Show {rest.length} more reasons<Fragment set:html={icon('down')} /></summary><div class="rp-grid2" set:html={rest.map(([c, i]) => card(c, i)).join('')} /></details>
+{d.why.after.map((p) => <p class="pp-after" set:html={p} />)}

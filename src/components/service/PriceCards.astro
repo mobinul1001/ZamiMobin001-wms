@@ -1,0 +1,31 @@
+---
+// Pricing: the page's 4 price cards (the WordPress card highlighted), its note, the enterprise card as a
+// strip, and the maintenance-plan strip with the site's existing plan line (prices.json).
+import prices from '../../data/prices.json';
+import { icon, tick } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const [c0, c1, c2, c3, ent] = d.pricing.cards;
+const plans = [c0, c1, c2, c3];
+---
+<p class="sx-lead" set:html={d.pricing.lead} />
+<div class="rp-grid4 rp-plans">{plans.map((c, i) => (
+  <article class:list={['card', 'rp-plan', { pop: i === 1 }]}>
+    {i === 1 && <span class="pp-tag">Most common request</span>}
+    <p class="rp-k">{c.labels.join(' · ')}</p>
+    <h3 set:html={c.h} />
+    <p class="rp-price" set:html={c.price} />
+    <p class="rp-for" set:html={c.forLine} />
+    <a class:list={['btn', i === 1 ? 'primary' : 'ghost']} href={c.link.href}>{c.link.label}</a>
+  </article>
+))}</div>
+<p class="rp-note"><Fragment set:html={tick} /><span set:html={d.pricing.note} /> <a href="/free-website-maintenance-audit/">Get a free website check</a></p>
+<div class="rp-strip">
+  <div><p class="rp-k">{ent.labels.join(' · ')}</p><h3 set:html={ent.h} /><p><b set:html={ent.price} /> · <span set:html={ent.forLine} /></p></div>
+  <a class="btn ghost" href={ent.link.href}>{ent.link.label}</a>
+</div>
+<div class="rp-strip rp-xsell">
+  <p class="rp-xsell-t">Plans from ${prices.plans[0].monthly}/mo · Free hosting for 1 year · No contract</p>
+  <a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing<Fragment set:html={icon('arrow')} /></a>
+</div>

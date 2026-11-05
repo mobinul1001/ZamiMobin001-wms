@@ -1,0 +1,32 @@
+---
+// Compare: the page's 5 tables behind 5 tabs (radio + :has(), no script). Each is a real table in a
+// box that scrolls sideways on phones, first column sticky. "✓" in a cell becomes a tick.
+import { tick } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+// Tab names as the owner wrote them in the repair page brief (2026-11-05).
+const TABS = ['Broken vs. total failure', 'DIY vs. professional', 'Repair vs. redesign', 'Repair vs. maintenance', 'Emergency vs. scheduled'];
+const cell = (v: string) => (/^✓\s*/.test(v) ? `${tick}<span class="sr-only">✓ </span>${v.replace(/^✓\s*/, '')}` : v);
+// The column where most cells carry a tick is highlighted, as in the old page.
+const win = (t: Repair['compare']['tables'][number]) => (t.head.length - 1 > 0 ? [...Array(t.head.length - 1).keys()].find((j) => t.rows.filter((r) => /^✓/.test(r[j + 1] ?? '')).length > t.rows.length / 2) ?? -1 : -1);
+---
+<p class="sx-lead" set:html={d.compare.lead} />
+<div class="rp-cmp">
+  <div class="rp-cmp-nav" role="radiogroup" aria-label="Comparison">{TABS.map((t, i) => (
+    <label class="rp-tab"><input type="radio" name="rp-cmp" checked={i === 0} /><span>{t}</span></label>
+  ))}</div>
+  {d.compare.tables.map((t) => { const w = win(t); return (
+    <div class="rp-cmp-p">
+      <p class="rp-cmp-k"><span>{t.label}</span><span class="rp-badge" set:html={t.badge} /></p>
+      <h3 set:html={t.h} />
+      <p class="pp-swipe" aria-hidden="true">Swipe sideways to compare</p>
+      <div class="pp-tscroll rp-tscroll" tabindex="0" role="region" aria-label={`${t.h.replace(/<[^>]+>/g, '')}, scrolls sideways`}>
+        <table class="pp-t rp-t">
+          <thead><tr>{t.head.map((h, i) => <th scope="col" class:list={{ w: i - 1 === w }} set:html={h} />)}</tr></thead>
+          <tbody>{t.rows.map(([f, ...cs]) => <tr><th scope="row" set:html={f} />{cs.map((c, i) => <td class:list={{ w: i === w }} set:html={cell(c)} />)}</tr>)}</tbody>
+        </table>
+      </div>
+    </div>
+  ); })}
+</div>

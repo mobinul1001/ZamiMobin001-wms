@@ -199,6 +199,9 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 ## WordPress plans page, 2026-11-05
 - Built to the owner's design on branch `wp-plans-page`; not merged. Owner accepted 7,696 px on phones with Compare open; tablet plans are 2 + 1. Waiting for the owner: wording questions (help card title, section labels, hero buttons, stat strip, removed hero card). Details in CHANGELOG.
 
+## Website repair page, 2026-11-05
+- Built to the owner's design on branch `repair-page` (based on `wp-plans-page`); not merged. Waiting for the owner: heights over target, the "5-Step" heading with 4 steps, $99–$299 not in prices.json, "No fix, no fee" (held by rule 5 though approved on 2026-11-01), mockup wording not used. Details in CHANGELOG.
+
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
 - Testimonials.

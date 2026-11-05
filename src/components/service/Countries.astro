@@ -1,0 +1,9 @@
+---
+// Countries we serve: the 10 country pages, each with a small inline flag. The Brazil page is in Portuguese.
+import { FLAGS } from '../../lib/flags';
+const C: [string, string, string?][] = [['USA', 'usa'], ['UK', 'uk'], ['Canada', 'canada'], ['Australia', 'australia'], ['Ireland', 'ireland'], ['France', 'france'], ['Netherlands', 'netherlands'], ['Spain', 'spain'], ['Switzerland', 'switzerland'], ['Brazil', 'brazil', 'pt-BR']];
+---
+<p class="rp-subhd">Countries we serve</p>
+<div class="rp-countries">{C.map(([n, s, lang]) => (
+  <a href={`/website-maintenance-services-for-${s}/`} hreflang={lang}><Fragment set:html={FLAGS[n]} />{n}</a>
+))}</div>

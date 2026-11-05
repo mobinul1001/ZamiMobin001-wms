@@ -1,0 +1,282 @@
+/* Website repair page (owner's design, 2026-11-05). Scoped to .repair-pg; loaded after plans-page.css,
+   whose section, table-scroll, steps, FAQ and phone-bar rules it reuses. Site tokens, so both themes work.
+   Breakpoints as in the design: tablet up to 1079px, phone up to 759px, small phone up to 389px. No script. */
+.repair-pg h1 { font-size: 60px; line-height: 1.05; letter-spacing: -.04em; margin: 16px 0 20px; }
+.repair-pg .eyebrow .ic { width: 16px; height: 16px; }
+
+/* Hero: text and the quote form side by side */
+.rp-hero { padding-block: 48px 64px; background: var(--hero-art), var(--bg); }
+.rp-hero .wrap { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr); gap: 48px; align-items: start; }
+.rp-hero .crumbs { margin-bottom: 20px; font-size: 15px; color: var(--muted); }
+.rp-hero .crumbs a { color: var(--muted); }
+.rp-sub { max-width: 60ch; font-size: 20px; color: var(--ink); }
+.rp-priceline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-top: 24px; padding: 12px 16px; border-radius: 16px; background: var(--mini); border: 1px solid var(--card-line); font-size: 16px; font-weight: 600; color: var(--head); }
+.rp-priceline b { font-size: 20px; color: var(--accent); }
+.rp-priceline span { display: inline-flex; align-items: center; gap: 8px; }
+.rp-priceline span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); opacity: .5; }
+.rp-hero .cta-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 24px; }
+.rp-ticks { display: grid; gap: 12px; margin-top: 28px; }
+.rp-ticks li { display: flex; align-items: center; gap: 12px; font-weight: 500; color: var(--head); }
+.rp-hero-side { display: grid; gap: 16px; scroll-margin-top: 96px; }
+.rp-hero-side .qf { box-shadow: var(--pop-shadow); }
+.rp-panel { padding: 20px; }
+
+/* Grids and cards */
+.rp-grid4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.rp-grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.rp-grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.rp-inc { display: grid; gap: 12px; align-content: start; }
+.rp-inc h3 { font-size: 20px; }
+.rp-inc p { font-size: 15.5px; color: var(--muted); }
+.rp-k { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
+.rp-chk { display: flex; align-items: center; gap: 8px; font-size: 14.5px; font-weight: 600; color: var(--ok-ink, var(--ok)); }
+.rp-chk .tick { width: 22px; height: 22px; }
+.rp-badge { display: inline-flex; align-items: center; width: max-content; padding: 3px 10px; border-radius: 8px; background: var(--eyebrow-bg); color: var(--eyebrow); font-size: 12.5px; font-weight: 700; }
+.rp-numbers .card { display: grid; gap: 6px; align-content: start; }
+.rp-numbers b { font-size: 32px; line-height: 1.1; font-weight: 800; letter-spacing: -.03em; color: var(--head); }
+.rp-numbers p { color: var(--muted); }
+.rp-mini .card { display: grid; gap: 6px; padding: 20px; }
+.rp-mini h4 { font-size: 17px; color: var(--head); }
+.rp-mini p { font-size: 15px; color: var(--muted); }
+
+/* Find your fix: 4 tabs, one panel shown */
+.rp-pick { display: grid; gap: 20px; min-width: 0; }
+.rp-pick-label { font-size: 15px; font-weight: 700; color: var(--head); }
+.rp-pick-nav { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.rp-tab { position: relative; display: flex; align-items: center; gap: 12px; min-height: 72px; padding: 16px; border-radius: 16px; border: 1px solid var(--card-line); background: var(--card); font-weight: 700; line-height: 1.3; color: var(--head); cursor: pointer; }
+.rp-tab input { position: absolute; inset: 0; margin: 0; opacity: 0; cursor: pointer; }
+.rp-tab:has(input:checked) { background: var(--pop-bg); border-color: var(--accent); box-shadow: var(--pop-shadow); }
+.rp-tab:has(input:focus-visible) { outline: 3px solid var(--focus, var(--accent)); outline-offset: 2px; }
+.rp-pick-p { display: none; gap: 12px; padding: 24px; border-radius: 24px; border: 1px solid var(--card-line); background: var(--card); box-shadow: var(--card-shadow); min-width: 0; }
+.rp-pick:has(.rp-tab:nth-child(1) input:checked) .rp-pick-p:nth-of-type(2),
+.rp-pick:has(.rp-tab:nth-child(2) input:checked) .rp-pick-p:nth-of-type(3),
+.rp-pick:has(.rp-tab:nth-child(3) input:checked) .rp-pick-p:nth-of-type(4),
+.rp-pick:has(.rp-tab:nth-child(4) input:checked) .rp-pick-p:nth-of-type(5) { display: grid; }
+.rp-pick-k { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
+.rp-issues { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: start; }
+.rp-issues details { border-radius: 16px; background: var(--mini); border: 1px solid var(--card-line); }
+.rp-issues summary { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; min-height: 56px; padding: 14px 44px 14px 18px; position: relative; font-weight: 700; color: var(--head); cursor: pointer; list-style: none; }
+.rp-issues summary::-webkit-details-marker { display: none; }
+.rp-issues summary .ic { position: absolute; right: 16px; top: 50%; width: 20px; height: 20px; margin-top: -10px; color: var(--accent); transition: transform .2s; }
+.rp-issues details[open] summary .ic { transform: rotate(180deg); }
+.rp-issues details > p { padding: 0 18px 18px; font-size: 15.5px; color: var(--ink); }
+
+/* Pricing */
+.rp-plans { align-items: stretch; }
+.rp-plan { position: relative; display: grid; grid-template-rows: auto auto auto 1fr auto; gap: 12px; }
+.rp-plan.pop { background: var(--pop-bg); border: 2px solid var(--accent); box-shadow: var(--pop-shadow); }
+.rp-plan h3 { font-size: 20px; }
+.rp-price { font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -.03em; color: var(--head); }
+.rp-plan:last-child .rp-price { font-size: 22px; letter-spacing: -.01em; }
+.rp-for { font-size: 15.5px; color: var(--muted); }
+.rp-plan .btn { width: 100%; }
+.rp-note { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 24px; color: var(--muted); font-size: 15.5px; }
+.rp-strip { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 24px; padding: 24px 32px; border-radius: 24px; border: 1px solid var(--card-line); background: linear-gradient(90deg, var(--mini), var(--card)); }
+.rp-strip h3 { font-size: 20px; margin-top: 4px; }
+.rp-strip p:not(.rp-k) { margin-top: 4px; font-size: 15.5px; color: var(--muted); }
+.rp-strip .btn { flex: none; }
+.rp-xsell { border-left: 4px solid var(--accent); }
+.rp-xsell-t { font-size: 18px; font-weight: 700; color: var(--head); }
+
+/* Compare: 5 tabs, one table shown */
+.rp-cmp { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; min-width: 0; }
+.rp-cmp-nav { display: flex; flex-wrap: wrap; gap: 12px; min-width: 0; }
+.rp-cmp-nav .rp-tab { min-height: 48px; padding: 10px 18px; font-size: 15px; }
+.rp-cmp-p { display: none; gap: 12px; min-width: 0; }
+.rp-cmp:has(.rp-tab:nth-child(1) input:checked) .rp-cmp-p:nth-of-type(2),
+.rp-cmp:has(.rp-tab:nth-child(2) input:checked) .rp-cmp-p:nth-of-type(3),
+.rp-cmp:has(.rp-tab:nth-child(3) input:checked) .rp-cmp-p:nth-of-type(4),
+.rp-cmp:has(.rp-tab:nth-child(4) input:checked) .rp-cmp-p:nth-of-type(5),
+.rp-cmp:has(.rp-tab:nth-child(5) input:checked) .rp-cmp-p:nth-of-type(6) { display: grid; }
+.rp-cmp-k { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.rp-cmp-k .rp-badge { text-transform: none; letter-spacing: 0; }
+.rp-cmp-p h3 { font-size: 22px; }
+.rp-t { min-width: 680px; }
+.rp-t th, .rp-t td { vertical-align: top; }
+.rp-t td .tick { display: inline-grid; margin-right: 8px; vertical-align: -6px; }
+.pp-sec .sxb, .rp-tscroll { min-width: 0; max-width: 100%; }
+
+/* Steps: the plans page's line and circles; the label and check line */
+.rp-steps .rp-k { margin-top: 4px; }
+
+/* Results */
+.rp-swipe { display: none; }
+.rp-story { display: grid; gap: 12px; align-content: start; }
+.rp-story h3 { font-size: 20px; }
+.rp-story p { font-size: 15.5px; color: var(--muted); }
+.rp-story .rp-story-sub { font-weight: 700; color: var(--head); }
+.rp-story .rp-result { padding: 12px 14px; border-radius: 12px; background: var(--mini); color: var(--head); }
+.rp-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.rp-chip { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 999px; background: var(--eyebrow-bg); color: var(--eyebrow); font-size: 13px; font-weight: 700; }
+.rp-chip.ok { background: color-mix(in srgb, var(--ok) 16%, transparent); color: var(--ok-ink, var(--ok)); }
+
+/* Learn more: closed accordions with the page's long guide sections */
+.rp-acc { display: grid; gap: 12px; }
+.rp-guide { border-radius: 16px; background: var(--card); border: 1px solid var(--card-line); box-shadow: var(--card-shadow); }
+.rp-guide > summary { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; padding: 18px 24px; cursor: pointer; list-style: none; }
+.rp-guide > summary::-webkit-details-marker { display: none; }
+.rp-guide-hd { display: grid; gap: 8px; justify-items: start; }
+.plans-pg .rp-guide h2 { font-size: 24px; line-height: 1.25; letter-spacing: -.02em; max-width: none; }
+.rp-guide .sx-ic { width: 22px; height: 22px; flex: none; color: var(--accent); transition: transform .2s; }
+.rp-guide[open] > summary .sx-ic { transform: rotate(180deg); }
+.rp-guide[open] > summary { border-bottom: 1px solid var(--line); }
+.rp-guide-b { display: grid; gap: 14px; padding: 20px 24px 24px; max-width: none; }
+.rp-guide-b > * { margin: 0; }
+.rp-guide-b h3 { font-size: 20px; margin-top: 8px; }
+.rp-guide-b h4 { font-size: 17px; }
+.rp-guide-b .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.rp-guide-b .card { display: grid; gap: 8px; align-content: start; padding: 20px; }
+.rp-guide-b .card > * { margin: 0; }
+.rp-guide-b .card h3 { font-size: 18px; margin: 0; }
+.rp-guide-b ul { display: grid; gap: 8px; padding-left: 20px; list-style: disc; }
+
+/* FAQ */
+.rp-faq-label { margin: 4px 0 12px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.rp-faq .rp-faq-label { grid-column: 1 / -1; margin: 8px 0 0; }
+
+/* Related, guides and countries */
+.rp-rel a { align-items: flex-start; }
+.rp-rel h3 { font-size: 17px; line-height: 1.3; color: var(--head); }
+.rp-rel a span span { display: block; margin-top: 4px; font-size: 14.5px; font-weight: 400; color: var(--muted); }
+.rp-subhd { margin: 40px 0 16px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
+.rp-countries { display: flex; flex-wrap: wrap; gap: 10px; }
+.rp-countries a { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 10px 18px; border-radius: 999px; border: 1px solid var(--card-line); background: var(--card); font-size: 15px; font-weight: 600; color: var(--head); text-decoration: none; }
+.rp-countries a:hover { border-color: var(--accent); }
+.rp-countries .fl { width: 22px; height: 15px; flex: none; border-radius: 3px; box-shadow: 0 0 0 1px rgba(0,0,0,.18); }
+
+/* Closing section */
+.rp-close { padding-block: 32px 48px; background: var(--bg); }
+.rp-closein { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 28px 32px; border-radius: 24px; border: 1px solid var(--card-line); border-left: 4px solid var(--ok); background: linear-gradient(90deg, color-mix(in srgb, var(--ok) 10%, transparent), var(--card)); }
+.rp-closein > div:first-child { display: grid; gap: 10px; justify-items: start; }
+.plans-pg .rp-closein h2 { font-size: 32px; max-width: none; }
+.rp-closein p { color: var(--muted); }
+.rp-close-btns { display: flex; flex-wrap: wrap; gap: 12px; flex: none; }
+
+/* Tablet */
+@media (max-width: 1079px) {
+  .repair-pg h1 { font-size: 46px; }
+  .rp-hero .wrap { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .rp-grid4, .rp-grid3, .rp-pick-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rp-closein { flex-direction: column; align-items: stretch; }
+}
+
+/* Phone */
+@media (max-width: 759px) {
+  .repair-pg h1 { font-size: 36px; margin: 12px 0 16px; }
+  .rp-hero { padding-block: 24px 32px; }
+  .rp-sub { font-size: 17px; }
+  .rp-priceline { font-size: 15px; }
+  .rp-hero .cta-row { flex-direction: column; gap: 12px; }
+  .rp-hero .cta-row .btn { width: 100%; min-height: 52px; }
+  .rp-ticks { gap: 10px; margin-top: 20px; }
+  .rp-grid4, .rp-grid3, .rp-grid2, .rp-pick-nav, .rp-issues { grid-template-columns: minmax(0, 1fr); }
+  .rp-inc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .rp-inc-grid .card { padding: 16px; }
+  .rp-inc-grid .rp-inc p { font-size: 14.5px; }
+  .rp-inc-grid .pp-tile { width: 40px; height: 40px; border-radius: 12px; }
+  .rp-tab { min-height: 56px; padding: 12px 14px; }
+  .rp-pick-p { padding: 16px; }
+  .rp-strip, .rp-closein { flex-direction: column; align-items: stretch; padding: 20px; }
+  .rp-strip .btn, .rp-close-btns .btn { width: 100%; }
+  /* The tab row scrolls sideways; the page does not. */
+  .rp-cmp-nav { flex-wrap: nowrap; overflow-x: auto; margin-inline: -16px; padding: 0 16px 8px; scrollbar-width: thin; }
+  .rp-cmp-nav .rp-tab { flex: none; }
+  .rp-t th, .rp-t td { padding: 12px 14px; font-size: 15px; }
+  .rp-t tbody th { min-width: 150px; }
+  .rp-swipe { display: block; }
+  .rp-guide > summary { padding: 16px 18px; }
+  .plans-pg .rp-guide h2 { font-size: 20px; }
+  .rp-guide-b { padding: 16px 18px 20px; }
+  .plans-pg .rp-closein h2 { font-size: 26px; }
+  .rp-subhd { margin-top: 28px; }
+}
+@media (max-width: 389px) {
+  .repair-pg h1 { font-size: 32px; }
+  .rp-inc-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .repair-pg * { transition: none !important; }
+}
+
+/* Height pass (owner targets 2026-11-05: desktop ≤9,900px, tablet ≤13,000px, phone ≤9,200px at 390). No text removed. */
+/* The old "Example" panel sits under the hero ticks as a compact strip. */
+.rp-panel { margin-top: 24px; }
+.rp-panel .status-panel { padding: 16px 20px; }
+.rp-panel .status-rows, .rp-panel .status-panel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 16px; }
+.rp-panel .status-head { grid-column: 1 / -1; margin: 0 0 4px; }
+.rp-panel .status-row { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; margin: 8px 0 0 !important; padding-top: 10px; font-size: 14.5px; line-height: 1.35; }
+.rp-panel .status-row span { font-size: 13.5px; }
+.rp-panel .status-row em { grid-column: 1; grid-row: auto; align-self: start; font-size: 13.5px; }
+@media (min-width: 1080px) {
+  .repair-pg .pp-sec { padding-block: 32px; }
+  .rp-hero { padding-block: 40px 48px; }
+  .rp-rel { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 759px) {
+  .rp-panel .status-panel { grid-template-columns: minmax(0, 1fr); }
+  .rp-panel .status-row { grid-template-columns: minmax(0, 1fr) auto; }
+  .rp-panel .status-row em { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+  .rp-hero-side .qf-two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rp-sub { font-size: 16px; }
+  .rp-pick-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .rp-pick-nav .rp-tab { align-items: flex-start; flex-direction: column; gap: 8px; min-height: 0; padding: 12px; font-size: 14.5px; }
+  .rp-pick-nav .pp-tile { width: 36px; height: 36px; border-radius: 10px; }
+  .rp-issues summary { min-height: 48px; padding: 10px 40px 10px 14px; font-size: 15.5px; }
+  .rp-issues { gap: 8px; }
+  .rp-plan { gap: 8px; padding: 18px; }
+  .rp-price { font-size: 28px; }
+  .rp-plan:last-child .rp-price { font-size: 20px; }
+  .rp-for { font-size: 15px; }
+  .rp-grid4.rp-plans { gap: 20px; }
+  .rp-strip { padding: 16px; gap: 12px; margin-top: 16px; }
+  .rp-note { margin-top: 16px; }
+  .rp-guide > summary { min-height: 56px; padding: 12px 16px; }
+  .rp-guide-hd { gap: 4px; }
+  .rp-guide-hd .eyebrow { padding: 2px 10px; font-size: 11px; }
+  .plans-pg .rp-guide h2 { font-size: 19px; }
+  .rp-acc { gap: 8px; }
+  .rp-learn { padding-block: 8px; }
+  .rp-close { padding-block: 16px 24px; }
+  .rp-closein { padding: 18px; gap: 16px; }
+  .plans-pg .rp-closein h2 { font-size: 22px; }
+}
+@media (min-width: 1080px) {
+  .repair-pg h1 { font-size: 52px; margin: 12px 0 16px; }
+  .rp-panel { margin-top: 20px; }
+  .rp-ticks { margin-top: 20px; gap: 10px; }
+  .rp-guide-hd { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+  .rp-guide > summary { min-height: 60px; padding: 14px 24px; }
+  .repair-pg .sx-lead { margin-bottom: 16px; }
+  .repair-pg .pp-rm { margin-top: 12px; }
+  .rp-learn { padding-block: 24px; }
+  .rp-subhd { margin-top: 28px; }
+  .rp-story { gap: 10px; }
+}
+/* Stories swipe sideways below 1080px, as the page's own hint says; the page itself never scrolls sideways. */
+@media (max-width: 1079px) {
+  .rp-stories { display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(300px, 46%); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; min-width: 0; }
+  .rp-stories > * { scroll-snap-align: start; }
+  .rp-swipe { display: block; }
+  .rp-rel { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .repair-pg .pp-sec { padding-block: 40px; }
+}
+@media (max-width: 759px) {
+  .rp-stories { grid-auto-columns: 86%; }
+  .rp-rel { grid-template-columns: minmax(0, 1fr); }
+  .repair-pg .pp-sec { padding-block: 4px; }
+}
+@media (min-width: 1080px) {
+  .rp-ticks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* Phone: the comparison tab row scrolls inside its own box (no negative margin, so its parent never overflows),
+   and the hero button stays above the cookie bar on a 390x844 screen. */
+@media (max-width: 759px) {
+  .rp-cmp-nav { margin-inline: 0; padding: 0 0 8px; }
+  .rp-priceline { flex-wrap: nowrap; padding: 10px 14px; white-space: nowrap; }
+  .rp-priceline b { font-size: 17px; }
+  .repair-pg h1 { font-size: 34px; }
+}
+@media (max-width: 389px) {
+  .rp-priceline { font-size: 14px; gap: 10px; }
+  .rp-priceline b { font-size: 16px; }
+}

@@ -10,7 +10,7 @@ import sharp from 'sharp';
 
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const ROOT = 'reports/design-qa';
-const TEMPLATES = { home: '/', pricing: '/monthly-website-maintenance-packages/', package: '/wordpress-website-maintenance-packages/', service: '/website-repair-services/', country: '/website-maintenance-services-for-uk/', about: '/about-us/', 'blog-post': '/how-long-does-website-maintenance-take/', 'blog-index': '/blogs/', form: '/get-a-free-quote/', '404': '/404.html', 'thank-you': '/thank-you/' };
+const TEMPLATES = { home: '/', pricing: '/monthly-website-maintenance-packages/', package: '/wordpress-website-maintenance-packages/', service: '/website-update-services/', repair: '/website-repair-services/', country: '/website-maintenance-services-for-uk/', about: '/about-us/', 'blog-post': '/how-long-does-website-maintenance-take/', 'blog-index': '/blogs/', form: '/get-a-free-quote/', '404': '/404.html', 'thank-you': '/thank-you/' };
 const names = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const RUN = names.length ? names : Object.keys(TEMPLATES);
 const WIDTHS = [[1440, 900], [768, 1024], [390, 844], [360, 640]];
@@ -53,7 +53,7 @@ const MEASURE = `(d, w, vh) => {
   d.querySelectorAll('.sec[data-sec]').forEach((s) => { if (s.dataset.sec === 'final') return; for (const q of ['.head .eyebrow', '.head h2', '.head .intro']) if (!s.querySelector(q)) bad.push('section ' + s.dataset.sec + ' has no ' + q); });
   out.h1 = d.querySelectorAll('h1').length; if (out.h1 !== 1) bad.push('h1 count ' + out.h1);
   // Text overflow and broken words
-  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap, .hp-mq ul, .hp-mini, .hp-swipe > *, .wf-mark, .pp-tscroll > *') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && !e.matches('.hp-mq, .hp-swipe, .hp-more-wrap:has(> .hp-swipe), .pp-tscroll, .pp-step') && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
+  d.querySelectorAll('main *, footer *, header *, .gmb *, .final *').forEach((e) => { if (!vis(e) || e.closest('.sr-only, svg, .dash-wrap, pre, code, .tbl thead, .post-grid .tbl-wrap, .hp-mq ul, .hp-mini, .hp-swipe > *, .wf-mark, .pp-tscroll > *, .rp-cmp-nav > *, .rp-stories > *') || e.matches('.post-grid .tbl-wrap, .crumbs') || e.matches('.hero-grid, .hero-grid > div, .steps li')) return; const r = R(e); if (r.right > w + 1 || r.left < -1) bad.push('off screen: ' + e.tagName + '.' + e.className + ' ' + Math.round(r.right)); if (e.scrollWidth > e.clientWidth + 1 && e.clientWidth > 0 && !e.matches('.hp-mq, .hp-swipe, .hp-more-wrap:has(> .hp-swipe), .pp-tscroll, .pp-step, .rp-cmp-nav, .rp-stories') && win.getComputedStyle(e).display !== 'inline') bad.push('text overflow: ' + e.tagName + '.' + e.className + ' ' + e.textContent.trim().slice(0, 30)); });
   // Words split across lines inside a heading or a card title
   const range = d.createRange();
   d.querySelectorAll('h1, h2, h3, .btn, strong').forEach((e) => { if (!vis(e) || e.closest('.sr-only')) return; const walker = d.createTreeWalker(e, 4); let n; while ((n = walker.nextNode())) { const re = /\\S+/g; let m; while ((m = re.exec(n.data))) { range.setStart(n, m.index); range.setEnd(n, m.index + m[0].length); const rects = [...range.getClientRects()].filter((x) => x.width > 0); if (rects.length > 1 && Math.abs(rects[0].top - rects[rects.length - 1].top) > 4 && !/[-\\/–—@_.]/.test(m[0])) bad.push('word broken: ' + m[0]); } } });
@@ -82,7 +82,7 @@ const MEASURE = `(d, w, vh) => {
   // Type scale
   const px = (q) => { const e = d.querySelector(q); return e ? parseFloat(win.getComputedStyle(e).fontSize) : 0; };
   out.type = { h1: px('h1'), h2: px('.sec h2, .pp-sec h2'), h3: px('.sec h3, .pp-sec h3'), body: parseFloat(win.getComputedStyle(d.body).fontSize) };
-  if (w > 1080 && (out.type.h1 < (d.querySelector('.page-hero, .pp-hero') ? 44 : 56) || out.type.h1 > 72 || (out.type.h2 && (out.type.h2 < 40 || out.type.h2 > 48)) || (out.type.h3 && (out.type.h3 < 20 || out.type.h3 > 24)) || out.type.body < 17 || out.type.body > 18)) bad.push('type scale ' + JSON.stringify(out.type));
+  if (w > 1080 && (out.type.h1 < (d.querySelector('.page-hero, .pp-hero, .rp-hero') ? 44 : 56) || out.type.h1 > 72 || (out.type.h2 && (out.type.h2 < 40 || out.type.h2 > 48)) || (out.type.h3 && (out.type.h3 < 20 || out.type.h3 > 24)) || out.type.body < 17 || out.type.body > 18)) bad.push('type scale ' + JSON.stringify(out.type));
   // Header
   const cta = [...d.querySelectorAll('header .btn')].filter(vis);
   out.headerCta = cta.map((b) => b.textContent.trim());

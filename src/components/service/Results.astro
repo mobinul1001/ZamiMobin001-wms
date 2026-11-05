@@ -1,0 +1,19 @@
+---
+// Real repairs, real results: the page's 3 stories exactly as written (numbers unchanged).
+import { tick } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+---
+<p class="sx-lead" set:html={d.results.lead} />
+<p class="pp-swipe rp-swipe">{d.results.swipe}</p>
+<div class="rp-grid3 rp-stories">{d.results.stories.map((s) => (
+  <article class="card rp-story">
+    <p class="rp-chips"><span class="rp-chip">{s.tag}</span><span class="rp-chip ok">{s.badge}</span></p>
+    <h3 set:html={s.h} />
+    <p class="rp-story-sub" set:html={s.sub} />
+    <p set:html={s.p} />
+    <p class="rp-result" set:html={s.result} />
+    <p class="rp-chk"><Fragment set:html={tick} /><span set:html={s.foot} /></p>
+  </article>
+))}</div>

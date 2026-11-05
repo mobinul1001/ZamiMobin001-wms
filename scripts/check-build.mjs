@@ -185,7 +185,9 @@ for (const file of htmlFiles) {
   if (/On managed plans, updates are tested|Isolated Staging Clone|goes through isolated staging|apply and test every update/i.test($('main').text())) fail('staging', `${path}: staging claim outside the Business plan.`);
   if (path === '/website-repair-services/') {
     const repairText = $('main').text().replace(/\u2019/g, "'");
-    if (/Most issues are fixed within 24 hours/i.test(repairText) || !repairText.includes(repairTime) || !repairText.includes(noFix)) fail('repair', `${path}: repair time or No fix, no fee wording is wrong.`);
+    // "No fix, no fee" is held off the page until the owner confirms it again (repair page brief, rule 5, 2026-11-05).
+    // When it is shown, it must be the approved wording.
+    if (/Most issues are fixed within 24 hours/i.test(repairText) || !repairText.includes(repairTime) || (/no fix, no fee|fix the issue, you don't pay/i.test(repairText) && !repairText.includes(noFix))) fail('repair', `${path}: repair time or No fix, no fee wording is wrong.`);
   }
   if (promise) fail('promises', `${path}: "${promise[0]}" is not an approved promise.`);
   if (path === '/white-label-website-maintenance-services-for-agencies/') {

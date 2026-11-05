@@ -16,9 +16,9 @@ const [low, , high] = prices.plans.map((p) => p.monthly);
 const NEEDS = ['Monthly maintenance plan', 'Fix something on my site', 'Speed optimization', 'Hacked site / malware', 'Migration or redesign', 'Something else'];
 
 // The owner's quick-quote form, used in the hero and in the final call to action.
-function quickForm(id: string, title: string, text: string) {
+export function quickForm(id: string, title: string, text: string, form = `home-${id}`) {
   const f = (name: string) => `${id}-${name}`;
-  return `${formOpen(`home-${id}`, 'qf')}
+  return `${formOpen(form, 'qf')}
     <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>
     <div class="qf-two"><div><label for="${f('name')}">Full name</label><input id="${f('name')}" type="text" name="name" placeholder="Your name" autocomplete="name"></div>
     <div><label for="${f('phone')}">Phone / WhatsApp <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>

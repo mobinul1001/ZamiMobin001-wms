@@ -1,0 +1,20 @@
+---
+// What's included: the 8 items as cards (4 shown, 4 behind a button), then the longer
+// "Feature / What it means for you" list behind "Read more". Both lists are the page's own text.
+import { icon } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const ICONS = ['search', 'db', 'wrench', 'globe', 'phone', 'file', 'refresh', 'zap'];
+const card = (c: { h: string; p: string }, i: number) => `<article class="card rp-inc"><span class="pp-tile" style="--ic:var(--c${(i % 6) + 1})">${icon(ICONS[i])}</span>${c.h ? `<h3>${c.h}</h3>` : ''}${c.p ? `<p>${c.p}</p>` : ''}</article>`;
+const cards = d.included.cards;
+---
+<p class="sx-lead" set:html={d.included.lead} />
+<div class="rp-grid4 rp-inc-grid" set:html={cards.slice(0, 4).map(card).join('')} />
+<details class="pp-rm"><summary>Show {cards.length - 4} more included items<Fragment set:html={icon('down')} /></summary><div class="rp-grid4 rp-inc-grid" set:html={cards.slice(4).map((c, i) => card(c, i + 4)).join('')} /></details>
+<details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div>
+  <div class="pp-tscroll rp-tscroll" tabindex="0" role="region" aria-label="What's included, scrolls sideways"><table class="pp-t rp-t">
+    <thead><tr><th scope="col">{d.included.pairHeads[0]}</th><th scope="col">{d.included.pairHeads[1]}</th></tr></thead>
+    <tbody>{d.included.pairs.map((p) => <tr><th scope="row">{p.t}</th><td set:html={p.d} /></tr>)}</tbody>
+  </table></div>
+</div></details>
