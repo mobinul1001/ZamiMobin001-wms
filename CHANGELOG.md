@@ -320,3 +320,5 @@
 - Hero: the main button goes to the form on the page (`#quote`); the second keeps `/get-a-free-quote/`. Breadcrumb stays "Home / H1".
 - Countries use the real flag images from the homepage (`public/flags/`, alt "USA flag" etc.); the drawn flags are gone.
 - Height, by collapsing only: FAQ 6 shown + "Show all 29 questions"; Related services 4 + "Show more related services"; the issue hub's 4 tabs show at most 6 of the 22 issues at a time; the Find your fix, Pricing and One Team intros and the long text of each repair story behind "Read more". No text removed or shortened.
+- Schema change (owner, 2026-11-05): the HowTo schema's empty fifth step (position 5, no name or text, left from the removed "30-Day Warranty" step) is removed. The HowTo has the 4 visible steps, same names and order. Done in the migration (`fixHowTo` in `scripts/lib/text-edits.mjs`), which fails if the schema steps stop matching the page's "Step N: Name" headings. Checked: apart from the HowTo name (4-Step) and this step, the schema is unchanged.
+- Issue hub: the 4 tabs stay (owner, 2026-11-05). Heights within about 10% of the targets accepted.

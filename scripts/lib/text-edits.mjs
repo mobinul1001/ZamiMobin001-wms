@@ -21,3 +21,19 @@ export function applyTextEdits($, path) {
 
 // Schema: a string that is exactly the old wording.
 export const editString = (path, s) => (TEXT_EDITS[path] ?? []).find(([from]) => norm(s) === from)?.[1] ?? s;
+
+// HowTo schema that must match the page's visible steps. Owner, 2026-11-05: the repair page shows 4 steps,
+// so the empty fifth step (left over from the removed "30-Day Warranty" step) goes, and the steps that remain
+// must have the same names in the same order as the "### Step N: Name" headings in the body.
+const HOWTO_MATCH_STEPS = ['/website-repair-services/'];
+export function fixHowTo(path, schema, body) {
+  if (!HOWTO_MATCH_STEPS.includes(path)) return;
+  const visible = [...body.matchAll(/^#{2,4} Step (\d+): (.+)$/gm)].map((m) => [Number(m[1]), norm(m[2])]);
+  const nodes = schema.flatMap((d) => d['@graph'] ?? [d]).filter((n) => [].concat(n['@type'] ?? []).includes('HowTo'));
+  if (!nodes.length) throw new Error(`text-edits: no HowTo schema on ${path}`);
+  for (const n of nodes) {
+    n.step = (n.step ?? []).filter((s) => norm(String(s.name ?? '')));
+    const got = n.step.map((s) => [s.position, norm(s.name)]);
+    if (JSON.stringify(got) !== JSON.stringify(visible)) throw new Error(`text-edits: HowTo steps on ${path} ${JSON.stringify(got)} do not match the page ${JSON.stringify(visible)}`);
+  }
+}

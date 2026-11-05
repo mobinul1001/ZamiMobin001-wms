@@ -6,6 +6,8 @@ Blocks in the .md: 442. On the new page: 436. Held back by rule 5: 6. Missing: 0
 
 Heading change (owner, 2026-11-05): "Our 5-Step Website Repair Process" is now "Our 4-Step Website Repair Process" (H2, its label "Documented 4-Step System", the HowTo schema name and the H2 anchor #our-4-step-website-repair-process; no link pointed to the old anchor). Applied by scripts/lib/text-edits.mjs in the migration.
 
+Schema change (owner, 2026-11-05): the HowTo schema had an empty fifth step (position 5, no name or text), left over from the removed "30-Day Warranty" step. It is removed; the HowTo now has the 4 visible steps with the same names and order (Diagnostic Audit, Backup & Isolation, Repair & Testing, Verification Report). The migration fails if they ever stop matching the page (fixHowTo in scripts/lib/text-edits.mjs).
+
 Held back (the owner's brief, rule 5: not used until approved; they stay in the .md and come back by deleting them from `HELD` in `src/lib/repair.ts`):
 - 98.4%
 - First-time fix rate — no repeat visits needed

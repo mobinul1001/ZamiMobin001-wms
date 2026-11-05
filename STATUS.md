@@ -200,7 +200,7 @@ The owner finds the current design too plain and outdated: mostly text lists, sm
 - Built to the owner's design on branch `wp-plans-page`; not merged. Owner accepted 7,696 px on phones with Compare open; tablet plans are 2 + 1. Waiting for the owner: wording questions (help card title, section labels, hero buttons, stat strip, removed hero card). Details in CHANGELOG.
 
 ## Website repair page, 2026-11-05
-- Built to the owner's design on branch `repair-page` (based on `wp-plans-page`); not merged. Owner answers applied (No fix, no fee shown; 4-Step heading; repairRange in prices.json; hero button to #quote; real flags; heights within about 10% of the targets accepted). Still held until the owner confirms: 98.4%, 45 min, 0 sites with data loss. Merge order (owner): wp-plans-page first, then repair-page. Next pages (hacked, malware, migration) branch from main after that.
+- Built to the owner's design on branch `repair-page` (based on `wp-plans-page`); not merged. Owner answers applied (No fix, no fee shown; 4-Step heading; repairRange in prices.json; hero button to #quote; real flags; heights within about 10% of the targets accepted). Still held until the owner confirms: 98.4%, 45 min, 0 sites with data loss. Merge order (owner): wp-plans-page first, then repair-page. HowTo schema matches the 4 visible steps. Next pages (hacked, malware, migration): wait until the owner says both branches are merged, then branch from main.
 
 **Later list (owner, 2026-11-02):**
 - **LocalBusiness/Organization schema: remind the owner before launch; owner will give the exact details.** Not added yet.
