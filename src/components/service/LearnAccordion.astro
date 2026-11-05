@@ -1,0 +1,14 @@
+---
+// Learn more: the long guide sections, each a closed accordion whose summary holds its eyebrow and real H2.
+// The whole text is in the HTML.
+import { icon } from '../../lib/icons';
+import type { Sec } from '../../lib/repair';
+interface Props { items: { sec: Sec; html: string }[] }
+const { items } = Astro.props;
+---
+<section class="pp-sec alt rp-learn"><div class="wrap"><div class="rp-acc">{items.map((it) => (
+  <details class="rp-guide" id={it.sec.id ? `${it.sec.id}-guide` : undefined}>
+    <summary><span class="rp-guide-hd">{it.sec.eyebrow && <span class="eyebrow">{it.sec.eyebrow}</span>}<h2 id={it.sec.id} set:html={it.sec.h2} /></span><Fragment set:html={icon('down', 'sx-ic')} /></summary>
+    <div class="rp-guide-b prose" set:html={it.html} />
+  </details>
+))}</div></div></section>

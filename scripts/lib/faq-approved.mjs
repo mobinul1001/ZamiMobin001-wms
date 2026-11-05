@@ -1,3 +1,4 @@
+import { TEXT_EDITS } from './text-edits.mjs';
 import { readFileSync } from 'node:fs';
 import { countryPairs, countryMeta, COUNTRY_OLD_LINES } from './country-prices.mjs';
 import { articlePairs, isChangedArticleLine } from './article-prices.mjs';
@@ -120,7 +121,12 @@ const PRICE_CHANGES = {
 const allFrom = [...Object.values(PRICE_CHANGES), ...Object.values(CARD_PRICES)].flat().map(([from]) => from).filter((f) => typeof f === 'string');
 const CHANGED_TABLE_ROWS = ['Basic', 'Standard', 'Premium', '$49/mo', '$99/mo', '$199/mo', 'WP Starter$1,140$912$228', 'WP Growth$2,340$1,872$468', 'WP Premium$4,740$3,792$948', 'Annual Billing (per month)$76$156$316'];
 const countryFrom = Object.keys(LOCAL_PATHS).flatMap((p) => countryPairs(p)).map(([from]) => from).filter((s) => typeof s === 'string' && !s.includes('\n'));
-export const isApprovedOldLine = (line, path) => isChangedArticleLine(line, path) || COUNTRY_OLD_LINES.includes(line) || countryFrom.some((s) => line.includes(s)) || ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
+// Owner, repair page brief 2026-11-05, rule 5: these claims stay off the page until the owner approves them.
+// They are still in the .md and are listed in src/lib/repair.ts (HELD) and reports/repair-parity.md.
+const REPAIR_HELD_LINES = ['98.4%', 'First-time fix rate — no repeat visits needed', '45 min', 'Average emergency response time', 'Sites where we caused data loss'];
+// Owner-approved wording changes (scripts/lib/text-edits.mjs): the old wording is replaced, not lost.
+const editedFrom = (line, path) => (TEXT_EDITS[path] ?? []).some(([from]) => from === line);
+export const isApprovedOldLine = (line, path) => (path === '/website-repair-services/' && REPAIR_HELD_LINES.includes(line)) || editedFrom(line, path) || isChangedArticleLine(line, path) || COUNTRY_OLD_LINES.includes(line) || countryFrom.some((s) => line.includes(s)) || ['20%', 'Advanced', 'Elevate'].includes(line) || CHANGED_TABLE_ROWS.includes(line) || /95[\s\u00a0]USD\/mes \(Essential\)/.test(line) || allFrom.some((f) => line.includes(f));
 
 // Schema question whose visible text is a section rather than an FAQ entry.
 const SECTION_ANSWERS = {

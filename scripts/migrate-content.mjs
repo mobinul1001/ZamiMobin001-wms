@@ -9,6 +9,7 @@ import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
+import { applyTextEdits, editString, fixHowTo } from './lib/text-edits.mjs';
 import { fixContactText } from './lib/company-facts.mjs';
 import { readCsv } from './lib/csv.mjs';
 import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
@@ -261,6 +262,7 @@ async function convert(path, record) {
 
   applyApprovedRemovals($, path);
   applyClaims($, path, log.claims);
+  applyTextEdits($, path);
 
   // The approved H1 goes in the frontmatter and the layout prints it once. On pages with no H1
   // today, the first heading stays in the body as it was.
@@ -462,9 +464,10 @@ for (const [u, m] of pages) {
   const cleanSchema = (n, key = '') => {
     if (Array.isArray(n)) return n.map((x) => cleanSchema(x, key));
     if (n && typeof n === 'object') return Object.fromEntries(Object.entries(n).map(([k, v]) => [k, cleanSchema(v, k)]).filter(([, v]) => v !== ''));
-    return typeof n === 'string' && !/^https?:|^@/.test(n) && !['@type', '@id', 'url'].includes(key) ? cleanValue(n, `schema ${key}`) : n;
+    return typeof n === 'string' && !/^https?:|^@/.test(n) && !['@type', '@id', 'url'].includes(key) ? editString(path, cleanValue(n, `schema ${key}`)) : n;
   };
   schema.splice(0, schema.length, ...schema.map((d) => cleanSchema(d)));
+  fixHowTo(path, schema, body);
   record.metaDescription = cleanValue(record.metaDescription ?? '', 'meta description');
   for (const [k, v] of Object.entries(record.socialTags ?? {})) if (typeof v === 'string' && !/^https?:/.test(v)) record.socialTags[k] = cleanValue(v, k);
   if (removed.length) log.schemaRemoved.push({ path, removed: [...new Set(removed)] });

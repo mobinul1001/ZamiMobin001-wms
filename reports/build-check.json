@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-05T12:56:26.666Z",
+  "checkedAt": "2026-11-05T13:11:06.489Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 6836,
-  "images": 332,
+  "links": 6835,
+  "images": 342,
   "faqs": 488,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -14,7 +14,7 @@
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 54,
-    "forms": 13,
+    "forms": 14,
     "image-size": 1,
     "placeholders": 1,
     "anchors": 8
@@ -66,6 +66,7 @@
     "[seo-length] /website-redesign-seo/: description is 165 characters (aim for 155).",
     "[seo-length] /website-redesign-services/: title is 67 characters (aim for 60).",
     "[forms] /website-redesign-services/: no Formspree ID yet.",
+    "[forms] /website-repair-services/: no Formspree ID yet.",
     "[seo-length] /website-seo-services/: title is 66 characters (aim for 60).",
     "[forms] /website-seo-services/: no Formspree ID yet.",
     "[seo-length] /website-speed-optimization-services/: title is 64 characters (aim for 60).",

@@ -1,0 +1,8 @@
+---
+// The 4 approved trust facts (owner's repair page brief, rule 5). Nothing else goes here.
+import { icon } from '../../lib/icons';
+const FACTS = [['shield', '650+', 'websites maintained'], ['clock', '12+ years', 'of experience'], ['star', '5.0', 'rated by our clients'], ['award', 'Google Partner', 'certified agency']];
+---
+<section class="pp-proof rp-proof" aria-label="Why trust WMS"><div class="wrap"><ul>{FACTS.map(([ic, v, l], i) => (
+  <li><span class="pp-tile" style={`--ic:var(--c${[1, 2, 5, 4][i]})`}><Fragment set:html={icon(ic)} /></span><span><b>{v}</b>{l}</span></li>
+))}</ul></div></section>

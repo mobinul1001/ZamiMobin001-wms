@@ -1,0 +1,24 @@
+---
+// "Find your fix": the old page's own issue hub. 4 category tabs (radio + :has(), no script); each tab
+// shows its issues as accordions with the old badge. Every issue's text is in the HTML.
+import { icon } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const ICONS = ['zap', 'cart', 'layout', 'shield'];
+---
+<details class="pp-rm rp-rm-p"><summary>Read more<Fragment set:html={icon('down')} /></summary><div><p set:html={d.finder.lead} /></div></details>
+<div class="rp-pick">
+  <p class="rp-pick-label" id="rp-pick-label">{d.finder.label}</p>
+  <div class="rp-pick-nav" role="radiogroup" aria-labelledby="rp-pick-label">{d.finder.groups.map((g, i) => (
+    <label class="rp-tab"><input type="radio" name="rp-pick" checked={i === 0} /><span class="pp-tile" style={`--ic:var(--c${[3, 2, 4, 5][i]})`}><Fragment set:html={icon(ICONS[i])} /></span><span>{g.long}</span></label>
+  ))}</div>
+  {d.finder.groups.map((g) => (
+    <div class="rp-pick-p">
+      <p class="rp-pick-k">{g.short}</p>
+      <div class="rp-issues">{g.items.map((it) => (
+        <details><summary><span class="rp-issue-t">{it.t}</span><span class="rp-badge">{it.tag}</span><Fragment set:html={icon('down')} /></summary><p set:html={it.p} /></details>
+      ))}</div>
+    </div>
+  ))}
+</div>

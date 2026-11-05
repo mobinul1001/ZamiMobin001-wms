@@ -1,0 +1,15 @@
+---
+// FAQ: every question on the page, in page order. 6 shown, the rest behind "Show all N questions".
+// The FAQ schema comes from the page's front matter and is not touched.
+import { icon } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const item = (f: Repair['faq']['items'][number]) => ('label' in f ? `<p class="rp-faq-label">${f.label}</p>` : `<details><summary><span>${f.q}</span>${icon('down')}</summary><div class="a"><p>${f.a}</p></div></details>`);
+const qs = d.faq.items.filter((f) => 'q' in f).length;
+const shown = d.faq.items.slice(0, 6), rest = d.faq.items.slice(6);
+---
+<div class="pp-faq rp-faq">
+  <Fragment set:html={shown.map(item).join('')} />
+  {rest.length > 0 && <details class="pp-rm pp-faq-more"><summary>Show all {qs} questions<Fragment set:html={icon('down')} /></summary><div class="pp-faq" set:html={rest.map(item).join('')} /></details>}
+</div>

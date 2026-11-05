@@ -11,6 +11,7 @@ import BlogIndex from '../components/templates/BlogIndex.astro';
 import Service from '../components/templates/Service.astro';
 import Form from '../components/templates/Form.astro';
 import WpPlans from '../components/templates/WpPlans.astro';
+import RepairPage from '../components/templates/RepairPage.astro';
 
 export async function getStaticPaths() {
   const entries = [...(await getCollection('pages')), ...(await getCollection('blog'))];
@@ -28,6 +29,7 @@ const FORM_PAGES = ['/contact/', '/get-a-free-quote/', '/free-website-maintenanc
 const pick = () => {
   if (path === '/') return Home;
   if (path === '/wordpress-website-maintenance-packages/') return WpPlans;
+  if (path === '/website-repair-services/') return RepairPage;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (FORM_PAGES.includes(path)) return Form;
@@ -40,7 +42,7 @@ if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, p
 // A short call to action at the end of a page becomes its final CTA box.
 const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
 if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
-const hasForm = path === '/' || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
+const hasForm = path === '/' || Template === RepairPage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>
   {hasForm && <script is:inline defer src="/forms.js" slot="head"></script>}

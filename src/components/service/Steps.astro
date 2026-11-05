@@ -1,0 +1,12 @@
+---
+// How it works: the page's 4 steps, each with its small label and check line.
+import { tick } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+const COLORS = ['#1d6fd8', '#0a7f54', '#c2410c', '#7e22ce'];
+---
+<p class="sx-lead" set:html={d.process.lead} />
+<ol class="pp-steps rp-steps">{d.process.steps.map((s, i) => (
+  <li class="pp-step"><span class="n" style={`--sc:${COLORS[i % 4]}`}>{s.n}</span>{s.label && <p class="rp-k">{s.label}</p>}<h3 set:html={s.h} /><p set:html={s.p} /><p class="rp-chk"><Fragment set:html={tick} />{s.chk}</p></li>
+))}</ol>

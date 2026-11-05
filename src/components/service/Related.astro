@@ -1,0 +1,10 @@
+---
+// Related services: the page's 10 cards with their links and H3s; 4 shown, the rest behind "Show more related services".
+import { icon } from '../../lib/icons';
+import type { Repair } from '../../lib/repair';
+interface Props { d: Repair }
+const { d } = Astro.props;
+---
+<p class="sx-lead" set:html={d.related.lead} />
+<div class="pp-rel rp-rel">{d.related.cards.slice(0, 4).map((c) => <a href={c.href}><span><h3>{c.h}</h3><span>{c.p}</span></span></a>)}</div>
+<details class="pp-rm"><summary>Show more related services<Fragment set:html={icon('down')} /></summary><div class="pp-rel rp-rel">{d.related.cards.slice(4).map((c) => <a href={c.href}><span><h3>{c.h}</h3><span>{c.p}</span></span></a>)}</div></details>
