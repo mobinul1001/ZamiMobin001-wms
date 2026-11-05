@@ -34,6 +34,13 @@ const load = (src) => new Promise((done) => { const f = document.createElement('
   localStorage.clear();
   // The first-screen button is on the first phone screen, and the header sits at the top.
   const sized = (src, w, h) => new Promise((done) => { const f = document.createElement('iframe'); f.style.cssText = 'width:' + w + 'px;height:' + h + 'px;border:0;position:fixed;left:0;top:0'; f.onload = () => done(f); f.src = src; document.body.appendChild(f); });
+  // Batch 1, Stage 2B: on a 320 px phone the homepage has no placeholder text and nothing wider than the screen.
+  const narrow = await sized('/', 320, 640);
+  await new Promise((r) => setTimeout(r, 300));
+  const nd = narrow.contentDocument;
+  const scrollBox = (e) => { for (let x = e.parentElement; x; x = x.parentElement) { const o = getComputedStyle(x).overflowX; if (o === 'auto' || o === 'scroll' || o === 'hidden' || o === 'clip') return true; } return false; };
+  out.home320 = { placeholder: nd.body.textContent.includes('Design placeholder') || nd.body.textContent.includes('[Real client'), pageOverflow: nd.documentElement.scrollWidth - nd.documentElement.clientWidth, wide: [...nd.querySelectorAll('main *')].filter((e) => { const r = e.getBoundingClientRect(); return r.width && r.right > 321 && !scrollBox(e); }).slice(0, 3).map((e) => e.tagName + '.' + e.className) };
+  narrow.remove();
   out.mobile = [];
   for (const [w, h] of [[390, 844], [360, 640]]) for (const p of ["/","/wordpress-website-maintenance-packages/","/ecommerce-website-maintenance-packages/","/shopify-website-maintenance-packages/","/website-repair-services/","/website-hacked-recovery-services/","/wordpress-malware-removal-service/","/website-migration-services/","/website-redesign-services/","/website-design-services/","/website-seo-services/","/website-speed-optimization-services/","/website-support-services/","/website-update-services/","/wordpress-backup-services/","/white-label-website-maintenance-services-for-agencies/","/wms-partner-program/","/website-maintenance-services-for-usa/","/website-maintenance-services-for-uk/","/website-maintenance-services-for-canada/","/website-maintenance-services-for-australia/","/website-maintenance-services-for-france/","/website-maintenance-services-for-spain/","/website-maintenance-services-for-netherlands/","/website-maintenance-services-for-switzerland/","/website-maintenance-services-for-ireland/","/website-maintenance-services-for-brazil/"]) {
     const f = await sized(p, w, h);
@@ -110,6 +117,7 @@ const checks = {
   'consent default is denied': r.noBars.defaultDenied,
   'Services menu: 4 groups, 16 links, mobile too': eq(r.menu.groups, ['Maintenance', 'Fix and security', 'Partners', 'Build and grow']) && r.menu.links === 16 && r.menu.mobileLinks === 16,
   'Services menu sets aria-expanded': r.menu.before === 'false' && r.menu.after === 'true',
+  'homepage at 320: no placeholder text, nothing wider than the screen': !r.home320.placeholder && r.home320.pageOverflow === 0 && r.home320.wide.length === 0,
   'first-screen button on the first phone screen': r.mobile.every((m) => !m.covered && m.headerTop === 0),
   'success opens /thank-you/': r.sendOk.path === '/thank-you/',
   'fetch asks for JSON and sends form_name': r.sendOk.sent.accept === 'application/json' && r.sendOk.sent.formName === 'contact',

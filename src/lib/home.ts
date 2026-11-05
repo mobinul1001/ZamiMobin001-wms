@@ -4,6 +4,8 @@ import * as cheerio from 'cheerio';
 import prices from '../data/prices.json';
 import site from '../data/site.json';
 import design from '../data/home-design.json';
+// Real client reviews, filled by the owner: [{ "quote", "name", "role", "company", "country", "source" }].
+import reviewData from '../data/reviews.json';
 import { badge, icon, nope, tick } from './icons';
 import { plansHtml } from './plans';
 import { describeLinks, formOpen } from './html-sections';
@@ -239,7 +241,17 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const seconds = (v?: string) => parseFloat(v ?? '');
   if (!speed || !(seconds(speed.before) > seconds(speed.after))) throw new Error('home case study speed changed');
   const pct = Math.round((seconds(speed.after) / seconds(speed.before)) * 100);
-  const reviews = [1, 2, 3].map((i) => `<figure class="hp-tq fade"><div class="hp-stars" aria-hidden="true">★★★★★</div><blockquote>“[Real client quote ${i} goes here — 2 or 3 sentences about the problem we solved and the result.]”</blockquote><figcaption><span class="hp-av">${['AB', 'CD', 'EF'][i - 1]}</span><span><b>[Client name]</b><small>[Role, Company · Country]</small></span><span class="hp-src">via Clutch</span></figcaption></figure>`).join('');
+  // Client reviews (owner, 2026-11-05): shown only when src/data/reviews.json has real, approved reviews.
+  // The placeholder cards and their note appear in dev mode only, never in a build.
+  const real = reviewData as { quote: string; name: string; role?: string; company?: string; country?: string; source?: string }[];
+  const initials = (n: string) => n.split(/\s+/).map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+  const reviewCard = (r: (typeof real)[number]) => `<figure class="hp-tq fade"><blockquote>“${r.quote}”</blockquote><figcaption><span class="hp-av">${initials(r.name)}</span><span><b>${r.name}</b><small>${[[r.role, r.company].filter(Boolean).join(', '), r.country].filter(Boolean).join(' · ')}</small></span>${r.source ? `<span class="hp-src">via ${r.source}</span>` : ''}</figcaption></figure>`;
+  const placeholders = [1, 2, 3].map((i) => `<figure class="hp-tq fade"><div class="hp-stars" aria-hidden="true">★★★★★</div><blockquote>“[Real client quote ${i} goes here — 2 or 3 sentences about the problem we solved and the result.]”</blockquote><figcaption><span class="hp-av">${['AB', 'CD', 'EF'][i - 1]}</span><span><b>[Client name]</b><small>[Role, Company · Country]</small></span><span class="hp-src">via Clutch</span></figcaption></figure>`).join('');
+  const reviewsBlock = real.length
+    ? `<div class="hp-tqs hp-swipe" role="region" aria-label="Client reviews" tabindex="0">${real.map(reviewCard).join('')}</div>`
+    : import.meta.env.DEV
+      ? `<div class="hp-tqs hp-swipe" role="region" aria-label="Client reviews" tabindex="0" data-claim-ok="owner 2026-11-03, placeholders">${placeholders}</div><p class="hp-ph-note">Design placeholder: replace with 3 real client reviews (name, company, country, written OK) before launch.</p>`
+      : '';
   // Monthly report, option A "Dashboard" (owner's pick, 2026-11-04). Example numbers, labelled as such.
   const ROWS: [string, string, string, number, boolean?][] = [['refresh', 'Updates applied', '14', 100], ['db', 'Backups completed', '30 / 30', 100], ['shield', 'Malware found', '0 · Clean', 100, true], ['pen', 'Edit time used', '1h 40m / 3h', 56]];
   const report = `<aside class="hp-report fade" aria-label="Example monthly report">
@@ -256,8 +268,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
         <div class="hp-metrics">${metrics.map((m) => `<div><strong>${m.label}</strong><div class="hp-metric-v"><s>${m.before}</s>${icon('arrow')}<span>${m.after}</span></div></div>`).join('')}</div>
       </div>
     </article>${report}</div>
-    <div class="hp-tqs hp-swipe" role="region" aria-label="Client reviews" tabindex="0" data-claim-ok="owner 2026-11-03, placeholders">${reviews}</div>
-    <p class="hp-ph-note">Design placeholder: replace with 3 real client reviews (name, company, country, written OK) before launch.</p>`;
+    ${reviewsBlock}`;
 
   // 8. Services: the 4 illustrated cards on top, the other 10 services as a compact link grid.
   const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };

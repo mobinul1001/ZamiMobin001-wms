@@ -825,3 +825,25 @@ input.bill { position: absolute; opacity: 0; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) {
   .prose .card:hover { transform: none; }
 }
+
+/* Batch 1, Stage 2C (owner, 2026-11-05): tap targets of at least 44 px on phones and nothing sticking out.
+   Sizes of the tap areas only; the look stays the same. */
+.top .logo { display: inline-flex; align-items: center; min-height: 44px; }
+.crumbs a { padding-block: 12px; }
+.feat summary { display: inline-flex; align-items: center; min-height: 44px; }
+.toc a, .toc-m a { display: flex; align-items: center; min-height: 44px; }
+.toc-m summary { min-height: 44px; }
+main p:has(> svg) > a[href^="tel:"], main p:has(> svg) > a[href^="mailto:"] { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 760px) {
+  main summary { min-height: 44px; }
+  /* A table inside a card scrolls sideways instead of sticking out. */
+  main .card table { display: block; max-width: 100%; overflow-x: auto; }
+}
+main a[href^="tel:"] { display: inline-flex; align-items: center; min-height: 44px; }
+main td > a:only-child { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 760px) {
+  /* Wide article tables scroll inside their wrapper on phones. */
+  .tbl-wrap { overflow-x: auto; max-width: 100%; }
+}
+/* Add-on cards on the pricing page: "Ask for a price" links are 44 px tap targets. */
+.compare-cards li > a { display: inline-flex; align-items: center; min-height: 44px; }

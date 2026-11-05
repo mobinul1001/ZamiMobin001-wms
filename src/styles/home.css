@@ -421,3 +421,43 @@
 /* Country flags */
 .country .flag { width: 40px; height: 30px; flex: none; border-radius: 5px; object-fit: cover; box-shadow: 0 0 0 1px var(--line), 0 2px 6px rgba(15,23,42,.12); }
 .hp-countries .country.card { display: flex; align-items: center; gap: 12px; }
+
+/* Batch 1, Stage 2A (owner, 2026-11-05): responsive fixes on the homepage. */
+/* 1. Swipe cards keep their own height; no pinned "Read more" leaving empty space. */
+@media (max-width: 760px) {
+  .hp-swipe { align-items: flex-start; }
+  .hp-swipe .hp-card-more, .hp-swipe .hp-bc .btn-row { margin-top: 0; }
+  .hp-swipe .hp-bc .hp-big-label { margin-top: var(--s2); }
+}
+/* 3. Monthly report: ring above the number on small screens; the Example tag stays in the card. */
+.hp-report-top { flex-wrap: wrap; }
+.hp-report-top .tag { flex: none; }
+@media (max-width: 420px) {
+  .hp-ring { flex-direction: column; align-items: flex-start; }
+  .hp-ring b { font-size: 1.75rem; white-space: nowrap; }
+}
+/* 4. Trust bar icons never shrink. */
+.hp-tb-ic { flex: none; }
+.hp-trustbar li { min-width: 0; }
+/* 5. Comparison tabs: a compact segmented control, not two big pills. */
+.hp-tab { min-height: 44px; padding: 8px 16px; border-radius: 12px; font-size: 15px; line-height: 1.25; }
+@media (max-width: 760px) {
+  .hp-tabs { gap: 6px; padding: 4px; border-radius: 16px; background: var(--mini); border: 1px solid var(--card-line); }
+  .hp-tab { flex: 1 1 0; justify-content: center; text-align: center; padding: 8px 10px; border: 0; background: transparent; box-shadow: none; }
+}
+/* 6. Country chips: names never clipped; one column below 360px. */
+.country { min-width: 0; }
+@media (max-width: 760px) {
+  .hp-countries .country.card { gap: 8px; padding: 8px 10px; font-size: .875rem; }
+  .hp-countries .country .flag { width: 26px; height: 20px; }
+}
+@media (max-width: 359px) {
+  .hp-countries .grid.g5 { grid-template-columns: minmax(0, 1fr); }
+}
+/* Stage 2C: the hero rating link is a 44 px tap target; the trust bar is one column below 360 px. */
+main a[href^="https://clutch.co"] { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 359px) {
+  .hp-trustbar ul { grid-template-columns: minmax(0, 1fr); }
+}
+.hp-card-more > summary { display: flex; align-items: center; min-height: 44px; }
+.hp-countries .country.card { min-height: 44px; }

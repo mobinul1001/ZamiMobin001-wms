@@ -183,6 +183,9 @@ for (const file of htmlFiles) {
     const offer = /free hosting|hosting free|free (?:business )?webmails?|2 free webmail|free email accounts?|hospedagem grátis|webmail grátis|alojamiento gratis/i.exec(readFileSync(file, 'utf8').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' '));
     if (offer) fail('free-offer', `${path}: "${offer[0]}" (free hosting and free email come only with a redesign).`);
   }
+  // Batch 1, Stage 2B (owner, 2026-11-05): no design placeholders or unfinished text in a build.
+  const unfinished = /Design placeholder|\[Real client|\bLorem\b|\bTODO\b/.exec(readFileSync(file, 'utf8').replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' '));
+  if (unfinished) fail('placeholder', `${path}: "${unfinished[0]}" must not be in a build.`);
   // Every header and mobile menu link must have a page.
   for (const a of $('header a[href^="/"], .mnav a[href^="/"]').toArray()) {
     const href = ($(a).attr('href') ?? '').split('#')[0];

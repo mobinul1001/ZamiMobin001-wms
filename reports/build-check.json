@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-05T14:35:37.450Z",
+  "checkedAt": "2026-11-05T16:03:17.490Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
@@ -16,7 +16,6 @@
     "seo-length": 53,
     "forms": 14,
     "image-size": 1,
-    "placeholders": 1,
     "anchors": 8
   },
   "warnings": [
@@ -45,7 +44,6 @@
     "[seo-length] /how-often-should-you-redesign-your-website/: description is 162 characters (aim for 155).",
     "[seo-length] /how-to-redesign-a-website-without-losing-seo/: description is 161 characters (aim for 155).",
     "[seo-length] /importance-of-website-maintenance/: description is 161 characters (aim for 155).",
-    "[placeholders] /: the review cards are placeholders; replace them with real reviews before launch.",
     "[forms] /: no Formspree ID yet.",
     "[seo-length] /nonprofit-website-maintenance/: description is 165 characters (aim for 155).",
     "[seo-length] /there-has-been-a-critical-error-on-this-website-wordpress/: title is 71 characters (aim for 60).",

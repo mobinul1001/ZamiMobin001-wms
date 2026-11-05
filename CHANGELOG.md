@@ -328,3 +328,8 @@
 - Free hosting and the 2 free email accounts removed everywhere except the redesign page (which has none today): plan lists (prices.json, features.json), homepage, pricing and service templates, country pages, the WordPress plans page, comparison posts, meta, schema and FAQ answers. Content rules in `scripts/lib/text-edits.mjs`.
 - Header "Services" menu lists all 16 service pages in 4 groups (desktop 3 columns, mobile accordion), with `aria-expanded` and Esc.
 - Checks: free-offer, menu-link, cookie-bar-back and top-bar-back rules; browser tests for the new state. Report: `reports/batch-1/stage-1.md`.
+
+## 2026-11-05: Batch 1, Stage 2 — responsive fix (branch `responsive-fix`, not merged)
+- Homepage: swipe cards keep their own height; placeholder reviews only in dev mode (real reviews from `src/data/reviews.json`); report card stacks at ≤420 px; trust bar icons never shrink; compact comparison tabs; country chips never clip.
+- Tests: design-qa `--sweep` (11 widths, both themes) with card-overflow, Example-tag and 44 px tap-target checks; build check fails on placeholder text, Lorem and TODO; new browser check at 320 px.
+- Audit: 580 problems found on 12 templates, all fixed with CSS (tap areas, wrapping, table scroll). Report: `reports/batch-1/stage-2.md`.

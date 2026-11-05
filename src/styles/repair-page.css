@@ -300,3 +300,8 @@
   .rp-priceline { margin-top: 14px; }
   .rp-hero .cta-row { margin-top: 14px; }
 }
+/* Stage 2C: the note link is a 44 px tap target; the price line wraps on the narrowest phones. */
+.rp-note a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 359px) {
+  .rp-priceline { flex-wrap: wrap; white-space: normal; }
+}
