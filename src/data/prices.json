@@ -50,6 +50,11 @@
     99,
     299
   ],
+  "malwareTiers": {
+    "status": "PENDING owner confirmation (batch 1, 2026-11-05): from the malware page text; Cleanup uses hackedSiteCleanup",
+    "protect": 249,
+    "priority": 349
+  },
   "local": {
     "/website-maintenance-services-for-usa/": {
       "currency": "USD",

@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-05T16:55:44.624Z",
+  "checkedAt": "2026-11-05T17:26:42.477Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 8614,
-  "images": 352,
+  "links": 8624,
+  "images": 362,
   "faqs": 488,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -14,7 +14,7 @@
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 53,
-    "forms": 15,
+    "forms": 16,
     "image-size": 1,
     "anchors": 4
   },
@@ -82,6 +82,7 @@
     "[forms] /wordpress-backup-services/: no Formspree ID yet.",
     "[seo-length] /wordpress-malware-removal/: title is 66 characters (aim for 60).",
     "[seo-length] /wordpress-malware-removal/: description is 187 characters (aim for 155).",
+    "[forms] /wordpress-malware-removal-service/: no Formspree ID yet.",
     "[forms] /wordpress-malware-removal-service/: no Formspree ID yet.",
     "[seo-length] /wordpress-php-vulnerability/: title is 65 characters (aim for 60).",
     "[seo-length] /wordpress-security-checklist/: description is 173 characters (aim for 155).",

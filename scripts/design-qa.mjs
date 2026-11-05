@@ -10,7 +10,7 @@ import sharp from 'sharp';
 
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const ROOT = 'reports/design-qa';
-const TEMPLATES = { home: '/', pricing: '/monthly-website-maintenance-packages/', package: '/wordpress-website-maintenance-packages/', service: '/website-update-services/', repair: '/website-repair-services/', hacked: '/website-hacked-recovery-services/', country: '/website-maintenance-services-for-uk/', about: '/about-us/', 'blog-post': '/how-long-does-website-maintenance-take/', 'blog-index': '/blogs/', form: '/get-a-free-quote/', '404': '/404.html', 'thank-you': '/thank-you/' };
+const TEMPLATES = { home: '/', pricing: '/monthly-website-maintenance-packages/', package: '/wordpress-website-maintenance-packages/', service: '/website-update-services/', repair: '/website-repair-services/', hacked: '/website-hacked-recovery-services/', malware: '/wordpress-malware-removal-service/', country: '/website-maintenance-services-for-uk/', about: '/about-us/', 'blog-post': '/how-long-does-website-maintenance-take/', 'blog-index': '/blogs/', form: '/get-a-free-quote/', '404': '/404.html', 'thank-you': '/thank-you/' };
 const names = process.argv.slice(2).filter((a) => !a.startsWith('--'));
 const RUN = names.length ? names : Object.keys(TEMPLATES);
 const SWEEP = [[320, 640], [360, 640], [390, 844], [430, 932], [600, 960], [768, 1024], [900, 1024], [1024, 768], [1280, 800], [1440, 900], [1920, 1080]];

@@ -336,3 +336,6 @@
 
 ## 2026-11-05: Batch 1, Stage 3 — hacked recovery page (branch `hacked-page`, not merged)
 - `/website-hacked-recovery-services/` rebuilt to the owner's design (new template, parser, stylesheet; reuses the plans and repair styles). Held claims collapsed with `<!-- OWNER CHECK -->`. SEO unchanged; parity 259/259 blocks. Report: `reports/batch-1/stage-3.md`.
+
+## 2026-11-05: Batch 1, Stage 4 — malware removal page (branch `malware-page`, not merged)
+- `/wordpress-malware-removal-service/` rebuilt to the owner's design. $249 and $349 added to prices.json as pending (`malwareTiers`). Held claims collapsed with `<!-- OWNER CHECK -->`. SEO unchanged. Report: `reports/batch-1/stage-4.md`.
