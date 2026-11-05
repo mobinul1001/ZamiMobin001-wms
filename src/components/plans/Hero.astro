@@ -1,0 +1,18 @@
+---
+// Compact hero: breadcrumb, the page's own eyebrow heading, H1, intro, its two links, and the second intro paragraph as the side card.
+import { icon } from '../../lib/icons';
+import { hlLast } from '../../lib/polish';
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { h1: string; hero: WpPlans['hero']; check: { href: string; label: string } }
+const { h1, hero, check } = Astro.props;
+---
+<section class="pp-hero"><div class="wrap">
+  <div>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
+    <h2 class="eyebrow pp-eyebrow-h"><Fragment set:html={icon('layout')} /><span set:html={hero.eyebrow} /></h2>
+    <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
+    <p class="pp-sub" set:html={hero.lead} />
+    <div class="pp-cta">{hero.links.map((l, i) => <a class:list={['btn', i === 0 ? 'primary' : 'ghost']} href={l.href}>{l.label}{i === 0 && <Fragment set:html={icon('arrow')} />}</a>)}</div>
+  </div>
+  <aside class="pp-help"><p set:html={hero.more} /><a class="btn primary" href={check.href}>{check.label}</a></aside>
+</div></section>

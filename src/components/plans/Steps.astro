@@ -1,0 +1,11 @@
+---
+// How it works: 4 numbered steps with a gradient line between them (desktop), then the process link.
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+const COLORS = ['#1d6fd8', '#7c3aed', '#be185d', '#047857'];
+---
+<ol class="pp-steps">{d.process.steps.map((s, i) => (
+  <li class="pp-step"><span class="n" style={`--sc:${COLORS[i % 4]}`}>{s.n}</span><h3 set:html={s.h} /><p set:html={s.p} /></li>
+))}</ol>
+{d.process.after.map((p) => <p class="pp-after" set:html={p} />)}

@@ -1,0 +1,31 @@
+---
+// Plans right under the hero: Monthly/Yearly radios (CSS only, monthly first), 3 cards from prices.json,
+// the "What's Included in Every Plan?" chips and the store line, all with the page's own wording.
+import { icon, tick } from '../../lib/icons';
+import { money, type WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+---
+<section class="pp-plans" id="pricing"><div class="wrap">
+  <div class="pp-plans-head"><h2 set:html={d.plansBlock.h2} /><p set:html={d.plansBlock.lead} /><p class="pp-note">{d.plansBlock.note}</p></div>
+  <div class="pbox">
+    <div class="pp-toggle" role="radiogroup" aria-label="Billing period">
+      <label><input type="radio" name="pp-bill" checked />Monthly</label>
+      <label><input type="radio" name="pp-bill" />Yearly <span class="save">{d.annualNote}</span></label>
+    </div>
+    <div class="pp-grid3">{d.plans.map((p) => (
+      <article class:list={['card', 'pp-plan', { pop: p.popular }]}>
+        {p.tag && <span class="pp-tag">{p.tag}</span>}
+        <h3>{p.name}</h3>
+        <p class="pp-price"><span class="pp-m">{money(p.monthly)}<small>/mo</small></span><span class="pp-y">{money(p.annual)}<small>/yr</small><em class="pp-yn">{d.annualNote}</em></span></p>
+        <p class="pp-yr pp-m">or {money(p.annual)}/yr, {d.annualNote}</p>
+        <p class="pp-for" set:html={p.forLine} />
+        <ul class="pp-list">{p.includes.map((f) => <li><Fragment set:html={tick} /><span>{f}</span></li>)}</ul>
+        <a class:list={['btn', p.popular ? 'primary' : 'ghost']} href={p.button.href}>{p.button.label}</a>
+      </article>
+    ))}</div>
+  </div>
+  {/* Open from 760px up (plans-page.css); on phones it starts closed, with its own heading as the switch. */}
+  <details class="pp-incl pp-fold"><summary><h2 set:html={d.included.h2} /><Fragment set:html={icon('down', 'sx-ic')} /></summary><div class="pp-fold-b">{d.included.lead && <p set:html={d.included.lead} />}<ul class="pp-chips">{d.included.items.map((t) => <li>{t}</li>)}</ul></div></details>
+  <p class="pp-store" set:html={d.plansBlock.store} />
+</div></section>

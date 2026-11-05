@@ -1,0 +1,61 @@
+---
+// WordPress plans page, owner's design (wp-plans-for-claude-code.zip, 2026-11-04). All text is the page's own
+// (src/lib/wp-plans.ts); prices from prices.json. Header, footer, cookie bar and final CTA come from Base.astro.
+import { getCollection } from 'astro:content';
+// Loaded by this page only and after the site CSS (a plain import would add it to every page's bundle).
+import plansCss from '../../styles/plans-page.css?url';
+import hubs from '../../data/blog-hubs.json';
+import site from '../../data/site.json';
+import { icon } from '../../lib/icons';
+import { money, parseWpPlans } from '../../lib/wp-plans';
+import Hero from '../plans/Hero.astro';
+import PlanGrid from '../plans/PlanGrid.astro';
+import StatStrip from '../plans/StatStrip.astro';
+import SectionAccordion from '../plans/SectionAccordion.astro';
+import CompareTable from '../plans/CompareTable.astro';
+import ChooseCards from '../plans/ChooseCards.astro';
+import WhyCards from '../plans/WhyCards.astro';
+import Addons from '../plans/Addons.astro';
+import Steps from '../plans/Steps.astro';
+import FaqList from '../plans/FaqList.astro';
+
+const { entry } = Astro.props;
+const { path, h1 } = entry.data;
+const d = parseWpPlans(entry.rendered?.html ?? '');
+// The same "Get a free website check" link the page's hero had before (service template).
+const check = { href: '/free-website-maintenance-audit/', label: 'Get a free website check' };
+const posts = await getCollection('blog');
+const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
+---
+<link rel="stylesheet" href={plansCss} />
+<div class="plans-pg">
+  <Hero h1={h1} hero={d.hero} check={check} />
+  <PlanGrid d={d} />
+  <StatStrip stats={d.hero.stats} />
+  <SectionAccordion eyebrow="Compare" h2={d.compare.h2} open><CompareTable d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow="How to choose" h2={d.choose.h2} alt><ChooseCards d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow="Why maintenance" h2={d.why.h2}><WhyCards d={d} /></SectionAccordion>
+  <SectionAccordion h2={d.explained.h2} alt>
+    <details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-prose">
+      {d.explained.paras.map((p) => <p set:html={p} />)}
+      {/* The old page showed this card beside this section (service template); kept with its link to /works/. */}
+      <div class="card pp-work"><div class="pp-work-stats">{site.stats.slice(0, 2).map(([v, l]) => <p><b>{v}</b><span>{l}</span></p>)}</div><p>{site.statsLine}</p><a class="btn ghost" href="/works/">See our work</a></div>
+    </div></details>
+  </SectionAccordion>
+  <SectionAccordion eyebrow="Add-ons" h2={d.addons.h2}><Addons d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow="How it works" h2={d.process.h2} alt><Steps d={d} /></SectionAccordion>
+  <SectionAccordion eyebrow={d.continuous.eyebrow} eyebrowHeading h2={d.continuous.h2}>
+    <details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-prose">
+      <p set:html={d.continuous.lead} />
+      <ul class="pp-grid2 pp-points">{d.continuous.points.map((p) => <li class="card pp-inc"><h3 set:html={p.h} /><p set:html={p.p} /></li>)}</ul>
+      <ul class="pp-chips">{d.continuous.chips.map((t) => <li>{t}</li>)}</ul>
+      <p set:html={d.continuous.line} />
+      <div class="pp-grid3">{d.continuous.cards.map((c) => <article class="card pp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div>
+    </div></details>
+  </SectionAccordion>
+  <SectionAccordion eyebrow="FAQ" h2={d.faq.h2} alt><FaqList d={d} /></SectionAccordion>
+  {guides.length > 0 && (
+    <SectionAccordion eyebrow="Related" h2="Guides"><details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></details></SectionAccordion>
+  )}
+  <div class="pp-stick"><a class="btn primary" href="#pricing">See plans from {money(d.low)}/mo</a></div>
+</div>

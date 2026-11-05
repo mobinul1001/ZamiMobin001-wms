@@ -293,3 +293,14 @@
 
 ## 2026-11-04: hero rating wording
 - Homepage hero: "5.0 on Clutch" is now "5.0 rated by our clients" (owner's wording). It still links to the Clutch profile, so the rating can be checked.
+
+## 2026-11-05: WordPress plans page rebuilt to the owner's design (branch `wp-plans-page`, not merged)
+- `/wordpress-website-maintenance-packages/` uses a new template (`src/components/templates/WpPlans.astro`, components in `src/components/plans/`, styles in `src/styles/plans-page.css` scoped to `.plans-pg`). Text comes from the page's own .md (`src/lib/wp-plans.ts`); prices and plan features come from prices.json. No script added. The page stylesheet loads on this page only, after the site CSS, so every other page keeps exactly the CSS it had on main.
+- Order: compact hero, plans with a Monthly/Yearly switch (CSS only), stat strip, Compare (all 17 rows), How to choose, Why maintenance, Packages explained, Add-ons, How it works, Continuous maintenance, FAQ (4 shown, 3 behind "Show 3 more questions"), Guides, final CTA (Base). Phone "See plans from $79/mo" bar.
+- Phones: every section from Compare down is a `<details>` (only Compare open). "What's Included in Every Plan?" and "Monthly vs Annual Pricing" start closed on phones and open from 760px up. Desktop: "Packages Explained", "Why WordPress Needs Continuous Maintenance" and "Guides" sit behind "Read more". All text stays in the HTML.
+- Unchanged: title, meta description, canonical, robots, Open Graph, schema, H1, 36 headings at the same levels, 17 of 17 links in main. Parity: 177 of 177 .md blocks on the page (`reports/wp-plans-parity.md`); the page is at 109.6% of the old word count.
+- Heights at 390/1440: 7,696 / 7,447 px. Owner decision (2026-11-05): Compare stays open on phones and 7,696 px is accepted (target was 7,000), because the comparison table is the main decision tool.
+- Tablet (760–1079px): plans 2 + 1, Essential and Growth side by side, Business full width with its list in 2 columns. Heights 10,717 px at 768 (was 11,325) and 10,010 px at 1024 (was 10,642).
+- Tools: `parity-local.mjs` counts words with spaces between elements (0 status changes over 815 rows); `design-qa.mjs` knows the plans page classes (scroll table, steps, type scale, compact hero); `test-browser-features.mjs` finds the hero button as `.cta-row .btn` or `.pp-cta .btn`.
+- Removed with the old template (owner to confirm): the "See plans & pricing" label and the hero card "Free hosting for 1 year / No contract".
+- Screenshots: `reports/design-qa/wp-plans/` (6 widths, light and dark, `heights.json`).

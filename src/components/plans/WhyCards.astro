@@ -1,0 +1,15 @@
+---
+// Why you need ongoing care: 4 cards shown, the other 2 behind "Show 2 more reasons".
+import { icon } from '../../lib/icons';
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+const ICONS = ['shield', 'gauge', 'refresh', 'db', 'pulse', 'wrench'];
+const card = (c: { h: string; p: string }, i: number) => `<article class="card pp-inc"><span class="pp-tile" style="--ic:var(--c${(i % 6) + 1})">${icon(ICONS[i] ?? 'check')}</span><h3>${c.h}</h3><p>${c.p}</p></article>`;
+const shown = d.why.cards.slice(0, 4), rest = d.why.cards.slice(4);
+---
+<p class="sx-lead" set:html={d.why.lead} />
+<div class="pp-grid4" set:html={shown.map(card).join('')} />
+{rest.length > 0 && (
+  <details class="pp-rm"><summary>Show {rest.length} more reasons<Fragment set:html={icon('down')} /></summary><div class="pp-grid2" set:html={rest.map((c, i) => card(c, i + 4)).join('')} /></details>
+)}

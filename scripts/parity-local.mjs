@@ -45,7 +45,8 @@ const LOOSE = (s) => norm(s).replace(/[“”"’']/g, '').toLowerCase();
 const MOVE_TO = ['/about-us/', '/monthly-website-maintenance-packages/'];
 const movedFromHome = [];
 function wordsOf(html) {
-  const $ = cheerio.load(html);
+  // Element boundaries count as spaces, so text in adjacent elements (for example table cells) is not glued into one word.
+  const $ = cheerio.load(html.replace(/></g, '> <'));
   $('script, style, noscript, template, svg, iframe').remove();
   $('header, footer, nav').remove();
   const text = $('body').text().replace(/[ \t]+/g, ' ').replace(/\s*\n\s*/g, '\n').trim();

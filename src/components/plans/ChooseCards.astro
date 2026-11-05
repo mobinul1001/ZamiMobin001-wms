@@ -1,0 +1,7 @@
+---
+import type { WpPlans } from '../../lib/wp-plans';
+interface Props { d: WpPlans }
+const { d } = Astro.props;
+---
+<div class="pp-grid3">{d.choose.cards.map((c) => <article class="card pp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div>
+{d.choose.after.map((p) => <p class="pp-after" set:html={p} />)}
