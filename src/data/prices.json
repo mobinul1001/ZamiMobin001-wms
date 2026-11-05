@@ -55,6 +55,12 @@
     "protect": 249,
     "priority": 349
   },
+  "migrationPrices": {
+    "status": "PENDING owner confirmation (batch 1, 2026-11-05): the owner's latest numbers from the migration brief. The page text still says Platform Change \"Starting from $1499\" and its FAQ says \"starts at $999\".",
+    "hostMove": 149,
+    "full": 399,
+    "platformFrom": 1199
+  },
   "local": {
     "/website-maintenance-services-for-usa/": {
       "currency": "USD",

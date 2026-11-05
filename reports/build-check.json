@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-05T17:26:42.477Z",
+  "checkedAt": "2026-11-05T18:06:00.104Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 8624,
-  "images": 362,
+  "links": 8634,
+  "images": 372,
   "faqs": 488,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -14,7 +14,7 @@
   "warningCounts": {
     "missing-urls": 1,
     "seo-length": 53,
-    "forms": 16,
+    "forms": 17,
     "image-size": 1,
     "anchors": 4
   },
@@ -57,6 +57,7 @@
     "[seo-length] /website-maintenance-checklist/: description is 166 characters (aim for 155).",
     "[seo-length] /website-maintenance-services-for-switzerland/: description is 159 characters (aim for 155).",
     "[seo-length] /website-malware-scanner/: description is 197 characters (aim for 155).",
+    "[forms] /website-migration-services/: no Formspree ID yet.",
     "[seo-length] /website-rebuild-guide/: title is 67 characters (aim for 60).",
     "[seo-length] /website-rebuild-guide/: description is 166 characters (aim for 155).",
     "[seo-length] /website-redesign-checklist/: title is 69 characters (aim for 60).",

@@ -1,0 +1,84 @@
+/* Website migration page (owner's design, batch 1, 2026-11-05). Scoped to .migration-pg; loaded after the plans,
+   repair, hacked and malware page styles, whose hero, sections, cards, tables, FAQ and price cards it reuses. */
+.mg-plat-h { margin: 8px 0 0; text-align: center; }
+.mg-plat-lead { text-align: center; color: var(--muted); font-size: 15px; }
+
+/* 7 steps: desktop 4 + 3 with the CTA card in the 8th cell; a gradient line from each step to the next. */
+.mg-steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.mg-step { position: relative; display: grid; gap: 10px; align-content: start; }
+.mg-step .n { position: relative; z-index: 1; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sc); color: #fff; font-weight: 800; box-shadow: 0 0 0 6px var(--card); }
+.mg-step h3 { font-size: 20px; }
+.mg-step > p:not(.rp-chk) { font-size: 15.5px; color: var(--muted); }
+.mg-step-cta { display: grid; place-items: center; padding: 24px; border-radius: var(--pp-r, 24px); background: var(--grad); }
+.mg-step-cta p { margin: 0; }
+.mg-step-cta a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 16px; background: #fff; color: #3b1a94; font-weight: 700; text-decoration: none; }
+@media (min-width: 1080px) {
+  .mg-step::after { content: ""; position: absolute; top: 43px; left: 70px; right: -12px; height: 3px; border-radius: 3px; background: var(--grad); }
+  /* Steps 4 and 7 end at their own column edge. */
+  .mg-step:nth-child(4)::after, .mg-step:nth-child(7)::after { right: 24px; }
+}
+@media (max-width: 1079px) {
+  .mg-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 759px) {
+  /* Phones: a vertical timeline with one gradient line; the CTA card is not shown (its link is in the hero). */
+  .mg-steps { position: relative; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .mg-steps::before { content: ""; position: absolute; top: 24px; bottom: 24px; left: 39px; width: 3px; border-radius: 3px; background: var(--grad); }
+  .mg-step { grid-template-columns: 40px minmax(0, 1fr); column-gap: 14px; padding: 16px; }
+  .mg-step .n { grid-row: 1 / span 3; }
+  .mg-step > :not(.n) { grid-column: 2; }
+  .mg-step-cta { display: none; }
+}
+
+/* Pricing: desktop 3 in a row; 520–1079 px two cards then the third full width (split in two from 760 px); phones 1 column. */
+.mg-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: stretch; }
+.mg-plans .rp-price small { font-size: 15px; font-weight: 600; color: var(--muted); }
+.mg-wide { display: grid; gap: 16px; align-content: start; }
+.mg-wide > div { display: grid; gap: 10px; align-content: start; }
+.mg-scope { justify-content: flex-start; }
+.mg-scope li { font-size: 13.5px; padding: 6px 12px; }
+@media (max-width: 1079px) {
+  .mg-plans { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mg-wide { grid-column: 1 / -1; }
+}
+@media (min-width: 760px) and (max-width: 1079px) {
+  .mg-wide { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; }
+}
+@media (max-width: 519px) {
+  .mg-plans { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Included: cards on desktop and tablet; compact rows on phones (title and text, one column). */
+.mg-inc { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.mg-inc .card { display: grid; gap: 6px; align-content: start; padding: 18px; }
+.mg-inc h3 { font-size: 18px; }
+.mg-inc p { font-size: 15px; color: var(--muted); }
+@media (max-width: 1079px) { .mg-inc { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 759px) {
+  .mg-inc { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .mg-inc .card { grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; padding: 12px 14px; border-radius: 14px; }
+  .mg-inc .card::after { content: ""; grid-column: 2; grid-row: 1; width: 18px; height: 18px; border-radius: 6px; background: color-mix(in srgb, var(--ok) 18%, transparent); }
+  .mg-inc h3 { grid-column: 1; font-size: 16px; }
+  .mg-inc p { grid-column: 1 / -1; font-size: 14px; }
+}
+
+/* Case studies: an auto-scrolling strip, CSS only. */
+.mg-marquee { overflow-x: auto; min-width: 0; scrollbar-width: thin; padding-bottom: 8px; }
+.mg-marquee:focus-visible { outline: 3px solid var(--focus, var(--accent)); outline-offset: 2px; }
+.mg-track { display: flex; gap: 20px; width: max-content; animation: mg-scroll 48s linear infinite; }
+.mg-marquee:hover .mg-track, .mg-marquee:focus .mg-track, .mg-marquee:focus-within .mg-track, .mg-marquee:active .mg-track { animation-play-state: paused; }
+@keyframes mg-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .mg-track { animation: none; } }
+.mg-case { display: grid; gap: 10px; align-content: start; width: min(360px, 82vw); flex: none; }
+.mg-case h3 { font-size: 20px; }
+.mg-case p { font-size: 15px; color: var(--muted); }
+.mg-case .mg-domain { font-weight: 600; color: var(--link); }
+.mg-more p { font-size: 15px; }
+.mg-more a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 12px; }
+.mg-close p { color: var(--ink); }
+@media (max-width: 759px) {
+  .mg-case { width: 84vw; }
+}
+.mg-case-h { font-size: 20px; font-weight: 700; line-height: 1.3; color: var(--head) !important; }
+/* The price-line link is a 44 px tap target on phones. */
+.mw-priceline-link { display: inline-flex; align-items: center; min-height: 44px; }
