@@ -2,17 +2,17 @@
 
 Branch `repair-page`, built 2026-11-05. Source: `src/content/pages/website-repair-services.md`. Checked on `dist/website-repair-services/index.html`.
 
-Blocks in the .md: 442. On the new page: 434. Held back by rule 5: 8. Missing: 0.
+Blocks in the .md: 442. On the new page: 436. Held back by rule 5: 6. Missing: 0.
+
+Heading change (owner, 2026-11-05): "Our 5-Step Website Repair Process" is now "Our 4-Step Website Repair Process" (H2, its label "Documented 4-Step System", the HowTo schema name and the H2 anchor #our-4-step-website-repair-process; no link pointed to the old anchor). Applied by scripts/lib/text-edits.mjs in the migration.
 
 Held back (the owner's brief, rule 5: not used until approved; they stay in the .md and come back by deleting them from `HELD` in `src/lib/repair.ts`):
-- No fix, no fee: we check your site and quote before we start. If we can't fix the issue, you don't pay. (Excludes problems caused by your hosting provider's outage or by third-party services we don't control.)
 - 98.4%
 - First-time fix rate — no repeat visits needed
 - 45 min
 - Average emergency response time
 - 0
 - Sites where we caused data loss
-- No fix, no fee: we check your site and quote before we start. If we can't fix the issue, you don't pay. (Excludes problems caused by your hosting provider's outage or by third-party services we don't control.)
 
 | Type | Old text (start) | Where it is now |
 |---|---|---|
@@ -20,7 +20,7 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Text | From a white screen of death to a checkout that won't process orders, our engineers diagno… | Hero |
 | Text | Get My Website Fixed Today Free Website Diagnostic | Hero |
 | Text | Repair work usually starts the same business day. | Hero |
-| Text | No fix, no fee: we check your site and quote before we start. If we can't fix the issue, y… | HELD (rule 5, waiting for owner approval) |
+| Text | No fix, no fee: we check your site and quote before we start. If we can't fix the issue, y… | Hero |
 | Text | If we can't clean your hacked site, you don't pay. | Hero |
 | Text | Small fixes usually within 24 hours | Hero |
 | Text | Serving USA, UK, CA & AU | Hero |
@@ -38,7 +38,7 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Text | Sites where we caused data loss | HELD (rule 5, waiting for owner approval) |
 | Text | Root-Cause Diagnosis & Repair | Section: One Team. Every Kind of Website Repair. |
 | H2 | One Team. Every Kind of Website Repair. | Section: One Team. Every Kind of Website Repair. |
-| Text | Whether your site is built on WordPress, Shopify, Wix, Webflow, or custom code, a broken w… | Section: One Team. Every Kind of Website Repair. |
+| Text | Whether your site is built on WordPress, Shopify, Wix, Webflow, or custom code, a broken w… | Section: One Team. Every Kind of Website Repair. (behind "Read more" / "Show more") |
 | Text | We don't just patch the visible symptom. Every repair starts with a root-cause diagnostic,… | Section: One Team. Every Kind of Website Repair. (behind "Read more" / "Show more") |
 | Text | "Fixing the symptom without finding the root cause means you'll be back here again next mo… | Section: One Team. Every Kind of Website Repair. (behind "Read more" / "Show more") |
 | Text | Prevent future breaks with our ongoing care options: | Section: One Team. Every Kind of Website Repair. (behind "Read more" / "Show more") |
@@ -62,13 +62,13 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | List item | REDESIGN: If your website has never quite worked the way you wanted, that's usually a rede… | Learn more: What Is Website Repair, Exactly? (accordion) |
 | List item | MAINTENANCE: If your website is working fine today and you want to keep it that way, that'… | Learn more: What Is Website Repair, Exactly? (accordion) |
 | H3 | Most repair requests fall into one of three categories: | Learn more: What Is Website Repair, Exactly? (accordion) |
-| Text | 1 | Section: Our 5-Step Website Repair Process |
+| Text | 1 | Section: Our 4-Step Website Repair Process |
 | H4 | Functional Failures | Learn more: What Is Website Repair, Exactly? (accordion) |
 | Text | Forms, checkouts, logins, search bars, or interactive tools that stop working or fail sile… | Learn more: What Is Website Repair, Exactly? (accordion) |
-| Text | 2 | Section: Our 5-Step Website Repair Process |
+| Text | 2 | Section: Our 4-Step Website Repair Process |
 | H4 | Visual Failures | Learn more: What Is Website Repair, Exactly? (accordion) |
 | Text | Broken layouts, collapsed CSS columns, missing styles, or images that won't display across… | Learn more: What Is Website Repair, Exactly? (accordion) |
-| Text | 3 | Section: Our 5-Step Website Repair Process |
+| Text | 3 | Section: Our 4-Step Website Repair Process |
 | H4 | Availability Failures | Learn more: What Is Website Repair, Exactly? (accordion) |
 | Text | The site won't load at all, exhibits a White Screen of Death (WSOD), or loads with a 500 f… | Learn more: What Is Website Repair, Exactly? (accordion) |
 | Text | Self-Diagnostic Checklist | Learn more: 12 Warning Signs Your Website Needs Repair (accordion) |
@@ -101,7 +101,7 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Text | Seeing two or more of these? Get a free diagnostic before it turns into an emergency. | Learn more: 12 Warning Signs Your Website Needs Repair (accordion) |
 | Text | Troubleshooting & Repair Hub | Section: Every Website Problem We Repair — Explained |
 | H2 | Every Website Problem We Repair — Explained | Section: Every Website Problem We Repair — Explained |
-| Text | Below is a plain-language breakdown of the most common issues we're called in to fix. If y… | Section: Every Website Problem We Repair — Explained |
+| Text | Below is a plain-language breakdown of the most common issues we're called in to fix. If y… | Section: Every Website Problem We Repair — Explained (behind "Read more" / "Show more") |
 | Text | Select Issue Category: | Section: Every Website Problem We Repair — Explained |
 | Text | Errors & Crashes (WSOD, 500 Error, DB) Functionality & Forms (Checkout, Forms) Design & La… | Section: Every Website Problem We Repair — Explained |
 | Text | Errors & Crashes Functionality & Forms Design & Layout Security & SEO | Section: Every Website Problem We Repair — Explained (one label per tab panel) |
@@ -149,28 +149,28 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Text | If your site has been compromised, our priority order is: contain the threat, remove malic… | Section: Every Website Problem We Repair — Explained (behind "Read more" / "Show more", in a tab panel) |
 | Text | Post-Repair SEO & Indexing Recovery Search Rank Protection | Section: Every Website Problem We Repair — Explained (in a tab panel) |
 | Text | A repaired site that quietly lost rankings during its downtime is still an unfinished job.… | Section: Every Website Problem We Repair — Explained (behind "Read more" / "Show more", in a tab panel) |
-| Text | Documented 5-Step System | Section: Our 5-Step Website Repair Process |
-| H2 | Our 5-Step Website Repair Process | Section: Our 5-Step Website Repair Process |
-| Text | We follow the same documented troubleshooting process on every website — no improvising, n… | Section: Our 5-Step Website Repair Process |
-| Text | 1 | Section: Our 5-Step Website Repair Process |
-| Text | Root-Cause Isolation | Section: Our 5-Step Website Repair Process |
-| H3 | Step 1: Diagnostic Audit | Section: Our 5-Step Website Repair Process |
-| Text | We review your site's errors, logs, hosting environment, and recent change history to iden… | Section: Our 5-Step Website Repair Process |
-| Text | ✓ Free Initial Diagnosis | Section: Our 5-Step Website Repair Process |
-| Text | 2 | Section: Our 5-Step Website Repair Process |
-| H3 | Step 2: Backup & Isolation | Section: Our 5-Step Website Repair Process |
-| Text | Before any change is made, we take a full backup and — where possible — replicate the issu… | Section: Our 5-Step Website Repair Process |
-| Text | ✓ Full Off-Site Backup Enforced | Section: Our 5-Step Website Repair Process |
-| Text | 3 | Section: Our 5-Step Website Repair Process |
-| Text | Cross-Device QA | Section: Our 5-Step Website Repair Process |
-| H3 | Step 3: Repair & Testing | Section: Our 5-Step Website Repair Process |
-| Text | We apply the fix, then test it across browsers, devices, and user flows to confirm the iss… | Section: Our 5-Step Website Repair Process |
-| Text | ✓ Multi-Browser Verification | Section: Our 5-Step Website Repair Process |
-| Text | 4 | Section: Our 5-Step Website Repair Process |
-| Text | Written Summary | Section: Our 5-Step Website Repair Process |
-| H3 | Step 4: Verification Report | Section: Our 5-Step Website Repair Process |
-| Text | You receive a clear, plain-language summary: what broke, why it broke, and exactly what we… | Section: Our 5-Step Website Repair Process |
-| Text | ✓ Plain-English Explanation | Section: Our 5-Step Website Repair Process |
+| Text | Documented 4-Step System | Section: Our 4-Step Website Repair Process |
+| H2 | Our 4-Step Website Repair Process | Section: Our 4-Step Website Repair Process |
+| Text | We follow the same documented troubleshooting process on every website — no improvising, n… | Section: Our 4-Step Website Repair Process |
+| Text | 1 | Section: Our 4-Step Website Repair Process |
+| Text | Root-Cause Isolation | Section: Our 4-Step Website Repair Process |
+| H3 | Step 1: Diagnostic Audit | Section: Our 4-Step Website Repair Process |
+| Text | We review your site's errors, logs, hosting environment, and recent change history to iden… | Section: Our 4-Step Website Repair Process |
+| Text | ✓ Free Initial Diagnosis | Section: Our 4-Step Website Repair Process |
+| Text | 2 | Section: Our 4-Step Website Repair Process |
+| H3 | Step 2: Backup & Isolation | Section: Our 4-Step Website Repair Process |
+| Text | Before any change is made, we take a full backup and — where possible — replicate the issu… | Section: Our 4-Step Website Repair Process |
+| Text | ✓ Full Off-Site Backup Enforced | Section: Our 4-Step Website Repair Process |
+| Text | 3 | Section: Our 4-Step Website Repair Process |
+| Text | Cross-Device QA | Section: Our 4-Step Website Repair Process |
+| H3 | Step 3: Repair & Testing | Section: Our 4-Step Website Repair Process |
+| Text | We apply the fix, then test it across browsers, devices, and user flows to confirm the iss… | Section: Our 4-Step Website Repair Process |
+| Text | ✓ Multi-Browser Verification | Section: Our 4-Step Website Repair Process |
+| Text | 4 | Section: Our 4-Step Website Repair Process |
+| Text | Written Summary | Section: Our 4-Step Website Repair Process |
+| H3 | Step 4: Verification Report | Section: Our 4-Step Website Repair Process |
+| Text | You receive a clear, plain-language summary: what broke, why it broke, and exactly what we… | Section: Our 4-Step Website Repair Process |
+| Text | ✓ Plain-English Explanation | Section: Our 4-Step Website Repair Process |
 | Text | Core Engineering Advantages | Section: Why Businesses Trust Us With Their Broken Websites |
 | H2 | Why Businesses Trust Us With Their Broken Websites | Section: Why Businesses Trust Us With Their Broken Websites |
 | Text | We're more than a quick-fix service — we're your technical partner in keeping your website… | Section: Why Businesses Trust Us With Their Broken Websites |
@@ -318,7 +318,7 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Table row | | Pricing rate | Priority emergency rate | ✓ Standard fixed rate | | Section: Understanding Your Options |
 | Text | Transparent Scoped Quotes | Section: Website Repair Pricing |
 | H2 | Website Repair Pricing | Section: Website Repair Pricing |
-| Text | Every website's problem is different, so every quote is scoped to the actual issue — never… | Section: Website Repair Pricing |
+| Text | Every website's problem is different, so every quote is scoped to the actual issue — never… | Section: Website Repair Pricing (behind "Read more" / "Show more") |
 | Text | Single Issue | Section: Website Repair Pricing |
 | H3 | Small Website Repair | Section: Website Repair Pricing |
 | Text | $49 | Section: Website Repair Pricing |
@@ -353,20 +353,20 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | Text | eCommerce Store ● 6-Hour Recovery | Section: Real Repairs, Real Results |
 | H3 | eCommerce Checkout Recovery | Section: Real Repairs, Real Results |
 | Text | Silent Payment Gateway Plugin Conflict | Section: Real Repairs, Real Results |
-| Text | An online store's checkout began failing silently after a plugin update, with no error mes… | Section: Real Repairs, Real Results |
-| Text | Result: Checkout restored same-day, zero further incidents in the following 90 days. | Section: Real Repairs, Real Results |
+| Text | An online store's checkout began failing silently after a plugin update, with no error mes… | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
+| Text | Result: Checkout restored same-day, zero further incidents in the following 90 days. | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
 | Text | Verified 40+ Test Checkout Transactions | Section: Real Repairs, Real Results |
 | Text | Corporate Site ● Security Cleanup | Section: Real Repairs, Real Results |
 | H3 | Hacked WordPress Site Recovery | Section: Real Repairs, Real Results |
 | Text | Google "Site May Be Hacked" Warning | Section: Real Repairs, Real Results |
-| Text | A corporate website was flagged by Google as "This site may be hacked." We removed injecte… | Section: Real Repairs, Real Results |
-| Text | Result: Warning removed, full ranking recovery within three weeks. | Section: Real Repairs, Real Results |
+| Text | A corporate website was flagged by Google as "This site may be hacked." We removed injecte… | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
+| Text | Result: Warning removed, full ranking recovery within three weeks. | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
 | Text | Google Search Warning Removed | Section: Real Repairs, Real Results |
 | Text | High-Traffic Blog ● 4-Hour Restore | Section: Real Repairs, Real Results |
 | H3 | White Screen of Death (WSOD) | Section: Every Website Problem We Repair — Explained (in a tab panel) |
 | Text | PHP Memory Limit & Theme Crash | Section: Real Repairs, Real Results |
-| Text | A content site went completely blank after a theme update. We diagnosed a PHP memory limit… | Section: Real Repairs, Real Results |
-| Text | Result: Site restored within 4 hours, zero content lost. | Section: Real Repairs, Real Results |
+| Text | A content site went completely blank after a theme update. We diagnosed a PHP memory limit… | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
+| Text | Result: Site restored within 4 hours, zero content lost. | Section: Real Repairs, Real Results (behind "Read more" / "Show more") |
 | Text | Zero Content Lost During Memory Fix | Section: Real Repairs, Real Results |
 | Text | Social Proof & Client Trust | Section: Frequently Asked Questions |
 | Text | Pre-Purchase Due Diligence | Section: Frequently Asked Questions |
@@ -441,20 +441,20 @@ Held back (the owner's brief, rule 5: not used until approved; they stay in the 
 | H3 | Malware Removal | Section: Frequently Asked Questions |
 | Text | Dedicated malware detection and removal service. | Section: Related Services |
 | H3 | Website Backup | Section: One Team. Every Kind of Website Repair. (behind "Read more" / "Show more") |
-| Text | Automated, tested cloud backup solutions. | Section: Related Services |
-| H3 | Website Monitoring | Section: Related Services |
-| Text | 24/7 uptime and error monitoring. | Section: Related Services |
-| H3 | Website Speed Optimization | Section: Related Services |
-| Text | Dedicated performance tuning beyond emergency repair. | Section: Related Services |
-| H3 | Website Support | Section: Related Services |
-| Text | Ongoing technical support plans. | Section: Related Services |
-| H3 | Emergency Website Recovery | Section: Related Services |
-| Text | Our fastest-response service tier. | Section: Related Services |
-| H3 | Website Updates | Section: Related Services |
-| Text | Safe, tested plugin, theme, and core updates. | Section: Related Services |
+| Text | Automated, tested cloud backup solutions. | Section: Related Services (behind "Read more" / "Show more") |
+| H3 | Website Monitoring | Section: Related Services (behind "Read more" / "Show more") |
+| Text | 24/7 uptime and error monitoring. | Section: Related Services (behind "Read more" / "Show more") |
+| H3 | Website Speed Optimization | Section: Related Services (behind "Read more" / "Show more") |
+| Text | Dedicated performance tuning beyond emergency repair. | Section: Related Services (behind "Read more" / "Show more") |
+| H3 | Website Support | Section: Related Services (behind "Read more" / "Show more") |
+| Text | Ongoing technical support plans. | Section: Related Services (behind "Read more" / "Show more") |
+| H3 | Emergency Website Recovery | Section: Related Services (behind "Read more" / "Show more") |
+| Text | Our fastest-response service tier. | Section: Related Services (behind "Read more" / "Show more") |
+| H3 | Website Updates | Section: Related Services (behind "Read more" / "Show more") |
+| Text | Safe, tested plugin, theme, and core updates. | Section: Related Services (behind "Read more" / "Show more") |
 | Text | Fix What's Broken Today | Closing section (before the final CTA) |
 | H2 | Your Website Doesn't Have to Stay Broken | Closing section (before the final CTA) |
 | Text | Every hour a broken website stays live costs you visitors, leads, or sales. Get a free dia… | Closing section (before the final CTA) |
 | Text | Get My Free Diagnostic Talk to a Repair Specialist | Closing section (before the final CTA) |
 | Text | Repair work usually starts the same business day. • Serving USA, UK, CA & AU | Closing section (before the final CTA) |
-| Text | No fix, no fee: we check your site and quote before we start. If we can't fix the issue, y… | HELD (rule 5, waiting for owner approval) |
+| Text | No fix, no fee: we check your site and quote before we start. If we can't fix the issue, y… | Hero |

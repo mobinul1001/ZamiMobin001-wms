@@ -5,12 +5,11 @@ import * as cheerio from 'cheerio';
 import prices from '../data/prices.json';
 import { splitBy } from './html-sections';
 
-// Claims the owner has not approved yet (repair page brief, rule 5, 2026-11-05; "No fix, no fee" was approved on
-// 2026-11-01, so the owner is asked again). They stay in the .md, are left off the
+// Claims the owner has not approved yet (repair page brief, rule 5, 2026-11-05). "No fix, no fee" is shown: the
+// owner approved that exact sentence on 2026-11-01 and confirmed it on 2026-11-05. They stay in the .md, are left off the
 // page and are listed in reports/repair-parity.md. The build fails if one of them is no longer found,
 // so the list never goes stale.
 export const HELD = [
-  'No fix, no fee: we check your site and quote before we start. If we can’t fix the issue, you don’t pay. (Excludes problems caused by your hosting provider’s outage or by third-party services we don’t control.)',
   '98.4% First-time fix rate — no repeat visits needed',
   '45 min Average emergency response time',
   '0 Sites where we caused data loss',
@@ -71,6 +70,8 @@ export function parseRepair(html: string) {
     links: $h(heroLinks).children('a').toArray().map((a) => ({ href: $h(a).attr('href') ?? '', label: txt($h, a) })),
     ticks: [inner($h, need(hp2[3], 'hero start line')), ...ps($h).filter((p) => !$h(p).closest('.cards').length).map((p) => inner($h, p))],
     panel: need($h(panelCard).find('.status-panel').prop('outerHTML'), 'status panel'),
+    // "No fix, no fee": the owner's approved sentence (2026-11-01), under the buttons as on the old page.
+    promise: inner($h, need(hp2.find((p) => /^No fix, no fee/.test(txt($h, p))), 'No fix, no fee sentence')),
   };
   need(hero.ticks.length === 5 ? hero.ticks : undefined, '5 hero trust lines');
 
@@ -116,7 +117,7 @@ export function parseRepair(html: string) {
   const finder = { sec: hub, lead, label: txt($u, labelLine), groups };
 
   // Process: 4 steps with their small label and check line.
-  const { $: $s, sec: process } = find(/^Our 5-Step/);
+  const { $: $s, sec: process } = find(/^Our 4-Step/);
   const steps = $s('.card').toArray().map((c) => {
     const lines = ps($s, c).map((p) => txt($s, p));
     return { n: lines[0], label: lines.length > 3 ? lines[1] : '', h: inner($s, $s(c).find('h3')), p: inner($s, ps($s, c).at(-2)!), chk: lines.at(-1)!.replace(/^✓\s*/, '') };
@@ -186,8 +187,12 @@ export function parseRepair(html: string) {
     return { labels: before, h: inner($p, h3), price: inner($p, afterPs[0]), forLine: inner($p, afterPs[1]), link: { href: a.attr('href') ?? '', label: txt($p, a) } };
   });
   need(priceCards.length === 5 ? priceCards : undefined, '5 price cards');
-  // Prices that prices.json has must match the page; the $99 – $299 range is not in prices.json and is shown as the page has it.
-  if (txt($p, $p.root()).indexOf(`$${prices.oneTimeFixFrom}`) < 0 || txt($p, $p.root()).indexOf(`$${prices.hackedSiteCleanup}`) < 0) throw new Error('repair page: prices differ from prices.json');
+  // Prices come from prices.json; the page's own price text must say the same, or the build stops.
+  const usd = (n: number) => `$${n}`;
+  const range = `${usd(prices.repairRange[0])} – ${usd(prices.repairRange[1])}`;
+  const PRICE = [usd(prices.oneTimeFixFrom), range, range];
+  priceCards.forEach((c, k) => { if (PRICE[k] === undefined) return; if (txt($p, $p.root().find('.card').eq(k).find('h3').nextAll('p').first()) !== PRICE[k]) throw new Error(`repair page: card ${k + 1} price differs from prices.json`); c.price = PRICE[k]; });
+  if (!priceCards[3].price.includes(usd(prices.hackedSiteCleanup))) throw new Error('repair page: hacked cleanup price differs from prices.json');
   const pricingNote = inner($p, need(ps($p).filter((p) => txt($p, p)).at(-1), 'pricing note'));
 
   // Results: 3 stories; the anchors, the swipe hint, and the labels before the FAQ.

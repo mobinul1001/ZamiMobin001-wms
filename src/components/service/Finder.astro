@@ -7,7 +7,7 @@ interface Props { d: Repair }
 const { d } = Astro.props;
 const ICONS = ['zap', 'cart', 'layout', 'shield'];
 ---
-<p class="sx-lead" set:html={d.finder.lead} />
+<details class="pp-rm rp-rm-p"><summary>Read more<Fragment set:html={icon('down')} /></summary><div><p set:html={d.finder.lead} /></div></details>
 <div class="rp-pick">
   <p class="rp-pick-label" id="rp-pick-label">{d.finder.label}</p>
   <div class="rp-pick-nav" role="radiogroup" aria-labelledby="rp-pick-label">{d.finder.groups.map((g, i) => (

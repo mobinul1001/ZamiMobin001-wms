@@ -9,7 +9,7 @@ const { d } = Astro.props;
 const [c0, c1, c2, c3, ent] = d.pricing.cards;
 const plans = [c0, c1, c2, c3];
 ---
-<p class="sx-lead" set:html={d.pricing.lead} />
+<details class="pp-rm rp-rm-p"><summary>Read more<Fragment set:html={icon('down')} /></summary><div><p set:html={d.pricing.lead} /></div></details>
 <div class="rp-grid4 rp-plans">{plans.map((c, i) => (
   <article class:list={['card', 'rp-plan', { pop: i === 1 }]}>
     {i === 1 && <span class="pp-tag">Most common request</span>}

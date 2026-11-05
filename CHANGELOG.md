@@ -312,3 +312,11 @@
 - Unchanged: title, meta description, canonical, robots, Open Graph, schema (FAQ included), H1, 93 headings at the same levels, all 16 old links. Added: 10 country links (owner's brief) and `#quote`. Parity: 442 .md blocks, 434 on the page, 8 held, 0 missing; official parity 815/815, page 104.6%.
 - Heights (collapsed): 360: 10,624; 390: 10,029; 768: 14,907; 1024: 13,810; 1280/1440: 10,640 px (targets 9,200 phone, 13,000 tablet, 9,900 desktop: not met). Form at 149 px on desktop and 1,411 px at 390; H1 and the $49 line within the first 600 px.
 - Tools: design-qa has a `repair` template (service now checks `/website-update-services/`), exempts the tab row and story row from off-screen checks, and treats `.rp-hero` as an inner hero. Lighthouse repair: mobile perf 93–95, desktop 100, a11y 100, CLS ≤0.001.
+
+## 2026-11-05: Website repair page, owner's answers applied (branch `repair-page`, not merged)
+- "No fix, no fee" is shown again, the exact sentence approved on 2026-11-01, in the hero (under the buttons) and in the closing section, where the old page had it. `check-build.mjs` requires it again. 98.4%, 45 min and 0 sites with data loss stay held until the owner confirms them.
+- Heading change: "Our 5-Step Website Repair Process" is now "Our 4-Step Website Repair Process" (H2, its label "Documented 4-Step System", the HowTo schema name; anchor `#our-4-step-website-repair-process`, no link used the old one). Set in `scripts/lib/text-edits.mjs`, applied by `migrate-content.mjs`; parity accepts the replaced wording.
+- `prices.json` has `repairRange` [99, 299]; the WordPress and Business repair cards take their price from it, and the build stops if the page text differs.
+- Hero: the main button goes to the form on the page (`#quote`); the second keeps `/get-a-free-quote/`. Breadcrumb stays "Home / H1".
+- Countries use the real flag images from the homepage (`public/flags/`, alt "USA flag" etc.); the drawn flags are gone.
+- Height, by collapsing only: FAQ 6 shown + "Show all 29 questions"; Related services 4 + "Show more related services"; the issue hub's 4 tabs show at most 6 of the 22 issues at a time; the Find your fix, Pricing and One Team intros and the long text of each repair story behind "Read more". No text removed or shortened.

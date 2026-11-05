@@ -17,7 +17,9 @@ const form = quickForm('repair', 'Get a free website check', 'Tell us about your
     <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
     <p class="rp-sub" set:html={d.hero.lead} />
     <p class="rp-priceline"><b>One-time fix from ${prices.oneTimeFixFrom}</b><span>No contract</span></p>
-    <div class="cta-row">{d.hero.links.map((l, i) => <a class:list={['btn', i === 0 ? 'primary' : 'ghost']} href={l.href}>{l.label}{i === 0 && <Fragment set:html={icon('arrow')} />}</a>)}</div>
+    {/* Owner, 2026-11-05: the main button goes to the form on this page; the second keeps its old link. */}
+    <div class="cta-row">{d.hero.links.map((l, i) => <a class:list={['btn', i === 0 ? 'primary' : 'ghost']} href={i === 0 ? '#quote' : l.href}>{l.label}{i === 0 && <Fragment set:html={icon('arrow')} />}</a>)}</div>
+    <p class="rp-promise" set:html={d.hero.promise} />
     <ul class="rp-ticks">{d.hero.ticks.map((t) => <li><Fragment set:html={tick} /><span set:html={t} /></li>)}</ul>
     <div class="rp-panel" set:html={d.hero.panel} />
   </div>

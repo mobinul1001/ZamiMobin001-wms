@@ -280,3 +280,13 @@
   .rp-priceline { font-size: 14px; gap: 10px; }
   .rp-priceline b { font-size: 16px; }
 }
+/* Real flag images (as on the homepage) and the approved "No fix, no fee" sentence under the hero buttons. */
+.rp-countries .fl { width: 20px; height: 15px; object-fit: cover; }
+.rp-promise { max-width: 60ch; margin-top: 14px; font-size: 14.5px; line-height: 1.5; color: var(--muted); }
+.repair-pg .rp-rel + .pp-rm { margin-top: 16px; }
+/* A long paragraph behind "Read more" (owner, 2026-11-05: collapse, do not shorten). */
+.repair-pg .rp-rm-p { margin: 0 0 16px; }
+.rp-story .rp-rm-p { margin: 0; }
+.rp-rm-p > div { display: grid; gap: 10px; }
+/* The pricing note's tick stays next to its text on narrow screens; the link wraps below. */
+.rp-note > span:not(.tick) { flex: 1 1 260px; min-width: 0; }

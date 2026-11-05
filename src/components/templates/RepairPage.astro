@@ -39,9 +39,8 @@ const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(
     <div class="rp-grid2 rp-numbers">{d.numbers.cards.map((c) => <div class="card">{c.v && <b>{c.v}</b>}<p set:html={c.l} /></div>)}</div>
   </SectionAccordion>
   <SectionAccordion eyebrow={d.oneTeam.sec.eyebrow} h2={d.oneTeam.sec.h2} id={d.oneTeam.sec.id} alt>
-    <p class="sx-lead" set:html={d.oneTeam.paras[0]} />
     <details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-prose">
-      {d.oneTeam.paras.slice(1).map((p) => <p set:html={p} />)}
+      {d.oneTeam.paras.map((p) => <p set:html={p} />)}
       <div class="rp-grid3 rp-mini">{d.oneTeam.cards.map((c) => <div class="card"><h4 set:html={c.h} /><p set:html={c.p} /></div>)}</div>
     </div></details>
   </SectionAccordion>

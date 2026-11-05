@@ -52,6 +52,10 @@
   ],
   "oneTimeFixFrom": 49,
   "hackedSiteCleanup": 149,
+  "repairRange": [
+    99,
+    299
+  ],
   "local": {
     "/website-maintenance-services-for-usa/": {
       "currency": "USD",
