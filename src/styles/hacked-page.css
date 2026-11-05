@@ -1,0 +1,62 @@
+/* Hacked website recovery page (owner's design, batch 1, 2026-11-05). Scoped to .hacked-pg; loaded after
+   plans-page.css and repair-page.css, whose hero, sections, cards, table scroll, FAQ and price cards it reuses. */
+.hk-platforms { padding-block: 24px 8px; background: var(--bg); }
+.hk-platforms .wrap { display: grid; gap: 16px; }
+.hk-chips { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.hk-chips li { padding: 8px 16px; border-radius: 999px; background: var(--mini); border: 1px solid var(--card-line); font-size: 15px; font-weight: 600; color: var(--head); }
+.hk-status { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 6px 16px; align-items: center; padding: 16px 20px; }
+.hk-status > * { margin: 0; }
+.hk-status h3 { grid-column: 1 / -1; font-size: 17px; }
+.hk-status p { font-size: 14.5px; color: var(--muted); }
+.hk-status p:first-of-type { font-weight: 700; color: var(--bad, #be123c); }
+.hk-status p:last-of-type { grid-column: 1 / -1; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; overflow-wrap: anywhere; }
+.hk-held { margin: 0; }
+.hacked-pg .hk-held h2 { font-size: 22px; max-width: none; }
+.hk-held .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.hk-held .card { padding: 14px 16px; }
+.hk-strip { border-left: 4px solid var(--bad, #be123c); }
+.hk-strip h4 { font-size: 20px; color: var(--head); }
+.hacked-pg .rp-strip h4 { font-size: 19px; color: var(--head); }
+.hk-h3 { margin: 24px 0 8px; font-size: 22px; }
+.hk-steps { counter-reset: none; }
+.hk-step { display: grid; gap: 10px; align-content: start; }
+.hk-step .n { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--sc); color: #fff; font-weight: 800; }
+.hk-step h3 { font-size: 20px; }
+.hk-step p { font-size: 15.5px; color: var(--muted); }
+.hk-quoted { font-size: 22px !important; letter-spacing: -.01em !important; }
+.hk-factors { margin-top: 24px; }
+.hk-cmp th h3 { margin: 0; font-size: inherit; line-height: inherit; font-weight: 700; color: var(--head); }
+.hk-faq summary h3 { margin: 0; font-size: inherit; line-height: inherit; font-weight: inherit; color: inherit; }
+.hk-countries { padding-block: 8px 40px; background: var(--alt); }
+.hk-countries .rp-subhd { margin-top: 24px; }
+@media (max-width: 759px) {
+  .hk-platforms { padding-block: 16px 4px; }
+  .hk-chips { justify-content: flex-start; gap: 8px; }
+  .hk-chips li { padding: 6px 12px; font-size: 14px; }
+  .hk-status { grid-template-columns: minmax(0, 1fr); padding: 14px 16px; }
+  .hk-countries { padding-block: 4px 24px; background: var(--bg); }
+}
+/* The hacked price line is longer than the repair one: it wraps on phones instead of running off the screen. */
+@media (max-width: 759px) {
+  .hacked-pg .rp-priceline { flex-wrap: wrap; white-space: normal; }
+}
+/* Height pass (owner targets: desktop 9,100, tablet 11,600, phone 7,900 px). Collapsing only; no text removed. */
+.hk-status-d { padding: 0; }
+.hk-status-d > summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 12px 20px; cursor: pointer; list-style: none; }
+.hk-status-d > summary::-webkit-details-marker { display: none; }
+.hk-status-d > summary h3 { margin: 0; font-size: 17px; }
+.hk-status-d > summary .ic { width: 20px; height: 20px; color: var(--accent); transition: transform .2s; }
+.hk-status-d[open] > summary .ic { transform: rotate(180deg); }
+.hk-status-d .hk-status { padding-top: 0; }
+@media (max-width: 759px) {
+  .hacked-pg .rp-plan { gap: 6px; padding: 16px; }
+  .hacked-pg .rp-plans { gap: 14px; }
+  .hacked-pg .rp-strip { padding: 16px; gap: 10px; }
+  .hacked-pg .hk-strip p { font-size: 15px; }
+  .hacked-pg .rp-inc-grid .rp-inc h3 { font-size: 16px; }
+}
+/* Cards inside a card (WordPress platform list) never stick out. */
+.hacked-pg .rp-guide-b .card { min-width: 0; }
+.hacked-pg .rp-guide-b .card .cards { grid-template-columns: repeat(auto-fill, minmax(min(180px, 100%), 1fr)); }
+.hacked-pg .rp-guide-b .cards { grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr)); }
+.hacked-pg .pp-work { margin-bottom: 16px; }

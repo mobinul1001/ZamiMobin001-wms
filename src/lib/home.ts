@@ -18,7 +18,7 @@ const [low, , high] = prices.plans.map((p) => p.monthly);
 const NEEDS = ['Monthly maintenance plan', 'Fix something on my site', 'Speed optimization', 'Hacked site / malware', 'Migration or redesign', 'Something else'];
 
 // The owner's quick-quote form, used in the hero and in the final call to action.
-export function quickForm(id: string, title: string, text: string, form = `home-${id}`) {
+export function quickForm(id: string, title: string, text: string, form = `home-${id}`, preselect = '') {
   const f = (name: string) => `${id}-${name}`;
   return `${formOpen(form, 'qf')}
     <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>
@@ -26,7 +26,7 @@ export function quickForm(id: string, title: string, text: string, form = `home-
     <div><label for="${f('phone')}">Phone / WhatsApp <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>
     <div class="qf-two"><div><label for="${f('email')}">Email <em>*</em></label><input id="${f('email')}" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
     <div><label for="${f('website')}">Website URL</label><input id="${f('website')}" type="url" name="website" placeholder="https://yourwebsite.com" autocomplete="url"></div></div>
-    <div><label for="${f('need')}">What do you need? <em>*</em></label><select id="${f('need')}" name="need" required><option value="">Select one</option>${NEEDS.map((n) => `<option>${n}</option>`).join('')}</select></div>
+    <div><label for="${f('need')}">What do you need? <em>*</em></label><select id="${f('need')}" name="need" required><option value="">Select one</option>${NEEDS.map((n) => `<option${n === preselect ? ' selected' : ''}>${n}</option>`).join('')}</select></div>
     <div><label for="${f('message')}">Tell us a little about it <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="What’s happening with your site, and what would you like us to do?" required></textarea></div>
     <button class="btn primary" type="submit">Get my free quote${icon('arrow')}</button>
     <p class="qf-foot">${icon('clock')}Reply within 24 hours · No spam · No contract</p>

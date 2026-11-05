@@ -333,3 +333,6 @@
 - Homepage: swipe cards keep their own height; placeholder reviews only in dev mode (real reviews from `src/data/reviews.json`); report card stacks at ≤420 px; trust bar icons never shrink; compact comparison tabs; country chips never clip.
 - Tests: design-qa `--sweep` (11 widths, both themes) with card-overflow, Example-tag and 44 px tap-target checks; build check fails on placeholder text, Lorem and TODO; new browser check at 320 px.
 - Audit: 580 problems found on 12 templates, all fixed with CSS (tap areas, wrapping, table scroll). Report: `reports/batch-1/stage-2.md`.
+
+## 2026-11-05: Batch 1, Stage 3 — hacked recovery page (branch `hacked-page`, not merged)
+- `/website-hacked-recovery-services/` rebuilt to the owner's design (new template, parser, stylesheet; reuses the plans and repair styles). Held claims collapsed with `<!-- OWNER CHECK -->`. SEO unchanged; parity 259/259 blocks. Report: `reports/batch-1/stage-3.md`.

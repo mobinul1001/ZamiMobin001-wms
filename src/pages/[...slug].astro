@@ -12,6 +12,8 @@ import Service from '../components/templates/Service.astro';
 import Form from '../components/templates/Form.astro';
 import WpPlans from '../components/templates/WpPlans.astro';
 import RepairPage from '../components/templates/RepairPage.astro';
+import HackedPage from '../components/templates/HackedPage.astro';
+import { HELD_LINES as HACKED_HELD } from '../lib/hacked';
 
 export async function getStaticPaths() {
   const entries = [...(await getCollection('pages')), ...(await getCollection('blog'))];
@@ -30,6 +32,7 @@ const pick = () => {
   if (path === '/') return Home;
   if (path === '/wordpress-website-maintenance-packages/') return WpPlans;
   if (path === '/website-repair-services/') return RepairPage;
+  if (path === '/website-hacked-recovery-services/') return HackedPage;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (FORM_PAGES.includes(path)) return Form;
@@ -39,10 +42,19 @@ const pick = () => {
 };
 const Template = pick();
 if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, path);
+// Hacked page: the closing section's response-time line is held (owner's brief, rule 6). It moves out of the final
+// CTA into the page body, where the page shows it collapsed for the owner to check.
+if (Template === HackedPage && entry.rendered?.html) {
+  const line = `<p>${HACKED_HELD[1]}</p>`;
+  const html = entry.rendered.html;
+  const at = html.lastIndexOf('<h2');
+  if (!html.includes(line) || at < 0) throw new Error('hacked page: held closing line not found');
+  entry.rendered.html = `${html.slice(0, at).trimEnd()}\n${line}\n${html.slice(at).replace(line, '')}`;
+}
 // A short call to action at the end of a page becomes its final CTA box.
 const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
 if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
-const hasForm = path === '/' || Template === RepairPage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
+const hasForm = path === '/' || Template === RepairPage || Template === HackedPage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>
   {hasForm && <script is:inline defer src="/forms.js" slot="head"></script>}

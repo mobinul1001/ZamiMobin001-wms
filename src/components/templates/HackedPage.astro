@@ -1,0 +1,147 @@
+---
+// Hacked website recovery page, owner's design (batch 1, design-reference/hacked/, 2026-11-05). All text is the
+// page's own (src/lib/hacked.ts); prices from prices.json. Header, footer and the final CTA come from Base.astro.
+// Reuses the plans page and repair page styles (sections, table scroll, FAQ, price cards, countries).
+import { getCollection } from 'astro:content';
+import hubs from '../../data/blog-hubs.json';
+import prices from '../../data/prices.json';
+import site from '../../data/site.json';
+import { icon, tick } from '../../lib/icons';
+import { quickForm } from '../../lib/home';
+import { hlLast } from '../../lib/polish';
+import { parseHacked } from '../../lib/hacked';
+import plansCss from '../../styles/plans-page.css?url';
+import repairCss from '../../styles/repair-page.css?url';
+import hackedCss from '../../styles/hacked-page.css?url';
+import SectionAccordion from '../plans/SectionAccordion.astro';
+import TrustStrip from '../service/TrustStrip.astro';
+import Countries from '../service/Countries.astro';
+
+const { entry } = Astro.props;
+const { path, h1 } = entry.data;
+const d = parseHacked(entry.rendered?.html ?? '');
+const posts = await getCollection('blog');
+const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
+const form = quickForm('hacked', 'Get a free website check', 'Tell us about your site. We reply within 24 hours with a free check and your exact price.', 'hacked', 'Hacked site / malware');
+// Hero buttons: the main one goes to the form on this page; the scan link goes to the scanner (there is no #scan section).
+const heroHref = (h: string) => (h === '#contact' ? '#quote' : h === '#scan' ? '/website-malware-scanner/' : h);
+const linkHref = (h: string) => (h === '#scan' ? '/website-malware-scanner/' : h);
+const usd = (n: number) => `$${n}`;
+const rm = (label: string, body: string) => `<details class="pp-rm"><summary>${label}${icon('down')}</summary><div class="pp-prose">${body}</div></details>`;
+const shown = (n: number) => d.faq.items.slice(0, n);
+const faqItem = (f: (typeof d.faq.items)[number]) => `<details><summary><h3 id="${f.id}">${f.q}</h3>${icon('down')}</summary><div class="a"><p>${f.a}</p></div></details>`;
+---
+<link rel="stylesheet" href={plansCss} />
+<link rel="stylesheet" href={repairCss} />
+<link rel="stylesheet" href={hackedCss} />
+<div class="plans-pg repair-pg hacked-pg">
+  <section class="rp-hero"><div class="wrap">
+    <div class="rp-hero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
+      <p class="eyebrow"><Fragment set:html={icon('shield')} /><span set:html={d.hero.eyebrow} /></p>
+      <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
+      <p class="rp-sub" set:html={d.hero.lead} />
+      <p class="rp-priceline"><b>Hacked site cleanup {usd(prices.hackedSiteCleanup)}</b><span>Free initial diagnosis</span></p>
+      <div class="cta-row">{d.hero.links.map((l, i) => <a class:list={['btn', i === 0 ? 'primary' : 'ghost']} href={heroHref(l.href)}>{l.label}{i === 0 && <Fragment set:html={icon('arrow')} />}</a>)}</div>
+      <ul class="rp-ticks">{[d.promise, ...d.hero.extra, d.hero.trustLine].map((t) => <li><Fragment set:html={tick} /><span set:html={t} /></li>)}</ul>
+    </div>
+    <div class="rp-hero-side" id="quote">
+      <Fragment set:html={form} />
+    </div>
+  </div></section>
+  <TrustStrip />
+  <section class="hk-platforms"><div class="wrap">
+    <ul class="hk-chips" aria-label="Platforms">{[...new Set(d.hero.platforms)].map((p) => <li>{p}</li>)}</ul>
+    {/* The old "Security Status" card: a closed accordion whose title is its own H3. */}
+    <details class="card hk-status-d"><summary set:html={d.hero.statusHtml.match(/<h3[\s\S]*?<\/h3>/)?.[0] + icon('down')} /><div class="hk-status" set:html={d.hero.statusHtml.replace(/<h3[\s\S]*?<\/h3>/, '')} /></details>
+    {/* OWNER CHECK: held by the brief (rule 6) until the owner approves; kept in the HTML, collapsed. */}
+    <Fragment set:html={'<!-- OWNER CHECK: "Avg. Response: 30 Mins", the "Independently Verified" section and its links (source needed) -->'} />
+    <details class="pp-rm hk-held"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="pp-prose">
+      <p set:html={d.heldAvg} />
+      <h2 id={d.verified.sec.id} set:html={d.verified.sec.h2} />
+      <Fragment set:html={d.verified.html} />
+    </div></details>
+  </div></section>
+
+  <SectionAccordion eyebrow={d.signs.sec.eyebrow} h2={d.signs.sec.h2} id={d.signs.sec.id} open>
+    <p class="sx-lead" set:html={d.signs.lead} />
+    <div class="rp-grid4 rp-inc-grid">{d.signs.cards.slice(0, 4).map((c) => <article class="card rp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div>
+    <details class="pp-rm"><summary>Show 4 more signs<Fragment set:html={icon('down')} /></summary><div class="rp-grid4 rp-inc-grid">{d.signs.cards.slice(4).map((c) => <article class="card rp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div></details>
+    <div class="rp-strip hk-strip"><div><h4 set:html={d.signs.strip.h4} />{d.signs.strip.paras.map((p) => <p set:html={p} />)}</div><a class="btn primary" href={linkHref(d.signs.strip.link.href)}>{d.signs.strip.link.label}</a></div>
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.why.sec.eyebrow} h2={d.why.sec.h2} id={d.why.sec.id} alt open>
+    <p class="sx-lead" set:html={d.why.paras[0]} />
+    <Fragment set:html={'<!-- OWNER CHECK: the paragraph with the 45-day dwell time (source needed) -->' + rm('Read more', `<p>${d.why.held}</p>` + d.why.paras.slice(1).map((p) => `<p>${p}</p>`).join(''))} />
+    <h3 class="hk-h3" set:html={d.why.table.h3} />
+    <p class="pp-swipe">{d.why.table.swipe}</p>
+    <div class="pp-tscroll rp-tscroll" tabindex="0" role="region" aria-label="The real cost of waiting, scrolls sideways"><table class="pp-t rp-t">
+      <thead><tr>{d.why.table.head.map((h) => <th scope="col" set:html={h} />)}</tr></thead>
+      <tbody>{d.why.table.rows.map(([f, ...cs]) => <tr><th scope="row" set:html={f} />{cs.map((c) => <td set:html={c} />)}</tr>)}</tbody>
+    </table></div>
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.process.sec.eyebrow} h2={d.process.sec.h2} id={d.process.sec.id}>
+    <p class="sx-lead" set:html={d.process.lead} />
+    <ol class="rp-grid3 hk-steps">{d.process.steps.map((s, i) => <li class="card hk-step"><span class="n" style={`--sc:${['#1d6fd8', '#0a7f54', '#c2410c', '#7e22ce', '#be185d', '#047857'][i]}`}>{s.n}</span><h3 set:html={s.h} /><p set:html={s.p} /></li>)}</ol>
+    <p class="pp-after" set:html={d.process.after} />
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.included.sec.eyebrow} h2={d.included.sec.h2} id={d.included.sec.id} alt>
+    <p class="sx-lead" set:html={d.included.lead} />
+    <div class="rp-grid3">{d.included.items.slice(0, 3).map((c) => <article class="card rp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div>
+    <details class="pp-rm"><summary>Show 3 more included items<Fragment set:html={icon('down')} /></summary><div class="rp-grid3">{d.included.items.slice(3).map((c) => <article class="card rp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div></details>
+    <div class="rp-strip"><div><h4 set:html={d.included.strip.h4} /><p set:html={d.included.strip.p} /></div><a class="btn ghost" href={d.included.strip.link.href}>{d.included.strip.link.label}</a></div>
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.pricing.sec.eyebrow} h2={d.pricing.sec.h2} id="pricing" open>
+    <Fragment set:html={rm('Read more', `<p>${d.pricing.lead}</p>`)} />
+    {/* Price cards: prices.json; wording from the owner's brief, rule 4. */}
+    <div class="rp-grid3 rp-plans">
+      <article class="card rp-plan pop"><p class="rp-k">Hacked site cleanup</p><p class="rp-price">{usd(prices.hackedSiteCleanup)}</p><a class="btn primary" href="#quote">Get Emergency Help Now</a></article>
+      <article class="card rp-plan"><p class="rp-k">Larger or complex infections</p><p class="rp-price hk-quoted">Quoted after a free diagnosis</p><a class="btn ghost" href="/get-a-free-quote/">Get a free quote</a></article>
+      <article class="card rp-plan"><p class="rp-k">Ongoing protection</p><p class="rp-price">From {usd(prices.plans[0].monthly)}/mo</p><a class="btn ghost" href={d.pricing.strip.link.href}>{d.pricing.strip.link.label}</a></article>
+    </div>
+    <p class="rp-note"><Fragment set:html={tick} /><span>Free initial diagnosis · Flat-fee quote · No contract</span> <a href="/free-website-maintenance-audit/">Get a free website check</a></p>
+    <details class="pp-rm"><summary>Read more<Fragment set:html={icon('down')} /></summary><div class="rp-grid4 hk-factors">{d.pricing.factors.map((c) => <article class="card rp-inc"><h3 set:html={c.h} /><p set:html={c.p} /></article>)}</div></details>
+    <div class="rp-strip"><div><h4 set:html={d.pricing.strip.h4} /><p set:html={d.pricing.strip.p} /></div></div>
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.compare.sec.eyebrow} h2={d.compare.sec.h2} id={d.compare.sec.id} alt>
+    <p class="sx-lead" set:html={d.compare.lead} />
+    <p class="pp-swipe" aria-hidden="true">Swipe sideways to compare</p>
+    <div class="pp-tscroll rp-tscroll" tabindex="0" role="region" aria-label="DIY, plugin or professional recovery, scrolls sideways"><table class="pp-t rp-t hk-cmp">
+      <thead><tr>{d.compare.head.map((h, i) => <th scope="col" class:list={{ w: i === 3 }} set:html={h} />)}</tr></thead>
+      <tbody>{d.compare.capabilities.map((c) => <tr><th scope="row"><h3 id={c.id} set:html={c.h} /></th>{c.vals.map((v, i) => <td class:list={{ w: i === 2 }} set:html={`<span class="sr-only">${['DIY Cleanup', 'Security Plugin', 'Professional'][i]} </span>${v}`} />)}</tr>)}</tbody>
+    </table></div>
+    <div class="rp-strip"><div><h4 set:html={d.compare.plugins.h4} /><p set:html={d.compare.plugins.p} /></div></div>
+  </SectionAccordion>
+
+  <SectionAccordion eyebrow={d.outcomes.sec.eyebrow} h2={d.outcomes.sec.h2} id={d.outcomes.sec.id}>
+    <p class="sx-lead" set:html={d.outcomes.lead} />
+    {/* The old page showed this card beside its text (service template); kept with its link to /works/. */}
+    <div class="card pp-work"><div class="pp-work-stats">{site.stats.slice(0, 2).map(([v, l]) => <p><b>{v}</b><span>{l}</span></p>)}</div><p>{site.statsLine}</p><a class="btn ghost" href="/works/">See our work</a></div>
+    <Fragment set:html={'<!-- OWNER CHECK: "Also Trusted By Brands Like ..." (the owner confirms each brand may be shown) -->'} />
+    <Fragment set:html={rm('Read more', d.outcomes.brandsHtml)} />
+  </SectionAccordion>
+
+  <section class="pp-sec alt rp-learn"><div class="wrap"><div class="rp-acc">{[d.platforms, d.industries].map((it) => (
+    <details class="rp-guide">
+      <summary><span class="rp-guide-hd">{it.sec.eyebrow && <span class="eyebrow">{it.sec.eyebrow}</span>}<h2 id={it.sec.id} set:html={it.sec.h2} /></span><Fragment set:html={icon('down', 'sx-ic')} /></summary>
+      <div class="rp-guide-b prose" set:html={it.html} />
+    </details>
+  ))}</div></div></section>
+
+  <SectionAccordion eyebrow={d.faq.sec.eyebrow} h2={d.faq.sec.h2} id={d.faq.sec.id}>
+    <p class="sx-lead" set:html={d.faq.lead} />
+    <div class="pp-faq rp-faq hk-faq">
+      <Fragment set:html={shown(6).map(faqItem).join('')} />
+      <details class="pp-rm pp-faq-more"><summary>Show all {d.faq.items.length} questions<Fragment set:html={icon('down')} /></summary><div class="pp-faq hk-faq" set:html={d.faq.items.slice(6).map(faqItem).join('')} /></details>
+    </div>
+    {d.faq.tail.length > 0 && <Fragment set:html={'<!-- OWNER CHECK: response-time and 24/7 lines from the closing section -->' + rm('Read more', d.faq.tail.map((t) => `<p>${t}</p>`).join(''))} />}
+  </SectionAccordion>
+
+  {guides.length > 0 && <SectionAccordion h2="Guides" alt><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></SectionAccordion>}
+  <section class="hk-countries"><div class="wrap"><Countries /></div></section>
+  <div class="pp-stick"><a class="btn primary" href="#quote">Get Emergency Help Now</a></div>
+</div>
