@@ -63,8 +63,8 @@ const main = [
 const quote = '/get-a-free-quote/';
 const code = lang.slice(0, 2);
 const isPt = code === 'pt';
-// Label of the footer's "Cookie settings" button (the footer is unchanged; the cookie bar it opened was removed 2026-11-05).
-const cookieText = isPt ? { settings: 'Configurações de cookies' } : { settings: 'Cookie settings' };
+// Footer link to the cookie policy (2026-11-06: replaces the "Cookie settings" button, whose cookie bar was removed).
+const cookieText = isPt ? { policy: 'Política de cookies' } : { policy: 'Cookie policy' };
 const CTA_DEFAULT: Record<string, { title: string; text: string; links: { href: string; label: string }[] }> = {
   en: { title: 'Keep your website fast, secure and up to date.', text: 'Tell us what your site needs. We reply with a clear plan and price.', links: [{ href: quote, label: 'Get a free quote' }, { href: '/monthly-website-maintenance-packages/', label: 'See plans & pricing' }] },
   es: { title: 'Mantén tu sitio web rápido, seguro y actualizado.', text: 'Cuéntanos qué necesita tu sitio. Te respondemos con un plan y un precio claros.', links: [{ href: quote, label: 'Pedir un presupuesto gratis' }, { href: '/monthly-website-maintenance-packages/', label: 'Ver planes y precios' }] },
@@ -98,7 +98,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
     {isProduction && (
       <script is:inline>
         // Consent Mode v2 default: everything stays denied. The cookie bar and its tag loader were removed on 2026-11-05
-        // (owner); GA4 and Clarity do not load until the owner decides how consent works.
+        // (owner); GA4 and Clarity do not load; the owner sets them up later (reports/TODO.md).
         window.wmsAnalytics = true;
         window.dataLayer = window.dataLayer || [];
         window.gtag = function () { dataLayer.push(arguments); };
@@ -157,7 +157,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
           <details class="wf-col" open><summary>{heading}</summary><ul>{links.map(([label, href]) => <li><a href={href}>{label}</a></li>)}</ul></details>
         ))}
       </div>
-      <div class="wf-legal"><span>{foot.copyright}</span><span class="wf-ll">{(foot.legal as string[][]).map(([label, href]) => <a href={href}>{label}</a>)}<button type="button" id="cookie-settings" class="link-button">{cookieText.settings}</button></span></div>
+      <div class="wf-legal"><span>{foot.copyright}</span><span class="wf-ll">{(foot.legal as string[][]).map(([label, href]) => <a href={href}>{label}</a>)}<a href="/cookie-policy/">{cookieText.policy}</a></span></div>
     </div></footer>
     {isHome && <div class="mbar"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a></div>}
     <script is:inline>

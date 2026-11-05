@@ -51,12 +51,12 @@
     299
   ],
   "malwareTiers": {
-    "status": "PENDING owner confirmation (batch 1, 2026-11-05): from the malware page text; Cleanup uses hackedSiteCleanup",
+    "status": "PENDING owner confirmation (2026-11-06: stays pending; show no number, \"Fixed quote after a free check\"). Cleanup uses hackedSiteCleanup ($149).",
     "protect": 249,
     "priority": 349
   },
   "migrationPrices": {
-    "status": "PENDING owner confirmation (batch 1, 2026-11-05): the owner's latest numbers from the migration brief. The page text still says Platform Change \"Starting from $1499\" and its FAQ says \"starts at $999\".",
+    "status": "CONFIRMED by the owner 2026-11-06: Host-to-Host $149 (free with any annual plan), Full Migration from $399 (Most popular), Platform and eCommerce Change from $1,199 (custom quote after a free scan).",
     "hostMove": 149,
     "full": 399,
     "platformFrom": 1199

@@ -785,6 +785,8 @@ Tailored for large corporate portals, multisite networks, headless CMS, or compl
 
 </div>
 
+Free hosting and 2 free email accounts are included with a redesign.
+
 #### What drives the average website redesign cost?
 
 Total **average website redesign cost** depends on total page count, custom functionality, eCommerce catalog size, and CRM/API integrations. Ready for an exact quote? Contact us to [get a custom quote](/get-a-free-quote/) or [see full pricing details](/monthly-website-maintenance-packages/).

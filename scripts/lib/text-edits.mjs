@@ -3,6 +3,7 @@
 //   exact:   [from, to]  an element whose whole text is `from` gets the text `to`
 //   drop:    text        a list item, paragraph or cell whose whole text is `text` is removed
 //   dropRow: text        a table row whose first cell is `text` is removed
+//   insertBefore: [text, newText]  a new paragraph `newText` goes right before the element whose whole text is `text`
 //   sub:     [from, to, htmlFrom?, mdFrom?]  part of a sentence: `from` becomes `to` (htmlFrom / mdFrom when the
 //            body HTML or the Markdown spells it differently)
 // Every page-scoped rule must be used at least once, or the migration stops (checkTextEditsUsed).
@@ -10,6 +11,18 @@ const FREE_OFFER = 'Owner, 2026-11-05: free hosting and the 2 free email account
 export const GLOBAL_EXCEPT = ['/website-redesign-services/'];
 
 export const TEXT_EDITS = {
+  // Owner, 2026-11-06: free hosting and 2 free email accounts stay only with a redesign, stated once in its pricing
+  // section. No duration is stated until the owner confirms it (question in reports/batch-1/FINAL.md).
+  '/website-redesign-services/': {
+    insertBefore: [['What drives the average website redesign cost?', 'Free hosting and 2 free email accounts are included with a redesign.']],
+  },
+  // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
+  '/website-migration-services/': {
+    sub: [
+      ['Starting from $1499', 'Starting from $1,199'],
+      ['a platform change starts at $999', 'a platform change starts at $1,199'],
+    ],
+  },
   // Owner, 2026-11-05: the process shows 4 steps, so the heading and its label say 4.
   '/website-repair-services/': {
     exact: [
@@ -100,6 +113,11 @@ export function applyTextEdits($, path) {
       const hits = $('tr').toArray().filter((tr) => norm($(tr).children('th, td').first().text()) === text);
       hits.forEach((e) => $(e).remove());
       if (hits.length) mark(scope, 'dropRow', i);
+    });
+    (r.insertBefore ?? []).forEach(([text, add], i) => {
+      const hits = $('body *').toArray().filter((e) => norm($(e).text()) === text && !$(e).children().toArray().some((c) => norm($(c).text()) === text));
+      hits.forEach((e) => $(e).before(`<p>${esc(add)}</p>`));
+      if (hits.length) mark(scope, 'insertBefore', i);
     });
     const body = $('body');
     let html = body.html() ?? '';
