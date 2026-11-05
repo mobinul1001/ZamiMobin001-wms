@@ -1,7 +1,7 @@
 ---
 path: "/caribbean-taxi-transport-website-guide/"
-title: "Caribbean Taxi & Transport Website Guide: Booking, SEO & More | WMS"
-description: "The complete guide to building a taxi, water taxi, or transfer website in the Caribbean — must-have features, booking tools, SEO, maintenance, and how to avoid getting locked in by an agency."
+title: "Caribbean Taxi & Transport Website Guide: Booking & SEO"
+description: "Caribbean taxi and transport website guide: booking systems, payments, local SEO and what a tour or transfer site needs for direct bookings."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Caribbean Taxi & Transport Website Guide: Booking, SEO & More"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Caribbean Taxi & Transport Website Guide: Booking, SEO & More","og:description":"The complete guide to building a taxi, water taxi, or transfer website in the Caribbean — must-have features, booking tools, SEO, maintenance, and how to avoid getting locked in by an agency.","og:url":"https://websitemaintenanceservices.org/caribbean-taxi-transport-website-guide/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-24T19:13:56+00:00","article:modified_time":"2026-07-25T14:17:00+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/caribbean-taxi-transport-website-guide.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"18 minutes"}

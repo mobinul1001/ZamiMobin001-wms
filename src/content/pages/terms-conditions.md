@@ -1,7 +1,7 @@
 ---
 path: "/terms-conditions/"
 title: "Terms & Conditions | WMS"
-description: "Learn the terms and conditions governing our website maintenance and support services."
+description: "The terms and conditions for websitemaintenanceservices.org and our maintenance, repair and design services: scope, payment and liability."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Terms & Conditions"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Terms & Conditions for Website Maintenance Company","og:description":"Learn the terms and conditions governing our website maintenance and support services.","og:url":"https://websitemaintenanceservices.org/terms-conditions/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:58:40+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"13 minutes"}

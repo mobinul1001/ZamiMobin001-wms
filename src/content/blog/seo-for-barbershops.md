@@ -1,7 +1,7 @@
 ---
 path: "/seo-for-barbershops/"
-title: "SEO for Barbershops: Get Found and Book More Clients | WMS"
-description: "Learn how barbershop SEO improves Google visibility, reviews, website performance, online bookings, and customer retention with a practical strategy."
+title: "SEO for Barbershops: Get Found and Book More Clients"
+description: "SEO for barbershops: set up Google Business Profile, local keywords, reviews and online booking so people nearby find your shop and book."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "SEO for Barbershops: Get Found and Book More Clients"
 social: {"og:locale":"en_US","og:type":"article","og:title":"SEO for Barbershops: Get Found and Book More Clients","og:description":"Learn how barbershop SEO improves Google visibility, reviews, website performance, online bookings, and customer retention with a practical strategy.","og:url":"https://websitemaintenanceservices.org/seo-for-barbershops/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-08-01T21:10:22+00:00","article:modified_time":"2026-08-02T11:47:54+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/seo-for-barbershops-featured-image.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"23 minutes"}

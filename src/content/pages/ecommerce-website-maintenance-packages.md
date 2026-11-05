@@ -1,7 +1,7 @@
 ---
 path: "/ecommerce-website-maintenance-packages/"
-title: "Ecommerce Website Maintenance Services & Packages | WMS"
-description: "Ecommerce website maintenance packages that keep your store fast, secure & online — updates, security, backups & checkout monitoring from $199/mo. Get a free quote."
+title: "Ecommerce Website Maintenance Packages & Plans | WMS"
+description: "Ecommerce website maintenance packages for WooCommerce: tested updates, checkout checks, backups and security from $199/mo. Get a quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Ecommerce Website Maintenance Services & Packages"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Ecommerce Website Maintenance Packages | From $199/mo","og:description":"Ecommerce website maintenance packages that keep your store fast, secure & online — updates, security, backups & checkout monitoring from $199/mo. Get a free quote.","og:url":"https://websitemaintenanceservices.org/ecommerce-website-maintenance-packages/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:54:59+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/Ecommerce-Website-Maintenance-Packages-Plans-Pricing.jpg","og:image:width":"1000","og:image:height":"1000","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

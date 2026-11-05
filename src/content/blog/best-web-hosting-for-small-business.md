@@ -1,7 +1,7 @@
 ---
 path: "/best-web-hosting-for-small-business/"
-title: "Best Web Hosting for Small Business in 2026: Top 12 | WMS"
-description: "Compare the 12 best web hosting services for small businesses in 2026. Explore pricing, speed, security, WordPress hosting, and affordable hosting options."
+title: "Best Web Hosting for Small Business in 2026: Top 12"
+description: "Best web hosting for small business in 2026: 12 hosts compared on price, speed, support and uptime, with the best pick for each kind of website."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Best Web Hosting for Small Business in 2026: Top 12"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Best Web Hosting for Small Business in 2026: Top 12","og:description":"Compare the 12 best web hosting services for small businesses in 2026. Explore pricing, speed, security, WordPress hosting, and affordable hosting options.","og:url":"https://websitemaintenanceservices.org/best-web-hosting-for-small-business/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-14T08:31:59+00:00","article:modified_time":"2026-10-15T09:53:12+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/best-web-hosting-small-business-featured-image.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"40 minutes"}

@@ -1,7 +1,7 @@
 ---
 path: "/shopify-website-maintenance-packages/"
-title: "Shopify Website Maintenance Services & Packages | WMS"
-description: "Explore Shopify website maintenance packages with flexible plans, essential services, and transparent cost of pricing for all businesses."
+title: "Shopify Website Maintenance Packages & Services | WMS"
+description: "Shopify website maintenance packages: app and theme updates, speed checks, store fixes and reports, with plans from $149/mo. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Shopify Website Maintenance Services & Packages"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Shopify Website Maintenance Packages ,Plans,Services and Costs","og:description":"Explore Shopify website maintenance packages with flexible plans, essential services, and transparent cost of pricing for all businesses.","og:url":"https://websitemaintenanceservices.org/shopify-website-maintenance-packages/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T18:01:16+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/Shopify-Website-Maintenance-Packages-PlansServices-and-Costs.jpg","og:image:width":"1000","og:image:height":"1000","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

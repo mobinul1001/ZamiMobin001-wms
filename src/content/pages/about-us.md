@@ -1,7 +1,7 @@
 ---
 path: "/about-us/"
-title: "About Us | WMS"
-description: "Learn who we are, what we do, and why businesses trust our expert website maintenance and support services."
+title: "About Us: The Website Care Team Behind WMS | WMS"
+description: "About WMS: a website care team with 12+ years of experience and 650+ websites maintained for businesses in the US, UK, Canada and Europe."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "About Us"
 social: {"og:locale":"en_US","og:type":"article","og:title":"About Website Maintenance Company","og:description":"Learn who we are, what we do, and why businesses trust our expert website maintenance and support services.","og:url":"https://websitemaintenanceservices.org/about-us/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T17:21:28+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"19 minutes"}

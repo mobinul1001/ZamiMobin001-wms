@@ -1,7 +1,7 @@
 ---
 path: "/website-rebuild-guide/"
-title: "Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign | WMS"
-description: "A complete guide to website rebuilds — real costs, timelines, a step-by-step checklist, rebuild vs redesign, and how to protect your SEO. Get a free rebuild estimate."
+title: "Website Rebuild in 2026: Cost, Timeline & vs Redesign"
+description: "Website rebuild guide: when to rebuild instead of redesign, what it costs, how long it takes and how to keep your rankings during the switch."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Rebuild in 2026: Cost, Timeline & Rebuild vs Redesign","og:description":"A complete guide to website rebuilds — real costs, timelines, a step-by-step checklist, rebuild vs redesign, and how to protect your SEO. Get a free rebuild estimate.","og:url":"https://websitemaintenanceservices.org/website-rebuild-guide/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T22:01:45+00:00","article:modified_time":"2026-07-08T21:11:43+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-rebuild-guide-2026-featured-image.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"30 minutes"}

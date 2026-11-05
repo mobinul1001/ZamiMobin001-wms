@@ -1,7 +1,7 @@
 ---
 path: "/website-redesign-services/"
-title: "Website Redesign Services That Protect (and Improve) Your SEO | WMS"
-description: "Get a free redesign & SEO audit."
+title: "Website Redesign Services That Protect Your SEO | WMS"
+description: "Website redesign services that keep your rankings: URL mapping, 301 redirects, content and schema kept, tested on staging. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign Services That Protect (and Improve) Your SEO Rankings."
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Redesign Services That Protect (and Improve) Your SEO","og:description":"Get a free redesign & SEO audit.","og:url":"https://websitemaintenanceservices.org/website-redesign-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-01T15:55:08+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/seo-first-website-redesign-service-featured-image.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"17 minutes"}

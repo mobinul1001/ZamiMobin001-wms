@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-australia/"
-title: "Website Maintenance Services in Australia | WMS"
-description: "Professional website maintenance services for businesses across Australia with fast and reliable support to keep your site Safe & Virus free."
+title: "Website Maintenance Services Australia: from A$109/mo"
+description: "Website maintenance services for Australian businesses: updates, backups, security and fixes, with plans from A$109 a month. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in Australia"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for Australia | Premium Support","og:description":"Professional website maintenance services for businesses across Australia with fast and reliable support to keep your site Safe & Virus free.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-australia/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:59:47+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

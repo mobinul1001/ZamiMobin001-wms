@@ -1,7 +1,7 @@
 ---
 path: "/what-does-website-maintenance-include/"
-title: "What Does Website Maintenance Include? (2026 Guide) | WMS"
-description: "A clear breakdown of what website maintenance includes: updates, security, backups, performance, uptime & SEO — plus how often each task should happen in 2026."
+title: "What Does Website Maintenance Include? (2026 Guide)"
+description: "What does website maintenance include? Updates, backups, security, uptime, speed, SEO health and content edits, and what is usually extra."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Does Website Maintenance Include? (2026 Guide)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"What Does Website Maintenance Include? (2026 Guide)","og:description":"A clear breakdown of what website maintenance includes: updates, security, backups, performance, uptime & SEO — plus how often each task should happen in 2026.","og:url":"https://websitemaintenanceservices.org/what-does-website-maintenance-include/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T08:28:49+00:00","article:modified_time":"2026-07-05T11:44:47+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/what-does-website-maintenance-include-guide-2026.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"11 minutes"}

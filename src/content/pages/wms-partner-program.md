@@ -1,7 +1,7 @@
 ---
 path: "/wms-partner-program/"
-title: "Website Partner Program: Reseller & White Label | WMS"
-description: "Partner with Website Maintenance Services. Offer ongoing WordPress care, security, and technical website maintenance to your clients. Set your own prices and keep your profit margins."
+title: "Partner Program: Website Maintenance Reseller | WMS"
+description: "Join the WMS partner program: resell website maintenance or white label it for your clients, with our team doing all the work. Apply today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Turn Your Client Relationships Into a New Revenue Stream"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Partner Program | Reseller & White Label - WMS","og:description":"Partner with Website Maintenance Services. Offer ongoing WordPress care, security, and technical website maintenance to your clients. Set your own prices and keep your profit margins.","og:url":"https://websitemaintenanceservices.org/wms-partner-program/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-09-23T18:19:40+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"21 minutes"}

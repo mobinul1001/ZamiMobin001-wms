@@ -1,7 +1,7 @@
 ---
 path: "/wordpress-website-maintenance-packages/"
-title: "WordPress Website Maintenance Services & Plans | WMS"
-description: "Compare WordPress website maintenance packages: Essential $79, Growth $149 & Business $299/mo. Full feature list, 2 months free on annual, no contracts."
+title: "WordPress Maintenance Packages & Plans | WMS"
+description: "WordPress maintenance packages and plans: core and plugin updates, backups, security scans and fixes from $79 to $299 a month. Start a plan."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Website Maintenance Services & Plans"
 social: {"og:locale":"en_US","og:type":"article","og:title":"WordPress Maintenance Packages & Plans | $79–$299/mo","og:description":"Compare WordPress website maintenance packages: Essential $79, Growth $149 & Business $299/mo. Full feature list, 2 months free on annual, no contracts.","og:url":"https://websitemaintenanceservices.org/wordpress-website-maintenance-packages/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:15:57+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/WordPress-Website-Maintenance-Packages.jpg","og:image:width":"1024","og:image:height":"1024","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

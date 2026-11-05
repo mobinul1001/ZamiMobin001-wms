@@ -1,7 +1,7 @@
 ---
 path: "/wordpress-site-hacked-what-to-do/"
-title: "WordPress Site Hacked? Here's What to Do (2026 Guide) | WMS"
-description: "Discovered your WordPress site has been hacked? Follow this step-by-step recovery guide to clean your site, remove malware, and prevent future attacks. Expert help available."
+title: "WordPress Site Hacked? Here's What to Do (2026 Guide)"
+description: "WordPress site hacked? What to do first, how to find and remove the hack, restore a clean backup and stop the same hack happening again."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Site Hacked? Here's Exactly What to Do (2026 Guide)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"WordPress Site Hacked? Here's Exactly What to Do (2026 Guide)","og:description":"Discovered your WordPress site has been hacked? Follow this step-by-step recovery guide to clean your site, remove malware, and prevent future attacks. Expert help available.","og:url":"https://websitemaintenanceservices.org/wordpress-site-hacked-what-to-do/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-28T22:25:42+00:00","article:modified_time":"2026-06-29T02:03:49+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/why-website-maintenance-matters-1.webp","og:image:width":"1960","og:image:height":"802","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"14 minutes"}

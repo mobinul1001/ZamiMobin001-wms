@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-process/"
 title: "Website Maintenance Process: Our 9-Step Workflow | WMS"
-description: "What is the website maintenance process? See our proven 9-step workflow: setup, daily monitoring, weekly updates, optimization, security & support."
+description: "Our website maintenance process in 9 steps: audit, backups, updates on staging, security, speed, testing and monthly reports. See every step."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Our Website Maintenance Process"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Process: Our 9-Step Workflow (2026)","og:description":"What is the website maintenance process? See our proven 9-step workflow: setup, daily monitoring, weekly updates, optimization, security & support.","og:url":"https://websitemaintenanceservices.org/website-maintenance-process/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T17:40:10+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

@@ -1,7 +1,7 @@
 ---
 path: "/web-design-saint-lucia/"
-title: "Web Design Saint Lucia: Services, Costs & Complete Guide | WMS"
-description: "Explore web design in Saint Lucia, including website costs, custom development, Shopify, responsive design, and tips for choosing the right web designer."
+title: "Web Design Saint Lucia: Services, Costs & Guide | WMS"
+description: "Web design in Saint Lucia: what a business website costs, what to include, local SEO for St. Lucia businesses and how to pick a web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Saint Lucia: Services, Costs & Complete Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Web Design Saint Lucia: Services, Costs & Complete Guide","og:description":"Explore web design in Saint Lucia, including website costs, custom development, Shopify, responsive design, and tips for choosing the right web designer.","og:url":"https://websitemaintenanceservices.org/web-design-saint-lucia/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-20T20:03:04+00:00","article:modified_time":"2026-10-21T02:21:36+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/web-design-saint-lucia-services-guide.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"24 minutes"}

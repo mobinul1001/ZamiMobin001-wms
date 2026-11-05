@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-usa/"
-title: "Website Maintenance Services in the USA | WMS"
-description: "Trusted website maintenance services for USA businesses. Keep your site secure, fast, and fully updated with ongoing expert support."
+title: "Website Maintenance Services USA: Plans from $79/mo | WMS"
+description: "Website maintenance services for US businesses: updates, backups, security and fixes, with plans from $79 a month. Get a free quote today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in the USA"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for USA","og:description":"Trusted website maintenance services for USA businesses. Keep your site secure, fast, and fully updated with ongoing expert support.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-usa/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:15:33+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"4 minutes"}

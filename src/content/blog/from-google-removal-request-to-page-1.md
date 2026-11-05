@@ -1,7 +1,7 @@
 ---
 path: "/from-google-removal-request-to-page-1/"
-title: "SEO Recovery Case Study: 10 Lessons That Restored Rankings | WMS"
-description: "Real SEO case study: technical fixes, internal linking, maintenance, and the hidden Search Console issue that held a tourism site back."
+title: "SEO Recovery Case Study: 10 Lessons That Restored Rankings"
+description: "SEO recovery case study: how a site came back after a Google removal request, step by step, and 10 lessons to use on your own website today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "From Google Removal Request to Page 1: 10 SEO Lessons From Recovering a Tourism Website"
 social: {"og:locale":"en_US","og:type":"article","og:title":"SEO Recovery Case Study: 10 Lessons That Restored Rankings","og:description":"Real SEO case study: technical fixes, internal linking, maintenance, and the hidden Search Console issue that held a tourism site back.","og:url":"https://websitemaintenanceservices.org/from-google-removal-request-to-page-1/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-06T18:58:23+00:00","article:modified_time":"2026-06-20T16:52:49+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/From-Google-Removal-Request-to-Page-no-1-10-SEO-Lessons-From-Recovering-a-Tourism-Website.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"9 minutes"}

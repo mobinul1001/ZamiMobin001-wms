@@ -1,7 +1,7 @@
 ---
 path: "/salon-seo/"
-title: "Salon SEO: How Hair and Beauty Salons Rank Locally | WMS"
-description: "Learn how salon SEO improves Google Maps visibility, service rankings, reviews, website traffic, calls, and online bookings for beauty businesses."
+title: "Salon SEO: How Hair and Beauty Salons Rank Locally"
+description: "Salon SEO guide for hair and beauty salons: Google Business Profile, local keywords, reviews and booking pages that help you rank in your area."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Salon SEO: How Hair and Beauty Salons Rank Locally"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Salon SEO: How Hair and Beauty Salons Rank Locally","og:description":"Learn how salon SEO improves Google Maps visibility, service rankings, reviews, website traffic, calls, and online bookings for beauty businesses.","og:url":"https://websitemaintenanceservices.org/salon-seo/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-08-04T18:57:08+00:00","article:modified_time":"2026-08-06T02:03:47+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/salon-seo-local-ranking-guide.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"22 minutes"}

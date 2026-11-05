@@ -1,7 +1,7 @@
 ---
 path: "/website-redesign-checklist/"
-title: "Website Redesign Checklist 2026: Every Step From Plan to Launch | WMS"
-description: "A complete website redesign checklist covering planning, SEO, design, development, pre-launch, and post-launch..."
+title: "Website Redesign Checklist 2026: Every Step to Launch"
+description: "Website redesign checklist for 2026: every step from goals and content audit to redirects, testing and launch, so no rankings drop after the switch."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign Checklist 2026: Every Step From Plan to Launch"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Redesign Checklist 2026: Every Step From Plan to Launch","og:description":"A complete website redesign checklist covering planning, SEO, design, development, pre-launch, and post-launch...","og:url":"https://websitemaintenanceservices.org/website-redesign-checklist/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-07T00:02:42+00:00","article:modified_time":"2026-07-09T16:24:00+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-redesign-checklist-guide.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"11 minutes"}

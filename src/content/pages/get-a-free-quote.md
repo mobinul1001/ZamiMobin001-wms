@@ -1,7 +1,7 @@
 ---
 path: "/get-a-free-quote/"
-title: "Get a Free Quote | WMS"
-description: "Request a free quote for reliable website maintenance services tailored to your business needs."
+title: "Get a Free Quote: Website Maintenance & Fixes | WMS"
+description: "Get a free quote for website maintenance, repairs, hacked site cleanup, migration or a redesign. Tell us about your site, get a fixed price."
 robots: "noindex, follow"
 h1: "Get a Free Quote"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Get a Free Quote from Website Maintenance Company","og:description":"Request a free quote for reliable website maintenance services tailored to your business needs.","og:url":"https://websitemaintenanceservices.org/get-a-free-quote/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-09-04T10:00:55+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"17 minutes"}

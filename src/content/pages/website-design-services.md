@@ -1,7 +1,7 @@
 ---
 path: "/website-design-services/"
-title: "Website Design Services That Build Trust | WMS"
-description: "Custom, conversion-focused website design services for growing businesses. Mobile-responsive, SEO-friendly web design with built-in long-term support"
+title: "Website Design Services: Custom Sites That Convert | WMS"
+description: "Website design services for small businesses: custom, mobile-first sites built for speed, SEO and leads. 120+ websites built. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Design Services That Build Trust and Drive Measurable Growth"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Design Services That Build Trust and Drive Growth","og:description":"Custom, conversion-focused website design services for growing businesses. Mobile-responsive, SEO-friendly web design with built-in long-term support","og:url":"https://websitemaintenanceservices.org/website-design-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:22:42+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-design-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"15 minutes"}

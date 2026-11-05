@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-ireland/"
-title: "Website Maintenance Services in Ireland | WMS"
-description: "Trusted website maintenance for Ireland. We manage updates, security, and performance so your website stays smooth and reliable."
+title: "Website Maintenance Services Ireland: from €69/mo | WMS"
+description: "Website maintenance services for Irish businesses: updates, backups, security and fixes, with plans from €69 a month. Get a free quote today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in Ireland"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for Ireland","og:description":"Trusted website maintenance for Ireland. We manage updates, security, and performance so your website stays smooth and reliable.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-ireland/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:14:11+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"4 minutes"}

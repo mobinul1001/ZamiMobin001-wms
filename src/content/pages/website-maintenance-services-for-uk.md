@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-uk/"
-title: "Website Maintenance Services in the UK | WMS"
-description: "Professional website maintenance for UK businesses. We ensure your site remains secure, updated, and optimized at all times."
+title: "Website Maintenance Services for UK"
+description: "Website maintenance services for UK businesses: updates, backups, security and fixes, with plans from £59 a month. Get a free quote today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in the UK"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for UK","og:description":"Professional website maintenance for UK businesses. We ensure your site remains secure, updated, and optimized at all times.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-uk/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:15:21+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"13 minutes"}

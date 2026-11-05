@@ -1,7 +1,7 @@
 ---
 path: "/ecommerce-website-redesign/"
-title: "Ecommerce Website Redesign: When, How & Cost (2026) | WMS"
-description: "An ecommerce redesign can grow sales or quietly kill them. Learn the signs your store needs a redesign, how to do it without losing rankings or revenue, and what it costs."
+title: "Ecommerce Website Redesign: When, How & Cost (2026)"
+description: "Ecommerce website redesign guide: signs you need one, the steps, the cost and how to keep product rankings and sales during the switch."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Ecommerce Website Redesign: When, How & Cost (2026 Guide)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Ecommerce Website Redesign: When, How & Cost (2026 Guide)","og:description":"An ecommerce redesign can grow sales or quietly kill them. Learn the signs your store needs a redesign, how to do it without losing rankings or revenue, and what it costs.","og:url":"https://websitemaintenanceservices.org/ecommerce-website-redesign/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-07T00:06:13+00:00","article:modified_time":"2026-07-09T16:42:33+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/ecommerce-website-redesign-guide.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"11 minutes"}

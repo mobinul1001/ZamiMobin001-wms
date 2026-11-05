@@ -1,7 +1,7 @@
 ---
 path: "/best-website-maintenance-for-small-business/"
-title: "Small Business Website Maintenance: Packages & Pricing 2026 | WMS"
-description: "Small business website maintenance costs $75-$200/mo in 2026. Compare plans, packages & pricing, DIY vs pro, and affordable startup support. No contracts."
+title: "Small Business Website Maintenance: Packages & Pricing 2026"
+description: "Small business website maintenance packages compared: what each plan includes, prices from $79 to $299 a month and which one fits your site."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Small Business Website Maintenance: Best Options"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Small Business Website Maintenance: Packages & Pricing 2026","og:description":"Small business website maintenance costs $75-$200/mo in 2026. Compare plans, packages & pricing, DIY vs pro, and affordable startup support. No contracts.","og:url":"https://websitemaintenanceservices.org/best-website-maintenance-for-small-business/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-04-13T20:43:40+00:00","article:modified_time":"2026-10-26T02:43:46+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/website-maintenance-for-small-business.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services"}

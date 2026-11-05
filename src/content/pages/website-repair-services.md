@@ -1,7 +1,7 @@
 ---
 path: "/website-repair-services/"
-title: "Website Repair and Maintenance Services | WMS"
-description: "Broken website?"
+title: "Website Repair Services: Fixes from $49 | WMS"
+description: "Website repair services for broken layouts, errors, forms and plugins: small fixes from $49, bigger issues get a fixed quote first. Fix my site."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Repair Services That Fix What's Broken - Fast and Safely"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Fix Your Website Fast | Professional Website Repair Services","og:description":"Broken website?","og:url":"https://websitemaintenanceservices.org/website-repair-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:12:47+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-repair-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"24 minutes"}

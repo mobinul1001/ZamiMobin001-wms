@@ -1,7 +1,7 @@
 ---
 path: "/website-hacked-recovery-services/"
-title: "Hacked Website Recovery Services | WMS"
-description: "Need to fix a hacked website? We recover hacked WordPress, Shopify, WooCommerce, & custom websites with malware removal & security hardening"
+title: "Hacked Website Recovery Services: Cleanup from $149 | WMS"
+description: "Website hacked? We remove the malware, close the way in and restore your site, with hacked site cleanup from $149. Fix my hacked site now."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Hacked? Get Expert Recovery Now"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Hacked Recovery Services | Emergency Website Repair","og:description":"Need to fix a hacked website? We recover hacked WordPress, Shopify, WooCommerce, & custom websites with malware removal & security hardening","og:url":"https://websitemaintenanceservices.org/website-hacked-recovery-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-01T02:03:28+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-hacked-recovery-services-featured-image.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"44 minutes"}

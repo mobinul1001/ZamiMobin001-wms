@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-netherlands/"
-title: "Website Maintenance Services in the Netherlands | WMS"
-description: "Website & webshop maintenance for the Netherlands. Updates, security (beveiliging), backups & support. Onderhoud uitbesteden? From €69/mo."
+title: "Website Maintenance Services Netherlands: from €69/mo"
+description: "Website maintenance for Dutch businesses and webshops: updates, backups, security and fixes, with plans from €69 a month. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in the Netherlands"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services Netherlands | Webshop & WP","og:description":"Website & webshop maintenance for the Netherlands. Updates, security (beveiliging), backups & support. Onderhoud uitbesteden? From €69/mo.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-netherlands/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-09-04T08:47:46+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"18 minutes"}

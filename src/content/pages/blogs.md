@@ -1,7 +1,7 @@
 ---
 path: "/blogs/"
-title: "Blog: Website Care Tips & Guides | WMS"
-description: "Explore expert website maintenance blog, tips, guides, and best practices to keep your site secure, fast, and optimized for peak performance."
+title: "Website Maintenance Blog: Tips, Guides & Checklists | WMS"
+description: "Website maintenance blog: practical guides on updates, security, speed, costs and redesigns, written for small business website owners like you."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Blog: Website Care Tips & Guides"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Blogs | Tips, Guides & Best Practices","og:description":"Explore expert website maintenance blog, tips, guides, and best practices to keep your site secure, fast, and optimized for peak performance.","og:url":"https://websitemaintenanceservices.org/blogs/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-30T00:11:39+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"19 minutes"}

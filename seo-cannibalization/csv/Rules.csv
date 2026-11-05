@@ -1,0 +1,7 @@
+"How to use: pick a page in ""Summary"", then filter ""Pages to change (per page)"" by that owner page. Change every listed page (Major first), then the owner page is free of cannibalization for its keywords."
+"""Pages to change"" lists every other page that currently gets 3+ impressions at position 100 or better for a keyword owned by that page (Search Console, last 90 days)."
+"On a page to change: remove the owner's keywords from its title, H1, H2/H3 and meta description. Body mentions are fine if they link to the owner page. Pages being merged just get their 301."
+"Do Major rows first (100+ impressions). Minor rows are low risk and can be done in a later batch."
+"Before removing keywords from a page that ranks better than the owner today, strengthen the owner page first (see ""Current position"" in Page Targets)."
+"One keyword = one page. Primary keyword in the title, H1 and first paragraph. Secondary keywords in H2/H3, body and FAQ of the same page only."
+"""best / top &#8230; companies / services"" &#8594; listicle. ""website maintenance service(s) / company / agency"" &#8594; homepage. ""small business"" &#8594; small business page. ""packages / plans / monthly / pricing"" &#8594; packages page. ""cost / how much / charges"" &#8594; cost post."

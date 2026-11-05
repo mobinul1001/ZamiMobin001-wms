@@ -1,7 +1,7 @@
 ---
 path: "/"
-title: "Website Maintenance Services & Support | WMS"
-description: "Website Maintenance Services for businesses in the USA, UK, Canada & Europe. Get website updates, security, backups, hosting, design & SEO."
+title: "Website Maintenance Services | Keep Your Website Fast & Secure"
+description: "Website maintenance services for small businesses: updates, backups, security and fixes from $79/mo. 650+ sites maintained. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services & Support"
 social: {"og:locale":"en_US","og:type":"website","og:title":"Website Maintenance Services | Keep Your Website Fast & Secure","og:description":"Website Maintenance Services for businesses in the USA, UK, Canada & Europe. Get website updates, security, backups, hosting, design & SEO.","og:url":"https://websitemaintenanceservices.org/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T17:07:56+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/website-maintenance-services-favicon.jpg","og:image:width":"512","og:image:height":"512","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

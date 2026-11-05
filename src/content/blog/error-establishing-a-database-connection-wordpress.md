@@ -1,7 +1,7 @@
 ---
 path: "/error-establishing-a-database-connection-wordpress/"
-title: "\"Error Establishing a Database Connection\" — How to Fix It (2026) | WMS"
-description: "Getting \"Error Establishing a Database Connection\" in WordPress? This complete guide explains every cause and gives you step-by-step fixes to get your site back online fast."
+title: "\"Error Establishing a Database Connection\": How to Fix It"
+description: "Fix \"Error establishing a database connection\" in WordPress: check wp-config.php, the database server and repair tables, step by step."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "“Error Establishing a Database Connection” WordPress — How to Fix It (2026)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"\"Error Establishing a Database Connection\" — How to Fix It (2026)","og:description":"Getting \"Error Establishing a Database Connection\" in WordPress? This complete guide explains every cause and gives you step-by-step fixes to get your site back online fast.","og:url":"https://websitemaintenanceservices.org/error-establishing-a-database-connection-wordpress/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-29T21:13:02+00:00","article:modified_time":"2026-06-29T23:19:13+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/error-establishing-a-database-connection-wordpress-how-to-fix.webp","og:image:width":"1962","og:image:height":"802","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"16 minutes"}

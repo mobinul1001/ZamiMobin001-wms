@@ -1,7 +1,7 @@
 ---
 path: "/cost-to-redesign-website/"
-title: "How Much Does It Cost to Redesign a Website in 2026? | WMS"
-description: "Website redesign costs range from $2,000 to $100,000+ in 2026. See real pricing by site size, what drives the cost, hidden fees to watch for, and how to budget."
+title: "How Much Does It Cost to Redesign a Website in 2026?"
+description: "How much does it cost to redesign a website in 2026? See price ranges by site size, what drives the cost and how to plan your redesign budget."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Much Does It Cost to Redesign a Website in 2026?"
 social: {"og:locale":"en_US","og:type":"article","og:title":"How Much Does It Cost to Redesign a Website in 2026?","og:description":"Website redesign costs range from $2,000 to $100,000+ in 2026. See real pricing by site size, what drives the cost, hidden fees to watch for, and how to budget.","og:url":"https://websitemaintenanceservices.org/cost-to-redesign-website/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T22:20:02+00:00","article:modified_time":"2026-07-08T21:43:15+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-redesign-cost-2026-featured-image.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"27 minutes"}

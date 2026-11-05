@@ -1,7 +1,7 @@
 ---
 path: "/best-cdn-for-wordpress/"
-title: "Best CDN for WordPress in 2026: 12 Free & Cheap Options | WMS"
-description: "Discover the best CDN for WordPress in 2026. Compare 12 free, cheap, and premium CDN providers, pricing, features, image optimization, and setup guides."
+title: "Best CDN for WordPress in 2026: 12 Free & Cheap Options"
+description: "Best CDN for WordPress in 2026: 12 free and low-cost CDNs compared on speed, price, setup and plugins, with our pick for each type of website."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Best CDN for WordPress in 2026: 12 Free & Cheap Options"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Best CDN for WordPress in 2026: 12 Free & Cheap Options","og:description":"Discover the best CDN for WordPress in 2026. Compare 12 free, cheap, and premium CDN providers, pricing, features, image optimization, and setup guides.","og:url":"https://websitemaintenanceservices.org/best-cdn-for-wordpress/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-14T07:42:33+00:00","article:modified_time":"2026-10-15T09:42:56+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/best-cdn-for-wordpress-comparison.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"39 minutes"}

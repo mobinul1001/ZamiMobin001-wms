@@ -1,7 +1,7 @@
 ---
 path: "/monthly-website-maintenance-packages/"
-title: "Website Maintenance Packages, Plans & Pricing | WMS"
-description: "Explore monthly website maintenance packages with flexible plans, essential services, and transparent cost of pricing for all businesses."
+title: "Website Maintenance Packages: Plans from $79/mo | WMS"
+description: "Website maintenance packages from $79 to $299 a month: updates, backups, security, fixes and reports. 2 months free on yearly plans. Start now."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Packages, Plans & Pricing"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Monthly Website Maintenance Packages ,Plans,Services and Costs","og:description":"Explore monthly website maintenance packages with flexible plans, essential services, and transparent cost of pricing for all businesses.","og:url":"https://websitemaintenanceservices.org/monthly-website-maintenance-packages/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T18:01:34+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/Monthly-Website-Maintenance-Packages-PlansServices-and-Costs.jpg","og:image:width":"1000","og:image:height":"1000","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

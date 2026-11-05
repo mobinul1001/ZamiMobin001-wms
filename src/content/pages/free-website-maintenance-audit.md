@@ -1,7 +1,7 @@
 ---
 path: "/free-website-maintenance-audit/"
-title: "Free Website Audit | WMS"
-description: "Get a free website maintenance audit service to identify issues, boost performance, and improve security for your Business."
+title: "Free Website Audit: Security, Speed & Updates Check | WMS"
+description: "Get a free website audit: we check security, speed, updates, backups and broken links, then send a clear list of fixes and a fixed quote for them."
 robots: "noindex, follow"
 h1: "Free Website Audit"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Free Website Maintenance Audit Service","og:description":"Get a free website maintenance audit service to identify issues, boost performance, and improve security for your Business.","og:url":"https://websitemaintenanceservices.org/free-website-maintenance-audit/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:55:09+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"12 minutes"}

@@ -1,7 +1,7 @@
 ---
 path: "/wordpress-backup-services/"
-title: "WordPress Backup Services | Automated Off-Site Cloud Backups | WMS"
-description: "Managed WordPress backup services with daily off-site backups, 1-click restores, and 24/7 monitoring. Get a free backup audit."
+title: "WordPress Backup Services: Off-Site Backups | WMS"
+description: "WordPress backup services: automated off-site backups, tested restores and quick recovery when something breaks. Plans from $79/mo."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Backup Services That Actually Let You Sleep at Night."
 social: {"og:locale":"en_US","og:type":"article","og:title":"WordPress Backup Services | Automated Off-Site Cloud Backups","og:description":"Managed WordPress backup services with daily off-site backups, 1-click restores, and 24/7 monitoring. Get a free backup audit.","og:url":"https://websitemaintenanceservices.org/wordpress-backup-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:18:22+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/wordpress-backup-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"19 minutes"}

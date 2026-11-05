@@ -498,7 +498,7 @@ for (const [u, m] of pages) {
     path,
     ...(language ? { lang: language.lang } : {}),
     title: keywordMap.get(path).newTitle,
-    description: language?.description ?? record.metaDescription ?? '',
+    description: keywordMap.get(path).newMeta || (language?.description ?? record.metaDescription ?? ''), // Batch 2 stage 2: CTR metas (scripts/seo/snippets-data.mjs)
     robots: ['/get-a-free-quote/', '/free-website-maintenance-audit/'].includes(path) ? 'noindex, follow' : record.robots ?? '',
     h1,
     social: record.socialTags ?? {},

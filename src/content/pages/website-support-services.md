@@ -1,7 +1,7 @@
 ---
 path: "/website-support-services/"
-title: "Website Support Services: Help & Updates 24/7 | WMS"
-description: "Keep your website running smoothly with our professional website support services. We provide website updates, troubleshooting, security, backups, performance optimization, and ongoing technical support for businesses."
+title: "Website Support Services: Help & Updates on Request | WMS"
+description: "Website support services for small businesses: on-demand help, content changes, small tasks and fixes when you need them. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Support Services That Keep Your Business Online"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Support Services | 24/7 Website Help & Updates","og:description":"Keep your website running smoothly with our professional website support services. We provide website updates, troubleshooting, security, backups, performance optimization, and ongoing technical support for businesses.","og:url":"https://websitemaintenanceservices.org/website-support-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-07-31T21:10:44+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-support-services-featured-image.webp","og:image:width":"1536","og:image:height":"1024","og:image:type":"image/webp","twitter:card":"summary_large_image"}

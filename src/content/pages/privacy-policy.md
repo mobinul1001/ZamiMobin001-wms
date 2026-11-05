@@ -1,7 +1,7 @@
 ---
 path: "/privacy-policy/"
 title: "Privacy Policy | WMS"
-description: "Read how we protect your personal data and ensure privacy while delivering website maintenance services."
+description: "How WMS collects, uses and protects your personal data when you use websitemaintenanceservices.org or our services, and the rights you have."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Privacy Policy"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Privacy Policy of Website Maintenance Company","og:description":"Read how we protect your personal data and ensure privacy while delivering website maintenance services.","og:url":"https://websitemaintenanceservices.org/privacy-policy/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:55:42+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"13 minutes"}

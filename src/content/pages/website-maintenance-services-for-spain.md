@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-spain/"
-title: "Website Maintenance Services in Spain | WMS"
-description: "Website & online store maintenance for Spain. Updates, security, backups & support. Mantenimiento web profesional en Espana. From €69/mo."
+title: "Website Maintenance Services Spain: from €69/mo | WMS"
+description: "Website maintenance services for businesses in Spain: WordPress updates, backups, security and fixes, with plans from €69 a month. Get a quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in Spain"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services in Spain | WordPress & Web","og:description":"Website & online store maintenance for Spain. Updates, security, backups & support. Mantenimiento web profesional en Espana. From €69/mo.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-spain/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-14T23:32:54+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"7 minutes"}

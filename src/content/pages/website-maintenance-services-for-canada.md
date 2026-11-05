@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-canada/"
-title: "Website Maintenance Services in Canada | WMS"
-description: "Website maintenance services for Canadian businesses. Get ongoing updates, security checks, and performance optimization you can rely on."
+title: "Website Maintenance Services Canada: from CA$109/mo"
+description: "Website maintenance services for Canadian businesses: updates, backups, security and fixes, with plans from CA$109 a month. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in Canada"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for Canada","og:description":"Website maintenance services for Canadian businesses. Get ongoing updates, security checks, and performance optimization you can rely on.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-canada/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:13:46+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

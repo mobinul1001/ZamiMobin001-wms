@@ -1,7 +1,7 @@
 ---
 path: "/cookie-policy/"
 title: "Cookie Policy | WMS"
-description: "Understand how we use cookies to improve your experience and maintain website functionality."
+description: "How WMS uses cookies on websitemaintenanceservices.org: what each cookie does, how long it stays and how to block cookies in a browser."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Cookie Policy"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Cookie Policy for Website Maintenance Company","og:description":"Understand how we use cookies to improve your experience and maintain website functionality.","og:url":"https://websitemaintenanceservices.org/cookie-policy/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:50:35+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

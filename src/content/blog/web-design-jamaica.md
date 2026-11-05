@@ -1,7 +1,7 @@
 ---
 path: "/web-design-jamaica/"
-title: "Web Design Jamaica: Services, Costs & Complete Guide | WMS"
-description: "now write code for this. make sure you will not write any meta data, seo direction, graphic derections in the code.make sure you are not missing any content"
+title: "Web Design Jamaica: Services, Costs & Guide | WMS"
+description: "Web design in Jamaica: what a business website costs, what to include, local SEO for Jamaican businesses and how to choose a web developer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Jamaica: Services, Costs & Complete Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Web Design Jamaica: Services, Costs & Complete Guide","og:description":"now write code for this. make sure you will not write any meta data, seo direction, graphic derections in the code.make sure you are not missing any content","og:url":"https://websitemaintenanceservices.org/web-design-jamaica/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-20T19:44:28+00:00","article:modified_time":"2026-10-21T02:06:20+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/web-design-jamaica-services-guide.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"21 minutes"}

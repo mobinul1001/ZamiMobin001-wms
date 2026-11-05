@@ -1,7 +1,7 @@
 ---
 path: "/website-redesign-seo/"
-title: "Website Redesign SEO: Protect & Improve Rankings (2026) | WMS"
-description: "Website redesign SEO done right protects your rankings — done wrong, it destroys them. Learn how redesigns affect SEO, the mistakes to avoid, and the full checklist."
+title: "Website Redesign SEO: Protect & Improve Rankings"
+description: "Website redesign SEO: keep your URLs, titles, content and links in a redesign, avoid the mistakes that drop traffic and check rankings after launch."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Redesign SEO: Protect & Improve Rankings (2026 Guide)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Redesign SEO: Protect & Improve Rankings (2026 Guide)","og:description":"Website redesign SEO done right protects your rankings — done wrong, it destroys them. Learn how redesigns affect SEO, the mistakes to avoid, and the full checklist.","og:url":"https://websitemaintenanceservices.org/website-redesign-seo/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T22:25:52+00:00","article:modified_time":"2026-07-06T04:58:38+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-redesign-seo-protect-improve-rankings-featured-image.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"12 minutes"}

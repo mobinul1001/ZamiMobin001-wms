@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-checklist/"
-title: "Website Maintenance Checklist (2026): Free Template | WMS"
-description: "The complete website maintenance checklist: daily, weekly & monthly tasks, platform-specific lists, tools & a free template you can copy or print. Stay secure & fast."
+title: "Website Maintenance Checklist (2026): Free Template & PDF"
+description: "Website maintenance checklist with daily, weekly, monthly and yearly tasks, platform lists and tools. Copy the free template or print it out."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Checklist"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Checklist (2026): Free Template & PDF","og:description":"The complete website maintenance checklist: daily, weekly & monthly tasks, platform-specific lists, tools & a free template you can copy or print. Stay secure & fast.","og:url":"https://websitemaintenanceservices.org/website-maintenance-checklist/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T18:03:38+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/01/Website-Maintenance-Checklist.jpg","og:image:width":"1000","og:image:height":"1000","og:image:type":"image/jpeg","twitter:card":"summary_large_image"}

@@ -1,7 +1,7 @@
 ---
 path: "/wordpress-security-checklist/"
-title: "WordPress Security Checklist 2026: Lock Down Your Site | WMS"
-description: "A complete, priority-ordered WordPress security checklist for 2026 — updates, logins, 2FA, file hardening, firewalls, backups, and monitoring. Harden your site step by step."
+title: "WordPress Security Checklist 2026: Lock Down Your Site"
+description: "WordPress security checklist for 2026: logins, updates, backups, firewall, file permissions and monitoring. Work through it step by step today."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Security Checklist 2026: Lock Down Your Site"
 social: {"og:locale":"en_US","og:type":"article","og:title":"WordPress Security Checklist 2026: Lock Down Your Site","og:description":"A complete, priority-ordered WordPress security checklist for 2026 — updates, logins, 2FA, file hardening, firewalls, backups, and monitoring. Harden your site step by step.","og:url":"https://websitemaintenanceservices.org/wordpress-security-checklist/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-07T00:09:35+00:00","article:modified_time":"2026-07-09T16:47:23+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/wordpress-security-checklist.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"11 minutes"}

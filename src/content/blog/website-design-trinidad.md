@@ -1,7 +1,7 @@
 ---
 path: "/website-design-trinidad/"
-title: "Website Design Trinidad: Costs, Services & Expert Guide | WMS"
-description: "Discover website design in Trinidad, including pricing, responsive design, development services, and tips for choosing the right web designer."
+title: "Website Design Trinidad: Costs, Services & Guide | WMS"
+description: "Website design in Trinidad and Tobago: what a business website costs, what to include, local SEO and how to choose the right web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Design Trinidad: Costs, Services & Expert Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Design Trinidad: Costs, Services & Expert Guide","og:description":"Discover website design in Trinidad, including pricing, responsive design, development services, and tips for choosing the right web designer.","og:url":"https://websitemaintenanceservices.org/website-design-trinidad/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-20T19:36:48+00:00","article:modified_time":"2026-10-21T02:02:34+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/Trinidad-Website-Design-Guide.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"19 minutes"}

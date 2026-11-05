@@ -1,7 +1,7 @@
 ---
 path: "/website-seo-services/"
-title: "Website SEO Services That Turn Search Traffic Into Customers | WMS"
-description: "Data-driven website SEO services for growing businesses. Increase qualified search traffic, boost Google rankings, & maximize ROI. Get a free SEO audit"
+title: "Website SEO Services: Audits & Monthly SEO | WMS"
+description: "Website SEO services for small businesses: technical audits, on-page fixes, content and local SEO, with clear monthly reports. Ask for a free check."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website SEO Services That Turn Search Traffic Into Paying Customers."
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website SEO Services That Turn Search Traffic Into Customers","og:description":"Data-driven website SEO services for growing businesses. Increase qualified search traffic, boost Google rankings, & maximize ROI. Get a free SEO audit","og:url":"https://websitemaintenanceservices.org/website-seo-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:27:48+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-seo-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"18 minutes"}

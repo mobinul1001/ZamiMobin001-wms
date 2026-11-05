@@ -1,7 +1,7 @@
 ---
 path: "/how-to-buy-a-domain-name/"
-title: "How to Buy a Domain Name in 2026: Step-by-Step Guide | WMS"
-description: "Learn how to buy a domain name in 2026. Compare registrars, check availability, understand pricing, register your domain, and connect it to your website."
+title: "How to Buy a Domain Name in 2026: Step-by-Step Guide"
+description: "How to buy a domain name in 2026: pick a name, check it is free, compare registrars and prices, and avoid renewal traps. A step-by-step guide."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How to Buy a Domain Name in 2026: Step-by-Step Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"How to Buy a Domain Name in 2026: Step-by-Step Guide","og:description":"Learn how to buy a domain name in 2026. Compare registrars, check availability, understand pricing, register your domain, and connect it to your website.","og:url":"https://websitemaintenanceservices.org/how-to-buy-a-domain-name/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-15T11:12:03+00:00","article:modified_time":"2026-10-18T09:52:54+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/how-to-buy-a-domain-name-featured-image.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"31 minutes"}

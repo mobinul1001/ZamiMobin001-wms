@@ -1,7 +1,7 @@
 ---
 path: "/refund-cancellation-policy/"
 title: "Refund & Cancellation Policy | WMS"
-description: "Review our refund and cancellation guidelines for all website maintenance services and packages."
+description: "WMS refund and cancellation policy: how to cancel a monthly or yearly plan, when refunds apply to plans and one-time work, and how to ask."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Refund & Cancellation Policy"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Refund & Cancellation Policy of Website Maintenance Company","og:description":"Review our refund and cancellation guidelines for all website maintenance services and packages.","og:url":"https://websitemaintenanceservices.org/refund-cancellation-policy/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T01:58:20+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"12 minutes"}

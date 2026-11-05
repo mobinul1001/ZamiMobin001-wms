@@ -1,7 +1,7 @@
 ---
 path: "/what-is-dns/"
-title: "What Is DNS? How the Domain Name System Works (2026) | WMS"
-description: "Learn what DNS means, how the Domain Name System works, DNS records, servers, caching, DNSSEC, troubleshooting, and how DNS connects domains to websites."
+title: "What Is DNS? How the Domain Name System Works"
+description: "What is DNS? How the Domain Name System finds websites step by step, the record types (A, CNAME, MX, TXT) and how to fix DNS problems."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is DNS? How the Domain Name System Works (2026)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"What Is DNS? How the Domain Name System Works (2026)","og:description":"Learn what DNS means, how the Domain Name System works, DNS records, servers, caching, DNSSEC, troubleshooting, and how DNS connects domains to websites.","og:url":"https://websitemaintenanceservices.org/what-is-dns/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-16T12:27:21+00:00","article:modified_time":"2026-10-21T06:12:21+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/what-is-dns-domain-name-system-guide.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"35 minutes"}

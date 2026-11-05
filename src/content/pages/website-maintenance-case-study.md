@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-case-study/"
-title: "Healthcare Website Maintenance Case Study | WMS"
-description: "Website Maintenance case study: see WordPress maintenance, security, optimization and support results. Request a free quote online today."
+title: "Website Maintenance Case Study | Security & Support"
+description: "Website maintenance case study: how we took over a neglected site, fixed security and speed problems and kept it maintained. See each step."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Healthcare Website Maintenance Case Study: Altitude Care & Integrative Health"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Case Study | Security & Support","og:description":"Website Maintenance case study: see WordPress maintenance, security, optimization and support results. Request a free quote online today.","og:url":"https://websitemaintenanceservices.org/website-maintenance-case-study/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T18:03:47+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

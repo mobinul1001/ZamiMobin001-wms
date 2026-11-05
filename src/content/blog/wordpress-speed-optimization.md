@@ -1,7 +1,7 @@
 ---
 path: "/wordpress-speed-optimization/"
-title: "WordPress Speed Optimization: Speed Up Your WordPress Site | WMS"
-description: "Is your WordPress site slow? Learn exactly why and how to fix it. Expert speed optimization tips, best plugins, and professional services to make your WordPress site load fast."
+title: "WordPress Speed Optimization: Faster Site Guide | WMS"
+description: "WordPress speed optimization guide: caching, image compression, lighter plugins, a CDN and Core Web Vitals fixes for a faster WordPress site."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "WordPress Speed Optimization: How to Speed Up Your WordPress Site in 2026"
 social: {"og:locale":"en_US","og:type":"article","og:title":"WordPress Speed Optimization: Speed Up Your WordPress Site","og:description":"Is your WordPress site slow? Learn exactly why and how to fix it. Expert speed optimization tips, best plugins, and professional services to make your WordPress site load fast.","og:url":"https://websitemaintenanceservices.org/wordpress-speed-optimization/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-29T21:02:52+00:00","article:modified_time":"2026-06-29T23:33:57+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/wordpress-speed-optimization-guide-featured-image.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"21 minutes"}

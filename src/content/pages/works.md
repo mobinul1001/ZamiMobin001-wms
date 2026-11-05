@@ -1,7 +1,7 @@
 ---
 path: "/works/"
-title: "Our Work | WMS"
-description: "Explore our completed website maintenance projects showcasing the clients we’ve supported and the results we’ve delivered."
+title: "Our Work: Websites We Built & Maintain | WMS"
+description: "See websites we built, redesigned and maintain for small businesses, with the platform and the work done for each. 650+ websites maintained."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Our Work"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Our Website Maintenance Works","og:description":"Explore our completed website maintenance projects showcasing the clients we’ve supported and the results we’ve delivered.","og:url":"https://websitemaintenanceservices.org/works/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T17:37:51+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"21 minutes"}

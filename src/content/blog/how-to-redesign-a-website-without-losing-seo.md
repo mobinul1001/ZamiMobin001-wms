@@ -1,7 +1,7 @@
 ---
 path: "/how-to-redesign-a-website-without-losing-seo/"
-title: "How to Redesign a Website Without Losing SEO (2026) | WMS"
-description: "A careless redesign can wipe out years of rankings overnight. Follow this step-by-step guide to redesign your website and keep every bit of your SEO and traffic."
+title: "How to Redesign a Website Without Losing SEO (2026)"
+description: "How to redesign a website without losing SEO: crawl first, map every URL with 301s, keep titles and content, test, then watch your rankings."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How to Redesign a Website Without Losing SEO (2026 Guide)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"How to Redesign a Website Without Losing SEO (2026 Guide)","og:description":"A careless redesign can wipe out years of rankings overnight. Follow this step-by-step guide to redesign your website and keep every bit of your SEO and traffic.","og:url":"https://websitemaintenanceservices.org/how-to-redesign-a-website-without-losing-seo/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T22:17:03+00:00","article:modified_time":"2026-07-06T05:24:21+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/how-to-redesign-a-website-without-losing-seo-2026-featured-image.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"14 minutes"}

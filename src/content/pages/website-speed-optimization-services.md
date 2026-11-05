@@ -1,7 +1,7 @@
 ---
 path: "/website-speed-optimization-services/"
-title: "Website Speed Optimization Services - Pass Core Web Vitals | WMS"
-description: "Professional website speed optimization services to pass Core Web Vitals, fix slow PageSpeed scores, & boost conversion rates."
+title: "Website Speed Optimization Services | WMS"
+description: "Website speed optimization services: we fix LCP, INP and CLS, compress images, tune caching and clean slow plugins. Get a free speed check."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Speed Optimization Services - From Slow to Sub-2-Second Load Times."
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Speed Optimization Services - Pass Core Web Vitals","og:description":"Professional website speed optimization services to pass Core Web Vitals, fix slow PageSpeed scores, & boost conversion rates.","og:url":"https://websitemaintenanceservices.org/website-speed-optimization-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:20:30+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-speed-optimization-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"17 minutes"}

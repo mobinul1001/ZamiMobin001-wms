@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-france/"
-title: "Website Maintenance Services in France | WMS"
-description: "Professional website maintenance for businesses in France. We ensure your site stays updated, secure, and performing at its best."
+title: "Website Maintenance Services France: from €69/mo | WMS"
+description: "Website maintenance services for businesses in France: updates, backups, security and fixes, with plans from €69 a month. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in France"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services for France","og:description":"Professional website maintenance for businesses in France. We ensure your site stays updated, secure, and performing at its best.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-france/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-12T02:14:04+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image"}

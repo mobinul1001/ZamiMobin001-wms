@@ -1,7 +1,7 @@
 ---
 path: "/website-update-services/"
-title: "Website Update Services | WMS"
-description: "Expert website update services for WordPress. Plugin, theme & core updates with backup, staging testing & QA. Included in every plan from $79/month. Free health check"
+title: "Website Update Services: Core, Plugin & Content | WMS"
+description: "Website update services: safe core, plugin and theme updates tested on staging, plus content changes. Plans from $79/mo. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Professional Website Update Services"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Update Services | Professional WordPress Maintenance Plans","og:description":"Expert website update services for WordPress. Plugin, theme & core updates with backup, staging testing & QA. Included in every plan from $79/month. Free health check","og:url":"https://websitemaintenanceservices.org/website-update-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:15:57+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-update-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"33 minutes"}

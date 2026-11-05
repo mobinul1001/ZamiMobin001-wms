@@ -1,7 +1,7 @@
 ---
 path: "/agreement/"
-title: "Website Maintenance Agreement & Contract Template | WMS"
-description: "What is a website maintenance agreement? See what to include, a free contract template, agreement vs terms explained, and how billing works. Plain-English & fair."
+title: "Website Maintenance Agreement & Contract Guide + Template"
+description: "Website maintenance agreement guide with a free template: scope, response times, payment and cancellation terms. Copy it and adapt it."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Agreement & Contract Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Agreement & Contract Guide + Template","og:description":"What is a website maintenance agreement? See what to include, a free contract template, agreement vs terms explained, and how billing works. Plain-English & fair.","og:url":"https://websitemaintenanceservices.org/agreement/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-09-04T08:45:18+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"20 minutes"}

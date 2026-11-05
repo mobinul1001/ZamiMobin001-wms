@@ -1,7 +1,7 @@
 ---
 path: "/website-hosting-and-maintenance/"
-title: "Website Hosting and Maintenance: Services & Cost | WMS"
-description: "Hosting keeps your site online; maintenance keeps it working. Learn the difference, what's included in each, package options, and what website hosting and maintenance costs."
+title: "Website Hosting and Maintenance: Packages & Cost (2026)"
+description: "Website hosting and maintenance in one plan: managed hosting, updates, backups and security. Compare what each of our packages includes."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Hosting and Maintenance: Services, Packages & Cost (2026)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Hosting and Maintenance: Services, Packages & Cost (2026)","og:description":"Hosting keeps your site online; maintenance keeps it working. Learn the difference, what's included in each, package options, and what website hosting and maintenance costs.","og:url":"https://websitemaintenanceservices.org/website-hosting-and-maintenance/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-07-05T08:16:56+00:00","article:modified_time":"2026-07-05T11:35:52+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/07/website-hosting-and-maintenance-services-featured-image.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"10 minutes"}

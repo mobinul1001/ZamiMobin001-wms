@@ -1,7 +1,7 @@
 ---
 path: "/write-for-us/"
-title: "Write for Us: Submit a Guest Post | WMS"
-description: "Share your expertise on website maintenance, WordPress, web security, speed optimization, and SEO. Read our editorial guidelines and submit your guest post today."
+title: "Write for Us: Submit a Website Care Guest Post | WMS"
+description: "Write for us: pitch a guest post on website maintenance, WordPress, security, speed or SEO. Read the guidelines and send your topic idea to us."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Share Your Expertise With Our Web & Technology Community"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Write for Us - Submit a Guest Post | Website Maintenance Services","og:description":"Share your expertise on website maintenance, WordPress, web security, speed optimization, and SEO. Read our editorial guidelines and submit your guest post today.","og:url":"https://websitemaintenanceservices.org/write-for-us/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-09-23T16:03:54+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"18 minutes"}

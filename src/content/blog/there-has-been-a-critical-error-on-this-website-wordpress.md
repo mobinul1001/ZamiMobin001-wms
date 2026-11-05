@@ -1,7 +1,7 @@
 ---
 path: "/there-has-been-a-critical-error-on-this-website-wordpress/"
-title: "\"There Has Been a Critical Error on This Website\" — How to Fix It | WMS"
-description: "Seeing \"There has been a critical error on this website\" in WordPress? This step-by-step guide covers every cause and fix, so you can get your site back online fast."
+title: "\"There Has Been a Critical Error\" in WordPress: How to Fix"
+description: "Fix \"There has been a critical error on this website\" in WordPress: use recovery mode, find the plugin or theme at fault, restore the site safely."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "There Has Been a Critical Error on This Website” — How to Fix It in WordPress (2026)"
 social: {"og:locale":"en_US","og:type":"article","og:title":"\"There Has Been a Critical Error on This Website\" — How to Fix It","og:description":"Seeing \"There has been a critical error on this website\" in WordPress? This step-by-step guide covers every cause and fix, so you can get your site back online fast.","og:url":"https://websitemaintenanceservices.org/there-has-been-a-critical-error-on-this-website-wordpress/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-29T21:06:57+00:00","article:modified_time":"2026-06-29T23:27:42+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/there-has-been-a-critical-error-on-this-website-wordpress-how-to-fix.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"17 minutes"}

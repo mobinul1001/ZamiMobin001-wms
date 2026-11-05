@@ -1,7 +1,7 @@
 ---
 path: "/web-design-barbados/"
-title: "Web Design Barbados: Services, Costs & Complete Guide | WMS"
-description: "Explore web design in Barbados, including website costs, custom development, Shopify, SEO, and tips for choosing the right web designer."
+title: "Web Design Barbados: Services, Costs & Guide | WMS"
+description: "Web design in Barbados: what a business website costs, what to include, local SEO for Bajan businesses and how to choose the right web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Barbados: Services, Costs & Complete Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Web Design Barbados: Services, Costs & Complete Guide","og:description":"Explore web design in Barbados, including website costs, custom development, Shopify, SEO, and tips for choosing the right web designer.","og:url":"https://websitemaintenanceservices.org/web-design-barbados/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-21T04:38:39+00:00","article:modified_time":"2026-10-21T06:18:13+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/Barbados-Web-Design-by-the-Beach.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"27 minutes"}

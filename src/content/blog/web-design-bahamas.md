@@ -1,7 +1,7 @@
 ---
 path: "/web-design-bahamas/"
-title: "Web Design Bahamas: Services, Costs & Complete Guide | WMS"
-description: "Explore web design in the Bahamas, including pricing, custom websites, Shopify development, responsive design, and tips for choosing a web designer."
+title: "Web Design Bahamas: Services, Costs & Guide | WMS"
+description: "Web design in the Bahamas: what a business website costs, what to include, local SEO for island businesses and how to choose a web designer."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Web Design Bahamas: Services, Costs & Complete Guide"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Web Design Bahamas: Services, Costs & Complete Guide","og:description":"Explore web design in the Bahamas, including pricing, custom websites, Shopify development, responsive design, and tips for choosing a web designer.","og:url":"https://websitemaintenanceservices.org/web-design-bahamas/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-20T19:50:42+00:00","article:modified_time":"2026-10-21T02:16:18+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/Bahamas-Web-Design-Guide-Banner.webp","og:image:width":"1988","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"24 minutes"}

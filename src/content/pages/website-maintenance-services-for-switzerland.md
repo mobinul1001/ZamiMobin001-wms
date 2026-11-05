@@ -1,7 +1,7 @@
 ---
 path: "/website-maintenance-services-for-switzerland/"
-title: "Website Maintenance Services in Switzerland | WMS"
-description: "Website & online shop maintenance for Switzerland in German, French & English. Updates, security, backups & support. Website-Wartung auslagern? From CHF 69/mo."
+title: "Website Maintenance Services Switzerland: CHF 69/mo"
+description: "Website maintenance for Swiss businesses and shops: updates, backups, security and fixes, with plans from CHF 69 a month. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Website Maintenance Services in Switzerland"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Website Maintenance Services Switzerland | WP & Shop Care","og:description":"Website & online shop maintenance for Switzerland in German, French & English. Updates, security, backups & support. Website-Wartung auslagern? From CHF 69/mo.","og:url":"https://websitemaintenanceservices.org/website-maintenance-services-for-switzerland/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-06-17T00:46:59+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"7 minutes"}

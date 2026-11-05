@@ -1,7 +1,7 @@
 ---
 path: "/white-label-website-maintenance-services-for-agencies/"
-title: "White Label Website Maintenance Services for Agencies | WMS"
-description: "White label website maintenance services for digital agencies. Security, backups, monitoring & white label reports under your brand"
+title: "White Label Website Maintenance for Agencies | WMS"
+description: "White label website maintenance for agencies: we maintain your clients' sites under your brand, with reports in your name. Get a free quote."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "White Label Website Maintenance Services for Digital Agencies"
 social: {"og:locale":"en_US","og:type":"article","og:title":"White Label Website Maintenance Services for Agencies","og:description":"White label website maintenance services for digital agencies. Security, backups, monitoring & white label reports under your brand","og:url":"https://websitemaintenanceservices.org/white-label-website-maintenance-services-for-agencies/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-03T03:25:09+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/white-label-website-maintenance-services.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"21 minutes"}

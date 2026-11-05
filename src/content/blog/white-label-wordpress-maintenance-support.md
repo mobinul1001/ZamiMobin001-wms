@@ -1,7 +1,7 @@
 ---
 path: "/white-label-wordpress-maintenance-support/"
-title: "White Label WordPress Maintenance & Support for Agencies | WMS"
-description: "Offer white label WordPress maintenance & support under your own brand. We handle updates, security & backups; you keep the client, brand & margin. Resell now."
+title: "White Label WordPress Maintenance & Support"
+description: "White label WordPress maintenance and support: updates, backups, security and fixes for agency clients, reported under your own agency brand."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "White Label WordPress Maintenance & Support for Agencies"
 social: {"og:locale":"en_US","og:type":"article","og:title":"White Label WordPress Maintenance & Support for Agencies","og:description":"Offer white label WordPress maintenance & support under your own brand. We handle updates, security & backups; you keep the client, brand & margin. Resell now.","og:url":"https://websitemaintenanceservices.org/white-label-wordpress-maintenance-support/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-06-11T19:34:54+00:00","article:modified_time":"2026-06-20T16:48:45+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/white-label-wordpress-maintenance-support.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"13 minutes"}

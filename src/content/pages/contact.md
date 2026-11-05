@@ -1,7 +1,7 @@
 ---
 path: "/contact/"
-title: "Contact Us | WMS"
-description: "Get in touch for support, partnership inquiries, or custom website maintenance solutions tailored to your business."
+title: "Contact Us: Website Help from Our Team | WMS"
+description: "Contact our website maintenance team about plans, fixes, hacked sites, migrations or a redesign. Send your site details and get a clear reply."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Contact Us"
 social: {"og:locale":"en_US","og:type":"article","og:title":"Contact Us with Website Maintenance Company","og:description":"Get in touch for support, partnership inquiries, or custom website maintenance solutions tailored to your business.","og:url":"https://websitemaintenanceservices.org/contact/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-10-05T17:51:58+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"14 minutes"}

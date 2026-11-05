@@ -1,7 +1,7 @@
 ---
 path: "/what-is-an-ssl-certificate/"
 title: "What Is an SSL Certificate? How It Works & Types | WMS"
-description: "What is an SSL certificate? Learn how SSL/TLS certificates work, their types, HTTPS security, free SSL options, installation, validation, and renewal."
+description: "What is an SSL certificate? How it encrypts data, why browsers warn without one, the types (DV, OV, EV) and how to install and renew one safely."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "What Is an SSL Certificate? How It Works & Types"
 social: {"og:locale":"en_US","og:type":"article","og:title":"What Is an SSL Certificate? How It Works & Types","og:description":"What is an SSL certificate? Learn how SSL/TLS certificates work, their types, HTTPS security, free SSL options, installation, validation, and renewal.","og:url":"https://websitemaintenanceservices.org/what-is-an-ssl-certificate/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-10-16T12:24:42+00:00","article:modified_time":"2026-10-18T10:02:29+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/10/what-is-an-ssl-certificate-feature-image.webp","og:image:width":"1987","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"25 minutes"}

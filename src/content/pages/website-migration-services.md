@@ -1,7 +1,7 @@
 ---
 path: "/website-migration-services/"
-title: "Professional Website Migration Service | WMS"
-description: "Migrate your website safely with our professional website migration service. Free quote in 24 hours"
+title: "Website Migration Services: Moves from $149 | WMS"
+description: "Website migration services: host-to-host moves from $149 (free with any annual plan) and full migrations from $399, with redirects and SEO checks."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "Professional Website Migration Service"
 social: {"og:locale":"en_US","og:type":"article","og:title":"","og:description":"Migrate your website safely with our professional website migration service. Free quote in 24 hours","og:url":"https://websitemaintenanceservices.org/website-migration-services/","og:site_name":"Website Maintenance Services","article:modified_time":"2026-08-01T02:09:18+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/08/website-migration-service-featured-image.webp","og:image:width":"1254","og:image:height":"1254","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Est. reading time","twitter:data1":"14 minutes"}

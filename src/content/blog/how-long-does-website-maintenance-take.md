@@ -1,7 +1,7 @@
 ---
 path: "/how-long-does-website-maintenance-take/"
-title: "How Long Does Website Maintenance Take? (2026 Guide) | WMS"
-description: "How long does website maintenance take? Routine upkeep takes 1-3 hours a month. See exact times per task, by site type, plus scheduled maintenance windows."
+title: "How Long Does Website Maintenance Take? (2026 Guide)"
+description: "How long does website maintenance take? Most tasks take 15 to 30 minutes and a full monthly check 1 to 2 hours. See the time for each task."
 robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 h1: "How Long Does Website Maintenance Take in 2026"
 social: {"og:locale":"en_US","og:type":"article","og:title":"How Long Does Website Maintenance Take? (2026 Guide)","og:description":"How long does website maintenance take? Routine upkeep takes 1-3 hours a month. See exact times per task, by site type, plus scheduled maintenance windows.","og:url":"https://websitemaintenanceservices.org/how-long-does-website-maintenance-take/","og:site_name":"Website Maintenance Services","article:author":"https://www.facebook.com/webmaintenanceservices","article:published_time":"2026-04-13T21:26:47+00:00","article:modified_time":"2026-10-26T02:37:58+00:00","og:image":"https://websitemaintenanceservices.org/wp-content/uploads/2026/06/how-long-does-website-maintenance-take.webp","og:image:width":"1989","og:image:height":"791","og:image:type":"image/webp","twitter:card":"summary_large_image","twitter:label1":"Written by","twitter:data1":"Website Maintenance Services","twitter:label2":"Est. reading time","twitter:data2":"24 minutes"}
