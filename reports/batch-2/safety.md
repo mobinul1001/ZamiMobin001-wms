@@ -6,7 +6,7 @@ Sitemap unchanged: true (sitemap-0.xml, sitemap-index.xml). robots.txt unchanged
 ## Failures (0)
 - none
 
-## Forbidden strings (16)
+## Forbidden strings (15)
 - /best-cdn-for-wordpress/: Bangladesh ("st CDN for WordPress Websites in India, Bangladesh, and AsiaCDN and WordPress SE")
 - /best-web-hosting-for-small-business/: Bangladesh ("Shopify’s Bangladesh-facing pricing page currently")
 - /best-web-hosting-for-small-business/: guaranteed ("an uptime guarantee is not the same as guaranteed uninterrupted service.")
@@ -20,7 +20,6 @@ Sitemap unchanged: true (sitemap-0.xml, sitemap-index.xml). robots.txt unchanged
 - /web-design-barbados/: guaranteed ("providers, not fixed industry rates or guaranteed final quotations.")
 - /web-design-dominican-republic/: guaranteed ("These figures are not guaranteed prices. Actual quotations may")
 - /web-design-saint-lucia/: guaranteed ("rather than verified market averages or guaranteed provider prices.")
-- /website-migration-services/: No downtime ("ove to a new host, up to 20 pages, with no downtime. Free with any annual plan.No")
 - /website-repair-services/: guaranteed ("e diagnosisRisk of data lossHigher — no guaranteed backup step✓ Low — backup tak")
 - /what-is-a-domain-name/: Bangladesh ("nited Kingdom, .in to India, and .bd to Bangladesh. Country-specific domains may")
 
@@ -57,55 +56,55 @@ Sitemap unchanged: true (sitemap-0.xml, sitemap-index.xml). robots.txt unchanged
 |---|---|---|---|---|
 | /about-us/ |  | 100.0% |  | ok |
 | /agreement/ |  | 100.0% |  | ok |
-| /best-cdn-for-wordpress/ |  | 100.0% |  | ok |
-| /best-fixrunner-alternatives/ |  | 100.0% |  | ok |
-| /best-web-hosting-for-small-business/ |  | 100.0% |  | ok |
+| /best-cdn-for-wordpress/ |  | 99.8% |  | ok |
+| /best-fixrunner-alternatives/ |  | 99.4% |  | ok |
+| /best-web-hosting-for-small-business/ |  | 99.9% |  | ok |
 | /best-website-maintenance-companies/ |  | 100.0% |  | ok |
 | /best-website-maintenance-for-small-business/ |  | 100.0% |  | ok |
 | /best-wp-buffs-alternatives/ |  | 100.0% |  | ok |
 | /blogs/ |  | 100.0% |  | ok |
-| /caribbean-taxi-transport-website-guide/ |  | 100.0% |  | ok |
-| /caribbean-web-design/ |  | 100.0% |  | ok |
-| /common-website-maintenance-mistakes/ |  | 100.0% |  | ok |
+| /caribbean-taxi-transport-website-guide/ |  | 99.3% |  | ok |
+| /caribbean-web-design/ |  | 99.8% |  | ok |
+| /common-website-maintenance-mistakes/ |  | 98.8% |  | ok |
 | /contact/ |  | 100.0% |  | ok |
 | /cookie-policy/ |  | 100.0% |  | ok |
-| /cost-to-redesign-website/ |  | 100.0% |  | ok |
+| /cost-to-redesign-website/ |  | 98.9% |  | ok |
 | /ecommerce-website-maintenance-packages/ | rebuilt | 100.0% |  | ok |
-| /ecommerce-website-redesign/ |  | 100.0% |  | ok |
-| /error-establishing-a-database-connection-wordpress/ |  | 100.0% |  | ok |
+| /ecommerce-website-redesign/ |  | 98.7% |  | ok |
+| /error-establishing-a-database-connection-wordpress/ |  | 99.6% |  | ok |
 | /free-website-maintenance-audit/ |  | 100.0% |  | ok |
-| /from-google-removal-request-to-page-1/ |  | 100.0% |  | ok |
+| /from-google-removal-request-to-page-1/ |  | 99.2% |  | ok |
 | /get-a-free-quote/ |  | 100.0% |  | ok |
-| /how-long-does-it-take-to-redesign-a-website/ |  | 100.0% |  | ok |
+| /how-long-does-it-take-to-redesign-a-website/ |  | 99.1% |  | ok |
 | /how-long-does-website-maintenance-take/ |  | 100.0% |  | ok |
 | /how-much-does-website-maintenance-cost/ |  | 100.0% |  | ok |
 | /how-much-does-wordpress-website-maintenance-cost/ |  | 100.0% |  | ok |
-| /how-often-should-you-redesign-your-website/ |  | 100.0% |  | ok |
-| /how-to-buy-a-domain-name/ |  | 100.0% |  | ok |
-| /how-to-redesign-a-website-without-losing-seo/ |  | 100.0% |  | ok |
-| /importance-of-website-maintenance/ |  | 100.0% |  | ok |
+| /how-often-should-you-redesign-your-website/ |  | 98.9% |  | ok |
+| /how-to-buy-a-domain-name/ |  | 99.9% |  | ok |
+| /how-to-redesign-a-website-without-losing-seo/ |  | 99.1% |  | ok |
+| /importance-of-website-maintenance/ |  | 99.5% |  | ok |
 | / |  | 100.0% |  | ok |
 | /monthly-website-maintenance-packages/ |  | 100.0% |  | ok |
-| /nonprofit-website-maintenance/ |  | 100.0% |  | ok |
+| /nonprofit-website-maintenance/ |  | 98.9% |  | ok |
 | /php-vulnerability-php2shell/ |  | 100.0% |  | ok |
 | /privacy-policy/ |  | 100.0% |  | ok |
 | /refund-cancellation-policy/ |  | 100.0% |  | ok |
-| /salon-seo/ |  | 100.0% |  | ok |
-| /seo-for-barbershops/ |  | 100.0% |  | ok |
+| /salon-seo/ |  | 99.9% |  | ok |
+| /seo-for-barbershops/ |  | 99.8% |  | ok |
 | /shopify-website-maintenance-packages/ | rebuilt | 99.5% |  | ok |
 | /sitecare-alternative/ |  | 100.0% |  | ok |
 | /terms-conditions/ |  | 100.0% |  | ok |
 | /thank-you/ |  | 100.0% |  | ok |
-| /there-has-been-a-critical-error-on-this-website-wordpress/ |  | 100.0% |  | ok |
-| /web-design-bahamas/ |  | 100.0% |  | ok |
-| /web-design-barbados/ |  | 100.0% |  | ok |
-| /web-design-dominican-republic/ |  | 100.0% |  | ok |
-| /web-design-jamaica/ |  | 100.0% |  | ok |
-| /web-design-saint-lucia/ |  | 100.0% |  | ok |
+| /there-has-been-a-critical-error-on-this-website-wordpress/ |  | 99.6% |  | ok |
+| /web-design-bahamas/ |  | 99.8% |  | ok |
+| /web-design-barbados/ |  | 99.8% |  | ok |
+| /web-design-dominican-republic/ |  | 99.8% |  | ok |
+| /web-design-jamaica/ |  | 99.7% |  | ok |
+| /web-design-saint-lucia/ |  | 99.8% |  | ok |
 | /website-design-services/ | rebuilt | 100.0% | 1 heading levels changed | ok |
-| /website-design-trinidad/ |  | 100.0% |  | ok |
+| /website-design-trinidad/ |  | 99.7% |  | ok |
 | /website-hacked-recovery-services/ |  | 100.0% |  | ok |
-| /website-hosting-and-maintenance/ |  | 100.0% |  | ok |
+| /website-hosting-and-maintenance/ |  | 98.9% |  | ok |
 | /website-maintenance-case-study/ |  | 100.0% |  | ok |
 | /website-maintenance-checklist/ |  | 100.0% |  | ok |
 | /website-maintenance-process/ |  | 100.0% |  | ok |
@@ -121,30 +120,30 @@ Sitemap unchanged: true (sitemap-0.xml, sitemap-index.xml). robots.txt unchanged
 | /website-maintenance-services-for-usa/ | rebuilt | 100.0% |  | ok |
 | /website-malware-scanner/ |  | 100.0% |  | ok |
 | /website-migration-services/ |  | 99.7% |  | ok |
-| /website-rebuild-guide/ |  | 100.0% |  | ok |
-| /website-redesign-checklist/ |  | 100.0% |  | ok |
-| /website-redesign-seo/ |  | 100.0% |  | ok |
+| /website-rebuild-guide/ |  | 99.3% |  | ok |
+| /website-redesign-checklist/ |  | 99.1% |  | ok |
+| /website-redesign-seo/ |  | 99.1% |  | ok |
 | /website-redesign-services/ | rebuilt | 100.0% | 1 heading levels changed | ok |
 | /website-repair-services/ |  | 100.0% |  | ok |
 | /website-seo-services/ | rebuilt | 100.0% | 1 heading levels changed | ok |
 | /website-speed-optimization-services/ | rebuilt | 99.7% | 1 heading levels changed | ok |
 | /website-support-services/ | rebuilt | 99.7% | 1 heading levels changed | ok |
 | /website-update-services/ | rebuilt | 99.8% |  | ok |
-| /what-does-website-maintenance-include/ |  | 100.0% |  | ok |
-| /what-is-a-dns-server/ |  | 100.0% |  | ok |
-| /what-is-a-domain-name/ |  | 100.0% |  | ok |
-| /what-is-an-ssl-certificate/ |  | 100.0% |  | ok |
-| /what-is-dns/ |  | 100.0% |  | ok |
+| /what-does-website-maintenance-include/ |  | 98.9% |  | ok |
+| /what-is-a-dns-server/ |  | 99.8% |  | ok |
+| /what-is-a-domain-name/ |  | 99.8% |  | ok |
+| /what-is-an-ssl-certificate/ |  | 99.8% |  | ok |
+| /what-is-dns/ |  | 99.9% |  | ok |
 | /white-label-website-maintenance-services-for-agencies/ | rebuilt | 99.5% |  | ok |
-| /white-label-wordpress-maintenance-support/ |  | 100.0% |  | ok |
+| /white-label-wordpress-maintenance-support/ |  | 99.6% |  | ok |
 | /wms-partner-program/ | rebuilt | 100.0% |  | ok |
 | /wordpress-backup-services/ | rebuilt | 100.0% |  | ok |
-| /wordpress-malware-removal/ |  | 100.0% |  | ok |
+| /wordpress-malware-removal/ |  | 99.7% |  | ok |
 | /wordpress-malware-removal-service/ |  | 98.5% |  | ok |
 | /wordpress-php-vulnerability/ |  | 100.0% |  | ok |
-| /wordpress-security-checklist/ |  | 100.0% |  | ok |
-| /wordpress-site-hacked-what-to-do/ |  | 100.0% |  | ok |
-| /wordpress-speed-optimization/ |  | 100.0% |  | ok |
+| /wordpress-security-checklist/ |  | 98.9% |  | ok |
+| /wordpress-site-hacked-what-to-do/ |  | 99.6% |  | ok |
+| /wordpress-speed-optimization/ |  | 99.7% |  | ok |
 | /wordpress-website-maintenance-packages/ |  | 99.6% |  | ok |
 | /works/ |  | 100.0% |  | ok |
 | /write-for-us/ |  | 100.0% |  | ok |

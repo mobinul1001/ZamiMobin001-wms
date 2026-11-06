@@ -126,3 +126,33 @@ To review everything at once, check out `b2-final` and run `CONTEXT=production U
 8. **Still on TODO.md:** GA4 / Clarity and EU/UK consent, design QA, Lighthouse, screenshots and gallery.
 
 **Merge order:** Batch 1 branches → `b2-seo-research` → `b2-services-a` → `b2-services-b` → `b2-agency` → `b2-plans-countries` → `b2-final` → `b2-content`. Do not merge yet.
+
+## Batch 2c (branch `b2-content`, 2026-11-06; nothing merged or pushed)
+
+| # | What was done | Commit |
+|---|---|---|
+| 1 | `reports/price-mismatches.md`: 11 FAQ answers on 8 pages name prices that are not on the page's cards. Nothing changed. A live check today also found that the SEO, speed and white-label **cards** differ from the live site (live: SEO $499 / $999 / $1,999, speed $99 / $199 / $349 / $499, white-label $59 / $39). | ed73d91 |
+| 2 | Byline "By: Website Maintenance Services" → "By: WMS" on the 39 non-Tier-A articles (link to /about-us/ kept). The 8 Tier A articles are a phase 2 proposal. Internal "website maintenance services" anchors pointing to /about-us/: 47 pages → 8. | 49700a2 |
+| 3 | 3 featured images replaced (FixRunner, WP Buffs, SiteCare comparisons), plus their 15 WordPress size variants. Each keeps its path, name, size, format and alt text and is under 120 KB. The live URL is the rebuild URL; no redirects. Record: `reports/batch-2/images-replaced.md`, originals in `reports/batch-2/images-original/`. Visual search of 73 featured/OG images found no other free-offer text. | bce6d93 |
+| 4 | Stage 7 finished on about, works, blogs, contact, free audit, get a free quote and the 4 policy pages: offer line and one main button under the H1 (a text link on policies). One primary button per page; the other body buttons on about, works and the blog index are now secondary. The empty band on the audit page is gone. | 82cd7c7 |
+| 5 | The four claims (white-label margins, support "24/7", partner earnings example, migration "no downtime") are approved facts in CLAIMS-AND-DESIGN.md A4b, word for word as on the live pages. They are off the held lists and owner questions. Migration's Host-to-Host card shows them normally; they are not in the title or meta. The forbidden scan exempts only those exact phrases on the migration page. | b16be43 |
+| 6 | All checks, this section and TODO.md. | (this commit) |
+
+**Checks (production build):**
+- Build: 0 failures.
+- URL parity: 815/815.
+- Page checks: 22 of 22 rebuilt pages pass.
+- Tests: build 32/32, browser 29/29.
+- Titles and metas: 92/92 as snippets.csv.
+- Duplicate IDs: 0 pages.
+- Safety pass against the separate pre-batch-2 clone: 0 failures, lowest text 98.5%; sitemap, robots and redirects unchanged; 15 forbidden-string hits, all older article text.
+
+### Owner questions (current)
+1. **SEO, speed and white-label cards:** show your list (as now), or the prices on the live site today? `reports/price-mismatches.md`, second table.
+2. **FAQ answers that name other prices than the cards** (11 answers, 8 pages): which value is right? `reports/price-mismatches.md`.
+3. **Old plan prices and claims in images:** several images show $95 / $195 / $395 and "99.9% uptime" / "24/7" badges (the WordPress cost featured image, small business plans comparison, small business featured image, DIY vs professional). Replace them like the three comparison images?
+4. **Alt texts of the 3 replaced images:** they still describe a comparison ("…highlighting… hosting…"). Shorten them to match the new image?
+5. **pt-BR wording on the Brazil page:** native review of the labels marked as ours.
+6. **Tier A proposals:** UK new layout, 6 FAQs, "By: WMS" on 8 articles. Test one page at a time?
+7. **"Client result" panels:** real case studies to replace them.
+8. **TODO.md:** GA4 / Clarity and EU/UK consent, design QA, Lighthouse, screenshots and gallery.
