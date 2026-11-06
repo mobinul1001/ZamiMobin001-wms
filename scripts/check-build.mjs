@@ -177,6 +177,8 @@ for (const file of htmlFiles) {
   // Owner rule: no analytics tag in the page itself. Owner, 2026-11-05: the cookie bar and the top bar are gone from every page.
   if ($('script[src*="googletagmanager"], script[src*="clarity.ms"]').length) fail('consent', `${path}: analytics tag loads before consent.`);
   if ($('#cookie-bar, .cookie-bar, script[src="/consent.js"]').length || /We use analytics cookies/i.test($('body').text())) fail('cookie-bar', `${path}: the removed cookie bar is back.`);
+  // Batch 2b: every id on a page is unique (in-page links and labels need one target).
+  { const ids = $('[id]').toArray().map((e) => $(e).attr('id')); const dup = [...new Set(ids.filter((x, i) => ids.indexOf(x) !== i))]; if (dup.length) fail('duplicate-id', `${path}: duplicate ids ${dup.slice(0, 5).join(', ')}${dup.length > 5 ? ` (+${dup.length - 5})` : ''}`); }
   if ($('.topbar').length) fail('topbar', `${path}: the removed top bar is back.`);
   // Owner, 2026-11-05: free hosting and the 2 free email accounts come only with a website redesign.
   if (path !== '/website-redesign-services/') {

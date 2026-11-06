@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { wireForms } from '../lib/html-sections';
+import { wireForms, dropDuplicateAnchors } from '../lib/html-sections';
 import { extractCta } from '../lib/polish';
 import Home from '../components/templates/Home.astro';
 import Pricing from '../components/templates/Pricing.astro';
@@ -49,7 +49,7 @@ const pick = () => {
   return Generic;
 };
 const Template = pick();
-if (entry.rendered?.html) entry.rendered.html = wireForms(entry.rendered.html, path);
+if (entry.rendered?.html) entry.rendered.html = dropDuplicateAnchors(wireForms(entry.rendered.html, path));
 // Hacked page: the closing section's response-time line is held (owner's brief, rule 6). It moves out of the final
 // CTA into the page body, where the page shows it collapsed for the owner to check.
 if (Template === HackedPage && entry.rendered?.html) {

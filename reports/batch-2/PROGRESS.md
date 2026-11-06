@@ -19,3 +19,4 @@ Real (status 200) pages not yet on the new design, from url-map.csv and the temp
 | # | Item | Status | Commit | Note |
 |---|---|---|---|---|
 | A | Decisions 1–4 and 6: live-site prices shown (prices.json liveSitePrices / malwareTiers, confirmed: false); UK back on its old layout, quick answer removed (proposal in additions.md); Brazil on the new layout in pt-BR; hosting post unchanged; malware pair approved exception in final-check | done | (see git log) | pt-BR labels not in the owner's list are marked "needs native review" |
+| B | Duplicate ids: 17 articles had an empty anchor before a heading with the same id (dropped at build by dropDuplicateAnchors in src/lib/html-sections.ts; the heading keeps the id); the malware hero form got its own id prefix. New build check "duplicate-id" and test (32/32). Result: 0 pages with duplicate ids; 622 in-page links on those pages, 0 broken; no text change | done | (see git log) | |

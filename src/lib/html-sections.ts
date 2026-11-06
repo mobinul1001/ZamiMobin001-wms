@@ -55,4 +55,14 @@ export function wireForms(html: string, path: string) {
   return noted.replace(/<label for="([^"]+)">((?:(?!<\/label>).)*)<\/label>(\s*(?:<div>\s*)?)<(input|select|textarea) /gs, '<label for="$1">$2</label>$3<$4 id="$1" ');
 }
 
+// The old pages put an empty anchor <p><a id="x"></a></p> right before a heading that has the same id, so the id was
+// on the page twice. The empty anchor goes; the heading keeps the id, so every "#x" link (TOC, in-page links) still
+// lands on the same place. No text changes. An empty anchor whose id is used nowhere else stays.
+export function dropDuplicateAnchors(html: string) {
+  return html.replace(/(?:<p>)?<a id="([^"]+)"><\/a>(?:<\/p>)?\s*/g, (all, id: string) => {
+    const uses = html.split(`id="${id}"`).length - 1;
+    return uses > 1 ? '' : all;
+  });
+}
+
 export const dropHeading = (html: string) => html.replace(/^\s*<h\d[^>]*>.*?<\/h\d>/s, '');

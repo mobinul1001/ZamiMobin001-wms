@@ -33,6 +33,7 @@ const cases = [
   ['Disabled submit button', () => replaceIn('dist/contact/index.html', /<button type="submit"/, '<button disabled type="submit"'), /submit button is disabled/],
   ['Analytics before consent', () => replaceIn(PAGE, '</head>', '<script src="https://www.clarity.ms/tag/x"></script></head>'), /loads before consent/],
   // Owner, 2026-11-05: the cookie bar and the top bar are removed; free hosting and free email only with a redesign; menu links must exist.
+  ['Duplicate id', () => replaceIn(PAGE, /<main[^>]*>/, '<main><span id="dup-x"></span><span id="dup-x"></span>'), /duplicate ids dup-x/],
   ['Cookie bar back', () => replaceIn(PAGE, /<main[^>]*>/, '<main><div id="cookie-bar"></div>'), /removed cookie bar is back/],
   ['Top bar back', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p class="topbar">x</p>'), /removed top bar is back/],
   ['Free hosting offer', () => replaceIn(PAGE, /<main[^>]*>/, '<main><p>Free hosting for the first year</p>'), /free hosting and free email come only with a redesign/],
