@@ -854,3 +854,11 @@ main td > a:only-child { display: inline-flex; align-items: center; min-height: 
 .post-offer .post-offer-k { margin-bottom: 4px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--head); }
 .post-offer .btn { flex: none; }
 @media (max-width: 640px) { .post-offer { flex-direction: column; align-items: stretch; } .post-offer .btn { width: 100%; } }
+
+/* Batch 2b, stage 7: the offer line and one main button under the H1 on about, works, blog, form and policy pages. */
+.hero-offer { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; margin-top: 18px; }
+.hero-offer p { margin: 0; font-weight: 600; color: var(--head); }
+.hero-offer-link { margin-top: 14px; color: var(--muted); }
+.hero-offer-link a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; }
+.form-anchor { display: block; position: relative; top: -90px; height: 0; }
+@media (max-width: 520px) { .hero-offer { flex-direction: column; } .hero-offer .btn { width: 100%; } }

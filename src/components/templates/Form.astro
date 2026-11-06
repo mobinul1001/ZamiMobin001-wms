@@ -6,6 +6,13 @@ import { polish, hlLast } from '../../lib/polish';
 const { entry } = Astro.props;
 const { path, h1 } = entry.data;
 const formName = path === '/get-a-free-quote/' ? 'quote' : '';
+// Batch 2b stage 7: the offer and one main button in the first screen, in each page's own words (owner, 2026-11-06).
+const HERO: Record<string, [string, string]> = {
+  '/free-website-maintenance-audit/': ['No cost. No pressure. No obligations.', 'Get my free review'],
+  '/get-a-free-quote/': ['100% free & no obligation', 'Request my free quote'],
+  '/contact/': ['Reply within 24 hours', 'Send a message'],
+};
+const hero = HERO[path];
 let html = entry.rendered?.html ?? '';
 const isScanner = path === '/website-malware-scanner/';
 if (isScanner) {
@@ -39,8 +46,9 @@ const formSide = isScanner ? undefined : `<div class="card side-panel">
 <section class="page-hero center"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
   <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
+  {hero && <div class="hero-offer"><p>{hero[0]}</p><a class="btn primary" href="#request-form">{hero[1]}<Fragment set:html={icon('arrow')} /></a></div>}
 </div></section>
-<Fragment set:html={polish(html, { layout: { formSide } })} />
+<Fragment set:html={polish(html, { layout: { formSide } }).replace('<section class="sec read"><div class="wrap"><div class="prose"><p><a id="content"></a></p></div></div></section>', '<span id="content"></span>').replace(/<form /, '<span id="request-form" class="form-anchor"></span><form ')} />
 {formName === 'quote' && (
   <script is:inline>
     // Plan buttons link here as /get-a-free-quote/#essential. The hash picks the plan; service packages are kept in a hidden field.

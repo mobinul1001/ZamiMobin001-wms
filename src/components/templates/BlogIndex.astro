@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import hubs from '../../data/blog-hubs.json';
 import { splitBy } from '../../lib/html-sections';
 import { polish, hlLast } from '../../lib/polish';
+import { icon } from '../../lib/icons';
 
 const { entry } = Astro.props;
 const posts = await getCollection('blog');
@@ -14,6 +15,7 @@ const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
   <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
   {intro && <div class="prose hero-intro" set:html={polish(intro, { sections: false })} />}
+  <div class="hero-offer"><p>Free website review: discover what’s holding your website back.</p><a class="btn primary" href="/free-website-maintenance-audit/">Get a free audit<Fragment set:html={icon('arrow')} /></a></div>
 </div></section>
 {hubs.map((t, i) => (
   <section class:list={['sec', { alt: i % 2 === 1 }]}><div class="wrap">
@@ -25,4 +27,4 @@ const { intro, sections } = splitBy(entry.rendered?.html ?? '', 2);
     </div>
   </div></section>
 ))}
-<Fragment set:html={polish(sections.map((s) => s.html).join(''), { start: hubs.length })} />
+<Fragment set:html={polish(sections.map((s) => s.html).join(''), { start: hubs.length }).replace(/class="btn primary/g, 'class="btn ghost')} />

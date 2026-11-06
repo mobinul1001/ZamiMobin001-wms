@@ -7,7 +7,11 @@ import { homeAboutHtml } from '../../lib/home';
 
 const { entry } = Astro.props;
 const isAbout = entry.data.path === '/about-us/';
-const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 });
+const POLICY = ['/privacy-policy/', '/terms-conditions/', '/cookie-policy/', '/refund-cancellation-policy/'];
+const isPolicy = POLICY.includes(entry.data.path);
+const mainCta = ['/about-us/', '/works/'].includes(entry.data.path);
+// Batch 2b stage 7: one main CTA (the hero button); body buttons stay, as secondary ones.
+const html = polish(entry.rendered?.html ?? '', { start: isAbout ? 1 : 0 }).replace(/class="btn primary/g, mainCta ? 'class="btn ghost' : 'class="btn primary');
 // Owner, 2026-11-04: the homepage's "dedicated partner" and "why choose us" text now lives here.
 const home = isAbout ? await getEntry('pages', 'home') : undefined;
 const moved = home ? homeAboutHtml(home.rendered?.html ?? '') : '';
@@ -15,13 +19,15 @@ const moved = home ? homeAboutHtml(home.rendered?.html ?? '') : '';
 <section class="page-hero center"><div class="wrap">
   <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {entry.data.h1}</nav>
   <h1 set:html={hlLast(entry.data.h1.replace(/&/g, '&amp;'))} />
+  {mainCta && <div class="hero-offer"><p>{site.stats[0][0]} {site.stats[0][1]} · 12+ years</p><a class="btn primary" href="/get-a-free-quote/">Get a free quote<Fragment set:html={icon('arrow')} /></a></div>}
+  {isPolicy && <p class="hero-offer-link">Need help with your website? <a href="/free-website-maintenance-audit/">Get a free website check</a></p>}
 </div></section>
 {isAbout && (
   <section class="sec" data-sec="stats"><div class="wrap">
     <div class="head"><p class="eyebrow">Track record</p><h2><span class="hl">12+ years</span> of keeping websites running</h2><p class="intro">{site.domainLine}</p></div>
     <div class="stats">{site.stats.map(([v, l]) => <div class="stat"><b>{v}</b><span>{l}</span></div>)}</div>
-    <div class="callout"><div><p><strong>{site.statsLine}</strong></p><p>We work with businesses in {site.reachFull}.</p></div><div class="act"><a class="btn primary" href="/works/">See our work<Fragment set:html={icon('arrow')} /></a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>
+    <div class="callout"><div><p><strong>{site.statsLine}</strong></p><p>We work with businesses in {site.reachFull}.</p></div><div class="act"><a class="btn ghost" href="/works/">See our work<Fragment set:html={icon('arrow')} /></a><a class="btn ghost" href="/website-maintenance-case-study/">Read case studies</a></div></div>
   </div></section>
 )}
 <Fragment set:html={html} />
-{moved && <Fragment set:html={moved} />}
+{moved && <Fragment set:html={moved.replace(/class="btn primary/g, 'class="btn ghost')} />}
