@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Our website support service gives small businesses on-demand help with their site: content changes, small tasks, fixes, updates and security checks, handled by a real team when you ask. It suits owners who want help without managing a developer. Start with a free website check and a fixed quote; annual billing gets 2 months free.</p>
+
 Reliable, expert website support for small businesses, agencies, ecommerce stores, and enterprise organizations worldwide.
 
 Your website is your most visible business asset. When it slows down, breaks, or gets compromised, every minute of downtime carries a cost—lost sales, damaged credibility, and frustrated customers. Our website support services ensure you never face those moments alone.

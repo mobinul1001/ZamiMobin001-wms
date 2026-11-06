@@ -4,6 +4,7 @@
 // (6 + "Show all"), related links, countries. All text is the page's own (src/lib/service-page.ts); prices only from
 // prices.json. Reuses the plans, repair, hacked and malware page styles. Header, footer and final CTA: Base.astro.
 import { getCollection } from 'astro:content';
+import prices from '../../data/prices.json';
 import hubs from '../../data/blog-hubs.json';
 import { icon, tick } from '../../lib/icons';
 import { quickForm } from '../../lib/home';
@@ -19,14 +20,17 @@ import TrustStrip from '../service/TrustStrip.astro';
 import Countries from '../service/Countries.astro';
 import ServiceArt from '../art/ServiceArt.astro';
 
-type Art = 'redesign' | 'design' | 'seo' | 'speed';
-interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean }
+type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup';
+interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string] }
 // Related links: owner pages with natural anchors (the homepage with "website maintenance services").
 const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services']];
 const CFG: Record<string, Cfg> = {
   '/website-redesign-services/': { art: 'redesign', need: 'Migration or redesign', protect: true, compare: true, related: [['/website-design-services/', 'Website design services'], ['/website-migration-services/', 'Website migration services'], ['/website-repair-services/', 'Website repair services']] },
   '/website-design-services/': { art: 'design', need: 'Something else', related: [['/website-redesign-services/', 'Website redesign services'], ['/website-seo-services/', 'Website SEO services'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
   '/website-seo-services/': { art: 'seo', need: 'Something else', related: [['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-redesign-services/', 'Website redesign services'], ['/website-design-services/', 'Website design services']] },
+  '/website-support-services/': { art: 'support', need: 'Fix something on my site', related: [['/website-repair-services/', 'Website repair services'], ['/website-update-services/', 'Website update services'], ['/wordpress-backup-services/', 'WordPress backup services']] },
+  '/website-update-services/': { art: 'update', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/wordpress-backup-services/', 'WordPress backup services'], ['/website-support-services/', 'Website support services']] },
+  '/wordpress-backup-services/': { art: 'backup', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-update-services/', 'Website update services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] },
   '/website-speed-optimization-services/': { art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
 };
 
@@ -34,7 +38,7 @@ const { entry } = Astro.props;
 const { path, h1 } = entry.data;
 const cfg = CFG[path];
 if (!cfg) throw new Error(`ServicePage: no settings for ${path}`);
-const d = parseService(entry.rendered?.html ?? '');
+const d = parseService(entry.rendered?.html ?? '', cfg.keep ?? []);
 if (!d.hero.quickAnswer) throw new Error(`ServicePage: ${path} has no quick answer (text-edits.mjs)`);
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
@@ -46,7 +50,7 @@ const faqItem = (f: { q: string; id?: string; a: string[] }) => `<details><summa
 const PROTECT = ['1:1 301 Redirect Mapping', 'Metadata & Heading Preservation', 'Internal Link Architecture', 'XML Sitemap & Robots.txt', 'Staging Server QA Testing'];
 const body = d.sections.filter((s) => s.kind !== 'faq' && s.kind !== 'closing');
 const closing = d.sections.find((s) => s.kind === 'closing');
-const otherLinks = d.hero.links.slice(1);
+const otherLinks = d.hero.links; // the page's own hero links, as text links (the main button is "Get a free quote")
 ---
 <link rel="stylesheet" href={plansCss} />
 <link rel="stylesheet" href={repairCss} />
@@ -60,7 +64,7 @@ const otherLinks = d.hero.links.slice(1);
       {d.hero.eyebrow && <p class="eyebrow"><span set:html={d.hero.eyebrow} /></p>}
       <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
       {d.hero.lead && <p class="rp-sub" set:html={d.hero.lead} />}
-      <p class="rp-priceline"><b>Fixed quote after a free check</b><span>No contract</span></p>
+      <p class="rp-priceline"><b>{(cfg.priceLine ?? ['Fixed quote after a free check'])[0]}</b><span>{(cfg.priceLine ?? ['', 'No contract'])[1]}</span></p>
       <div class="cta-row"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a>{pricing && <a class="sv-tlink" href="#pricing">See packages</a>}</div>
       {otherLinks.length > 0 && <p class="sv-links">{otherLinks.map((l) => <a href={l.href}>{l.label}</a>)}</p>}
     </div>

@@ -28,6 +28,15 @@ export const TEXT_EDITS = {
   '/website-speed-optimization-services/': {
     quickAnswer: 'Our website speed optimization service makes slow sites load fast and pass Core Web Vitals (LCP, INP and CLS). We audit your pages, then compress images, tune caching, remove heavy plugins and scripts, and test before and after. It works for WordPress, WooCommerce and other sites. Start with a free speed check and a fixed quote.',
   },
+  '/website-support-services/': {
+    quickAnswer: 'Our website support service gives small businesses on-demand help with their site: content changes, small tasks, fixes, updates and security checks, handled by a real team when you ask. It suits owners who want help without managing a developer. Start with a free website check and a fixed quote; annual billing gets 2 months free.',
+  },
+  '/website-update-services/': {
+    quickAnswer: 'Our website update service keeps your site current every month: core, plugin and theme updates with a backup before each one, testing after, and content changes on request. Updates are included in every plan, from $79 a month. Start with a free website health check to see what is out of date on your site.',
+  },
+  '/wordpress-backup-services/': {
+    quickAnswer: 'Our WordPress backup service copies your files, database and media off-site on a schedule, and a real person checks the backups and tests restores. Backups come with every plan: weekly on Essential, daily on Growth and Business, kept 30, 60 or 90 days. Plans start at $79 a month.',
+  },
   // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
   '/website-migration-services/': {
     sub: [

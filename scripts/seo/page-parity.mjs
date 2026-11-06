@@ -21,7 +21,7 @@ for (const path of process.argv.slice(2)) {
   for (const raw of md.split('\n')) {
     const line = raw.trim();
     const h = /^(#{2,4}) (.+)$/.exec(line);
-    if (h) { const t = sq(h[2].replace(/\\/g, '')); if (!heads[h[1].length].has(t)) bad.push(`H${h[1].length} missing: ${h[2].slice(0, 60)}`); continue; }
+    if (h) { const t = sq(h[2].replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\\/g, '')); if (!heads[h[1].length].has(t)) bad.push(`H${h[1].length} missing: ${h[2].slice(0, 60)}`); continue; }
     if (!line || /^<\/?div|^\| ?-|^<a id=/.test(line)) continue;
     const t = sq(line.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/^[-*|]\s*|\\/g, '').split('|').join(''));
     if (t.length < 4) continue;

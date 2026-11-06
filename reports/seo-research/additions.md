@@ -13,3 +13,7 @@ Every addition comes from reports/seo-research (page-briefs.csv, content-gaps.cs
 | all 4 pages | "Related services" block (3 related services + plans/pricing, cost article, homepage "Website maintenance services"); risk band "Free check, fixed quote first, no contract" | internal-link plan in page-briefs.csv | page-briefs.csv | yes |
 
 No new FAQs were added on these 4 pages: GSC has no question queries for design, SEO and speed in the 3-month export, and the redesign question is answered by the quick answer and an existing FAQ.
+| /website-support-services/ | Quick answer (57 words) | website support services | BATCH-2 section 6.3 | yes |
+| /website-update-services/ | Quick answer (56 words) | website update services | BATCH-2 section 6.3 | yes |
+| /wordpress-backup-services/ | Quick answer (51 words, schedules and retention only as on the page) | wordpress backup services | BATCH-2 section 6.3 | yes |
+| /website-support-services/ | FAQ questions now marked up as H3 inside the FAQ accordions (the text is unchanged; the page has no FAQPage schema, so none was added) | FAQ structure | page markup | yes |
