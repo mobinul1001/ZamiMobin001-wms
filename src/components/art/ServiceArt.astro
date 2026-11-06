@@ -1,0 +1,32 @@
+---
+// Original decorative hero art for the batch-2 service pages (inline SVG, brand gradient, light and dark through CSS
+// variables, fixed 4:3 ratio, aria-hidden). No numbers, no client names, nothing that reads as real data.
+interface Props { kind: 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'hosting' | 'scanner' | 'whitelabel' | 'partner' }
+const { kind } = Astro.props;
+const id = `sa-${kind}`;
+---
+<svg class="sv-art" viewBox="0 0 240 180" width="240" height="180" aria-hidden="true" focusable="false">
+  <defs><linearGradient id={id} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d34e0" /><stop offset=".55" stop-color="#c026d3" /><stop offset="1" stop-color="#f43f5e" /></linearGradient></defs>
+  <rect x="4" y="4" width="232" height="172" rx="22" class="sa-bg" />
+  {kind === 'redesign' && (<g>
+    <rect x="22" y="40" width="80" height="100" rx="10" class="sa-card" /><rect x="138" y="40" width="80" height="100" rx="10" class="sa-card" />
+    <rect x="32" y="52" width="60" height="10" rx="4" class="sa-line" /><rect x="32" y="70" width="40" height="8" rx="4" class="sa-line" /><rect x="32" y="86" width="60" height="40" rx="6" class="sa-line" />
+    <rect x="148" y="52" width="60" height="14" rx="5" fill={`url(#${id})`} /><rect x="148" y="74" width="28" height="52" rx="6" class="sa-line" /><rect x="180" y="74" width="28" height="24" rx="6" class="sa-line" /><rect x="180" y="102" width="28" height="24" rx="6" class="sa-line" />
+    <path d="M106 70h26m-8-7 8 7-8 7M106 110h26m-8-7 8 7-8 7" fill="none" stroke={`url(#${id})`} stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  </g>)}
+  {kind === 'design' && (<g>
+    <rect x="26" y="30" width="188" height="122" rx="12" class="sa-card" /><circle cx="42" cy="44" r="4" class="sa-dot" /><circle cx="54" cy="44" r="4" class="sa-dot" /><circle cx="66" cy="44" r="4" class="sa-dot" />
+    <rect x="40" y="60" width="160" height="30" rx="8" fill={`url(#${id})`} /><rect x="40" y="98" width="48" height="40" rx="7" class="sa-line" /><rect x="96" y="98" width="48" height="40" rx="7" class="sa-line" /><rect x="152" y="98" width="48" height="40" rx="7" class="sa-line" />
+  </g>)}
+  {kind === 'seo' && (<g>
+    <rect x="24" y="30" width="150" height="70" rx="10" class="sa-card" /><rect x="36" y="44" width="70" height="8" rx="4" fill={`url(#${id})`} /><rect x="36" y="60" width="120" height="7" rx="3.5" class="sa-line" /><rect x="36" y="74" width="100" height="7" rx="3.5" class="sa-line" />
+    <circle cx="182" cy="62" r="20" fill="none" stroke={`url(#${id})`} stroke-width="6" /><path d="m196 76 16 16" stroke={`url(#${id})`} stroke-width="7" stroke-linecap="round" />
+    <path d="M30 150c30-6 44-22 66-24s38 8 62-6 40-28 54-40" fill="none" stroke={`url(#${id})`} stroke-width="5" stroke-linecap="round" />
+  </g>)}
+  {kind === 'speed' && (<g>
+    <path d="M40 120a60 60 0 0 1 120 0" fill="none" class="sa-track" stroke-width="14" stroke-linecap="round" /><path d="M40 120a60 60 0 0 1 104-41" fill="none" stroke={`url(#${id})`} stroke-width="14" stroke-linecap="round" />
+    <path d="m100 120 32-34" stroke-width="6" stroke-linecap="round" class="sa-needle" /><circle cx="100" cy="120" r="8" fill={`url(#${id})`} />
+    <rect x="172" y="50" width="48" height="10" rx="5" fill={`url(#${id})`} /><rect x="172" y="68" width="36" height="10" rx="5" class="sa-line" /><rect x="172" y="86" width="26" height="10" rx="5" class="sa-line" /><rect x="172" y="104" width="16" height="10" rx="5" class="sa-line" />
+    <rect x="40" y="142" width="160" height="8" rx="4" class="sa-line" />
+  </g>)}
+</svg>

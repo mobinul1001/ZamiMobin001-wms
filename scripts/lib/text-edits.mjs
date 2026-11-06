@@ -3,6 +3,7 @@
 //   exact:   [from, to]  an element whose whole text is `from` gets the text `to`
 //   drop:    text        a list item, paragraph or cell whose whole text is `text` is removed
 //   dropRow: text        a table row whose first cell is `text` is removed
+//   quickAnswer: text  a <p class="quick-answer"> goes first in the body (batch 2: 40 to 60 words, facts from the page)
 //   insertBefore: [text, newText]  a new paragraph `newText` goes right before the element whose whole text is `text`
 //   sub:     [from, to, htmlFrom?, mdFrom?]  part of a sentence: `from` becomes `to` (htmlFrom / mdFrom when the
 //            body HTML or the Markdown spells it differently)
@@ -14,7 +15,18 @@ export const TEXT_EDITS = {
   // Owner, 2026-11-06: free hosting and 2 free email accounts stay only with a redesign, stated once in its pricing
   // section. No duration is stated until the owner confirms it (question in reports/batch-1/FINAL.md).
   '/website-redesign-services/': {
+    quickAnswer: 'Our website redesign service rebuilds your site’s design, structure and CMS while keeping your rankings: we map every URL with 301 redirects, keep titles, content and schema, and test everything on staging before launch. It suits businesses whose site looks dated or converts poorly. Every project starts with a free audit and a fixed quote.',
     insertBefore: [['What drives the average website redesign cost?', 'Free hosting and 2 free email accounts are included with a redesign.']],
+  },
+  // Batch 2 quick answers (BATCH-2-FINAL-PROMPT section 6.3), built only from facts on each page.
+  '/website-design-services/': {
+    quickAnswer: 'Our website design service builds custom, mobile-first websites for small businesses, designed for speed, search and leads. We plan the pages, design them, build them on your CMS and test before launch. We have built 120+ websites. Every project starts with a free design consultation and a fixed quote for your scope.',
+  },
+  '/website-seo-services/': {
+    quickAnswer: 'Our website SEO service improves how your site is found in search: a technical audit, on-page and content fixes, local SEO and clear monthly reports. It suits small businesses that want more qualified visitors from Google. Start with a free website SEO audit; you get a fixed quote for the work before anything begins.',
+  },
+  '/website-speed-optimization-services/': {
+    quickAnswer: 'Our website speed optimization service makes slow sites load fast and pass Core Web Vitals (LCP, INP and CLS). We audit your pages, then compress images, tune caching, remove heavy plugins and scripts, and test before and after. It works for WordPress, WooCommerce and other sites. Start with a free speed check and a fixed quote.',
   },
   // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
   '/website-migration-services/': {
@@ -114,6 +126,7 @@ export function applyTextEdits($, path) {
       hits.forEach((e) => $(e).remove());
       if (hits.length) mark(scope, 'dropRow', i);
     });
+    if (r.quickAnswer && !$('p.quick-answer').length) { $('body').prepend(`<p class="quick-answer">${esc(r.quickAnswer)}</p>`); mark(scope, 'quickAnswer', 0); }
     (r.insertBefore ?? []).forEach(([text, add], i) => {
       const hits = $('body *').toArray().filter((e) => norm($(e).text()) === text && !$(e).children().toArray().some((c) => norm($(c).text()) === text));
       hits.forEach((e) => $(e).before(`<p>${esc(add)}</p>`));
@@ -143,7 +156,7 @@ export function editString(path, s) {
 // Every page-scoped rule was used somewhere.
 export function checkTextEditsUsed() {
   // The '*' rules are a safety net (their sources were removed too), so they may find nothing.
-  const unused = Object.entries(TEXT_EDITS).filter(([scope]) => scope !== '*').flatMap(([scope, r]) => Object.entries(r).flatMap(([kind, list]) => list.map((x, i) => (used.has(`${scope}|${kind}|${i}`) ? null : `${scope} ${kind}: ${[].concat(x)[0]}`)))).filter(Boolean);
+  const unused = Object.entries(TEXT_EDITS).filter(([scope]) => scope !== '*').flatMap(([scope, r]) => Object.entries(r).flatMap(([kind, list]) => [].concat(kind === 'quickAnswer' ? [list] : list).map((x, i) => (used.has(`${scope}|${kind}|${i}`) ? null : `${scope} ${kind}: ${[].concat(x)[0]}`)))).filter(Boolean);
   if (unused.length) throw new Error(`text-edits: rules not used (text changed?):\n${unused.join('\n')}`);
 }
 
@@ -196,6 +209,14 @@ export function applyTextEditsMd(path, md) {
     (r.sub ?? []).forEach(([from, to, , mdFrom], i) => {
       for (const f of [mdFrom, from, from.replace(/’/g, "'")].filter(Boolean)) if (out.includes(f)) { out = out.split(f).join(to); mark(scope, 'sub', i); }
     });
+    // The migration drops class attributes, so the quick answer comes back as a plain paragraph line: wrap it again.
+    if (r.quickAnswer) {
+      const lines = out.split('\n');
+      const k = lines.findIndex((l) => norm(l.replace(/\\/g, '')) === norm(r.quickAnswer) || norm(l.replace(/\\/g, '')).replace(/[’']/g, "'") === norm(r.quickAnswer).replace(/[’']/g, "'"));
+      if (k < 0) throw new Error(`text-edits: quick answer not found in the Markdown of ${path}`);
+      lines[k] = `<p class="quick-answer">${esc(r.quickAnswer)}</p>`;
+      out = lines.join('\n');
+    }
   }
   return out;
 }

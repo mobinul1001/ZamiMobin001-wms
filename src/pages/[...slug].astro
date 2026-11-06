@@ -15,6 +15,7 @@ import RepairPage from '../components/templates/RepairPage.astro';
 import HackedPage from '../components/templates/HackedPage.astro';
 import MalwarePage from '../components/templates/MalwarePage.astro';
 import MigrationPage from '../components/templates/MigrationPage.astro';
+import ServicePage from '../components/templates/ServicePage.astro';
 import { HELD_LINES as HACKED_HELD } from '../lib/hacked';
 
 export async function getStaticPaths() {
@@ -37,6 +38,8 @@ const pick = () => {
   if (path === '/website-hacked-recovery-services/') return HackedPage;
   if (path === '/wordpress-malware-removal-service/') return MalwarePage;
   if (path === '/website-migration-services/') return MigrationPage;
+  // Batch 2 service pages (stage 3).
+  if (['/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/'].includes(path)) return ServicePage;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (FORM_PAGES.includes(path)) return Form;
@@ -58,7 +61,7 @@ if (Template === HackedPage && entry.rendered?.html) {
 // A short call to action at the end of a page becomes its final CTA box.
 const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
 if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
-const hasForm = path === '/' || Template === RepairPage || Template === HackedPage || Template === MalwarePage || Template === MigrationPage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
+const hasForm = path === '/' || Template === RepairPage || Template === HackedPage || Template === MalwarePage || Template === MigrationPage || Template === ServicePage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>
   {hasForm && <script is:inline defer src="/forms.js" slot="head"></script>}

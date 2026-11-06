@@ -1,0 +1,137 @@
+---
+// Batch 2 service pages (BATCH-2-FINAL-PROMPT, SERVICE-TEMPLATE-SPEC): hero with one main CTA and the quick form,
+// quick answer, the page's own sections (long parts in native <details>), proof strip above pricing, risk band, FAQ
+// (6 + "Show all"), related links, countries. All text is the page's own (src/lib/service-page.ts); prices only from
+// prices.json. Reuses the plans, repair, hacked and malware page styles. Header, footer and final CTA: Base.astro.
+import { getCollection } from 'astro:content';
+import hubs from '../../data/blog-hubs.json';
+import { icon, tick } from '../../lib/icons';
+import { quickForm } from '../../lib/home';
+import { hlLast } from '../../lib/polish';
+import { parseService } from '../../lib/service-page';
+import plansCss from '../../styles/plans-page.css?url';
+import repairCss from '../../styles/repair-page.css?url';
+import hackedCss from '../../styles/hacked-page.css?url';
+import malwareCss from '../../styles/malware-page.css?url';
+import serviceCss from '../../styles/service-page.css?url';
+import SectionAccordion from '../plans/SectionAccordion.astro';
+import TrustStrip from '../service/TrustStrip.astro';
+import Countries from '../service/Countries.astro';
+import ServiceArt from '../art/ServiceArt.astro';
+
+type Art = 'redesign' | 'design' | 'seo' | 'speed';
+interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean }
+// Related links: owner pages with natural anchors (the homepage with "website maintenance services").
+const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services']];
+const CFG: Record<string, Cfg> = {
+  '/website-redesign-services/': { art: 'redesign', need: 'Migration or redesign', protect: true, compare: true, related: [['/website-design-services/', 'Website design services'], ['/website-migration-services/', 'Website migration services'], ['/website-repair-services/', 'Website repair services']] },
+  '/website-design-services/': { art: 'design', need: 'Something else', related: [['/website-redesign-services/', 'Website redesign services'], ['/website-seo-services/', 'Website SEO services'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
+  '/website-seo-services/': { art: 'seo', need: 'Something else', related: [['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-redesign-services/', 'Website redesign services'], ['/website-design-services/', 'Website design services']] },
+  '/website-speed-optimization-services/': { art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
+};
+
+const { entry } = Astro.props;
+const { path, h1 } = entry.data;
+const cfg = CFG[path];
+if (!cfg) throw new Error(`ServicePage: no settings for ${path}`);
+const d = parseService(entry.rendered?.html ?? '');
+if (!d.hero.quickAnswer) throw new Error(`ServicePage: ${path} has no quick answer (text-edits.mjs)`);
+const posts = await getCollection('blog');
+const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
+const form = quickForm('service', 'Get a free quote', 'Tell us about your site. We reply within 24 hours with a free check and a fixed quote.', path.replace(/\W+/g, '-').replace(/^-|-$/g, ''), cfg.need);
+const pricing = d.sections.find((s) => s.kind === 'pricing');
+const rm = (label: string, body: string, cls = '') => `<details class="pp-rm ${cls}"><summary>${label}${icon('down')}</summary><div class="pp-prose">${body}</div></details>`;
+const faqItem = (f: { q: string; id?: string; a: string[] }) => `<details><summary><h3${f.id ? ` id="${f.id}"` : ''}>${f.q}</h3>${icon('down')}</summary><div class="a">${f.a.join('')}</div></details>`;
+// Redesign: "what we protect" panel, made of the page's own checklist headings (wording already on the page).
+const PROTECT = ['1:1 301 Redirect Mapping', 'Metadata & Heading Preservation', 'Internal Link Architecture', 'XML Sitemap & Robots.txt', 'Staging Server QA Testing'];
+const body = d.sections.filter((s) => s.kind !== 'faq' && s.kind !== 'closing');
+const closing = d.sections.find((s) => s.kind === 'closing');
+const otherLinks = d.hero.links.slice(1);
+---
+<link rel="stylesheet" href={plansCss} />
+<link rel="stylesheet" href={repairCss} />
+<link rel="stylesheet" href={hackedCss} />
+<link rel="stylesheet" href={malwareCss} />
+<link rel="stylesheet" href={serviceCss} />
+<div class="plans-pg repair-pg hacked-pg malware-pg sv-pg">
+  <section class="rp-hero"><div class="wrap">
+    <div class="rp-hero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
+      {d.hero.eyebrow && <p class="eyebrow"><span set:html={d.hero.eyebrow} /></p>}
+      <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
+      {d.hero.lead && <p class="rp-sub" set:html={d.hero.lead} />}
+      <p class="rp-priceline"><b>Fixed quote after a free check</b><span>No contract</span></p>
+      <div class="cta-row"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a>{pricing && <a class="sv-tlink" href="#pricing">See packages</a>}</div>
+      {otherLinks.length > 0 && <p class="sv-links">{otherLinks.map((l) => <a href={l.href}>{l.label}</a>)}</p>}
+    </div>
+    <div class="rp-hero-side" id="quote"><Fragment set:html={form} /></div>
+  </div></section>
+
+  <section class="sv-qa"><div class="wrap"><div class="sv-qa-in card">
+    <ServiceArt kind={cfg.art} />
+    <div><p class="eyebrow">In short</p><p class="quick-answer" set:html={d.hero.quickAnswer} /></div>
+  </div>
+  {(d.hero.introRest || d.hero.panel) && <Fragment set:html={rm('Read more', d.hero.introRest + (d.hero.panel ? `<div class="sv-example"><span class="sv-ex-tag">Example</span>${d.hero.panel}</div>` : ''), 'sv-intro')} />}
+  {d.hero.panel && <Fragment set:html={'<!-- OWNER CHECK: the hero status panel shows numbers labelled "Client result"; it is shown as an Example, collapsed, until the owner confirms them -->'} />}
+  </div></section>
+
+  {!pricing && <TrustStrip />}
+
+  {cfg.protect && (
+    <section class="pp-sec sv-protect"><div class="wrap"><div class="card sv-protect-in">
+      <p class="eyebrow">What we protect in a redesign</p>
+      <ul class="hk-chips">{PROTECT.map((p) => <li><Fragment set:html={tick} />{p}</li>)}</ul>
+    </div></div></section>
+  )}
+
+  {body.map((s, i) => (
+    <>
+      {s.kind === 'pricing' && <TrustStrip />}
+      <SectionAccordion eyebrow={s.eyebrow} h2={s.h2} id={s.kind === 'pricing' ? 'pricing' : s.id} alt={i % 2 === 1} open={i === 0}>
+        {s.kind === 'pricing' && s.id && <span id={s.id} class="sv-anchor" />}
+        <div class="mw-prose sv-body" set:html={s.html} />
+        {s.kind === 'pricing' && (
+          <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">Free check, fixed quote first, no contract</h3><p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract.</p></div><a class="btn primary" href="#quote">Get a free quote</a></div>
+        )}
+      </SectionAccordion>
+      {s.kind === 'pricing' && cfg.compare && (
+        <SectionAccordion h2="Redesign or repair: which one do you need?" alt>
+          <div class="pp-tscroll sv-tscroll" tabindex="0" role="region" aria-label="Redesign or repair, scrolls sideways"><table class="pp-t sv-t">
+            <thead><tr><th>Question</th><th>Website redesign</th><th><a href="/website-repair-services/">Website repair</a></th></tr></thead>
+            <tbody>
+              <tr><td>What changes</td><td>Design, structure, content layout and often the CMS</td><td>One problem is fixed; the design stays</td></tr>
+              <tr><td>Good when</td><td>The site looks dated, is hard to update or does not convert</td><td>Something is broken: errors, layout, forms, plugins</td></tr>
+              <tr><td>SEO work</td><td>URL map, 301 redirects, titles and schema kept</td><td>URLs and content stay as they are</td></tr>
+              <tr><td>How it starts</td><td>Free audit and a fixed quote</td><td>Free check and a fixed quote</td></tr>
+            </tbody>
+          </table></div>
+        </SectionAccordion>
+      )}
+    </>
+  ))}
+
+  {d.faq && (
+    <SectionAccordion eyebrow={d.faq.sec.eyebrow} h2={d.faq.sec.h2} id={d.faq.sec.id} alt>
+      {d.faq.lead && <div class="mw-prose" set:html={d.faq.lead} />}
+      <div class="pp-faq rp-faq hk-faq">
+        <Fragment set:html={d.faq.items.slice(0, 6).map(faqItem).join('')} />
+        {d.faq.items.length > 6 && <details class="pp-rm pp-faq-more"><summary>Show all {d.faq.items.length} questions<Fragment set:html={icon('down')} /></summary><div class="pp-faq hk-faq"><Fragment set:html={d.faq.items.slice(6).map(faqItem).join('')} /></div></details>}
+      </div>
+    </SectionAccordion>
+  )}
+
+  {closing && (
+    <section class="pp-sec mw-closing"><div class="wrap">
+      {closing.eyebrow && <p class="eyebrow">{closing.eyebrow}</p>}
+      <h2 id={closing.id} set:html={closing.h2} />
+      <div class="mw-prose mw-close" set:html={closing.html} />
+    </div></section>
+  )}
+
+  <SectionAccordion h2="Related services" alt>
+    <div class="pp-rel">{[...cfg.related, ...OWNERS].map(([href, label]) => <a href={href}>{label}</a>)}</div>
+    {guides.length > 0 && <><h3 class="sv-guides-h">Guides</h3><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></>}
+  </SectionAccordion>
+  <section class="hk-countries"><div class="wrap"><Countries /></div></section>
+  <div class="pp-stick"><a class="btn primary" href="#quote">Get a free quote</a></div>
+</div>

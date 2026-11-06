@@ -1,0 +1,11 @@
+import { createServer } from 'node:http'; import { existsSync, readFileSync, statSync } from 'node:fs'; import { join, extname } from 'node:path';
+import puppeteer from 'puppeteer-core';
+const T = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.woff2': 'font/woff2', '.png': 'image/png', '.webp': 'image/webp' };
+const s = createServer((q, r) => { let p = join('dist', decodeURIComponent(q.url.split('?')[0])); if (existsSync(p) && statSync(p).isDirectory()) p = join(p, 'index.html'); if (!existsSync(p)) { r.writeHead(404); return r.end(); } r.writeHead(200, { 'content-type': T[extname(p)] ?? 'application/octet-stream' }); r.end(readFileSync(p)); }).listen(0);
+const b = await puppeteer.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' }); const pg = await b.newPage();
+const [path, w, h, out, theme] = [process.argv[2], +process.argv[3], +process.argv[4], process.argv[5], process.argv[6]];
+await pg.setViewport({ width: w, height: h });
+if (theme) await pg.evaluateOnNewDocument((t) => { try { localStorage.setItem('wms-theme', t); } catch {} }, theme);
+await pg.goto(`http://localhost:${s.address().port}${path}`, { waitUntil: 'load' });
+await pg.screenshot({ path: out, fullPage: process.argv.includes('--full') });
+await b.close(); s.close();

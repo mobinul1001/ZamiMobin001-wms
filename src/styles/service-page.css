@@ -1,0 +1,51 @@
+/* Batch 2 service pages (redesign, design, SEO, speed, ...). Scoped to .sv-pg; loaded after the plans, repair,
+   hacked and malware page styles, whose hero, sections, cards, tables, FAQ and strips it reuses. */
+.sv-pg .cta-row { align-items: center; }
+.sv-tlink, .sv-links a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--link); }
+.sv-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 8px; font-size: 15px; }
+
+/* Quick answer, right under the hero: the art and a 40-60 word answer. */
+.sv-qa { padding: 8px 0 24px; }
+.sv-qa-in { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; align-items: center; padding: 20px 24px; }
+.sv-art { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+.sv-art .sa-bg { fill: var(--mini, #f4f1ff); }
+.sv-art .sa-card { fill: var(--card, #fff); stroke: var(--card-line, #e4defa); stroke-width: 2; }
+.sv-art .sa-line, .sv-art .sa-dot { fill: var(--card-line, #e4defa); }
+.sv-art .sa-track { stroke: var(--card-line, #e4defa); }
+.sv-art .sa-needle { stroke: var(--head, #1b1240); }
+.quick-answer { margin: 4px 0 0; font-size: 17px; line-height: 1.6; color: var(--ink); }
+.sv-qa .sv-intro { margin-top: 12px; }
+@media (max-width: 759px) {
+  .sv-qa-in { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+  .sv-art { max-width: 160px; }
+  .quick-answer { font-size: 16px; }
+}
+
+/* Example panel (from the old hero) inside "Read more". */
+.sv-example { position: relative; margin-top: 16px; padding-top: 28px; }
+.sv-ex-tag { position: absolute; top: 0; left: 0; padding: 2px 10px; border-radius: 999px; background: var(--mini); border: 1px solid var(--card-line); font-size: 13px; font-weight: 700; color: var(--head); }
+
+/* Redesign: what we protect. */
+.sv-protect { padding-top: 0; }
+.sv-protect-in { display: grid; gap: 10px; padding: 18px 22px; }
+.sv-protect .hk-chips { justify-content: flex-start; }
+.sv-protect .hk-chips li { display: inline-flex; align-items: center; gap: 6px; }
+.sv-protect .hk-chips svg { width: 16px; height: 16px; flex: none; }
+
+/* The page's own content inside a section: cards in a grid, tables in their scroll box. */
+.sv-body .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 16px 0; }
+.sv-body .cards .card { min-width: 0; overflow-wrap: anywhere; padding: 18px; }
+.sv-body .cards .card h3 { font-size: 18px; }
+.sv-more .cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1079px) { .sv-body .cards, .sv-more .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 519px) { .sv-body .cards, .sv-more .cards { grid-template-columns: minmax(0, 1fr); } }
+.sv-body .pp-tscroll { margin: 16px 0; }
+.sv-t th:first-child, .sv-t td:first-child { position: sticky; left: 0; z-index: 1; background: var(--card); }
+.sv-t { min-width: 560px; }
+.sv-pnote summary { font-size: 14px; }
+.sv-anchor { position: relative; top: -80px; display: block; height: 0; }
+.sv-risk { margin-top: 20px; }
+.sv-risk-h { font-size: 19px; margin: 0 0 4px; }
+.sv-guides-h { margin: 20px 0 8px; font-size: 18px; }
+.sv-inc { margin-top: 8px; }
+.sv-protect-in .eyebrow { justify-self: start; }
