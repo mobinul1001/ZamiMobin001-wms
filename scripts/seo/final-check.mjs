@@ -7,8 +7,8 @@ import * as cheerio from 'cheerio';
 import { parseCsv } from './csv-lite.mjs';
 import { SNIPPETS } from './snippets-data.mjs';
 
-const OLD = process.argv[2] ?? '../wms-old/dist';
-const BUILT_B2 = ['/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/wordpress-backup-services/', '/white-label-website-maintenance-services-for-agencies/', '/wms-partner-program/', '/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/', ...['usa', 'uk', 'canada', 'australia', 'ireland', 'france', 'netherlands', 'spain', 'switzerland'].map((c) => `/website-maintenance-services-for-${c}/`)];
+const OLD = process.argv[2] ?? '../wms-old-clone/dist';
+const BUILT_B2 = ['/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/wordpress-backup-services/', '/white-label-website-maintenance-services-for-agencies/', '/wms-partner-program/', '/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/', ...['usa', 'canada', 'australia', 'ireland', 'france', 'netherlands', 'spain', 'switzerland', 'brazil'].map((c) => `/website-maintenance-services-for-${c}/`)];
 const walk = (d) => readdirSync(d).flatMap((n) => { const p = join(d, n); return statSync(p).isDirectory() ? walk(p) : n === 'index.html' ? [p] : []; });
 const pageOf = (f, root) => `/${f.replace(/\\/g, '/').slice(root.length).replace(/^\//, '').replace(/index\.html$/, '')}`;
 const sq = (s) => s.toLowerCase().replace(/[’']/g, "'").replace(/[^\p{L}\p{N}']+/gu, ' ').replace(/\s+/g, ' ').trim();
@@ -97,7 +97,7 @@ const same = (f) => existsSync(join(OLD, f)) && existsSync(join('dist', f)) && n
 const sitemapFiles = readdirSync('dist').filter((f) => /^sitemap.*\.xml$/.test(f));
 const smSame = sitemapFiles.every(same), robotsSame = same('robots.txt'), redirectsSame = same('_redirects');
 
-const out = `# Batch 2 SEO safety pass (old: ${OLD}, the build of commit 32d32cd before batch 2; new: dist/)
+const out = `# Batch 2 SEO safety pass (old: ${OLD}, the build of commit 32d32cd before batch 2 in a separate clone with its own npm ci; new: dist/)
 
 Pages compared: ${rows.length}. Pages rebuilt in batch 2: ${BUILT_B2.length}. Lowest text parity (old text blocks found on the new page): ${minText.toFixed(1)}%.
 Sitemap unchanged: ${smSame} (${sitemapFiles.join(', ')}). robots.txt unchanged: ${robotsSame}. _redirects unchanged: ${redirectsSame}.
@@ -109,8 +109,7 @@ ${fails.map((f) => `- ${f}`).join('\n') || '- none'}
 ${forb.map((f) => `- ${f}`).join('\n') || '- none'}
 
 ## Approved exceptions (owner decision 6, 2026-11-06: the malware service page is strengthened; the article links to it; the article title is not changed now) (${approved.length})
-${approved.map((f) => `- ${f}`).join('
-') || '- none'}
+${approved.map((f) => `- ${f}`).join('\n') || '- none'}
 
 ## Later (pages not rebuilt in batch 2: cannibalization hits and image attributes; phase 2 work) (${later.length})
 ${later.map((f) => `- ${f}`).join('\n') || '- none'}

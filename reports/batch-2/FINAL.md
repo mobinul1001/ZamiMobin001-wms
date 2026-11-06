@@ -86,3 +86,45 @@ Forbidden-string scan: 16 hits, all in existing article text from before batch 2
 Batch 1 first (global-cleanup → responsive-fix → hacked-page → malware-page → migration-page), then batch 2, each branch stacked on the one before:
 `b2-seo-research` → `b2-services-a` → `b2-services-b` → `b2-agency` → `b2-plans-countries` → `b2-final`.
 To review everything at once, check out `b2-final` and run `CONTEXT=production URL=https://websitemaintenanceservices.org npm run build`.
+
+## Batch 2b (branch `b2-content`, stacked on `b2-final`; nothing merged or pushed)
+
+| Task | What was done | Commit |
+|---|---|---|
+| A | Live-site prices shown in the normal pricing cards: design, SEO, speed, redesign, support, white-label ($59 / $49), malware Protect / Priority ($249 / $349). They are in `src/data/prices.json` (`liveSitePrices`, `malwareTiers`) with `confirmed: false` and "as on live site, owner to confirm". The build stops if a page stops showing a listed price. Titles and metas still use only confirmed prices. Fixed a bug: the update, backup and store hero lines showed "from 79/mo" without "$". UK went back to its old layout with no quick answer (new layout logged as a phase 2 proposal). Brazil moved to the new layout in pt-BR (`lang="pt-BR"` kept). The hosting post is unchanged. The malware service page and article pair is an approved exception in safety.md. | d5ff119 |
+| B | Duplicate IDs fixed on 18 pages: 17 articles had an empty anchor right before a heading with the same id; the malware page had two forms with the same id prefix. Result: 0 pages with duplicate IDs. 622 in-page links on those pages checked, 0 broken, no text changed. New build check `duplicate-id` with a test (build tests 32/32). | c180e14 |
+| C1 | `reports/seo-research/link-notes.md`: the homepage has 1,188 of the incoming links (33 sites). The 3 redirected URLs that have links each go by a single 301 to the right owner page. One anchor conflict found: the article byline "Website Maintenance Services" links to /about-us/ on 47 pages (proposal). | 3762dac |
+| C2–C4 | `serp-notes.csv` covers 25 priority keywords (top-10 titles and common topics). The search tool returns no People-also-ask boxes. 25 SERP rows added to `content-gaps.csv`. 4 FAQs added (visible FAQ and schema): migration, white-label, SEO, WordPress packages. 6 Tier A FAQ proposals are in additions.md. Most top-10 topics were already answered by the existing FAQs. | fb723fc |
+| D | Stage 7, light: a free-audit offer card (the audit page's own words, "Get a free audit") at the top of the 43 articles that are not Tier A. Tier A pages unchanged (`src/data/tier-a.json`). About, works, contact, blogs, forms and policies: no change. | b8325e7 |
+| E | This section, TODO.md, and the safety pass re-run against a separate clone of commit 32d32cd with its own `npm ci`. | (this commit) |
+
+**Checks (production build, b2-content):**
+- Build: 0 failures.
+- URL parity: 815/815.
+- Build tests: 32/32. Browser tests: 29/29.
+- Titles and metas: 92/92 as snippets.csv.
+- Safety pass: 0 failures, lowest text 98.5%; sitemap, robots.txt and _redirects unchanged.
+- Page checks on the rebuilt pages: 100% text.
+- WordPress packages page: my page checker shows 88% because of how its comparison table joins cells; that page is on its Batch 1 template, unchanged except for one added FAQ. The official parity on that page passes.
+
+**pt-BR labels on the Brazil page:**
+- From your list: Leia mais, Mostrar mais, Mostrar tudo, Em resumo, Peça um orçamento gratuito, Perguntas frequentes, Relacionados, Sem contrato, Orçamento fixo antes de começarmos, Verificação gratuita, Planos a partir de, Incluído, and the form labels.
+- Ours (needs native review):
+  - the quick answer;
+  - the form's select options, placeholders and footer line;
+  - the trust strip ("sites mantidos", "anos de experiência", "avaliação dos nossos clientes", "agência certificada");
+  - "Países que atendemos", "Guias", "Exemplo";
+  - the related-link anchors;
+  - "Correção avulsa a partir de … · Limpeza de site invadido …".
+
+### Owner questions (Batch 2b)
+1. **Prices on the live site:** confirm or change each one in `prices.json` (`confirmed: false`). Design, SEO, speed, redesign, support, white-label $59 / $49, malware $249 / $349.
+2. **Prices inside FAQ answers that differ from the cards:** for example, the SEO FAQ says SEO Pro $999 while the card says custom from $1,999. They were left as they are.
+3. **pt-BR wording:** native review of the Brazil labels marked as ours.
+4. **Byline anchor:** the article byline "Website Maintenance Services" links to /about-us/ on 47 articles. Change the text to "WMS" (recommended), or link it to the homepage?
+5. **Comparison-post images:** the featured images (e.g. best FixRunner alternatives) show "2 Free Business Emails" and "Hosting Included". New images, or keep?
+6. **Tier A proposals:** the UK new layout and 6 FAQs (additions.md). Approve any to test one page at a time?
+7. **Claims kept as they are, still open:** white-label margins, support "24/7", the partner earnings example, "Client result" panels, migration "no downtime".
+8. **Still on TODO.md:** GA4 / Clarity and EU/UK consent, design QA, Lighthouse, screenshots and gallery.
+
+**Merge order:** Batch 1 branches → `b2-seo-research` → `b2-services-a` → `b2-services-b` → `b2-agency` → `b2-plans-countries` → `b2-final` → `b2-content`. Do not merge yet.
