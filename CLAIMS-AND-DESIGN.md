@@ -26,6 +26,14 @@ Same rules as CLAUDE.md: no invented facts. Apply the claim decisions below site
 - Replace the testimonial sections with a **"Websites we look after" portfolio block**: site name, industry, country, and a link to the live site (links: `rel="nofollow noopener"`). The live sites are real proof that a visitor can check.
 - Keep an empty, reusable "Client words" component. Add a quote only when the owner sends one with the client's name, company and written OK.
 
+### A4b. Page claims the owner confirmed as true (2026-11-06)
+Approved facts, each **only on its own page and only in this exact wording from the live page** (no stronger version, no new variants, no new numbers; not in titles or meta descriptions):
+- **White-label page** (`/white-label-website-maintenance-services-for-agencies/`): "resell at $149 and keep up to $110 per site" (also "Resell at $149 and keep up to $110 per site, with zero long-term contracts"); "The average digital agency saves over **$4,500+ per month** in salary, benefits, and management overhead by partnering with our white label maintenance team instead of hiring full-time developers"; "Scaling Retainers from $5k to $22k/Mo" (case study heading, with its existing text).
+- **Support page** (`/website-support-services/`): "24/7" as it stands on the page: "24/7 Website Support & Emergency Response", "full-coverage 24/7 response", "24/7 Security Monitoring", "Our 24/7 website support service provides real, human-staffed emergency response for critical issues", "Priority plan clients have access to our emergency response line 24/7", "On our plans, 24/7 emergency fixes for critical issues like downtime or a hacked site are on Business".
+- **Partner page** (`/wms-partner-program/`): the earnings example "You Charge Client $250/mo · You Pay WMS $200/mo · Your Gross Margin +$50/mo" and "Multiply by 10 clients = $500/month recurring gross margin with zero technical headaches." with its line "Actual profit depends on your pricing, taxes, payment fees, and agreement."
+- **Migration page** (`/website-migration-services/`): "Move to a new host, up to 20 pages, with no downtime." and the list item "No downtime" (Host-to-Host card). Not in the title or meta description.
+Still held: the "Client result" panels (shown as Example, collapsed) until the owner sends real case studies.
+
 ### A5. Location
 - Owner, 2026-11-02: no mention of Dhaka, Bangladesh or the +880 number. Do not say which country the team is in. Use: **"We work US & UK business hours."**
 - Contact details match the Google Business Profile exactly: 14 Wall St Ste 2036, New York, NY 10005, United States · +1 212-496-1637 · contact@websitemaintenanceservices.org. Values live in `src/data/site.json`.

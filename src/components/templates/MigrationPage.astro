@@ -83,12 +83,13 @@ const caseCard = (c: (typeof d.cases.items)[number], dup: boolean) => `<article 
   <SectionAccordion eyebrow={d.pricing.sec.eyebrow} h2={d.pricing.sec.h2} id="pricing" open>
     <p class="sx-lead" set:html={d.pricing.lead} />
     <div class="mg-plans">
-      <article class="card rp-plan mw-tier"><p class="rp-k">{t0.label}</p><h3 id={t0.id} set:html={t0.h} /><p class="rp-price">{money(P.hostMove)} <small>/ one-time fee</small></p><ul class="mw-list">{t0.list.filter((li) => li !== 'No downtime').map((li) => <li><Fragment set:html={tick} /><span set:html={li} /></li>)}</ul><a class="btn ghost" href={t0.link.href}>{t0.link.label}</a></article>
+      <article class="card rp-plan mw-tier"><p class="rp-k">{t0.label}</p><h3 id={t0.id} set:html={t0.h} /><p class="rp-for" set:html={t0.forLine} /><p class="rp-price">{money(P.hostMove)} <small>/ one-time fee</small></p><ul class="mw-list">{t0.list.map((li) => <li><Fragment set:html={tick} /><span set:html={li} /></li>)}</ul><a class="btn ghost" href={t0.link.href}>{t0.link.label}</a></article>
       <article class="card rp-plan mw-tier pop">{t1.tag && <span class="pp-tag">{t1.tag}</span>}<p class="rp-k">{t1.label}</p><h3 id={t1.id} set:html={t1.h} /><p class="rp-for" set:html={t1.forLine} /><p class="rp-price">{money(P.full)} <small>/ one-time fee</small></p><ul class="mw-list">{t1.list.map((li) => <li><Fragment set:html={tick} /><span set:html={li} /></li>)}</ul><a class="btn primary" href={t1.link.href}>{t1.link.label}</a></article>
       <article class="card rp-plan mw-tier mg-wide"><div><p class="rp-k">{t2.label}</p><h3 id={t2.id} set:html={t2.h} /><p class="rp-for" set:html={t2.forLine} /><p class="rp-price">From {money(P.platformFrom)}</p><a class="btn ghost" href={t2.link.href}>{t2.link.label}</a></div>
         <ul class="hk-chips mg-scope">{['Number of pages', 'Domain change and redirect volume', 'Database size', 'File storage', 'eCommerce catalog size', 'Custom CMS or integrations'].map((c) => <li>{c}</li>)}</ul></article>
     </div>
-    <Fragment set:html={OWNER('Host-to-Host "with no downtime" and "No downtime" (rule 6); the Platform Change card line (now "Starting from $1,199", owner-confirmed 2026-11-06)') + rm('Read more', `<p>${t0.forLine}</p><p>No downtime</p><p>${t2.priceText}</p>`)} />
+    {/* Owner, 2026-11-06: "with no downtime" and "No downtime" are approved (CLAIMS-AND-DESIGN.md A4b) and show in the Host-to-Host card. */}
+    <Fragment set:html={rm('Read more', `<p>${t2.priceText}</p>`)} />
     <p class="rp-note"><Fragment set:html={tick} /><span><a href="/free-website-maintenance-audit/">Get a free website check</a></span></p>
     <div class="rp-strip mw-prose" set:html={d.pricing.strip} />
   </SectionAccordion>

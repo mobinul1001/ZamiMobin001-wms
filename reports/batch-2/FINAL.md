@@ -73,9 +73,7 @@ Forbidden-string scan: 16 hits, all in existing article text from before batch 2
 3. **Brazil:** Portuguese labels for the new layout (Leia mais, Mostrar mais, Em resumo, Peça um orçamento, form text)? Until then it keeps its layout.
 4. **Hosting-and-maintenance (Tier B blog post):** move it to the service layout (its author and date block would go), or keep it as an article?
 5. **Claims left in body text for you to check:**
-   - White-label resale margins ("keep up to $110 per site", "saves over $4,500+ per month", "$5k to $22k/Mo").
-   - Support "24/7".
-   - The partner earnings example.
+   - ~~White-label resale margins, support "24/7", the partner earnings example~~ (owner, 2026-11-06: approved, CLAIMS-AND-DESIGN.md A4b; shown normally, no longer held).
    - The design, SEO and speed "Client result" panels (shown as Example, collapsed).
 6. **Real case studies** for the results sections (none added).
 7. **Batch 1 questions still open:** analytics and EU/UK consent (GA4 and Clarity are not loading), held claims, comparison posts with "hosting included", real reviews, menu groups.
@@ -124,7 +122,7 @@ To review everything at once, check out `b2-final` and run `CONTEXT=production U
 4. **Byline anchor:** the article byline "Website Maintenance Services" links to /about-us/ on 47 articles. Change the text to "WMS" (recommended), or link it to the homepage?
 5. **Comparison-post images:** the featured images (e.g. best FixRunner alternatives) show "2 Free Business Emails" and "Hosting Included". New images, or keep?
 6. **Tier A proposals:** the UK new layout and 6 FAQs (additions.md). Approve any to test one page at a time?
-7. **Claims kept as they are, still open:** white-label margins, support "24/7", the partner earnings example, "Client result" panels, migration "no downtime".
+7. **Claims still open:** the "Client result" panels (Example, collapsed) until real case studies arrive. White-label margins, support "24/7", the partner earnings example and migration "no downtime" are approved (owner, 2026-11-06: approved, CLAIMS-AND-DESIGN.md A4b; shown normally, no longer held).
 8. **Still on TODO.md:** GA4 / Clarity and EU/UK consent, design QA, Lighthouse, screenshots and gallery.
 
 **Merge order:** Batch 1 branches → `b2-seo-research` → `b2-services-a` → `b2-services-b` → `b2-agency` → `b2-plans-countries` → `b2-final` → `b2-content`. Do not merge yet.

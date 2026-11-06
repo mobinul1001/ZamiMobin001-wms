@@ -23,7 +23,7 @@ Collapsed with `<!-- OWNER CHECK -->`, never in the hero, trust strip, headings,
 - The full hero intro with "without losing traffic, data, or SEO rankings" (the visible lead is its second sentence, verbatim).
 - The 3 hero stat cards: 100% data integrity, zero SEO ranking loss, under 15 minutes downtime.
 - The "Live Transfer" panel: kept, labelled Example, as a closed accordion.
-- "No downtime" and "with no downtime" (Host-to-Host card).
+- ~~"No downtime" and "with no downtime" (Host-to-Host card).~~ (owner, 2026-11-06: approved, CLAIMS-AND-DESIGN.md A4b; shown normally, no longer held)
 - "30-Day Post Support Window" / "Free fix within 30 days" (included item and the paragraph after the table, which keeps the emergency recovery link).
 - The case-study numbers (0 mins downtime, +45% speed, 100% database integrity, 0 errors GSC index, 100% booking integrity, under 24 hrs turnaround).
 

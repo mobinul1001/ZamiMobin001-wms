@@ -89,7 +89,10 @@ const forb = [];
 for (const [p, f] of Object.entries(newPages)) {
   const $ = cheerio.load(readFileSync(f, 'utf8')); $('script, style').remove();
   const t = $('body').text();
-  for (const re of FORBID) if (re.test(t) && !(p === '/website-redesign-services/' && /free hosting|2 free/i.test(re.source))) forb.push(`${p}: ${re.source} ("${(t.match(new RegExp(`.{0,40}${re.source}.{0,30}`, re.flags))?.[0] ?? '').replace(/\s+/g, ' ').trim()}")`);
+  // Owner, 2026-11-06 (CLAIMS-AND-DESIGN.md A4b): the migration page's exact phrases "with no downtime" and "No downtime"
+  // are approved there; any other "no downtime" on that page, and the phrase on every other page, is still reported.
+  const tt = p === '/website-migration-services/' ? t.replace(/up to 20 pages, with no downtime/g, '').replace(/(^|[^\w])No downtime(?=[^\w]|$)/g, '$1') : t;
+  for (const re of FORBID) if (re.test(tt) && !(p === '/website-redesign-services/' && /free hosting|2 free/i.test(re.source))) forb.push(`${p}: ${re.source} ("${(tt.match(new RegExp(`.{0,40}${re.source}.{0,30}`, re.flags))?.[0] ?? '').replace(/\s+/g, ' ').trim()}")`);
 }
 // Sitemap and robots unchanged.
 const norm = (f, root) => readFileSync(join(root, f), 'utf8').replace(/\r\n/g, '\n').replace(/<lastmod>[^<]*<\/lastmod>/g, '');
