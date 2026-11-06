@@ -3,6 +3,8 @@
 import { getCollection } from 'astro:content';
 import hubs from '../../data/blog-hubs.json';
 import { polish } from '../../lib/polish';
+import tierA from '../../data/tier-a.json';
+import { icon } from '../../lib/icons';
 
 const { entry } = Astro.props;
 const isPost = entry.collection === 'blog';
@@ -17,6 +19,9 @@ const topic = hubs.find((t) => t.posts.includes(slug));
 if (isPost && !topic) throw new Error(`${slug}: add this post to src/data/blog-hubs.json`);
 const posts = await getCollection('blog');
 const titleOf = (s: string) => posts.find((p) => p.data.path === `/${s}/`)?.data.h1 ?? s;
+// Batch 2b, stage 7 (light polish): the blog's one offer near the top (free audit), in the audit page's own words.
+// Tier A pages keep their layout unchanged (owner, 2026-11-06).
+const offer = !tierA.pages.includes(entry.data.path);
 const related = topic ? [1, 2, 3, 4].map((n) => topic.posts[(topic.posts.indexOf(slug) + n) % topic.posts.length]).filter((s, i, a) => s !== slug && a.indexOf(s) === i) : [];
 ---
 <section class="page-hero center"><div class="wrap">
@@ -27,6 +32,12 @@ const related = topic ? [1, 2, 3, 4].map((n) => topic.posts[(topic.posts.indexOf
   <div class:list={['post-grid', { 'no-toc': toc.length < 3 }]}>
     <article>
       {toc.length >= 3 && <details class="toc-m"><summary>On this page</summary>{toc.map((h: { slug: string; text: string }) => <a href={`#${h.slug}`}>{h.text}</a>)}</details>}
+      {offer && (
+        <aside class="card post-offer" aria-label="Free website review">
+          <div><p class="post-offer-k">Free website review</p><p>Discover what’s holding your website back: speed, security, SEO and more. No cost. No pressure. No obligations.</p></div>
+          <a class="btn primary" href="/free-website-maintenance-audit/">Get a free audit<Fragment set:html={icon('arrow')} /></a>
+        </aside>
+      )}
       <div class="prose" set:html={body} />
       {isPost && (
         <div class="card author-box"><strong>Written by the WMS team</strong><div class="linkrow"><a class="btn ghost" href="/about-us/">About us</a></div></div>

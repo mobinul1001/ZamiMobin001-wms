@@ -847,3 +847,10 @@ main td > a:only-child { display: inline-flex; align-items: center; min-height: 
 }
 /* Add-on cards on the pricing page: "Ask for a price" links are 44 px tap targets. */
 .compare-cards li > a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* Batch 2b, stage 7: the blog's free-audit offer near the top of an article (not on Tier A pages). */
+.post-offer { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 24px; padding: 16px 20px; }
+.post-offer p { margin: 0; font-size: 15px; color: var(--muted); }
+.post-offer .post-offer-k { margin-bottom: 4px; font-size: 13px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--head); }
+.post-offer .btn { flex: none; }
+@media (max-width: 640px) { .post-offer { flex-direction: column; align-items: stretch; } .post-offer .btn { width: 100%; } }
