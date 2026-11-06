@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Our website maintenance service for US businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at $79 a month (Essential), with Growth at $149 and Business at $299; one-time fixes start at $49. Start with a free website check.</p>
+
 We work US & UK business hours.
 
 Keep Your Website Secure, Updated & Performing at Its Best.  

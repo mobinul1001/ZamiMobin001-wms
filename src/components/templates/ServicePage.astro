@@ -20,10 +20,12 @@ import TrustStrip from '../service/TrustStrip.astro';
 import Countries from '../service/Countries.astro';
 import ServiceArt from '../art/ServiceArt.astro';
 
-type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'whitelabel' | 'partner';
-interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string]; quote?: string; cta?: [string, string] }
+type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'whitelabel' | 'partner' | 'store' | 'country';
+interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string]; quote?: string; cta?: [string, string]; country?: { extras: string; name: string; flag: string } }
 // Related links: owner pages with natural anchors (the homepage with "website maintenance services").
 const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services']];
+// Store pages: their confirmed plan prices (monthly and annual) stay visible.
+const storeNums = (set: { plans: { monthly: number; annual: number }[] }) => set.plans.flatMap((p) => [p.monthly, p.annual]);
 const CFG: Record<string, Cfg> = {
   '/website-redesign-services/': { art: 'redesign', need: 'Migration or redesign', protect: true, compare: true, related: [['/website-design-services/', 'Website design services'], ['/website-migration-services/', 'Website migration services'], ['/website-repair-services/', 'Website repair services']] },
   '/website-design-services/': { art: 'design', need: 'Something else', related: [['/website-redesign-services/', 'Website redesign services'], ['/website-seo-services/', 'Website SEO services'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
@@ -33,14 +35,26 @@ const CFG: Record<string, Cfg> = {
   '/wordpress-backup-services/': { art: 'backup', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-update-services/', 'Website update services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] },
   '/white-label-website-maintenance-services-for-agencies/': { art: 'whitelabel', need: 'Something else', quote: 'Per-site pricing on request', priceLine: ['Per-site pricing on request', 'No contract'], related: [['/wms-partner-program/', 'WMS partner program'], ['/white-label-wordpress-maintenance-support/', 'White label WordPress maintenance and support'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans']] },
   '/wms-partner-program/': { art: 'partner', need: 'Something else', priceLine: ['Bring the client, set your price', 'No contract'], cta: ['Become a WMS Partner', '#partner-form'], related: [['/white-label-website-maintenance-services-for-agencies/', 'White label website maintenance for agencies'], ['/monthly-website-maintenance-packages/', 'Plans your clients can choose'], ['/website-support-services/', 'Website support services']] },
+  '/ecommerce-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.woocommerce), priceLine: [`Store plans from ${prices.storePlans.woocommerce.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/shopify-website-maintenance-packages/', 'Shopify maintenance packages'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
+  '/shopify-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.shopify), priceLine: [`Shopify plans from ${prices.storePlans.shopify.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/ecommerce-website-maintenance-packages/', 'Ecommerce maintenance packages'], ['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-support-services/', 'Website support services']] },
   '/website-speed-optimization-services/': { art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
 };
 
 const { entry } = Astro.props;
 const { path, h1 } = entry.data;
+// The English-language country pages (Brazil keeps its own layout until its Portuguese labels are decided).
+const LOCAL = prices.local as Record<string, { currency: string; monthly: string[]; annual: string[]; fix: string; cleanup: string }>;
+const FLAGS: Record<string, [string, string]> = { usa: ['USA', 'us'], uk: ['UK', 'gb'], canada: ['Canada', 'ca'], australia: ['Australia', 'au'], ireland: ['Ireland', 'ie'], france: ['France', 'fr'], netherlands: ['Netherlands', 'nl'], spain: ['Spain', 'es'], switzerland: ['Switzerland', 'ch'] };
+const countryKey = /^\/website-maintenance-services-for-([a-z]+)\/$/.exec(path)?.[1] ?? '';
+if (FLAGS[countryKey]) {
+  const l = LOCAL[path];
+  CFG[path] = { art: 'country', need: 'Monthly maintenance plan', priceLine: [`Plans from ${l.monthly[0]}/mo`, 'No contract'], cta: ['Start plan', '#plans'], country: { extras: `One-time fix from ${l.fix} · Hacked site cleanup ${l.cleanup}`, name: FLAGS[countryKey][0], flag: FLAGS[countryKey][1] }, related: [['/website-update-services/', 'Website update services'], ['/website-repair-services/', 'Website repair services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] };
+}
 const cfg = CFG[path];
 if (!cfg) throw new Error(`ServicePage: no settings for ${path}`);
-const d = parseService(entry.rendered?.html ?? '', cfg.keep ?? [], cfg.quote);
+// Country pages: buy-now links to the plans page go to the local plan cards on this page (as before).
+const srcHtml = cfg.country ? (entry.rendered?.html ?? '').replace(/<a href="\/monthly-website-maintenance-packages\/">((?:Choose|Get|Let us)[^<]*)<\/a>/g, '<a href="#plans">$1</a>') : entry.rendered?.html ?? '';
+const d = parseService(srcHtml, cfg.keep ?? [], cfg.quote, cfg.country);
 if (!d.hero.quickAnswer) throw new Error(`ServicePage: ${path} has no quick answer (text-edits.mjs)`);
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
@@ -74,7 +88,7 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
   </div></section>
 
   <section class="sv-qa"><div class="wrap"><div class="sv-qa-in card">
-    <ServiceArt kind={cfg.art} />
+    <ServiceArt kind={cfg.art} label={cfg.country?.name} flag={cfg.country?.flag} />
     <div><p class="eyebrow">In short</p><p class="quick-answer" set:html={d.hero.quickAnswer} /></div>
   </div>
   {(d.hero.introRest || d.hero.panel) && <Fragment set:html={rm('Read more', d.hero.introRest + (d.hero.panel ? `<div class="sv-example"><span class="sv-ex-tag">Example</span>${d.hero.panel}</div>` : ''), 'sv-intro')} />}
@@ -92,15 +106,17 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
 
   {body.map((s, i) => (
     <>
-      {s.kind === 'pricing' && <TrustStrip />}
-      <SectionAccordion eyebrow={s.eyebrow} h2={s.h2} id={s.kind === 'pricing' ? 'pricing' : s.id} alt={i % 2 === 1} open={i === 0}>
-        {s.kind === 'pricing' && s.id && <span id={s.id} class="sv-anchor" />}
+      {s === pricing && <TrustStrip />}
+      <SectionAccordion eyebrow={s.eyebrow} h2={s.h2} id={s === pricing ? 'pricing' : s.id} alt={i % 2 === 1} open={i === 0}>
+        {s === pricing && s.id && s.id !== 'pricing' && <span id={s.id} class="sv-anchor" />}
+        {s === pricing && cfg.cta?.[1] === '#pricing' && <span id="plans" class="sv-anchor" />}
         <div class="mw-prose sv-body" set:html={s.html} />
-        {s.kind === 'pricing' && (
+        {s === pricing && countryKey === 'usa' && <div class="btn-row"><a class="sv-tlink" href="/ecommerce-website-maintenance-packages/">Running an online store? See Store plans from ${prices.storePlans.woocommerce.plans[0].monthly}</a></div>}
+        {s === pricing && (
           <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">Free check, fixed quote first, no contract</h3><p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract.</p></div><a class="btn primary" href="#quote">Get a free quote</a></div>
         )}
       </SectionAccordion>
-      {s.kind === 'pricing' && cfg.compare && (
+      {s === pricing && cfg.compare && (
         <SectionAccordion h2="Redesign or repair: which one do you need?" alt>
           <div class="pp-tscroll sv-tscroll" tabindex="0" role="region" aria-label="Redesign or repair, scrolls sideways"><table class="pp-t sv-t">
             <thead><tr><th>Question</th><th>Website redesign</th><th><a href="/website-repair-services/">Website repair</a></th></tr></thead>

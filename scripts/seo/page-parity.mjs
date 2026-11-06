@@ -13,9 +13,9 @@ for (const path of process.argv.slice(2)) {
   const $ = cheerio.load(readFileSync(`dist${path}index.html`, 'utf8'));
   const main = $('main');
   const heads = { 2: new Set(), 3: new Set(), 4: new Set() };
-  main.find('h2, h3, h4').each((_, h) => heads[h.tagName[1]].add(sq($(h).text())));
+  main.add('.cta-sec').find('h2, h3, h4').each((_, h) => heads[h.tagName[1]].add(sq($(h).text())));
   const text = sq(main.text() + ' ' + $('.cta-sec').text()); // the final CTA band (Base.astro) holds the page's closing call to action
-  const hrefs = new Set(main.find('a').toArray().map((a) => $(a).attr('href')));
+  const hrefs = new Set(main.add('.cta-sec').find('a').toArray().map((a) => $(a).attr('href')));
   const bad = [];
   let blocks = 0, found = 0;
   for (const raw of md.split('\n')) {

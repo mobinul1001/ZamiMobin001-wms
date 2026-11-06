@@ -49,3 +49,6 @@
 .sv-guides-h { margin: 20px 0 8px; font-size: 18px; }
 .sv-inc { margin-top: 8px; }
 .sv-protect-in .eyebrow { justify-self: start; }
+.sv-art .sa-text { fill: var(--head, #1b1240); font-family: inherit; }
+/* Three cards (plan cards, for example) fill the row in three columns on wide screens. */
+@media (min-width: 1080px) { .sv-body .cards:has(> .card:nth-child(3):last-child) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

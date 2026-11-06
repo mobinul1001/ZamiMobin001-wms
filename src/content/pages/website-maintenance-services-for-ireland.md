@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Our website maintenance service for Irish businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at €69 a month (Essential), with Growth at €129 and Business at €269; one-time fixes start at €39. Start with a free website check.</p>
+
 Ireland’s digital market is competitive, and your website is a key business asset. We ensure your site is secure, optimized, error-free, and always ready to convert visitors into customers.
 
 <div class="cards">

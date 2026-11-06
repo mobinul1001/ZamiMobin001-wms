@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Our website maintenance service for Canadian businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at CA$109 a month (Essential), with Growth at CA$209 and Business at CA$419; one-time fixes start at CA$69. Start with a free website check.</p>
+
 Whether you operate an eCommerce store, professional service website, SaaS platform, or local business, your website represents your brand across Canada.  
 We ensure your site stays optimized, protected, and error-free.
 

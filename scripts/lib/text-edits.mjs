@@ -11,7 +11,17 @@
 const FREE_OFFER = 'Owner, 2026-11-05: free hosting and the 2 free email accounts come only with a website redesign.';
 export const GLOBAL_EXCEPT = ['/website-redesign-services/'];
 
+import { readFileSync as readPrices } from 'node:fs';
+// Batch 2 quick answers for the English-language country pages, built from the local prices in prices.json.
+const LOCAL = JSON.parse(readPrices(new URL('../../src/data/prices.json', import.meta.url), 'utf8')).local;
+const COUNTRY_NAME = { usa: 'US', uk: 'UK', canada: 'Canadian', australia: 'Australian', ireland: 'Irish', france: 'French', netherlands: 'Dutch', spain: 'Spanish', switzerland: 'Swiss' };
+const COUNTRY_QA = Object.fromEntries(Object.entries(COUNTRY_NAME).map(([k, name]) => {
+  const p = `/website-maintenance-services-for-${k}/`; const l = LOCAL[p];
+  return [p, { quickAnswer: `Our website maintenance service for ${name} businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at ${l.monthly[0]} a month (Essential), with Growth at ${l.monthly[1]} and Business at ${l.monthly[2]}; one-time fixes start at ${l.fix}. Start with a free website check.` }];
+}));
+
 export const TEXT_EDITS = {
+  ...COUNTRY_QA,
   // Owner, 2026-11-06: free hosting and 2 free email accounts stay only with a redesign, stated once in its pricing
   // section. No duration is stated until the owner confirms it (question in reports/batch-1/FINAL.md).
   '/website-redesign-services/': {
@@ -42,6 +52,12 @@ export const TEXT_EDITS = {
   },
   '/wms-partner-program/': {
     quickAnswer: 'The WMS partner program is for people who already work with businesses that need website maintenance. You bring the client and set your price; our team does the maintenance, WordPress support, security and updates behind the scenes, and you keep the margin. You do not need to be a developer. Apply with the partner form on this page.',
+  },
+  '/ecommerce-website-maintenance-packages/': {
+    quickAnswer: 'Our ecommerce website maintenance packages keep WooCommerce and other online stores secure, fast and selling: tested plugin and payment updates, checkout checks, backups, security scans and fixes. Store plans start at $199 a month (Store Starter), with Store Growth at $349 and Store Pro at $599. Start with a free store audit.',
+  },
+  '/shopify-website-maintenance-packages/': {
+    quickAnswer: 'Our Shopify website maintenance packages look after your store every month: theme and app updates, speed checks, store fixes and monthly reports. Plans start at $149 a month (Shopify Starter), with Shopify Growth at $299 and Shopify Pro at $499. It suits Shopify stores of any size. Start with a free store audit.',
   },
   // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
   '/website-migration-services/': {

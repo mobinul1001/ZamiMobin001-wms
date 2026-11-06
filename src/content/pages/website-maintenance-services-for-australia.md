@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Our website maintenance service for Australian businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at A$109 a month (Essential), with Growth at A$209 and Business at A$429; one-time fixes start at A$69. Start with a free website check.</p>
+
 Australia’s Most Trusted Website Care
 
 Fast, Reliable & Ongoing Care for Australian Websites.  

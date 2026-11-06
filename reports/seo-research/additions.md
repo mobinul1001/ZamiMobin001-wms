@@ -19,3 +19,6 @@ No new FAQs were added on these 4 pages: GSC has no question queries for design,
 | /website-support-services/ | FAQ questions now marked up as H3 inside the FAQ accordions (the text is unchanged; the page has no FAQPage schema, so none was added) | FAQ structure | page markup | yes |
 | /white-label-website-maintenance-services-for-agencies/ | Quick answer (55 words) | white label website maintenance | BATCH-2 section 6.3 | yes |
 | /wms-partner-program/ | Quick answer (57 words) | partner program, reseller | BATCH-2 section 6.3 | yes |
+| /ecommerce-website-maintenance-packages/ | Quick answer (55 words, store plan prices from prices.json) | ecommerce website maintenance packages | BATCH-2 section 6.3 | yes |
+| /shopify-website-maintenance-packages/ | Quick answer (56 words, Shopify plan prices from prices.json) | shopify website maintenance packages | BATCH-2 section 6.3 | yes |
+| 9 country pages (USA, UK, Canada, Australia, Ireland, France, Netherlands, Spain, Switzerland) | Quick answer (about 55 words, local plan and fix prices from prices.json) | website maintenance services + country | BATCH-2 section 6.3; UK is Tier A: the quick answer is an addition on a protected page (owner may ask to remove it) | yes |

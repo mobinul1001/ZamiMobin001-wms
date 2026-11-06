@@ -72,7 +72,28 @@ function foldLong($: $T, strict = false) {
   $.root().append(more('Read more', html, 'sv-fold'));
 }
 
-export function parseService(html: string, keep: number[] = [], quote?: string) {
+// Country pages: the big section holds H3 parts. The part with the local plan cards stays open with the #plans anchor
+// and the local one-time prices under the cards; every other H3 part opens from its own heading (H3 kept).
+function countryParts($: $T, extras: string) {
+  const kids = $.root().children().toArray();
+  const firstH3 = kids.findIndex((k) => $(k).is('h3'));
+  if (firstH3 < 0) return false;
+  const blocks: any[][] = [];
+  for (const k of kids.slice(firstH3)) { if ($(k).is('h3')) blocks.push([k]); else blocks.at(-1)!.push(k); }
+  let plans = false;
+  for (const b of blocks) {
+    const html = b.slice(1).map((e) => $.html(e)).join('');
+    const isPlans = !plans && /<h[34][^>]*>(?:Plano )?Essential<\/h[34]>/.test(html);
+    const h3 = $.html(b[0]);
+    const out = isPlans ? `<div id="plans"></div>${h3}${html}<p class="plan-extras">${extras}</p>` : `<details class="pp-rm sv-h3"><summary>${h3}${DOWN}</summary><div class="pp-prose">${html}</div></details>`;
+    if (isPlans) plans = true;
+    $(b[0]).before(out);
+    b.forEach((e) => $(e).remove());
+  }
+  return plans;
+}
+
+export function parseService(html: string, keep: number[] = [], quote?: string, country?: { extras: string }) {
   const { intro, sections } = splitBy(html, 2);
   // The old in-page anchor #pricing moves to the pricing section itself (the template sets the id), so the empty
   // anchor goes; otherwise the id would appear twice.
@@ -134,6 +155,22 @@ export function parseService(html: string, keep: number[] = [], quote?: string) 
     if (i === sections.length - 1 && /^(get|ready|accelerate|start|book)/i.test(title)) sec.kind = 'closing';
     else if (/pricing|packages|plans/i.test(title) && PRICE.test($.text())) sec.kind = 'pricing';
     splitCards($);
+    // Country pages: a plans section with the Essential card is the pricing section (any currency), never folded.
+    if (country && sec.kind !== 'closing' && /pricing|packages|plans/i.test(title) && $('h3, h4').toArray().some((h) => /^(Plano )?Essential$/.test(sq($(h).text())))) sec.kind = 'pricing';
+    if (country && sec.kind === 'default' && countryParts($, country.extras)) {
+      sec.kind = 'pricing';
+      sec.html = $.html().trim();
+      out.push(sec);
+      return;
+    }
+    // Country pages whose plans have their own H2: the local prices are all confirmed (prices.json local), so they show.
+    if (country && sec.kind === 'pricing') {
+      if (!$('#plans').length) $.root().prepend('<div id="plans"></div>');
+      $.root().append(`<p class="plan-extras">${country.extras}</p>`);
+      sec.html = $.html().trim();
+      out.push(sec);
+      return;
+    }
     wrapTables($, sq(title));
     if (sec.kind === 'pricing') {
       holdPrices($, keep, quote);
@@ -141,7 +178,9 @@ export function parseService(html: string, keep: number[] = [], quote?: string) 
       $('.pp-tscroll').each((_, t) => { $(t).replaceWith(more('Compare all features', $.html(t), 'sv-cmp')); });
     }
     // A section with a form (an application or contact form) stays open.
-    if (sec.kind === 'default' && !$('form').length) foldLong($, i >= 2);
+    // A FAQ written as <details> items is already collapsed: it stays as it is.
+    const detailsFaq = /frequently asked|faq/i.test(title) && $('details').length >= 3;
+    if (sec.kind === 'default' && !$('form').length && !detailsFaq) foldLong($, i >= 2);
     if (sec.kind === 'closing') foldLong($, true);
     sec.html = $.html().trim();
     out.push(sec);

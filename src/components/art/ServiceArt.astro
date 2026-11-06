@@ -1,8 +1,8 @@
 ---
 // Original decorative hero art for the batch-2 service pages (inline SVG, brand gradient, light and dark through CSS
 // variables, fixed 4:3 ratio, aria-hidden). No numbers, no client names, nothing that reads as real data.
-interface Props { kind: 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'hosting' | 'scanner' | 'whitelabel' | 'partner' }
-const { kind } = Astro.props;
+interface Props { kind: 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'hosting' | 'scanner' | 'whitelabel' | 'partner' | 'store' | 'country'; label?: string; flag?: string }
+const { kind, label = '', flag = '' } = Astro.props;
 const id = `sa-${kind}`;
 ---
 <svg class="sv-art" viewBox="0 0 240 180" width="240" height="180" aria-hidden="true" focusable="false">
@@ -48,6 +48,17 @@ const id = `sa-${kind}`;
     <circle cx="52" cy="70" r="22" class="sa-card" /><circle cx="188" cy="70" r="22" class="sa-card" /><circle cx="120" cy="120" r="24" fill={`url(#${id})`} />
     <path d="M70 84l30 22M170 84l-30 22" fill="none" stroke={`url(#${id})`} stroke-width="5" stroke-linecap="round" />
     <rect x="40" y="62" width="24" height="7" rx="3.5" class="sa-line" /><rect x="176" y="62" width="24" height="7" rx="3.5" class="sa-line" /><path d="m110 120 7 7 13-14" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>)}
+  {kind === 'country' && (<g>
+    <rect x="30" y="122" width="180" height="30" rx="15" class="sa-card" /><text x="120" y="142" text-anchor="middle" font-size="15" font-weight="700" class="sa-text">{label}</text>
+    <path d="M120 26c-22 0-38 16-38 37 0 27 38 55 38 55s38-28 38-55c0-21-16-37-38-37z" fill={`url(#${id})`} />
+    <circle cx="120" cy="62" r="20" fill="#fff" />{flag && <image href={`/flags/${flag}.svg`} x="106" y="52" width="28" height="21" preserveAspectRatio="xMidYMid slice" />}
+  </g>)}
+  {kind === 'store' && (<g>
+    <path d="M40 52h20l16 64h96l14-46H66" fill="none" stroke={`url(#${id})`} stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="88" cy="136" r="10" class="sa-card" /><circle cx="160" cy="136" r="10" class="sa-card" />
+    <rect x="86" y="80" width="26" height="22" rx="5" class="sa-line" /><rect x="120" y="80" width="26" height="22" rx="5" class="sa-line" /><rect x="154" y="80" width="18" height="22" rx="5" class="sa-line" />
+    <path d="M188 30l22 8v18c0 14-10 24-22 28-12-4-22-14-22-28V38z" class="sa-card" />
   </g>)}
   {kind === 'backup' && (<g>
     <path d="M28 120h184" class="sa-track" stroke-width="6" stroke-linecap="round" />
