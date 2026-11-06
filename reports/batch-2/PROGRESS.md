@@ -10,7 +10,7 @@ Prompt: plan-files/batch-2/BATCH-2-FINAL-PROMPT.md. Owner, 2026-11-06: content, 
 | 4 | Stage 4 services B: support, update, backup | done | b2-services-b | Hosting-and-maintenance (Tier B blog post) and the malware scanner (form tool page) not moved; WS support prices pending |
 | 5 | Stage 5 agency: white-label, partner program | done | b2-agency | White-label prices $59 / $49 not confirmed (brief said $59 / $39): "Per-site pricing on request"; resale margin claims in the body for the owner |
 | 6 | Stage 6 plans and countries: ecommerce, shopify, 9 country pages | done (Brazil held) | b2-plans-countries | Brazil needs Portuguese labels; country heights over the 3,500 / 7,000 targets; UK (Tier A) layout changed |
-| 7 | Stage 7 other templates (light polish) | not started | b2-other-templates | |
-| 8 | Stage 8 final SEO safety pass and report | not started | b2-final | |
+| 7 | Stage 7 other templates (light polish) | skipped (lowest priority; owner later list) | – | |
+| 8 | Stage 8 final SEO safety pass and report | done | b2-final | safety.md: 0 failures; FINAL.md written |
 
 Real (status 200) pages not yet on the new design, from url-map.csv and the templates in src/pages/[...slug].astro: see the stage rows above.

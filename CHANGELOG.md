@@ -339,3 +339,8 @@
 
 ## 2026-11-05: Batch 1, Stage 4 — malware removal page (branch `malware-page`, not merged)
 - `/wordpress-malware-removal-service/` rebuilt to the owner's design. $249 and $349 added to prices.json as pending (`malwareTiers`). Held claims collapsed with `<!-- OWNER CHECK -->`. SEO unchanged. Report: `reports/batch-1/stage-4.md`.
+
+## 2026-11-06: Batch 2 — SEO research, CTR snippets, 20 pages on the shared service template (branches b2-*, not merged)
+- Stage 1–2 (b2-seo-research): reports/seo-research (tiers, briefs, CTR findings, content gaps, snippets.csv); new titles and metas on all 92 pages via reports/phase-3-keyword-map.csv (Tier A titles = live titles).
+- Stages 3–6: shared template ServicePage.astro + src/lib/service-page.ts + service-page.css + art/ServiceArt.astro for redesign, design, SEO, speed, support, update, backup, white-label, partner, ecommerce, Shopify and 9 country pages. Quick answers via text-edits.mjs. Unconfirmed prices hidden ("Fixed quote after a free check"), kept in the HTML; pendingServicePrices in prices.json. White-label H2 renamed (cannibalization).
+- Stage 8 (b2-final): safety pass vs the pre-batch build (reports/batch-2/safety.md): 0 failures, parity 815/815. Report: reports/batch-2/FINAL.md.

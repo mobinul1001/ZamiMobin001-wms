@@ -23,7 +23,7 @@ import ServiceArt from '../art/ServiceArt.astro';
 type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'whitelabel' | 'partner' | 'store' | 'country';
 interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string]; quote?: string; cta?: [string, string]; country?: { extras: string; name: string; flag: string } }
 // Related links: owner pages with natural anchors (the homepage with "website maintenance services").
-const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services']];
+const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services'], ['/works/', 'See our work'], ['/get-a-free-quote/', 'Request a free quote'], ['/free-website-maintenance-audit/', 'Free website audit']];
 // Store pages: their confirmed plan prices (monthly and annual) stay visible.
 const storeNums = (set: { plans: { monthly: number; annual: number }[] }) => set.plans.flatMap((p) => [p.monthly, p.annual]);
 const CFG: Record<string, Cfg> = {
@@ -113,7 +113,7 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
         <div class="mw-prose sv-body" set:html={s.html} />
         {s === pricing && countryKey === 'usa' && <div class="btn-row"><a class="sv-tlink" href="/ecommerce-website-maintenance-packages/">Running an online store? See Store plans from ${prices.storePlans.woocommerce.plans[0].monthly}</a></div>}
         {s === pricing && (
-          <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">Free check, fixed quote first, no contract</h3><p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract.</p></div><a class="btn primary" href="#quote">Get a free quote</a></div>
+          <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">Free check, fixed quote first, no contract</h3><p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract. <a href="/free-website-maintenance-audit/">Get a free website check</a></p></div><a class="btn primary" href="#quote">Get a free quote</a></div>
         )}
       </SectionAccordion>
       {s === pricing && cfg.compare && (

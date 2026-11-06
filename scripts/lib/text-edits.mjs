@@ -48,6 +48,8 @@ export const TEXT_EDITS = {
     quickAnswer: 'Our WordPress backup service copies your files, database and media off-site on a schedule, and a real person checks the backups and tests restores. Backups come with every plan: weekly on Essential, daily on Growth and Business, kept 30, 60 or 90 days. Plans start at $79 a month.',
   },
   '/white-label-website-maintenance-services-for-agencies/': {
+    // Batch 2 cannibalization lint: this H2 used the primary keyword of /website-maintenance-process/.
+    exact: [['Our Rigorous Website Maintenance Process', 'Our Rigorous White Label Maintenance Process']],
     quickAnswer: 'Our white label website maintenance service lets agencies offer website care under their own brand: we handle updates, backups, security scans, uptime monitoring and edits for your clients’ sites, with unbranded reports and an agency NDA. You keep the client relationship and set your own prices. Per-site pricing is on request.',
   },
   '/wms-partner-program/': {

@@ -374,7 +374,7 @@ Ticket closed and unbranded monthly reports automatically compiled under your ag
 
 Operational Rigor
 
-## Our Rigorous Website Maintenance Process
+## Our Rigorous White Label Maintenance Process
 
 We treat every agency client website with extreme technical care. Updates in our **white label wordpress maintenance** routine follow a careful order: snapshot first, then the update, then checks.
 
