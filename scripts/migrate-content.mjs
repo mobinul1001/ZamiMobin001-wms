@@ -9,7 +9,7 @@ import TurndownService from 'turndown';
 import { gfm } from 'turndown-plugin-gfm';
 import sharp from 'sharp';
 import { applyApprovedRemovals } from './lib/approved-removals.mjs';
-import { applyTextEdits, applyTextEditsMd, checkTextEditsUsed, editString, fixHowTo } from './lib/text-edits.mjs';
+import { applyTextEdits, applyTextEditsMd, checkTextEditsUsed, editString, fixHowTo, addFaqSchema } from './lib/text-edits.mjs';
 import { fixContactText } from './lib/company-facts.mjs';
 import { readCsv } from './lib/csv.mjs';
 import { applyClaims, cleanString, OWN_CLAIM_PAGES, bannedIn } from './lib/claims.mjs';
@@ -468,6 +468,7 @@ for (const [u, m] of pages) {
   };
   schema.splice(0, schema.length, ...schema.map((d) => cleanSchema(d)));
   fixHowTo(path, schema, body);
+  addFaqSchema(path, schema);
   record.metaDescription = editString(path, cleanValue(record.metaDescription ?? '', 'meta description'));
   for (const [k, v] of Object.entries(record.socialTags ?? {})) if (typeof v === 'string' && !/^https?:/.test(v)) record.socialTags[k] = editString(path, cleanValue(v, k));
   if (removed.length) log.schemaRemoved.push({ path, removed: [...new Set(removed)] });

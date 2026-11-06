@@ -37,10 +37,14 @@ export const TEXT_EDITS = {
     quickAnswer: 'Our website design service builds custom, mobile-first websites for small businesses, designed for speed, search and leads. We plan the pages, design them, build them on your CMS and test before launch. We have built 120+ websites. Every project starts with a free design consultation and a fixed quote for your scope.',
   },
   '/website-seo-services/': {
+    addFaq: [['What is link building, and does a small business need it?', 'Link building means earning links to your website from other relevant websites. Search engines treat good links as a sign of trust, so they help a newer site compete. Most small businesses need some, but a few relevant local or industry links are worth more than many low-quality ones.']],
     quickAnswer: 'Our website SEO service improves how your site is found in search: a technical audit, on-page and content fixes, local SEO and clear monthly reports. It suits small businesses that want more qualified visitors from Google. Start with a free website SEO audit; you get a fixed quote for the work before anything begins.',
   },
   '/website-speed-optimization-services/': {
     quickAnswer: 'Our website speed optimization service makes slow sites load fast and pass Core Web Vitals (LCP, INP and CLS). We audit your pages, then compress images, tune caching, remove heavy plugins and scripts, and test before and after. It works for WordPress, WooCommerce and other sites. Start with a free speed check and a fixed quote.',
+  },
+  '/wordpress-website-maintenance-packages/': {
+    addFaq: [['Do I need a WordPress maintenance plan if my host already does backups?', 'Usually yes. Hosting keeps the server running, and many hosts take backups, but most do not update your plugins and theme, test that an update did not break anything, or fix problems inside WordPress itself. A maintenance plan covers that work on top of hosting.']],
   },
   '/website-support-services/': {
     quickAnswer: 'Our website support service gives small businesses on-demand help with their site: content changes, small tasks, fixes, updates and security checks, handled by a real team when you ask. It suits owners who want help without managing a developer. Start with a free website check and a fixed quote; annual billing gets 2 months free.',
@@ -52,6 +56,7 @@ export const TEXT_EDITS = {
     quickAnswer: 'Our WordPress backup service copies your files, database and media off-site on a schedule, and a real person checks the backups and tests restores. Backups come with every plan: weekly on Essential, daily on Growth and Business, kept 30, 60 or 90 days. Plans start at $79 a month.',
   },
   '/white-label-website-maintenance-services-for-agencies/': {
+    addFaq: [['Who should hold the admin logins for client websites in a white label partnership?', 'Ask your partner who will actually log in to your clients’ sites. Each person who does the work should have a named account with only the access they need, and the agency should keep the main admin login. Avoid partners who pass the work on to another subcontractor without telling you.']],
     // Batch 2 cannibalization lint: this H2 used the primary keyword of /website-maintenance-process/.
     exact: [['Our Rigorous Website Maintenance Process', 'Our Rigorous White Label Maintenance Process']],
     quickAnswer: 'Our white label website maintenance service lets agencies offer website care under their own brand: we handle updates, backups, security scans, uptime monitoring and edits for your clients’ sites, with unbranded reports and an agency NDA. You keep the client relationship and set your own prices. Per-site pricing is on request.',
@@ -67,6 +72,7 @@ export const TEXT_EDITS = {
   },
   // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
   '/website-migration-services/': {
+    addFaq: [['Should I back up my website before a migration?', 'Yes. Take a full backup of the files and the database before anything is moved, and keep it until the new site has been checked. If something goes wrong during the move, the backup lets you put the old site back exactly as it was.']],
     sub: [
       ['Starting from $1499', 'Starting from $1,199'],
       ['a platform change starts at $999', 'a platform change starts at $1,199'],
@@ -209,6 +215,20 @@ export function isEditedOldLine(line, path) {
 // so the empty fifth step (left over from the removed "30-Day Warranty" step) goes, and the steps that remain
 // must have the same names in the same order as the "### Step N: Name" headings in the body.
 const HOWTO_MATCH_STEPS = ['/website-repair-services/'];
+// Batch 2b: new FAQs (addFaq: [[question, answer]]) go into the page's FAQPage schema here and into the visible FAQ
+// section in applyTextEditsMd, so the schema and the visible FAQ stay equal.
+export function addFaqSchema(path, schema) {
+  const r = TEXT_EDITS[path];
+  if (!r?.addFaq) return;
+  const node = schema.flatMap((d) => d['@graph'] ?? [d]).find((n) => [].concat(n['@type'] ?? []).includes('FAQPage'));
+  if (!node) throw new Error(`text-edits: addFaq on ${path}, but the page has no FAQPage schema`);
+  node.mainEntity = [].concat(node.mainEntity ?? []);
+  r.addFaq.forEach(([q, a], i) => {
+    if (!node.mainEntity.some((m) => norm(m.name ?? '') === norm(q))) node.mainEntity.push({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } });
+    mark(path, 'addFaq', i);
+  });
+}
+
 export function fixHowTo(path, schema, body) {
   if (!HOWTO_MATCH_STEPS.includes(path)) return;
   const visible = [...body.matchAll(/^#{2,4} Step (\d+): (.+)$/gm)].map((m) => [Number(m[1]), norm(m[2])]);
@@ -246,6 +266,19 @@ export function applyTextEditsMd(path, md) {
     (r.sub ?? []).forEach(([from, to, , mdFrom], i) => {
       for (const f of [mdFrom, from, from.replace(/’/g, "'")].filter(Boolean)) if (out.includes(f)) { out = out.split(f).join(to); mark(scope, 'sub', i); }
     });
+    // New FAQs: appended to the end of the page's FAQ section, in the format that section already uses.
+    if (scope === path && r.addFaq) {
+      const lines = out.split('\n');
+      const h = lines.findIndex((l) => /^## .*(Frequently Asked|FAQ)/i.test(l));
+      if (h < 0) throw new Error(`text-edits: addFaq on ${path}, but no FAQ section`);
+      let end = lines.findIndex((l, k) => k > h && /^## /.test(l));
+      if (end < 0) end = lines.length;
+      const details = lines.slice(h, end).some((l) => l.startsWith('<details><summary>'));
+      const add = r.addFaq.filter(([q]) => !lines.slice(h, end).some((l) => norm(l.replace(/<[^>]+>|^#+\s*/g, ' ')).includes(norm(q))))
+        .map(([q, a]) => (details ? `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>\n` : `### ${q}\n\n${a}\n`));
+      lines.splice(end, 0, ...add);
+      out = lines.join('\n');
+    }
     // The migration drops class attributes, so the quick answer comes back as a plain paragraph line: wrap it again.
     if (r.quickAnswer) {
       const lines = out.split('\n');

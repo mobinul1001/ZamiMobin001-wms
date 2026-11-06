@@ -132,7 +132,7 @@ export function parseMigration(html: string) {
       for (let e = $(h).next(); e.length && !e.is('h3, h2'); e = e.next()) if (e.is('p')) ps.push(html$($, e));
       return { q: html$($, h), id: $(h).attr('id'), a: ps[0] ?? '', extra: ps.slice(1) };
     });
-    need(items.length === 9 ? items : undefined, '9 FAQs');
+    need(items.length >= 9 ? items : undefined, 'at least 9 FAQs');
     return { sec, lead: html$($, $.root().children('p').first()), items };
   })();
   const closing = (() => { const { $, sec } = find(/^Ready to Migrate Your Website/); return { sec, html: $.html().trim() }; })();
