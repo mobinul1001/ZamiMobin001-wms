@@ -17,3 +17,5 @@ No new FAQs were added on these 4 pages: GSC has no question queries for design,
 | /website-update-services/ | Quick answer (56 words) | website update services | BATCH-2 section 6.3 | yes |
 | /wordpress-backup-services/ | Quick answer (51 words, schedules and retention only as on the page) | wordpress backup services | BATCH-2 section 6.3 | yes |
 | /website-support-services/ | FAQ questions now marked up as H3 inside the FAQ accordions (the text is unchanged; the page has no FAQPage schema, so none was added) | FAQ structure | page markup | yes |
+| /white-label-website-maintenance-services-for-agencies/ | Quick answer (55 words) | white label website maintenance | BATCH-2 section 6.3 | yes |
+| /wms-partner-program/ | Quick answer (57 words) | partner program, reseller | BATCH-2 section 6.3 | yes |

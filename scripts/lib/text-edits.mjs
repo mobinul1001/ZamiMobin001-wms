@@ -37,6 +37,12 @@ export const TEXT_EDITS = {
   '/wordpress-backup-services/': {
     quickAnswer: 'Our WordPress backup service copies your files, database and media off-site on a schedule, and a real person checks the backups and tests restores. Backups come with every plan: weekly on Essential, daily on Growth and Business, kept 30, 60 or 90 days. Plans start at $79 a month.',
   },
+  '/white-label-website-maintenance-services-for-agencies/': {
+    quickAnswer: 'Our white label website maintenance service lets agencies offer website care under their own brand: we handle updates, backups, security scans, uptime monitoring and edits for your clients’ sites, with unbranded reports and an agency NDA. You keep the client relationship and set your own prices. Per-site pricing is on request.',
+  },
+  '/wms-partner-program/': {
+    quickAnswer: 'The WMS partner program is for people who already work with businesses that need website maintenance. You bring the client and set your price; our team does the maintenance, WordPress support, security and updates behind the scenes, and you keep the margin. You do not need to be a developer. Apply with the partner form on this page.',
+  },
   // Owner, 2026-11-06: migration prices are final ($149 / from $399 / from $1,199), so the old platform-change prices follow.
   '/website-migration-services/': {
     sub: [

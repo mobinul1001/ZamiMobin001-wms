@@ -9,6 +9,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">The WMS partner program is for people who already work with businesses that need website maintenance. You bring the client and set your price; our team does the maintenance, WordPress support, security and updates behind the scenes, and you keep the margin. You do not need to be a developer. Apply with the partner form on this page.</p>
+
 WMS Partner & Reseller Program
 
 Do you already work with businesses that need reliable website maintenance, WordPress support, security, updates, or ongoing technical assistance?

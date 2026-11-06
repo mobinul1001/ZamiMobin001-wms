@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-11-06T07:23:33.124Z",
+  "checkedAt": "2026-11-06T07:28:43.960Z",
   "context": "production",
   "isLive": true,
   "pages": 93,
-  "links": 8827,
-  "images": 442,
+  "links": 8855,
+  "images": 462,
   "faqs": 488,
   "sitemapUrls": 90,
   "redirects": 246,
@@ -13,7 +13,7 @@
   "failures": [],
   "warningCounts": {
     "missing-urls": 1,
-    "forms": 24,
+    "forms": 26,
     "image-size": 1,
     "seo-length": 2,
     "anchors": 4
@@ -42,6 +42,8 @@
     "[forms] /website-support-services/: no Formspree ID yet.",
     "[forms] /website-update-services/: no Formspree ID yet.",
     "[forms] /white-label-website-maintenance-services-for-agencies/: no Formspree ID yet.",
+    "[forms] /white-label-website-maintenance-services-for-agencies/: no Formspree ID yet.",
+    "[forms] /wms-partner-program/: no Formspree ID yet.",
     "[forms] /wms-partner-program/: no Formspree ID yet.",
     "[forms] /wordpress-backup-services/: no Formspree ID yet.",
     "[forms] /wordpress-backup-services/: no Formspree ID yet.",

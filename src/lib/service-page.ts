@@ -33,7 +33,7 @@ function wrapTables($: $T, label: string) {
 }
 // Pricing cards: a price that is not confirmed in prices.json is not shown. The card says "Fixed quote after a free
 // check" and the old price text stays in the HTML under "Price note" (OWNER CHECK).
-function holdPrices($: $T, keep: number[] = []) {
+function holdPrices($: $T, keep: number[] = [], quote = 'Fixed quote after a free check') {
   // Prices confirmed in prices.json for this page (keep) stay as they are.
   const confirmed = (t: string) => { const n = [...t.matchAll(/[$£€]\s?([\d,]+)/g)].map((m) => Number(m[1].replace(/,/g, ''))); return n.length > 0 && n.every((x) => keep.includes(x)); };
   // Each plan's feature list opens from "What's included" (every feature name stays in the HTML).
@@ -41,7 +41,7 @@ function holdPrices($: $T, keep: number[] = []) {
   $('.card p, .card li').each((_, p) => {
     const t = sq($(p).text());
     if (!PRICE.test(t) || t.length > 90 || confirmed(t)) return;
-    $(p).replaceWith(`<p class="rp-price mw-quote">Fixed quote after a free check</p>${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more('Price note', $.html(p), 'sv-pnote')}`);
+    $(p).replaceWith(`<p class="rp-price mw-quote">${quote}</p>${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more('Price note', $.html(p), 'sv-pnote')}`);
   });
   $.root().children('p').each((_, p) => {
     const t = sq($(p).text());
@@ -72,7 +72,7 @@ function foldLong($: $T, strict = false) {
   $.root().append(more('Read more', html, 'sv-fold'));
 }
 
-export function parseService(html: string, keep: number[] = []) {
+export function parseService(html: string, keep: number[] = [], quote?: string) {
   const { intro, sections } = splitBy(html, 2);
   // The old in-page anchor #pricing moves to the pricing section itself (the template sets the id), so the empty
   // anchor goes; otherwise the id would appear twice.
@@ -136,11 +136,12 @@ export function parseService(html: string, keep: number[] = []) {
     splitCards($);
     wrapTables($, sq(title));
     if (sec.kind === 'pricing') {
-      holdPrices($, keep);
+      holdPrices($, keep, quote);
       // A long feature comparison under the plan cards opens from "Compare all features".
       $('.pp-tscroll').each((_, t) => { $(t).replaceWith(more('Compare all features', $.html(t), 'sv-cmp')); });
     }
-    if (sec.kind === 'default') foldLong($, i >= 2);
+    // A section with a form (an application or contact form) stays open.
+    if (sec.kind === 'default' && !$('form').length) foldLong($, i >= 2);
     if (sec.kind === 'closing') foldLong($, true);
     sec.html = $.html().trim();
     out.push(sec);

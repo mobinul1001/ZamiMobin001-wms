@@ -20,8 +20,8 @@ import TrustStrip from '../service/TrustStrip.astro';
 import Countries from '../service/Countries.astro';
 import ServiceArt from '../art/ServiceArt.astro';
 
-type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup';
-interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string] }
+type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'backup' | 'whitelabel' | 'partner';
+interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string]; quote?: string; cta?: [string, string] }
 // Related links: owner pages with natural anchors (the homepage with "website maintenance services").
 const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services']];
 const CFG: Record<string, Cfg> = {
@@ -31,6 +31,8 @@ const CFG: Record<string, Cfg> = {
   '/website-support-services/': { art: 'support', need: 'Fix something on my site', related: [['/website-repair-services/', 'Website repair services'], ['/website-update-services/', 'Website update services'], ['/wordpress-backup-services/', 'WordPress backup services']] },
   '/website-update-services/': { art: 'update', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/wordpress-backup-services/', 'WordPress backup services'], ['/website-support-services/', 'Website support services']] },
   '/wordpress-backup-services/': { art: 'backup', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-update-services/', 'Website update services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] },
+  '/white-label-website-maintenance-services-for-agencies/': { art: 'whitelabel', need: 'Something else', quote: 'Per-site pricing on request', priceLine: ['Per-site pricing on request', 'No contract'], related: [['/wms-partner-program/', 'WMS partner program'], ['/white-label-wordpress-maintenance-support/', 'White label WordPress maintenance and support'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans']] },
+  '/wms-partner-program/': { art: 'partner', need: 'Something else', priceLine: ['Bring the client, set your price', 'No contract'], cta: ['Become a WMS Partner', '#partner-form'], related: [['/white-label-website-maintenance-services-for-agencies/', 'White label website maintenance for agencies'], ['/monthly-website-maintenance-packages/', 'Plans your clients can choose'], ['/website-support-services/', 'Website support services']] },
   '/website-speed-optimization-services/': { art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
 };
 
@@ -38,7 +40,7 @@ const { entry } = Astro.props;
 const { path, h1 } = entry.data;
 const cfg = CFG[path];
 if (!cfg) throw new Error(`ServicePage: no settings for ${path}`);
-const d = parseService(entry.rendered?.html ?? '', cfg.keep ?? []);
+const d = parseService(entry.rendered?.html ?? '', cfg.keep ?? [], cfg.quote);
 if (!d.hero.quickAnswer) throw new Error(`ServicePage: ${path} has no quick answer (text-edits.mjs)`);
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
@@ -65,7 +67,7 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
       <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
       {d.hero.lead && <p class="rp-sub" set:html={d.hero.lead} />}
       <p class="rp-priceline"><b>{(cfg.priceLine ?? ['Fixed quote after a free check'])[0]}</b><span>{(cfg.priceLine ?? ['', 'No contract'])[1]}</span></p>
-      <div class="cta-row"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a>{pricing && <a class="sv-tlink" href="#pricing">See packages</a>}</div>
+      <div class="cta-row"><a class="btn primary" href={cfg.cta?.[1] ?? '#quote'}>{cfg.cta?.[0] ?? 'Get a free quote'}<Fragment set:html={icon('arrow')} /></a>{pricing && <a class="sv-tlink" href="#pricing">See packages</a>}</div>
       {otherLinks.length > 0 && <p class="sv-links">{otherLinks.map((l) => <a href={l.href}>{l.label}</a>)}</p>}
     </div>
     <div class="rp-hero-side" id="quote"><Fragment set:html={form} /></div>
