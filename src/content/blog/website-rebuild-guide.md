@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 8, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/website-rebuild-guide-2026-featured-image.webp" alt="Website Rebuild guide explaining website rebuild costs, timelines, rebuild vs redesign, SEO protection, and when a full website rebuild is the right choice." width="1988" height="791" loading="lazy">

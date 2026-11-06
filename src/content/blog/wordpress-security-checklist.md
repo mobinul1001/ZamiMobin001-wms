@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 9, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/wordpress-security-checklist.webp" alt="WordPress Security Checklist feature image highlighting essential website security practices including updates, firewall, SSL, backups, and login protection." width="1988" height="791" loading="lazy">

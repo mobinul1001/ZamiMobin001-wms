@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 6, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/how-to-redesign-a-website-without-losing-seo-2026-featured-image.webp" alt="How to redesign a website without losing SEO with 301 redirects, SEO preservation, and safe website migration best practices." width="1988" height="791" loading="lazy">

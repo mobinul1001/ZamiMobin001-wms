@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/Web-Design-in-Dominican-Republic.webp" alt="Professional web design in the Dominican Republic featuring responsive website design, SEO optimization, and Website Maintenance Services branding." width="1986" height="792" loading="lazy">

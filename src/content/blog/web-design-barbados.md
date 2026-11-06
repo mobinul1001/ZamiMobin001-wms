@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/Barbados-Web-Design-by-the-Beach.webp" alt="Professional web design services in Barbados for modern, responsive business websites" width="1987" height="791" loading="lazy">

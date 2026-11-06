@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 6, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/website-redesign-seo-protect-improve-rankings-featured-image.webp" alt="Website redesign SEO guide showing how to protect and improve Google rankings with proper SEO planning, 301 redirects, performance optimization, and website maintenance." width="1989" height="791" loading="lazy">

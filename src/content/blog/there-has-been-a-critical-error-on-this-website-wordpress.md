@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: June 29, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/06/there-has-been-a-critical-error-on-this-website-wordpress-how-to-fix.webp" alt="Premium infographic showing how to fix the WordPress &quot;There Has Been a Critical Error on This Website&quot; message with troubleshooting steps including plugin conflicts, theme issues, PHP memory limits, database repair, and backup restoration." width="1987" height="791" loading="lazy">

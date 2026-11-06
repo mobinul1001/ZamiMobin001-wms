@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 6, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/how-long-does-it-take-to-redesign-a-website-featured-image.webp" alt="Website redesign timeline illustration showing the typical 6–16 week redesign process from planning and design to development, testing, and launch." width="1989" height="791" loading="lazy">

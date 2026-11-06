@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 18, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/what-is-a-domain-name-featured-image.webp" alt="What is a domain name? A visual guide to domain names, extensions, DNS, website hosting, and business email by WMS." width="1987" height="791" loading="lazy">

@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/Trinidad-Website-Design-Guide.webp" alt="Professional website design in Trinidad and Tobago by Website Maintenance Services." width="1987" height="791" loading="lazy">

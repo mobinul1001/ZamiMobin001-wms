@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 18, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/how-to-buy-a-domain-name-featured-image.webp" alt="How to buy a domain name with a step-by-step guide by Website Maintenance Services" width="1987" height="791" loading="lazy">

@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 5, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/nonprofit-website-maintenance-donation-ready-guide.webp" alt="Nonprofit website maintenance illustration showing a donation-ready nonprofit website with security, backups, updates, and website support features." width="1988" height="791" loading="lazy">

@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 8, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/website-redesign-cost-2026-featured-image.webp" alt="How Much Does It Cost to Redesign a Website? Website redesign pricing guide by Website Maintenance Services." width="1989" height="791" loading="lazy">

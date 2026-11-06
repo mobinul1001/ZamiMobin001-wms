@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 15, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/common-website-maintenance-mistakes.webp" alt="Common website maintenance mistakes including untested updates, failed backups, broken integrations, security risks, and performance issues." width="1987" height="791" loading="lazy">

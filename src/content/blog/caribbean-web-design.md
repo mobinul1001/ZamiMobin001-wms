@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/Caribbean-Web-Design-Services-Banner.webp" alt="Caribbean web design services featuring professional website design and development for businesses in the Caribbean." width="1987" height="791" loading="lazy">

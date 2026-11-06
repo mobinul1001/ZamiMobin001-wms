@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: June 29, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/06/error-establishing-a-database-connection-wordpress-how-to-fix.webp" alt="Premium infographic showing how to fix the WordPress &quot;Error Establishing a Database Connection&quot; issue with database troubleshooting, server checks, and recovery steps." width="1962" height="802" loading="lazy">

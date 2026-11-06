@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/what-is-dns-domain-name-system-guide.webp" alt="What is DNS infographic showing domain name resolution, DNS servers, common DNS records, and the WMS logo." width="1987" height="791" loading="lazy">

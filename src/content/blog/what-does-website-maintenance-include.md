@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 5, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/what-does-website-maintenance-include-guide-2026.webp" alt="Illustration showing website maintenance services including security monitoring, updates, backups, performance optimization, uptime monitoring, and reporting for business websites." width="1989" height="791" loading="lazy">

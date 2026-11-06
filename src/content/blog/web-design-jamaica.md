@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/web-design-jamaica-services-guide.webp" alt="Professional web design services in Jamaica featuring responsive websites, SEO optimization, and mobile-friendly design" width="1987" height="791" loading="lazy">

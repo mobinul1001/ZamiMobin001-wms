@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 18, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/what-is-a-dns-server-feature-image.webp" alt="What is a DNS server? Diagram showing DNS lookup, server infrastructure, and DNS record types." width="1987" height="791" loading="lazy">

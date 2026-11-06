@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/web-design-saint-lucia-services-guide.webp" alt="Professional web design services in Saint Lucia featuring responsive website design, SEO optimization, and e-commerce solutions." width="1987" height="791" loading="lazy">

@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 25, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/caribbean-taxi-transport-website-guide.webp" alt="Premium Caribbean taxi and transport website guide featuring booking-ready design, mobile-first layout, local SEO, and secure website solutions." width="1988" height="791" loading="lazy">

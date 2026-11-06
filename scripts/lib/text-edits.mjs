@@ -11,7 +11,7 @@
 const FREE_OFFER = 'Owner, 2026-11-05: free hosting and the 2 free email accounts come only with a website redesign.';
 export const GLOBAL_EXCEPT = ['/website-redesign-services/'];
 
-import { readFileSync as readPrices } from 'node:fs';
+import { readFileSync as readPrices, readdirSync } from 'node:fs';
 // Batch 2 quick answers for the English-language country pages, built from the local prices in prices.json.
 const LOCAL = JSON.parse(readPrices(new URL('../../src/data/prices.json', import.meta.url), 'utf8')).local;
 const COUNTRY_NAME = { usa: 'US', canada: 'Canadian', australia: 'Australian', ireland: 'Irish', france: 'French', netherlands: 'Dutch', spain: 'Spanish', switzerland: 'Swiss' };
@@ -19,6 +19,17 @@ const COUNTRY_QA = Object.fromEntries(Object.entries(COUNTRY_NAME).map(([k, name
   const p = `/website-maintenance-services-for-${k}/`; const l = LOCAL[p];
   return [p, { quickAnswer: `Our website maintenance service for ${name} businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at ${l.monthly[0]} a month (Essential), with Growth at ${l.monthly[1]} and Business at ${l.monthly[2]}; one-time fixes start at ${l.fix}. Start with a free website check.` }];
 }));
+
+// Owner, 2026-11-06: the article byline says "WMS" instead of the homepage's main keyword (the link to /about-us/
+// stays). Only articles that are not Tier A (src/data/tier-a.json); Tier A bylines are a phase 2 proposal.
+const TIER_A = JSON.parse(readPrices(new URL('../../src/data/tier-a.json', import.meta.url), 'utf8')).pages;
+const BYLINE_FROM = 'By: Website Maintenance Services';
+const BYLINE = Object.fromEntries(['blog', 'pages'].flatMap((dir) => readdirSync(new URL(`../../src/content/${dir}/`, import.meta.url))
+  .filter((f) => f.endsWith('.md'))
+  .map((f) => [`/${f.replace(/\.md$/, '')}/`, readPrices(new URL(`../../src/content/${dir}/${f}`, import.meta.url), 'utf8')])
+  // The generated Markdown already has either the old or the new byline, so both count (stable on every re-run).
+  .filter(([p, md]) => !TIER_A.includes(p) && (md.includes(`[${BYLINE_FROM}](/about-us/)`) || md.includes('[By: WMS](/about-us/)')))
+  .map(([p]) => [p, { exact: [[BYLINE_FROM, 'By: WMS']] }])));
 
 export const TEXT_EDITS = {
   ...COUNTRY_QA,
@@ -145,6 +156,9 @@ export const TEXT_EDITS = {
   },
 };
 
+// The byline rule is merged into each article's own rules (some articles already have rules).
+for (const [p, r] of Object.entries(BYLINE)) TEXT_EDITS[p] = { ...(TEXT_EDITS[p] ?? {}), exact: [...(TEXT_EDITS[p]?.exact ?? []), ...r.exact] };
+
 const norm = (s) => s.replace(/\s+/g, ' ').trim();
 const esc = (s) => s.replace(/&/g, '&amp;');
 const used = new Map();
@@ -205,6 +219,8 @@ export function checkTextEditsUsed() {
 
 // Parity: an old line that an approved rule removed or changed is not "missing".
 export function isEditedOldLine(line, path) {
+  // The live crawl split the byline: its old line is just the name. Approved only on articles with the byline rule.
+  if (BYLINE[path] && norm(line) === 'Website Maintenance Services') return true;
   // Apostrophes are compared in one form: the old site mixes ’ and '.
   const q = (s) => norm(s).replace(/’/g, "'");
   const l = q(line);

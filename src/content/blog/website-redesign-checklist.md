@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: July 9, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/07/website-redesign-checklist-guide.webp" alt="Website redesign checklist showing the complete planning, SEO, development, testing, and launch process for a successful website redesign." width="1989" height="791" loading="lazy">

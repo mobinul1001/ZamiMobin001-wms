@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: October 21, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/10/Bahamas-Web-Design-Guide-Banner.webp" alt="Professional web design services in the Bahamas featuring responsive websites, SEO optimization, and eCommerce solutions by Website Maintenance Services." width="1988" height="791" loading="lazy">

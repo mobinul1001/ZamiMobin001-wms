@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: June 29, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/06/wordpress-speed-optimization-guide-featured-image.webp" alt="WordPress speed optimization featured image showing website performance improvements, Core Web Vitals optimization, caching, image optimization, CDN setup, and faster page load times." width="1988" height="791" loading="lazy">

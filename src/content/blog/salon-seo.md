@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: August 6, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/08/salon-seo-local-ranking-guide.webp" alt="Salon SEO guide showing Google Business Profile, local search optimization, reviews, and online booking strategies for hair and beauty salons." width="1989" height="791" loading="lazy">

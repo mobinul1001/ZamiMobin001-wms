@@ -14,7 +14,7 @@ categories: ["Industry"]
 ---
 
 -   Updated: June 20, 2026
--   [By: Website Maintenance Services](/about-us/)
+-   [By: WMS](/about-us/)
 -   In: [Industry](/blogs/)
 
 <img src="/wp-content/uploads/2026/06/white-label-wordpress-maintenance-support.webp" alt="White label WordPress maintenance support workflow showing agency, support team, and client relationship." width="1989" height="791" loading="lazy">

@@ -40,3 +40,4 @@ No new FAQs were added on these 4 pages: GSC has no question queries for design,
 | /how-long-does-website-maintenance-take/ (Tier A) | PROPOSAL: FAQ "How many hours a month does a small business website need?" (a few hours a month for routine work; more for stores and custom sites) | how long does website maintenance take | serp-notes.csv | no |
 
 People-also-ask boxes: the search tool used returns result titles and summaries, not Google's PAA boxes, so none were read; the FAQ topics above come from the top-10 titles and common topics.
+| 8 Tier A articles (best companies, WP Buffs, how long, maintenance cost, WordPress cost, both PHP pages, SiteCare) | PROPOSAL (phase 2): byline "By: Website Maintenance Services" → "By: WMS" (link to /about-us/ kept), as already done on the 39 other articles on 2026-11-06 | removes the homepage's main keyword as an internal anchor to /about-us/ (link-notes.md) | Tier A: test one page at a time | no (proposal) |
