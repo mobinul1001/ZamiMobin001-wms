@@ -9,6 +9,10 @@ type $T = cheerio.CheerioAPI;
 const sq = (s: string) => s.replace(/\s+/g, ' ').trim();
 const load = (s: string) => cheerio.load(s, null, false);
 const DOWN = '<svg class="ic" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+// Labels the parser writes (English by default; the Brazil page passes pt-BR labels).
+export interface SvLabels { readMore: string; showMore: (n: number) => string; included: string; compareAll: string; priceNote: string }
+export const EN_LABELS: SvLabels = { readMore: 'Read more', showMore: (n) => `Show ${n} more`, included: "What's included", compareAll: 'Compare all features', priceNote: 'Price note' };
+let L: SvLabels = EN_LABELS;
 export const more = (label: string, body: string, cls = '') => `<details class="pp-rm ${cls}"><summary>${label}${DOWN}</summary><div class="pp-prose">${body}</div></details>`;
 const OWNER = (what: string) => `<!-- OWNER CHECK: ${what} -->`;
 const PRICE = /(?:\$|£|€)\s?\d/;
@@ -20,7 +24,7 @@ function splitCards($: $T) {
     if (cards.length <= 4) return;
     const rest = cards.slice(4).map((c) => $.html(c)).join('');
     cards.slice(4).forEach((c) => $(c).remove());
-    $(el).after(more(`Show ${cards.length - 4} more`, `<div class="cards">${rest}</div>`, 'sv-more'));
+    $(el).after(more(L.showMore(cards.length - 4), `<div class="cards">${rest}</div>`, 'sv-more'));
   });
 }
 // Tables scroll inside their own box with a sticky first column (plans-page.css).
@@ -37,15 +41,15 @@ function holdPrices($: $T, keep: number[] = [], quote = 'Fixed quote after a fre
   // Prices confirmed in prices.json for this page (keep) stay as they are.
   const confirmed = (t: string) => { const n = [...t.matchAll(/[$£€]\s?([\d,]+)/g)].map((m) => Number(m[1].replace(/,/g, ''))); return n.length > 0 && n.every((x) => keep.includes(x)); };
   // Each plan's feature list opens from "What's included" (every feature name stays in the HTML).
-  $('.card').each((_, c) => { $(c).children('ul').each((__, ul) => { $(ul).replaceWith(more("What's included", $.html(ul), 'sv-inc')); }); });
+  $('.card').each((_, c) => { $(c).children('ul').each((__, ul) => { $(ul).replaceWith(more(L.included, $.html(ul), 'sv-inc')); }); });
   $('.card p, .card li').each((_, p) => {
     const t = sq($(p).text());
     if (!PRICE.test(t) || t.length > 90 || confirmed(t)) return;
-    $(p).replaceWith(`<p class="rp-price mw-quote">${quote}</p>${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more('Price note', $.html(p), 'sv-pnote')}`);
+    $(p).replaceWith(`<p class="rp-price mw-quote">${quote}</p>${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more(L.priceNote, $.html(p), 'sv-pnote')}`);
   });
   $.root().children('p').each((_, p) => {
     const t = sq($(p).text());
-    if (PRICE.test(t) && t.length <= 160 && !confirmed(t)) $(p).replaceWith(`${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more('Price note', $.html(p), 'sv-pnote')}`);
+    if (PRICE.test(t) && t.length <= 160 && !confirmed(t)) $(p).replaceWith(`${OWNER('price not confirmed in prices.json (pendingServicePrices)')}${more(L.priceNote, $.html(p), 'sv-pnote')}`);
   });
 }
 // The first part of a long section stays open: up to the first card grid or table, or about 450 characters of text.
@@ -69,7 +73,7 @@ function foldLong($: $T, strict = false) {
   if (restText.length < 220) return;
   const html = rest.map((e) => $.html(e)).join('');
   rest.forEach((e) => $(e).remove());
-  $.root().append(more('Read more', html, 'sv-fold'));
+  $.root().append(more(L.readMore, html, 'sv-fold'));
 }
 
 // Country pages: the big section holds H3 parts. The part with the local plan cards stays open with the #plans anchor
@@ -93,7 +97,8 @@ function countryParts($: $T, extras: string) {
   return plans;
 }
 
-export function parseService(html: string, keep: number[] = [], quote?: string, country?: { extras: string }) {
+export function parseService(html: string, keep: number[] = [], quote?: string, country?: { extras: string }, labels: SvLabels = EN_LABELS) {
+  L = labels;
   const { intro, sections } = splitBy(html, 2);
   // The old in-page anchor #pricing moves to the pricing section itself (the template sets the id), so the empty
   // anchor goes; otherwise the id would appear twice.
@@ -175,7 +180,7 @@ export function parseService(html: string, keep: number[] = [], quote?: string, 
     if (sec.kind === 'pricing') {
       holdPrices($, keep, quote);
       // A long feature comparison under the plan cards opens from "Compare all features".
-      $('.pp-tscroll').each((_, t) => { $(t).replaceWith(more('Compare all features', $.html(t), 'sv-cmp')); });
+      $('.pp-tscroll').each((_, t) => { $(t).replaceWith(more(L.compareAll, $.html(t), 'sv-cmp')); });
     }
     // A section with a form (an application or contact form) stays open.
     // A FAQ written as <details> items is already collapsed: it stays as it is.

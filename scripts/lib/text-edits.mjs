@@ -14,7 +14,7 @@ export const GLOBAL_EXCEPT = ['/website-redesign-services/'];
 import { readFileSync as readPrices } from 'node:fs';
 // Batch 2 quick answers for the English-language country pages, built from the local prices in prices.json.
 const LOCAL = JSON.parse(readPrices(new URL('../../src/data/prices.json', import.meta.url), 'utf8')).local;
-const COUNTRY_NAME = { usa: 'US', uk: 'UK', canada: 'Canadian', australia: 'Australian', ireland: 'Irish', france: 'French', netherlands: 'Dutch', spain: 'Spanish', switzerland: 'Swiss' };
+const COUNTRY_NAME = { usa: 'US', canada: 'Canadian', australia: 'Australian', ireland: 'Irish', france: 'French', netherlands: 'Dutch', spain: 'Spanish', switzerland: 'Swiss' };
 const COUNTRY_QA = Object.fromEntries(Object.entries(COUNTRY_NAME).map(([k, name]) => {
   const p = `/website-maintenance-services-for-${k}/`; const l = LOCAL[p];
   return [p, { quickAnswer: `Our website maintenance service for ${name} businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at ${l.monthly[0]} a month (Essential), with Growth at ${l.monthly[1]} and Business at ${l.monthly[2]}; one-time fixes start at ${l.fix}. Start with a free website check.` }];
@@ -22,6 +22,10 @@ const COUNTRY_QA = Object.fromEntries(Object.entries(COUNTRY_NAME).map(([k, name
 
 export const TEXT_EDITS = {
   ...COUNTRY_QA,
+  // Brazil (pt-BR; our wording: needs native review), prices from prices.json local.
+  '/website-maintenance-services-for-brazil/': {
+    quickAnswer: 'Nosso serviço de manutenção de sites para empresas no Brasil cobre atualizações, backups, monitoramento de segurança, velocidade e correções, feitos pela nossa equipe todo mês. Os planos começam em R$429 por mês (Essential), com Growth a R$809 e Business a R$1.629; correções avulsas a partir de R$269. Comece com uma verificação gratuita do site.',
+  },
   // Owner, 2026-11-06: free hosting and 2 free email accounts stay only with a redesign, stated once in its pricing
   // section. No duration is stated until the owner confirms it (question in reports/batch-1/FINAL.md).
   '/website-redesign-services/': {

@@ -9,8 +9,6 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
-<p class="quick-answer">Our website maintenance service for UK businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at £59 a month (Essential), with Growth at £109 and Business at £219; one-time fixes start at £39. Start with a free website check.</p>
-
 Your website is one of your most valuable business assets. Whether you run an eCommerce shop, agency, or local business, your website must stay updated and protected.  
 We ensure your site remains secure, stable, and ready to convert visitors—24/7.
 

@@ -24,41 +24,55 @@ type Art = 'redesign' | 'design' | 'seo' | 'speed' | 'support' | 'update' | 'bac
 interface Cfg { art: Art; need: string; related: [string, string][]; protect?: boolean; compare?: boolean; keep?: number[]; priceLine?: [string, string]; quote?: string; cta?: [string, string]; country?: { extras: string; name: string; flag: string } }
 // Related links: owner pages with natural anchors (the homepage with "website maintenance services").
 const OWNERS: [string, string][] = [['/monthly-website-maintenance-packages/', 'Website maintenance plans and pricing'], ['/how-much-does-website-maintenance-cost/', 'How much website maintenance costs'], ['/', 'Website maintenance services'], ['/works/', 'See our work'], ['/get-a-free-quote/', 'Request a free quote'], ['/free-website-maintenance-audit/', 'Free website audit']];
+// The same owner pages with Portuguese anchors for the Brazil page (ours: needs native review).
+const OWNERS_PT: [string, string][] = [['/monthly-website-maintenance-packages/', 'Planos e preços de manutenção de sites'], ['/how-much-does-website-maintenance-cost/', 'Quanto custa a manutenção de sites'], ['/', 'Serviços de manutenção de sites'], ['/works/', 'Nossos trabalhos'], ['/get-a-free-quote/', 'Peça um orçamento gratuito'], ['/free-website-maintenance-audit/', 'Verificação gratuita']];
 // Store pages: their confirmed plan prices (monthly and annual) stay visible.
 const storeNums = (set: { plans: { monthly: number; annual: number }[] }) => set.plans.flatMap((p) => [p.monthly, p.annual]);
+// Prices as on the live site (prices.json liveSitePrices, confirmed: false; owner decision 2026-11-06): shown in the cards.
+const LIVE = prices.liveSitePrices as unknown as Record<string, { prices: number[] }>;
+const live = (p: string, label: string): Partial<Cfg> => ({ keep: LIVE[p].prices, priceLine: [`${label} from $${Math.min(...LIVE[p].prices).toLocaleString('en-US')}`, 'No contract'] });
 const CFG: Record<string, Cfg> = {
-  '/website-redesign-services/': { art: 'redesign', need: 'Migration or redesign', protect: true, compare: true, related: [['/website-design-services/', 'Website design services'], ['/website-migration-services/', 'Website migration services'], ['/website-repair-services/', 'Website repair services']] },
-  '/website-design-services/': { art: 'design', need: 'Something else', related: [['/website-redesign-services/', 'Website redesign services'], ['/website-seo-services/', 'Website SEO services'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
-  '/website-seo-services/': { art: 'seo', need: 'Something else', related: [['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-redesign-services/', 'Website redesign services'], ['/website-design-services/', 'Website design services']] },
-  '/website-support-services/': { art: 'support', need: 'Fix something on my site', related: [['/website-repair-services/', 'Website repair services'], ['/website-update-services/', 'Website update services'], ['/wordpress-backup-services/', 'WordPress backup services']] },
-  '/website-update-services/': { art: 'update', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/wordpress-backup-services/', 'WordPress backup services'], ['/website-support-services/', 'Website support services']] },
-  '/wordpress-backup-services/': { art: 'backup', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from ${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-update-services/', 'Website update services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] },
-  '/white-label-website-maintenance-services-for-agencies/': { art: 'whitelabel', need: 'Something else', quote: 'Per-site pricing on request', priceLine: ['Per-site pricing on request', 'No contract'], related: [['/wms-partner-program/', 'WMS partner program'], ['/white-label-wordpress-maintenance-support/', 'White label WordPress maintenance and support'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans']] },
+  '/website-redesign-services/': { ...live('/website-redesign-services/', 'Redesign projects'), art: 'redesign', need: 'Migration or redesign', protect: true, compare: true, related: [['/website-design-services/', 'Website design services'], ['/website-migration-services/', 'Website migration services'], ['/website-repair-services/', 'Website repair services']] },
+  '/website-design-services/': { ...live('/website-design-services/', 'Website design'), art: 'design', need: 'Something else', related: [['/website-redesign-services/', 'Website redesign services'], ['/website-seo-services/', 'Website SEO services'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
+  '/website-seo-services/': { ...live('/website-seo-services/', 'SEO audit'), art: 'seo', need: 'Something else', related: [['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-redesign-services/', 'Website redesign services'], ['/website-design-services/', 'Website design services']] },
+  '/website-support-services/': { ...live('/website-support-services/', 'Support plans'), art: 'support', need: 'Fix something on my site', related: [['/website-repair-services/', 'Website repair services'], ['/website-update-services/', 'Website update services'], ['/wordpress-backup-services/', 'WordPress backup services']] },
+  '/website-update-services/': { art: 'update', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from $${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/wordpress-backup-services/', 'WordPress backup services'], ['/website-support-services/', 'Website support services']] },
+  '/wordpress-backup-services/': { art: 'backup', need: 'Monthly maintenance plan', keep: [prices.plans[0].monthly], priceLine: [`Plans from $${prices.plans[0].monthly}/mo`, 'No contract'], related: [['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-update-services/', 'Website update services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] },
+  '/white-label-website-maintenance-services-for-agencies/': { ...live('/white-label-website-maintenance-services-for-agencies/', 'Per-site plans'), art: 'whitelabel', need: 'Something else', related: [['/wms-partner-program/', 'WMS partner program'], ['/white-label-wordpress-maintenance-support/', 'White label WordPress maintenance and support'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans']] },
   '/wms-partner-program/': { art: 'partner', need: 'Something else', priceLine: ['Bring the client, set your price', 'No contract'], cta: ['Become a WMS Partner', '#partner-form'], related: [['/white-label-website-maintenance-services-for-agencies/', 'White label website maintenance for agencies'], ['/monthly-website-maintenance-packages/', 'Plans your clients can choose'], ['/website-support-services/', 'Website support services']] },
-  '/ecommerce-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.woocommerce), priceLine: [`Store plans from ${prices.storePlans.woocommerce.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/shopify-website-maintenance-packages/', 'Shopify maintenance packages'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
-  '/shopify-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.shopify), priceLine: [`Shopify plans from ${prices.storePlans.shopify.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/ecommerce-website-maintenance-packages/', 'Ecommerce maintenance packages'], ['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-support-services/', 'Website support services']] },
-  '/website-speed-optimization-services/': { art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
+  '/ecommerce-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.woocommerce), priceLine: [`Store plans from $${prices.storePlans.woocommerce.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/shopify-website-maintenance-packages/', 'Shopify maintenance packages'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-speed-optimization-services/', 'Website speed optimization']] },
+  '/shopify-website-maintenance-packages/': { art: 'store', need: 'Monthly maintenance plan', keep: storeNums(prices.storePlans.shopify), priceLine: [`Shopify plans from $${prices.storePlans.shopify.plans[0].monthly}/mo`, 'No contract'], cta: ['Start plan', '#pricing'], related: [['/ecommerce-website-maintenance-packages/', 'Ecommerce maintenance packages'], ['/website-speed-optimization-services/', 'Website speed optimization'], ['/website-support-services/', 'Website support services']] },
+  '/website-speed-optimization-services/': { ...live('/website-speed-optimization-services/', 'Speed work'), art: 'speed', need: 'Speed optimization', related: [['/website-seo-services/', 'Website SEO services'], ['/wordpress-website-maintenance-packages/', 'WordPress maintenance plans'], ['/website-repair-services/', 'Website repair services']] },
 };
 
 const { entry } = Astro.props;
-const { path, h1 } = entry.data;
-// The English-language country pages (Brazil keeps its own layout until its Portuguese labels are decided).
+const { path, h1, lang } = entry.data;
+// Labels: English, or pt-BR for the Brazil page (owner's labels 2026-11-06; the ones marked * are ours: needs native review).
+const pt = (lang ?? '').startsWith('pt');
+const T = pt
+  ? { home: 'Início', inShort: 'Em resumo', readMore: 'Leia mais', showMore: (n: number) => `Mostrar mais (${n})`, showAll: (n: number) => `Mostrar tudo (${n})`, included: 'Incluído', compareAll: 'Mostrar tudo', priceNote: 'Leia mais', quote: 'Peça um orçamento gratuito', related: 'Relacionados', guides: 'Guias' /* * */, noContract: 'Sem contrato', fixedFirst: 'Orçamento fixo antes de começarmos', freeCheck: 'Verificação gratuita', plansFrom: 'Planos a partir de', example: 'Exemplo' /* * */, seePlans: '', formTitle: 'Peça um orçamento gratuito', formText: 'Fale sobre o seu site. Respondemos em até 24 horas.' /* * */, countries: 'Países que atendemos' /* * */ }
+  : { home: 'Home', inShort: 'In short', readMore: 'Read more', showMore: (n: number) => `Show ${n} more`, showAll: (n: number) => `Show all ${n} questions`, included: "What's included", compareAll: 'Compare all features', priceNote: 'Price note', quote: 'Get a free quote', related: 'Related services', guides: 'Guides', noContract: 'No contract', fixedFirst: 'Free check, fixed quote first, no contract', freeCheck: 'Get a free website check', plansFrom: 'Plans from', example: 'Example', seePlans: 'See packages', formTitle: 'Get a free quote', formText: 'Tell us about your site. We reply within 24 hours with a free check and a fixed quote.', countries: 'Countries we serve' };
+// Country pages on the new layout. UK (Tier A) stays on its old layout (owner, 2026-11-06). Brazil uses pt-BR labels.
 const LOCAL = prices.local as Record<string, { currency: string; monthly: string[]; annual: string[]; fix: string; cleanup: string }>;
-const FLAGS: Record<string, [string, string]> = { usa: ['USA', 'us'], uk: ['UK', 'gb'], canada: ['Canada', 'ca'], australia: ['Australia', 'au'], ireland: ['Ireland', 'ie'], france: ['France', 'fr'], netherlands: ['Netherlands', 'nl'], spain: ['Spain', 'es'], switzerland: ['Switzerland', 'ch'] };
+const FLAGS: Record<string, [string, string]> = { usa: ['USA', 'us'], canada: ['Canada', 'ca'], australia: ['Australia', 'au'], ireland: ['Ireland', 'ie'], france: ['France', 'fr'], netherlands: ['Netherlands', 'nl'], spain: ['Spain', 'es'], switzerland: ['Switzerland', 'ch'], brazil: ['Brasil', 'br'] };
 const countryKey = /^\/website-maintenance-services-for-([a-z]+)\/$/.exec(path)?.[1] ?? '';
 if (FLAGS[countryKey]) {
   const l = LOCAL[path];
-  CFG[path] = { art: 'country', need: 'Monthly maintenance plan', priceLine: [`Plans from ${l.monthly[0]}/mo`, 'No contract'], cta: ['Start plan', '#plans'], country: { extras: `One-time fix from ${l.fix} · Hacked site cleanup ${l.cleanup}`, name: FLAGS[countryKey][0], flag: FLAGS[countryKey][1] }, related: [['/website-update-services/', 'Website update services'], ['/website-repair-services/', 'Website repair services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] };
+  CFG[path] = pt
+    ? { art: 'country', need: 'Monthly maintenance plan', priceLine: [`${T.plansFrom} ${l.monthly[0]}/mês`, T.noContract], cta: [T.quote, '#quote'], country: { extras: `Correção avulsa a partir de ${l.fix} · Limpeza de site invadido ${l.cleanup}`, name: FLAGS[countryKey][0], flag: FLAGS[countryKey][1] }, related: [['/website-repair-services/', 'Reparo de sites'], ['/website-hacked-recovery-services/', 'Recuperação de site invadido'], ['/website-update-services/', 'Atualização de sites']] }
+    : { art: 'country', need: 'Monthly maintenance plan', priceLine: [`Plans from ${l.monthly[0]}/mo`, 'No contract'], cta: ['Start plan', '#plans'], country: { extras: `One-time fix from ${l.fix} · Hacked site cleanup ${l.cleanup}`, name: FLAGS[countryKey][0], flag: FLAGS[countryKey][1] }, related: [['/website-update-services/', 'Website update services'], ['/website-repair-services/', 'Website repair services'], ['/website-hacked-recovery-services/', 'Hacked website recovery']] };
 }
 const cfg = CFG[path];
 if (!cfg) throw new Error(`ServicePage: no settings for ${path}`);
+// Live-site prices: every number in prices.json must be printed on the page, so a change is made in both places.
+for (const n of LIVE[path]?.prices ?? []) if (!new RegExp(`\\$\\s?${n.toLocaleString('en-US')}(?![\\d,])`).test(entry.rendered?.html ?? '')) throw new Error(`ServicePage: ${path} does not show $${n} from prices.json liveSitePrices`);
 // Country pages: buy-now links to the plans page go to the local plan cards on this page (as before).
 const srcHtml = cfg.country ? (entry.rendered?.html ?? '').replace(/<a href="\/monthly-website-maintenance-packages\/">((?:Choose|Get|Let us)[^<]*)<\/a>/g, '<a href="#plans">$1</a>') : entry.rendered?.html ?? '';
-const d = parseService(srcHtml, cfg.keep ?? [], cfg.quote, cfg.country);
+const d = parseService(srcHtml, cfg.keep ?? [], cfg.quote, cfg.country, { readMore: T.readMore, showMore: T.showMore, included: T.included, compareAll: T.compareAll, priceNote: T.priceNote });
 if (!d.hero.quickAnswer) throw new Error(`ServicePage: ${path} has no quick answer (text-edits.mjs)`);
 const posts = await getCollection('blog');
 const guides = hubs.filter((t) => t.hub === path).flatMap((t) => t.posts).slice(0, 6).map((s) => posts.find((p) => p.data.path === `/${s}/`)).filter(Boolean);
-const form = quickForm('service', 'Get a free quote', 'Tell us about your site. We reply within 24 hours with a free check and a fixed quote.', path.replace(/\W+/g, '-').replace(/^-|-$/g, ''), cfg.need);
+const form = quickForm('service', T.formTitle, T.formText, path.replace(/\W+/g, '-').replace(/^-|-$/g, ''), cfg.need, pt ? 'pt' : 'en');
 const pricing = d.sections.find((s) => s.kind === 'pricing');
 const rm = (label: string, body: string, cls = '') => `<details class="pp-rm ${cls}"><summary>${label}${icon('down')}</summary><div class="pp-prose">${body}</div></details>`;
 const faqItem = (f: { q: string; id?: string; a: string[] }) => `<details><summary><h3${f.id ? ` id="${f.id}"` : ''}>${f.q}</h3>${icon('down')}</summary><div class="a">${f.a.join('')}</div></details>`;
@@ -76,12 +90,12 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
 <div class="plans-pg repair-pg hacked-pg malware-pg sv-pg">
   <section class="rp-hero"><div class="wrap">
     <div class="rp-hero-text">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {h1}</nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{T.home}</a> / {h1}</nav>
       {d.hero.eyebrow && <p class="eyebrow"><span set:html={d.hero.eyebrow} /></p>}
       <h1 set:html={hlLast(h1.replace(/&/g, '&amp;'))} />
       {d.hero.lead && <p class="rp-sub" set:html={d.hero.lead} />}
       <p class="rp-priceline"><b>{(cfg.priceLine ?? ['Fixed quote after a free check'])[0]}</b><span>{(cfg.priceLine ?? ['', 'No contract'])[1]}</span></p>
-      <div class="cta-row"><a class="btn primary" href={cfg.cta?.[1] ?? '#quote'}>{cfg.cta?.[0] ?? 'Get a free quote'}<Fragment set:html={icon('arrow')} /></a>{pricing && <a class="sv-tlink" href="#pricing">See packages</a>}</div>
+      <div class="cta-row"><a class="btn primary" href={cfg.cta?.[1] ?? '#quote'}>{cfg.cta?.[0] ?? T.quote}<Fragment set:html={icon('arrow')} /></a>{pricing && T.seePlans && <a class="sv-tlink" href="#pricing">{T.seePlans}</a>}</div>
       {otherLinks.length > 0 && <p class="sv-links">{otherLinks.map((l) => <a href={l.href}>{l.label}</a>)}</p>}
     </div>
     <div class="rp-hero-side" id="quote"><Fragment set:html={form} /></div>
@@ -89,13 +103,13 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
 
   <section class="sv-qa"><div class="wrap"><div class="sv-qa-in card">
     <ServiceArt kind={cfg.art} label={cfg.country?.name} flag={cfg.country?.flag} />
-    <div><p class="eyebrow">In short</p><p class="quick-answer" set:html={d.hero.quickAnswer} /></div>
+    <div><p class="eyebrow">{T.inShort}</p><p class="quick-answer" set:html={d.hero.quickAnswer} /></div>
   </div>
-  {(d.hero.introRest || d.hero.panel) && <Fragment set:html={rm('Read more', d.hero.introRest + (d.hero.panel ? `<div class="sv-example"><span class="sv-ex-tag">Example</span>${d.hero.panel}</div>` : ''), 'sv-intro')} />}
+  {(d.hero.introRest || d.hero.panel) && <Fragment set:html={rm(T.readMore, d.hero.introRest + (d.hero.panel ? `<div class="sv-example"><span class="sv-ex-tag">${T.example}</span>${d.hero.panel}</div>` : ''), 'sv-intro')} />}
   {d.hero.panel && <Fragment set:html={'<!-- OWNER CHECK: the hero status panel shows numbers labelled "Client result"; it is shown as an Example, collapsed, until the owner confirms them -->'} />}
   </div></section>
 
-  {!pricing && <TrustStrip />}
+  {!pricing && <TrustStrip lang={pt ? 'pt' : 'en'} />}
 
   {cfg.protect && (
     <section class="pp-sec sv-protect"><div class="wrap"><div class="card sv-protect-in">
@@ -106,14 +120,14 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
 
   {body.map((s, i) => (
     <>
-      {s === pricing && <TrustStrip />}
+      {s === pricing && <TrustStrip lang={pt ? 'pt' : 'en'} />}
       <SectionAccordion eyebrow={s.eyebrow} h2={s.h2} id={s === pricing ? 'pricing' : s.id} alt={i % 2 === 1} open={i === 0}>
         {s === pricing && s.id && s.id !== 'pricing' && <span id={s.id} class="sv-anchor" />}
         {s === pricing && cfg.cta?.[1] === '#pricing' && <span id="plans" class="sv-anchor" />}
         <div class="mw-prose sv-body" set:html={s.html} />
         {s === pricing && countryKey === 'usa' && <div class="btn-row"><a class="sv-tlink" href="/ecommerce-website-maintenance-packages/">Running an online store? See Store plans from ${prices.storePlans.woocommerce.plans[0].monthly}</a></div>}
         {s === pricing && (
-          <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">Free check, fixed quote first, no contract</h3><p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract. <a href="/free-website-maintenance-audit/">Get a free website check</a></p></div><a class="btn primary" href="#quote">Get a free quote</a></div>
+          <div class="rp-strip sv-risk"><div><h3 class="sv-risk-h">{T.fixedFirst}</h3>{pt ? <p>{T.freeCheck} · {T.noContract} · <a href="/free-website-maintenance-audit/">{T.freeCheck}</a></p> : <p>We look at your site for free, send a fixed quote before any work starts, and you sign no long contract. <a href="/free-website-maintenance-audit/">Get a free website check</a></p>}</div><a class="btn primary" href="#quote">{T.quote}</a></div>
         )}
       </SectionAccordion>
       {s === pricing && cfg.compare && (
@@ -137,7 +151,7 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
       {d.faq.lead && <div class="mw-prose" set:html={d.faq.lead} />}
       <div class="pp-faq rp-faq hk-faq">
         <Fragment set:html={d.faq.items.slice(0, 6).map(faqItem).join('')} />
-        {d.faq.items.length > 6 && <details class="pp-rm pp-faq-more"><summary>Show all {d.faq.items.length} questions<Fragment set:html={icon('down')} /></summary><div class="pp-faq hk-faq"><Fragment set:html={d.faq.items.slice(6).map(faqItem).join('')} /></div></details>}
+        {d.faq.items.length > 6 && <details class="pp-rm pp-faq-more"><summary>{T.showAll(d.faq.items.length)}<Fragment set:html={icon('down')} /></summary><div class="pp-faq hk-faq"><Fragment set:html={d.faq.items.slice(6).map(faqItem).join('')} /></div></details>}
       </div>
     </SectionAccordion>
   )}
@@ -150,10 +164,10 @@ const otherLinks = d.hero.links; // the page's own hero links, as text links (th
     </div></section>
   )}
 
-  <SectionAccordion h2="Related services" alt>
-    <div class="pp-rel">{[...cfg.related, ...OWNERS].map(([href, label]) => <a href={href}>{label}</a>)}</div>
-    {guides.length > 0 && <><h3 class="sv-guides-h">Guides</h3><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></>}
+  <SectionAccordion h2={T.related} alt>
+    <div class="pp-rel">{[...cfg.related, ...(pt ? OWNERS_PT : OWNERS)].map(([href, label]) => <a href={href}>{label}</a>)}</div>
+    {guides.length > 0 && <><h3 class="sv-guides-h">{T.guides}</h3><div class="pp-rel">{guides.map((p) => <a href={p!.data.path}>{p!.data.h1}</a>)}</div></>}
   </SectionAccordion>
-  <section class="hk-countries"><div class="wrap"><Countries /></div></section>
-  <div class="pp-stick"><a class="btn primary" href="#quote">Get a free quote</a></div>
+  <section class="hk-countries"><div class="wrap"><Countries title={T.countries} /></div></section>
+  <div class="pp-stick"><a class="btn primary" href="#quote">{T.quote}</a></div>
 </div>

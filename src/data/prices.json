@@ -51,7 +51,9 @@
     299
   ],
   "malwareTiers": {
-    "status": "PENDING owner confirmation (2026-11-06: stays pending; show no number, \"Fixed quote after a free check\"). Cleanup uses hackedSiteCleanup ($149).",
+    "confirmed": false,
+    "comment": "as on live site, owner to confirm",
+    "status": "Shown on the page as on the live site (owner decision 2026-11-06); owner to confirm. Cleanup uses hackedSiteCleanup ($149).",
     "protect": 249,
     "priority": 349
   },
@@ -303,11 +305,61 @@
       ]
     }
   },
-  "pendingServicePrices": {
-    "status": "PENDING owner confirmation (batch 2, 2026-11-06): the prices printed on these pages are not confirmed, so the pages show \"Fixed quote after a free check\" and keep the old price text collapsed with an OWNER CHECK comment.",
-    "/website-redesign-services/": "$1,200 – $2,500 / $2,500 – $5,500 / custom from $5,500+",
-    "/website-design-services/": "$1,499 / $2,999 / custom from $5,499+",
-    "/website-seo-services/": "$299/month / $599/month / custom from $1,999/month; one-time SEO audit $199",
-    "/website-speed-optimization-services/": "$149 / $299 / $499 one-time; custom from $499/mo"
+  "liveSitePrices": {
+    "_comment": "Owner decision 2026-11-06: these prices are shown on the pages exactly as on the live site, in the normal pricing cards. confirmed:false = as on live site, owner to confirm. Change a number here and on the page text together (the build stops if they differ). Titles and metas use only confirmed prices.",
+    "/website-design-services/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        1499,
+        2999,
+        5499
+      ]
+    },
+    "/website-seo-services/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        299,
+        599,
+        1999,
+        199
+      ]
+    },
+    "/website-speed-optimization-services/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        149,
+        299,
+        499
+      ]
+    },
+    "/website-redesign-services/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        1200,
+        2500,
+        5500
+      ]
+    },
+    "/website-support-services/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        199,
+        399,
+        699
+      ]
+    },
+    "/white-label-website-maintenance-services-for-agencies/": {
+      "confirmed": false,
+      "comment": "as on live site, owner to confirm",
+      "prices": [
+        59,
+        49
+      ]
+    }
   }
 }

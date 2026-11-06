@@ -18,18 +18,26 @@ const [low, , high] = prices.plans.map((p) => p.monthly);
 const NEEDS = ['Monthly maintenance plan', 'Fix something on my site', 'Speed optimization', 'Hacked site / malware', 'Migration or redesign', 'Something else'];
 
 // The owner's quick-quote form, used in the hero and in the final call to action.
-export function quickForm(id: string, title: string, text: string, form = `home-${id}`, preselect = '') {
+// Form labels. pt-BR: the owner's labels (2026-11-06); the select options, placeholders and foot line are ours (needs native review).
+const FORM_TEXT = {
+  en: { name: 'Full name', namePh: 'Your name', phone: 'Phone / WhatsApp', email: 'Email', site: 'Website URL', need: 'What do you need?', pick: 'Select one', msg: 'Tell us a little about it', msgPh: 'What’s happening with your site, and what would you like us to do?', send: 'Get my free quote', foot: 'Reply within 24 hours · No spam · No contract', needs: NEEDS },
+  pt: { name: 'Nome completo', namePh: 'Seu nome', phone: 'Telefone', email: 'E-mail', site: 'URL do site', need: 'O que você precisa?', pick: 'Escolha uma opção', msg: 'Descrição', msgPh: 'O que está acontecendo com o seu site?', send: 'Enviar', foot: 'Resposta em até 24 horas · Sem contrato', needs: ['Plano de manutenção mensal', 'Corrigir algo no meu site', 'Otimização de velocidade', 'Site invadido / malware', 'Migração ou redesign', 'Outra coisa'] },
+};
+export function quickForm(id: string, title: string, text: string, form = `home-${id}`, preselect = '', lang: 'en' | 'pt' = 'en') {
   const f = (name: string) => `${id}-${name}`;
+  const X = FORM_TEXT[lang];
+  // The submitted "need" value stays the English one, so the owner's inbox reads the same on every page.
+  const pre = NEEDS.indexOf(preselect);
   return `${formOpen(form, 'qf')}
     <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>
-    <div class="qf-two"><div><label for="${f('name')}">Full name</label><input id="${f('name')}" type="text" name="name" placeholder="Your name" autocomplete="name"></div>
-    <div><label for="${f('phone')}">Phone / WhatsApp <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>
-    <div class="qf-two"><div><label for="${f('email')}">Email <em>*</em></label><input id="${f('email')}" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
-    <div><label for="${f('website')}">Website URL</label><input id="${f('website')}" type="url" name="website" placeholder="https://yourwebsite.com" autocomplete="url"></div></div>
-    <div><label for="${f('need')}">What do you need? <em>*</em></label><select id="${f('need')}" name="need" required><option value="">Select one</option>${NEEDS.map((n) => `<option${n === preselect ? ' selected' : ''}>${n}</option>`).join('')}</select></div>
-    <div><label for="${f('message')}">Tell us a little about it <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="What’s happening with your site, and what would you like us to do?" required></textarea></div>
-    <button class="btn primary" type="submit">Get my free quote${icon('arrow')}</button>
-    <p class="qf-foot">${icon('clock')}Reply within 24 hours · No spam · No contract</p>
+    <div class="qf-two"><div><label for="${f('name')}">${X.name}</label><input id="${f('name')}" type="text" name="name" placeholder="${X.namePh}" autocomplete="name"></div>
+    <div><label for="${f('phone')}">${X.phone} <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>
+    <div class="qf-two"><div><label for="${f('email')}">${X.email} <em>*</em></label><input id="${f('email')}" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
+    <div><label for="${f('website')}">${X.site}</label><input id="${f('website')}" type="url" name="website" placeholder="https://yourwebsite.com" autocomplete="url"></div></div>
+    <div><label for="${f('need')}">${X.need} <em>*</em></label><select id="${f('need')}" name="need" required><option value="">${X.pick}</option>${NEEDS.map((n, i) => `<option value="${n}"${i === pre ? ' selected' : ''}>${X.needs[i]}</option>`).join('')}</select></div>
+    <div><label for="${f('message')}">${X.msg} <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="${X.msgPh}" required></textarea></div>
+    <button class="btn primary" type="submit">${X.send}${icon('arrow')}</button>
+    <p class="qf-foot">${icon('clock')}${X.foot}</p>
   </form>`;
 }
 

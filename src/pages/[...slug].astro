@@ -40,7 +40,7 @@ const pick = () => {
   if (path === '/website-migration-services/') return MigrationPage;
   // Batch 2 service pages (stage 3).
   if (['/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/wordpress-backup-services/', '/white-label-website-maintenance-services-for-agencies/', '/wms-partner-program/', '/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/'].includes(path)) return ServicePage;
-  if (/^\/website-maintenance-services-for-(usa|uk|canada|australia|ireland|france|netherlands|spain|switzerland)\/$/.test(path)) return ServicePage;
+  if (/^\/website-maintenance-services-for-(usa|canada|australia|ireland|france|netherlands|spain|switzerland|brazil)\/$/.test(path)) return ServicePage;
   if (path === '/monthly-website-maintenance-packages/') return Pricing;
   if (path === '/blogs/') return BlogIndex;
   if (FORM_PAGES.includes(path)) return Form;

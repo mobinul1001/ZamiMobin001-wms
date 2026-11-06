@@ -14,3 +14,8 @@ Prompt: plan-files/batch-2/BATCH-2-FINAL-PROMPT.md. Owner, 2026-11-06: content, 
 | 8 | Stage 8 final SEO safety pass and report | done | b2-final | safety.md: 0 failures; FINAL.md written |
 
 Real (status 200) pages not yet on the new design, from url-map.csv and the templates in src/pages/[...slug].astro: see the stage rows above.
+
+## Batch 2b (branch b2-content, on b2-final)
+| # | Item | Status | Commit | Note |
+|---|---|---|---|---|
+| A | Decisions 1–4 and 6: live-site prices shown (prices.json liveSitePrices / malwareTiers, confirmed: false); UK back on its old layout, quick answer removed (proposal in additions.md); Brazil on the new layout in pt-BR; hosting post unchanged; malware pair approved exception in final-check | done | (see git log) | pt-BR labels not in the owner's list are marked "needs native review" |

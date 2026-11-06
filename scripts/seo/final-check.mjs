@@ -32,7 +32,10 @@ function read(file) {
 
 const oldPages = Object.fromEntries(walk(OLD).map((f) => [pageOf(f, OLD), f]));
 const newPages = Object.fromEntries(walk('dist').map((f) => [pageOf(f, 'dist'), f]));
-const rows = [], fails = [], later = [];
+const rows = [], fails = [], later = [], approved = [];
+// Owner decision 2026-11-06 (decision 6): the SERVICE page /wordpress-malware-removal-service/ is strengthened and the
+// article /wordpress-malware-removal/ links to it; lint hits between this pair are an approved exception.
+const EXCEPT = [['/wordpress-malware-removal-service/', '/wordpress-malware-removal/'], ['/wordpress-malware-removal/', '/wordpress-malware-removal-service/']];
 const titles = new Map(), metas = new Map();
 const targets = parseCsv(readFileSync('seo-cannibalization/csv/Page-Targets.csv', 'utf8')).map((r) => [r.Page, sq(r['PRIMARY keyword (title + H1)'])]).filter(([, k]) => k.split(' ').length >= 2);
 let minText = 100;
@@ -53,7 +56,7 @@ for (const [p, nf] of Object.entries(newPages)) {
   // packages") is the page's own topic, not another page's.
   const own = targets.find(([pg]) => pg === p)?.[1] ?? '';
   const QUAL = (k) => [...own.split(' '), 'ecommerce', 'shopify', 'woocommerce', 'store', 'usa', 'uk', 'canada', 'australia', 'ireland', 'france', 'netherlands', 'spain', 'switzerland', 'brazil'].filter((w) => w.length > 1 && !k.split(' ').includes(w));
-  for (const [tag, t] of [['title', sq(n.title)], ...n.heads.filter(([t]) => t !== 'h4')]) for (const [owner, k] of targets) if (owner !== p && ` ${t} `.includes(` ${k} `) && !QUAL(k).some((w) => ` ${t} `.includes(` ${w} `))) (BUILT_B2.includes(p) ? fails : later).push(`cannibalization ${p} ${tag} "${t.slice(0, 60)}" uses "${k}" (owner ${owner})`);
+  for (const [tag, t] of [['title', sq(n.title)], ...n.heads.filter(([t]) => t !== 'h4')]) for (const [owner, k] of targets) if (owner !== p && ` ${t} `.includes(` ${k} `) && !QUAL(k).some((w) => ` ${t} `.includes(` ${w} `))) (EXCEPT.some(([a, b]) => a === p && b === owner) ? approved : BUILT_B2.includes(p) ? fails : later).push(`cannibalization ${p} ${tag} "${t.slice(0, 60)}" uses "${k}" (owner ${owner})`);
   const of = oldPages[p];
   if (!of) { rows.push([p, 'new page?', '', '', '']); continue; }
   const o = read(of);
@@ -104,6 +107,10 @@ ${fails.map((f) => `- ${f}`).join('\n') || '- none'}
 
 ## Forbidden strings (${forb.length})
 ${forb.map((f) => `- ${f}`).join('\n') || '- none'}
+
+## Approved exceptions (owner decision 6, 2026-11-06: the malware service page is strengthened; the article links to it; the article title is not changed now) (${approved.length})
+${approved.map((f) => `- ${f}`).join('
+') || '- none'}
 
 ## Later (pages not rebuilt in batch 2: cannibalization hits and image attributes; phase 2 work) (${later.length})
 ${later.map((f) => `- ${f}`).join('\n') || '- none'}

@@ -22,3 +22,9 @@ No new FAQs were added on these 4 pages: GSC has no question queries for design,
 | /ecommerce-website-maintenance-packages/ | Quick answer (55 words, store plan prices from prices.json) | ecommerce website maintenance packages | BATCH-2 section 6.3 | yes |
 | /shopify-website-maintenance-packages/ | Quick answer (56 words, Shopify plan prices from prices.json) | shopify website maintenance packages | BATCH-2 section 6.3 | yes |
 | 9 country pages (USA, UK, Canada, Australia, Ireland, France, Netherlands, Spain, Switzerland) | Quick answer (about 55 words, local plan and fix prices from prices.json) | website maintenance services + country | BATCH-2 section 6.3; UK is Tier A: the quick answer is an addition on a protected page (owner may ask to remove it) | yes |
+
+## Batch 2b (2026-11-06)
+| Page | What | Target | Data | Applied? |
+|---|---|---|---|---|
+| /website-maintenance-services-for-uk/ (Tier A) | PROPOSAL (phase 2): move to the new country layout and add the quick answer "Our website maintenance service for UK businesses covers updates, backups, security monitoring, speed and fixes, done by our team every month. Plans start at £59 a month (Essential), with Growth at £109 and Business at £219; one-time fixes start at £39. Start with a free website check." | website maintenance services uk | Tier A (owner list): no layout change until the owner approves; test it as one change in Search Console | no (proposal) |
+| /website-maintenance-services-for-brazil/ | New country layout in pt-BR with a quick answer in Portuguese (prices from prices.json local) | serviços de manutenção de sites brasil | BATCH-2 section 6.3; labels: owner's list, others ours (needs native review) | yes |

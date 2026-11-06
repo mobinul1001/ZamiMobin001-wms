@@ -10,6 +10,8 @@ schema: [{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"ht
 faqs: []
 ---
 
+<p class="quick-answer">Nosso serviço de manutenção de sites para empresas no Brasil cobre atualizações, backups, monitoramento de segurança, velocidade e correções, feitos pela nossa equipe todo mês. Os planos começam em R$429 por mês (Essential), com Growth a R$809 e Business a R$1.629; correções avulsas a partir de R$269. Comece com uma verificação gratuita do site.</p>
+
 ## Mantenha seu Site Seguro, Rápido e Sempre Funcional
 
 No competitivo mercado digital brasileiro, seu website é o cartão de visita do seu negócio. Garantimos que seu site permaneça seguro, otimizado, sem erros e sempre pronto para converter visitantes em clientes.
