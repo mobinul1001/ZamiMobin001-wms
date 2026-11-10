@@ -1,6 +1,7 @@
 ---
 import '../styles/site.css';
 import '../styles/footer.css';
+import '../styles/mobile.css';
 import foot from '../data/footer.json';
 import site from '../data/site.json';
 import { icon } from '../lib/icons';
@@ -125,11 +126,21 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
       <a class="btn primary cta-m" href={quote}>Get a free quote</a>
       <button class="burger" id="burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><Fragment set:html={icon('menu', 'open') + icon('x', 'close')} /></button>
     </div></header>
+    {/* Mobile menu, H2 drill-in (batch 4): top list, then a Services panel with 4 group tabs. Every service link stays in the HTML; the panels are switched with CSS classes only. */}
     <nav class="mnav" id="mnav" aria-label="Mobile">
-      <details class="m-svc"><summary aria-expanded="false" aria-controls="m-svc">Services<Fragment set:html={icon('down')} /></summary><div class="m-svc-list" id="m-svc">{serviceGroups.map(([title, links]) => <><p class="mnav-h">{title}</p>{links.map(([label, href]) => <a href={href}>{label}</a>)}</>)}</div></details>
-      {main.map(([label, href]) => <a href={href}>{label}</a>)}
-      <div class="theme-row"><span>Theme</span><Fragment set:html={themeBtn('theme-m')} /></div>
-      <a class="btn primary" href={quote}>Get a free quote</a>
+      <div class="mn-top">
+        <button class="mn-row mn-open" id="mn-open" type="button" aria-expanded="false" aria-controls="m-svc">Services<span class="mn-chev" aria-hidden="true">›</span></button>
+        {main.map(([label, href]) => <a class="mn-row" href={href}>{label}<span class="mn-chev" aria-hidden="true">›</span></a>)}
+      </div>
+      <div class="mn-sub" id="m-svc" role="group" aria-labelledby="mn-open">
+        <button class="mn-back" id="mn-back" type="button">‹ Back</button>
+        <div class="mn-tabs" role="tablist" aria-label="Service groups">{serviceGroups.map(([title], i) => <button class="mn-tab" id={`mn-tab-${i}`} type="button" role="tab" aria-selected={i === 0 ? 'true' : 'false'} aria-controls={`mn-g-${i}`} tabindex={i === 0 ? '0' : '-1'}>{title}</button>)}</div>
+        {serviceGroups.map(([title, links], i) => <div class:list={['mn-group', { on: i === 0 }]} id={`mn-g-${i}`} role="tabpanel" aria-labelledby={`mn-tab-${i}`}><p class="mnav-h">{title}</p>{links.map(([label, href]) => <a class="mn-row mn-link" href={href}>{label}<span class="mn-chev" aria-hidden="true">›</span></a>)}</div>)}
+      </div>
+      <div class="mn-foot">
+        <div class="theme-row"><span>Theme</span><Fragment set:html={themeBtn('theme-m')} /></div>
+        <a class="btn primary" href={quote}>Get a free quote</a>
+      </div>
     </nav>
     <main>
       <slot />
@@ -165,7 +176,8 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
       </div>
       <div class="wf-legal"><span>{foot.copyright}</span><span class="wf-ll">{(foot.legal as string[][]).map(([label, href]) => <a href={href}>{label}</a>)}<a href="/cookie-policy/">{cookieText.policy}</a></span></div>
     </div></footer>
-    {isHome && <div class="mbar"><a class="btn primary" href="#quote">Get a free quote<Fragment set:html={icon('arrow')} /></a></div>}
+    {/* Sticky bottom bar, G1 (batch 4): every template; shown on phones only (mobile.css). */}
+    <div class="mbar"><a class="btn primary" href={isHome ? '#quote' : quote}>Get a free quote<Fragment set:html={icon('arrow')} /></a></div>
     <script is:inline>
       (function () {
         var d = document, r = d.documentElement;
@@ -173,13 +185,19 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         d.getElementById('theme').addEventListener('click', flip);
         d.getElementById('theme-m').addEventListener('click', flip);
         var b = d.getElementById('burger'), m = d.getElementById('mnav');
-        function menu(on) { if (on) m.style.top = Math.max(0, b.closest('header').getBoundingClientRect().bottom) + 'px'; m.classList.toggle('on', on); b.setAttribute('aria-expanded', on); d.body.classList.toggle('menu-open', on); if (on) { var f = m.querySelector('summary'); if (f) f.focus(); } }
+        function menu(on) { if (on) m.style.top = Math.max(0, b.closest('header').getBoundingClientRect().bottom) + 'px'; m.classList.toggle('on', on); b.setAttribute('aria-expanded', on); d.body.classList.toggle('menu-open', on); sub(false); if (on) { var f = m.querySelector('.mn-row'); if (f) f.focus(); } }
+        var so = d.getElementById('mn-open'), sb = d.getElementById('mn-back'), tabs = [].slice.call(m.querySelectorAll('.mn-tab'));
+        function sub(on) { m.classList.toggle('sub', on); so.setAttribute('aria-expanded', on); if (on) { var t = m.querySelector('.mn-tab[aria-selected="true"]'); if (t) t.focus(); } }
+        so.addEventListener('click', function () { sub(true); });
+        sb.addEventListener('click', function () { sub(false); so.focus(); });
+        function pick(t) { tabs.forEach(function (x) { var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1; d.getElementById(x.getAttribute('aria-controls')).classList.toggle('on', on); }); t.focus(); }
+        tabs.forEach(function (t, i) { t.addEventListener('click', function () { pick(t); }); t.addEventListener('keydown', function (e) { var k = e.key, n = k === 'ArrowRight' || k === 'ArrowDown' ? 1 : k === 'ArrowLeft' || k === 'ArrowUp' ? -1 : 0; if (n) { e.preventDefault(); pick(tabs[(i + n + tabs.length) % tabs.length]); } }); });
         b.addEventListener('click', function () { menu(b.getAttribute('aria-expanded') !== 'true'); });
         d.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') { if (m.classList.contains('on')) { menu(false); b.focus(); } d.querySelectorAll('.drop[open]').forEach(function (x) { x.open = false; x.querySelector('summary').focus(); }); }
-          if (e.key === 'Tab' && m.classList.contains('on')) { var a = [b].concat([].slice.call(m.querySelectorAll('a,summary,button'))).filter(function (x) { return x.offsetParent !== null; }), l = a[a.length - 1]; if (e.shiftKey && d.activeElement === b) { e.preventDefault(); l.focus(); } else if (!e.shiftKey && d.activeElement === l) { e.preventDefault(); b.focus(); } }
+          if (e.key === 'Escape') { if (m.classList.contains('sub')) { sub(false); so.focus(); } else if (m.classList.contains('on')) { menu(false); b.focus(); } d.querySelectorAll('.drop[open]').forEach(function (x) { x.open = false; x.querySelector('summary').focus(); }); }
+          if (e.key === 'Tab' && m.classList.contains('on')) { var a = [b].concat([].slice.call(m.querySelectorAll('a,button'))).filter(function (x) { return x.offsetParent !== null; }), l = a[a.length - 1]; if (e.shiftKey && d.activeElement === b) { e.preventDefault(); l.focus(); } else if (!e.shiftKey && d.activeElement === l) { e.preventDefault(); b.focus(); } }
         });
-        d.querySelectorAll('.drop, .m-svc').forEach(function (x) { var s = x.querySelector('summary'); x.addEventListener('toggle', function () { s.setAttribute('aria-expanded', x.open); }); });
+        d.querySelectorAll('.drop').forEach(function (x) { var s = x.querySelector('summary'); x.addEventListener('toggle', function () { s.setAttribute('aria-expanded', x.open); }); });
         d.addEventListener('click', function (e) { d.querySelectorAll('.drop[open]').forEach(function (x) { if (!x.contains(e.target)) x.open = false; }); });
         matchMedia('(min-width: 1081px)').addEventListener('change', function (e) { if (e.matches) menu(false); });
         var fm = matchMedia('(max-width: 640px)'), cols = d.querySelectorAll('.wf-col');
