@@ -38,7 +38,7 @@ const formSide = isScanner ? undefined : `<div class="card side-panel">
   ${stepsLabel ? `<p class="eyebrow">${stepsLabel}</p>` : ''}<h2 class="side-title">What happens next</h2>
   <ol class="next-steps">${steps.map(([t, d], i) => `<li><span class="n">${i + 1}</span><div><strong>${t}</strong>${d ? `<p>${d}</p>` : ''}</div></li>`).join('')}</ol>
   <p class="side-reply">${icon('clock')}Reply within 24 hours</p>
-  <ul class="side-contact"><li>${icon('phone')}<a href="${site.phoneHref}">${site.phone}</a></li><li>${icon('mail')}<a href="mailto:${site.email}">${site.email}</a></li></ul>
+  <ul class="side-contact">${path === '/contact/' ? '' : `<li>${icon('phone')}<a href="${site.phoneHref}">${site.phone}</a></li>`}<li>${icon('mail')}<a href="mailto:${site.email}">${site.email}</a></li></ul>
   <p class="side-find">Find us on</p>
   <ul class="side-badges">${site.badges.map(([href, src, alt, w, h]) => `<li><a href="${href}" rel="noopener"><img src="${src}" alt="${alt}" width="${w}" height="${h}" loading="lazy"></a></li>`).join('')}</ul>
 </div>`;

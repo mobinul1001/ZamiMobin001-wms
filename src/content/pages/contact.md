@@ -31,12 +31,6 @@ Whether you’re a business looking for website maintenance, a potential partner
     
     [contact@websitemaintenanceservices.org](mailto:contact@websitemaintenanceservices.org)
     
--   Phone
-    [+1 212-496-1637](tel:+12124961637)
-
--   Address
-    14 Wall St Ste 2036, New York, NY 10005, United States
-    
 -   Live Chat
     
     Available Mon-Fri, 9am - 5pm EST

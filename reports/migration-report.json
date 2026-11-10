@@ -987,8 +987,8 @@
     {
       "path": "/contact/",
       "change": "price",
-      "from": "/-   WhatsApp \\/ Phone\\s+\\[\\+8801815840813\\]\\(https:\\/\\/wa\\.me\\/8801815840813\\)/",
-      "to": "-   Phone\n    [+1 212-496-1637](tel:+12124961637)\n\n-   Address\n    14 Wall St Ste 2036, New York, NY 10005, United States"
+      "from": "/-   WhatsApp \\/ Phone\\s+\\[\\+8801815840813\\]\\(https:\\/\\/wa\\.me\\/8801815840813\\)\\s*/",
+      "to": ""
     },
     {
       "path": "/contact/",

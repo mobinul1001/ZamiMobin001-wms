@@ -147,8 +147,9 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         <ul class="wf-stats">{footStats.map(([v, l]) => <li><b>{v}</b><span>{l}</span></li>)}</ul>
         <ul class="wf-contact">
           <li class="wf-ci"><span class="wf-ic wf-c1" set:html={svg(icCompany)} /><span>{site.gbp.name}</span></li>
-          <li class="wf-ci"><span class="wf-ic wf-c2" set:html={svg(icPin)} /><span>{site.address}</span></li>
-          <li class="wf-ci"><span class="wf-ic wf-c3" set:html={svg(icPhone)} /><a href={site.phoneHref}>{site.phone}</a></li>
+          {/* Batch 4 (owner): phone and address are in the footer HTML on the homepage only. */}
+          {isHome && <li class="wf-ci"><span class="wf-ic wf-c2" set:html={svg(icPin)} /><span>{site.address}</span></li>}
+          {isHome && <li class="wf-ci"><span class="wf-ic wf-c3" set:html={svg(icPhone)} /><a href={site.phoneHref}>{site.phone}</a></li>}
           <li class="wf-ci"><span class="wf-ic wf-c4" set:html={svg(icMail)} /><a href={`mailto:${site.email}`}>{mailUser}<wbr />@{mailDomain}</a></li>
         </ul>
       </div>

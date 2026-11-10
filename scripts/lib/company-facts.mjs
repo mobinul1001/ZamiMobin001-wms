@@ -8,7 +8,8 @@ export const FACT_CHANGES = {
     ['to businesses across these key regions — with support ready in your time zone.', `to businesses in ${FULL_REACH}, with support ready in your time zone.`],
   ],
   '/contact/': [
-    [/-   WhatsApp \/ Phone\s+\[\+8801815840813\]\(https:\/\/wa\.me\/8801815840813\)/, `-   Phone\n    [${CONTACT.phone}](${CONTACT.phoneHref})\n\n-   Address\n    ${CONTACT.address}`],
+    // Batch 4 (owner): the contact page shows the email and the form only; phone and address are on the homepage.
+    [/-   WhatsApp \/ Phone\s+\[\+8801815840813\]\(https:\/\/wa\.me\/8801815840813\)\s*/, ''],
   ],
   '/website-hacked-recovery-services/': [
     ['[Chat on WhatsApp](https://wa.me/8801815840813)', `[Call ${CONTACT.phone}](${CONTACT.phoneHref})`],
