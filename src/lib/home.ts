@@ -23,19 +23,23 @@ const FORM_TEXT = {
   en: { name: 'Full name', namePh: 'Your name', phone: 'Phone / WhatsApp', email: 'Email', site: 'Website URL', need: 'What do you need?', pick: 'Select one', msg: 'Tell us a little about it', msgPh: 'What’s happening with your site, and what would you like us to do?', send: 'Get my free quote', foot: 'Reply within 24 hours · No spam · No contract', needs: NEEDS },
   pt: { name: 'Nome completo', namePh: 'Seu nome', phone: 'Telefone', email: 'E-mail', site: 'URL do site', need: 'O que você precisa?', pick: 'Escolha uma opção', msg: 'Descrição', msgPh: 'O que está acontecendo com o seu site?', send: 'Enviar', foot: 'Resposta em até 24 horas · Sem contrato', needs: ['Plano de manutenção mensal', 'Corrigir algo no meu site', 'Otimização de velocidade', 'Site invadido / malware', 'Migração ou redesign', 'Outra coisa'] },
 };
-export function quickForm(id: string, title: string, text: string, form = `home-${id}`, preselect = '', lang: 'en' | 'pt' = 'en') {
+export function quickForm(id: string, title: string, text: string, form = `home-${id}`, preselect = '', lang: 'en' | 'pt' = 'en', steps = false) {
   const f = (name: string) => `${id}-${name}`;
   const X = FORM_TEXT[lang];
   // The submitted "need" value stays the English one, so the owner's inbox reads the same on every page.
   const pre = NEEDS.indexOf(preselect);
-  return `${formOpen(form, 'qf')}
-    <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>
+  // Batch 4, H3 2-step form (phones only, with script): the same single form and the same fields. The unnamed
+  // checkbox is never submitted; the step label, Next and Back texts are drawn by CSS (mobile.css), so the page
+  // text does not change. Without script, and on tablet and desktop, it is the normal one-step form.
+  const stepUi = steps ? { box: `<input class="qf-s2 sr-only" type="checkbox" id="${f('step2')}" tabindex="-1" aria-hidden="true"><p class="qf-step" aria-hidden="true"></p>`, next: `<button class="btn primary qf-next" type="button" aria-label="Next step"></button>`, back: `<button class="qf-back" type="button" aria-label="Back to step 1"></button>` } : { box: '', next: '', back: '' };
+  return `${formOpen(form, steps ? 'qf qf-steps' : 'qf')}
+    <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>${stepUi.box}
     <div class="qf-two"><div><label for="${f('name')}">${X.name}</label><input id="${f('name')}" type="text" name="name" placeholder="${X.namePh}" autocomplete="name"></div>
     <div><label for="${f('phone')}">${X.phone} <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>
     <div class="qf-two"><div><label for="${f('email')}">${X.email} <em>*</em></label><input id="${f('email')}" type="email" name="email" placeholder="you@company.com" autocomplete="email" required></div>
     <div><label for="${f('website')}">${X.site}</label><input id="${f('website')}" type="url" name="website" placeholder="https://yourwebsite.com" autocomplete="url"></div></div>
-    <div><label for="${f('need')}">${X.need} <em>*</em></label><select id="${f('need')}" name="need" required><option value="">${X.pick}</option>${NEEDS.map((n, i) => `<option value="${n}"${i === pre ? ' selected' : ''}>${X.needs[i]}</option>`).join('')}</select></div>
-    <div><label for="${f('message')}">${X.msg} <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="${X.msgPh}" required></textarea></div>
+    <div><label for="${f('need')}">${X.need} <em>*</em></label><select id="${f('need')}" name="need" required><option value="">${X.pick}</option>${NEEDS.map((n, i) => `<option value="${n}"${i === pre ? ' selected' : ''}>${X.needs[i]}</option>`).join('')}</select></div>${stepUi.next}
+    <div><label for="${f('message')}">${X.msg} <em>*</em></label><textarea id="${f('message')}" name="message" rows="3" placeholder="${X.msgPh}" required></textarea></div>${stepUi.back}
     <button class="btn primary" type="submit">${X.send}${icon('arrow')}</button>
     <p class="qf-foot">${icon('clock')}${X.foot}</p>
   </form>`;
@@ -54,7 +58,8 @@ export const homeFinalHtml = (cta?: Cta) => `<section class="hp-final-sec" data-
 const FLAG: Record<string, string> = { USA: 'us', Canada: 'ca', UK: 'gb', Australia: 'au', Netherlands: 'nl', France: 'fr', Spain: 'es', Brazil: 'br', Ireland: 'ie', Switzerland: 'ch' };
 
 // A row that scrolls on its own. The copy is hidden from screen readers and keyboards.
-const marquee = (items: string[], cls = '') => `<div class="hp-mq${cls}"><ul>${items.join('')}${items.map((i) => i.replace('<li', '<li aria-hidden="true"').replace(/<a /g, '<a tabindex="-1" ')).join('')}</ul></div>`;
+// Batch 4: a region people can focus and drag (it pauses on hover, focus and touch).
+const marquee = (items: string[], cls = '', label = '') => `<div class="hp-mq${cls}"${label ? ` role="region" aria-label="${label}" tabindex="0"` : ''}><ul>${items.join('')}${items.map((i) => i.replace('<li', '<li aria-hidden="true"').replace(/<a /g, '<a tabindex="-1" ')).join('')}</ul></div>`;
 
 // The old homepage, split into its old sections.
 function loadHome(html: string) {
@@ -145,7 +150,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     </div>
     <div class="hp-hero-r" id="quote">
       <div class="hp-float f1" aria-hidden="true"><span class="fi">${icon('pulse')}</span><span>Uptime 99.9%<small>Last 30 days</small></span></div>
-      ${quickForm('hero', 'Get a free website check', 'Tell us about your site. We reply within 24 hours with a free check and your exact price.')}
+      ${quickForm('hero', 'Get a free website check', 'Tell us about your site. We reply within 24 hours with a free check and your exact price.', 'home-hero', '', 'en', true)}
       <div class="hp-float f2" aria-hidden="true"><span class="fi">${icon('db')}</span><span>Backup complete<small>Today, 03:00</small></span></div>
     </div>
   </div></section>`;
@@ -163,13 +168,13 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     if (!d) throw new Error(`no directory logo for ${href}`);
     return `<li><a class="hp-dir" href="${href}" rel="noopener"><img src="/logos/${d[2]}.svg" alt="${d[1]}" width="${Math.round(d[3] * d[4])}" height="${d[3]}" style="height:${d[3]}px" loading="lazy"></a></li>`;
   });
-  const trustHtml = `<section class="hp-trust" data-sec="find-us" aria-label="Find us on"><div class="wrap hp-trust-g"><p class="hp-trust-t"><b>Find us on</b>Verified agency profiles</p>${marquee(badgeItems)}</div></section>`;
+  const trustHtml = `<section class="hp-trust" data-sec="find-us" aria-label="Find us on"><div class="wrap hp-trust-g"><p class="hp-trust-t"><b>Find us on</b>Verified agency profiles</p>${marquee(badgeItems, '', 'Find us on')}</div></section>`;
 
   // 3. Platforms and stats.
   const plat = (p: (typeof design.platforms)[number]) => `<li class="hp-plat"><span class="hp-plat-ic${p.dark ? ' dk' : ''}" style="--bc:${p.color}"><svg viewBox="${p.box}" aria-hidden="true">${p.svg}</svg></span>${p.name}</li>`;
   const STAT_LABEL: Record<string, string> = { built: 'websites built' };
   const platsHtml = `<div class="head fade center"><p class="eyebrow">Every platform</p><h2>We maintain the platform <span class="hl">you already use</span></h2><p class="intro">WordPress, Shopify, Magento, Wix, Drupal and 25+ more. If it runs a website, we can look after it.</p></div>
-    </div>${marquee(design.platforms.filter((p) => p.row === 0).map(plat))}${marquee(design.platforms.filter((p) => p.row === 1).map(plat), ' rev')}<div class="wrap">
+    </div>${marquee(design.platforms.filter((p) => p.row === 0).map(plat), '', 'Every platform')}${marquee(design.platforms.filter((p) => p.row === 1).map(plat), ' rev', 'Every platform')}<div class="wrap">
     <div class="hp-stats fade">${site.stats.map(([v, l]) => `<div class="hp-stat"><b>${v}</b><span>${STAT_LABEL[l] ?? l}</span></div>`).join('')}</div>`;
 
   // A row of cards that becomes a swipe carousel on phones (CSS scroll-snap, no script).
@@ -229,7 +234,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
 
   // 5. Pricing.
   const pricingHtml = `<div class="head fade center"><p class="eyebrow">Simple pricing</p><h2>Plans &amp; pricing, <span class="hl">no surprises</span></h2><p class="intro">Pay yearly and get ${prices.annualNote.en}.</p></div>`
-    + plansHtml(' fade')
+    + plansHtml(' fade', true)
     + `<div class="callout fade"><div><p><strong>No contract. Cancel anytime.</strong></p></div><div class="act"><a class="btn ghost" href="/monthly-website-maintenance-packages/">Compare all features</a><a class="btn ghost" href="/ecommerce-website-maintenance-packages/">Running an online store? Store plans from $199</a></div></div>`;
 
   // 6. Process: the owner's 5-step design with the old step text.
@@ -238,7 +243,9 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   const stepCards = started.find('.card').toArray().filter((c) => $(c).find('h3').length);
   if (stepCards.length !== 5) throw new Error('home steps changed');
   const processHtml = head('How it works', txt(started.find('h2').first()), inner(started.children('p').first()), 'Get Started')
-    + `<ol class="hp-steps">${stepCards.map((c, i) => `<li class="hp-step fade"><div class="hp-step-top"><span class="hp-step-n">${txt($(c).find('p').first())}</span><span class="hp-step-ic">${icon(STEP[i])}</span></div><div><h3>${inner($(c).find('h3'))}</h3><p>${inner($(c).find('p').last())}</p><span class="hp-chip">${icon('clock')}${CHIP[i]}</span></div></li>`).join('')}</ol>
+    // Batch 4, D2 (phones only): one radio per step (arrow keys move between them) and empty ‹ › tap areas; all 5 steps stay in the HTML.
+    + stepCards.map((c, i) => `<input class="hp-st-r sr-only" type="radio" name="hp-step" id="hs-${i}" aria-label="${txt($(c).find('h3'))}"${i === 0 ? ' checked' : ''}>`).join('')
+    + `<ol class="hp-steps">${stepCards.map((c, i) => `<li class="hp-step fade"><span class="hp-st-nav" aria-hidden="true">${i > 0 ? `<label class="prev" for="hs-${i - 1}"></label>` : '<i></i>'}${i < stepCards.length - 1 ? `<label class="next" for="hs-${i + 1}"></label>` : '<i></i>'}</span><div class="hp-step-top"><span class="hp-step-n">${txt($(c).find('p').first())}</span><span class="hp-step-ic">${icon(STEP[i])}</span></div><div><h3>${inner($(c).find('h3'))}</h3><p>${inner($(c).find('p').last())}</p><span class="hp-chip">${icon('clock')}${CHIP[i]}</span></div></li>`).join('')}</ol>
     <div class="btn-row center">${linkBtns(started.children('p').last())}</div>`;
 
   // 7. Results: case study, the monthly report example beside it, then the review cards (placeholders).
@@ -267,8 +274,9 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     <div class="hp-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50" class="t"/><circle cx="60" cy="60" r="50" class="v" pathLength="100" stroke-dasharray="99.9 100"/></svg><p><b>99.9%</b><span>Uptime this month</span></p></div>
     <ul class="hp-report-rows">${ROWS.map(([ic, l, v, p, ok]) => `<li${ok ? ' class="ok"' : ''}>${icon(ic)}<span>${l}</span><b>${v}</b><i style="--p:${p}%"></i></li>`).join('')}</ul>
     <p class="hp-report-note">An example of the numbers you would see. It is not real client data.</p></aside>`;
+  // Batch 4, M1: src/data/reviews.json has no real stories yet, so the old case study layout stays (OWNER CHECK in the HTML).
   const resultsHtml = head(txt(pOf(oneplace, /^Real Results$/)), inner(results.find('h2')), inner(results.children('p').first()), 'Results')
-    + `<div class="hp-results"><article class="hp-case fade">
+    + `<!-- OWNER CHECK: M1 moving story cards need real client stories in src/data/reviews.json --><div class="hp-results"><article class="hp-case fade">
       <div class="hp-case-l"><p class="eyebrow">${txt(pOf(results, /^Case Study$/))} · Healthcare</p><h3>${inner(results.find('h3').first())}</h3><ul class="chips">${caseTags.map((t) => `<li>${t}</li>`).join('')}</ul><p>${inner(pOf(results, /^This mental-health/))}</p><div class="btn-row">${linkBtns(pOf(results, /^Read the Full Case Study/))}</div></div>
       <div class="hp-case-r"><div class="hp-big-num">${speed.before} → ${speed.after}<small>page load time</small></div>
         <div class="hp-bar-row"><div class="hp-bar-label"><span>Before</span><span>${speed.before}</span></div><div class="hp-bar" aria-hidden="true"><i class="b1"></i></div></div>
@@ -281,10 +289,12 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
   // 8. Services: the 4 illustrated cards on top, the other 10 services as a compact link grid.
   const SVC: Record<string, string> = { 'Website Design': 'layout', 'Website Migration': 'move', 'Website Redesign': 'pen', 'Website Repair': 'wrench', 'Website SEO': 'search', 'Speed Optimization': 'gauge', 'Website Updates': 'refresh', 'White-Label Maintenance': 'tag', 'WordPress Backups': 'db', 'Malware Removal': 'shield' };
   const imageCards = ours.find('.card').toArray().filter((c) => $(c).find('img').length);
-  const svcCards = imageCards.map((c) => {
+  // Batch 4, D (phones only): an accordion with one card open (WordPress maintenance first); radios plus empty tap areas.
+  const svcRadios = imageCards.map((c, i) => `<input class="hp-sv-r sr-only" type="radio" name="hp-sv" id="sv-${i}" aria-label="${txt($(c).find('h3'))}"${i === 0 ? ' checked' : ''}>`).join('');
+  const svcCards = imageCards.map((c, i) => {
     const img = $(c).find('img');
     const ps = $(c).find('p').toArray();
-    return `<article class="card svc-img"><img src="${img.attr('src')}" alt="${img.attr('alt')}" width="${img.attr('width')}" height="${img.attr('height')}" loading="lazy"><div><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[0])}</p><div class="btn-wrap"><a class="btn ghost" href="${hrefOf(ps[1])}">${inner($(ps[1]).find('a'))}${icon('arrow')}</a></div></div></article>`;
+    return `<article class="card svc-img"><label class="hp-sv-tap" for="sv-${i}" aria-hidden="true"></label><img src="${img.attr('src')}" alt="${img.attr('alt')}" width="${img.attr('width')}" height="${img.attr('height')}" loading="lazy"><div><h3>${inner($(c).find('h3'))}</h3><p>${inner(ps[0])}</p><div class="btn-wrap"><a class="btn ghost" href="${hrefOf(ps[1])}">${inner($(ps[1]).find('a'))}${icon('arrow')}</a></div></div></article>`;
   }).join('');
   const svcLinks = explore.find('.card').toArray().map((c, i) => {
     const title = txt($(c).find('h3'));
@@ -292,7 +302,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     return `<a class="hp-svc-link" href="${$(c).find('a').attr('href')}">${badge(SVC[title] ?? 'wrench', (i % 6) + 1)}<span class="t">${title}${icon('arrow')}</span><span class="d">${body}</span><span class="sr-only">Explore service</span></a>`;
   }).join('');
   const servicesHtml = head(txt(pOf(care, /^Complete Website Support$/)), inner(ours.find('h2')), inner(ours.children('p').first()), 'Services')
-    + swipe('grid g4 hp-svc-cards', 'Our website maintenance services', svcCards)
+    + svcRadios + swipe('grid g4 hp-svc-cards', 'Our website maintenance services', svcCards)
     + `<div class="sub-head fade"><h3>${inner(explore.find('h2'))}</h3><p>${inner(explore.children('p').first())}</p></div>`
     + swipe('hp-svc-links', 'More website services', svcLinks)
     + `<p class="hp-not-sure">${inner(pOf(explore, /^Not sure/))}</p>`;
@@ -319,6 +329,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
       <input class="hp-tab-in sr-only" type="radio" name="cmp-tab" id="cmp-2"><label class="hp-tab" for="cmp-2">WMS vs freelancer vs agency</label>
       <div class="hp-panel p1">
         <h3>${inner(why.find('h3').first())}</h3>
+        ${/* Batch 4, C2 (phones only): a two-option toggle over the same table; the labels are drawn from data-t by CSS. */ ''}<div class="hp-c2" role="radiogroup" aria-label="${whyHead[0]}">${[1, 2].map((k) => `<input class="hp-c2-r sr-only" type="radio" name="c2-why" id="c2w-${k}" aria-label="${whyHead[k]}"${k === 2 ? ' checked' : ''}><label class="hp-c2-l" for="c2w-${k}" data-t="${whyHead[k]}" aria-hidden="true"></label>`).join('')}</div>
         <div class="tbl-wrap hp-desk"><table class="tbl"><thead><tr><th scope="col">${whyHead[0]}</th><th scope="col">${whyHead[1]}</th><th scope="col" class="th-good">${whyHead[2]}</th></tr></thead><tbody>${whyRows}</tbody></table></div>
         <div class="hp-acc hp-mob">${whyAcc}</div>
         <div class="grid g2 hp-ba"><div class="card"><h3>${inner($(before).find('h3'))}</h3><ul class="ba-list">${listOf(before, nope)}</ul></div><div class="card"><h3>${inner($(after).find('h3'))}</h3><ul class="ba-list">${listOf(after, tick)}</ul></div></div>
@@ -326,6 +337,7 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
       </div>
       <div class="hp-panel p2">
         <h3>How we compare</h3><p class="hp-panel-intro">${LABELS.compareIntro}</p>
+        <div class="hp-c2" role="radiogroup" aria-label="How we compare">${WHO.map((w, k) => `<input class="hp-c2-r sr-only" type="radio" name="c2-who" id="c2c-${k + 1}" aria-label="${w}"${k === 0 ? ' checked' : ''}><label class="hp-c2-l" for="c2c-${k + 1}" data-t="${w}" aria-hidden="true"></label>`).join('')}</div>
         <div class="hp-cmp-wrap hp-desk"><table class="hp-cmp"><thead><tr><td></td>${WHO.map((w, i) => `<th scope="col"${i === 0 ? ' class="us"' : ''}>${w}</th>`).join('')}</tr></thead><tbody>${compareRows.map(([h, us, fr, ag]) => `<tr><th scope="row">${h}</th><td class="us">${us}</td><td>${fr}</td><td>${ag}</td></tr>`).join('')}</tbody></table></div>
         <div class="hp-acc hp-mob">${cmpAcc}</div>
         <div class="btn-row center"><a class="btn primary" href="/monthly-website-maintenance-packages/">See plans &amp; pricing${icon('arrow')}</a></div>
@@ -346,11 +358,17 @@ export function renderHome(html: string, faqs: { q: string; a: string }[]) {
     + `<div class="hp-more-wrap">${more('guides-all', 'Show more guides', 'Show fewer guides')}<div class="grid g3 hp-guides hp-swipe" role="region" aria-label="Guides" tabindex="0">${guideCards}</div></div>
     <div class="btn-row center">${linkBtns(guides.children('p').last(), ['primary'])}</div>
     <div class="hp-countries">${head(LABELS.where, inner(countries.find('h2')), inner(countries.children('p').first()), 'Serve')}
-    <div class="grid g5">${countries.find('a').toArray().map((a) => {
-      const code = FLAG[txt(a)];
-      if (!code) throw new Error(`no flag for ${txt(a)}`);
-      return `<a class="card country" href="${$(a).attr('href')}"><img class="flag" src="/flags/${code}.svg" alt="${txt(a)} flag" width="40" height="30" loading="lazy">${inner(a)}</a>`;
-    }).join('')}</div></div>`;
+    ${(() => {
+      // Batch 4, F2 (phones only): the same 10 links become an auto-moving strip. The copy for the loop is aria-hidden,
+      // its links have tabindex="-1", and it is not shown on tablet and desktop.
+      const chips = countries.find('a').toArray().map((a) => {
+        const code = FLAG[txt(a)];
+        if (!code) throw new Error(`no flag for ${txt(a)}`);
+        return `<a class="card country" href="${$(a).attr('href')}"><img class="flag" src="/flags/${code}.svg" alt="${txt(a)} flag" width="40" height="30" loading="lazy">${inner(a)}</a>`;
+      });
+      const copy = chips.map((c) => c.replace('<a class="card country"', '<a class="card country dup" aria-hidden="true" tabindex="-1"'));
+      return `<div class="hp-cty" role="region" aria-label="${txt(countries.find('h2'))}" tabindex="0"><div class="grid g5">${chips.join('')}${copy.join('')}</div></div>`;
+    })()}</div>`;
 
   return `${heroHtml}
   ${trustHtml}

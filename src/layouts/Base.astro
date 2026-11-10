@@ -2,6 +2,7 @@
 import '../styles/site.css';
 import '../styles/footer.css';
 import '../styles/mobile.css';
+import '../styles/mobile-home.css';
 import foot from '../data/footer.json';
 import site from '../data/site.json';
 import { icon } from '../lib/icons';
@@ -206,6 +207,16 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         function footCols() { var mob = fm.matches; if (mob === lastMob) return; lastMob = mob; cols.forEach(function (c) { c.open = !mob; }); }
         footCols(); fm.addEventListener('change', footCols); addEventListener('load', footCols); addEventListener('resize', footCols);
         cols.forEach(function (c) { c.querySelector('summary').addEventListener('click', function (e) { if (!fm.matches) e.preventDefault(); }); });
+        // Batch 4, H3 2-step hero form (phones): Next checks the step 1 fields with reportValidity() before it moves on.
+        d.querySelectorAll('.qf-steps').forEach(function (f) {
+          var c = f.querySelector('.qf-s2'), nx = f.querySelector('.qf-next'), bk = f.querySelector('.qf-back'), mq = matchMedia('(max-width: 760px)');
+          if (!c || !nx || !bk) return;
+          function go(on) { c.checked = on; var t = f.querySelector(on ? '[name="name"]' : '[name="email"]'); if (t) t.focus(); }
+          nx.addEventListener('click', function () { if (f.elements.email.reportValidity() && f.elements.need.reportValidity()) go(true); });
+          bk.addEventListener('click', function () { go(false); });
+          f.addEventListener('keydown', function (e) { if (e.key === 'Enter' && mq.matches && !c.checked && e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'BUTTON') { e.preventDefault(); nx.click(); } });
+          mq.addEventListener('change', function (e) { if (!e.matches) c.checked = false; });
+        });
         var all = d.querySelectorAll('.fade');
         if ('IntersectionObserver' in window) { var o = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); o.unobserve(e.target); } }); }, { rootMargin: '0px 0px -6% 0px' }); all.forEach(function (e) { o.observe(e); }); } else all.forEach(function (e) { e.classList.add('in'); });
       })();

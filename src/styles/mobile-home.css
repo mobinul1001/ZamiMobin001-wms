@@ -1,0 +1,159 @@
+/* Homepage phone layouts (batch 4, owner-approved designs; same HTML on every width). Loaded after mobile.css. */
+/* Controls that exist only for the phone layouts are hidden on tablet and desktop. */
+.qf-step, .qf-next, .qf-back, .hp-c2, .hp-st-nav, .plan-tap, .hp-sv-tap { display: none; }
+.hp-countries .hp-cty .country.dup { display: none; }
+
+@media (max-width: 760px) {
+  /* 1. Hero form, H3: 2 steps (needs script; without it the form stays one step) */
+  :root .qf input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]), :root .qf select { min-height: 52px; font-size: 1rem; }
+  :root .qf textarea { font-size: 1rem; }
+  :root .qf label { font-size: .9375rem; }
+  .js .qf-steps .qf-two { display: contents; }
+  .js .qf-steps .qf-step { display: block; margin: 0; font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
+  .js .qf-steps .qf-step::before { content: "Step 1 of 2"; }
+  .js .qf-steps:has(.qf-s2:checked) .qf-step::before { content: "Step 2 of 2"; }
+  .js .qf-steps .qf-next { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 52px; background: var(--btn); }
+  .js .qf-steps .qf-next::before { content: "Next \2192"; }
+  .js .qf-steps .qf-back { display: inline-flex; align-items: center; justify-self: start; min-height: 44px; padding: 0 4px; border: 0; background: none; color: var(--link); font: inherit; font-weight: 700; cursor: pointer; }
+  .js .qf-steps .qf-back::before { content: "\2039\00a0 Back"; }
+  .js .qf-steps .qf-back:focus-visible, .js .qf-steps .qf-next:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  /* step 1: Email* and "What do you need?"* */
+  .js .qf-steps:not(:has(.qf-s2:checked)) :is(div:has(> [name="name"]), div:has(> [name="phone"]), div:has(> [name="website"]), div:has(> [name="message"]), button[type="submit"], .qf-back) { display: none; }
+  /* step 2: every other field of the desktop form (full name, Phone* required, website URL, description), Back and Submit */
+  .js .qf-steps:has(.qf-s2:checked) :is(div:has(> [name="email"]), div:has(> [name="need"]), .qf-next) { display: none; }
+  .js .qf-steps :is(input, select, textarea):user-invalid { border-color: var(--bad); }
+
+  /* 2. Trust bar, K2: big dark card 650+, two small cards (12+ years, 5.0 rated), full-width lines (Google Partner, 120+) */
+  :root .hp-proof { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 10px; align-items: stretch; }
+  :root .hp-proof .hp-hstats { display: contents; }
+  :root .hp-proof .hp-hstats > span { margin: 0; padding: 14px; border-radius: var(--r-m); text-align: left; }
+  :root .hp-proof .hp-hstats > span:nth-child(1) { grid-column: 1; grid-row: 1 / span 2; display: flex; flex-direction: column; justify-content: center; border: 0; background: linear-gradient(160deg, #2e1065, #4c1d95); }
+  :root .hp-proof .hp-hstats > span:nth-child(1) b { font-size: 2.5rem; background: none; color: #fff; -webkit-text-fill-color: #fff; }
+  :root .hp-proof .hp-hstats > span:nth-child(1) small { color: #e9d5ff; }
+  :root .hp-proof .hp-hstats > span:nth-child(2) { grid-column: 2; grid-row: 1; }
+  :root .hp-proof .hp-rate { grid-column: 2; grid-row: 2; padding: 12px; border-radius: var(--r-m); background: var(--card); border: 1px solid var(--card-line); }
+  :root .hp-proof .hp-rate .hp-g3 { display: none; }
+  :root .hp-proof .hp-gp { grid-column: 1 / -1; grid-row: 3; padding: 10px 14px; border-radius: var(--r-m); background: var(--mini); }
+  :root .hp-proof .hp-hstats > span:nth-child(3) { grid-column: 1 / -1; grid-row: 4; display: flex; align-items: baseline; gap: 8px; padding: 10px 14px; border: 0; background: var(--mini); }
+  :root .hp-proof .hp-hstats > span:nth-child(3) b { font-size: 1.125rem; }
+
+  /* 5. What's included, C1 + hero stack: the dark card first, then one-column rows (icon left), no equal heights */
+  :root .hp-bento { align-items: start; }
+  :root .hp-bento .hp-bc:not(.big) { display: grid; grid-template-columns: 44px minmax(0, 1fr); column-gap: 14px; align-items: start; padding: 16px; }
+  :root .hp-bento .hp-bc:not(.big) > .hp-bc-ic { grid-row: 1 / span 3; width: 44px; height: 44px; }
+  :root .hp-bento .hp-bc:not(.big) > h3 { margin-top: 0; font-size: 1.0625rem; }
+  :root .hp-bento .hp-bc:not(.big) > p { margin-top: 4px; font-size: .9375rem; }
+  :root .hp-bento .hp-bc:not(.big) > .hp-card-more { grid-column: 2; margin-top: 8px; }
+  :root .hp-bento .hp-bc.big .hp-big-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+  /* 6. Pricing, Q3: monthly / yearly switch, then 3 rows that open on tap (Growth open first) */
+  :root .plan-r ~ .plans { gap: 10px; }
+  :root .plan-r ~ .plans .plan { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 12px; padding: 16px 18px; }
+  :root .plan-r ~ .plans .plan > * { grid-column: 1 / -1; }
+  :root .plan-r ~ .plans .plan > h3 { grid-column: 1; grid-row: 1; margin: 0; }
+  :root .plan-r ~ .plans .plan > .price { grid-column: 2; grid-row: 1; margin: 0; }
+  :root .plan-r ~ .plans .plan .price b { font-size: 1.75rem; }
+  :root .plan-r ~ .plans .plan > .pop-tag { position: static; grid-row: 2; justify-self: start; margin-top: 6px; transform: none; }
+  :root .plan-r ~ .plans .plan-tap { display: block; position: absolute; inset: 0 0 auto; height: 76px; z-index: 2; cursor: pointer; }
+  :root .plan-r ~ .plans .plan > :is(.note, .annual, .btn, .feat) { display: none; }
+  #pr-0:checked ~ .plans .plan:nth-child(1) > :is(.note, .annual, .btn, .feat),
+  #pr-1:checked ~ .plans .plan:nth-child(2) > :is(.note, .annual, .btn, .feat),
+  #pr-2:checked ~ .plans .plan:nth-child(3) > :is(.note, .annual, .btn, .feat) { display: revert; }
+  #pr-0:checked ~ .plans .plan:nth-child(1) > .btn, #pr-1:checked ~ .plans .plan:nth-child(2) > .btn, #pr-2:checked ~ .plans .plan:nth-child(3) > .btn { display: inline-flex; }
+  #pr-0:checked ~ .plans .plan:nth-child(1), #pr-1:checked ~ .plans .plan:nth-child(2), #pr-2:checked ~ .plans .plan:nth-child(3) { border-color: var(--accent); }
+  #pr-0:checked ~ .plans .plan:nth-child(1) .plan-tap, #pr-1:checked ~ .plans .plan:nth-child(2) .plan-tap, #pr-2:checked ~ .plans .plan:nth-child(3) .plan-tap { display: none; }
+  #pr-0:focus-visible ~ .plans .plan:nth-child(1), #pr-1:focus-visible ~ .plans .plan:nth-child(2), #pr-2:focus-visible ~ .plans .plan:nth-child(3) { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+  /* 7. Comparison, C2: a toggle over the same tables (the copies in .hp-acc stay in the HTML) */
+  :root .hp-panel .hp-c2 { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 4px; margin-bottom: var(--s2); padding: 4px; border-radius: 14px; background: var(--mini); border: 1px solid var(--card-line); }
+  :root .hp-c2-l { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 6px 8px; border-radius: 10px; color: var(--head); font-weight: 700; font-size: .9375rem; text-align: center; cursor: pointer; }
+  :root .hp-c2-l::before { content: attr(data-t); }
+  :root .hp-c2-r:checked + .hp-c2-l { background: var(--btn); color: #fff; }
+  :root .hp-c2-r:focus-visible + .hp-c2-l { outline: 3px solid var(--focus); outline-offset: 2px; }
+  :root .hp-panel :is(.tbl-wrap, .hp-cmp-wrap).hp-desk { display: block; }
+  :root .hp-panel .hp-acc.hp-mob { display: none; }
+  :root main .hp-panel .tbl > tbody > tr { --n: 1; }
+  .hp-panel:has(#c2w-2:checked) .tbl > tbody > tr > :nth-child(2), .hp-panel:has(#c2w-1:checked) .tbl > tbody > tr > :nth-child(3) { display: none; }
+  :root .hp-cmp { display: block; width: 100%; }
+  :root .hp-cmp > thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  :root .hp-cmp > tbody { display: grid; gap: 10px; }
+  :root .hp-cmp > tbody > tr { display: grid; border: 1px solid var(--card-line); border-radius: var(--r-m); overflow: hidden; background: var(--card); }
+  :root .hp-cmp > tbody > tr > * { display: block; padding: 10px 14px; border: 0; text-align: left; }
+  :root .hp-cmp > tbody > tr > th { background: var(--accent); color: #fff; }
+  .hp-panel:has(#c2c-1:checked) .hp-cmp td:not(:nth-child(2)), .hp-panel:has(#c2c-2:checked) .hp-cmp td:not(:nth-child(3)), .hp-panel:has(#c2c-3:checked) .hp-cmp td:not(:nth-child(4)) { display: none; }
+
+  /* 8. How it works, D2: one step at a time, progress bar, "Step N of 5", previous / next */
+  :root .hp-st-r ~ .hp-steps { counter-reset: hpst; display: block; padding-top: 16px; }
+  :root .hp-st-r ~ .hp-steps::before { top: 0; bottom: auto; left: 0; right: auto; z-index: 1; width: 20%; height: 6px; opacity: 1; background: var(--grad); transition: width .25s ease; }
+  :root .hp-st-r ~ .hp-steps::after { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; border-radius: 3px; background: var(--line); }
+  #hs-1:checked ~ .hp-steps::before { width: 40%; }
+  #hs-2:checked ~ .hp-steps::before { width: 60%; }
+  #hs-3:checked ~ .hp-steps::before { width: 80%; }
+  #hs-4:checked ~ .hp-steps::before { width: 100%; }
+  :root .hp-st-r ~ .hp-steps > .hp-step { counter-increment: hpst; display: none; grid-template-columns: minmax(0, 1fr); padding: 20px; }
+  #hs-0:checked ~ .hp-steps > .hp-step:nth-child(1), #hs-1:checked ~ .hp-steps > .hp-step:nth-child(2), #hs-2:checked ~ .hp-steps > .hp-step:nth-child(3), #hs-3:checked ~ .hp-steps > .hp-step:nth-child(4), #hs-4:checked ~ .hp-steps > .hp-step:nth-child(5) { display: grid; }
+  :root .hp-st-r ~ .hp-steps > .hp-step::before { content: "Step " counter(hpst) " of 5"; font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
+  :root .hp-st-r ~ .hp-steps .hp-step-top { flex-direction: row; justify-content: space-between; margin-top: 8px; }
+  :root .hp-st-r ~ .hp-steps .hp-step-n { font-size: 2.5rem; }
+  :root .hp-st-r ~ .hp-steps .hp-st-nav { display: flex; justify-content: space-between; order: 9; margin-top: var(--s2); }
+  :root .hp-st-nav label, :root .hp-st-nav i { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; }
+  :root .hp-st-nav label { border: 1px solid var(--line-strong); color: var(--head); font-size: 1.5rem; cursor: pointer; }
+  :root .hp-st-nav .prev::before { content: "\2039"; }
+  :root .hp-st-nav .next::before { content: "\203A"; }
+  :root .hp-st-nav .next { border: 0; background: var(--btn); color: #fff; }
+  #hs-0:focus-visible ~ .hp-steps > .hp-step:nth-child(1), #hs-1:focus-visible ~ .hp-steps > .hp-step:nth-child(2), #hs-2:focus-visible ~ .hp-steps > .hp-step:nth-child(3), #hs-3:focus-visible ~ .hp-steps > .hp-step:nth-child(4), #hs-4:focus-visible ~ .hp-steps > .hp-step:nth-child(5) { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+  /* 10. Services cards, D: accordion, one open; the card image as a small tinted icon, then the title */
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img { position: relative; display: grid; grid-template-columns: 56px minmax(0, 1fr); align-items: center; gap: 0 14px; padding: 12px; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img > img { width: 56px; height: 56px; aspect-ratio: 1; border-radius: 14px; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img > div { padding: 0; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img h3 { font-size: 1.0625rem; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img h3::after { content: "+"; float: right; color: var(--accent); font-weight: 800; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img :is(p, .btn-wrap) { display: none; }
+  :root .hp-sv-tap { display: block; position: absolute; inset: 0; z-index: 2; cursor: pointer; }
+  #sv-0:checked ~ .hp-svc-cards > .svc-img:nth-child(1), #sv-1:checked ~ .hp-svc-cards > .svc-img:nth-child(2), #sv-2:checked ~ .hp-svc-cards > .svc-img:nth-child(3), #sv-3:checked ~ .hp-svc-cards > .svc-img:nth-child(4) { align-items: start; border-color: var(--accent); }
+  #sv-0:checked ~ .hp-svc-cards > .svc-img:nth-child(1) :is(p, .btn-wrap), #sv-1:checked ~ .hp-svc-cards > .svc-img:nth-child(2) :is(p, .btn-wrap), #sv-2:checked ~ .hp-svc-cards > .svc-img:nth-child(3) :is(p, .btn-wrap), #sv-3:checked ~ .hp-svc-cards > .svc-img:nth-child(4) :is(p, .btn-wrap) { display: block; }
+  #sv-0:checked ~ .hp-svc-cards > .svc-img:nth-child(1) .hp-sv-tap, #sv-1:checked ~ .hp-svc-cards > .svc-img:nth-child(2) .hp-sv-tap, #sv-2:checked ~ .hp-svc-cards > .svc-img:nth-child(3) .hp-sv-tap, #sv-3:checked ~ .hp-svc-cards > .svc-img:nth-child(4) .hp-sv-tap { display: none; }
+  #sv-0:checked ~ .hp-svc-cards > .svc-img:nth-child(1) h3::after, #sv-1:checked ~ .hp-svc-cards > .svc-img:nth-child(2) h3::after, #sv-2:checked ~ .hp-svc-cards > .svc-img:nth-child(3) h3::after, #sv-3:checked ~ .hp-svc-cards > .svc-img:nth-child(4) h3::after { content: "\2013"; }
+  #sv-0:focus-visible ~ .hp-svc-cards > .svc-img:nth-child(1), #sv-1:focus-visible ~ .hp-svc-cards > .svc-img:nth-child(2), #sv-2:focus-visible ~ .hp-svc-cards > .svc-img:nth-child(3), #sv-3:focus-visible ~ .hp-svc-cards > .svc-img:nth-child(4) { outline: 3px solid var(--focus); outline-offset: 2px; }
+  :root .hp-sv-r ~ .hp-svc-cards > .svc-img .btn-wrap { margin-top: 10px; }
+
+  /* 11. More website services, M2: full-width cards, icon, title, one line, arrow */
+  :root .hp-svc-links .hp-svc-link { display: grid; grid-template-columns: 40px minmax(0, 1fr); column-gap: 12px; align-items: center; }
+  :root .hp-svc-links .hp-svc-link .badge { grid-row: 1 / span 2; }
+  :root .hp-svc-links .hp-svc-link .d { grid-column: 2; font-size: .9375rem; }
+
+  /* 12. Guides, F: numbered list, category under each title; "Show more guides" stays */
+  :root .hp-guides { counter-reset: hpg; gap: 0; border-radius: var(--r-m); border: 1px solid var(--card-line); background: var(--card); }
+  :root .hp-guides > .guide { counter-increment: hpg; display: grid; grid-template-columns: 36px minmax(0, 1fr); column-gap: 12px; padding: 16px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; background: none; }
+  :root .hp-more-wrap .hp-guides > .guide.x { display: none; }
+  :root .hp-more-in:checked ~ .hp-guides > .guide.x { display: grid; }
+  :root .hp-guides > .guide::before { content: counter(hpg); grid-row: 1 / span 4; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: var(--eyebrow-bg); color: var(--eyebrow); font-weight: 800; }
+  :root .hp-guides > .guide > * { grid-column: 2; }
+  :root .hp-guides > .guide > h3 { order: 1; font-size: 1.0625rem; }
+  :root .hp-guides > .guide > .tag { order: 2; margin: 4px 0 0; }
+  :root .hp-guides > .guide > p:not(.tag) { order: 3; margin: 6px 0 10px; font-size: .9375rem; }
+  :root .hp-guides > .guide > .btn { order: 4; }
+
+  /* 13. FAQ, E2: accent-edge cards with + / – (6 shown, the rest behind "Show all questions") */
+  :root .hp-more-wrap .faq details { border-left: 4px solid var(--accent); }
+
+  /* 14. Countries, F2: auto-moving chip strip (the loop copy is aria-hidden); people can drag it */
+  :root .hp-cty { overflow-x: auto; scrollbar-width: none; -webkit-mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+  :root .hp-cty::-webkit-scrollbar { display: none; }
+  :root .hp-countries .hp-cty .grid.g5 { display: flex; gap: 10px; width: max-content; padding-block: 4px; animation: hp-mq 40s linear infinite; }
+  :root .hp-countries .hp-cty .country.card { flex: none; flex-direction: row; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 99px; font-size: .9375rem; }
+  :root .hp-countries .hp-cty .country.dup { display: flex; }
+  :root .hp-cty:hover .grid.g5, :root .hp-cty:focus-within .grid.g5, :root .hp-cty:active .grid.g5 { animation-play-state: paused; }
+  :root .hp-cty:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+  /* 15. Monthly report, I1: ring on top, rows under it, the Example tag inside, nothing clipped */
+  :root .hp-report { padding: 18px; }
+  :root .hp-report .hp-ring { flex-direction: column; align-items: center; text-align: center; }
+  :root .hp-report-rows b { text-align: right; }
+}
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  :root .hp-cty { -webkit-mask: none; mask: none; overflow: visible; }
+  :root .hp-countries .hp-cty .grid.g5 { flex-wrap: wrap; width: auto; animation: none; }
+  :root .hp-countries .hp-cty .country.dup { display: none; }
+}
