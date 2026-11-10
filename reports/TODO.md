@@ -14,3 +14,5 @@ Not done on purpose. The owner asked to focus on content, pages and SEO first.
 | 8 | Native pt-BR review of the Brazil page labels marked "ours" (reports/batch-2/FINAL.md, Batch 2b) | Waiting for the owner. | |
 | 9 | Prices on SEO, speed and white-label cards differ from the live site today (reports/price-mismatches.md) | Waiting for the owner. | Change in src/data/prices.json liveSitePrices and the page text together. |
 | 10 | Images with old plan prices ($95 / $195 / $395) or badges ("99.9% uptime", "24/7") | Waiting for the owner. | Same method as reports/batch-2/images-replaced.md if approved. |
+| 11 | Batch 3 owner questions (backup $99 restore, design FAQ tiers, SEO audit $199, repair/update FAQ tiers, footer phone/NAP, /works/ domain, Tier A proposals) | Waiting for the owner. | reports/final-gap/FINAL.md |
+| 12 | Checks not run in batch 3 (parity, page checks, browser tests, design QA, Lighthouse, screenshots) | Run when the owner writes "now run checks". | Only plain builds were run. |
