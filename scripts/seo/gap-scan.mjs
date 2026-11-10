@@ -1,0 +1,43 @@
+// Batch 3 gap audit: reads the last dist/ (no browser, no test run) and prints facts for reports/final-gap/gap-audit.md.
+import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
+import * as cheerio from 'cheerio';
+const walk = (d) => readdirSync(d).flatMap((n) => { const p = join(d, n); return statSync(p).isDirectory() ? walk(p) : n === 'index.html' ? [p] : []; });
+const pageOf = (f) => '/' + f.split(/[\\/]/).slice(1, -1).join('/') + (f.split(/[\\/]/).length > 2 ? '/' : '');
+const redirects = new Map(readFileSync('dist/_redirects', 'utf8').split('\n').map((l) => l.trim().split(/\s+/)).filter((x) => x.length >= 2 && x[0].startsWith('/')).map(([a, b]) => [a, b]));
+const SERVICE = ['/website-redesign-services/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-support-services/', '/website-update-services/', '/wordpress-backup-services/', '/white-label-website-maintenance-services-for-agencies/', '/wms-partner-program/', '/ecommerce-website-maintenance-packages/', '/shopify-website-maintenance-packages/', '/website-repair-services/', '/website-hacked-recovery-services/', '/wordpress-malware-removal-service/', '/website-migration-services/', '/wordpress-website-maintenance-packages/', '/monthly-website-maintenance-packages/'];
+const pages = {}, inbound = {};
+for (const f of walk('dist')) {
+  const p = pageOf(f); if (p.startsWith('/admin')) continue;
+  const html = readFileSync(f, 'utf8'); const $ = cheerio.load(html);
+  const robots = $('meta[name="robots"]').attr('content') ?? '';
+  const ld = $('script[type="application/ld+json"]').toArray().map((s) => { try { return JSON.parse($(s).text()); } catch { return {}; } });
+  const nodes = ld.flatMap((d) => [d, ...(d['@graph'] ?? [])]);
+  const types = new Set(nodes.flatMap((n) => [].concat(n['@type'] ?? [])));
+  const faqSchema = nodes.filter((n) => [].concat(n['@type'] ?? []).includes('FAQPage')).flatMap((n) => [].concat(n.mainEntity ?? [])).map((q) => String(q.name ?? ''));
+  const mainText = $('main').text().replace(/\s+/g, ' ');
+  const faqVisibleMissing = faqSchema.filter((q) => !mainText.includes(q.replace(/\s+/g, ' ').trim()));
+  const links = $('a[href^="/"]').toArray().map((a) => $(a).attr('href').split('#')[0]).filter(Boolean);
+  for (const l of new Set($('main a[href^="/"]').toArray().map((a) => $(a).attr('href').split('#')[0]))) (inbound[l] ??= new Set()).add(p);
+  const toRedirect = [...new Set(links.filter((l) => redirects.has(l) && !l.startsWith('/wp-content')))];
+  const og = ['og:title', 'og:description', 'og:image'].filter((k) => !$(`meta[property="${k}"]`).attr('content'));
+  const tw = ['twitter:card', 'twitter:image'].filter((k) => !$(`meta[name="${k}"]`).attr('content'));
+  const phoneHeaderFooter = /\+?\d[\d\s().-]{8,}\d/.test($('header').text() + ' ' + $('footer').text());
+  const nap = /Wall St|New York, NY/i.test($('footer').text() + $('.cta-sec').text());
+  pages[p] = { robots, types: [...types], faqSchema: faqSchema.length, faqVisibleMissing, toRedirect, og, tw, phoneHeaderFooter, nap, rating: types.has('AggregateRating') || types.has('Review') };
+}
+const real = Object.keys(pages).filter((p) => !pages[p].robots.includes('noindex') && p !== '/404/');
+const orphans = real.filter((p) => p !== '/' && !(inbound[p]?.size > [...(inbound[p] ?? [])].filter((x) => x === p).length));
+const sum = (fn) => real.filter(fn);
+console.log('real pages', real.length);
+console.log('orphans (no inbound link from another page body):', orphans.join(' ') || 'none');
+console.log('pages linking to a redirected URL:', sum((p) => pages[p].toRedirect.length).map((p) => `${p} -> ${pages[p].toRedirect.join(',')}`).join(' | ') || 'none');
+console.log('missing og tags:', sum((p) => pages[p].og.length).map((p) => `${p}:${pages[p].og}`).join(' ') || 'none');
+console.log('missing twitter tags:', sum((p) => pages[p].tw.length).length, sum((p) => pages[p].tw.length).slice(0, 8).map((p) => `${p}:${pages[p].tw}`).join(' '));
+console.log('no BreadcrumbList:', sum((p) => !pages[p].types.includes('BreadcrumbList')).join(' ') || 'none');
+console.log('service pages without Service schema:', SERVICE.filter((p) => pages[p] && !pages[p].types.includes('Service')).join(' ') || 'none');
+console.log('no Organization:', sum((p) => !pages[p].types.includes('Organization')).length);
+console.log('AggregateRating/Review:', sum((p) => pages[p].rating).join(' ') || 'none');
+console.log('FAQ schema questions not visible:', sum((p) => pages[p].faqVisibleMissing.length).map((p) => `${p}(${pages[p].faqVisibleMissing.length}: ${pages[p].faqVisibleMissing[0].slice(0, 50)})`).join(' | ') || 'none');
+console.log('phone number in header/footer:', sum((p) => pages[p].phoneHeaderFooter).length, 'pages');
+console.log('NAP (address) outside the homepage:', sum((p) => p !== '/' && pages[p].nap).length, 'pages');
