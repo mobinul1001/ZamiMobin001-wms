@@ -1,0 +1,40 @@
+/* Service-type, pricing, plans, country, about and contact templates on phones (batch 4). Same HTML; CSS only.
+   The section accordions (details.sx), Read more blocks and the 4-card speed pricing stay as they are. */
+@media (max-width: 760px) {
+  /* The "swipe sideways" hints: nothing scrolls sideways on phones any more. They stay in the HTML. */
+  :root .pp-swipe { display: none; }
+
+  /* Picker / "Find your fix" tabs: radio tabs in a 2-column grid, never a swipe row */
+  :root .rp-pick-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  :root .rp-pick-nav .rp-tab { min-height: 56px; font-size: .9375rem; }
+
+  /* Included grid: one-line rows (icon left, title, text) like the homepage C1; "Show N more" stays */
+  :root .rp-inc-grid { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  :root .rp-inc-grid .rp-inc { grid-template-columns: 40px minmax(0, 1fr); column-gap: 14px; align-items: start; padding: 14px 16px; }
+  :root .rp-inc-grid .rp-inc > .pp-tile { grid-row: 1 / span 2; }
+  :root .rp-inc-grid .rp-inc > :not(.pp-tile) { grid-column: 2; }
+  :root .rp-inc-grid .rp-inc h3 { font-size: 1.0625rem; }
+  :root .rp-inc-grid .rp-inc p { font-size: .9375rem; }
+
+  /* Comparison tab row with 5 comparisons, L1: tiles in a 2-column grid, the 5th spans the full width */
+  :root .rp-cmp-nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; padding: 0; }
+  :root .rp-cmp-nav .rp-tab { flex: none; justify-content: center; min-height: 64px; padding: 10px 12px; text-align: center; font-size: .9375rem; line-height: 1.3; }
+  :root .rp-cmp-nav .rp-tab:nth-child(odd):last-child { grid-column: 1 / -1; }
+
+  /* Case stories (.rp-stories / Results.astro): one column, no swipe (M1 waits for real stories) */
+  :root .rp-stories { display: grid; grid-auto-flow: row; grid-template-columns: minmax(0, 1fr); gap: 12px; }
+
+  /* Price lines and plan toggles never clip at 320px */
+  :root .pp-toggle { flex-wrap: wrap; }
+  :root .pp-toggle label { min-height: 44px; }
+
+  /* Section accordions: 44px rows */
+  :root details.sx > summary { min-height: 52px; }
+
+  /* FAQ, E2, on every template: accent-edge cards */
+  :root main :is(.faq, .pp-faq) details { border-left: 4px solid var(--accent); }
+
+  /* Country chips on service pages wrap in 2 columns (the moving strip, F2, is on the homepage) */
+  :root main .rp-countries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  :root main .rp-countries a { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+}
