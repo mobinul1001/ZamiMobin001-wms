@@ -29,21 +29,24 @@ Branch `b2-content`. Nothing merged, nothing pushed.
 - **Per-page OG images:** every page has an og:image, so none were generated; 26 pages use the logo.
 - **CMS:** needs the owner's repo name and a sign-in, and a test on the preview.
 
+## Batch 4, Parts 1 to 3 (2026-11-10)
+| Part | Status | Commit |
+|---|---|---|
+| 1. FAQ decisions: backup ($29 / $59 / $199+ plans, no emergency restore $99), design ($1,499 / $2,999 / from $5,499, budget dropdown back to the live options), SEO audit $199 removed everywhere, repair (owner wording, no turnaround), update ($49 / $99 / $299 one-time, included in every plan from $79/month); body, faqs and FAQ schema together; before and after in reports/price-mismatches.md | done | f7bf6e6 |
+| 2. Footer phone and address in the HTML on the homepage only (Organization JSON-LD unchanged); contact page: the phone and address list items and the side-panel phone are gone (email and form only) | done | fd5af00 |
+| 3. /works/ client domain kept (owner) | done, no change | - |
+Build after Part 3: 0 failures, 45 warnings.
+
 ## Owner questions (most important first)
-1. **Backup page:** "Emergency restore without a plan starts at $99" is not on the live page (the live tiers are $29 / $59 / $199 a month). Keep it, change it to the live sentence, or remove it?
-2. **Design FAQ:** it says $799 / $1,499 / $2,499; the cards (live) say $1,499 / $2,999 / from $5,499. Use the live sentence (proposal in price-mismatches.md)?
-3. **SEO audit $199:** not on the live page. Keep the sentence (collapsed, not a card), or remove it?
-4. **Repair and update FAQs** use other tiers than the live page (repair $99–$899 ranges vs the confirmed "From $49"; update tiers $49 / $99 / $299 vs the master plans). Which wins?
-5. **Footer phone and address on every page:** remove them from the footer, and keep them on the homepage and contact page?
-6. **/works/ client domain with "Bangladesh":** keep or remove?
-7. **Phase 2 Tier A proposals:**
+1. **Phase 2 Tier A proposals:**
    - the UK layout;
    - 6 FAQs;
    - bylines on 8 articles;
    - the WordPress cost title "$95–$395";
    - the small business "$95+" stat;
    - the homepage swipe rows.
-8. **Native review** of the Portuguese labels on the Brazil page.
-9. **Analytics and EU/UK consent:** GA4 and Clarity do not load today.
+2. **Native review** of the Portuguese labels on the Brazil page.
+3. **Analytics and EU/UK consent:** GA4 and Clarity do not load today.
+4. **Phone outside the footer:** the get-a-free-quote, audit and scanner side panels and the thank-you page still show the phone (not footer, so not changed). Remove there too?
 
 No screenshots, tests or design checks were run, as ordered.
