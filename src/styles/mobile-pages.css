@@ -38,3 +38,25 @@
   :root main .rp-countries { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
   :root main .rp-countries a { display: flex; align-items: center; gap: 8px; min-height: 44px; }
 }
+
+/* Blog article, P1 (non-Tier-A articles only, .post-grid.p1): floating dark "On this page" pill bottom-left that
+   opens the list of the article's H2 anchors (the existing details.toc-m), article text 17.5px / 1.7.
+   The existing "Quick answer" box stays first in the text where the article has one. */
+@media (max-width: 760px) {
+  :root .post-grid.p1 .prose :is(p, li) { font-size: 1.09375rem; line-height: 1.7; }
+  :root .post-grid.p1 .toc-m { position: fixed; left: 12px; bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 34; max-width: calc(100vw - 24px); margin: 0; padding: 0; border: 0; border-radius: 99px; background: #15102e; box-shadow: 0 10px 28px rgba(15, 16, 46, .35); }
+  :root .post-grid.p1 .toc-m > summary { min-height: 48px; padding: 0 20px; color: #fff; list-style: none; }
+  :root .post-grid.p1 .toc-m > summary::-webkit-details-marker { display: none; }
+  :root .post-grid.p1 .toc-m[open] { width: calc(100vw - 24px); max-height: 70vh; overflow-y: auto; border-radius: var(--r-m); }
+  :root .post-grid.p1 .toc-m[open] > a { padding: 0 20px; border-top-color: rgba(255, 255, 255, .14); color: #fff; font-size: .9375rem; }
+  :root .post-grid.p1 .toc-m :focus-visible { outline: 3px solid #fff; outline-offset: -3px; }
+  :root .post-grid.p1 .answer { margin-top: 0; }
+}
+
+/* Blog index, country, about and contact leftovers */
+@media (max-width: 760px) {
+  :root .post-list { grid-template-columns: minmax(0, 1fr); }
+  :root .post-list .post-link { min-height: 44px; }
+  :root main .side-contact a, :root main .side-badges a { display: inline-flex; align-items: center; min-height: 44px; }
+  :root main .grid.g4.gap-top, :root main .grid.g2, :root main .grid.g3 { grid-template-columns: minmax(0, 1fr); }
+}

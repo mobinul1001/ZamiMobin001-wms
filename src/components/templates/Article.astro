@@ -29,7 +29,8 @@ const related = topic ? [1, 2, 3, 4].map((n) => topic.posts[(topic.posts.indexOf
   <h1>{entry.data.h1}</h1>
 </div></section>
 <div class="wrap">
-  <div class:list={['post-grid', { 'no-toc': toc.length < 3 }]}>
+  {/* Batch 4, P1: the phone article layout (contents pill, text size) only on non-Tier-A pages (class only, no text change). */}
+  <div class:list={['post-grid', { 'no-toc': toc.length < 3, p1: offer }]}>
     <article>
       {toc.length >= 3 && <details class="toc-m"><summary>On this page</summary>{toc.map((h: { slug: string; text: string }) => <a href={`#${h.slug}`}>{h.text}</a>)}</details>}
       {offer && (
