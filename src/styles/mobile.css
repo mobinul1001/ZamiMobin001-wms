@@ -1,0 +1,104 @@
+/* Batch 4 mobile redesign (plan-files/batch-4/MOBILE-REDESIGN-PROMPT.md), phones only.
+   Everything here is inside max-width media queries, so desktop (1081px and up) is unchanged.
+   The site's existing phone breakpoint is 760px; these rules use the same edge so both sets switch together.
+   Selectors start with :root so they win over the page stylesheets, whatever order the bundle loads them in.
+   The footer is not touched (owner, batch 4). */
+
+@media (max-width: 760px) {
+  /* ---------- 1. No sideways swipe (allowed: the auto-moving .hp-mq / .mg-marquee strips and pre) ---------- */
+  :root .hp-swipe { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; overflow: visible; scroll-snap-type: none; margin-inline: 0; padding: 0; }
+  :root .hp-swipe > * { flex: none; scroll-snap-align: none; min-width: 0; }
+  :root .rp-stories, :root .rp-cmp-nav { overflow-x: visible; scroll-snap-type: none; margin-inline: 0; }
+  :root .rp-stories > * { scroll-snap-align: none; }
+  :root .tbl-wrap, :root .pp-tscroll, :root .rp-tscroll, :root .sv-tscroll, :root .hp-cmp-wrap { overflow: visible; max-width: 100%; border: 0; background: transparent; }
+  :root main .card table { overflow: visible; }
+
+  /* min-width:0 on grid and flex children, so long words wrap instead of widening the page */
+  :root main :is(.grid, .cards, .btn-row, .qf-two, .hp-results, .hp-bento, .hp-hero-g, .hp-proof, .hp-stats, .callout, .cell, .rp-cmp-nav, .rp-stories, .chips) > * { min-width: 0; }
+  :root main :is(.grid, .hp-results, .hp-bento, .hp-hero-g) { grid-template-columns: minmax(0, 1fr); }
+  :root main img, :root main svg, :root main video { max-width: 100%; }
+  :root main :is(h1, h2, h3, h4, p, li, dd, td, th, a, summary) { overflow-wrap: anywhere; }
+
+  /* nowrap that can clip at 320px */
+  :root .hp-report-rows b, :root .hp-ring b, :root .pp-toggle label, :root .pp-toggle .save, :root .rp-priceline, :root .hp-tb-link, :root .log span:last-child { white-space: normal; }
+  :root .rp-priceline { flex-wrap: wrap; }
+
+  /* ---------- 2. Font floor: body 17px (site default), secondary 15px, uppercase labels 13px ---------- */
+  :root :is(.hp-proof, .hp-gp small, .hp-hstats small, .hp-float, .qf label, .qf-foot, .hp-trust-t, .hp-stat span, .hp-list, .hp-big-stats span,
+    .hp-bar-label, .hp-metrics strong, .hp-tq small, .hp-av, .hp-src, .hp-ph-note, .hp-ring span, .hp-report-rows li, .hp-report-note, .hp-svc-link .d,
+    .hp-bento .hp-bc > p, .hp-card-more, .hp-card-more .hp-list, .hp-countries .country.card,
+    .hk-status p:last-of-type, .hk-chips li, .mw-cards .card p:last-child:not(:first-child), .mw-close label, .mg-inc p,
+    .pp-swipe, .pp-proof li, .pp-work-stats span, .pp-t th, .pp-t td, .pp-chips li, .pp-hero .crumbs, .rp-priceline, .sv-pnote summary,
+    .hero .offer li, .crumbs) { font-size: .9375rem; }
+  :root :is(.drop-h, .mnav-h, .hp-label, .hp-report-kicker, .hp-chip, .hp-acc dt, .hp-big-label, .hp-cmp thead > *,
+    .plans-pg .eyebrow, .pp-tag, .pp-toggle .save, .sx > summary .eyebrow, .pp-hero .eyebrow,
+    .rp-k, .rp-pick-k, .rp-cmp-k, .rp-chip, .rp-faq-label, .rp-subhd, .rp-guide-hd .eyebrow, .rp-hero .eyebrow,
+    .sv-ex-tag, .post-offer .post-offer-k) { font-size: .8125rem; letter-spacing: .04em; }
+  :root .prose pre { font-size: .875rem; }
+
+  /* ---------- 3. Tap targets: 44px for links in rows, 52px for buttons; buttons full width in cards ---------- */
+  :root main .btn, :root .mnav .btn, :root .qf button { min-height: 52px; }
+  :root main :is(.card, .hp-bc, .hp-case, .final, .callout, .post-offer) .btn { width: 100%; justify-content: center; }
+  :root main :is(.btn-row, .cta-row) { flex-direction: column; align-items: stretch; }
+  :root main :is(.btn-row, .cta-row) > .btn { width: 100%; justify-content: center; }
+  :root main summary, :root main .crumbs a, :root main .chips a, :root main .hp-tab, :root main .rp-cmp-nav label,
+  :root main label.hp-more-btn, :root main .hp-svc-link, :root main .country { min-height: 44px; }
+  :root main .crumbs a { display: inline-flex; align-items: center; }
+  :root main :is(input:not([type="checkbox"]):not([type="radio"]), select, textarea) { font-size: 1rem; }
+  :root main :is(input:not([type="checkbox"]):not([type="radio"]), select) { min-height: 52px; }
+
+  /* ---------- 4. Phone tables, Z3: one block per row, purple band with the row name, labelled cells under it ---------- */
+  /* The thead stays in the HTML for screen readers; each cell's label comes from data-label (src/middleware.ts). */
+  :root main table:not(.hp-cmp) { display: block; width: 100%; min-width: 0; max-width: 100%; border: 0; border-collapse: separate; background: transparent; }
+  :root main table:not(.hp-cmp) > thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  :root main table:not(.hp-cmp) > tbody { display: grid; gap: 12px; }
+  :root main table:not(.hp-cmp) > tbody > tr { --n: 2; display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); border: 1px solid var(--card-line); border-radius: var(--r-m); overflow: hidden; background: var(--card); }
+  :root main table:not(.hp-cmp) > tbody > tr:not(:has(> :nth-child(3))) { --n: 1; }
+  :root main table:not(.hp-cmp) > tbody > tr:has(> :nth-child(4)):not(:has(> :nth-child(5))) { --n: 3; }
+  :root main table:not(.hp-cmp) > tbody > tr > * { display: block; position: static; width: auto; min-width: 0; padding: 10px 14px; border: 0; text-align: left; box-shadow: none; font-size: .9375rem; }
+  :root main table:not(.hp-cmp) > tbody > tr > :first-child { grid-column: 1 / -1; background: var(--accent); color: #fff; font-weight: 700; font-size: 1rem; }
+  :root main table:not(.hp-cmp) > tbody > tr > :first-child :is(a, strong, b, span) { color: inherit; }
+  :root main table:not(.hp-cmp) > tbody > tr > :not(:first-child) + :not(:first-child) { border-left: 1px solid var(--line); }
+  :root main table:not(.hp-cmp) > tbody > tr > :not(:first-child)[data-label]:not([data-label=""])::before { content: attr(data-label); display: block; margin-bottom: 4px; font-size: .8125rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+  /* 4+ data columns: a 2-column grid of labelled cells under the band */
+  :root main table:not(.hp-cmp) > tbody > tr:has(> :nth-child(5)) > :not(:first-child) { border-left: 0; border-top: 1px solid var(--line); }
+  :root main table:not(.hp-cmp) > tbody > tr:has(> :nth-child(5)) > :nth-child(odd):not(:first-child) { border-left: 1px solid var(--line); }
+  /* The tinted "our plan / with maintenance" column keeps its tint */
+  :root main table:not(.hp-cmp) > tbody > tr > :is(.td-good, .w, .us) { background: var(--with, color-mix(in srgb, var(--accent) 10%, var(--card))); }
+
+  /* ---------- 5. Sticky bottom bar, G1, on every template ---------- */
+  :root .mbar { display: flex; }
+  :root body:has(.mbar) { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  :root body:has(.mbar) .wmsf { padding-bottom: 0; }
+  :root .mbar .btn { min-height: 52px; justify-content: center; background: var(--btn); color: #fff; }
+  :root body.menu-open .mbar { display: none; }
+
+  /* ---------- 6. Auto-moving strips: people may drag them; they pause on hover, focus and touch ---------- */
+  :root .hp-mq { overflow-x: auto; scrollbar-width: none; touch-action: pan-x pan-y; }
+  :root .hp-mq::-webkit-scrollbar { display: none; }
+  :root .hp-mq:active ul, :root .hp-mq:focus ul { animation-play-state: paused; }
+  :root .hp-mq:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+}
+
+@media (max-width: 760px) and (prefers-reduced-motion: reduce) {
+  :root .hp-mq { overflow: visible; }
+}
+
+/* ---------- Header mobile menu, H2 drill-in (the menu opens only below 1081px; the desktop header is untouched) ---------- */
+.mnav.on { padding-bottom: 0; }
+.mnav .mn-row { display: flex; align-items: center; justify-content: space-between; gap: var(--s2); width: 100%; min-height: 56px; padding: var(--s1) 0; border: 0; border-bottom: 1px solid var(--line); background: none; color: var(--head); font: inherit; font-size: 1.125rem; font-weight: 600; text-align: left; text-decoration: none; cursor: pointer; }
+.mnav .mn-link { font-size: 1.0625rem; font-weight: 500; }
+.mnav .mn-chev { flex: none; font-size: 1.5rem; line-height: 1; color: var(--muted); }
+.mnav .mn-sub { display: none; }
+.mnav.sub .mn-top { display: none; }
+.mnav.sub .mn-sub { display: block; }
+.mnav .mn-back { min-height: 48px; padding: 0; border: 0; background: none; color: var(--link); font: inherit; font-size: 1.0625rem; font-weight: 700; cursor: pointer; }
+.mnav .mn-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s1); margin: var(--s1) 0 var(--s2); }
+.mnav .mn-tab { min-height: 48px; padding: 6px 10px; border: 1px solid var(--line-strong); border-radius: var(--r-s); background: var(--card); color: var(--head); font: inherit; font-size: .9375rem; font-weight: 600; cursor: pointer; }
+.mnav .mn-tab[aria-selected="true"] { border-color: var(--accent); background: var(--accent); color: #fff; }
+.mnav .mn-group { display: none; }
+.mnav .mn-group.on { display: block; }
+.mnav .mn-group .mnav-h { font-size: .8125rem; }
+.mnav .mn-foot { position: sticky; bottom: 0; margin-top: auto; padding: var(--s1) 0 calc(var(--s2) + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: var(--bg); }
+.mnav .mn-foot .theme-row { margin-top: 0; }
+.mnav button:focus-visible { outline: 3px solid var(--focus, var(--accent)); outline-offset: 2px; }
