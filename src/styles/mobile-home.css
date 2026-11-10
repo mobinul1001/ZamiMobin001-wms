@@ -11,16 +11,16 @@
   .js .qf-steps .qf-two { display: contents; }
   .js .qf-steps .qf-step { display: block; margin: 0; font-size: .8125rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--eyebrow); }
   .js .qf-steps .qf-step::before { content: "Step 1 of 2"; }
-  .js .qf-steps:has(.qf-s2:checked) .qf-step::before { content: "Step 2 of 2"; }
+  .js .qf-s2:checked + .qf-steps .qf-step::before { content: "Step 2 of 2"; }
   .js .qf-steps .qf-next { display: inline-flex; align-items: center; justify-content: center; width: 100%; min-height: 52px; background: var(--btn); }
   .js .qf-steps .qf-next::before { content: "Next \2192"; }
   .js .qf-steps .qf-back { display: inline-flex; align-items: center; justify-self: start; min-height: 44px; padding: 0 4px; border: 0; background: none; color: var(--link); font: inherit; font-weight: 700; cursor: pointer; }
   .js .qf-steps .qf-back::before { content: "\2039\00a0 Back"; }
   .js .qf-steps .qf-back:focus-visible, .js .qf-steps .qf-next:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
   /* step 1: Email* and "What do you need?"* */
-  .js .qf-steps:not(:has(.qf-s2:checked)) :is(div:has(> [name="name"]), div:has(> [name="phone"]), div:has(> [name="website"]), div:has(> [name="message"]), button[type="submit"], .qf-back) { display: none; }
+  .js .qf-s2:not(:checked) + .qf-steps :is(div:has(> [name="name"]), div:has(> [name="phone"]), div:has(> [name="website"]), div:has(> [name="message"]), button[type="submit"], .qf-back) { display: none; }
   /* step 2: every other field of the desktop form (full name, Phone* required, website URL, description), Back and Submit */
-  .js .qf-steps:has(.qf-s2:checked) :is(div:has(> [name="email"]), div:has(> [name="need"]), .qf-next) { display: none; }
+  .js .qf-s2:checked + .qf-steps :is(div:has(> [name="email"]), div:has(> [name="need"]), .qf-next) { display: none; }
   .js .qf-steps :is(input, select, textarea):user-invalid { border-color: var(--bad); }
 
   /* 2. Trust bar, K2: big dark card 650+, two small cards (12+ years, 5.0 rated), full-width lines (Google Partner, 120+) */

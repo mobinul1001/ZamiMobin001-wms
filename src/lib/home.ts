@@ -29,10 +29,10 @@ export function quickForm(id: string, title: string, text: string, form = `home-
   // The submitted "need" value stays the English one, so the owner's inbox reads the same on every page.
   const pre = NEEDS.indexOf(preselect);
   // Batch 4, H3 2-step form (phones only, with script): the same single form and the same fields. The unnamed
-  // checkbox is never submitted; the step label, Next and Back texts are drawn by CSS (mobile.css), so the page
+  // checkbox sits just before the form, so it is never submitted; the step label, Next and Back texts are drawn by CSS (mobile.css), so the page
   // text does not change. Without script, and on tablet and desktop, it is the normal one-step form.
-  const stepUi = steps ? { box: `<input class="qf-s2 sr-only" type="checkbox" id="${f('step2')}" tabindex="-1" aria-hidden="true"><p class="qf-step" aria-hidden="true"></p>`, next: `<button class="btn primary qf-next" type="button" aria-label="Next step"></button>`, back: `<button class="qf-back" type="button" aria-label="Back to step 1"></button>` } : { box: '', next: '', back: '' };
-  return `${formOpen(form, steps ? 'qf qf-steps' : 'qf')}
+  const stepUi = steps ? { box: `<p class="qf-step" aria-hidden="true"></p>`, pre: `<input class="qf-s2 sr-only" type="checkbox" id="${f('step2')}" tabindex="-1" aria-hidden="true">`, next: `<button class="btn primary qf-next" type="button" aria-label="Next step"></button>`, back: `<button class="qf-back" type="button" aria-label="Back to step 1"></button>` } : { box: '', pre: '', next: '', back: '' };
+  return `${stepUi.pre}${formOpen(form, steps ? 'qf qf-steps' : 'qf')}
     <div class="qf-head"><p class="qf-title">${title}</p><p>${text}</p></div>${stepUi.box}
     <div class="qf-two"><div><label for="${f('name')}">${X.name}</label><input id="${f('name')}" type="text" name="name" placeholder="${X.namePh}" autocomplete="name"></div>
     <div><label for="${f('phone')}">${X.phone} <em>*</em></label><input id="${f('phone')}" type="tel" name="phone" placeholder="+1 555 000 0000" autocomplete="tel" required></div></div>

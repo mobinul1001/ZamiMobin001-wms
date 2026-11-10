@@ -210,7 +210,7 @@ const themeBtn = (id: string) => `<button class="theme" id="${id}" type="button"
         cols.forEach(function (c) { c.querySelector('summary').addEventListener('click', function (e) { if (!fm.matches) e.preventDefault(); }); });
         // Batch 4, H3 2-step hero form (phones): Next checks the step 1 fields with reportValidity() before it moves on.
         d.querySelectorAll('.qf-steps').forEach(function (f) {
-          var c = f.querySelector('.qf-s2'), nx = f.querySelector('.qf-next'), bk = f.querySelector('.qf-back'), mq = matchMedia('(max-width: 760px)');
+          var c = f.previousElementSibling && f.previousElementSibling.classList.contains('qf-s2') ? f.previousElementSibling : null, nx = f.querySelector('.qf-next'), bk = f.querySelector('.qf-back'), mq = matchMedia('(max-width: 760px)');
           if (!c || !nx || !bk) return;
           function go(on) { c.checked = on; var t = f.querySelector(on ? '[name="name"]' : '[name="email"]'); if (t) t.focus(); }
           nx.addEventListener('click', function () { if (f.elements.email.reportValidity() && f.elements.need.reportValidity()) go(true); });
