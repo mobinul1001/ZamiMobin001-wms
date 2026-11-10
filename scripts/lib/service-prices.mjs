@@ -14,6 +14,8 @@ const MALWARE = {
   priority: ['Everything in Cleanup + Protect', 'Patch the vulnerability that let the hack in', 'Short written report', 'Work starts within 4 hours', '3 months of monitoring'],
 };
 
+// Batch 3 (owner, 2026-11-10): SEO, speed and white-label card prices equal the live site; the entries that changed
+// them were removed (see reports/price-mismatches.md).
 export const SERVICE_CHANGES = {
   '/wordpress-malware-removal-service/': [
     ['a HIPAA-sensitive medical portal', 'a medical portal'],
@@ -31,16 +33,6 @@ export const SERVICE_CHANGES = {
   ],
   '/website-speed-optimization-services/': [
     ['for HIPAA-compliant clinic portals', 'for clinic portals'],
-    ['### Starter Audit', '### Speed Boost'], ['### Standard Speed', '### Core Web Vitals'], ['### WooCommerce Speed', '### WooCommerce / Large Site'],
-    [/^Diagnostic Audit$/m, 'Smaller Sites'], [/^WordPress Sites$/m, 'Business Sites'], [/^eCommerce Stores$/m, 'Stores & Large Sites'],
-    ['Full PageSpeed & Core Web Vitals diagnostic scorecard with actionable fixes.', 'Caching and image work for smaller sites.'],
-    ['Advanced database and checkout performance tuning for WooCommerce stores.', 'Database and checkout performance tuning for WooCommerce stores and large sites.'],
-    ['$99 / one-time fee\n\n[Choose Starter Audit](/get-a-free-quote/#speed-audit)', `$149 / one-time fee\n\n${list(['Caching', 'Image optimization', 'Up to 10 pages'])}\n\n[Choose Speed Boost](/get-a-free-quote/#speed-boost)`],
-    ['$199 / one-time fee', '$299 / one-time fee'], ['$349 / one-time fee', '$499 / one-time fee'],
-    ['[Get Standard Optimization](/get-a-free-quote/#standard-speed)', '[Choose Core Web Vitals](/get-a-free-quote/#core-web-vitals)'],
-    ['[Choose WooCommerce Plan]', '[Choose WooCommerce / Large Site]'],
-    ['-   Everything in Standard Speed', '-   Everything in Core Web Vitals'],
-    ['### How much does website speed optimization cost?\n\n', '### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n'],
   ],
   '/website-migration-services/': [
     ['### 30-Day Post Support Window\n', '### 30-Day Post Support Window\n\nFree fix within 30 days if something we moved breaks.\n'],
@@ -95,10 +87,6 @@ export const SERVICE_CHANGES = {
   '/website-seo-services/': [
     ['following YMYL and HIPAA guidelines', 'following YMYL guidelines'],
     ['adhering strictly to HIPAA and bar association guidelines', 'following YMYL guidance'],
-    ['### Starter SEO', '### Local SEO Starter'], ['### Growth SEO', '### SEO Growth'], ['### Enterprise SEO', '### SEO Pro'],
-    ['$499 / month (Starting at)\n\n[Choose Starter Plan](/get-a-free-quote/#starter-seo)', `$299 / month\n\n${list(['Google Business Profile optimization', 'On-page SEO for 5 pages', 'Monthly report'])}\n\n[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)`],
-    ['$999 / month (Starting at)\n\n[Get Growth SEO Plan](/get-a-free-quote/#growth-seo)', `$599 / month\n\n${list(['Everything in Local SEO Starter', '2 articles/month', 'Local citations'])}\n\n[Choose SEO Growth](/get-a-free-quote/#growth-seo)`],
-    ['Custom Quote Starting from $1,999/month\n\n[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)', `$999 / month\n\n${list(['Everything in SEO Growth', '4 articles/month', 'Link outreach', '1 call/month'])}\n\n[Choose SEO Pro](/get-a-free-quote/#pro-seo)`],
     ['Every monthly campaign includes 11 granular deliverables — from', 'Depending on your plan, monthly campaigns cover deliverables from'],
     ['white-hat SEO, 11 granular deliverables, and complete', 'white-hat SEO, clear deliverables, and complete'],
     ['### 11 Granular Scope Items', '### Clear Scope'],
@@ -108,8 +96,6 @@ export const SERVICE_CHANGES = {
     ['Providing white-label SEO fulfillment and dedicated account management for agency partners.', 'Providing white-label SEO fulfillment for agency partners.'],
     ['local citations, review response management, and weekly Google posts.', 'local citations, and review response management.'],
     ['#### Not sure which monthly SEO plan fits your business?', 'One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?'],
-    [/Our monthly SEO pricing starts at \$499\/month for local small businesses, \$999\/month for scaling eCommerce brands, and custom estimates for enterprise portals\./, 'Our monthly SEO plans are $299 (Local SEO Starter), $599 (SEO Growth) and $999 (SEO Pro). A one-time SEO audit is $199.'],
-    ['Our Starter SEO package ($499/mo)', 'Our Local SEO Starter plan ($299/mo)'],
   ],
   '/website-repair-services/': [
     ['No fix, no fee on diagnostics • ', ''],
@@ -164,8 +150,7 @@ export const SERVICE_CHANGES = {
     ['Ticket closed, task logged in agency dashboard, and', 'Ticket closed and'],
     ['and (4) Access your agency dashboard.', 'and (4) Start maintenance.'],
     agencyCard('$59 / site / month', '[Start Starter Plan](/get-a-free-quote/#whitelabel-starter)', '$59', 'Start Agency Starter', 'whitelabel-starter'),
-    agencyCard('$39 / site / month', '[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)', '$49', 'Start Agency Growth', 'whitelabel-growth'),
-    agencyCard('Custom Quote Volume Discounts Available', '[Talk to Sales](/contact/)', '$39', 'Start Agency Scale', 'whitelabel-scale'),
+    agencyCard('$39 / site / month', '[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)', '$39', 'Start Agency Growth', 'whitelabel-growth'),
     ['Perfect for scaling agencies managing 6 to 20 client sites seeking dedicated support.', 'For agencies managing 6 to 20 client sites.'],
     ['Tailored for large agencies or SaaS partners managing 20+ client websites or custom stacks.', 'For large agencies managing 21+ client websites.'],
     ['Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Scale your client portfolio with predictable 50%+ profit margins and zero long-term contracts.', 'Transparent, wholesale **white label website maintenance retainer** rates designed for digital agencies. Every tier gets the same Essential-level features per site; only the per-site price changes with volume. Resell at $149 and keep up to $110 per site, with zero long-term contracts.'],

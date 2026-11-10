@@ -1,6 +1,6 @@
 // Rebuilds the WordPress size variants (name-WxH.ext) of a replaced image from the new full-size file: same names,
 // same sizes (cover crop for the square thumbnail), same format. Usage: node scripts/seo/gen-neutral-variants.mjs <public path>
-import { readdirSync, readFileSync, writeFileSync, statSync } from 'node:fs';
+import { readdirSync, readFileSync, writeFileSync, statSync, mkdirSync } from 'node:fs';
 import { dirname, basename, extname, join } from 'node:path';
 import sharp from 'sharp';
 sharp.cache(false);
@@ -14,6 +14,8 @@ for (const n of readdirSync(dir)) {
   const old = await sharp(readFileSync(f)).metadata();
   const out = await sharp(src).resize({ width: +m[1], height: +m[2], fit: 'cover' }).toFormat(old.format, { quality: 82 }).toBuffer();
   writeFileSync(f, out);
+  // Also into overrides/ (same path), which migrate-content.mjs copies over the crawled images on every run.
+  const ov = f.replace(/^public/, 'overrides'); mkdirSync(dirname(ov), { recursive: true }); writeFileSync(ov, out);
   const nm = await sharp(readFileSync(f)).metadata();
   if (nm.width !== old.width || nm.height !== old.height || nm.format !== old.format) throw new Error(`${n}: size or format changed`);
   console.log(`${n}: ${nm.width}x${nm.height} ${nm.format} ${statSync(f).size} bytes`);

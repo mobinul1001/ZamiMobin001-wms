@@ -306,7 +306,7 @@
     }
   },
   "liveSitePrices": {
-    "_comment": "Owner decision 2026-11-06: these prices are shown on the pages exactly as on the live site, in the normal pricing cards. confirmed:false = as on live site, owner to confirm. Change a number here and on the page text together (the build stops if they differ). Titles and metas use only confirmed prices.",
+    "_comment": "Owner decision 2026-11-06: these prices are shown on the pages exactly as on the live site, in the normal pricing cards. confirmed:false = as on live site, owner to confirm. Change a number here and on the page text together (the build stops if they differ). Titles and metas use only confirmed prices. Batch 3 (owner, 2026-11-10): SEO, speed and white-label set to the prices on the live site (export/raw and a live read-only check); the SEO audit $199 is not on the live page, so it is not a card price.",
     "/website-design-services/": {
       "confirmed": false,
       "comment": "as on live site, owner to confirm",
@@ -320,18 +320,18 @@
       "confirmed": false,
       "comment": "as on live site, owner to confirm",
       "prices": [
-        299,
-        599,
-        1999,
-        199
+        499,
+        999,
+        1999
       ]
     },
     "/website-speed-optimization-services/": {
       "confirmed": false,
       "comment": "as on live site, owner to confirm",
       "prices": [
-        149,
-        299,
+        99,
+        199,
+        349,
         499
       ]
     },
@@ -358,7 +358,7 @@
       "comment": "as on live site, owner to confirm",
       "prices": [
         59,
-        49
+        39
       ]
     }
   }

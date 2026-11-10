@@ -87,7 +87,6 @@ export const ARTICLE_CHANGES = {
   '/white-label-website-maintenance-services-for-agencies/': [
     ['## White Label Website Maintenance Pricing', '## White Label Website Maintenance Pricing\n\n**Wholesale for agencies.** These per-site rates are for agencies and studios managing client websites under their own brand. Running your own site? See our [Essential, Growth and Business plans](/monthly-website-maintenance-packages/).'],
     ['### Starter Plan', '### Agency Starter'], ['### Growth Plan', '### Agency Growth'], ['### Agency+ Custom', '### Agency Scale'],
-    ['Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites.', 'Wholesale for agencies, per site per month: $59 for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites.'],
     ['1 – 5 Client Sites (Starter Tier)', '1 – 5 Client Sites (Agency Starter)'],
     ['6 – 20 Client Sites (Growth Tier)', '6 – 20 Client Sites (Agency Growth)'],
     ['20 – 50 Client Sites (Agency+ Tier)', '21 – 50 Client Sites (Agency Scale)'],
@@ -323,11 +322,9 @@ const coveredByPair = (line, path) => {
 };
 export const isChangedArticleLine = (line, path) => Boolean(ARTICLE_CHANGES[path]) && (coveredByPair(line, path) || /\$|%|Advanced|Elevate|WP (Starter|Growth|Premium)|Essential|Let's talk|discount|Volume Discounts|^Most Popular$|Advanced|Agency\+|Starter Plan|Growth Plan|Pro & Agency|Mid\/Pro|mid and premium|Plan: |Agency plan|agency plans|Agency Plans|30 days notice|Starter plan|Professional and Agency|Support model|Staging|24\/7|update audit|Client Sites|Custom Quote|Brochure|Whether you run|fits your site|client|Ecommerce (Starter|Growth|Premium)|Premium|two-and-a-half|WooCommerce store|mission-critical|SEO checks|Higher (plans|tiers) add|Emergency same-day|Our service includes a full|related to the original issue|No fix, no fee|SLA|Slack|HIPAA|60 min|Staging First|[Ss]taging|24 hrs|24-Hour|Patient|Average turnaround|Most issues|Automated and manual|By using our website|third-party services|browser settings/.test(line));
 
-// Schema offers on these pages follow the same prices. White-label tiers without a confirmed price lose their offer.
+// Schema offers on these pages follow the same prices. Batch 3 (owner, 2026-11-10): the speed, design and SEO offers
+// stay as on the live page (their cards show the live prices); the white-label FAQ sentence stays as on the live page. White-label tiers without a confirmed price lose their offer.
 const OFFER_NAMES = {
-  '/website-speed-optimization-services/': { 'Starter Speed Audit': ['Speed Boost', '149.00'], 'Standard Speed Optimization': ['Core Web Vitals', '299.00'], 'Advanced WooCommerce Speed': ['WooCommerce / Large Site', '499.00'], 'Enterprise Ongoing Speed Retainer': null },
-  '/website-design-services/': { 'Starter Website Design Package': ['Starter Website Design', '799.00'], 'Growth Website Design Package': ['Business Website Design', '1499.00'], 'Premium / Enterprise Website Design Package': ['Store Website Design', '2499.00'] },
-  '/website-seo-services/': { 'Starter SEO Plan': ['Local SEO Starter', '299.00'], 'Growth SEO Plan': ['SEO Growth', '599.00'], 'Enterprise SEO Plan': ['SEO Pro', '999.00'] },
 };
 const OFFER_PATHS = new Set([...Object.keys(OFFER_NAMES), '/website-repair-services/', '/wordpress-backup-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/ecommerce-website-maintenance-packages/', '/', '/agreement/', '/how-much-does-website-maintenance-cost/', '/how-much-does-wordpress-website-maintenance-cost/', '/white-label-wordpress-maintenance-support/']);
 const PRICE_MAP = { 95: 79, 195: 149, 395: 299, 145: 199, 295: 349, 595: 599 };

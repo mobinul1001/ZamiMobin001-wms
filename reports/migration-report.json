@@ -4511,42 +4511,6 @@
     {
       "path": "/website-seo-services/",
       "change": "price",
-      "from": "### Starter SEO",
-      "to": "### Local SEO Starter"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "### Growth SEO",
-      "to": "### SEO Growth"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "### Enterprise SEO",
-      "to": "### SEO Pro"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "$499 / month (Starting at)\n\n[Choose Starter Plan](/get-a-free-quote/#starter-seo)",
-      "to": "$299 / month\n\n-   Google Business Profile optimization\n-   On-page SEO for 5 pages\n-   Monthly report\n\n[Choose Local SEO Starter](/get-a-free-quote/#starter-seo)"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "$999 / month (Starting at)\n\n[Get Growth SEO Plan](/get-a-free-quote/#growth-seo)",
-      "to": "$599 / month\n\n-   Everything in Local SEO Starter\n-   2 articles/month\n-   Local citations\n\n[Choose SEO Growth](/get-a-free-quote/#growth-seo)"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price text gone",
-      "from": "Custom Quote Starting from $1,999/month\n\n[Request Enterprise Quote](/get-a-free-quote/#enterprise-seo)",
-      "to": "$999 / month\n\n-   Everything in SEO Growth\n-   4 articles/month\n-   Link outreach\n-   1 call/month\n\n[Choose SEO Pro](/get-a-free-quote/#pro-seo)"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
       "from": "Every monthly campaign includes 11 granular deliverables — from",
       "to": "Depending on your plan, monthly campaigns cover deliverables from"
     },
@@ -4597,18 +4561,6 @@
       "change": "price",
       "from": "#### Not sure which monthly SEO plan fits your business?",
       "to": "One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?"
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "/Our monthly SEO pricing starts at \\$499\\/month for local small businesses, \\$999\\/month for scaling eCommerce brands, and custom estimates for enterprise portals\\./",
-      "to": "Our monthly SEO plans are $299 (Local SEO Starter), $599 (SEO Growth) and $999 (SEO Pro). A one-time SEO audit is $199."
-    },
-    {
-      "path": "/website-seo-services/",
-      "change": "price",
-      "from": "Our Starter SEO package ($499/mo)",
-      "to": "Our Local SEO Starter plan ($299/mo)"
     },
     {
       "path": "/website-seo-services/",
@@ -4724,96 +4676,6 @@
     {
       "path": "/website-speed-optimization-services/",
       "change": "price",
-      "from": "### Starter Audit",
-      "to": "### Speed Boost"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "### Standard Speed",
-      "to": "### Core Web Vitals"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "### WooCommerce Speed",
-      "to": "### WooCommerce / Large Site"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "/^Diagnostic Audit$/m",
-      "to": "Smaller Sites"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "/^WordPress Sites$/m",
-      "to": "Business Sites"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "/^eCommerce Stores$/m",
-      "to": "Stores & Large Sites"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "Full PageSpeed & Core Web Vitals diagnostic scorecard with actionable fixes.",
-      "to": "Caching and image work for smaller sites."
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "Advanced database and checkout performance tuning for WooCommerce stores.",
-      "to": "Database and checkout performance tuning for WooCommerce stores and large sites."
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "$99 / one-time fee\n\n[Choose Starter Audit](/get-a-free-quote/#speed-audit)",
-      "to": "$149 / one-time fee\n\n-   Caching\n-   Image optimization\n-   Up to 10 pages\n\n[Choose Speed Boost](/get-a-free-quote/#speed-boost)"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "$199 / one-time fee",
-      "to": "$299 / one-time fee"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "$349 / one-time fee",
-      "to": "$499 / one-time fee"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "[Get Standard Optimization](/get-a-free-quote/#standard-speed)",
-      "to": "[Choose Core Web Vitals](/get-a-free-quote/#core-web-vitals)"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "[Choose WooCommerce Plan]",
-      "to": "[Choose WooCommerce / Large Site]"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "-   Everything in Standard Speed",
-      "to": "-   Everything in Core Web Vitals"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
-      "from": "### How much does website speed optimization cost?\n\n",
-      "to": "### How much does website speed optimization cost?\n\nOne-time speed work costs $149 for a Speed Boost (up to 10 pages), $299 for Core Web Vitals work, and $499 for WooCommerce or large sites. Our Growth and Business plans include speed optimization.\n\n"
-    },
-    {
-      "path": "/website-speed-optimization-services/",
-      "change": "price",
       "from": "Fast LCP load speeds for clinic portals, doctor directories, and patient online appointment booking forms.",
       "to": "Fast LCP load speeds for clinic websites and doctor directories. We connect your practice's booking system to your website, or build a booking feature inside your patient portal.\n\nHealthcare websites: patient form submissions go straight to your practice's own secure account — only your team can see them, not us. We don't store patient information on your website.\n\nPatient & client portals: we build them as a separate, secured system — your marketing website stays free of patient data. Patient portals run on HIPAA-eligible hosting (US) or hosting that meets local privacy law, and we build and maintain them under a signed BAA (US) or data processing agreement (UK, EU, Canada, Australia, Brazil)."
     },
@@ -4865,7 +4727,7 @@
     },
     {
       "path": "/website-speed-optimization-services/",
-      "change": "schema synced",
+      "change": "schema removed",
       "question": "How much does website speed optimization cost?"
     },
     {
@@ -5559,13 +5421,7 @@
       "path": "/white-label-website-maintenance-services-for-agencies/",
       "change": "price",
       "from": "$39 / site / month\n\n[Start Growth Plan](/get-a-free-quote/#whitelabel-growth)",
-      "to": "$49 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Growth](/get-a-free-quote/#whitelabel-growth)"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price text gone",
-      "from": "Custom Quote Volume Discounts Available\n\n[Talk to Sales](/contact/)",
-      "to": "$39 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Scale](/get-a-free-quote/#whitelabel-scale)"
+      "to": "$39 / site / month\n\n-   Weekly updates\n-   Weekly backups\n-   Security scan\n-   Uptime monitoring\n-   1 hour edits/month per site\n-   Unbranded client reports\n-   Hosting not included\n\n[Start Agency Growth](/get-a-free-quote/#whitelabel-growth)"
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",
@@ -5698,12 +5554,6 @@
       "change": "price",
       "from": "### Agency+ Custom",
       "to": "### Agency Scale"
-    },
-    {
-      "path": "/white-label-website-maintenance-services-for-agencies/",
-      "change": "price",
-      "from": "Our wholesale agency retainers start at $59/site/month for 1-5 sites, dropping to $39/site/month for 6-20 sites. Custom volume pricing is available for agencies managing 20+ client sites.",
-      "to": "Wholesale for agencies, per site per month: $59 for 1–5 sites, $49 for 6–20 sites, and $39 for 21+ sites."
     },
     {
       "path": "/white-label-website-maintenance-services-for-agencies/",

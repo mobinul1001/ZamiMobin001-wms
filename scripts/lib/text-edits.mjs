@@ -156,6 +156,14 @@ export const TEXT_EDITS = {
   },
 };
 
+// Batch 3 (owner, 2026-11-10): the 3 replaced comparison images get an alt that describes the new neutral image.
+const ALT = {
+  '/best-fixrunner-alternatives/': ['Comparison of the best FixRunner alternatives highlighting Website Maintenance Services for WordPress maintenance, hosting, security, backups, and support.', 'Best FixRunner Alternatives: WordPress support services compared (WMS guide banner)'],
+  '/best-wp-buffs-alternatives/': ['Comparison of the best WP Buffs alternatives, highlighting Website Maintenance Services for WordPress maintenance, hosting, security, backups, and support.', 'Best WP Buffs Alternatives: WordPress care services compared (WMS guide banner)'],
+  '/sitecare-alternative/': ['SiteCare alternative comparison showing Website Maintenance Services vs SiteCare for WordPress maintenance, hosting, support, and pricing', 'SiteCare Alternative: WordPress care plans compared (WMS guide banner)'],
+};
+for (const [p, pair] of Object.entries(ALT)) TEXT_EDITS[p] = { ...(TEXT_EDITS[p] ?? {}), sub: [...(TEXT_EDITS[p]?.sub ?? []), pair] };
+
 // The byline rule is merged into each article's own rules (some articles already have rules).
 for (const [p, r] of Object.entries(BYLINE)) TEXT_EDITS[p] = { ...(TEXT_EDITS[p] ?? {}), exact: [...(TEXT_EDITS[p]?.exact ?? []), ...r.exact] };
 

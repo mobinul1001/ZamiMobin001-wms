@@ -440,6 +440,9 @@ for (const dir of ['src/content/pages', 'src/content/blog']) {
 }
 if (existsSync('public/wp-content')) rmSync('public/wp-content', { recursive: true, force: true });
 cpSync('export/assets/wp-content', 'public/wp-content', { recursive: true });
+// Replaced images (batch 2/3: free-offer text, old plan prices) live in overrides/wp-content at the same paths and
+// win over the crawled copies, so a re-run of this script never brings the old images back.
+if (existsSync('overrides/wp-content')) cpSync('overrides/wp-content', 'public/wp-content', { recursive: true });
 
 const yaml = (v) => JSON.stringify(v);
 let done = 0;
