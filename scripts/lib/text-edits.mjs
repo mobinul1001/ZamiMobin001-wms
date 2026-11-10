@@ -147,6 +147,10 @@ export const TEXT_EDITS = {
       [' The tiebreaker: Website Maintenance Services includes a full year of hosting free, a concrete first-year saving SiteCare doesn’t match.', '', ' The tiebreaker: Website Maintenance Services includes a full <strong>year of hosting free</strong>, a concrete first-year saving SiteCare doesn’t match.', ' The tiebreaker: Website Maintenance Services includes a full **year of hosting free**, a concrete first-year saving SiteCare doesn\'t match.'],
     ],
   },
+  // Batch 3 (gap audit, handoff phase 4): an old plan price; the master Essential plan is $79/mo (prices.json).
+  '/wordpress-site-hacked-what-to-do/': {
+    sub: [['$95/mo', '$79/mo']],
+  },
   '/caribbean-taxi-transport-website-guide/': {
     sub: [
       ['We include a full year of free hosting, two free business webmail addresses on your own domain, full hosting and site access', 'We include full hosting and site access'],

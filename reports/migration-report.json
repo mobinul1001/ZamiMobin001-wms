@@ -6411,7 +6411,7 @@
     },
     {
       "path": "/wordpress-site-hacked-what-to-do/",
-      "change": "price",
+      "change": "price text gone",
       "from": "costs from $95/month",
       "to": "costs from $79/month"
     },

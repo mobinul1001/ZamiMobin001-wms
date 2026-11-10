@@ -49,7 +49,8 @@ export function wireForms(html: string, path: string) {
     return `<form data-form="${name}" method="POST" action="https://formspree.io/f/${id}"><input type="hidden" name="form_name" value="${name}"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">${extra}`;
   });
   // The migration kept the old disabled submit buttons.
-  const enabled = wired.replace(/<button([^>]*?) disabled(?:="[^"]*")?([^>]*)>/g, '<button$1$2>');
+  // Batch 3: the old forms used "e.g. John Doe" as the name placeholder (a fake-person name); now "Your name".
+  const enabled = wired.replace(/<button([^>]*?) disabled(?:="[^"]*")?([^>]*)>/g, '<button$1$2>').replace(/placeholder="[^"]*John Doe[^"]*"/g, 'placeholder="Your name"');
   const noted = HEALTH_FORM_PAGES.includes(path) ? enabled.replace(/<\/form>/g, `</form>${HEALTH_FORM_LINE}`) : enabled;
   // The old labels point at ids the converter removed. Each control gets its label's id back.
   return noted.replace(/<label for="([^"]+)">((?:(?!<\/label>).)*)<\/label>(\s*(?:<div>\s*)?)<(input|select|textarea) /gs, '<label for="$1">$2</label>$3<$4 id="$1" ');

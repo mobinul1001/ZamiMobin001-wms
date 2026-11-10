@@ -62,6 +62,13 @@ if (Template === HackedPage && entry.rendered?.html) {
 // A short call to action at the end of a page becomes its final CTA box.
 const ctaParts = path === '/blogs/' ? { body: entry.rendered?.html ?? '' } : extractCta(entry.rendered?.html ?? '');
 if (entry.rendered?.html) entry.rendered.html = ctaParts.body;
+// Batch 3 (gap audit): service pages without a Service node get one (name = H1, description = meta description,
+// provider = the existing Organization, areaServed = the approved reach). No Offer: prices are in the page cards.
+const SERVICE_SCHEMA = ['/website-redesign-services/', '/website-support-services/', '/wordpress-backup-services/', '/wms-partner-program/', '/shopify-website-maintenance-packages/', '/website-hacked-recovery-services/', '/wordpress-malware-removal-service/', '/wordpress-website-maintenance-packages/', '/monthly-website-maintenance-packages/', '/website-design-services/', '/website-seo-services/', '/website-speed-optimization-services/', '/website-update-services/', '/white-label-website-maintenance-services-for-agencies/', '/ecommerce-website-maintenance-packages/', '/website-repair-services/', '/website-migration-services/'];
+const hasService = (schema as any[]).flatMap((d) => [d, ...(d['@graph'] ?? [])]).some((n) => [].concat(n['@type'] ?? []).includes('Service'));
+if (SERVICE_SCHEMA.includes(path) && !hasService) {
+  (schema as any[]).push({ '@context': 'https://schema.org', '@type': 'Service', name: entry.data.h1, description, url: new URL(path, Astro.site).href, provider: { '@id': 'https://websitemaintenanceservices.org/#organization' }, areaServed: ['United States', 'Canada', 'United Kingdom', 'Australia', 'Europe'] });
+}
 const hasForm = path === '/' || Template === RepairPage || Template === HackedPage || Template === MalwarePage || Template === MigrationPage || Template === ServicePage || Boolean(entry.rendered?.html?.includes('https://formspree.io/f/'));
 ---
 <Base title={title} description={description} robots={robots} social={social} schema={schema} lang={lang} cta={ctaParts.cta}>

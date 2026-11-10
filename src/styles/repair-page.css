@@ -305,3 +305,11 @@
 @media (max-width: 359px) {
   .rp-priceline { flex-wrap: wrap; white-space: normal; }
 }
+
+/* Batch 3 (mobile rules): no sideways swipe except CSS-only auto-moving strips. The case stories stack and the
+   comparison tabs wrap instead of scrolling sideways (all text and links unchanged). */
+@media (max-width: 1279px) {
+  .rp-stories { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); overflow-x: visible; scroll-snap-type: none; }
+  .rp-cmp-nav { flex-wrap: wrap; overflow-x: visible; margin-inline: 0; }
+  .rp-cmp-nav .rp-tab { flex: 1 1 auto; }
+}

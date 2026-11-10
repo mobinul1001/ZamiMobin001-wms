@@ -64,7 +64,7 @@ Read `claude-code-reports/` (Claude Code's own reports, in date order) for detai
   - Altitude Care case study numbers: page load 4.8s → 1.9s, security none → 24/7, downtime often → ~0%, booking form errors → fixed
   - "99.9% uptime guarantee"
   - **Google Partner = yes**
-- **Rating:** "5.0 on Clutch". This is the only clean rating, and it rests on 1 review.
+- **Rating:** "5.0 rated by our clients" (corrected 2026-11-10: never "on Clutch"). This is the only clean rating, and it rests on 1 review.
 - **Guarantee:** "If we can't clean your hacked site, you don't pay." No other guarantees.
 - **Hours:** "We work US & UK business hours."
 - **NEVER mention** Dhaka, Bangladesh, or the +880 number, and never say which country the team is in.
@@ -218,7 +218,7 @@ File: `design/wms-homepage-design.html` (open it in a browser). Screenshots are 
 - Google G / Maps / Business Profile icon stack as hero proof
 
 **Homepage section order (final):**
-1. Hero + quick form (H1, ticks, CTAs, Google icon stack "5.0 on Clutch · Google Partner", stats 650+ / 12+ / 120+)
+1. Hero + quick form (H1, ticks, CTAs, Google icon stack "5.0 rated by our clients · Google Partner", stats 650+ / 12+ / 120+)
 2. Find us on (directory profiles)
 3. Platforms + stats
 4. What's included (short, one screen)
@@ -257,7 +257,7 @@ File: `design/wms-homepage-design.html` (open it in a browser). Screenshots are 
 
 **Changes the owner asked for that are NOT yet made in the design files:**
 1. **Don't over-highlight Altitude Care** (it is one case study of many):
-   - Remove it from the proof strip; use "650+ sites maintained · 12+ years · 5.0 on Clutch · No contract" instead.
+   - Remove it from the proof strip; use "650+ sites maintained · 12+ years · 5.0 rated by our clients · No contract" instead.
    - Remove "Example: Altitude Care…" from the problem picker.
    - The Results section becomes a grid/slider of 3–4 case-study cards (industry, problem, before → after) plus totals (120+ built, 70+ migrations, 190+ redesigns).
    - **The owner must send the real case studies.** Don't invent them.

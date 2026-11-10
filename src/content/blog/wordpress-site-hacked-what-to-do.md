@@ -45,7 +45,7 @@ This guide will walk you through exactly what to do when your WordPress site has
 
 <div class="card">
 
-<p class="pair"><strong>$95/mo</strong> <span>Prevention via maintenance</span></p>
+<p class="pair"><strong>$79/mo</strong> <span>Prevention via maintenance</span></p>
 
 </div>
 

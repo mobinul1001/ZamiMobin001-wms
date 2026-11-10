@@ -15,13 +15,18 @@ interface Props {
   lang?: string;
   cta?: { id?: string; title: string; text: string; links: { href: string; label: string }[] };
 }
-const { title, description, robots, social = {}, schema = [], lang = 'en-US', cta } = Astro.props;
+const { title, description, robots, schema = [], lang = 'en-US', cta } = Astro.props;
+let { social = {} } = Astro.props as { social?: Record<string, unknown> };
 
 // Netlify sets CONTEXT and URL during builds. Only a production build on the real domain
 // may be indexed, so the netlify.app address and any misconfigured build stay noindex.
 const isProduction = process.env.CONTEXT === 'production' && process.env.URL === Astro.site?.origin;
 const robotsContent = isProduction ? robots || 'index, follow' : 'noindex, nofollow';
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+// Batch 3 (gap audit): every page has og:title (falls back to the page title) and twitter:image (= og:image).
+social = { ...social };
+if (!social['og:title']) social['og:title'] = title;
+if (!social['twitter:image'] && social['og:image']) social['twitter:image'] = [].concat(social['og:image'])[0];
 const socialTags = Object.entries(social).flatMap(([key, value]) => (Array.isArray(value) ? value : [value]).map((content) => ({ key, content: String(content) })));
 const logo = '/wp-content/uploads/2025/11/Colorful-Website-Maintenance-services-Logo.png';
 // Every service page, in the owner's 4 groups (2026-11-05). The build fails if a menu link has no page.
