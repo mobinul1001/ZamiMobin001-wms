@@ -28,8 +28,8 @@ const SERVICE_LINES: Record<string, string> = {
   '/wordpress-malware-removal-service/': 'Malware cleanup from $149',
   '/website-speed-optimization-services/': 'One-time speed work from $149',
   '/website-migration-services/': 'Host-to-host move $149 · Free migration with any annual plan',
-  '/website-design-services/': 'Website design from $799',
-  '/website-seo-services/': 'Monthly SEO from $299 · One-time SEO audit $199',
+  '/website-design-services/': `Website design from $${Math.min(...(prices.liveSitePrices as any)["/website-design-services/"].prices)}`,
+  '/website-seo-services/': `Monthly SEO from $${Math.min(...(prices.liveSitePrices as any)["/website-seo-services/"].prices)}`,
 };
 let priceLine = FROM_LOW.includes(path) ? text.from : '';
 if (storeSet) priceLine = storeSet === prices.storePlans.shopify ? `Shopify plans from $${storeSet.plans[0].monthly}/mo · No contract` : `Store plans from $${storeSet.plans[0].monthly}/mo · No contract`;

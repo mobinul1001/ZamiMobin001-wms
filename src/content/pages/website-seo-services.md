@@ -884,8 +884,6 @@ Tailored for SaaS portals, multi-location brands, healthcare networks, and high-
 
 </div>
 
-One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)
-
 #### Not sure which monthly SEO plan fits your business?
 
 Total **affordable seo services** cost depends on search competition, target locations, and content scope. Explore our [frequently asked pricing questions](#faq) or contact us to [get a custom quote](/get-a-free-quote/).

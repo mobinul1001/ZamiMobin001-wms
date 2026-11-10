@@ -79,10 +79,7 @@ export const SERVICE_CHANGES = {
     ['| CMS & Blog Setup | — |  |  | Sometimes extra cost |', '| CMS & Blog Setup | — | Included | Included | Sometimes extra cost |'],
     ['| Post-Launch Support Included | 30 Days | 90 Days | 12 Months | Rarely included |', '| Post-Launch Support Included | 30 Days | 90 Days | Ask us | Rarely included |'],
     ['| Security & SSL Hardening | Basic |  | Advanced | Rarely included |', '| Security & SSL Hardening | Basic | Included | Included | Rarely included |'],
-    ['Professional website design packages start at $1,499 for small business 5-page sites, $2,999 for growth businesses up to 10 pages, and custom quotes for enterprise portals.', 'Website design costs $799 for a Starter site (up to 5 pages), $1,499 for a Business site (up to 10 pages, blog, speed and SEO setup), and $2,499 for a WooCommerce store (up to 50 products).'],
-    ['<option value="$1,200 - $2,500">$1,200 – $2,500 (Starter Package)</option>', '<option value="Starter $799">$799 (Starter)</option>'],
-    ['<option value="$2,500 - $5,500">$2,500 – $5,500 (Growth Package - Most Popular)</option>', '<option value="Business $1,499">$1,499 (Business, most popular)</option>'],
-    ['<option value="$5,500+">$5,500+ (Corporate / Custom Enterprise)</option>', '<option value="Store $2,499">$2,499 (Store)</option>'],
+    ['Professional website design packages start at $1,499 for small business 5-page sites, $2,999 for growth businesses up to 10 pages, and custom quotes for enterprise portals.', 'Professional website design starts at $1,499 for a small business site of up to 5 pages, $2,999 for a growing business with up to 10 pages, and from $5,499 for custom stores and larger projects.'],
   ],
   '/website-seo-services/': [
     ['following YMYL and HIPAA guidelines', 'following YMYL guidelines'],
@@ -95,7 +92,6 @@ export const SERVICE_CHANGES = {
     ['Our full-service engagement covers 11 granular deliverables: technical SEO audits, keyword research, competitor analysis, on-page optimization, Schema markup, Core Web Vitals speed tuning, image SEO, and white-hat link building.', 'Depending on your plan, our SEO work covers Google Business Profile optimization, on-page SEO, articles, local citations, link outreach, and a monthly report.'],
     ['Providing white-label SEO fulfillment and dedicated account management for agency partners.', 'Providing white-label SEO fulfillment for agency partners.'],
     ['local citations, review response management, and weekly Google posts.', 'local citations, and review response management.'],
-    ['#### Not sure which monthly SEO plan fits your business?', 'One-time SEO audit: **$199**. [Request an SEO audit](/get-a-free-quote/#seo-audit)\n\n#### Not sure which monthly SEO plan fits your business?'],
   ],
   '/website-repair-services/': [
     ['No fix, no fee on diagnostics • ', ''],

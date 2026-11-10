@@ -47,7 +47,8 @@ const MASTER_TABLE = [/^\| Feature \| Essential[^\n]*\n(?:\|[^\n]*\n?)*/m, () =>
 const STORE_LINE = 'Running an online store? See [Store plans from $199](/ecommerce-website-maintenance-packages/).';
 const OVERALL = [['$20 to $500+', '$20 to $600+'], ['$20–$500+', '$20–$600+']];
 
-const REPAIR_PRICES = 'Small fixes are $49, most repairs are $99–$299, complex work is quoted, and hacked site cleanup is $149.';
+const REPAIR_PRICES = 'Small fixes start at $49. Bigger issues get a fixed quote before work starts. Hacked site cleanup is $149.';
+const REPAIR_FAQ = 'Small fixes start at $49. Bigger issues get a fixed quote before work starts. Hacked site cleanup is $149.'; // owner-confirmed wording, batch 4
 export const ARTICLE_CHANGES = {
   ...Object.fromEntries(Object.entries(STORE_CHANGES).map(([path, pairs]) => [path, [...pairs, [/^\| Feature \| (?:Store|Shopify) Starter[^\n]*\n(?:\|[^\n]*\n?)*/m, () => compareTable(Object.values(prices.storePlans).find((s) => s.path === path).plans, prices.annualNote.en)]]])),
   '/website-repair-services/': [
@@ -55,13 +56,13 @@ export const ARTICLE_CHANGES = {
     ['$149 – $499', '$99 – $299'],
     ['$250 – $699', '$99 – $299'],
     ['$299 – $899', 'Hacked site cleanup $149; other emergencies quoted'],
-    ['Most repairs range from $99–$899 depending on complexity, with a free diagnostic before any charge is confirmed.', `${REPAIR_PRICES} We give a free diagnostic before any charge is confirmed.`],
+    ['Most repairs range from $99–$899 depending on complexity, with a free diagnostic before any charge is confirmed.', REPAIR_FAQ],
     ['Transparent website repair pricing ranges for small sites ($99-$249), WordPress sites ($149-$499), business sites ($250-$699), and emergency site-down repairs ($299-$899).', REPAIR_PRICES],
   ],
   '/wordpress-backup-services/': [
-    [/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \*\*wordpress backup service cost\*\* plan that fits your budget\.?[^\n]*/, 'Backups are included in every plan: weekly on Essential, daily on Growth and Business. Backups are kept 30 days on Essential, 60 on Growth and 90 on Business. Plans start at $79/month. Need a site back without a plan? Emergency restore starts at $99.\n\n[See our plans](/monthly-website-maintenance-packages/) [Request an emergency restore](/get-a-free-quote/#emergency-restore)'],
+    [/Whether you run a brochure website, an active e-commerce store, or manage client portfolios, we have a managed \*\*wordpress backup service cost\*\* plan that fits your budget\.?[^\n]*/, 'Backups are included in every plan: weekly on Essential, daily on Growth and Business. Backups are kept 30 days on Essential, 60 on Growth and 90 on Business. Plans start at $79/month.\n\n[See our plans](/monthly-website-maintenance-packages/)'],
     ['### White-Label Client Reporting (Agency Plans)', '### White-Label Client Reporting'],
-    ['Plans typically range from $29–$199+/month depending on site count, retention length, and support level — see pricing above.', 'Backups are included in every plan, from $79/month. Emergency restore without a plan starts at $99.'],
+    ['Plans typically range from $29–$199+/month depending on site count, retention length, and support level — see pricing above.', 'Backup plans on their own are $29, $59 or $199+ a month (Starter, Business and Agency), depending on site count, retention length and support. Backups are also included in every maintenance plan from $79/month.'],
     ['Yes — agency plans include white-label reporting', 'Yes — our white-label program includes white-label reporting'],
   ],
   '/website-update-services/': [
@@ -77,7 +78,7 @@ export const ARTICLE_CHANGES = {
     ['Plan: Professional', 'Plan: Growth'],
     ['Plan: Agency', 'Plan: Business'],
     ['After switching to our Agency plan with staging', 'After switching to our Business plan with staging'],
-    ['Professional website update services typically range from $49 to $299 per month depending on site complexity and the level of testing required. Our plans start at $49/month for simple sites and go up to $299/month for eCommerce and high-traffic sites. One-time update services are also available for sites that only need occasional attention.', 'Website updates are included in every plan, from $79/month to $299/month. A one-time catch-up update for long-outdated sites starts at $99.'],
+    ['Professional website update services typically range from $49 to $299 per month depending on site complexity and the level of testing required. Our plans start at $49/month for simple sites and go up to $299/month for eCommerce and high-traffic sites. One-time update services are also available for sites that only need occasional attention.', 'One-time website updates are $49, $99 or $299 (Starter, Professional and Agency / eCommerce), depending on site complexity and the level of testing required. Updates are also included in every maintenance plan from $79/month.'],
     ['You can cancel anytime with 30 days notice.', 'You can cancel anytime.'],
     ['Our Agency plan is specifically designed for WooCommerce stores and includes checkout testing after every update.', 'Our [Store plans](/ecommerce-website-maintenance-packages/) are designed for WooCommerce stores and include a weekly checkout test.'],
     ['Staging testing is included in our Professional and Agency plans.', 'Staging testing is included in our Business plan.'],
@@ -354,9 +355,8 @@ function fixOfferNode(node, path) {
   }
   if ([].concat(out['@type'] ?? []).includes('Offer') && out.price !== undefined) {
     if (path === '/wordpress-backup-services/') {
-      if (!/^Starter/.test(out.name ?? '')) return null;
-      Object.assign(out, { name: 'Emergency restore without a plan', price: '99.00' });
-      delete out.priceValidUntil;
+      // Batch 4: the live backup offers ($29 / $59 / $199) stay as they are; no emergency restore offer.
+      return out;
     } else if (path === '/website-update-services/') {
       if (parseFloat(out.price) === 0) return out;
       if (out.name !== 'Starter Plan') return null;
