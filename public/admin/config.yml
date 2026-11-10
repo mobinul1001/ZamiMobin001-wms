@@ -1,0 +1,123 @@
+# Sveltia CMS configuration (Decap-compatible), from CMS-REQUIREMENTS.md. Draft: test it on the Netlify preview with
+# a throwaway post before the owner uses it (reports/final-gap/launch-remaining.md, step 4).
+# No token or secret belongs in this file. The owner signs in with GitHub; Sveltia's GitHub sign-in needs either a
+# fine-grained personal access token typed into the login screen (kept in the browser only) or Sveltia's auth worker
+# (its URL goes into backend.base_url below, set by the owner).
+backend:
+  name: github
+  repo: OWNER/REPO # owner: the private GitHub repository, e.g. yourname/wms-site
+  branch: main
+  # base_url: https://YOUR-SVELTIA-AUTH-WORKER.workers.dev # optional, owner sets it if the auth worker is used
+
+site_url: https://websitemaintenanceservices.org
+display_url: https://websitemaintenanceservices.org
+locale: en
+publish_mode: editorial_workflow # drafts and review before publishing
+
+# New uploads go to public/images/uploads/; old images stay at /wp-content/uploads/... and keep working.
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: blog
+    label: Blog posts
+    label_singular: Blog post
+    folder: src/content/blog
+    extension: md
+    format: frontmatter
+    create: true
+    delete: false # a live URL must never disappear without a redirect (CMS-REQUIREMENTS.md §5)
+    slug: "{{slug}}"
+    summary: "{{h1}}"
+    fields:
+      - { name: path, label: URL path (keep the slashes, e.g. /my-post/; never change it on a live post), widget: string, pattern: ['^/[a-z0-9-]+/$', 'Use /lower-case-words-with-dashes/'] }
+      - { name: title, label: SEO title (about 60 characters), widget: string, hint: 'Shown in Google. Keep it under about 60 characters.' }
+      - { name: description, label: Meta description (about 155 characters), widget: text, hint: 'Shown under the title in Google. 130 to 158 characters.' }
+      - { name: h1, label: Page heading (H1), widget: string }
+      - { name: robots, label: Robots, widget: select, options: ['index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1', 'noindex, follow'], default: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' }
+      - { name: author, label: Author, widget: string, default: WMS }
+      - { name: categories, label: Categories, widget: list, default: [Industry] }
+      - { name: publishedAt, label: Published date, widget: datetime }
+      - { name: updatedAt, label: Updated date, widget: datetime }
+      - name: faqs
+        label: FAQ (each question and answer also goes into the FAQ schema)
+        widget: list
+        required: false
+        fields:
+          - { name: q, label: Question, widget: string }
+          - { name: a, label: Answer, widget: text }
+      # Social tags and schema are generated data on the migrated posts. They stay in the file as they are.
+      - { name: social, label: Social tags (generated, do not edit), widget: code, output_code_only: true, required: false }
+      - { name: schema, label: Schema (generated, do not edit), widget: code, output_code_only: true, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    label_singular: Page
+    folder: src/content/pages
+    extension: md
+    format: frontmatter
+    create: false # page URLs are locked; a new page or a URL change goes through the redirect flow
+    delete: false
+    summary: "{{path}}  {{h1}}"
+    fields:
+      - { name: path, label: URL path (locked), widget: string, readonly: true }
+      - { name: title, label: SEO title, widget: string }
+      - { name: description, label: Meta description, widget: text }
+      - { name: h1, label: Page heading (H1), widget: string }
+      - { name: robots, label: Robots, widget: string, required: false }
+      - name: faqs
+        label: FAQ
+        widget: list
+        required: false
+        fields:
+          - { name: q, label: Question, widget: string }
+          - { name: a, label: Answer, widget: text }
+      - { name: social, label: Social tags (generated, do not edit), widget: code, output_code_only: true, required: false }
+      - { name: schema, label: Schema (generated, do not edit), widget: code, output_code_only: true, required: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: settings
+    label: Site settings
+    files:
+      - name: prices
+        label: Price list (every page reads its prices from here)
+        file: src/data/prices.json
+        format: json
+        fields:
+          - name: plans
+            label: Master plans
+            widget: list
+            fields:
+              - { name: name, label: Plan name, widget: string }
+              - { name: monthly, label: Monthly price (USD), widget: number, value_type: int }
+              - { name: annual, label: Annual price (USD), widget: number, value_type: int }
+              - { name: includes, label: What is included, widget: list }
+          - { name: oneTimeFixFrom, label: One-time fix from (USD), widget: number, value_type: int }
+          - { name: hackedSiteCleanup, label: Hacked site cleanup (USD), widget: number, value_type: int }
+      - name: redirects
+        label: Redirects (the build turns these into Netlify _redirects and stops on chains, loops or missing targets)
+        file: src/data/redirects.json
+        format: json
+        fields:
+          - name: redirects
+            label: Redirects
+            widget: list
+            fields:
+              - { name: from, label: From path, widget: string }
+              - { name: to, label: To path, widget: string }
+              - { name: status, label: Type, widget: select, options: ['301', '302'], default: '301' }
+              - { name: note, label: Note, widget: string, required: false }
+      - name: site
+        label: Contact details and company facts
+        file: src/data/site.json
+        format: json
+        fields:
+          - { name: email, label: Email, widget: string }
+          - { name: phone, label: Phone, widget: string }
+      - name: footer
+        label: Footer links
+        file: src/data/footer.json
+        format: json
+        fields:
+          - { name: copyright, label: Copyright line, widget: string }

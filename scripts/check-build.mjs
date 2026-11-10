@@ -36,7 +36,8 @@ const cells = (line) => {
 };
 const toPath = (file) => '/' + file.replace(/\\/g, '/').replace(/^dist\//, '').replace(/index\.html$/, '');
 const distFiles = walk('dist');
-const htmlFiles = distFiles.filter((f) => f.endsWith('index.html'));
+// /admin/ is the content manager (noindex tool page, not a site page): not checked as a page.
+const htmlFiles = distFiles.filter((f) => f.endsWith('index.html') && !/(^|[\\/])admin[\\/]index\.html$/.test(f));
 const livePaths = new Set(htmlFiles.map(toPath));
 const allPaths = new Set(distFiles.map((f) => '/' + f.replace(/\\/g, '/').replace(/^dist\//, '')));
 const pathExists = (p) => livePaths.has(p) || allPaths.has(p) || allPaths.has(decodeURI(p));
