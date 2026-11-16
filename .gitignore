@@ -6,3 +6,14 @@ dist/
 export/
 public/_redirects
 reports/design-qa/
+# Secrets and tokens: never commit these
+.dev.vars
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+secrets/
+*secret*.json
+*token*.txt
+credentials*
